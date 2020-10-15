@@ -20,13 +20,13 @@ navigation:
 #    url: /contact
 
 social:
-  github: brianmaierjr
-  twitter: brianmaierjr
-  facebook: brianmaierjr
-  email: brimaidesigns@gmail.com
-  linkedin: brianmaierjr
+  github: longtds
+  twitter: longtds
+  facebook: longtds
+  email: longtds@163.com
+  linkedin: longtds
 
 google_analytics: "UA-180658907-1"
 
 disqus:
-    shortname: my-disqus-shortname
+    shortname: longtds
