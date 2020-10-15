@@ -29,11 +29,6 @@
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
   <meta content="{{ site.url }}/about/" property="article:author">
   {% endif %}
-  {% if page.image %}
-  <meta content="{{ prepend: site.url }}" property="og:image">
-  {% else %}
-  <meta content="{{ prepend: site.url }}" property="og:image">
-  {% endif %}
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary">
