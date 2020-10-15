@@ -3,8 +3,8 @@ description: longtds's blog. linux devops container kubernetes cloudnative hadoo
 
 url: https://longtds.github.io
 baseurl: "/"
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
+paginate_path: "page:num/"
+permalink: :title/
 
 markdown: kramdown
 highlighter: rouge
