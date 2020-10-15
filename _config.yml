@@ -2,7 +2,7 @@ title: longtds
 description: longtds's blog. linux devops container kubernetes cloudnative hadoop
 
 url: https://longtds.github.io
-baseurl: ""
+baseurl: "/"
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
