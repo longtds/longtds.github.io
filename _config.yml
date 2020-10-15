@@ -9,15 +9,15 @@ permalink: :title/
 markdown: kramdown
 highlighter: rouge
 plugins: [jekyll-paginate]
-paginate: 5
+paginate: 9
 
 navigation:
   - title: Home
     url: /index.html
-  - title: About
-    url: /about
-  - title: Contact
-    url: /contact
+#  - title: About
+#    url: /about
+#  - title: Contact
+#    url: /contact
 
 social:
   github: brianmaierjr
