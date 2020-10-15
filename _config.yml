@@ -1,0 +1,32 @@
+title: longtds
+description: longtds's blog. linux devops container kubernetes cloudnative hadoop
+
+url: https://longtds.github.io
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+
+navigation:
+  - title: Home
+    url: /index.html
+  - title: About
+    url: /about
+  - title: Contact
+    url: /contact
+
+social:
+  github: brianmaierjr
+  twitter: brianmaierjr
+  facebook: brianmaierjr
+  email: brimaidesigns@gmail.com
+  linkedin: brianmaierjr
+
+google_analytics: "UA-180658907-1"
+
+disqus:
+    shortname: my-disqus-shortname
