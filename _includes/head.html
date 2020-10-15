@@ -30,7 +30,7 @@
   <meta content="{{ site.url }}/about/" property="article:author">
   {% endif %}
   {% if page.image %}
-  <meta content="{{ site.url }}/assets/img/{{ page.image }}" property="og:image">
+  <meta content="{{ prepend: site.url }}" property="og:image">
   {% else %}
   <meta content="{{ prepend: site.url }}" property="og:image">
   {% endif %}
