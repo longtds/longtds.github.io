@@ -13,7 +13,7 @@ paginate: 9
 
 navigation:
   - title: Home
-    url: /index.html
+    url: /
 #  - title: About
 #    url: /about
 #  - title: Contact
