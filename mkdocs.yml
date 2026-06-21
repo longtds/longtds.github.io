@@ -1,0 +1,235 @@
+site_name: 技术手册
+site_description: 服务器 · Linux · 网络 · 虚拟化 · 容器 · K8s · 中间件 · 大数据 · AI · AIOps · 安全 · 渗透测试
+site_author: tech-handbook
+repo_url: https://gitlab.company.com/tech-handbook
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+  palette:
+    primary: indigo
+    accent: teal
+  font:
+    text: Noto Sans SC
+    code: JetBrains Mono
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.emoji
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+plugins:
+  - search:
+      lang: zh
+  - tags
+
+extra:
+  version:
+    provider: mike
+  social:
+    - icon: fontawesome/brands/gitlab
+      link: https://gitlab.company.com/tech-handbook
+
+copyright: Copyright &copy; 2026 Tech Handbook
+
+nav:
+  - 🏠 首页: index.md
+
+  - 01_服务器:
+    - 概述: 01_服务器/index.md
+    - CPU_内存_磁盘_网卡_RAID:
+      - 01_CPU: 01_服务器/CPU_内存_磁盘_网卡_RAID/01_CPU/README.md
+      - 02_内存: 01_服务器/CPU_内存_磁盘_网卡_RAID/02_内存/README.md
+      - 03_磁盘: 01_服务器/CPU_内存_磁盘_网卡_RAID/03_磁盘/README.md
+      - 04_RAID: 01_服务器/CPU_内存_磁盘_网卡_RAID/04_RAID/README.md
+      - 05_网卡: 01_服务器/CPU_内存_磁盘_网卡_RAID/05_网卡/README.md
+    - 服务器管理:
+      - 01_BMC_IPMI: 01_服务器/服务器管理/01_BMC/README.md
+      - 02_固件管理: 01_服务器/服务器管理/02_固件管理/README.md
+      - 03_故障定位: 01_服务器/服务器管理/03_故障定位/README.md
+      - 04_选型: 01_服务器/服务器管理/04_选型/README.md
+    - GPU服务器:
+      - 01_GPU架构: 01_服务器/GPU服务器/01_GPU架构/README.md
+      - 02_GPU互联: 01_服务器/GPU服务器/02_GPU互联/README.md
+      - 03_GPU故障诊断: 01_服务器/GPU服务器/03_GPU故障诊断/README.md
+
+  - 02_Linux:
+    - 概述: 02_Linux/index.md
+    - 01_系统管理: 02_Linux/01_系统管理/README.md
+    - 02_存储与文件系统: 02_Linux/02_存储与文件系统/README.md
+    - 03_系统调优: 02_Linux/03_系统调优/README.md
+    - 04_性能排查: 02_Linux/04_性能排查/README.md
+    - 05_系统维护: 02_Linux/05_系统维护/README.md
+    - 06_Shell脚本: 02_Linux/06_Shell脚本/README.md
+
+  - 03_网络:
+    - 概述: 03_网络/index.md
+    - 基础网络协议:
+      - 01_OSI_TCPIP: 03_网络/01_基础网络协议/01_OSI_TCPIP/README.md
+      - 02_二层协议: 03_网络/01_基础网络协议/02_二层协议/README.md
+      - 03_三层协议: 03_网络/01_基础网络协议/03_三层协议/README.md
+      - 04_传输层协议: 03_网络/01_基础网络协议/04_传输层协议/README.md
+      - 05_应用层协议: 03_网络/01_基础网络协议/05_应用层协议/README.md
+    - 02_网络设备与运维: 03_网络/02_网络设备与运维/README.md
+    - 03_SDN: 03_网络/03_SDN/README.md
+    - 04_高速网络: 03_网络/04_高速网络/README.md
+    - 05_网络排查工具: 03_网络/05_网络排查工具/README.md
+    - 06_网络项目与实验: 03_网络/06_网络项目与实验/README.md
+
+  - 04_虚拟化:
+    - 概述: 04_虚拟化/index.md
+    - 01_技术原理: 04_虚拟化/01_技术原理/README.md
+    - 02_KVM: 04_虚拟化/02_KVM/README.md
+    - 03_GPU虚拟化: 04_虚拟化/03_GPU虚拟化/README.md
+    - 04_容器vs虚拟机: 04_虚拟化/04_容器vs虚拟机/README.md
+
+  - 05_私有云:
+    - 概述: 05_私有云/index.md
+    - 01_OpenStack: 05_私有云/01_OpenStack/README.md
+    - 02_云平台选型: 05_私有云/02_云平台选型/README.md
+    - 03_自动化管理: 05_私有云/03_自动化管理/README.md
+
+  - 06_Docker:
+    - 概述: 06_Docker/index.md
+    - 01_容器原理: 06_Docker/01_容器原理/README.md
+    - 02_Docker实践: 06_Docker/02_Docker实践/README.md
+    - 03_运行时: 06_Docker/03_运行时/README.md
+    - 04_容器化迁移: 06_Docker/04_容器化迁移/README.md
+
+  - 07_Kubernetes:
+    - 概述: 07_Kubernetes/index.md
+    - 01_基础概念: 07_Kubernetes/01_基础概念/README.md
+    - 02_集群部署: 07_Kubernetes/02_集群部署/README.md
+    - 03_网络: 07_Kubernetes/03_网络/README.md
+    - 04_存储: 07_Kubernetes/04_存储/README.md
+    - 05_调度与资源管理: 07_Kubernetes/05_调度与资源管理/README.md
+    - 06_Operator开发: 07_Kubernetes/06_Operator开发/README.md
+    - 07_安全: 07_Kubernetes/07_安全/README.md
+    - 08_CICD: 07_Kubernetes/08_CICD/README.md
+    - 09_可观测性: 07_Kubernetes/09_可观测性/README.md
+    - 10_集群运维: 07_Kubernetes/10_集群运维/README.md
+    - 11_生态工具: 07_Kubernetes/11_生态工具/README.md
+
+  - 08_认证与SSO:
+    - 概述: 08_认证与SSO/index.md
+    - 01_认证协议: 08_认证与SSO/01_认证协议/README.md
+    - 02_Keycloak: 08_认证与SSO/02_Keycloak/README.md
+    - 03_企业认证体系: 08_认证与SSO/03_企业认证体系/README.md
+
+  - 09_中间件:
+    - 概述: 09_中间件/index.md
+    - 00_选型方法论: 09_中间件/00_选型方法论.md
+    - 01_MySQL: 09_中间件/01_MySQL/README.md
+    - 02_PostgreSQL: 09_中间件/02_PostgreSQL/README.md
+    - 03_Redis: 09_中间件/03_Redis/README.md
+    - 04_Kafka: 09_中间件/04_Kafka/README.md
+    - 05_Nacos: 09_中间件/05_Nacos/README.md
+    - 06_Elasticsearch: 09_中间件/06_Elasticsearch/README.md
+    - 07_ClickHouse: 09_中间件/07_ClickHouse/README.md
+    - 08_Nginx: 09_中间件/08_Nginx/README.md
+
+  - 10_大数据:
+    - 概述: 10_大数据/index.md
+    - 00_技术演进: 10_大数据/00_技术演进.md
+    - 01_Hadoop: 10_大数据/01_Hadoop/README.md
+    - 02_Hive: 10_大数据/02_Hive/README.md
+    - 03_HBase: 10_大数据/03_HBase/README.md
+    - 04_Spark: 10_大数据/04_Spark/README.md
+    - 05_Presto: 10_大数据/05_Presto/README.md
+    - 06_ClickHouse: 10_大数据/06_ClickHouse/README.md
+    - 07_PostgreSQL: 10_大数据/07_PostgreSQL/README.md
+    - 08_数据湖与存储: 10_大数据/08_数据湖与存储/README.md
+
+  - 11_AI基础设施:
+    - 概述: 11_AI基础设施/index.md
+    - 01_GPU与硬件: 11_AI基础设施/01_GPU与硬件/README.md
+    - 02_推理框架: 11_AI基础设施/02_推理框架/README.md
+    - 03_推理服务架构: 11_AI基础设施/03_推理服务架构/README.md
+    - 04_模型部署: 11_AI基础设施/04_模型部署/README.md
+    - 05_推理可观测性: 11_AI基础设施/05_推理可观测性/README.md
+    - 06_推理成本优化: 11_AI基础设施/06_推理成本优化/README.md
+
+  - 12_AIOps:
+    - 概述: 12_AIOps/index.md
+    - 01_异常检测: 12_AIOps/01_异常检测/README.md
+    - 02_LLM告警: 12_AIOps/02_LLM告警/README.md
+    - 03_告警管理: 12_AIOps/03_告警管理/README.md
+    - 04_自动化修复: 12_AIOps/04_自动化修复/README.md
+    - 05_成本优化: 12_AIOps/05_成本优化/README.md
+    - 06_运维知识库: 12_AIOps/06_运维知识库/README.md
+
+  - 13_DevOps:
+    - 概述: 13_DevOps/index.md
+    - 01_基础设施即代码: 13_DevOps/01_基础设施即代码/README.md
+    - 02_CICD: 13_DevOps/02_CICD/README.md
+    - 03_代码管理: 13_DevOps/03_代码管理/README.md
+    - 04_容器化CI: 13_DevOps/04_容器化CI/README.md
+    - 05_部署策略: 13_DevOps/05_部署策略/README.md
+
+  - 14_安全:
+    - 概述: 14_安全/index.md
+    - 01_Linux安全: 14_安全/01_Linux安全/README.md
+    - 02_容器安全: 14_安全/02_容器安全/README.md
+    - 03_K8s安全: 14_安全/03_K8s安全/README.md
+    - 04_网络安全: 14_安全/04_网络安全/README.md
+    - 05_密钥管理: 14_安全/05_密钥管理/README.md
+    - 06_供应链安全: 14_安全/06_供应链安全/README.md
+    - 07_网络安全基础: 14_安全/07_网络安全基础/README.md
+    - 08_加密与认证: 14_安全/08_加密与认证/README.md
+    - 09_漏洞管理: 14_安全/09_漏洞管理/README.md
+    - 10_安全运营: 14_安全/10_安全运营/README.md
+
+  - 15_渗透测试:
+    - 概述: 15_渗透测试/index.md
+    - 00_Kali概述: 15_渗透测试/00_Kali概述.md
+    - 01_信息收集: 15_渗透测试/01_信息收集/README.md
+    - 02_漏洞扫描: 15_渗透测试/02_漏洞扫描/README.md
+    - 03_网络攻击: 15_渗透测试/03_网络攻击/README.md
+    - 04_Web攻击: 15_渗透测试/04_Web攻击/README.md
+    - 05_认证攻击: 15_渗透测试/05_认证攻击/README.md
+    - 06_后渗透: 15_渗透测试/06_后渗透/README.md
+    - 07_社会工程学: 15_渗透测试/07_社会工程学/README.md
+    - 08_防御加固: 15_渗透测试/08_防御加固/README.md
+    - 09_CTF实战: 15_渗透测试/09_CTF实战/README.md
+    - 10_方法论: 15_渗透测试/10_方法论/README.md
+
+  - 16_故障排查:
+    - 概述: 16_故障排查/index.md
+    - 故障日志模板: 16_故障排查/故障日志模板.md
+    - 01_Linux篇: 16_故障排查/01_Linux篇/README.md
+    - 02_K8s篇: 16_故障排查/02_K8s篇/README.md
+    - 03_中间件篇: 16_故障排查/03_中间件篇/README.md
+    - 04_大数据篇: 16_故障排查/04_大数据篇/README.md
+    - 05_AI推理篇: 16_故障排查/05_AI推理篇/README.md

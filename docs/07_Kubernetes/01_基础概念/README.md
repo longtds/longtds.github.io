@@ -1,0 +1,32 @@
+# 基础概念
+
+## 架构
+
+```
+┌──────────────────┐    ┌──────────────────┐
+│   Control Plane   │    │   Worker Node    │
+│                   │    │                  │
+│ API Server ───────┼───►│ Kubelet          │
+│    │              │    │    │             │
+│ ETCD (分布式存储)  │    │ Container Runtime│
+│    │              │    │    │             │
+│ Scheduler         │    │ Pod 1 │ Pod 2   │
+│    │              │    │      │          │
+│ Controller Manager│    │ Kube-Proxy      │
+└──────────────────┘    └──────────────────┘
+```
+
+## 核心对象
+
+| 对象 | 作用 | 分类 |
+|:---|:---|:---|
+| Pod | 最小调度单元 | 工作负载 |
+| Deployment | 无状态应用管理 | 工作负载 |
+| StatefulSet | 有状态应用 | 工作负载 |
+| DaemonSet | 每个节点跑一个 | 工作负载 |
+| Service | 服务发现与负载均衡 | 网络 |
+| Ingress | HTTP 入口 | 网络 |
+| ConfigMap/Secret | 配置与密钥 | 存储 |
+| PV/PVC | 持久化存储 | 存储 |
+| Namespace | 资源隔离 | 管理 |
+| RBAC (Role/ClusterRole) | 权限控制 | 安全 |
