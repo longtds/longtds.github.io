@@ -113,6 +113,8 @@ nav:
     - 02_KVM: 04_虚拟化/02_KVM/README.md
     - 03_GPU虚拟化: 04_虚拟化/03_GPU虚拟化/README.md
     - 04_容器vs虚拟机: 04_虚拟化/04_容器vs虚拟机/README.md
+    - 05_VMware_vSphere: 04_虚拟化/05_VMware_vSphere/README.md
+    - 06_Proxmox_VE: 04_虚拟化/06_Proxmox_VE/README.md
     - 99_发展与展望: 04_虚拟化/99_发展与展望.md
 
   - 05_私有云:
