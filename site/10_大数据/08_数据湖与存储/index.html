@@ -3517,10 +3517,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#delta-lake" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Delta Lake
+        一、来历与演进
       
     </span>
   </a>
@@ -3528,10 +3528,403 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#s3-vs-hdfs" class="md-nav__link">
+  <a href="#lakehouse" class="md-nav__link">
     <span class="md-ellipsis">
       
-        S3 vs HDFS
+        二、什么是数据湖 / Lakehouse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、四层架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、底层存储
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、底层存储">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 对象存储（云原生主流）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-hdfs-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 HDFS vs 对象存储
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-apache-ozone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Apache Ozone（新一代）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 文件格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、开放表格式三国杀（核心）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、开放表格式三国杀（核心）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-iceberg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Iceberg
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-delta-lake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Delta Lake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-hudi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Hudi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 三者对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 选型建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、Catalog（元数据管理）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、Catalog（元数据管理）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polaris2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Polaris（2024 新势力）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、计算引擎与数据湖
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lakehouse_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、典型 Lakehouse 架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、最佳实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 表设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 文件大小调优
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 分区策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 元数据维护
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 流式入湖
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 时间旅行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7 数据治理
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、私有化 / 国产化数据湖栈
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、私有化 / 国产化数据湖栈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 私有化首选
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 国产对象存储
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 国产数据湖商业产品
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、常见坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、监控
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lakehouse-vs-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、Lakehouse vs 传统数仓 vs 数据湖
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、未来展望
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、学习路径
       
     </span>
   </a>
@@ -5565,10 +5958,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#delta-lake" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Delta Lake
+        一、来历与演进
       
     </span>
   </a>
@@ -5576,10 +5969,403 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#s3-vs-hdfs" class="md-nav__link">
+  <a href="#lakehouse" class="md-nav__link">
     <span class="md-ellipsis">
       
-        S3 vs HDFS
+        二、什么是数据湖 / Lakehouse
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、四层架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、底层存储
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、底层存储">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 对象存储（云原生主流）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-hdfs-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 HDFS vs 对象存储
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-apache-ozone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Apache Ozone（新一代）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 文件格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、开放表格式三国杀（核心）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、开放表格式三国杀（核心）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-iceberg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Iceberg
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-delta-lake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Delta Lake
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-hudi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Hudi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 三者对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 选型建议
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、Catalog（元数据管理）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、Catalog（元数据管理）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#polaris2024" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Polaris（2024 新势力）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、计算引擎与数据湖
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lakehouse_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、典型 Lakehouse 架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、最佳实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 表设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 文件大小调优
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 分区策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 元数据维护
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#95" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.5 流式入湖
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#96" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.6 时间旅行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#97" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.7 数据治理
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、私有化 / 国产化数据湖栈
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、私有化 / 国产化数据湖栈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 私有化首选
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 国产对象存储
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 国产数据湖商业产品
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、常见坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、监控
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lakehouse-vs-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、Lakehouse vs 传统数仓 vs 数据湖
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、未来展望
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、学习路径
       
     </span>
   </a>
@@ -5655,64 +6441,875 @@
 
 
 <h1 id="_1">数据湖与存储<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="delta-lake">Delta Lake<a class="headerlink" href="#delta-lake" title="Permanent link">&para;</a></h2>
-<p>Delta Lake 在数据湖上提供 ACID 事务、时间旅行和 Schema 演化。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Delta 表操作</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">df</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;delta&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="s2">&quot;overwrite&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;/data/delta-table&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 时间旅行</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">spark</span><span class="o">.</span><span class="n">read</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;delta&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;versionAsOf&quot;</span><span class="p">,</span> <span class="s2">&quot;10&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;/data/delta-table&quot;</span><span class="p">)</span>
+<blockquote>
+<p>数据湖 = <strong>对象存储 + 开放表格式 + Catalog</strong>。Iceberg / Delta / Hudi 三国杀重新定义了大数据存储，<strong>Lakehouse（湖仓一体）成为 2025 新主流</strong>。</p>
+</blockquote>
+<h2 id="_2">一、来历与演进<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">年份</th>
+<th style="text-align: left;">事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2010</td>
+<td style="text-align: left;">数据湖概念由 Pentaho 创始人 James Dixon 提出</td>
+</tr>
+<tr>
+<td style="text-align: center;">2015</td>
+<td style="text-align: left;">AWS S3 + Spark 普及，"原始数据湖"流行</td>
+</tr>
+<tr>
+<td style="text-align: center;">2017</td>
+<td style="text-align: left;">Databricks 发布 <strong>Delta Lake</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2018</td>
+<td style="text-align: left;">Netflix 开源 <strong>Apache Iceberg</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2019</td>
+<td style="text-align: left;">Uber 开源 <strong>Apache Hudi</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;">2020</td>
+<td style="text-align: left;">"Lakehouse"概念由 Databricks 提出</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022</td>
+<td style="text-align: left;">Snowflake 拥抱 Iceberg、Tabular 创立</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024</td>
+<td style="text-align: left;"><strong>Databricks 14 亿美元收购 Tabular</strong>，Iceberg 与 Delta 走向统一</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024</td>
+<td style="text-align: left;"><strong>Apache Polaris</strong> Catalog 标准化运动开启</td>
+</tr>
+<tr>
+<td style="text-align: center;">2025</td>
+<td style="text-align: left;">Iceberg 成为事实标准，Delta UniForm 双格式兼容</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>2024 行业大事件</strong>：Databricks 收购 Tabular（Iceberg 创始团队），意味着 <strong>Delta 和 Iceberg 走向兼容融合</strong>，<strong>Iceberg 协议层胜出</strong>。</p>
+</blockquote>
+<h2 id="lakehouse">二、什么是数据湖 / Lakehouse<a class="headerlink" href="#lakehouse" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>数据湖（Data Lake）:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  存任意原始数据（结构化/半结构化/非结构化）
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  以对象存储为底（S3/HDFS/OSS）
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  以开放格式存储（Parquet/ORC/Avro/CSV/JSON）
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  Schema-on-Read（查时定义结构）
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># UPSERT（合并）</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="kn">from</span><span class="w"> </span><span class="nn">delta.tables</span><span class="w"> </span><span class="kn">import</span> <span class="n">DeltaTable</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">deltaTable</span> <span class="o">=</span> <span class="n">DeltaTable</span><span class="o">.</span><span class="n">forPath</span><span class="p">(</span><span class="n">spark</span><span class="p">,</span> <span class="s2">&quot;/data/delta-table&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">deltaTable</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;target&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="n">updates</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;source&quot;</span><span class="p">),</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="s2">&quot;target.id = source.id&quot;</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="p">)</span><span class="o">.</span><span class="n">whenMatchedUpdateAll</span><span class="p">()</span><span class="o">.</span><span class="n">whenNotMatchedInsertAll</span><span class="p">()</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>传统数据仓库（Data Warehouse）:
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  结构化数据
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  Schema-on-Write
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  事务/ACID
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  高性能 BI
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>Lakehouse（湖仓一体） = 数据湖 + 数据仓库:
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  开放格式（Parquet）+ ACID 事务 + Schema
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>  廉价对象存储 + 数仓级查询性能
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>  → Iceberg / Delta / Hudi 三大开放表格式
 </code></pre></div>
-<h2 id="s3-vs-hdfs">S3 vs HDFS<a class="headerlink" href="#s3-vs-hdfs" title="Permanent link">&para;</a></h2>
+<h2 id="_3">三、四层架构<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>┌─────────────────────────────────────────────┐
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>│  应用层    BI / 数据科学 / ML / Dashboard    │
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>└────────────────────┬────────────────────────┘
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>                     ↓
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>┌─────────── 计算层（多引擎共存）────────────────┐
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│ Spark / Flink / Trino / Doris / ClickHouse  │
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>└────────────────────┬────────────────────────┘
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>                     ↓
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>┌─────────── 表格式层 ─────────────────────────┐
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>│ Iceberg / Delta / Hudi                      │
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│ → 元数据 + 事务 + 时间旅行 + Schema 演进     │
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>└────────────────────┬────────────────────────┘
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>                     ↓
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>┌─────────── 文件格式层 ───────────────────────┐
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>│ Parquet（列存）/ ORC / Avro                  │
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>└────────────────────┬────────────────────────┘
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>                     ↓
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>┌─────────── 存储层 ───────────────────────────┐
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>│ S3 / OSS / OBS / MinIO / HDFS / Ozone / GCS │
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>└─────────────────────────────────────────────┘
+</code></pre></div>
+<h2 id="_4">四、底层存储<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 对象存储（云原生主流）<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">厂商</th>
+<th style="text-align: left;">特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>S3</strong></td>
+<td style="text-align: left;">AWS</td>
+<td style="text-align: left;">行业标准，几乎所有引擎支持 S3A</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OSS</strong></td>
+<td style="text-align: left;">阿里云</td>
+<td style="text-align: left;">S3 兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OBS</strong></td>
+<td style="text-align: left;">华为云</td>
+<td style="text-align: left;">S3 兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>COS</strong></td>
+<td style="text-align: left;">腾讯云</td>
+<td style="text-align: left;">S3 兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GCS</strong></td>
+<td style="text-align: left;">Google</td>
+<td style="text-align: left;">S3 兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Blob</strong></td>
+<td style="text-align: left;">Azure</td>
+<td style="text-align: left;">ABFS 协议</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MinIO</strong></td>
+<td style="text-align: left;">开源</td>
+<td style="text-align: left;">S3 兼容，私有化首选</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ceph RGW</strong></td>
+<td style="text-align: left;">开源</td>
+<td style="text-align: left;">S3 兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>JuiceFS</strong></td>
+<td style="text-align: left;">开源</td>
+<td style="text-align: left;">POSIX 兼容文件系统 over 对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="42-hdfs-vs">4.2 HDFS vs 对象存储<a class="headerlink" href="#42-hdfs-vs" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">维度</th>
 <th style="text-align: left;">HDFS</th>
-<th style="text-align: left;">S3 / MinIO</th>
+<th style="text-align: left;">对象存储</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">协议</td>
-<td style="text-align: left;">专用协议</td>
-<td style="text-align: left;">HTTP RESTful</td>
+<td style="text-align: left;">一致性</td>
+<td style="text-align: left;">强</td>
+<td style="text-align: left;">最终（部分强）</td>
 </tr>
 <tr>
-<td style="text-align: left;">扩展性</td>
-<td style="text-align: left;">有限</td>
-<td style="text-align: left;">无限</td>
+<td style="text-align: left;">延迟</td>
+<td style="text-align: left;">低</td>
+<td style="text-align: left;">中（首字节延迟）</td>
 </tr>
 <tr>
-<td style="text-align: left;">存储成本</td>
-<td style="text-align: left;">高（3副本）</td>
-<td style="text-align: left;">低（纠删码）</td>
+<td style="text-align: left;">吞吐</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;"><strong>极高</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">计算存储耦合</td>
-<td style="text-align: left;">物理耦合</td>
-<td style="text-align: left;">分离</td>
+<td style="text-align: left;">成本</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;"><strong>低</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">生态</td>
-<td style="text-align: left;">Hadoop 生态</td>
-<td style="text-align: left;">通用 S3 生态</td>
+<td style="text-align: left;">弹性</td>
+<td style="text-align: left;">差</td>
+<td style="text-align: left;"><strong>极好</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">K8s 集成</td>
-<td style="text-align: left;">困难</td>
-<td style="text-align: left;">原生集成</td>
+<td style="text-align: left;">运维</td>
+<td style="text-align: left;">重</td>
+<td style="text-align: left;"><strong>轻</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">元数据</td>
+<td style="text-align: left;">单点 NN</td>
+<td style="text-align: left;">分布式</td>
+</tr>
+<tr>
+<td style="text-align: left;">RENAME</td>
+<td style="text-align: left;">原子</td>
+<td style="text-align: left;">慢/不原子</td>
+</tr>
+<tr>
+<td style="text-align: left;">Append</td>
+<td style="text-align: left;">弱</td>
+<td style="text-align: left;">多版本</td>
+</tr>
+<tr>
+<td style="text-align: left;">适合</td>
+<td style="text-align: left;">私有化</td>
+<td style="text-align: left;">云上</td>
 </tr>
 </tbody>
 </table>
+<h3 id="43-apache-ozone">4.3 Apache Ozone（新一代）<a class="headerlink" href="#43-apache-ozone" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Hadoop 社区为替代 HDFS 设计:
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  ✅ 对象存储 + 文件系统 双模式
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  ✅ 解决 HDFS 小文件
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  ✅ S3 兼容 API
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  ✅ 横向扩展百亿对象
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>定位: 私有化场景的&quot;S3 替代品&quot;
+</code></pre></div>
+<h3 id="44">4.4 文件格式<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">格式</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: center;">推荐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Parquet</strong></td>
+<td style="text-align: left;">列存</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐ <strong>首选</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">ORC</td>
+<td style="text-align: left;">列存</td>
+<td style="text-align: center;">⭐⭐⭐⭐ Hive 偏好</td>
+</tr>
+<tr>
+<td style="text-align: left;">Avro</td>
+<td style="text-align: left;">行存 + Schema</td>
+<td style="text-align: center;">⭐⭐⭐ 流式</td>
+</tr>
+<tr>
+<td style="text-align: left;">JSON / CSV</td>
+<td style="text-align: left;">文本</td>
+<td style="text-align: center;">⭐⭐ 原始数据</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lance</strong></td>
+<td style="text-align: left;">列存 + 向量</td>
+<td style="text-align: center;">⭐⭐⭐ AI/ML 新势力</td>
+</tr>
+</tbody>
+</table>
+<p><strong>结论</strong>：<strong>Parquet 是 2025 事实标准</strong>（Iceberg/Delta/Hudi 都以 Parquet 为底）。</p>
+<h2 id="_5">五、开放表格式三国杀（核心）<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="51-iceberg">5.1 Iceberg<a class="headerlink" href="#51-iceberg" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>出身: Netflix 2018 开源
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>特点:
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  - 隐式分区（Hidden Partitioning）
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  - Schema/分区演进无锁
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  - Snapshot 时间旅行
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  - 元数据分层（Snapshot → Manifest → DataFile）
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  - 多引擎良好支持
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>  - V2 行级 DELETE/UPDATE
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  - Branch / Tag（Git 风格）
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>优势:
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>  ✅ 设计最新最干净
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>  ✅ 多引擎中立（Spark/Trino/Flink/Doris/CH 都好）
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>  ✅ Catalog 标准化（REST Catalog / Polaris）
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>  ✅ 2024 后行业事实标准
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>劣势:
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>  ⚠️ Streaming 写入相对弱
+</code></pre></div>
+<h3 id="52-delta-lake">5.2 Delta Lake<a class="headerlink" href="#52-delta-lake" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>出身: Databricks 2017 开源
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>特点:
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  - 事务日志 (_delta_log)
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  - 强 ACID + 乐观并发
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  - Time Travel
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>  - Schema Evolution
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  - Liquid Clustering（自动重组）
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  - DML 性能极强
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>  - **UniForm**（与 Iceberg 双格式兼容，2.4+）
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>优势:
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>  ✅ Spark/Databricks 一等公民
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>  ✅ 性能优化最深
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>  ✅ 与 Photon 引擎深度整合
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>劣势:
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>  ⚠️ 非 Spark 引擎支持稍弱（虽然 UniForm 缓解）
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>  ⚠️ Databricks 主导带来&quot;商业绑架&quot;担忧
+</code></pre></div>
+<h3 id="53-hudi">5.3 Hudi<a class="headerlink" href="#53-hudi" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>出身: Uber 2017 开源
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>特点:
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  - 两种存储模式: CoW / MoR
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  - 内置 CDC（Change Capture）
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>  - 增量查询（incremental queries）
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>  - Clustering / Compaction 内置
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  - Record-level Index
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>  - 强流处理基因
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>优势:
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>  ✅ 流式入湖 + CDC 最强
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>  ✅ Upsert / Delete 性能好
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>  ✅ 与 Kafka/Flink 配合
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>  ✅ 中国 Uber 系生态深
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>劣势:
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>  ⚠️ 设计偏复杂
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>  ⚠️ 多引擎支持不如 Iceberg
+</code></pre></div>
+<h3 id="54">5.4 三者对比<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">Iceberg</th>
+<th style="text-align: left;">Delta</th>
+<th style="text-align: left;">Hudi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">出身</td>
+<td style="text-align: left;">Netflix</td>
+<td style="text-align: left;">Databricks</td>
+<td style="text-align: left;">Uber</td>
+</tr>
+<tr>
+<td style="text-align: left;">多引擎</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">流式入湖</td>
+<td style="text-align: left;">⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">ACID</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">Schema 演进</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">CDC / 增量</td>
+<td style="text-align: left;">⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+<td style="text-align: left;"><strong>⭐⭐⭐⭐⭐</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">时间旅行</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">性能（Spark）</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+<td style="text-align: left;"><strong>⭐⭐⭐⭐⭐</strong></td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">Catalog</td>
+<td style="text-align: left;">REST / HMS / Polaris</td>
+<td style="text-align: left;">Unity</td>
+<td style="text-align: left;">HMS</td>
+</tr>
+<tr>
+<td style="text-align: left;">国内主流</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">商业支持</td>
+<td style="text-align: left;">Tabular(被 DB 收)</td>
+<td style="text-align: left;">Databricks</td>
+<td style="text-align: left;">Onehouse</td>
+</tr>
+</tbody>
+</table>
+<h3 id="55">5.5 选型建议<a class="headerlink" href="#55" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>新建项目 + 多引擎共存:    ✅ Iceberg
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>Databricks 客户:        ✅ Delta + UniForm
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>重流式入湖 + CDC:        ✅ Hudi
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>中国大厂常见组合:         Iceberg 为主，Hudi 为辅
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>最稳妥:                 Iceberg（行业事实标准）
+</code></pre></div>
+<h2 id="catalog">六、Catalog（元数据管理）<a class="headerlink" href="#catalog" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>Catalog 决定:
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  - 表/库元数据存哪里
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  - 如何被多引擎共享
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  - 权限/认证如何接
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>主流 Catalog:
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>  1. Hive Metastore (HMS)    最经典，所有引擎兼容
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>  2. AWS Glue Catalog        AWS 默认
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>  3. Iceberg REST Catalog    新标准（多引擎）
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>  4. Apache Polaris          Snowflake 开源、Iceberg REST 实现
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>  5. Tabular (商业)           被 Databricks 收购
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>  6. Unity Catalog (Databricks) Delta 配套，开源化中
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>  7. Nessie                  Git 风格 Catalog（Dremio）
+</code></pre></div>
+<h3 id="polaris2024">Polaris（2024 新势力）<a class="headerlink" href="#polaris2024" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>特点:
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  ✅ Apache 2.0 开源
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  ✅ Iceberg REST 协议
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  ✅ 多租户 + RBAC
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  ✅ Snowflake 主推
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  ✅ 与 Trino/Spark/Flink 集成
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>定位: HMS 的&quot;现代化继任者&quot;
+</code></pre></div>
+<h2 id="_6">七、计算引擎与数据湖<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">引擎</th>
+<th style="text-align: center;">Iceberg</th>
+<th style="text-align: center;">Delta</th>
+<th style="text-align: center;">Hudi</th>
+<th style="text-align: left;">适合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Spark</strong></td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">ETL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Flink</strong></td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">流入湖</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Trino/Presto</strong></td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: left;">Adhoc</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Doris</strong></td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: left;">BI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>StarRocks</strong></td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: left;">BI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ClickHouse</strong></td>
+<td style="text-align: center;">⭐⭐⭐ (24.x+)</td>
+<td style="text-align: center;">⭐⭐</td>
+<td style="text-align: center;">⭐⭐</td>
+<td style="text-align: left;">OLAP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Databricks</strong></td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: left;">商业</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Snowflake</strong></td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐</td>
+<td style="text-align: left;">商业云</td>
+</tr>
+</tbody>
+</table>
+<h2 id="lakehouse_1">八、典型 Lakehouse 架构<a class="headerlink" href="#lakehouse_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>┌─────────────────────────────────────────────────┐
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>│  CDC: Debezium → Kafka                          │
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>│  日志: Filebeat / Vector → Kafka                 │
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>│  业务: API → Kafka                              │
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>└────────────────────┬────────────────────────────┘
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>                     ↓
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>┌──────── 实时入湖 ────────────────────────────────┐
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>│  Flink + Iceberg/Hudi → S3                      │
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>│  Spark Streaming + Delta → S3                   │
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>└────────────────────┬────────────────────────────┘
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>                     ↓
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>┌──────── 数据湖 (S3 + Iceberg/Delta) ────────────┐
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>│  Bronze (原始)                                  │
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>│   ↓ Spark / Flink ETL                          │
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>│  Silver (清洗)                                  │
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>│   ↓ 维度建模                                   │
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>│  Gold (面向应用)                                │
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>└────────────────────┬────────────────────────────┘
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>                     ↓
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>┌──────── 查询服务 ────────────────────────────────┐
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>│  Trino    → Adhoc SQL                          │
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>│  Doris    → BI 报表                            │
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>│  ClickHouse → 实时 OLAP                        │
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>│  Spark SQL → ETL / 数据科学                    │
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>│  Flink SQL → 流式查询                          │
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>└─────────────────────────────────────────────────┘
+</code></pre></div>
+<h2 id="_7">九、最佳实践<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 表设计<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1">-- Iceberg 标准建表</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">iceberg</span><span class="p">.</span><span class="n">warehouse</span><span class="p">.</span><span class="n">events</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span><span class="n">event_time</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="p">,</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span><span class="n">user_id</span><span class="w"> </span><span class="nb">BIGINT</span><span class="p">,</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">  </span><span class="n">event</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span><span class="n">country</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">  </span><span class="n">amount</span><span class="w"> </span><span class="nb">DECIMAL</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">  </span><span class="n">attrs</span><span class="w"> </span><span class="k">MAP</span><span class="o">&lt;</span><span class="n">STRING</span><span class="p">,</span><span class="w"> </span><span class="n">STRING</span><span class="o">&gt;</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="p">)</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="k">USING</span><span class="w"> </span><span class="n">iceberg</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="n">PARTITIONED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">days</span><span class="p">(</span><span class="n">event_time</span><span class="p">))</span><span class="w">  </span><span class="c1">-- 隐式分区</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="n">TBLPROPERTIES</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="w">  </span><span class="s1">&#39;format-version&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2&#39;</span><span class="p">,</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="w">  </span><span class="s1">&#39;write.parquet.compression-codec&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;zstd&#39;</span><span class="p">,</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="w">  </span><span class="s1">&#39;write.target-file-size-bytes&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;536870912&#39;</span><span class="p">,</span><span class="w">  </span><span class="c1">-- 512MB</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a><span class="w">  </span><span class="s1">&#39;write.metadata.delete-after-commit.enabled&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;true&#39;</span><span class="p">,</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="w">  </span><span class="s1">&#39;write.metadata.previous-versions-max&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;10&#39;</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="p">);</span>
+</code></pre></div>
+<h3 id="92">9.2 文件大小调优<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>✅ 目标文件大小: 128MB - 1GB（推荐 256-512MB）
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>✅ 避免小文件（&lt; 64MB）
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>✅ 定期 compaction:
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>   - Iceberg: rewrite_data_files
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>   - Delta: OPTIMIZE
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>   - Hudi: Clustering / Compaction
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>✅ 流式写后定期合并（每小时/每天）
+</code></pre></div>
+<h3 id="93">9.3 分区策略<a class="headerlink" href="#93" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>✅ 高基数列不要做分区列
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>✅ 时间分区: day/month
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>✅ Iceberg 隐式分区:
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>   PARTITIONED BY (days(event_time), bucket(16, user_id))
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>✅ 二级分区谨慎（深度 ≤ 2）
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>❌ 不要按 user_id 直接分区（基数太高）
+</code></pre></div>
+<h3 id="94">9.4 元数据维护<a class="headerlink" href="#94" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">-- Iceberg</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">EXECUTE</span><span class="w"> </span><span class="n">optimize</span><span class="p">;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">EXECUTE</span><span class="w"> </span><span class="n">expire_snapshots</span><span class="p">(</span><span class="n">retention_threshold</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="s1">&#39;7d&#39;</span><span class="p">);</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">EXECUTE</span><span class="w"> </span><span class="n">remove_orphan_files</span><span class="p">();</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">EXECUTE</span><span class="w"> </span><span class="n">rewrite_manifests</span><span class="p">();</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1">-- Delta</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="n">OPTIMIZE</span><span class="w"> </span><span class="n">events</span><span class="p">;</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="k">VACUUM</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="n">RETAIN</span><span class="w"> </span><span class="mi">168</span><span class="w"> </span><span class="n">HOURS</span><span class="p">;</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">HISTORY</span><span class="w"> </span><span class="n">events</span><span class="p">;</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="n">RESTORE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="k">VERSION</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="mi">123</span><span class="p">;</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="c1">-- Hudi</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="k">CALL</span><span class="w"> </span><span class="n">run_compaction</span><span class="p">(...);</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="k">CALL</span><span class="w"> </span><span class="n">run_clustering</span><span class="p">(...);</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="k">CALL</span><span class="w"> </span><span class="n">clean_archived_logs</span><span class="p">(...);</span>
+</code></pre></div>
+<h3 id="95">9.5 流式入湖<a class="headerlink" href="#95" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># Spark Structured Streaming → Iceberg</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="p">(</span><span class="n">spark</span><span class="o">.</span><span class="n">readStream</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>   <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;kafka&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;kafka.bootstrap.servers&quot;</span><span class="p">,</span> <span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>   <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;subscribe&quot;</span><span class="p">,</span> <span class="s2">&quot;events&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">load</span><span class="p">()</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>   <span class="o">.</span><span class="n">selectExpr</span><span class="p">(</span><span class="s2">&quot;CAST(value AS STRING) as json&quot;</span><span class="p">)</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>   <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">from_json</span><span class="p">(</span><span class="n">col</span><span class="p">(</span><span class="s2">&quot;json&quot;</span><span class="p">),</span> <span class="n">schema</span><span class="p">)</span><span class="o">.</span><span class="n">alias</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">))</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>   <span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="s2">&quot;data.*&quot;</span><span class="p">)</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>   <span class="o">.</span><span class="n">writeStream</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>   <span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;iceberg&quot;</span><span class="p">)</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>   <span class="o">.</span><span class="n">outputMode</span><span class="p">(</span><span class="s2">&quot;append&quot;</span><span class="p">)</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>   <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;path&quot;</span><span class="p">,</span> <span class="s2">&quot;s3a://bucket/warehouse/events&quot;</span><span class="p">)</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>   <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;checkpointLocation&quot;</span><span class="p">,</span> <span class="s2">&quot;s3a://bucket/ckpt/events&quot;</span><span class="p">)</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>   <span class="o">.</span><span class="n">trigger</span><span class="p">(</span><span class="n">processingTime</span><span class="o">=</span><span class="s1">&#39;1 minute&#39;</span><span class="p">)</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>   <span class="o">.</span><span class="n">start</span><span class="p">())</span>
+</code></pre></div>
+<h3 id="96">9.6 时间旅行<a class="headerlink" href="#96" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1">-- Iceberg</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">FOR</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="s1">&#39;2026-06-22 00:00:00&#39;</span><span class="p">;</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">FOR</span><span class="w"> </span><span class="k">VERSION</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="mi">1234567</span><span class="p">;</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="c1">-- Delta</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="s1">&#39;2026-06-22&#39;</span><span class="p">;</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">VERSION</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">OF</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="c1">-- Hudi</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="k">SET</span><span class="w"> </span><span class="n">hoodie</span><span class="p">.</span><span class="n">datasource</span><span class="p">.</span><span class="k">read</span><span class="p">.</span><span class="k">read</span><span class="p">.</span><span class="k">commit</span><span class="p">.</span><span class="k">time</span><span class="o">=</span><span class="p">...;</span>
+</code></pre></div>
+<h3 id="97">9.7 数据治理<a class="headerlink" href="#97" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>分层模型 (Medallion):
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>  Bronze: 原始数据，不删
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>  Silver: 清洗、去重、Schema 标准化
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>  Gold: 面向业务的宽表/聚合
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>权限:
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>  - Polaris / Ranger
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>  - 列级 / 行级 ACL
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>  - 数据脱敏
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>血缘:
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>  - DataHub / Atlas / OpenLineage
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>  - Spark/Flink 自动采集
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>质量:
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>  - Great Expectations
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a>  - dbt-test
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a>  - Deequ
+</code></pre></div>
+<h2 id="_8">十、私有化 / 国产化数据湖栈<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="101">10.1 私有化首选<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>存储:       MinIO / Ceph RGW / Ozone / 国产对象存储
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>表格式:     Iceberg
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>计算:       Spark on K8s / Flink on K8s
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>Catalog:    HMS + PostgreSQL 后端
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>查询:       Trino / Doris / StarRocks
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>调度:       Airflow / DolphinScheduler
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>治理:       OpenMetadata / Atlas
+</code></pre></div>
+<h3 id="102">10.2 国产对象存储<a class="headerlink" href="#102" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: left;">厂商</th>
+<th style="text-align: left;">兼容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>OSS</strong></td>
+<td style="text-align: left;">阿里云</td>
+<td style="text-align: left;">S3 兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OBS</strong></td>
+<td style="text-align: left;">华为云</td>
+<td style="text-align: left;">S3 兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>COS</strong></td>
+<td style="text-align: left;">腾讯云</td>
+<td style="text-align: left;">S3 兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>EOS</strong></td>
+<td style="text-align: left;">京东云</td>
+<td style="text-align: left;">S3 兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MinIO</strong></td>
+<td style="text-align: left;">开源</td>
+<td style="text-align: left;">S3 兼容（私有化首选）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ceph RGW</strong></td>
+<td style="text-align: left;">开源</td>
+<td style="text-align: left;">S3 兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>JuiceFS</strong></td>
+<td style="text-align: left;">国产开源</td>
+<td style="text-align: left;">POSIX over 对象</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OceanFS</strong></td>
+<td style="text-align: left;">华为</td>
+<td style="text-align: left;">文件</td>
+</tr>
+</tbody>
+</table>
+<h3 id="103">10.3 国产数据湖商业产品<a class="headerlink" href="#103" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: left;">厂商</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>DLF (Data Lake Formation)</strong></td>
+<td style="text-align: left;">阿里云</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DLI</strong></td>
+<td style="text-align: left;">华为云</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>EMR + Iceberg</strong></td>
+<td style="text-align: left;">各家云</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hashdata</strong></td>
+<td style="text-align: left;">中科院系</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tabular（国际，已被 DB 收）</strong></td>
+<td style="text-align: left;">—</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_9">十一、常见坑<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>小文件爆炸</strong></td>
+<td style="text-align: left;">定期 optimize/compaction</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>S3 一致性问题</strong></td>
+<td style="text-align: left;">用支持强一致的 S3 / 用 Iceberg 解决</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HMS 单点</strong></td>
+<td style="text-align: left;">HMS HA + PG 后端</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>元数据过期</strong></td>
+<td style="text-align: left;">snapshot/cleanup 定期</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨引擎不兼容</strong></td>
+<td style="text-align: left;">Iceberg / Delta UniForm</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hudi MoR 查询慢</strong></td>
+<td style="text-align: left;">切 CoW 或定期 compaction</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>流入湖 Exactly-once</strong></td>
+<td style="text-align: left;">Checkpoint + 幂等</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Catalog 锁竞争</strong></td>
+<td style="text-align: left;">REST Catalog 或分片</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有数据治理</strong></td>
+<td style="text-align: left;">加 DataHub/OpenMetadata</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有血缘</strong></td>
+<td style="text-align: left;">OpenLineage 集成</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>统计信息没用</strong></td>
+<td style="text-align: left;">ANALYZE 或自动统计</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨可用区延迟</strong></td>
+<td style="text-align: left;">同区域部署 + 缓存</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>垃圾文件留存</strong></td>
+<td style="text-align: left;">remove_orphan_files</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_10">十二、监控<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>存储层:
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>  - S3 请求量 / 错误率
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>  - 数据增长曲线
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>  - 跨可用区流量
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>表格式:
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>  - 文件数 / 平均文件大小
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>  - Snapshot 数量
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>  - Compaction 状态
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>引擎:
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>  - Spark/Flink/Trino 各自监控
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>治理:
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>  - 表使用率
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>  - 冷热数据分布
+</code></pre></div>
+<h2 id="lakehouse-vs-vs">十三、Lakehouse vs 传统数仓 vs 数据湖<a class="headerlink" href="#lakehouse-vs-vs" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>传统数仓 (Snowflake/Teradata):
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>  ✅ 强 ACID / 性能极致
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>  ❌ 贵、封闭、扩展难
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>传统数据湖 (HDFS + Parquet):
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>  ✅ 廉价、灵活
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>  ❌ 无事务、Schema 漂移
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>Lakehouse (Iceberg/Delta + S3 + 多引擎):
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>  ✅ 开放、廉价、事务、Schema、多引擎
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>  ✅ 流批一体
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>  ✅ AI/ML 友好
+</code></pre></div>
+<h2 id="_11">十四、未来展望<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>1-2 年:
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>  - Iceberg 成事实标准
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>  - Delta UniForm 与 Iceberg 双格式互通
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>  - Polaris / REST Catalog 普及
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>  - 中国大厂 Lakehouse 落地完成
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>3-5 年:
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>  - Hudi 在流入湖场景守住地盘
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>  - 数据湖与 AI 平台融合（Lakehouse for AI）
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>  - 多模数据湖（结构化 + 向量 + 时序 + 图）
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>  - Lance 等新格式兴起
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>5 年+:
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a>  - 数据湖统一存储成为云原生数据架构基石
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a>  - 数据仓库不再是独立形态
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>  - 多引擎 + 一份数据成标配
+</code></pre></div>
+<h2 id="_12">十五、学习路径<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>入门:
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>  1. 理解对象存储 (S3/MinIO)
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>  2. Parquet 文件格式
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>  3. Iceberg 单机 + Spark 实战
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>  4. 时间旅行 + Schema 演进
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>中级:
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>  5. Trino + Iceberg + S3 Adhoc
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>  6. Spark + Iceberg ETL 全流程
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>  7. Flink + Hudi 流入湖
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>  8. HMS / Polaris 部署
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>高级:
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>  9. 三种表格式对比评估
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>  10. Catalog 选型 + 多引擎接入
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>  11. 数据治理（DataHub / OpenMetadata）
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>  12. Lakehouse 架构设计
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>  13. 国产化落地（MinIO + Iceberg + Trino + Doris）
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：<strong>2025 大数据存储标准答案 = 对象存储 + Iceberg + 多引擎 + REST Catalog</strong>。私有化首选 MinIO + Iceberg + Spark/Trino + HMS；云上首选 S3/OSS + Iceberg + Polaris + Trino/Spark。三大表格式中 <strong>Iceberg 已成事实标准</strong>，但 Delta 在 Databricks 客户中仍主流，Hudi 在流入湖场景守住地盘。</p>
+</blockquote>
 
 
 

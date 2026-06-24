@@ -3380,7 +3380,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        概述
+        一、来历与发展
       
     </span>
   </a>
@@ -3388,10 +3388,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rowkey" class="md-nav__link">
+  <a href="#hbase_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        RowKey 设计
+        二、HBase 是什么
       
     </span>
   </a>
@@ -3402,7 +3402,322 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        架构组件
+        三、数据模型
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、架构原理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、架构原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、核心功能
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、使用场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、使用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 完美匹配
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 不推荐
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hbase-vs-nosql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、HBase vs 其他 NoSQL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、最佳实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 行键设计（最重要）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 列族设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 预分区（必做）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 关键参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-jvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 JVM 调优
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 读写优化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 表配置示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 高可用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#89" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.9 备份
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#810-phoenixsql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.10 Phoenix（SQL 层）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、运维命令速查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、常见坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、生态与工具
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、监控指标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hbase-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、HBase 在 K8s
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hbase-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、HBase vs 替代方案
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、国产替代
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十七、未来展望
       
     </span>
   </a>
@@ -5579,7 +5894,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        概述
+        一、来历与发展
       
     </span>
   </a>
@@ -5587,10 +5902,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#rowkey" class="md-nav__link">
+  <a href="#hbase_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        RowKey 设计
+        二、HBase 是什么
       
     </span>
   </a>
@@ -5601,7 +5916,322 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        架构组件
+        三、数据模型
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、架构原理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、架构原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、核心功能
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、使用场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、使用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 完美匹配
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 不推荐
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hbase-vs-nosql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、HBase vs 其他 NoSQL
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、最佳实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 行键设计（最重要）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 列族设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 预分区（必做）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 关键参数
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-jvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 JVM 调优
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 读写优化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 表配置示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 高可用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#89" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.9 备份
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#810-phoenixsql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.10 Phoenix（SQL 层）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、运维命令速查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、常见坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、生态与工具
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、监控指标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hbase-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、HBase 在 K8s
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hbase-vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、HBase vs 替代方案
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、国产替代
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十七、未来展望
       
     </span>
   </a>
@@ -5677,79 +6307,766 @@
 
 
 <h1 id="hbase">HBase<a class="headerlink" href="#hbase" title="Permanent link">&para;</a></h1>
-<h2 id="_1">概述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>HBase 是分布式的列式 NoSQL 数据库，适合实时随机读写海量数据。</p>
-<h2 id="rowkey">RowKey 设计<a class="headerlink" href="#rowkey" title="Permanent link">&para;</a></h2>
-<p>RowKey 设计是 HBase 最关键的设计决策：</p>
+<blockquote>
+<p>Hadoop 生态里的"分布式 KV 数据库"。<strong>海量数据下高并发随机读写的代表</strong>——风控、画像、消息、IM、监控指标、车联网……至今难以被替代。</p>
+</blockquote>
+<h2 id="_1">一、来历与发展<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">原则</th>
-<th style="text-align: left;">说明</th>
-<th style="text-align: left;">示例</th>
+<th style="text-align: center;">年份</th>
+<th style="text-align: left;">事件</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">散列性</td>
-<td style="text-align: left;">避免 Region 热点</td>
-<td style="text-align: left;"><code>user_id_hash + timestamp</code></td>
+<td style="text-align: center;">2006</td>
+<td style="text-align: left;">Google 发表 <strong>BigTable 论文</strong></td>
 </tr>
 <tr>
-<td style="text-align: left;">长度</td>
-<td style="text-align: left;">越短越好</td>
-<td style="text-align: left;">避免长字符串</td>
+<td style="text-align: center;">2007</td>
+<td style="text-align: left;">Powerset 公司启动 HBase（参考 BigTable）</td>
 </tr>
 <tr>
-<td style="text-align: left;">相关性</td>
-<td style="text-align: left;">相关数据连续存储</td>
-<td style="text-align: left;">同一用户的记录前缀相同</td>
+<td style="text-align: center;">2008</td>
+<td style="text-align: left;">Apache 顶级项目</td>
+</tr>
+<tr>
+<td style="text-align: center;">2010</td>
+<td style="text-align: left;">0.20 稳定，国内开始大规模使用</td>
+</tr>
+<tr>
+<td style="text-align: center;">2015</td>
+<td style="text-align: left;">1.0 GA</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018</td>
+<td style="text-align: left;">2.0 引入 In-Memory Compaction、Async API</td>
+</tr>
+<tr>
+<td style="text-align: center;">2020</td>
+<td style="text-align: left;">2.4 / 2.5 性能优化</td>
+</tr>
+<tr>
+<td style="text-align: center;">2023</td>
+<td style="text-align: left;"><strong>3.0 准备发布</strong>，去 ZooKeeper</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024</td>
+<td style="text-align: left;">与 K8s / 对象存储集成增强</td>
+</tr>
+<tr>
+<td style="text-align: center;">2025</td>
+<td style="text-align: left;">Phoenix 5 + Kudu + Doris 蚕食部分场景</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># HBase Shell</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>create<span class="w"> </span><span class="s1">&#39;users&#39;</span>,<span class="w"> </span><span class="s1">&#39;cf1&#39;</span>,<span class="w"> </span><span class="s1">&#39;cf2&#39;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>put<span class="w"> </span><span class="s1">&#39;users&#39;</span>,<span class="w"> </span><span class="s1">&#39;row1&#39;</span>,<span class="w"> </span><span class="s1">&#39;cf1:name&#39;</span>,<span class="w"> </span><span class="s1">&#39;Alice&#39;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>get<span class="w"> </span><span class="s1">&#39;users&#39;</span>,<span class="w"> </span><span class="s1">&#39;row1&#39;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>scan<span class="w"> </span><span class="s1">&#39;users&#39;</span>,<span class="w"> </span><span class="o">{</span><span class="nv">LIMIT</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="m">10</span><span class="o">}</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>delete<span class="w"> </span><span class="s1">&#39;users&#39;</span>,<span class="w"> </span><span class="s1">&#39;row1&#39;</span>,<span class="w"> </span><span class="s1">&#39;cf1:name&#39;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>count<span class="w"> </span><span class="s1">&#39;users&#39;</span>
+<p><strong>主流版本</strong>：2.4.x / 2.5.x。</p>
+<h2 id="hbase_1">二、HBase 是什么<a class="headerlink" href="#hbase_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&quot;分布式、面向列族的 NoSQL 数据库&quot;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>核心特点:
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  - 基于 HDFS（数据安全靠 HDFS 副本）
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  - LSM-Tree 存储（写优于读）
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  - 行键有序 + 自动分区 (Region)
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  - 强一致（CP 系统）
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  - 万亿行 + PB 级数据
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  - 毫秒级随机读写
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>不是:
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  ❌ SQL 数据库（没事务、没多表 JOIN）
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  ❌ OLAP 引擎（不擅长聚合扫描）
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  ❌ 关系数据库（无外键、无索引）
 </code></pre></div>
-<h2 id="_2">架构组件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h2 id="_2">三、数据模型<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Table → Region → Store → MemStore + HFile
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>                  ↑
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>            ColumnFamily
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>行键 (Row Key) | Column Family | Column Qualifier | Timestamp | Value
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>   user:001    |     info      |       name       |     t1    |  Alice
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>   user:001    |     info      |       age        |     t1    |   28
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>   user:001    |     stat      |       login      |     t2    | 2026-01-01
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>特点:
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  - 行键决定一切（决定排序 + 分布）
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  - 列族物理隔离（HFile 一个 CF 一组）
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>  - 同一行键不同时间戳 = 版本
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  - Schemaless 列（同 CF 不同行可不同列）
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  - 稀疏（不存的列不占空间）
+</code></pre></div>
+<h2 id="_3">四、架构原理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>┌──────────── 客户端 ──────────────┐
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>│ HBase Java/Thrift/REST API       │
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>│ Phoenix (SQL Layer)              │
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>└──────────────┬───────────────────┘
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>               ↓
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>┌──────────── ZooKeeper ───────────┐
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>│ Master 选举 + Meta 表位置        │
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>│ (3.0 用 hbase:meta 自管)         │
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>└──────────────┬───────────────────┘
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>               ↓
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>┌──────────── HMaster ─────────────┐
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>│ Region 分配 / DDL / 负载均衡      │
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>└──────────────┬───────────────────┘
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>               ↓
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>┌────── RegionServer × N ──────────┐
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>│ MemStore (内存写)                 │
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>│ BlockCache (内存读)              │
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>│ HFile (HDFS 上)                  │
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>│ WAL (HDFS 上)                    │
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>└──────────────┬───────────────────┘
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>               ↓
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>┌──────────── HDFS ────────────────┐
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>│ HFile + WAL                      │
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>│ 3 副本 / EC                      │
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>└──────────────────────────────────┘
+</code></pre></div>
+<h3 id="_4">关键机制<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">组件</th>
+<th style="text-align: left;">机制</th>
 <th style="text-align: left;">作用</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">HMaster</td>
-<td style="text-align: left;">管理 Region 分配和负载均衡</td>
+<td style="text-align: left;"><strong>LSM-Tree</strong></td>
+<td style="text-align: left;">写内存（MemStore），定期 flush 成 HFile</td>
 </tr>
 <tr>
-<td style="text-align: left;">RegionServer</td>
-<td style="text-align: left;">处理数据读写请求</td>
+<td style="text-align: left;"><strong>MemStore</strong></td>
+<td style="text-align: left;">内存写缓冲（per CF per Region）</td>
 </tr>
 <tr>
-<td style="text-align: left;">Region</td>
-<td style="text-align: left;">表的分片单元</td>
+<td style="text-align: left;"><strong>HFile</strong></td>
+<td style="text-align: left;">不可变文件，Compaction 合并</td>
 </tr>
 <tr>
-<td style="text-align: left;">MemStore</td>
-<td style="text-align: left;">内存缓存</td>
+<td style="text-align: left;"><strong>WAL（HLog）</strong></td>
+<td style="text-align: left;">写前日志，崩溃恢复</td>
 </tr>
 <tr>
-<td style="text-align: left;">HFile</td>
-<td style="text-align: left;">磁盘存储文件</td>
+<td style="text-align: left;"><strong>BlockCache</strong></td>
+<td style="text-align: left;">读缓存</td>
 </tr>
 <tr>
-<td style="text-align: left;">WAL</td>
-<td style="text-align: left;">预写日志，故障恢复</td>
+<td style="text-align: left;"><strong>Compaction</strong></td>
+<td style="text-align: left;">Minor + Major（合并小文件、清理 tombstone）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Region Split</strong></td>
+<td style="text-align: left;">大 Region 自动拆分</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Bloom Filter</strong></td>
+<td style="text-align: left;">加速点查</td>
 </tr>
 </tbody>
 </table>
+<h2 id="_5">五、核心功能<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>1. 海量行（万亿+）
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>2. 高并发随机读写（毫秒级）
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>3. 强一致（单行强一致）
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>4. 数据多版本
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>5. 自动分片（Region Split）
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>6. Scan 范围查询（按行键有序）
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>7. Bloom Filter 加速
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>8. 协处理器 Coprocessor（类似存储过程）
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>9. Phoenix SQL 层
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>10. 与 Hive / Spark / Flink 集成
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>11. 备份恢复（Snapshot / Replication）
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>12. 列级 TTL
+</code></pre></div>
+<h2 id="_6">六、使用场景<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">✅ 完美匹配<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">场景</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>风控画像</strong></td>
+<td style="text-align: left;">用户 KV 实时查询</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>消息/IM 存储</strong></td>
+<td style="text-align: left;">微信、钉钉、QQ 历史消息</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>监控指标</strong></td>
+<td style="text-align: left;">OpenTSDB 底层</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>车联网/物联网</strong></td>
+<td style="text-align: left;">设备时序数据</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>订单/日志归档</strong></td>
+<td style="text-align: left;">海量历史回查</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>稀疏宽表</strong></td>
+<td style="text-align: left;">每行 100-10000 列</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>实时计算结果存储</strong></td>
+<td style="text-align: left;">Flink → HBase</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>会话存储</strong></td>
+<td style="text-align: left;">高并发读写</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">⚠️ 不推荐<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>强事务 + 多表 JOIN</strong> → 关系数据库</li>
+<li><strong>复杂 SQL 分析</strong> → ClickHouse / Doris</li>
+<li><strong>小数据量</strong> → MySQL / PG</li>
+<li><strong>聚合多</strong> → OLAP 数据库</li>
+<li><strong>需要二级索引精确查</strong> → Phoenix 或别用 HBase</li>
+</ul>
+<h2 id="hbase-vs-nosql">七、HBase vs 其他 NoSQL<a class="headerlink" href="#hbase-vs-nosql" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">HBase</th>
+<th style="text-align: left;">Cassandra</th>
+<th style="text-align: left;">MongoDB</th>
+<th style="text-align: left;">TiKV</th>
+<th style="text-align: left;">Redis</th>
+<th style="text-align: left;">Kudu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">模型</td>
+<td style="text-align: left;">列族 KV</td>
+<td style="text-align: left;">列族 KV</td>
+<td style="text-align: left;">文档</td>
+<td style="text-align: left;">KV</td>
+<td style="text-align: left;">KV</td>
+<td style="text-align: left;">列存</td>
+</tr>
+<tr>
+<td style="text-align: left;">一致性</td>
+<td style="text-align: left;"><strong>CP 强</strong></td>
+<td style="text-align: left;">AP 最终</td>
+<td style="text-align: left;">可配</td>
+<td style="text-align: left;"><strong>CP 强</strong></td>
+<td style="text-align: left;">单点强</td>
+<td style="text-align: left;">CP</td>
+</tr>
+<tr>
+<td style="text-align: left;">海量数据</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">写吞吐</td>
+<td style="text-align: left;">极高</td>
+<td style="text-align: left;">极高</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">极高</td>
+<td style="text-align: left;">高</td>
+</tr>
+<tr>
+<td style="text-align: left;">读延迟</td>
+<td style="text-align: left;">毫秒</td>
+<td style="text-align: left;">毫秒</td>
+<td style="text-align: left;">毫秒</td>
+<td style="text-align: left;">毫秒</td>
+<td style="text-align: left;">微秒</td>
+<td style="text-align: left;">毫秒</td>
+</tr>
+<tr>
+<td style="text-align: left;">OLAP 能力</td>
+<td style="text-align: left;">弱</td>
+<td style="text-align: left;">弱</td>
+<td style="text-align: left;">弱</td>
+<td style="text-align: left;">弱</td>
+<td style="text-align: left;">弱</td>
+<td style="text-align: left;"><strong>中</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">国内主流</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">中</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">上升</td>
+<td style="text-align: left;">极高</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">适合</td>
+<td style="text-align: left;">海量稀疏宽表</td>
+<td style="text-align: left;">跨数据中心</td>
+<td style="text-align: left;">JSON 文档</td>
+<td style="text-align: left;">NewSQL 底层</td>
+<td style="text-align: left;">缓存</td>
+<td style="text-align: left;">HTAP</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_9">八、最佳实践<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="81">8.1 行键设计（最重要）<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>✅ 散列 + 业务有序
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>原则:
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  1. 散列前缀: 避免热点（散列函数或反转时间戳）
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  2. 业务前缀: 利于范围扫描
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>  3. 长度: 推荐 8-32 字节
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  4. 二进制紧凑: bytes 优于字符串
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>模式:
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>  hash(user_id)[0:2] + user_id + timestamp_reversed
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>  region_id + user_id + event_type
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>❌ 不要:
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>  纯时间戳前缀 → 单 Region 热点
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>  自增 ID 前缀 → 顺序热点
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>  超长 string (&gt; 100B) → HFile 膨胀
+</code></pre></div>
+<h3 id="82">8.2 列族设计<a class="headerlink" href="#82" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>✅ 列族越少越好（1-3 个）
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>✅ 同一列族的列访问频率相似
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>✅ 命名短（CF 名每行都存）
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>示例:
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>  CF &#39;i&#39; = info（高频，必读）
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  CF &#39;d&#39; = detail（低频，按需读）
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>  CF &#39;s&#39; = stat（统计，定期写）
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>❌ 列族 &gt; 3
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>❌ 列族命名长（&quot;user_info&quot; 比 &#39;i&#39; 浪费 700%）
+</code></pre></div>
+<h3 id="83">8.3 预分区（必做）<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>✅ 建表时按行键散列预分区
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>   避免新表插入挤爆单 Region
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>create &#39;events&#39;, &#39;cf&#39;,
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>  {SPLITS =&gt; [&#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;, &#39;6&#39;, &#39;7&#39;, &#39;8&#39;, &#39;9&#39;]}
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>或:
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  {NUMREGIONS =&gt; 100, SPLITALGO =&gt; &#39;HexStringSplit&#39;}
+</code></pre></div>
+<h3 id="84">8.4 关键参数<a class="headerlink" href="#84" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="cm">&lt;!-- hbase-site.xml --&gt;</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="cm">&lt;!-- 内存 --&gt;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nt">&lt;property&gt;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="nt">&lt;name&gt;</span>hbase.regionserver.global.memstore.size<span class="nt">&lt;/name&gt;</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="nt">&lt;value&gt;</span>0.4<span class="nt">&lt;/value&gt;</span><span class="w">             </span><span class="cm">&lt;!-- 40% RS 堆 --&gt;</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nt">&lt;/property&gt;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nt">&lt;property&gt;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="nt">&lt;name&gt;</span>hfile.block.cache.size<span class="nt">&lt;/name&gt;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">  </span><span class="nt">&lt;value&gt;</span>0.4<span class="nt">&lt;/value&gt;</span><span class="w">             </span><span class="cm">&lt;!-- 40% RS 堆 --&gt;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="nt">&lt;/property&gt;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="cm">&lt;!-- Region --&gt;</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="nt">&lt;property&gt;</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="w">  </span><span class="nt">&lt;name&gt;</span>hbase.hregion.memstore.flush.size<span class="nt">&lt;/name&gt;</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">  </span><span class="nt">&lt;value&gt;</span>134217728<span class="nt">&lt;/value&gt;</span><span class="w">       </span><span class="cm">&lt;!-- 128MB --&gt;</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="nt">&lt;/property&gt;</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="nt">&lt;property&gt;</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">  </span><span class="nt">&lt;name&gt;</span>hbase.hregion.max.filesize<span class="nt">&lt;/name&gt;</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">  </span><span class="nt">&lt;value&gt;</span>10737418240<span class="nt">&lt;/value&gt;</span><span class="w">     </span><span class="cm">&lt;!-- 10GB Region 大小 --&gt;</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="nt">&lt;/property&gt;</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="cm">&lt;!-- Compaction --&gt;</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="nt">&lt;property&gt;</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="w">  </span><span class="nt">&lt;name&gt;</span>hbase.hstore.compaction.min<span class="nt">&lt;/name&gt;</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="w">  </span><span class="nt">&lt;value&gt;</span>3<span class="nt">&lt;/value&gt;</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="nt">&lt;/property&gt;</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="nt">&lt;property&gt;</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="w">  </span><span class="nt">&lt;name&gt;</span>hbase.hstore.compaction.max<span class="nt">&lt;/name&gt;</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="w">  </span><span class="nt">&lt;value&gt;</span>10<span class="nt">&lt;/value&gt;</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="nt">&lt;/property&gt;</span>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a>
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="cm">&lt;!-- WAL --&gt;</span>
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a><span class="nt">&lt;property&gt;</span>
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a><span class="w">  </span><span class="nt">&lt;name&gt;</span>hbase.regionserver.logroll.period<span class="nt">&lt;/name&gt;</span>
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a><span class="w">  </span><span class="nt">&lt;value&gt;</span>3600000<span class="nt">&lt;/value&gt;</span><span class="w">         </span><span class="cm">&lt;!-- 1h --&gt;</span>
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a><span class="nt">&lt;/property&gt;</span>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a>
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a><span class="cm">&lt;!-- 客户端 --&gt;</span>
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a><span class="nt">&lt;property&gt;</span>
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a><span class="w">  </span><span class="nt">&lt;name&gt;</span>hbase.client.write.buffer<span class="nt">&lt;/name&gt;</span>
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a><span class="w">  </span><span class="nt">&lt;value&gt;</span>2097152<span class="nt">&lt;/value&gt;</span><span class="w">         </span><span class="cm">&lt;!-- 2MB --&gt;</span>
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a><span class="nt">&lt;/property&gt;</span>
+</code></pre></div>
+<h3 id="85-jvm">8.5 JVM 调优<a class="headerlink" href="#85-jvm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>RegionServer 堆:
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  20-30GB（不要超 32GB 指针压缩）
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>GC:
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  -XX:+UseG1GC
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  -XX:MaxGCPauseMillis=100
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>  -XX:G1HeapRegionSize=32m
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>  -XX:InitiatingHeapOccupancyPercent=65
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>堆外 BucketCache:
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>  -XX:MaxDirectMemorySize=20g
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>  hbase.bucketcache.size=20480
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>  hbase.bucketcache.ioengine=offheap
+</code></pre></div>
+<h3 id="86">8.6 读写优化<a class="headerlink" href="#86" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>写优化:
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  ✅ 客户端批量 put (1000-10000 rows)
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  ✅ 关闭 WAL（仅日志类可忽略丢失）
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  ✅ 预分区
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>  ✅ MemStore 大点（flush 少）
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>  ✅ Bulk Load（HFile 直接装载，最快）
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>读优化:
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>  ✅ BlockCache 大 + 堆外
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>  ✅ Bloom Filter（ROW or ROWCOL）
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>  ✅ DATA_BLOCK_ENCODING (FAST_DIFF/PREFIX)
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>  ✅ COMPRESSION (SNAPPY/LZ4/ZSTD)
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>  ✅ 短列名 / 短行键
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>  ✅ Scan 加 filter + caching
+</code></pre></div>
+<h3 id="87">8.7 表配置示例<a class="headerlink" href="#87" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>create<span class="w"> </span><span class="s1">&#39;events&#39;</span>,
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">  </span><span class="o">{</span><span class="nv">NAME</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="s1">&#39;i&#39;</span>,
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">   </span><span class="nv">VERSIONS</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="m">1</span>,
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">   </span><span class="nv">COMPRESSION</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="s1">&#39;ZSTD&#39;</span>,
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="w">   </span><span class="nv">DATA_BLOCK_ENCODING</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="s1">&#39;FAST_DIFF&#39;</span>,
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">   </span><span class="nv">BLOOMFILTER</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="s1">&#39;ROW&#39;</span>,
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">   </span><span class="nv">IN_MEMORY</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span>false,
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="w">   </span><span class="nv">TTL</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="m">7776000</span>,<span class="w">                        </span><span class="c1"># 90 天</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="w">   </span><span class="nv">BLOCKSIZE</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="m">65536</span><span class="o">}</span>,<span class="w">                   </span><span class="c1"># 64K</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="w">  </span><span class="o">{</span><span class="nv">SPLITS</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="o">[</span><span class="s1">&#39;1&#39;</span>,<span class="s1">&#39;2&#39;</span>,<span class="s1">&#39;3&#39;</span>,<span class="s1">&#39;4&#39;</span>,<span class="s1">&#39;5&#39;</span>,<span class="s1">&#39;6&#39;</span>,<span class="s1">&#39;7&#39;</span>,<span class="s1">&#39;8&#39;</span>,<span class="s1">&#39;9&#39;</span><span class="o">]}</span>
+</code></pre></div>
+<h3 id="88">8.8 高可用<a class="headerlink" href="#88" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>HMaster HA: 2 个 Master（无状态）
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>RegionServer: 多个，挂了 Region 自动迁移（30s）
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>HDFS: 3 副本保数据
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>WAL: 写两份 (双 cluster)
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>ZooKeeper: 3 或 5 节点
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>Replication: 跨集群异步复制
+</code></pre></div>
+<h3 id="89">8.9 备份<a class="headerlink" href="#89" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># 1. 快照（推荐）</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>hbase&gt;<span class="w"> </span>snapshot<span class="w"> </span><span class="s1">&#39;events&#39;</span>,<span class="w"> </span><span class="s1">&#39;events-snap-20260622&#39;</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>hbase&gt;<span class="w"> </span>list_snapshots
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>hbase&gt;<span class="w"> </span>clone_snapshot<span class="w"> </span><span class="s1">&#39;events-snap-...&#39;</span>,<span class="w"> </span><span class="s1">&#39;events_new&#39;</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>hbase&gt;<span class="w"> </span>restore_snapshot<span class="w"> </span><span class="s1">&#39;events-snap-...&#39;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># 2. Export / Import</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>hbase<span class="w"> </span>org.apache.hadoop.hbase.mapreduce.Export<span class="w"> </span>events<span class="w"> </span>/backup/events
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>hbase<span class="w"> </span>org.apache.hadoop.hbase.mapreduce.Import<span class="w"> </span>events<span class="w"> </span>/backup/events
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="c1"># 3. Replication（跨集群异步）</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>add_peer<span class="w"> </span><span class="s1">&#39;1&#39;</span>,<span class="w"> </span><span class="nv">CLUSTER_KEY</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="s2">&quot;zk1,zk2,zk3:2181:/hbase&quot;</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>enable_table_replication<span class="w"> </span><span class="s1">&#39;events&#39;</span>
+</code></pre></div>
+<h3 id="810-phoenixsql">8.10 Phoenix（SQL 层）<a class="headerlink" href="#810-phoenixsql" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1">-- Phoenix 给 HBase 装 SQL/二级索引</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span><span class="n">user_id</span><span class="w"> </span><span class="nb">BIGINT</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">  </span><span class="n">ts</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">  </span><span class="n">event</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">  </span><span class="k">CONSTRAINT</span><span class="w"> </span><span class="n">pk</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="p">(</span><span class="n">user_id</span><span class="p">,</span><span class="w"> </span><span class="n">ts</span><span class="p">)</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="p">);</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="n">idx_event</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">events</span><span class="p">(</span><span class="n">event</span><span class="p">);</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="n">UPSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(...);</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">user_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1001</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">ts</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">NOW</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="_10">九、运维命令速查<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># 进入 shell</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>hbase<span class="w"> </span>shell
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="c1"># 表管理</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>&gt;<span class="w"> </span>list
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>&gt;<span class="w"> </span>describe<span class="w"> </span><span class="s1">&#39;events&#39;</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>&gt;<span class="w"> </span>create<span class="w"> </span><span class="s1">&#39;events&#39;</span>,<span class="w"> </span><span class="s1">&#39;cf&#39;</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>&gt;<span class="w"> </span>alter<span class="w"> </span><span class="s1">&#39;events&#39;</span>,<span class="w"> </span><span class="nv">NAME</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="s1">&#39;cf&#39;</span>,<span class="w"> </span><span class="nv">VERSIONS</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="m">5</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>&gt;<span class="w"> </span>disable<span class="w"> </span><span class="s1">&#39;events&#39;</span><span class="w"> </span>/<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>/<span class="w"> </span>drop
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>&gt;<span class="w"> </span>count<span class="w"> </span><span class="s1">&#39;events&#39;</span>,<span class="w"> </span><span class="nv">INTERVAL</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="m">1000</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="c1"># 数据</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>&gt;<span class="w"> </span>put<span class="w"> </span><span class="s1">&#39;events&#39;</span>,<span class="w"> </span><span class="s1">&#39;rk1&#39;</span>,<span class="w"> </span><span class="s1">&#39;cf:col&#39;</span>,<span class="w"> </span><span class="s1">&#39;value&#39;</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>&gt;<span class="w"> </span>get<span class="w"> </span><span class="s1">&#39;events&#39;</span>,<span class="w"> </span><span class="s1">&#39;rk1&#39;</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>&gt;<span class="w"> </span>scan<span class="w"> </span><span class="s1">&#39;events&#39;</span>,<span class="w"> </span><span class="o">{</span><span class="nv">LIMIT</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="m">10</span>,<span class="w"> </span><span class="nv">STARTROW</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="s1">&#39;rk1&#39;</span>,<span class="w"> </span><span class="nv">STOPROW</span><span class="w"> </span><span class="o">=</span>&gt;<span class="w"> </span><span class="s1">&#39;rk9&#39;</span><span class="o">}</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>&gt;<span class="w"> </span>delete<span class="w"> </span><span class="s1">&#39;events&#39;</span>,<span class="w"> </span><span class="s1">&#39;rk1&#39;</span>,<span class="w"> </span><span class="s1">&#39;cf:col&#39;</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="c1"># Region</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>&gt;<span class="w"> </span>regions<span class="w"> </span><span class="s1">&#39;events&#39;</span>
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>&gt;<span class="w"> </span>split<span class="w"> </span><span class="s1">&#39;events&#39;</span>,<span class="w"> </span><span class="s1">&#39;splitkey&#39;</span>
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>&gt;<span class="w"> </span>major_compact<span class="w"> </span><span class="s1">&#39;events&#39;</span>
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>&gt;<span class="w"> </span>move<span class="w"> </span><span class="s1">&#39;region_id&#39;</span>,<span class="w"> </span><span class="s1">&#39;target_rs&#39;</span>
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a>&gt;<span class="w"> </span>balancer
+<a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>&gt;<span class="w"> </span>balance_switch<span class="w"> </span><span class="nb">true</span>
+<a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a>
+<a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a><span class="c1"># 状态</span>
+<a id="__codelineno-14-27" name="__codelineno-14-27" href="#__codelineno-14-27"></a>&gt;<span class="w"> </span>status
+<a id="__codelineno-14-28" name="__codelineno-14-28" href="#__codelineno-14-28"></a>&gt;<span class="w"> </span>status<span class="w"> </span><span class="s1">&#39;detailed&#39;</span>
+<a id="__codelineno-14-29" name="__codelineno-14-29" href="#__codelineno-14-29"></a>&gt;<span class="w"> </span>rsgroup_list
+<a id="__codelineno-14-30" name="__codelineno-14-30" href="#__codelineno-14-30"></a>
+<a id="__codelineno-14-31" name="__codelineno-14-31" href="#__codelineno-14-31"></a><span class="c1"># 排查</span>
+<a id="__codelineno-14-32" name="__codelineno-14-32" href="#__codelineno-14-32"></a>hbase<span class="w"> </span>hbck<span class="w">                              </span><span class="c1"># 老</span>
+<a id="__codelineno-14-33" name="__codelineno-14-33" href="#__codelineno-14-33"></a>hbase<span class="w"> </span>hbck2<span class="w">                             </span><span class="c1"># 新（推荐）</span>
+<a id="__codelineno-14-34" name="__codelineno-14-34" href="#__codelineno-14-34"></a>hbase<span class="w"> </span>org.apache.hadoop.hbase.tool.LoadIncrementalHFiles<span class="w"> </span>...
+</code></pre></div>
+<h2 id="_11">十、常见坑<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>行键热点</strong></td>
+<td style="text-align: left;">散列前缀 / 反转时间</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>新表未预分区</strong></td>
+<td style="text-align: left;">必预分区</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>列族过多</strong></td>
+<td style="text-align: left;">≤ 3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>小文件多</strong></td>
+<td style="text-align: left;">Major Compact 定期</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GC 卡顿</strong></td>
+<td style="text-align: left;">G1GC + 堆 &lt; 32GB + 堆外 Cache</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RegionServer OOM</strong></td>
+<td style="text-align: left;">MemStore + BlockCache 比例</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Compaction 风暴</strong></td>
+<td style="text-align: left;">错峰 + 限速</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Region 太大或太多</strong></td>
+<td style="text-align: left;">单表 10-500 Region/RS</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>WAL 拖慢</strong></td>
+<td style="text-align: left;">多 WAL + SSD 专盘</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Major Compact 卡业务</strong></td>
+<td style="text-align: left;">关闭自动 + 凌晨定时</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨集群 Replication 滞后</strong></td>
+<td style="text-align: left;">监控 + 加 RPC</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Phoenix 索引膨胀</strong></td>
+<td style="text-align: left;">慎建 + 监控</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Scan 全表</strong></td>
+<td style="text-align: left;">永远加 STARTROW/STOPROW + LIMIT</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有备份</strong></td>
+<td style="text-align: left;">Snapshot 定期 + 异地</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_12">十一、生态与工具<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>HBase Shell</strong></td>
+<td style="text-align: left;">官方 CLI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Phoenix</strong></td>
+<td style="text-align: left;">SQL 层 + 二级索引</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OpenTSDB</strong></td>
+<td style="text-align: left;">时序，HBase 底层</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Atlas</strong></td>
+<td style="text-align: left;">元数据管理</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HBase REST / Thrift</strong></td>
+<td style="text-align: left;">多语言接入</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Spark on HBase</strong></td>
+<td style="text-align: left;">批处理读写</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Flink HBase Connector</strong></td>
+<td style="text-align: left;">流处理写</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HBase BulkLoad</strong></td>
+<td style="text-align: left;">离线高速导入</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cloudera Manager / Ambari</strong></td>
+<td style="text-align: left;">集群管理</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_13">十二、监控指标<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>RegionServer:
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>  Read/Write Request Count
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>  Read/Write Latency p99
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>  MemStore Size / FlushQueueSize
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>  BlockCacheHitRatio
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>  CompactionQueueSize
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>  GC time / heap
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>Master:
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>  RegionsInTransition
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>  Active Master / Backup
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>  RSDeadCount
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>集群:
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>  Region 数量 / 平衡度
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>  HDFS 使用率
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>  WAL 大小
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>工具:
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>  Prometheus + jmx_exporter
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>  Ganglia / Cloudera Manager
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>  Grafana HBase Dashboard
+</code></pre></div>
+<h2 id="hbase-k8s">十三、HBase 在 K8s<a class="headerlink" href="#hbase-k8s" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>方案 1: StatefulSet + 持久卷
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>  - 数据存 PVC
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>  - 与 HDFS-on-K8s 共存
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>  - 维护复杂
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>方案 2: Operator
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>  - apache-hbase-operator（社区）
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>  - 商业: Cloudera CDP Operator
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>方案 3: 云托管
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>  - 阿里云 HBase / Lindorm
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>  - 腾讯云 HBase
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>  - AWS Emr HBase / DynamoDB
+</code></pre></div>
+<h2 id="hbase-vs">十四、HBase vs 替代方案<a class="headerlink" href="#hbase-vs" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>HBase 仍最适合:
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>  - 海量行 + 稀疏宽表
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>  - 强一致 + 高并发 KV
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>  - 数据生命周期长（年级）
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>何时改其他:
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>  - 需要 SQL + 二级索引广泛 → TiDB / OceanBase
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>  - 实时分析 + 写入 → Doris / StarRocks / Kudu
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>  - 多模/多数据类型 → MongoDB / Lindorm
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>  - 强事务 → TiKV / Spanner
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>  - 时序专用 → InfluxDB / TDengine / VictoriaMetrics
+</code></pre></div>
+<h2 id="_14">十五、国产替代<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: left;">厂商</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Lindorm</strong></td>
+<td style="text-align: left;">阿里云</td>
+<td style="text-align: left;">HBase 兼容增强</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TBase / TencentDB HBase</strong></td>
+<td style="text-align: left;">腾讯</td>
+<td style="text-align: left;">托管</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GoldenDB-HBase</strong></td>
+<td style="text-align: left;">中兴</td>
+<td style="text-align: left;">信创</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Kudu</strong></td>
+<td style="text-align: left;">Cloudera</td>
+<td style="text-align: left;">HTAP 列存</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TiKV</strong></td>
+<td style="text-align: left;">PingCAP</td>
+<td style="text-align: left;">分布式 KV NewSQL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OceanBase KVCache</strong></td>
+<td style="text-align: left;">蚂蚁</td>
+<td style="text-align: left;">大规模 KV</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_15">十六、学习路径<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>入门:
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>  1. 单机 HBase + 跑 shell 命令
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>  2. 理解行键 / 列族 / Region
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>  3. 装 ZooKeeper + 伪分布式
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>进阶:
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>  4. 3 节点集群 + HDFS
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>  5. 行键设计 + 预分区
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>  6. JVM + 内存调优
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>  7. Compaction 实战
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>  8. Phoenix SQL
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>高阶:
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>  9. Spark / Flink 集成
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>  10. Replication 跨集群
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>  11. 备份恢复演练
+<a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a>  12. 性能压测 (YCSB)
+<a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a>  13. K8s 部署
+</code></pre></div>
+<h2 id="_16">十七、未来展望<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>1-2 年:
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>  - HBase 3.0 发布（去 ZK 内置 quorum）
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>  - 与 K8s / 对象存储深度集成
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>  - Phoenix 继续演进
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>3-5 年:
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>  - 部分场景被 Lindorm/Kudu/TiKV 替代
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>  - 海量稀疏宽表仍是 HBase 主战场
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>  - 国产化版本接管私有化市场
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>5 年+:
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>  - 与数据湖融合（HBase + Iceberg）
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>  - 多模化（KV + Time-Series + Wide-Column）
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：<strong>海量稀疏宽表 + 高并发强一致 KV</strong>——HBase 至今仍是工业级最稳的选择。短期内难以被替代，但 Lindorm / Kudu / TiKV 在细分场景已构成挑战。行键设计是 HBase 的"灵魂"，几乎所有坑都源于行键设计错误。</p>
+</blockquote>
 
 
 

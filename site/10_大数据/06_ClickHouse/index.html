@@ -3464,7 +3464,18 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        大数据场景下的列式存储
+        一、来历回顾
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clickhouse_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、为什么选 ClickHouse 进大数据栈
       
     </span>
   </a>
@@ -3475,7 +3486,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        适用场景
+        三、在大数据栈中的角色
       
     </span>
   </a>
@@ -3486,7 +3497,206 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        替代方案对比
+        四、典型应用场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、典型应用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 日志分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 用户行为分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-aiops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 AIOps 监控指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 广告 / 流量分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-trace-opentelemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Trace / OpenTelemetry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、大数据栈集成最佳实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、大数据栈集成最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-kafka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Kafka 直接消费（写入主路径）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-s3-hdfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 S3 / HDFS 外部表
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-spark-flink" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Spark / Flink 写入
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-trino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Trino 联邦查询
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、大数据规模下的建表最佳实践
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、热温冷分层（存算分离）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、分布式部署架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、常见坑（大数据场景特别版）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、监控（大数据场景）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clickhouse-vs-dorisstarrocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、ClickHouse vs Doris/StarRocks（大数据场景）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、大数据栈中的角色总结
       
     </span>
   </a>
@@ -5579,7 +5789,18 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        大数据场景下的列式存储
+        一、来历回顾
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clickhouse_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、为什么选 ClickHouse 进大数据栈
       
     </span>
   </a>
@@ -5590,7 +5811,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        适用场景
+        三、在大数据栈中的角色
       
     </span>
   </a>
@@ -5601,7 +5822,206 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        替代方案对比
+        四、典型应用场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、典型应用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 日志分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 用户行为分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-aiops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 AIOps 监控指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 广告 / 流量分析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-trace-opentelemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Trace / OpenTelemetry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、大数据栈集成最佳实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、大数据栈集成最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-kafka" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Kafka 直接消费（写入主路径）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-s3-hdfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 S3 / HDFS 外部表
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-spark-flink" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Spark / Flink 写入
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-trino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Trino 联邦查询
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、大数据规模下的建表最佳实践
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、热温冷分层（存算分离）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、分布式部署架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、常见坑（大数据场景特别版）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、监控（大数据场景）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clickhouse-vs-dorisstarrocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、ClickHouse vs Doris/StarRocks（大数据场景）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、大数据栈中的角色总结
       
     </span>
   </a>
@@ -5677,46 +6097,545 @@
 
 
 <h1 id="clickhouse">ClickHouse（大数据场景）<a class="headerlink" href="#clickhouse" title="Permanent link">&para;</a></h1>
-<h2 id="_1">大数据场景下的列式存储<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>ClickHouse 在大数据场景中作为 OLAP 引擎，替代 Hive/ES 的部分场景。</p>
-<h2 id="_2">适用场景<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>用户行为分析</li>
-<li>实时指标聚合</li>
-<li>日志分析（替代 ES）</li>
-<li>监控指标存储（替代 Prometheus 长期存储）</li>
-</ul>
-<h2 id="_3">替代方案对比<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>大数据栈中的 <strong>OLAP 终极武器</strong>。列存 + 向量化 + 极致压缩，PB 级数据秒级响应。<strong>日志分析、用户行为、广告分析、AIOps 监控指标的首选</strong>。</p>
+<p>💡 ClickHouse 的通用介绍详见 <a href="../../09_%E4%B8%AD%E9%97%B4%E4%BB%B6/07_ClickHouse/">中间件 → ClickHouse</a>。本章聚焦<strong>大数据栈中的角色与最佳实践</strong>。</p>
+</blockquote>
+<h2 id="_1">一、来历回顾<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">场景</th>
-<th style="text-align: left;">传统方案</th>
-<th style="text-align: left;">ClickHouse 方案</th>
-<th style="text-align: left;">优势</th>
+<th style="text-align: center;">年份</th>
+<th style="text-align: left;">事件</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">用户 PV/UV</td>
-<td style="text-align: left;">Hive（分钟级）</td>
-<td style="text-align: left;">ClickHouse（秒级）</td>
-<td style="text-align: left;">实时</td>
+<td style="text-align: center;">2009</td>
+<td style="text-align: left;">Yandex（俄罗斯搜索引擎）启动 ClickHouse，为广告分析服务</td>
 </tr>
 <tr>
-<td style="text-align: left;">日志检索</td>
-<td style="text-align: left;">ES（高存储成本）</td>
-<td style="text-align: left;">ClickHouse（1/10 成本）</td>
-<td style="text-align: left;">成本</td>
+<td style="text-align: center;">2016</td>
+<td style="text-align: left;">开源（Apache 2.0）</td>
 </tr>
 <tr>
-<td style="text-align: left;">聚合报表</td>
-<td style="text-align: left;">Presto</td>
-<td style="text-align: left;">ClickHouse（物化视图）</td>
-<td style="text-align: left;">性能</td>
+<td style="text-align: center;">2019-2022</td>
+<td style="text-align: left;">国内大规模采用（字节、快手、阿里、滴滴）</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024</td>
+<td style="text-align: left;">24.x 引入 Lightweight UPDATE / Parallel Replicas</td>
+</tr>
+<tr>
+<td style="text-align: center;">2025</td>
+<td style="text-align: left;"><strong>存算分离架构 + 与 S3/Iceberg 深度集成</strong></td>
 </tr>
 </tbody>
 </table>
+<h2 id="clickhouse_1">二、为什么选 ClickHouse 进大数据栈<a class="headerlink" href="#clickhouse_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1. 单表 GROUP BY 性能怪兽
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>   - 列存 + 向量化（SIMD）
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>   - 1000 亿行 GROUP BY 秒级
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>2. 压缩比惊人
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>   - LZ4 / ZSTD / Delta / DoubleDelta
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>   - 通常 10:1，极端 50:1
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>3. 写吞吐高
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   - 单分片 50-200MB/s（百亿行/天）
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>4. 部署轻
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>   - 一个二进制启动
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>   - 不依赖 Hadoop
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>5. 与现代大数据栈集成好
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>   - Kafka 直接消费
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>   - S3/HDFS 外部表
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>   - 24.x+ Iceberg 集成
+</code></pre></div>
+<h2 id="_2">三、在大数据栈中的角色<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>典型大数据架构:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  数据源        Kafka / CDC
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>   ↓
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  采集层        Flink / Spark Streaming / Vector
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>   ↓
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  存储层        ── HDFS / S3 / Iceberg / Delta
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>   ↓             └── ClickHouse（实时 OLAP）
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  服务层        Trino / Spark SQL  +  ClickHouse SQL
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>   ↓
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  应用层        Superset / Metabase / 自研 BI
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>ClickHouse 定位:
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>  ✅ 实时大屏 / BI 报表（亚秒级）
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  ✅ 日志分析（替代部分 ES OLAP 场景）
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  ✅ AIOps 监控数据（指标存储）
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  ✅ 用户行为分析 / 漏斗 / 留存
+</code></pre></div>
+<h2 id="_3">四、典型应用场景<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 日志分析<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- 收集层: Filebeat/Vector → Kafka → CH (Kafka 引擎)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">kafka_logs</span><span class="w"> </span><span class="p">(</span><span class="n">raw</span><span class="w"> </span><span class="n">String</span><span class="p">)</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Kafka</span><span class="p">()</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">SETTINGS</span><span class="w"> </span><span class="n">kafka_broker_list</span><span class="o">=</span><span class="s1">&#39;kafka:9092&#39;</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">         </span><span class="n">kafka_topic_list</span><span class="o">=</span><span class="s1">&#39;app-logs&#39;</span><span class="p">,</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">         </span><span class="n">kafka_group_name</span><span class="o">=</span><span class="s1">&#39;clickhouse-logs&#39;</span><span class="p">,</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">         </span><span class="n">kafka_format</span><span class="o">=</span><span class="s1">&#39;JSONAsString&#39;</span><span class="p">,</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">         </span><span class="n">kafka_num_consumers</span><span class="o">=</span><span class="mi">4</span><span class="p">;</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1">-- 落表</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">logs</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span><span class="n">ts</span><span class="w">        </span><span class="n">DateTime</span><span class="w"> </span><span class="n">CODEC</span><span class="p">(</span><span class="n">DoubleDelta</span><span class="p">,</span><span class="w"> </span><span class="n">ZSTD</span><span class="p">),</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">  </span><span class="n">service</span><span class="w">   </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">  </span><span class="k">level</span><span class="w">     </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span><span class="n">trace_id</span><span class="w">  </span><span class="n">String</span><span class="w"> </span><span class="n">CODEC</span><span class="p">(</span><span class="n">ZSTD</span><span class="p">),</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span><span class="n">message</span><span class="w">   </span><span class="n">String</span><span class="w"> </span><span class="n">CODEC</span><span class="p">(</span><span class="n">ZSTD</span><span class="p">),</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">  </span><span class="n">attrs</span><span class="w">     </span><span class="n">JSON</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="p">)</span><span class="w"> </span><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MergeTree</span><span class="p">()</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">toYYYYMMDD</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">service</span><span class="p">,</span><span class="w"> </span><span class="k">level</span><span class="p">,</span><span class="w"> </span><span class="n">ts</span><span class="p">)</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="n">TTL</span><span class="w"> </span><span class="n">ts</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">30</span><span class="w"> </span><span class="k">DAY</span><span class="p">;</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="c1">-- 物化视图自动入库</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="k">CREATE</span><span class="w"> </span><span class="n">MATERIALIZED</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="n">mv_logs</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">logs</span><span class="w"> </span><span class="k">AS</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="k">SELECT</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">  </span><span class="n">parseDateTimeBestEffort</span><span class="p">(</span><span class="n">JSONExtractString</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;timestamp&#39;</span><span class="p">))</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ts</span><span class="p">,</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">  </span><span class="n">JSONExtractString</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;service&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">service</span><span class="p">,</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">  </span><span class="n">JSONExtractString</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;level&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">level</span><span class="p">,</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">  </span><span class="n">JSONExtractString</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;trace_id&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">trace_id</span><span class="p">,</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">  </span><span class="n">JSONExtractString</span><span class="p">(</span><span class="n">raw</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;message&#39;</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">message</span><span class="p">,</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">  </span><span class="n">raw</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">attrs</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="k">FROM</span><span class="w"> </span><span class="n">kafka_logs</span><span class="p">;</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="c1">-- 查询: 某服务最近 1 小时的 ERROR 日志按分钟统计</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">toStartOfMinute</span><span class="p">(</span><span class="n">ts</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="k">count</span><span class="p">()</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">logs</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">service</span><span class="o">=</span><span class="s1">&#39;order-api&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">level</span><span class="o">=</span><span class="s1">&#39;ERROR&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">ts</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">now</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">HOUR</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">m</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="42">4.2 用户行为分析<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">user_events</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="n">event_date</span><span class="w"> </span><span class="nb">Date</span><span class="p">,</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="n">event_time</span><span class="w"> </span><span class="n">DateTime</span><span class="p">,</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">  </span><span class="n">user_id</span><span class="w"> </span><span class="n">UInt64</span><span class="p">,</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="n">device_id</span><span class="w"> </span><span class="n">String</span><span class="p">,</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="n">event_name</span><span class="w"> </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="n">page_path</span><span class="w"> </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">  </span><span class="n">utm_source</span><span class="w"> </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="n">duration</span><span class="w"> </span><span class="n">UInt32</span><span class="p">,</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="n">props</span><span class="w"> </span><span class="n">JSON</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">)</span><span class="w"> </span><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MergeTree</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">toYYYYMM</span><span class="p">(</span><span class="n">event_date</span><span class="p">)</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">event_name</span><span class="p">,</span><span class="w"> </span><span class="n">user_id</span><span class="p">,</span><span class="w"> </span><span class="n">event_time</span><span class="p">);</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1">-- 漏斗分析（窗口函数 + arrayJoin）</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="k">WITH</span><span class="w"> </span><span class="n">funnel</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">user_id</span><span class="p">,</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="n">windowFunnel</span><span class="p">(</span><span class="mi">3600</span><span class="p">)(</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">      </span><span class="n">event_time</span><span class="p">,</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">      </span><span class="n">event_name</span><span class="o">=</span><span class="s1">&#39;visit&#39;</span><span class="p">,</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">      </span><span class="n">event_name</span><span class="o">=</span><span class="s1">&#39;add_cart&#39;</span><span class="p">,</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">      </span><span class="n">event_name</span><span class="o">=</span><span class="s1">&#39;checkout&#39;</span><span class="p">,</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">      </span><span class="n">event_name</span><span class="o">=</span><span class="s1">&#39;paid&#39;</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">    </span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">step</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">user_events</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">  </span><span class="k">WHERE</span><span class="w"> </span><span class="n">event_date</span><span class="w"> </span><span class="k">BETWEEN</span><span class="w"> </span><span class="s1">&#39;2026-06-01&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="s1">&#39;2026-06-30&#39;</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">  </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">user_id</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a><span class="p">)</span>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">step</span><span class="p">,</span><span class="w"> </span><span class="k">count</span><span class="p">()</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">funnel</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">step</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">step</span><span class="p">;</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a><span class="c1">-- 留存分析（retention 函数）</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a><span class="k">SELECT</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a><span class="w">  </span><span class="n">retention</span><span class="p">(</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a><span class="w">    </span><span class="n">event_date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2026-06-01&#39;</span><span class="p">,</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a><span class="w">    </span><span class="n">event_date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2026-06-08&#39;</span><span class="p">,</span>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="w">    </span><span class="n">event_date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2026-06-15&#39;</span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a><span class="w">  </span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">r</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a><span class="k">FROM</span><span class="w"> </span><span class="n">user_events</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">user_id</span><span class="p">;</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a><span class="c1">-- 用户路径</span>
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">sequenceCount</span><span class="p">(</span><span class="s1">&#39;(?1)(?2)&#39;</span><span class="p">)(</span><span class="n">event_time</span><span class="p">,</span><span class="w"> </span><span class="n">event_name</span><span class="o">=</span><span class="s1">&#39;visit&#39;</span><span class="p">,</span><span class="w"> </span><span class="n">event_name</span><span class="o">=</span><span class="s1">&#39;paid&#39;</span><span class="p">)</span>
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a><span class="k">FROM</span><span class="w"> </span><span class="n">user_events</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="43-aiops">4.3 AIOps 监控指标<a class="headerlink" href="#43-aiops" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">metrics</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="n">metric_time</span><span class="w"> </span><span class="n">DateTime</span><span class="w"> </span><span class="n">CODEC</span><span class="p">(</span><span class="n">DoubleDelta</span><span class="p">,</span><span class="w"> </span><span class="n">LZ4</span><span class="p">),</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="n">metric_name</span><span class="w"> </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="n">service</span><span class="w">     </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="k">host</span><span class="w">        </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="n">value</span><span class="w">       </span><span class="n">Float64</span><span class="w"> </span><span class="n">CODEC</span><span class="p">(</span><span class="n">Gorilla</span><span class="p">,</span><span class="w"> </span><span class="n">LZ4</span><span class="p">),</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="n">labels</span><span class="w">      </span><span class="k">Map</span><span class="p">(</span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span><span class="w"> </span><span class="n">String</span><span class="p">)</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">)</span><span class="w"> </span><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MergeTree</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">toDate</span><span class="p">(</span><span class="n">metric_time</span><span class="p">)</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">metric_name</span><span class="p">,</span><span class="w"> </span><span class="n">service</span><span class="p">,</span><span class="w"> </span><span class="n">metric_time</span><span class="p">)</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="n">TTL</span><span class="w"> </span><span class="n">metric_time</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">90</span><span class="w"> </span><span class="k">DAY</span><span class="p">;</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c1">-- 查询: 服务 CPU 趋势</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">toStartOfMinute</span><span class="p">(</span><span class="n">metric_time</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="k">FROM</span><span class="w"> </span><span class="n">metrics</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">metric_name</span><span class="o">=</span><span class="s1">&#39;cpu.usage&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">service</span><span class="o">=</span><span class="s1">&#39;order-api&#39;</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="n">metric_time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">now</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">HOUR</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">m</span><span class="p">;</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="c1">-- 异常检测: 当前值偏离最近 7 天同时段均值的程度</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="k">WITH</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="n">toStartOfMinute</span><span class="p">(</span><span class="n">metric_time</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">avg_v</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">  </span><span class="k">FROM</span><span class="w"> </span><span class="n">metrics</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">  </span><span class="k">WHERE</span><span class="w"> </span><span class="n">metric_name</span><span class="o">=</span><span class="s1">&#39;qps&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">service</span><span class="o">=</span><span class="s1">&#39;order-api&#39;</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">    </span><span class="k">AND</span><span class="w"> </span><span class="n">metric_time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">now</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="k">DAY</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="w">  </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">m</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="p">)</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">value</span><span class="p">,</span><span class="w"> </span><span class="p">(</span><span class="n">value</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">avg_v</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">avg_v</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">deviation</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="k">FROM</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">toStartOfMinute</span><span class="p">(</span><span class="n">metric_time</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">metrics</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="w">      </span><span class="k">WHERE</span><span class="w"> </span><span class="n">metric_name</span><span class="o">=</span><span class="s1">&#39;qps&#39;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">service</span><span class="o">=</span><span class="s1">&#39;order-api&#39;</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="w">        </span><span class="k">AND</span><span class="w"> </span><span class="n">metric_time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">now</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">30</span><span class="w"> </span><span class="k">MINUTE</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="w">      </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">m</span><span class="p">)</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="k">JOIN</span><span class="w"> </span><span class="n">base</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="n">m</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="k">WHERE</span><span class="w"> </span><span class="k">abs</span><span class="p">(</span><span class="n">deviation</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="44">4.4 广告 / 流量分析<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">-- 大宽表 + 物化视图预聚合</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">ad_clicks</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MergeTree</span><span class="p">...;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">CREATE</span><span class="w"> </span><span class="n">MATERIALIZED</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="n">mv_ad_daily</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SummingMergeTree</span><span class="p">()</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">toYYYYMM</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">dt</span><span class="p">,</span><span class="w"> </span><span class="n">advertiser_id</span><span class="p">,</span><span class="w"> </span><span class="n">ad_id</span><span class="p">)</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="k">AS</span><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span><span class="n">toDate</span><span class="p">(</span><span class="n">click_time</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">dt</span><span class="p">,</span><span class="w"> </span><span class="n">advertiser_id</span><span class="p">,</span><span class="w"> </span><span class="n">ad_id</span><span class="p">,</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">   </span><span class="k">count</span><span class="p">()</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">clicks</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="n">cost</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">cost</span><span class="p">,</span><span class="w"> </span><span class="k">sum</span><span class="p">(</span><span class="k">conversion</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">conv</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="k">FROM</span><span class="w"> </span><span class="n">ad_clicks</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">dt</span><span class="p">,</span><span class="w"> </span><span class="n">advertiser_id</span><span class="p">,</span><span class="w"> </span><span class="n">ad_id</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="45-trace-opentelemetry">4.5 Trace / OpenTelemetry<a class="headerlink" href="#45-trace-opentelemetry" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">traces</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">  </span><span class="n">trace_id</span><span class="w">        </span><span class="n">FixedString</span><span class="p">(</span><span class="mi">32</span><span class="p">),</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="n">span_id</span><span class="w">         </span><span class="n">FixedString</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="n">parent_span_id</span><span class="w">  </span><span class="n">FixedString</span><span class="p">(</span><span class="mi">16</span><span class="p">),</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="n">service</span><span class="w">         </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">  </span><span class="k">operation</span><span class="w">       </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="n">start_time</span><span class="w">      </span><span class="n">DateTime64</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="w"> </span><span class="n">CODEC</span><span class="p">(</span><span class="n">DoubleDelta</span><span class="p">,</span><span class="w"> </span><span class="n">ZSTD</span><span class="p">),</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">  </span><span class="n">duration_ns</span><span class="w">     </span><span class="n">UInt64</span><span class="p">,</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">  </span><span class="n">status_code</span><span class="w">     </span><span class="n">UInt8</span><span class="p">,</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">  </span><span class="n">tags</span><span class="w">            </span><span class="k">Map</span><span class="p">(</span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span><span class="w"> </span><span class="n">String</span><span class="p">)</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="p">)</span><span class="w"> </span><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MergeTree</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">toYYYYMMDD</span><span class="p">(</span><span class="n">start_time</span><span class="p">)</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">service</span><span class="p">,</span><span class="w"> </span><span class="k">operation</span><span class="p">,</span><span class="w"> </span><span class="n">start_time</span><span class="p">);</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="c1">-- p99 延迟</span>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">service</span><span class="p">,</span><span class="w"> </span><span class="k">operation</span><span class="p">,</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">  </span><span class="n">quantile</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">99</span><span class="p">)(</span><span class="n">duration_ns</span><span class="o">/</span><span class="mi">1</span><span class="n">e6</span><span class="p">)</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">p99_ms</span><span class="p">,</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">  </span><span class="n">quantile</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="p">)(</span><span class="n">duration_ns</span><span class="o">/</span><span class="mi">1</span><span class="n">e6</span><span class="p">)</span><span class="w">  </span><span class="k">AS</span><span class="w"> </span><span class="n">p50_ms</span><span class="p">,</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a><span class="w">  </span><span class="k">count</span><span class="p">()</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">qps</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="k">FROM</span><span class="w"> </span><span class="n">traces</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">start_time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">now</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="k">MINUTE</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">service</span><span class="p">,</span><span class="w"> </span><span class="k">operation</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">p99_ms</span><span class="w"> </span><span class="k">DESC</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">50</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="_4">五、大数据栈集成最佳实践<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="51-kafka">5.1 Kafka 直接消费（写入主路径）<a class="headerlink" href="#51-kafka" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">-- 1. Kafka 引擎表（消费）</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">kafka_events</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">raw</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="p">)</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Kafka</span><span class="p">()</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">SETTINGS</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="n">kafka_broker_list</span><span class="o">=</span><span class="s1">&#39;kafka1:9092,kafka2:9092&#39;</span><span class="p">,</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="n">kafka_topic_list</span><span class="o">=</span><span class="s1">&#39;events&#39;</span><span class="p">,</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span><span class="n">kafka_group_name</span><span class="o">=</span><span class="s1">&#39;clickhouse-events&#39;</span><span class="p">,</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="n">kafka_format</span><span class="o">=</span><span class="s1">&#39;JSONAsString&#39;</span><span class="p">,</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">  </span><span class="n">kafka_num_consumers</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">  </span><span class="n">kafka_max_block_size</span><span class="o">=</span><span class="mi">65536</span><span class="p">;</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="c1">-- 2. 落地表（实际存储）</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="p">(...)</span><span class="w"> </span><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ReplicatedMergeTree</span><span class="p">(...);</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="c1">-- 3. 物化视图（自动 ETL）</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="k">CREATE</span><span class="w"> </span><span class="n">MATERIALIZED</span><span class="w"> </span><span class="k">VIEW</span><span class="w"> </span><span class="n">mv_events</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">AS</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="k">SELECT</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">kafka_events</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="52-s3-hdfs">5.2 S3 / HDFS 外部表<a class="headerlink" href="#52-s3-hdfs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1">-- 直接查 S3 上的 Parquet（不导入）</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">count</span><span class="p">()</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">s3</span><span class="p">(</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="s1">&#39;https://bucket.s3.amazonaws.com/logs/*.parquet&#39;</span><span class="p">,</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="s1">&#39;AKIA...&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;secret...&#39;</span><span class="p">,</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="s1">&#39;Parquet&#39;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">);</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="c1">-- Iceberg 表（24.x+）</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">iceberg_events</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Iceberg</span><span class="p">(</span><span class="s1">&#39;s3://bucket/warehouse/events/&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;...&#39;</span><span class="p">);</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="c1">-- 增量同步到本地表（性能更好）</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">local_events</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">iceberg_events</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">event_date</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">today</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="53-spark-flink">5.3 Spark / Flink 写入<a class="headerlink" href="#53-spark-flink" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Spark JDBC</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">df</span><span class="o">.</span><span class="n">write</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;jdbc&quot;</span><span class="p">)</span> \
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;url&quot;</span><span class="p">,</span> <span class="s2">&quot;jdbc:clickhouse://ch:8123/default&quot;</span><span class="p">)</span> \
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;dbtable&quot;</span><span class="p">,</span> <span class="s2">&quot;events&quot;</span><span class="p">)</span> \
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>  <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;driver&quot;</span><span class="p">,</span> <span class="s2">&quot;com.clickhouse.jdbc.ClickHouseDriver&quot;</span><span class="p">)</span> \
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>  <span class="o">.</span><span class="n">option</span><span class="p">(</span><span class="s2">&quot;batchsize&quot;</span><span class="p">,</span> <span class="s2">&quot;100000&quot;</span><span class="p">)</span> \
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>  <span class="o">.</span><span class="n">mode</span><span class="p">(</span><span class="s2">&quot;append&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="c1"># 推荐 native client（更快）</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="n">spark</span><span class="o">-</span><span class="n">clickhouse</span><span class="o">-</span><span class="n">connector</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="c1"># Flink</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="n">flink</span><span class="o">-</span><span class="n">connector</span><span class="o">-</span><span class="n">clickhouse</span>
+</code></pre></div>
+<h3 id="54-trino">5.4 Trino 联邦查询<a class="headerlink" href="#54-trino" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># trino/etc/catalog/clickhouse.properties</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="na">connector.name</span><span class="o">=</span><span class="s">clickhouse</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="na">connection-url</span><span class="o">=</span><span class="s">jdbc:clickhouse://ch:8123</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="na">connection-user</span><span class="o">=</span><span class="s">trino</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="na">connection-password</span><span class="o">=</span><span class="s">...</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1">-- Trino 跨源 JOIN：Iceberg 维度表 + ClickHouse 事实表</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">ch</span><span class="p">.</span><span class="n">user_id</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="p">.</span><span class="n">country</span><span class="p">,</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="k">FROM</span><span class="w"> </span><span class="n">clickhouse</span><span class="p">.</span><span class="k">default</span><span class="p">.</span><span class="n">events</span><span class="w"> </span><span class="n">ch</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">JOIN</span><span class="w"> </span><span class="n">iceberg</span><span class="p">.</span><span class="n">dim</span><span class="p">.</span><span class="n">users</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">ch</span><span class="p">.</span><span class="n">user_id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dim</span><span class="p">.</span><span class="n">user_id</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">ch</span><span class="p">.</span><span class="n">event_date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2026-06-22&#39;</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">ch</span><span class="p">.</span><span class="n">user_id</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="p">.</span><span class="n">country</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="_5">六、大数据规模下的建表最佳实践<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1">-- 大宽表 + 高基数 + 日均 100 亿行级别</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events_local</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">  </span><span class="n">event_time</span><span class="w">     </span><span class="n">DateTime</span><span class="w"> </span><span class="n">CODEC</span><span class="p">(</span><span class="n">DoubleDelta</span><span class="p">,</span><span class="w"> </span><span class="n">ZSTD</span><span class="p">(</span><span class="mi">1</span><span class="p">)),</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">  </span><span class="n">event_date</span><span class="w">     </span><span class="nb">Date</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="n">toDate</span><span class="p">(</span><span class="n">event_time</span><span class="p">),</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span><span class="c1">-- 高基数标识（用 LowCardinality 还是 String 看基数）</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">  </span><span class="n">user_id</span><span class="w">        </span><span class="n">UInt64</span><span class="p">,</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">  </span><span class="n">device_id</span><span class="w">      </span><span class="n">String</span><span class="w"> </span><span class="n">CODEC</span><span class="p">(</span><span class="n">ZSTD</span><span class="p">),</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">  </span><span class="c1">-- 枚举 + 低基数 → LowCardinality</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">  </span><span class="n">event_name</span><span class="w">     </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="w">  </span><span class="n">country</span><span class="w">        </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="w">  </span><span class="n">app_version</span><span class="w">    </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">),</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">  </span><span class="c1">-- 数值列</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">  </span><span class="n">duration_ms</span><span class="w">    </span><span class="n">UInt32</span><span class="w"> </span><span class="n">CODEC</span><span class="p">(</span><span class="n">T64</span><span class="p">,</span><span class="w"> </span><span class="n">ZSTD</span><span class="p">),</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="w">  </span><span class="n">revenue</span><span class="w">        </span><span class="nb">Decimal</span><span class="p">(</span><span class="mi">18</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="n">CODEC</span><span class="p">(</span><span class="n">ZSTD</span><span class="p">),</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="w">  </span><span class="c1">-- JSON 列（24.x 推荐）</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="w">  </span><span class="n">attrs</span><span class="w">          </span><span class="n">JSON</span><span class="p">,</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="w">  </span><span class="c1">-- 时序压缩（重复值多）</span>
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="w">  </span><span class="n">region</span><span class="w">         </span><span class="n">LowCardinality</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
+<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="p">)</span>
+<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ReplicatedMergeTree</span><span class="p">(</span><span class="s1">&#39;/ch/tables/{shard}/events&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;{replica}&#39;</span><span class="p">)</span>
+<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="n">PARTITION</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">toYYYYMMDD</span><span class="p">(</span><span class="n">event_date</span><span class="p">)</span><span class="w">        </span><span class="c1">-- 按天分区</span>
+<a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">event_name</span><span class="p">,</span><span class="w"> </span><span class="n">user_id</span><span class="p">,</span><span class="w"> </span><span class="n">event_time</span><span class="p">)</span><span class="w"> </span><span class="c1">-- 查询模式决定</span>
+<a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a><span class="n">TTL</span><span class="w"> </span><span class="n">event_date</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">90</span><span class="w"> </span><span class="k">DAY</span>
+<a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a><span class="n">SETTINGS</span>
+<a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a><span class="w">  </span><span class="n">index_granularity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">8192</span><span class="p">,</span>
+<a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a><span class="w">  </span><span class="n">storage_policy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;s3_tiered&#39;</span><span class="p">;</span><span class="w">            </span><span class="c1">-- 热温冷</span>
+</code></pre></div>
+<h2 id="_6">七、热温冷分层（存算分离）<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="cm">&lt;!-- config.xml --&gt;</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nt">&lt;storage_configuration&gt;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">  </span><span class="nt">&lt;disks&gt;</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="nt">&lt;ssd&gt;&lt;path&gt;</span>/var/lib/clickhouse/ssd/<span class="nt">&lt;/path&gt;&lt;/ssd&gt;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">    </span><span class="nt">&lt;hdd&gt;&lt;path&gt;</span>/var/lib/clickhouse/hdd/<span class="nt">&lt;/path&gt;&lt;/hdd&gt;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">    </span><span class="nt">&lt;s3&gt;&lt;type&gt;</span>s3<span class="nt">&lt;/type&gt;&lt;endpoint&gt;</span>...<span class="nt">&lt;/endpoint&gt;&lt;/s3&gt;</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">  </span><span class="nt">&lt;/disks&gt;</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">  </span><span class="nt">&lt;policies&gt;</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">    </span><span class="nt">&lt;s3_tiered&gt;</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">      </span><span class="nt">&lt;volumes&gt;</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">        </span><span class="nt">&lt;hot&gt;&lt;disk&gt;</span>ssd<span class="nt">&lt;/disk&gt;&lt;/hot&gt;</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">        </span><span class="nt">&lt;warm&gt;&lt;disk&gt;</span>hdd<span class="nt">&lt;/disk&gt;&lt;/warm&gt;</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">        </span><span class="nt">&lt;cold&gt;&lt;disk&gt;</span>s3<span class="nt">&lt;/disk&gt;&lt;/cold&gt;</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">      </span><span class="nt">&lt;/volumes&gt;</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="w">      </span><span class="nt">&lt;move_factor&gt;</span>0.2<span class="nt">&lt;/move_factor&gt;</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w">    </span><span class="nt">&lt;/s3_tiered&gt;</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="w">  </span><span class="nt">&lt;/policies&gt;</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="nt">&lt;/storage_configuration&gt;</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1">-- TTL 自动迁移</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">MODIFY</span><span class="w"> </span><span class="n">TTL</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">  </span><span class="n">event_date</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">7</span><span class="w"> </span><span class="k">DAY</span><span class="w">  </span><span class="k">TO</span><span class="w"> </span><span class="n">VOLUME</span><span class="w"> </span><span class="s1">&#39;warm&#39;</span><span class="p">,</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">  </span><span class="n">event_date</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">30</span><span class="w"> </span><span class="k">DAY</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="n">VOLUME</span><span class="w"> </span><span class="s1">&#39;cold&#39;</span><span class="p">,</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">  </span><span class="n">event_date</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">365</span><span class="w"> </span><span class="k">DAY</span><span class="w"> </span><span class="k">DELETE</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="_7">八、分布式部署架构<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>                ┌────── chproxy / LB ──────┐
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>                       ↓
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>   ┌──── 分布式表 Distributed ──────┐
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>   ↓                                ↓
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a> shard1                          shard2
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>  ├── ReplicatedMergeTree (rep1)   ├── ReplicatedMergeTree (rep1)
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>  ├── ReplicatedMergeTree (rep2)   ├── ReplicatedMergeTree (rep2)
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>  └── ClickHouse Keeper × 3        └── ...
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1">-- 本地表</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events_local</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">CLUSTER</span><span class="w"> </span><span class="n">prod</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="p">)</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ReplicatedMergeTree</span><span class="p">(</span><span class="s1">&#39;/ch/{shard}/events&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;{replica}&#39;</span><span class="p">)</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="p">...;</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="c1">-- 分布式表</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">CLUSTER</span><span class="w"> </span><span class="n">prod</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">events_local</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Distributed</span><span class="p">(</span><span class="n">prod</span><span class="p">,</span><span class="w"> </span><span class="k">default</span><span class="p">,</span><span class="w"> </span><span class="n">events_local</span><span class="p">,</span><span class="w"> </span><span class="n">rand</span><span class="p">());</span>
+</code></pre></div>
+<p><strong>经验</strong>：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>小集群: 1 分片 + 2-3 副本
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>中集群: 2-4 分片 + 2 副本（总 4-8 节点）
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>大集群: 8-32 分片 + 2 副本（数百节点）
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>分片数原则:
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>  - 写入吞吐 / 单分片 50-100MB/s
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>  - 数据总量 / 单分片建议 &lt; 100TB
+</code></pre></div></p>
+<h2 id="_8">九、常见坑（大数据场景特别版）<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>单行 INSERT 拖垮 Keeper</strong></td>
+<td style="text-align: left;">必须批量（每批 10K+ 行）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>小 part 太多</strong></td>
+<td style="text-align: left;">用 Kafka 引擎或 Async Insert</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>小文件 part 风暴</strong></td>
+<td style="text-align: left;">限制 parts_to_throw_insert</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Compaction 拖死</strong></td>
+<td style="text-align: left;">错峰 + 限速</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>JSON 列爆字段</strong></td>
+<td style="text-align: left;">改 Map(LowCardinality, String)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有 LowCardinality</strong></td>
+<td style="text-align: left;">枚举类必加</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>大表 JOIN 慢</strong></td>
+<td style="text-align: left;">dictionary / 预聚合 / 小表广播</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨分片 JOIN</strong></td>
+<td style="text-align: left;">设计上避免，用 GLOBAL JOIN 慎用</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Memory limit 超</strong></td>
+<td style="text-align: left;">external GROUP BY 落盘</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>副本不一致</strong></td>
+<td style="text-align: left;">检查 system.replicas + replication_queue</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Keeper 压力</strong></td>
+<td style="text-align: left;">监控 + 调大</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>冷数据查询慢</strong></td>
+<td style="text-align: left;">S3 缓存 + 二级索引</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>物化视图链路问题</strong></td>
+<td style="text-align: left;">MV 失败不影响源表写入需开 fault tolerance</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_9">十、监控（大数据场景）<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1">-- 写入慢</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">event_time</span><span class="p">,</span><span class="w"> </span><span class="n">query</span><span class="p">,</span><span class="w"> </span><span class="n">written_rows</span><span class="p">,</span><span class="w"> </span><span class="n">written_bytes</span><span class="p">,</span><span class="w"> </span><span class="n">query_duration_ms</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">FROM</span><span class="w"> </span><span class="k">system</span><span class="p">.</span><span class="n">query_log</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">event_time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">now</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nb">INTERVAL</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">HOUR</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="k">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;QueryFinish&#39;</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">  </span><span class="k">AND</span><span class="w"> </span><span class="n">query_kind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Insert&#39;</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">query_duration_ms</span><span class="w"> </span><span class="k">DESC</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="c1">-- Part 数量</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">table</span><span class="p">,</span><span class="w"> </span><span class="k">count</span><span class="p">()</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">system</span><span class="p">.</span><span class="n">parts</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">active</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="k">DESC</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">20</span><span class="p">;</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="c1">-- 副本滞后</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">table</span><span class="p">,</span><span class="w"> </span><span class="n">replica_name</span><span class="p">,</span><span class="w"> </span><span class="n">absolute_delay</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="k">FROM</span><span class="w"> </span><span class="k">system</span><span class="p">.</span><span class="n">replicas</span><span class="w"> </span><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">absolute_delay</span><span class="w"> </span><span class="k">DESC</span><span class="p">;</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>
+<a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="c1">-- 物化视图状态</span>
+<a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="k">system</span><span class="p">.</span><span class="n">tables</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">engine</span><span class="w"> </span><span class="k">LIKE</span><span class="w"> </span><span class="s1">&#39;%MaterializedView%&#39;</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="clickhouse-vs-dorisstarrocks">十一、ClickHouse vs Doris/StarRocks（大数据场景）<a class="headerlink" href="#clickhouse-vs-dorisstarrocks" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">ClickHouse</th>
+<th style="text-align: left;">Doris/StarRocks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">单表性能</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">JOIN 性能</td>
+<td style="text-align: left;">⚠️</td>
+<td style="text-align: left;"><strong>⭐⭐⭐⭐⭐</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">高并发 BI</td>
+<td style="text-align: left;">⭐⭐</td>
+<td style="text-align: left;"><strong>⭐⭐⭐⭐⭐</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">实时写入</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">资源利用</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">学习曲线</td>
+<td style="text-align: left;">陡</td>
+<td style="text-align: left;">平</td>
+</tr>
+<tr>
+<td style="text-align: left;">国内主流</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">数据湖集成</td>
+<td style="text-align: left;">24.x+ Iceberg</td>
+<td style="text-align: left;">Iceberg/Hudi/Delta</td>
+</tr>
+<tr>
+<td style="text-align: left;">国产替代</td>
+<td style="text-align: left;">ByteHouse</td>
+<td style="text-align: left;">镜舟 StarRocks</td>
+</tr>
+</tbody>
+</table>
+<p><strong>经验</strong>：
+- <strong>日志 / 单表大宽表 / 极致性能</strong> → ClickHouse
+- <strong>数仓 / 多表 JOIN / 高并发 BI</strong> → Doris/StarRocks
+- 两者并存很常见</p>
+<h2 id="_10">十二、大数据栈中的角色总结<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>2025 大数据栈中的 ClickHouse:
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>  - 实时 OLAP 层主力（与 Doris/StarRocks 并存）
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>  - 日志 / Trace / Metrics 后端
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>  - AIOps 指标存储（替代部分 InfluxDB）
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>  - 用户行为分析底层（替代部分 Druid）
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>  - Lakehouse 中的&quot;快路径&quot;（Trino 是 Adhoc 慢路径）
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：大数据栈中，<strong>ClickHouse = 实时 OLAP 快路径</strong>，与 Spark（ETL）/ Trino（Adhoc）/ Flink（流）形成互补。<strong>单表性能极致 + 压缩比惊人</strong>仍是其无可替代的优势。配合 Kafka + Iceberg + S3 分层存储，能搭出 PB 级实时分析平台。</p>
+</blockquote>
 
 
 

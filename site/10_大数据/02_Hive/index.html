@@ -3352,7 +3352,18 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        概述
+        一、来历与发展
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hive_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、Hive 是什么
       
     </span>
   </a>
@@ -3363,10 +3374,27 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        表类型
+        三、核心组件
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="三、核心组件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hive-metastorehms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hive Metastore（HMS）的特殊地位
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3374,7 +3402,311 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        优化
+        四、核心功能
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、表类型与存储格式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、表类型与存储格式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 表类型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 存储格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、使用场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、使用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 推荐
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 不推荐
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hive-vs-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、Hive vs 其他 SQL 引擎
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、最佳实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 库表设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 分区策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 命名规范
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 性能优化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 引擎选择
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-hive-on-spark-vs-spark-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 Hive on Spark vs Spark SQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-acid-iceberg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 ACID + Iceberg 现代化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 安全集成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#89-hiveserver2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.9 多租户 HiveServer2 部署
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、运维命令速查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、常见坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、生态与工具
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、监控指标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、迁移到现代栈
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hive-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、Hive 4 新特性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、国产替代 / 同类
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十七、未来展望
       
     </span>
   </a>
@@ -5579,7 +5911,18 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        概述
+        一、来历与发展
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hive_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、Hive 是什么
       
     </span>
   </a>
@@ -5590,10 +5933,27 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        表类型
+        三、核心组件
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="三、核心组件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hive-metastorehms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hive Metastore（HMS）的特殊地位
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -5601,7 +5961,311 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        优化
+        四、核心功能
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、表类型与存储格式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、表类型与存储格式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 表类型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 存储格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、使用场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、使用场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 推荐
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚠️ 不推荐
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hive-vs-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、Hive vs 其他 SQL 引擎
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、最佳实践
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 库表设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 分区策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 命名规范
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 性能优化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 引擎选择
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#86-hive-on-spark-vs-spark-sql" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.6 Hive on Spark vs Spark SQL
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#87-acid-iceberg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.7 ACID + Iceberg 现代化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#88" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.8 安全集成
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#89-hiveserver2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.9 多租户 HiveServer2 部署
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、运维命令速查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、常见坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、生态与工具
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、监控指标
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、迁移到现代栈
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hive-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、Hive 4 新特性
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、国产替代 / 同类
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十七、未来展望
       
     </span>
   </a>
@@ -5677,45 +6341,717 @@
 
 
 <h1 id="hive">Hive<a class="headerlink" href="#hive" title="Permanent link">&para;</a></h1>
-<h2 id="_1">概述<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>Hive 提供 SQL 接口查询 HDFS 上的数据，将 HQL 转换为 MapReduce/Spark/Tez 任务执行。</p>
-<h2 id="_2">表类型<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">-- 内部表（数据由 Hive 管理）</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">users</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="n">name</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="n">created</span><span class="w"> </span><span class="nb">DATE</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">)</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">ROW</span><span class="w"> </span><span class="n">FORMAT</span><span class="w"> </span><span class="n">DELIMITED</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">FIELDS</span><span class="w"> </span><span class="n">TERMINATED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;,&#39;</span><span class="p">;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1">-- 外部表（数据在 HDFS 外部）</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">EXTERNAL</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">logs</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="n">log_time</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="p">,</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="k">level</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="n">message</span><span class="w"> </span><span class="n">STRING</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">)</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="n">PARTITIONED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">dt</span><span class="w"> </span><span class="n">STRING</span><span class="p">)</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="n">STORED</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">PARQUET</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="k">LOCATION</span><span class="w"> </span><span class="s1">&#39;/data/logs&#39;</span><span class="p">;</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="c1">-- 分区表</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="k">ALTER</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">logs</span><span class="w"> </span><span class="k">ADD</span><span class="w"> </span><span class="n">PARTITION</span><span class="w"> </span><span class="p">(</span><span class="n">dt</span><span class="o">=</span><span class="s1">&#39;2026-06-15&#39;</span><span class="p">);</span>
+<blockquote>
+<p>"用 SQL 操作 HDFS"——Hive 让 PB 级数据分析门槛从写 MR 代码降到写 SELECT。<strong>几乎所有离线数据仓库都跑着 Hive</strong>。</p>
+</blockquote>
+<h2 id="_1">一、来历与发展<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">年份</th>
+<th style="text-align: left;">事件</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">2007</td>
+<td style="text-align: left;">Facebook 内部启动 Hive，解决日均 TB 级日志分析</td>
+</tr>
+<tr>
+<td style="text-align: center;">2008</td>
+<td style="text-align: left;">开源捐 Apache</td>
+</tr>
+<tr>
+<td style="text-align: center;">2010</td>
+<td style="text-align: left;">0.5 GA，国内开始大规模使用</td>
+</tr>
+<tr>
+<td style="text-align: center;">2013</td>
+<td style="text-align: left;">0.13 引入 <strong>Tez</strong> 执行引擎（替代 MR）</td>
+</tr>
+<tr>
+<td style="text-align: center;">2016</td>
+<td style="text-align: left;">2.0 LLAP（低延迟）</td>
+</tr>
+<tr>
+<td style="text-align: center;">2018</td>
+<td style="text-align: left;">3.0 <strong>ACID + Hive Streaming</strong>、不再支持非 ACID</td>
+</tr>
+<tr>
+<td style="text-align: center;">2022</td>
+<td style="text-align: left;">4.0 大版本，Iceberg 集成、外部表增强</td>
+</tr>
+<tr>
+<td style="text-align: center;">2024</td>
+<td style="text-align: left;"><strong>4.0.1 GA</strong> 稳定版</td>
+</tr>
+<tr>
+<td style="text-align: center;">2025</td>
+<td style="text-align: left;">Hive 与 Iceberg / Trino 深度融合</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>现状</strong>：Hive 已是"老枪"，但<strong>Hive Metastore (HMS) 仍是大数据栈元数据事实标准</strong>——Spark/Trino/Flink/Presto/Doris 都用它。</p>
+</blockquote>
+<h2 id="hive_1">二、Hive 是什么<a class="headerlink" href="#hive_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&quot;基于 Hadoop 的数据仓库工具&quot;
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>定位:
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  - SQL → MapReduce / Tez / Spark 翻译器
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  - 元数据存储 (Metastore)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  - 表/分区/列管理
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  - 用户/权限/审计
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>不是:
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  ❌ 实时查询（最快 LLAP 也是秒级）
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  ❌ OLTP 事务（ACID 是批 ACID）
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  ❌ 单点查询（不擅长 KV）
 </code></pre></div>
-<h2 id="_3">优化<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1">-- 分区裁剪</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">logs</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">dt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2026-06-15&#39;</span><span class="p">;</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1">-- 分桶表（提高 JOIN 效率）</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">users_bucketed</span><span class="w"> </span><span class="p">(</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="n">id</span><span class="w"> </span><span class="nb">INT</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="n">STRING</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">)</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">CLUSTERED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="mi">16</span><span class="w"> </span><span class="n">BUCKETS</span><span class="p">;</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1">-- 文件格式：ORC/Parquet 比 Text 快 10x</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1">-- 开启向量化</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">vectorized</span><span class="p">.</span><span class="n">execution</span><span class="p">.</span><span class="n">enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
+<h2 id="_2">三、核心组件<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>┌──────────── 客户端 ──────────────┐
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>│ Beeline / JDBC / Hue / ODBC      │
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>└──────────────┬───────────────────┘
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>               ↓
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>┌──────────── HiveServer2 ─────────┐
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>│  SQL 解析 / 编译 / 执行计划       │
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>│  权限校验                         │
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>└──────────────┬───────────────────┘
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>               ↓
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>┌──────────── Metastore (HMS) ─────┐
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│  库/表/分区/列/统计/权限元数据    │
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>│  存 MySQL/PostgreSQL              │
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>└──────────────┬───────────────────┘
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>               ↓
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>┌──────────── 执行引擎 ─────────────┐
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>│  MapReduce (老) / Tez / Spark    │
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>└──────────────┬───────────────────┘
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>               ↓
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>┌──────────── 数据 ──────────────────┐
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>│  HDFS / S3 / OSS                  │
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>│  ORC / Parquet / TEXT / Iceberg   │
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>└────────────────────────────────────┘
 </code></pre></div>
+<h3 id="hive-metastorehms">Hive Metastore（HMS）的特殊地位<a class="headerlink" href="#hive-metastorehms" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>HMS 已经成为&quot;大数据元数据事实标准&quot;:
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  - Spark SQL 用 HMS
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  - Trino / Presto 用 HMS
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  - Flink SQL 用 HMS
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  - Doris / StarRocks 用 HMS
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  - Iceberg / Hudi 兼容 HMS
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>→ 即使你不再用 Hive 跑 SQL，HMS 仍然必装
+</code></pre></div>
+<h2 id="_3">四、核心功能<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>1. HQL（类 SQL 方言）
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>2. 库/表/分区/桶（partitioning + bucketing）
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>3. 自定义函数 UDF / UDAF / UDTF
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>4. ACID 事务表（3.0+）
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>5. 物化视图 + 自动改写
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>6. LLAP（低延迟内存执行）
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>7. Iceberg / Delta / Hudi 集成（4.0+）
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>8. Ranger / Sentry 列级权限
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>9. Hive on Spark（推荐）
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>10. JDBC/ODBC 通用接入
+</code></pre></div>
+<h2 id="_4">五、表类型与存储格式<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 表类型<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Managed Table（内部表）</strong></td>
+<td style="text-align: left;">DROP 删数据</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>External Table（外部表）</strong></td>
+<td style="text-align: left;">DROP 不删数据，推荐</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Partitioned Table</strong></td>
+<td style="text-align: left;">按列分区，存为子目录</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Bucketed Table</strong></td>
+<td style="text-align: left;">按 hash 分桶，存为文件</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ACID Table</strong></td>
+<td style="text-align: left;">3.0+，事务表（INSERT/UPDATE/DELETE）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Iceberg Table</strong></td>
+<td style="text-align: left;">4.0+，数据湖格式</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52">5.2 存储格式<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">格式</th>
+<th style="text-align: left;">特点</th>
+<th style="text-align: center;">推荐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">TEXT</td>
+<td style="text-align: left;">原始文本</td>
+<td style="text-align: center;">仅原始日志</td>
+</tr>
+<tr>
+<td style="text-align: left;">SequenceFile</td>
+<td style="text-align: left;">二进制</td>
+<td style="text-align: center;">❌ 过时</td>
+</tr>
+<tr>
+<td style="text-align: left;">RCFile</td>
+<td style="text-align: left;">列存老</td>
+<td style="text-align: center;">❌ 过时</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ORC</strong></td>
+<td style="text-align: left;">Hive 原生列存 + 内置索引 + ACID</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Parquet</strong></td>
+<td style="text-align: left;">跨引擎友好 + 高效</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">Avro</td>
+<td style="text-align: left;">Schema 演进</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+</tr>
+</tbody>
+</table>
+<p><strong>经验</strong>：
+- Hive 原生 → <strong>ORC</strong>
+- Spark / Trino / 跨引擎 → <strong>Parquet</strong>
+- 数据湖 → <strong>Iceberg/Delta/Hudi</strong>（Parquet 底层）</p>
+<h2 id="_5">六、使用场景<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="_6">✅ 推荐<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">场景</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>离线数仓 T+1 报表</strong></td>
+<td style="text-align: left;">经典战场</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>大批量 ETL</strong></td>
+<td style="text-align: left;">Hive on Spark/Tez</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>冷数据归档查询</strong></td>
+<td style="text-align: left;">SQL 直查 HDFS</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>元数据统一</strong></td>
+<td style="text-align: left;">HMS 跨引擎共享</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>多租户 SQL 入口</strong></td>
+<td style="text-align: left;">HiveServer2 + Ranger</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>数据治理</strong></td>
+<td style="text-align: left;">与 Atlas + Ranger 集成</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">⚠️ 不推荐<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>实时查询</strong> → Presto/Trino + Iceberg / StarRocks</li>
+<li><strong>OLTP</strong> → MySQL / PG</li>
+<li><strong>复杂数据科学</strong> → Spark / PySpark</li>
+<li><strong>流式入仓</strong> → Flink + Iceberg / Hudi</li>
+<li><strong>新建云上项目</strong> → 直接 Iceberg + Spark on K8s</li>
+</ul>
+<h2 id="hive-vs-sql">七、Hive vs 其他 SQL 引擎<a class="headerlink" href="#hive-vs-sql" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">Hive</th>
+<th style="text-align: left;">Spark SQL</th>
+<th style="text-align: left;">Trino/Presto</th>
+<th style="text-align: left;">Impala</th>
+<th style="text-align: left;">Doris/StarRocks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">延迟</td>
+<td style="text-align: left;">分钟-小时</td>
+<td style="text-align: left;">秒-分钟</td>
+<td style="text-align: left;"><strong>秒级</strong></td>
+<td style="text-align: left;"><strong>秒级</strong></td>
+<td style="text-align: left;"><strong>亚秒级</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">吞吐</td>
+<td style="text-align: left;">大</td>
+<td style="text-align: left;">极大</td>
+<td style="text-align: left;">中</td>
+<td style="text-align: left;">中</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">ACID</td>
+<td style="text-align: left;">✅ 3.0+</td>
+<td style="text-align: left;">✅ Delta/Iceberg</td>
+<td style="text-align: left;">❌</td>
+<td style="text-align: left;">❌</td>
+<td style="text-align: left;">✅</td>
+</tr>
+<tr>
+<td style="text-align: left;">元数据</td>
+<td style="text-align: left;">HMS</td>
+<td style="text-align: left;">HMS</td>
+<td style="text-align: left;">HMS/Iceberg</td>
+<td style="text-align: left;">HMS</td>
+<td style="text-align: left;">HMS</td>
+</tr>
+<tr>
+<td style="text-align: left;">跨源查询</td>
+<td style="text-align: left;">弱</td>
+<td style="text-align: left;">强</td>
+<td style="text-align: left;"><strong>极强</strong></td>
+<td style="text-align: left;">弱</td>
+<td style="text-align: left;">弱</td>
+</tr>
+<tr>
+<td style="text-align: left;">适合</td>
+<td style="text-align: left;">ETL 批</td>
+<td style="text-align: left;">ETL + 计算</td>
+<td style="text-align: left;">Adhoc</td>
+<td style="text-align: left;">BI</td>
+<td style="text-align: left;">BI / 实时</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_8">八、最佳实践<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="81">8.1 库表设计<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">-- 库</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">dwd</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;明细层&#39;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">LOCATION</span><span class="w"> </span><span class="s1">&#39;hdfs://cluster/warehouse/dwd&#39;</span><span class="p">;</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1">-- 分区表（强烈推荐）</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">EXTERNAL</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">dwd</span><span class="p">.</span><span class="n">events</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="n">event_time</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="p">,</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="n">user_id</span><span class="w"> </span><span class="nb">BIGINT</span><span class="p">,</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="n">event_type</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="n">properties</span><span class="w"> </span><span class="n">STRING</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">)</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="n">PARTITIONED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">dt</span><span class="w"> </span><span class="n">STRING</span><span class="p">,</span><span class="w"> </span><span class="n">hour</span><span class="w"> </span><span class="n">STRING</span><span class="p">)</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="n">STORED</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ORC</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="k">LOCATION</span><span class="w"> </span><span class="s1">&#39;hdfs://cluster/warehouse/dwd/events&#39;</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="n">TBLPROPERTIES</span><span class="w"> </span><span class="p">(</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">    </span><span class="s1">&#39;orc.compress&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;ZSTD&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">    </span><span class="s1">&#39;orc.bloom.filter.columns&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;user_id,event_type&#39;</span><span class="p">,</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">    </span><span class="s1">&#39;orc.create.index&#39;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;true&#39;</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="p">);</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="c1">-- 分桶（小数据 + JOIN 优化）</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">dwd</span><span class="p">.</span><span class="n">users</span><span class="w"> </span><span class="p">(...)</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="n">CLUSTERED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">user_id</span><span class="p">)</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="mi">64</span><span class="w"> </span><span class="n">BUCKETS</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="82">8.2 分区策略<a class="headerlink" href="#82" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>✅ 时间分区: dt=&#39;2026-06-22&#39; / hour=&#39;14&#39;
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>✅ 业务+时间二级分区
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>✅ 每分区文件 128MB-1GB 最佳
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>✅ 单表分区数 &lt; 10 万
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>❌ 不要按高基数列分区（如 user_id）
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>❌ 不要 N 层深度分区（≤ 3 层）
+</code></pre></div>
+<h3 id="83">8.3 命名规范<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>库名:
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  ods_&lt;业务&gt;           Operational Data Store
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  dwd_&lt;业务&gt;           Detail（明细）
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  dws_&lt;业务&gt;           Summary（汇总）
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>  ads_&lt;业务&gt;           Application Service（应用）
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>  dim_&lt;域&gt;             Dimension
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  tmp                  临时
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>表名: &lt;层&gt;&lt;业务&gt;_&lt;对象&gt;_&lt;粒度&gt;
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>  例: dwd_pay_order_di（每日增量）
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>       dws_user_active_md（每月度）
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>字段:
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>  id / user_id / event_time / dt / hour
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>  is_xxx (布尔)、cnt_xxx (计数)、amt_xxx (金额)
+</code></pre></div>
+<h3 id="84">8.4 性能优化<a class="headerlink" href="#84" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1">-- 1. 开启向量化</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">vectorized</span><span class="p">.</span><span class="n">execution</span><span class="p">.</span><span class="n">enabled</span><span class="o">=</span><span class="k">true</span><span class="p">;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">vectorized</span><span class="p">.</span><span class="n">execution</span><span class="p">.</span><span class="n">reduce</span><span class="p">.</span><span class="n">enabled</span><span class="o">=</span><span class="k">true</span><span class="p">;</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1">-- 2. CBO（基于成本优化）</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">cbo</span><span class="p">.</span><span class="n">enable</span><span class="o">=</span><span class="k">true</span><span class="p">;</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">compute</span><span class="p">.</span><span class="n">query</span><span class="p">.</span><span class="k">using</span><span class="p">.</span><span class="n">stats</span><span class="o">=</span><span class="k">true</span><span class="p">;</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">stats</span><span class="p">.</span><span class="k">fetch</span><span class="p">.</span><span class="k">column</span><span class="p">.</span><span class="n">stats</span><span class="o">=</span><span class="k">true</span><span class="p">;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">stats</span><span class="p">.</span><span class="k">fetch</span><span class="p">.</span><span class="n">partition</span><span class="p">.</span><span class="n">stats</span><span class="o">=</span><span class="k">true</span><span class="p">;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="k">ANALYZE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="n">PARTITION</span><span class="w"> </span><span class="p">(</span><span class="n">dt</span><span class="o">=</span><span class="s1">&#39;2026-06-22&#39;</span><span class="p">)</span><span class="w"> </span><span class="n">COMPUTE</span><span class="w"> </span><span class="k">STATISTICS</span><span class="p">;</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="k">ANALYZE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="n">PARTITION</span><span class="w"> </span><span class="p">(</span><span class="n">dt</span><span class="o">=</span><span class="s1">&#39;2026-06-22&#39;</span><span class="p">)</span><span class="w"> </span><span class="n">COMPUTE</span><span class="w"> </span><span class="k">STATISTICS</span><span class="w"> </span><span class="k">FOR</span><span class="w"> </span><span class="n">COLUMNS</span><span class="p">;</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="c1">-- 3. 动态分区</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="k">exec</span><span class="p">.</span><span class="k">dynamic</span><span class="p">.</span><span class="n">partition</span><span class="o">=</span><span class="k">true</span><span class="p">;</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="k">exec</span><span class="p">.</span><span class="k">dynamic</span><span class="p">.</span><span class="n">partition</span><span class="p">.</span><span class="k">mode</span><span class="o">=</span><span class="n">nonstrict</span><span class="p">;</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="k">exec</span><span class="p">.</span><span class="k">max</span><span class="p">.</span><span class="k">dynamic</span><span class="p">.</span><span class="n">partitions</span><span class="o">=</span><span class="mi">10000</span><span class="p">;</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="k">exec</span><span class="p">.</span><span class="k">max</span><span class="p">.</span><span class="k">dynamic</span><span class="p">.</span><span class="n">partitions</span><span class="p">.</span><span class="n">pernode</span><span class="o">=</span><span class="mi">1000</span><span class="p">;</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a><span class="c1">-- 4. Map Join（小表加载内存）</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">auto</span><span class="p">.</span><span class="k">convert</span><span class="p">.</span><span class="k">join</span><span class="o">=</span><span class="k">true</span><span class="p">;</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">auto</span><span class="p">.</span><span class="k">convert</span><span class="p">.</span><span class="k">join</span><span class="p">.</span><span class="n">noconditionalbinning</span><span class="p">.</span><span class="n">threshold</span><span class="o">=</span><span class="mi">50000000</span><span class="p">;</span><span class="w">  </span><span class="c1">-- 50M</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="c1">-- 5. 数据倾斜</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">optimize</span><span class="p">.</span><span class="n">skewjoin</span><span class="o">=</span><span class="k">true</span><span class="p">;</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="n">skewjoin</span><span class="p">.</span><span class="k">key</span><span class="o">=</span><span class="mi">100000</span><span class="p">;</span>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="c1">-- 6. 压缩</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="k">SET</span><span class="w"> </span><span class="n">hive</span><span class="p">.</span><span class="k">exec</span><span class="p">.</span><span class="n">compress</span><span class="p">.</span><span class="k">output</span><span class="o">=</span><span class="k">true</span><span class="p">;</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="k">SET</span><span class="w"> </span><span class="n">mapreduce</span><span class="p">.</span><span class="k">output</span><span class="p">.</span><span class="n">fileoutputformat</span><span class="p">.</span><span class="n">compress</span><span class="p">.</span><span class="n">codec</span><span class="o">=</span><span class="n">org</span><span class="p">.</span><span class="n">apache</span><span class="p">.</span><span class="n">hadoop</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">compress</span><span class="p">.</span><span class="n">ZStandardCodec</span><span class="p">;</span>
+</code></pre></div>
+<h3 id="85">8.5 引擎选择<a class="headerlink" href="#85" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>hive.execution.engine =
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  mr        ❌ 老 MapReduce，慢，仅兼容
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  tez       ⭐⭐⭐ Hortonworks 主推，已少
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  spark     ⭐⭐⭐⭐⭐ 主流（Hive on Spark）
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  spark-sql ⭐⭐⭐⭐⭐ 用 Spark SQL 直接跑 HQL（更快）
+</code></pre></div>
+<h3 id="86-hive-on-spark-vs-spark-sql">8.6 Hive on Spark vs Spark SQL<a class="headerlink" href="#86-hive-on-spark-vs-spark-sql" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Hive on Spark:
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  - Hive 解析 SQL，Spark 执行
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  - 老 SQL 不改
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>Spark SQL:
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>  - 直接用 Spark 解析 + 执行
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>  - 性能更好（CBO/AQE 更强）
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>  - 推荐新作业用
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>→ 趋势: 越来越多团队用 Spark SQL 替代 Hive
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>→ HMS 仍保留作为元数据
+</code></pre></div>
+<h3 id="87-acid-iceberg">8.7 ACID + Iceberg 现代化<a class="headerlink" href="#87-acid-iceberg" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1">-- 老 ACID（Hive 3.0 ORC + 事务）</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="p">(...)</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">STORED</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ORC</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">TBLPROPERTIES</span><span class="p">(</span><span class="s1">&#39;transactional&#39;</span><span class="o">=</span><span class="s1">&#39;true&#39;</span><span class="p">);</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1">-- Iceberg（推荐新建）</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="p">(...)</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="k">USING</span><span class="w"> </span><span class="n">iceberg</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="n">PARTITIONED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="p">(</span><span class="n">days</span><span class="p">(</span><span class="n">event_time</span><span class="p">));</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(...);</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="k">UPDATE</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="p">...;</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">events</span><span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="p">...;</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="n">MERGE</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">target</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="k">source</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">WHEN</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="p">...;</span>
+</code></pre></div>
+<h3 id="88">8.8 安全集成<a class="headerlink" href="#88" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>认证: Kerberos
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>权限:
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>  - SQL 标准 GRANT/REVOKE
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>  - Ranger 集中策略（表/列/行级）
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>  - Sentry（老 Hortonworks/CDH）
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>审计:
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>  - Ranger Audit → Solr/ES/Kafka
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>  - HiveServer2 操作日志
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>数据屏蔽: Ranger Column Masking
+</code></pre></div>
+<h3 id="89-hiveserver2">8.9 多租户 HiveServer2 部署<a class="headerlink" href="#89-hiveserver2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>拓扑:
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  HiveServer2 (HS2) 多实例 + Nginx/HAProxy LB
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>  ZooKeeper Service Discovery
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>  Beeline / JDBC 客户端
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>  独立 HMS 集群（3 节点 + MySQL HA）
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>配置:
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>  hive.server2.support.dynamic.service.discovery=true
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>  hive.server2.zookeeper.namespace=hiveserver2
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>  hive.server2.thrift.max.worker.threads=500
+</code></pre></div>
+<h2 id="_9">九、运维命令速查<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># Beeline</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>beeline<span class="w"> </span>-u<span class="w"> </span><span class="s2">&quot;jdbc:hive2://hs2-host:10000/default;principal=hive/_HOST@REALM&quot;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1"># HMS</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>schematool<span class="w"> </span>-dbType<span class="w"> </span>mysql<span class="w"> </span>-info
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>schematool<span class="w"> </span>-dbType<span class="w"> </span>mysql<span class="w"> </span>-upgradeSchema
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="c1"># 元数据</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>SHOW<span class="w"> </span>DATABASES<span class="p">;</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>SHOW<span class="w"> </span>TABLES<span class="w"> </span>IN<span class="w"> </span>dwd<span class="p">;</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>DESCRIBE<span class="w"> </span>FORMATTED<span class="w"> </span>dwd.events<span class="p">;</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>SHOW<span class="w"> </span>PARTITIONS<span class="w"> </span>dwd.events<span class="p">;</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>MSCK<span class="w"> </span>REPAIR<span class="w"> </span>TABLE<span class="w"> </span>dwd.events<span class="p">;</span><span class="w">   </span>--<span class="w"> </span>修复分区元数据
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="c1"># 数据</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>SHOW<span class="w"> </span>CREATE<span class="w"> </span>TABLE<span class="w"> </span>dwd.events<span class="p">;</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>ANALYZE<span class="w"> </span>TABLE<span class="w"> </span>dwd.events<span class="w"> </span>COMPUTE<span class="w"> </span>STATISTICS<span class="p">;</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>INSERT<span class="w"> </span>OVERWRITE<span class="w"> </span>TABLE<span class="w"> </span>...<span class="w"> </span>SELECT<span class="w"> </span>...<span class="p">;</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="c1"># 性能</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>EXPLAIN<span class="w"> </span>SELECT<span class="w"> </span>...<span class="p">;</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>EXPLAIN<span class="w"> </span>EXTENDED<span class="w"> </span>SELECT<span class="w"> </span>...<span class="p">;</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>EXPLAIN<span class="w"> </span>VECTORIZATION<span class="w"> </span>DETAIL<span class="w"> </span>SELECT<span class="w"> </span>...<span class="p">;</span>
+</code></pre></div>
+<h2 id="_10">十、常见坑<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>小文件爆炸</strong></td>
+<td style="text-align: left;">分区合理 + INSERT 后 ALTER TABLE CONCATENATE</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>数据倾斜</strong></td>
+<td style="text-align: left;">distribute by / 加盐 / map join</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MR 引擎慢</strong></td>
+<td style="text-align: left;">切 Spark / Tez</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>统计信息过期</strong></td>
+<td style="text-align: left;">定期 ANALYZE</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>分区过多</strong></td>
+<td style="text-align: left;">减少粒度或换 Iceberg</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MSCK REPAIR 慢</strong></td>
+<td style="text-align: left;">改用 Iceberg / 动态分区</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Metastore 单点</strong></td>
+<td style="text-align: left;">HMS 多实例 + MySQL HA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MySQL HMS 慢</strong></td>
+<td style="text-align: left;">索引 + 升级 PG 或调优</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TEXT 格式</strong></td>
+<td style="text-align: left;">改 ORC/Parquet</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>未开 CBO</strong></td>
+<td style="text-align: left;">必开 + ANALYZE</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>大文件 GROUP BY OOM</strong></td>
+<td style="text-align: left;">调 mapreduce.reduce.memory.mb</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨集群 Hive</strong></td>
+<td style="text-align: left;">Replication / Atlas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_11">十一、生态与工具<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Beeline</strong></td>
+<td style="text-align: left;">官方 JDBC CLI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hue</strong></td>
+<td style="text-align: left;">Web SQL IDE</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DBeaver / DataGrip</strong></td>
+<td style="text-align: left;">通用 GUI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DolphinScheduler / Airflow</strong></td>
+<td style="text-align: left;">工作流调度</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Atlas</strong></td>
+<td style="text-align: left;">数据血缘 / 元数据治理</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ranger</strong></td>
+<td style="text-align: left;">权限管控</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Iceberg / Delta / Hudi</strong></td>
+<td style="text-align: left;">数据湖格式（与 Hive 集成）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Hive Metastore as Service</strong></td>
+<td style="text-align: left;">独立 HMS 服务化</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Waggle Dance</strong></td>
+<td style="text-align: left;">HMS Proxy</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_12">十二、监控指标<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>HiveServer2:
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>  ActiveSessions / OpenOperations
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>  AvgRPCTime
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>  GC / Heap
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>  Failed queries rate
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>Metastore:
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>  RPC time
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>  GetTable / GetPartitions QPS
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>  DB connection pool
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>底层 MySQL:
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>  慢查询、连接数、锁
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>工具:
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>  Prometheus + jmx_exporter
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>  Cloudera Manager / Ambari
+</code></pre></div>
+<h2 id="_13">十三、迁移到现代栈<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>现代化路径:
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>  Hive → Spark SQL on K8s + Iceberg + S3
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>迁移要点:
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>  1. 表迁移:
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>     - 内部表先转外部表
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>     - 数据格式 ORC → Parquet（如果跨引擎）
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>     - 注册到 Iceberg / Hudi 表
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>  2. SQL 兼容:
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>     - 多数 HQL 在 Spark SQL 直接跑
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>     - UDF 需要重写为 Spark UDF
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>     - 部分语法差异（如 LATERAL VIEW）
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>  3. 元数据:
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>     - HMS 继续用（兼容 Spark/Trino/Flink）
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>     - 或换 Polaris / Unity Catalog
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>  4. 调度:
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>     - Oozie → Airflow / DolphinScheduler
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>工具:
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>  - hive-iceberg 迁移
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>  - SQL 改写工具（Trino-Hive 兼容层）
+</code></pre></div>
+<h2 id="hive-4">十四、Hive 4 新特性<a class="headerlink" href="#hive-4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>✅ Iceberg 表原生支持
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>✅ Materialized View 与 Iceberg 自动改写
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>✅ Branch / Tag（Iceberg）
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>✅ 兼容 ANSI SQL 子集增强
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>✅ HBase Snapshot 表
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>✅ Tez UI 简化
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>✅ HMS HA 增强
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>✅ Calcite CBO 升级
+</code></pre></div>
+<h2 id="_14">十五、国产替代 / 同类<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: left;">厂商</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>MaxCompute (ODPS)</strong></td>
+<td style="text-align: left;">阿里云</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DLI</strong></td>
+<td style="text-align: left;">华为云</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TencentDB-DWS</strong></td>
+<td style="text-align: left;">腾讯云</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>EMR Hive</strong></td>
+<td style="text-align: left;">各家云</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TDH Inceptor</strong></td>
+<td style="text-align: left;">星环科技</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DataWorks</strong></td>
+<td style="text-align: left;">阿里云数据开发</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OceanBase 数据仓库</strong></td>
+<td style="text-align: left;">蚂蚁</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_15">十六、学习路径<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>入门:
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>  1. 单机 Hive + MySQL HMS
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>  2. Beeline 跑 SELECT
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>  3. 分区表 + ORC 体验
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>进阶:
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>  4. ETL 全流程（ods → dwd → dws → ads）
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>  5. 性能优化（CBO / Map Join / 倾斜）
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>  6. HiveServer2 多实例 + LB
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>  7. Ranger 权限 + Atlas 血缘
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>  8. Hive on Spark / Spark SQL 替代
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>高阶:
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>  9. ACID 事务表实战
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>  10. Iceberg 集成 + 迁移
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a>  11. HMS HA + Service Discovery
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>  12. 跨集群复制
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a>  13. 元数据治理（DataWorks 自研化）
+</code></pre></div>
+<h2 id="_16">十七、未来展望<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>短期 (1-2 年):
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>  - HMS 仍是元数据事实标准
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>  - Hive 4 在私有化场景普及
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>  - Iceberg/Delta 与 Hive 表共存
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>中期 (2-5 年):
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>  - Hive 计算引擎被 Spark SQL 完全取代
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>  - HMS 可能被 Polaris / Unity / Nessus 挑战
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>  - Lakehouse 一统天下
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>长期 (5 年+):
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>  - Hive 项目可能停止演进
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>  - HMS 仍可能以独立项目存在
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>  - 数据仓库 → 数据湖仓
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：作为运维要分清——<strong>Hive ≈ HQL + HMS</strong>。HQL 这层已经被 Spark SQL 取代；HMS 这层仍是大数据元数据底座短期不会换。所以"Hive 没死，只是退到幕后了"。私有化数仓继续用，新建场景直接 Iceberg + Spark SQL。</p>
+</blockquote>
 
 
 
