@@ -1243,7 +1243,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        告警降噪
+        一、告警三大根本问题
       
     </span>
   </a>
@@ -1254,7 +1254,595 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        告警分级
+        二、告警治理金字塔
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、告警产生（Emit）：怎么定阈值
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、告警产生（Emit）：怎么定阈值">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 SLO 驱动的告警
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-prometheus-burn-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Prometheus Burn Rate 告警
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 阈值告警的反模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-red-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 黄金信号 + RED + USE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、告警收敛（Reduce）：核心战场
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、告警收敛（Reduce）：核心战场">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 三段式收敛
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-alertmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Alertmanager 配置最佳实践
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 关联与拓扑
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 时间窗口聚类
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#severity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、告警分级（Severity）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、告警分级（Severity）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 经典 4 级（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 分级的决定因素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-escalation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 动态升级（Escalation）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#route" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、告警分发（Route）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、告警分发（Route）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 路由维度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 通知通道选择
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 国内通知机器人
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 卡片化通知（强烈推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、值班机制（On-call）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、值班机制（On-call）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 值班排班原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-pagerduty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 PagerDuty 替代品
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-sop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 值班 SOP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respond" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、响应（Respond）：从告警到行动
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、响应（Respond）：从告警到行动">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-ack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 ACK 机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-sop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 SOP 自动展开
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-webhook-chatops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Webhook + ChatOps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 一键诊断
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postmortem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、复盘（Postmortem）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、复盘（Postmortem）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 复盘模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 复盘原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 复盘评分
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、SLO 与告警预算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、SLO 与告警预算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-error-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 错误预算（Error Budget）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 多窗口多速率告警
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 SLO 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、告警度量与质量管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、告警度量与质量管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 关键指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 告警治理周报
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 告警准入流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、告警系统选型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、告警系统选型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 开源栈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 国产开源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 商业产品
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、常见坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、最佳实践清单（Checklist）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、参考资料
       
     </span>
   </a>
@@ -1707,7 +2295,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        告警降噪
+        一、告警三大根本问题
       
     </span>
   </a>
@@ -1718,7 +2306,595 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        告警分级
+        二、告警治理金字塔
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、告警产生（Emit）：怎么定阈值
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、告警产生（Emit）：怎么定阈值">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 SLO 驱动的告警
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-prometheus-burn-rate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Prometheus Burn Rate 告警
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 阈值告警的反模式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-red-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 黄金信号 + RED + USE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reduce" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、告警收敛（Reduce）：核心战场
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、告警收敛（Reduce）：核心战场">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 三段式收敛
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-alertmanager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Alertmanager 配置最佳实践
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 关联与拓扑
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 时间窗口聚类
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#severity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、告警分级（Severity）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、告警分级（Severity）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 经典 4 级（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 分级的决定因素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-escalation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 动态升级（Escalation）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#route" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、告警分发（Route）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、告警分发（Route）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 路由维度
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 通知通道选择
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 国内通知机器人
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 卡片化通知（强烈推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#on-call" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、值班机制（On-call）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、值班机制（On-call）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 值班排班原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-pagerduty" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 PagerDuty 替代品
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-sop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 值班 SOP
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respond" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、响应（Respond）：从告警到行动
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、响应（Respond）：从告警到行动">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-ack" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 ACK 机制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-sop" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 SOP 自动展开
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-webhook-chatops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Webhook + ChatOps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 一键诊断
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postmortem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、复盘（Postmortem）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、复盘（Postmortem）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 复盘模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 复盘原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 复盘评分
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、SLO 与告警预算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、SLO 与告警预算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-error-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 错误预算（Error Budget）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 多窗口多速率告警
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103-slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 SLO 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、告警度量与质量管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、告警度量与质量管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 关键指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 告警治理周报
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 告警准入流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、告警系统选型
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、告警系统选型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 开源栈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 国产开源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 商业产品
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、常见坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、最佳实践清单（Checklist）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、参考资料
       
     </span>
   </a>
@@ -1794,65 +2970,905 @@
 
 
 <h1 id="_1">告警管理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">告警降噪<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>告警管理的真正难题不是"告警发出来"，而是"<strong>告警发了被人看见、被人响应、不被滥用</strong>"。<strong>没有告警治理 + 收敛 + 分级 + 响应机制，AIOps 再强也救不回来</strong>。</p>
+</blockquote>
+<h2 id="_2">一、告警三大根本问题<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1. 告警风暴
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>   一次故障 → 几十/几百条告警
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>   值班崩溃 / 关键告警淹没
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>2. 告警疲劳（Alert Fatigue）
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>   太多无意义告警 → 真告警也被忽略
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>   &quot;狼来了&quot;效应
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>3. 告警黑洞
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>   告警发出去，没人响应、没人复盘
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>   &quot;告警 = 通知&quot;而非&quot;告警 = 行动&quot;
+</code></pre></div>
+<h2 id="_3">二、告警治理金字塔<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>                  ┌─────────────────┐
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>                  │   行动 (Action)   │   ← 告警的归宿
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>                  ├─────────────────┤
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>                  │   响应 (Respond)  │   ← 谁、几分钟、怎么响应
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>                  ├─────────────────┤
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>                  │  分发 (Route)     │   ← 路由、分级、抑制
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>                  ├─────────────────┤
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>                  │   收敛 (Reduce)   │   ← 去重、聚合、关联
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>                  ├─────────────────┤
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>                  │   产生 (Emit)     │   ← 规则、阈值、SLO 驱动
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>                  └─────────────────┘
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>99% 团队的问题:
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  ❌ 只投入&quot;产生&quot;层，往后越来越薄
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  ✅ 真正成熟的团队投入分布: 产生 20% / 收敛 30% / 分发 20% / 响应 20% / 行动 10%
+</code></pre></div>
+<h2 id="emit">三、告警产生（Emit）：怎么定阈值<a class="headerlink" href="#emit" title="Permanent link">&para;</a></h2>
+<h3 id="31-slo">3.1 SLO 驱动的告警<a class="headerlink" href="#31-slo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 不要从指标定阈值，从用户体验出发</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">SLO</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">订单 API 5xx 率 &lt; 0.1%，p99 &lt; 500ms</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nt">衍生 SLI（Indicator）</span><span class="p">:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http_request_errors_5xx_rate</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http_request_duration_p99</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nt">告警规则</span><span class="p">:</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">burn_rate &gt; 14.4   → P1（1 小时烧完月度预算的 2%）</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">burn_rate &gt; 6      → P2（6 小时烧完）</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">burn_rate &gt; 1      → P3（趋势预警）</span>
+</code></pre></div>
+<h3 id="32-prometheus-burn-rate">3.2 Prometheus Burn Rate 告警<a class="headerlink" href="#32-prometheus-burn-rate" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Multi-Window Multi-Burn-Rate</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">alert</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SLOFastBurn</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="nt">expr</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="no">(</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="no">slo:burnrate1h{service=&quot;order&quot;} &gt; 14.4</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="no">and</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">      </span><span class="no">slo:burnrate5m{service=&quot;order&quot;} &gt; 14.4</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="no">)</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2m</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">P1</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">  </span><span class="nt">annotations</span><span class="p">:</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;订单</span><span class="nv"> </span><span class="s">SLO</span><span class="nv"> </span><span class="s">1h</span><span class="nv"> </span><span class="s">燃烧速率超</span><span class="nv"> </span><span class="s">14.4x&quot;</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">alert</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SLOSlowBurn</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">  </span><span class="nt">expr</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="no">(slo:burnrate6h{service=&quot;order&quot;} &gt; 6 and slo:burnrate30m{service=&quot;order&quot;} &gt; 6)</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">  </span><span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15m</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">    </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">P2</span>
+</code></pre></div>
+<p><strong>经验</strong>：用 burn rate 替代固定阈值，<strong>误报率降 70%</strong>，参考 Google SRE Workbook。</p>
+<h3 id="33">3.3 阈值告警的反模式<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>❌ 告警写法（典型错误）:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  - alert: HighCPU
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    expr: cpu_usage &gt; 80
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  问题:
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    1. 80% 是从哪来的？
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    2. 持续多久才告？
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    3. 谁应该响应？
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    4. 影响什么业务？
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>✅ 改进版:
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>  - alert: NodeCPUSaturation
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    expr: |
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>      (avg_over_time(node_cpu_usage[15m]) &gt; 0.85)
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>      and
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>      (predict_linear(node_cpu_usage[30m], 1800) &gt; 0.95)
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    for: 10m
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    labels:
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>      severity: P2
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>      team: infra
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>      runbook: https://wiki/runbooks/node-cpu
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>    annotations:
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>      summary: &quot;节点 {{ $labels.instance }} CPU 持续高位，30 分钟内可能耗尽&quot;
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>      impact: &quot;可能影响该节点的所有业务 Pod&quot;
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>      action: &quot;1. kubectl describe node 看是哪个 Pod；2. 评估扩容/驱逐&quot;
+</code></pre></div>
+<h3 id="34-red-use">3.4 黄金信号 + RED + USE<a class="headerlink" href="#34-red-use" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Google 黄金四信号（每个服务必有）:
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  1. Latency      延迟
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  2. Traffic      流量
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  3. Errors       错误
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>  4. Saturation   饱和度
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>RED（请求驱动型服务）:
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>  - Rate
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>  - Errors
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>  - Duration
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>USE（资源型）:
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>  - Utilization
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>  - Saturation
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>  - Errors
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>→ 每个服务覆盖这 3-4 类，告警规则数量自然就少了
+</code></pre></div>
+<h2 id="reduce">四、告警收敛（Reduce）：核心战场<a class="headerlink" href="#reduce" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 三段式收敛<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>告警风暴 100 条
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>   ↓ ① 去重 (Dedup)
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>   60 条（合并相同 fingerprint）
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>   ↓ ② 抑制 (Inhibit)
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>   20 条（父告警压制子告警）
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>   ↓ ③ 聚类 (Cluster)
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>   5 个事件组（同时间窗口/同业务）
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>   ↓
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>   1-2 条 LLM 摘要的通知
+</code></pre></div>
+<h3 id="42-alertmanager">4.2 Alertmanager 配置最佳实践<a class="headerlink" href="#42-alertmanager" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">route</span><span class="p">:</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">  </span><span class="nt">receiver</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;wechat-default&#39;</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span><span class="nt">group_by</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;alertname&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;cluster&#39;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&#39;service&#39;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="nt">group_wait</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30s</span><span class="w">              </span><span class="c1"># 同组首次告警等 30s 合并</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="nt">group_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m</span><span class="w">           </span><span class="c1"># 同组后续告警间隔 5m</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">  </span><span class="nt">repeat_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">4h</span><span class="w">          </span><span class="c1"># 未恢复 4h 重发一次</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span><span class="nt">routes</span><span class="p">:</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchers</span><span class="p">:</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">severity = P0</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">      </span><span class="nt">receiver</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;phone-call&#39;</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">      </span><span class="nt">group_wait</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0s</span><span class="w">           </span><span class="c1"># P0 立即</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="w">      </span><span class="nt">repeat_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30m</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchers</span><span class="p">:</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">severity = P1</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="w">      </span><span class="nt">receiver</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;wechat-oncall&#39;</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="w">      </span><span class="nt">group_wait</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10s</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a><span class="w">      </span><span class="nt">repeat_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1h</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">matchers</span><span class="p">:</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">severity = P3</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a><span class="w">      </span><span class="nt">receiver</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;email&#39;</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a><span class="w">      </span><span class="nt">group_wait</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a><span class="w">      </span><span class="nt">repeat_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">24h</span>
+<a id="__codelineno-7-26" name="__codelineno-7-26" href="#__codelineno-7-26"></a>
+<a id="__codelineno-7-27" name="__codelineno-7-27" href="#__codelineno-7-27"></a><span class="c1"># 抑制规则（关键）</span>
+<a id="__codelineno-7-28" name="__codelineno-7-28" href="#__codelineno-7-28"></a><span class="nt">inhibit_rules</span><span class="p">:</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29" href="#__codelineno-7-29"></a><span class="w">  </span><span class="c1"># 节点宕机时压制所有该节点上的 Pod 告警</span>
+<a id="__codelineno-7-30" name="__codelineno-7-30" href="#__codelineno-7-30"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">source_matchers</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">alertname=NodeDown</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-7-31" name="__codelineno-7-31" href="#__codelineno-7-31"></a><span class="w">    </span><span class="nt">target_matchers</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">alertname=PodNotReady</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-7-32" name="__codelineno-7-32" href="#__codelineno-7-32"></a><span class="w">    </span><span class="nt">equal</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">instance</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-7-33" name="__codelineno-7-33" href="#__codelineno-7-33"></a>
+<a id="__codelineno-7-34" name="__codelineno-7-34" href="#__codelineno-7-34"></a><span class="w">  </span><span class="c1"># 集群整体故障时压制单服务告警</span>
+<a id="__codelineno-7-35" name="__codelineno-7-35" href="#__codelineno-7-35"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">source_matchers</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">alertname=ClusterDown</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-7-36" name="__codelineno-7-36" href="#__codelineno-7-36"></a><span class="w">    </span><span class="nt">target_matchers</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">severity=~&quot;P</span><span class="p p-Indicator">[</span><span class="nv">1-3</span><span class="p p-Indicator">]</span><span class="s">&quot;]</span>
+<a id="__codelineno-7-37" name="__codelineno-7-37" href="#__codelineno-7-37"></a><span class="w">    </span><span class="s">equal:</span><span class="nv"> </span><span class="s">[cluster]</span>
+<a id="__codelineno-7-38" name="__codelineno-7-38" href="#__codelineno-7-38"></a>
+<a id="__codelineno-7-39" name="__codelineno-7-39" href="#__codelineno-7-39"></a><span class="w">  </span><span class="s">#</span><span class="nv"> </span><span class="s">上游故障时压制下游</span>
+<a id="__codelineno-7-40" name="__codelineno-7-40" href="#__codelineno-7-40"></a><span class="w">  </span><span class="s">-</span><span class="nv"> </span><span class="s">source_matchers:</span><span class="nv"> </span><span class="s">[alertname=DBDown,</span><span class="nv"> </span><span class="s">service=mysql]</span>
+<a id="__codelineno-7-41" name="__codelineno-7-41" href="#__codelineno-7-41"></a><span class="w">    </span><span class="s">target_matchers:</span><span class="nv"> </span><span class="s">[severity=~&quot;</span><span class="nv">P</span><span class="p p-Indicator">[</span><span class="nv">1-2</span><span class="p p-Indicator">]</span><span class="s">&quot;]</span>
+<a id="__codelineno-7-42" name="__codelineno-7-42" href="#__codelineno-7-42"></a><span class="w">    </span><span class="s">equal:</span><span class="nv"> </span><span class="s">[cluster]</span>
+</code></pre></div>
+<h3 id="43">4.3 关联与拓扑<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 基于服务依赖图的关联</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">service_topology</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="s2">&quot;order-api&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;mysql&quot;</span><span class="p">,</span> <span class="s2">&quot;redis&quot;</span><span class="p">,</span> <span class="s2">&quot;kafka&quot;</span><span class="p">,</span> <span class="s2">&quot;user-api&quot;</span><span class="p">],</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="s2">&quot;user-api&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;mysql&quot;</span><span class="p">,</span> <span class="s2">&quot;redis&quot;</span><span class="p">],</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="o">...</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">}</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">correlate_alerts</span><span class="p">(</span><span class="n">alerts</span><span class="p">):</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;如果根因服务也在告警，关联起来&quot;&quot;&quot;</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="n">groups</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>    <span class="k">for</span> <span class="n">alert</span> <span class="ow">in</span> <span class="n">alerts</span><span class="p">:</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>        <span class="k">for</span> <span class="n">parent</span> <span class="ow">in</span> <span class="n">service_topology</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">alert</span><span class="o">.</span><span class="n">service</span><span class="p">,</span> <span class="p">[]):</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>            <span class="n">parent_alerts</span> <span class="o">=</span> <span class="p">[</span><span class="n">a</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">alerts</span> <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">service</span> <span class="o">==</span> <span class="n">parent</span><span class="p">]</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>            <span class="k">if</span> <span class="n">parent_alerts</span><span class="p">:</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>                <span class="n">groups</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>                    <span class="s2">&quot;root&quot;</span><span class="p">:</span> <span class="n">parent_alerts</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>                    <span class="s2">&quot;affected&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">alert</span><span class="p">]</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>                <span class="p">})</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>    <span class="k">return</span> <span class="n">merge_groups</span><span class="p">(</span><span class="n">groups</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="44">4.4 时间窗口聚类<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">DBSCAN</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">cluster_by_time</span><span class="p">(</span><span class="n">alerts</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">300</span><span class="p">):</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;5 分钟内同一业务的告警归一组&quot;&quot;&quot;</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="n">features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">a</span><span class="o">.</span><span class="n">timestamp</span><span class="p">,</span> <span class="nb">hash</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">business</span><span class="p">)]</span> <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">alerts</span><span class="p">])</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="n">features</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">features</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">features</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span> <span class="o">/</span> <span class="n">window</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="n">labels</span> <span class="o">=</span> <span class="n">DBSCAN</span><span class="p">(</span><span class="n">eps</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">min_samples</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>    <span class="k">return</span> <span class="n">labels</span>
+</code></pre></div>
+<h2 id="severity">五、告警分级（Severity）<a class="headerlink" href="#severity" title="Permanent link">&para;</a></h2>
+<h3 id="51-4">5.1 经典 4 级（推荐）<a class="headerlink" href="#51-4" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">问题</th>
-<th style="text-align: left;">降噪策略</th>
+<th style="text-align: center;">级别</th>
+<th style="text-align: left;">含义</th>
+<th style="text-align: left;">响应</th>
+<th style="text-align: left;">通知方式</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">重复告警</td>
-<td style="text-align: left;">告警聚合（相同 Pod 同类告警合并）</td>
+<td style="text-align: center;"><strong>P0</strong></td>
+<td style="text-align: left;">全站不可用 / 数据丢失 / 资损</td>
+<td style="text-align: left;">立即 (≤ 5 min)</td>
+<td style="text-align: left;">电话 + 短信 + 群 @值班</td>
 </tr>
 <tr>
-<td style="text-align: left;">抖动告警</td>
-<td style="text-align: left;">持续 N 分钟才触发（for: 5m）</td>
+<td style="text-align: center;"><strong>P1</strong></td>
+<td style="text-align: left;">核心功能受损 / 大面积影响</td>
+<td style="text-align: left;">≤ 15 min</td>
+<td style="text-align: left;">电话 + 群 @值班</td>
 </tr>
 <tr>
-<td style="text-align: left;">已知告警</td>
-<td style="text-align: left;">维护静默规则（已知维护窗口）</td>
+<td style="text-align: center;"><strong>P2</strong></td>
+<td style="text-align: left;">部分功能降级 / 性能下降</td>
+<td style="text-align: left;">≤ 1 h</td>
+<td style="text-align: left;">群消息 + 邮件</td>
 </tr>
 <tr>
-<td style="text-align: left;">关联告警</td>
-<td style="text-align: left;">事件关联（同一 Pod CPU+内存+网络同时告警 = root cause 一条）</td>
+<td style="text-align: center;"><strong>P3</strong></td>
+<td style="text-align: left;">容量预警 / 趋势</td>
+<td style="text-align: left;">工作时间</td>
+<td style="text-align: left;">邮件 / 日报</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_3">告警分级<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="52">5.2 分级的决定因素<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>影响范围
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  + 用户量
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  + 资损金额
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  + 业务关键度
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  + 当前时段（白天 vs 凌晨）
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>  + 是否有降级方案
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>   ↓
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>  动态分级（不要全静态）
+</code></pre></div>
+<h3 id="53-escalation">5.3 动态升级（Escalation）<a class="headerlink" href="#53-escalation" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># 第一通知人 5min 未响应 → 升级</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nt">escalation_policy</span><span class="p">:</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="nt">notify</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">oncall-primary</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="nt">notify</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">oncall-secondary</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">    </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="nt">notify</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">oncall-manager</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10m</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">    </span><span class="nt">notify</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">incident-commander</span>
+</code></pre></div>
+<h2 id="route">六、告警分发（Route）<a class="headerlink" href="#route" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 路由维度<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>按 service     → 服务 owner
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>按 team        → 团队 webhook
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>按 cluster     → 区域值班
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>按 severity    → 通知方式分级
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>按 time        → 工作时间 vs 非工作时间
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>按 business    → 业务对应的责任人
+</code></pre></div>
+<h3 id="62">6.2 通知通道选择<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">级别</th>
-<th style="text-align: left;">响应方式</th>
-<th style="text-align: left;">示例</th>
+<th style="text-align: left;">通道</th>
+<th style="text-align: left;">适用</th>
+<th style="text-align: left;">缺点</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">P0（严重）</td>
-<td style="text-align: left;">立即电话/短信</td>
-<td style="text-align: left;">集群宕机、核心服务不可用</td>
+<td style="text-align: left;"><strong>电话</strong></td>
+<td style="text-align: left;">P0</td>
+<td style="text-align: left;">贵、噪声大</td>
 </tr>
 <tr>
-<td style="text-align: left;">P1（高）</td>
-<td style="text-align: left;">15min 内响应</td>
-<td style="text-align: left;">部分服务故障</td>
+<td style="text-align: left;"><strong>短信</strong></td>
+<td style="text-align: left;">P0/P1</td>
+<td style="text-align: left;">可能漏</td>
 </tr>
 <tr>
-<td style="text-align: left;">P2（中）</td>
-<td style="text-align: left;">工作时间处理</td>
-<td style="text-align: left;">单节点异常</td>
+<td style="text-align: left;"><strong>企业微信/钉钉/飞书机器人</strong></td>
+<td style="text-align: left;">主力通道</td>
+<td style="text-align: left;">群里容易刷屏</td>
 </tr>
 <tr>
-<td style="text-align: left;">P3（低）</td>
-<td style="text-align: left;">记录，周会回顾</td>
-<td style="text-align: left;">磁盘使用率 &gt; 80%</td>
+<td style="text-align: left;"><strong>企微@特定人</strong></td>
+<td style="text-align: left;">P0/P1 必备</td>
+<td style="text-align: left;">没设置好就漏</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PagerDuty / OpsGenie</strong></td>
+<td style="text-align: left;">国际化团队</td>
+<td style="text-align: left;">国内贵</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>邮件</strong></td>
+<td style="text-align: left;">P2/P3</td>
+<td style="text-align: left;">时效差</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Slack / 钉钉日历</strong></td>
+<td style="text-align: left;">日报/周报</td>
+<td style="text-align: left;">不实时</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Jira / Issue</strong></td>
+<td style="text-align: left;">后续跟踪</td>
+<td style="text-align: left;">不主动</td>
 </tr>
 </tbody>
 </table>
+<h3 id="63">6.3 国内通知机器人<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 企业微信</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">send_wechat</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">WECHAT_WEBHOOK</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>        <span class="s2">&quot;msgtype&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>        <span class="s2">&quot;markdown&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">msg</span><span class="p">},</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>        <span class="s2">&quot;mentioned_list&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;@all&quot;</span><span class="p">]</span>  <span class="c1"># P0</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>    <span class="p">})</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="c1"># 钉钉</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">send_dingtalk</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">at_phones</span><span class="o">=</span><span class="p">[]):</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>    <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">DING_WEBHOOK</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>        <span class="s2">&quot;msgtype&quot;</span><span class="p">:</span> <span class="s2">&quot;markdown&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>        <span class="s2">&quot;markdown&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;告警&quot;</span><span class="p">,</span> <span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="n">msg</span><span class="p">},</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>        <span class="s2">&quot;at&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;atMobiles&quot;</span><span class="p">:</span> <span class="n">at_phones</span><span class="p">,</span> <span class="s2">&quot;isAtAll&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">}</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>    <span class="p">})</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="c1"># 飞书</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="k">def</span><span class="w"> </span><span class="nf">send_feishu</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>    <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">FS_WEBHOOK</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>        <span class="s2">&quot;msg_type&quot;</span><span class="p">:</span> <span class="s2">&quot;interactive&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>        <span class="s2">&quot;card&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>    <span class="p">})</span>
+</code></pre></div>
+<h3 id="64">6.4 卡片化通知（强烈推荐）<a class="headerlink" href="#64" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># 把&quot;一坨文本&quot;变&quot;结构化卡片&quot;</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">alert_card</span><span class="p">(</span><span class="n">alert</span><span class="p">,</span> <span class="n">llm_result</span><span class="p">):</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>        <span class="s2">&quot;msgtype&quot;</span><span class="p">:</span> <span class="s2">&quot;template_card&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>        <span class="s2">&quot;template_card&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>            <span class="s2">&quot;card_type&quot;</span><span class="p">:</span> <span class="s2">&quot;text_notice&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>            <span class="s2">&quot;main_title&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">alert</span><span class="o">.</span><span class="n">severity</span><span class="si">}</span><span class="s2">] </span><span class="si">{</span><span class="n">llm_result</span><span class="o">.</span><span class="n">summary</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">},</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>            <span class="s2">&quot;emphasis_content&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>                <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="n">llm_result</span><span class="o">.</span><span class="n">impact_scope</span><span class="p">,</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>                <span class="s2">&quot;desc&quot;</span><span class="p">:</span> <span class="s2">&quot;影响范围&quot;</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>            <span class="p">},</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>            <span class="s2">&quot;sub_title_text&quot;</span><span class="p">:</span> <span class="n">llm_result</span><span class="o">.</span><span class="n">root_causes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">cause</span><span class="p">,</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>            <span class="s2">&quot;horizontal_content_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>                <span class="p">{</span><span class="s2">&quot;keyname&quot;</span><span class="p">:</span> <span class="s2">&quot;服务&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">alert</span><span class="o">.</span><span class="n">service</span><span class="p">},</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>                <span class="p">{</span><span class="s2">&quot;keyname&quot;</span><span class="p">:</span> <span class="s2">&quot;实例&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">alert</span><span class="o">.</span><span class="n">instance</span><span class="p">},</span>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>                <span class="p">{</span><span class="s2">&quot;keyname&quot;</span><span class="p">:</span> <span class="s2">&quot;时间&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">alert</span><span class="o">.</span><span class="n">timestamp</span><span class="p">},</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>                <span class="p">{</span><span class="s2">&quot;keyname&quot;</span><span class="p">:</span> <span class="s2">&quot;Runbook&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="s2">&quot;查看&quot;</span><span class="p">,</span> <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="n">alert</span><span class="o">.</span><span class="n">runbook_url</span><span class="p">}</span>
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>            <span class="p">],</span>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>            <span class="s2">&quot;card_action&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="n">alert</span><span class="o">.</span><span class="n">dashboard_url</span><span class="p">},</span>
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>            <span class="s2">&quot;jump_list&quot;</span><span class="p">:</span> <span class="p">[</span>
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>                <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="n">GRAFANA_URL</span><span class="p">,</span> <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;看监控&quot;</span><span class="p">},</span>
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>                <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="n">LOG_URL</span><span class="p">,</span> <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;看日志&quot;</span><span class="p">},</span>
+<a id="__codelineno-14-23" name="__codelineno-14-23" href="#__codelineno-14-23"></a>                <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="n">TRACE_URL</span><span class="p">,</span> <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;看链路&quot;</span><span class="p">},</span>
+<a id="__codelineno-14-24" name="__codelineno-14-24" href="#__codelineno-14-24"></a>            <span class="p">]</span>
+<a id="__codelineno-14-25" name="__codelineno-14-25" href="#__codelineno-14-25"></a>        <span class="p">}</span>
+<a id="__codelineno-14-26" name="__codelineno-14-26" href="#__codelineno-14-26"></a>    <span class="p">}</span>
+</code></pre></div>
+<h2 id="on-call">七、值班机制（On-call）<a class="headerlink" href="#on-call" title="Permanent link">&para;</a></h2>
+<h3 id="71">7.1 值班排班原则<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>✅ 公平轮换:
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>  - 工作日 / 周末分开排
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>  - 节假日轮值
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>  - 主备双岗
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>✅ 主备制:
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>  - Primary: 5 分钟响应
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>  - Secondary: Primary 失联兜底
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>✅ 工时管控:
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>  - 单人单周不超过 7×24
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>  - 月度值班 ≤ 2 周
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>  - 凌晨告警次日给调休
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>✅ 跨时区:
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>  - Follow the sun（亚/欧/美轮值）
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>  - 中国团队: 早班/晚班对接
+</code></pre></div>
+<h3 id="72-pagerduty">7.2 PagerDuty 替代品<a class="headerlink" href="#72-pagerduty" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>PagerDuty</strong></td>
+<td style="text-align: left;">国际主流，国内贵</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OpsGenie</strong></td>
+<td style="text-align: left;">Atlassian，已淡出</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Squadcast</strong></td>
+<td style="text-align: left;">印度，便宜</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>FlashDuty 闪电值班</strong></td>
+<td style="text-align: left;">国产首选</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>夜莺 Nightingale + n9e-edge</strong></td>
+<td style="text-align: left;">开源国产</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>自建 Cron + 值班表</strong></td>
+<td style="text-align: left;">中小团队够用</td>
+</tr>
+</tbody>
+</table>
+<h3 id="73-sop">7.3 值班 SOP<a class="headerlink" href="#73-sop" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>1. 收到告警（≤ 1 min）
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>2. 在值班群 ACK（&quot;我在看 INC-xxxx&quot;）
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>3. 评估严重度（确认/调整）
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>4. 拉群（P0/P1 拉故障群）
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>5. 调查 + 缓解（不一定先定位根因，先止血）
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>6. 进展同步（每 15 min 一次）
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>7. 恢复确认
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>8. 故障复盘
+</code></pre></div>
+<h2 id="respond">八、响应（Respond）：从告警到行动<a class="headerlink" href="#respond" title="Permanent link">&para;</a></h2>
+<h3 id="81-ack">8.1 ACK 机制<a class="headerlink" href="#81-ack" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># 告警卡片带 ACK 按钮</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="c1"># 点击后:</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="c1">#   - 标记为&quot;调查中&quot;</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="c1">#   - 暂停 repeat</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="c1">#   - 升级时钟开始计时</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/ack&quot;</span><span class="p">)</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">ack</span><span class="p">(</span><span class="n">alert_id</span><span class="p">,</span> <span class="n">user</span><span class="p">):</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>    <span class="n">alertmanager</span><span class="o">.</span><span class="n">silence</span><span class="p">(</span><span class="n">alert_id</span><span class="p">,</span> <span class="n">duration</span><span class="o">=</span><span class="s2">&quot;30m&quot;</span><span class="p">,</span> <span class="n">creator</span><span class="o">=</span><span class="n">user</span><span class="p">)</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>    <span class="n">notify_group</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">user</span><span class="si">}</span><span class="s2"> 已接手 </span><span class="si">{</span><span class="n">alert_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="82-sop">8.2 SOP 自动展开<a class="headerlink" href="#82-sop" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># 告警时根据 alertname 自动展示步骤</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">render_sop</span><span class="p">(</span><span class="n">alertname</span><span class="p">):</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>    <span class="n">sop</span> <span class="o">=</span> <span class="n">load_runbook</span><span class="p">(</span><span class="n">alertname</span><span class="p">)</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="s2">    ## 处置步骤</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="s2">    1. </span><span class="si">{</span><span class="n">sop</span><span class="o">.</span><span class="n">step1</span><span class="si">}</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="s2">    2. </span><span class="si">{</span><span class="n">sop</span><span class="o">.</span><span class="n">step2</span><span class="si">}</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="s2">    ...</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="s2">    ## 一键操作</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="s2">    [扩容] [重启] [限流] [降级]</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="s2">    &quot;&quot;&quot;</span>
+</code></pre></div>
+<h3 id="83-webhook-chatops">8.3 Webhook + ChatOps<a class="headerlink" href="#83-webhook-chatops" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>在群里输入命令直接操作:
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>@bot kubectl rollout restart order-api
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>@bot scale order-api 10
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>@bot status mysql-prod
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>@bot drain node-101
+</code></pre></div>
+<p>实现：飞书/钉钉/企微机器人 + 后端 RBAC + 审计日志。</p>
+<h3 id="84">8.4 一键诊断<a class="headerlink" href="#84" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># 在卡片上提供&quot;一键诊断&quot;按钮，调用 LLM Agent 取证</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/diagnose&quot;</span><span class="p">)</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">diagnose</span><span class="p">(</span><span class="n">alert_id</span><span class="p">):</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="n">alert</span> <span class="o">=</span> <span class="n">load_alert</span><span class="p">(</span><span class="n">alert_id</span><span class="p">)</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">llm_agent_diagnose</span><span class="p">(</span><span class="n">alert</span><span class="p">)</span>   <span class="c1"># 见 02_LLM告警</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>    <span class="k">return</span> <span class="n">result</span>
+</code></pre></div>
+<h2 id="postmortem">九、复盘（Postmortem）<a class="headerlink" href="#postmortem" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 复盘模板<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="gh"># Incident Report: INC-2026-06-22-001</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="gu">## 基本信息</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="k">-</span><span class="w"> </span>故障开始: 2026-06-22 14:30
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="k">-</span><span class="w"> </span>故障发现: 14:32（监控告警）
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="k">-</span><span class="w"> </span>故障恢复: 14:55
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="k">-</span><span class="w"> </span>持续时长: 25 分钟
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="k">-</span><span class="w"> </span>影响范围: 订单 API 5xx，约 20% 用户下单失败
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="k">-</span><span class="w"> </span>严重度: P1
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="gu">## 时间线</span>
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>14:30 - 上线 order-api v1.2.3
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>14:31 - p99 开始上升
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>14:32 - SLOFastBurn 告警触发
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>14:33 - 值班 ACK，开始调查
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>14:40 - 定位为 N+1 SQL 查询
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>14:45 - 决定回滚
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>14:55 - 回滚完成，监控恢复
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a><span class="gu">## 根因分析（5 Why）</span>
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a><span class="k">1.</span> 为什么 p99 突增? → 订单详情 SQL 性能下降 100x
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a><span class="k">2.</span> 为什么 SQL 性能下降? → 新加的关联表未走索引
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a><span class="k">3.</span> 为什么未走索引? → 索引在线创建未完成就发版
+<a id="__codelineno-21-24" name="__codelineno-21-24" href="#__codelineno-21-24"></a><span class="k">4.</span> 为什么未完成就发版? → 没有&quot;前置依赖&quot;check
+<a id="__codelineno-21-25" name="__codelineno-21-25" href="#__codelineno-21-25"></a><span class="k">5.</span> 为什么没有 check? → CI 流程缺失
+<a id="__codelineno-21-26" name="__codelineno-21-26" href="#__codelineno-21-26"></a>
+<a id="__codelineno-21-27" name="__codelineno-21-27" href="#__codelineno-21-27"></a><span class="gu">## 改进项 (Action Items)</span>
+<a id="__codelineno-21-28" name="__codelineno-21-28" href="#__codelineno-21-28"></a>| ID | 改进 | 负责人 | DDL |
+<a id="__codelineno-21-29" name="__codelineno-21-29" href="#__codelineno-21-29"></a>|:---|:---|:---|:---|
+<a id="__codelineno-21-30" name="__codelineno-21-30" href="#__codelineno-21-30"></a>| A1 | CI 添加 SQL 性能 check | 张三 | 2026-07-01 |
+<a id="__codelineno-21-31" name="__codelineno-21-31" href="#__codelineno-21-31"></a>| A2 | 加索引创建状态依赖 | 李四 | 2026-06-30 |
+<a id="__codelineno-21-32" name="__codelineno-21-32" href="#__codelineno-21-32"></a>| A3 | Runbook 添加 N+1 查询定位 | 王五 | 2026-06-25 |
+<a id="__codelineno-21-33" name="__codelineno-21-33" href="#__codelineno-21-33"></a>
+<a id="__codelineno-21-34" name="__codelineno-21-34" href="#__codelineno-21-34"></a><span class="gu">## 经验沉淀</span>
+<a id="__codelineno-21-35" name="__codelineno-21-35" href="#__codelineno-21-35"></a><span class="k">-</span><span class="w"> </span>教训: 数据库 DDL 与代码发布要解耦
+<a id="__codelineno-21-36" name="__codelineno-21-36" href="#__codelineno-21-36"></a><span class="k">-</span><span class="w"> </span>工具改进: 自动检测 N+1
+<a id="__codelineno-21-37" name="__codelineno-21-37" href="#__codelineno-21-37"></a><span class="k">-</span><span class="w"> </span>流程改进: 大变更前自动 perf 测试
+</code></pre></div>
+<h3 id="92">9.2 复盘原则<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>✅ Blameless（不指责个人）
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>✅ 24h 内必须开始
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>✅ 一周内必须出报告
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>✅ 改进项有 owner + DDL
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>✅ 改进项要跟踪到关闭
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>✅ 经验沉淀到 Wiki / RAG
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>❌ 不要变批斗会
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>❌ 不要只复盘 P0
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>❌ 不要&quot;行动项&quot;挂着不闭环
+</code></pre></div>
+<h3 id="93">9.3 复盘评分<a class="headerlink" href="#93" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># 给每个事故的&quot;过程&quot;打分（非结果）</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">metrics</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="s2">&quot;MTTD&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>            <span class="c1"># Mean Time to Detect</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>    <span class="s2">&quot;MTTA&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>            <span class="c1"># Mean Time to ACK</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>    <span class="s2">&quot;MTTM&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>            <span class="c1"># Mean Time to Mitigate</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>    <span class="s2">&quot;MTTR&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>            <span class="c1"># Mean Time to Resolve</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>    <span class="s2">&quot;communication_score&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="c1"># 沟通是否及时</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>    <span class="s2">&quot;tooling_score&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>      <span class="c1"># 工具是否齐备</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>    <span class="s2">&quot;process_score&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span>      <span class="c1"># 流程是否顺畅</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="slo">十、SLO 与告警预算<a class="headerlink" href="#slo" title="Permanent link">&para;</a></h2>
+<h3 id="101-error-budget">10.1 错误预算（Error Budget）<a class="headerlink" href="#101-error-budget" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>SLO = 99.95%
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>30 天预算 = 21.6 分钟下线时间
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>   或 = 21,600 次失败请求（按 QPS）
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>烧完了:
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>  → 冻结非紧急发布
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>  → 投入稳定性 / 优化
+</code></pre></div>
+<h3 id="102">10.2 多窗口多速率告警<a class="headerlink" href="#102" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># Google SRE 推荐</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="nt">快烧（短窗口高速率）</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1h × 14.4x 燃烧速率 → P1</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="nt">中烧</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">6h × 6x → P2</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="nt">慢烧</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3d × 1x → P3</span>
+</code></pre></div>
+<h3 id="103-slo">10.3 SLO 工具<a class="headerlink" href="#103-slo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sloth</strong></td>
+<td style="text-align: left;">用 YAML 生成 Prom SLO 规则</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OpenSLO</strong></td>
+<td style="text-align: left;">标准规范</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pyrra</strong></td>
+<td style="text-align: left;">K8s SLO Controller</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Nobl9</strong></td>
+<td style="text-align: left;">商业 SLO 平台</td>
+</tr>
+<tr>
+<td style="text-align: left;">阿里 ARMS SLO</td>
+<td style="text-align: left;">国内</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">十一、告警度量与质量管理<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="111">11.1 关键指标<a class="headerlink" href="#111" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>告警总量趋势
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>  日均 / 周均 / 月均
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>  按服务 / 按团队 / 按严重度
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>告警质量
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>  - 误报率 (false positive rate)
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>  - 漏报率 (false negative)
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>  - 可执行率（有人操作了的比例）
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>  - 噪声告警 / 真告警比
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>响应指标
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>  - MTTD / MTTA / MTTM / MTTR
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>  - ACK 时长 p50/p99
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a>  - 升级次数
+<a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a>
+<a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a>人力影响
+<a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a>  - 值班次数 / 人 / 月
+<a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a>  - 凌晨告警数 / 人
+<a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a>  - 非工作时间响应时长
+</code></pre></div>
+<h3 id="112">11.2 告警治理周报<a class="headerlink" href="#112" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>本周告警数: 1234 (↓ 15%)
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>误报数: 80 (↓ 30%)
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>TOP 噪声源:
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>  1. CPU &gt; 80% × 320 次 → 已优化阈值
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>  2. 磁盘 IO util × 180 次 → 已抑制
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>  3. ...
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>下周改进:
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>  - 删除 5 条历史无用规则
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>  - 调整 3 条阈值
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>  - 关联 2 个抑制规则
+</code></pre></div>
+<h3 id="113">11.3 告警准入流程<a class="headerlink" href="#113" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>新增告警规则必须:
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>  ✅ 关联 SLO 或明确业务影响
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>  ✅ 写明 Runbook 链接
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>  ✅ 明确 owner（哪个团队接）
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>  ✅ 已有抑制 / 关联规则
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>  ✅ 通过 review
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>→ 否则一律拒绝合入
+</code></pre></div>
+<h2 id="_5">十二、告警系统选型<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="121">12.1 开源栈<a class="headerlink" href="#121" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">组件</th>
+<th style="text-align: left;">推荐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">指标采集</td>
+<td style="text-align: left;">Prometheus / VictoriaMetrics</td>
+</tr>
+<tr>
+<td style="text-align: left;">告警评估</td>
+<td style="text-align: left;">Prometheus / VMAlert</td>
+</tr>
+<tr>
+<td style="text-align: left;">路由通知</td>
+<td style="text-align: left;">Alertmanager / 夜莺</td>
+</tr>
+<tr>
+<td style="text-align: left;">值班</td>
+<td style="text-align: left;">FlashDuty / 自建</td>
+</tr>
+<tr>
+<td style="text-align: left;">复盘</td>
+<td style="text-align: left;">Wiki + Jira</td>
+</tr>
+<tr>
+<td style="text-align: left;">LLM 加工</td>
+<td style="text-align: left;">见 02_LLM告警</td>
+</tr>
+</tbody>
+</table>
+<h3 id="122">12.2 国产开源<a class="headerlink" href="#122" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>夜莺 (Nightingale):
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>  ✅ 监控告警一体化
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>  ✅ 中文友好
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>  ✅ 内置值班 / 通知
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>  ✅ 接入 Prom / VM
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>  ✅ 国内主流替代品
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>蓝鲸:
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>  ✅ 腾讯开源
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>  ✅ 重型平台
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>  ✅ 适合大企业
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>观测云 / DataKit:
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>  ✅ 商业但有开源 Agent
+</code></pre></div>
+<h3 id="123">12.3 商业产品<a class="headerlink" href="#123" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: left;">厂商</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>PagerDuty</strong></td>
+<td style="text-align: left;">国际主流，国内贵</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Datadog</strong></td>
+<td style="text-align: left;">全栈</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Splunk</strong></td>
+<td style="text-align: left;">日志 + 告警</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>阿里云 ARMS</strong></td>
+<td style="text-align: left;">国内主流</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>腾讯云 APM</strong></td>
+<td style="text-align: left;">国内</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>观测云</strong></td>
+<td style="text-align: left;">国产</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>博睿数据</strong></td>
+<td style="text-align: left;">国产</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">十三、常见坑<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>告警没 owner</strong></td>
+<td style="text-align: left;">必填团队/服务 owner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>告警没 Runbook</strong></td>
+<td style="text-align: left;">必填 runbook URL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有抑制规则</strong></td>
+<td style="text-align: left;">父子告警必抑制</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有静默期</strong></td>
+<td style="text-align: left;">变更窗口必静默</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>告警和监控耦合</strong></td>
+<td style="text-align: left;">告警规则独立于 dashboard</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>告警群没人</strong></td>
+<td style="text-align: left;">拉错群 / 全员屏蔽</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>凌晨告警全 P0</strong></td>
+<td style="text-align: left;">严格 SLO 分级</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>重启就完事</strong></td>
+<td style="text-align: left;">必复盘 + 改进项</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>改进项不跟踪</strong></td>
+<td style="text-align: left;">Jira 看板 + 周会</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有静默 API</strong></td>
+<td style="text-align: left;">一键静默 + 审计</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>多通道刷屏</strong></td>
+<td style="text-align: left;">同事件只通知一次</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>告警含敏感信息</strong></td>
+<td style="text-align: left;">脱敏（密码/token）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有节流</strong></td>
+<td style="text-align: left;">同告警 1h 内最多 N 次</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>告警依赖被告警系统</strong></td>
+<td style="text-align: left;">告警系统独立部署</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>不演练</strong></td>
+<td style="text-align: left;">季度故障注入 + 演练</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checklist">十四、最佳实践清单（Checklist）<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>告警规则:
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>☐ 关联 SLO 或明确业务影响
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>☐ 有 owner / team / runbook
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>☐ 有 severity 分级
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>☐ 包含影响范围、动作建议
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>☐ 持续时间 (for) 合理（避免抖动）
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>告警分发:
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>☐ Alertmanager 抑制规则齐全
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>☐ 路由按 severity / team 分流
+<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>☐ P0/P1 有电话/短信通道
+<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a>☐ 变更窗口能静默
+<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>☐ 卡片化通知（不要纯文本）
+<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>
+<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a>告警响应:
+<a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a>☐ ACK 机制
+<a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a>☐ 升级策略
+<a id="__codelineno-30-18" name="__codelineno-30-18" href="#__codelineno-30-18"></a>☐ Runbook 一键打开
+<a id="__codelineno-30-19" name="__codelineno-30-19" href="#__codelineno-30-19"></a>☐ 一键诊断（LLM）
+<a id="__codelineno-30-20" name="__codelineno-30-20" href="#__codelineno-30-20"></a>☐ ChatOps 集成
+<a id="__codelineno-30-21" name="__codelineno-30-21" href="#__codelineno-30-21"></a>
+<a id="__codelineno-30-22" name="__codelineno-30-22" href="#__codelineno-30-22"></a>值班体系:
+<a id="__codelineno-30-23" name="__codelineno-30-23" href="#__codelineno-30-23"></a>☐ 主备双岗
+<a id="__codelineno-30-24" name="__codelineno-30-24" href="#__codelineno-30-24"></a>☐ 排班公开
+<a id="__codelineno-30-25" name="__codelineno-30-25" href="#__codelineno-30-25"></a>☐ 凌晨调休
+<a id="__codelineno-30-26" name="__codelineno-30-26" href="#__codelineno-30-26"></a>☐ 月度值班 ≤ 2 周
+<a id="__codelineno-30-27" name="__codelineno-30-27" href="#__codelineno-30-27"></a>
+<a id="__codelineno-30-28" name="__codelineno-30-28" href="#__codelineno-30-28"></a>复盘:
+<a id="__codelineno-30-29" name="__codelineno-30-29" href="#__codelineno-30-29"></a>☐ 24h 内启动
+<a id="__codelineno-30-30" name="__codelineno-30-30" href="#__codelineno-30-30"></a>☐ 一周内出报告
+<a id="__codelineno-30-31" name="__codelineno-30-31" href="#__codelineno-30-31"></a>☐ Blameless 原则
+<a id="__codelineno-30-32" name="__codelineno-30-32" href="#__codelineno-30-32"></a>☐ 改进项有 owner / DDL
+<a id="__codelineno-30-33" name="__codelineno-30-33" href="#__codelineno-30-33"></a>☐ 改进项跟踪到关闭
+<a id="__codelineno-30-34" name="__codelineno-30-34" href="#__codelineno-30-34"></a>
+<a id="__codelineno-30-35" name="__codelineno-30-35" href="#__codelineno-30-35"></a>度量:
+<a id="__codelineno-30-36" name="__codelineno-30-36" href="#__codelineno-30-36"></a>☐ 周报跟踪告警量
+<a id="__codelineno-30-37" name="__codelineno-30-37" href="#__codelineno-30-37"></a>☐ 月度治理评审
+<a id="__codelineno-30-38" name="__codelineno-30-38" href="#__codelineno-30-38"></a>☐ 误报率 / MTTR 看板
+<a id="__codelineno-30-39" name="__codelineno-30-39" href="#__codelineno-30-39"></a>☐ TOP 噪声告警治理
+</code></pre></div>
+<h2 id="_7">十五、学习路径<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>入门（1 周）:
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>  1. Prometheus + Alertmanager 跑通
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>  2. 写 10 条基础告警规则
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>  3. 接入企业微信通知
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>中级（1 个月）:
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>  4. SLO + Burn Rate 告警
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>  5. 抑制 + 路由完善
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>  6. 值班轮换机制
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>  7. 复盘模板 + 流程
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>
+<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a>高级（3 个月+）:
+<a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a>  8. 告警治理周报 + 度量
+<a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a>  9. LLM 加工告警
+<a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a>  10. ChatOps 集成
+<a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a>  11. 一键诊断 / 自愈
+<a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a>  12. 故障注入 + 演练
+<a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a>
+<a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a>专家:
+<a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a>  13. 多集群多区域告警
+<a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a>  14. SLO 平台化
+<a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a>  15. 跨团队告警生态
+<a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a>  16. AI 化告警治理（自动调阈值/收敛）
+</code></pre></div>
+<h2 id="_8">十六、参考资料<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>书:
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>  - 《Site Reliability Engineering》(Google SRE)
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>  - 《The Site Reliability Workbook》(Google)
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>  - 《Seeking SRE》(O&#39;Reilly)
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>  - 《Implementing Service Level Objectives》(Alex Hidalgo)
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>
+<a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>博客:
+<a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a>  - Google SRE Workbook
+<a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a>  - Increment Magazine
+<a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a>  - 字节跳动 SRE 公众号
+<a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a>  - 阿里巴巴 SRE 实践
+<a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a>  - 腾讯运维社区
+<a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a>
+<a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a>开源:
+<a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a>  - Sloth: https://github.com/slok/sloth
+<a id="__codelineno-32-16" name="__codelineno-32-16" href="#__codelineno-32-16"></a>  - Pyrra: https://github.com/pyrra-dev/pyrra
+<a id="__codelineno-32-17" name="__codelineno-32-17" href="#__codelineno-32-17"></a>  - Nightingale: https://github.com/ccfos/nightingale
+<a id="__codelineno-32-18" name="__codelineno-32-18" href="#__codelineno-32-18"></a>  - FlashDuty: https://flashcat.cloud/
+<a id="__codelineno-32-19" name="__codelineno-32-19" href="#__codelineno-32-19"></a>
+<a id="__codelineno-32-20" name="__codelineno-32-20" href="#__codelineno-32-20"></a>工具:
+<a id="__codelineno-32-21" name="__codelineno-32-21" href="#__codelineno-32-21"></a>  - PromQL Cheatsheet
+<a id="__codelineno-32-22" name="__codelineno-32-22" href="#__codelineno-32-22"></a>  - SLO Generator
+<a id="__codelineno-32-23" name="__codelineno-32-23" href="#__codelineno-32-23"></a>  - Postmortem Templates (Google/Atlassian)
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：告警管理是 SRE 工作的"地基"。<strong>SLO 驱动 + Burn Rate + 收敛三段式 + 分级路由 + Blameless 复盘</strong> 是五大支柱。投入"产生"层 1 倍精力，往后每一层都要 1.5 倍投入，否则 LLM/AIOps 等高级能力建立在沙子上。<strong>国内开源首选夜莺 + Alertmanager + 飞书/企微/钉钉机器人 + FlashDuty 值班</strong>。</p>
+</blockquote>
 
 
 

@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#finops-ai" class="md-skip">
           跳转至
         </a>
       
@@ -1296,10 +1296,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        资源需求预测
+        一、成本治理金字塔
       
     </span>
   </a>
@@ -1307,10 +1307,381 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#finops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、FinOps 三阶段
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、传统云成本优化（CPU/存储/网络）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、传统云成本优化（CPU/存储/网络）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 闲置资源识别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-rightsizing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Rightsizing（合理规格）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-ri-savings-plan-spot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 预留实例（RI）/ Savings Plan / Spot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 K8s 集群成本优化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 存储成本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 网络成本（最容易被忽略）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-label" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、Tag / Label 体系（一切的基础）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、Tag / Label 体系（一切的基础）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 推荐标签
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Tag 治理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-k8s-label-annotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 K8s Label / Annotation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、可见性工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、可见性工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 多云成本管理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 K8s 成本可视化（开源）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-opencost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 OpenCost 部署示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 自建账单分析（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-gpu-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、AI / GPU 成本优化（2025 主战场）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、AI / GPU 成本优化（2025 主战场）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 GPU 是新的"成本黑洞"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 GPU 利用率监控
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 训练成本优化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 推理成本优化（重头戏）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 vLLM 推理成本示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-gpu-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 GPU 调度（K8s）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-gpu-mig-mps-timeslicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 GPU 切分（MIG / MPS / TimeSlicing）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#68-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.8 共享 GPU 池
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        弹性策略优化
+        七、推理成本看板（生产实战）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、推理成本看板（生产实战）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 关键指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 单 token 成本计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 模型路由省钱
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kv-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、KV Cache 优化（成本关键点）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pd-prefill-decode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、PD 分离（Prefill-Decode 分离）
       
     </span>
   </a>
@@ -1321,7 +1692,101 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        成本异常检测
+        十、成本异常检测
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finops_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、FinOps 组织机制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、FinOps 组织机制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 角色
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 KPI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 治理流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、常见坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、最佳实践清单
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、参考资料
       
     </span>
   </a>
@@ -1715,10 +2180,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        资源需求预测
+        一、成本治理金字塔
       
     </span>
   </a>
@@ -1726,10 +2191,381 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#finops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、FinOps 三阶段
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、传统云成本优化（CPU/存储/网络）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、传统云成本优化（CPU/存储/网络）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 闲置资源识别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-rightsizing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Rightsizing（合理规格）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-ri-savings-plan-spot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 预留实例（RI）/ Savings Plan / Spot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 K8s 集群成本优化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 存储成本
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 网络成本（最容易被忽略）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tag-label" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、Tag / Label 体系（一切的基础）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、Tag / Label 体系（一切的基础）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 推荐标签
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Tag 治理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-k8s-label-annotation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 K8s Label / Annotation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、可见性工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、可见性工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 多云成本管理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 K8s 成本可视化（开源）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-opencost" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 OpenCost 部署示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 自建账单分析（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-gpu-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、AI / GPU 成本优化（2025 主战场）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、AI / GPU 成本优化（2025 主战场）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 GPU 是新的"成本黑洞"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 GPU 利用率监控
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 训练成本优化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 推理成本优化（重头戏）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#65-vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.5 vLLM 推理成本示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#66-gpu-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.6 GPU 调度（K8s）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#67-gpu-mig-mps-timeslicing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.7 GPU 切分（MIG / MPS / TimeSlicing）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#68-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.8 共享 GPU 池
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        弹性策略优化
+        七、推理成本看板（生产实战）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、推理成本看板（生产实战）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 关键指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 单 token 成本计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 模型路由省钱
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kv-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、KV Cache 优化（成本关键点）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pd-prefill-decode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、PD 分离（Prefill-Decode 分离）
       
     </span>
   </a>
@@ -1740,7 +2576,101 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        成本异常检测
+        十、成本异常检测
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finops_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、FinOps 组织机制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、FinOps 组织机制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 角色
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 KPI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 治理流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、常见坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、最佳实践清单
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、参考资料
       
     </span>
   </a>
@@ -1815,42 +2745,806 @@
   
 
 
-<h1 id="_1">成本优化<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">资源需求预测<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>使用 Prophet 或 LSTM 预测未来资源需求，提前规划扩缩容。</p>
-<h2 id="_3">弹性策略优化<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h1 id="finops-ai">成本优化（FinOps + AI 成本）<a class="headerlink" href="#finops-ai" title="Permanent link">&para;</a></h1>
+<blockquote>
+<p>云原生 + AI 时代的最大命题：<strong>算力既贵又紧缺</strong>。CPU 算力靠 FinOps 治理，<strong>GPU 算力靠精细化调度 + 模型优化</strong>。一个 SRE 不懂成本就只是"半个 SRE"。</p>
+</blockquote>
+<h2 id="_1">一、成本治理金字塔<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>                    ┌─────────────────┐
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>                    │   决策 (Decide)  │   ← 砍/合并/降配
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>                    ├─────────────────┤
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>                    │   归因 (Allocate) │   ← 哪个团队/业务花的
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>                    ├─────────────────┤
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>                    │   分析 (Analyze) │   ← 趋势/异常/浪费
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                    ├─────────────────┤
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                    │   可见 (Visible) │   ← 数据看板
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                    ├─────────────────┤
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                    │   采集 (Collect) │   ← 账单/Tag/利用率
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>                    └─────────────────┘
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>→ 没有&quot;可见&quot;就没有&quot;治理&quot;，先把数据建好
+</code></pre></div>
+<h2 id="finops">二、FinOps 三阶段<a class="headerlink" href="#finops" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>1. Inform（信息透明）
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>   - 看到花了多少钱
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>   - 按团队/业务/环境归因
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>   - 异常账单告警
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>2. Optimize（持续优化）
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>   - 闲置资源识别
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>   - Rightsize（合理规格）
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>   - 预留实例 / Spot
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>   - 自动调度
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>3. Operate（持续运营）
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>   - 成本指标 KPI
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>   - FinOps 团队
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>   - 跨部门治理
+</code></pre></div>
+<p><strong>经验</strong>：大部分团队卡在阶段 1，因为<strong>没有 Tag + 没有看板 + 没有 Owner</strong>。</p>
+<h2 id="cpu">三、传统云成本优化（CPU/存储/网络）<a class="headerlink" href="#cpu" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 闲置资源识别<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 7 天 CPU 平均 &lt; 5% 的 EC2/VM</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kr">avg_over_time</span><span class="o">(</span><span class="nv">node_cpu_usage</span><span class="p">[</span><span class="s">7d</span><span class="p">]</span><span class="o">)</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mf">0.05</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># 闲置磁盘（30 天无 IO）</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="kr">rate</span><span class="o">(</span><span class="nv">disk_read_bytes</span><span class="p">[</span><span class="s">30d</span><span class="p">]</span><span class="o">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="kr">rate</span><span class="o">(</span><span class="nv">disk_write_bytes</span><span class="p">[</span><span class="s">30d</span><span class="p">]</span><span class="o">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># 未挂载的 EBS / 云硬盘</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nv">aws</span><span class="w"> </span><span class="nv">ec2</span><span class="w"> </span><span class="nv">describe</span><span class="o">-</span><span class="nv">volumes</span><span class="w"> </span><span class="o">--</span><span class="nv">filters</span><span class="w"> </span><span class="nv">Name</span><span class="err">=</span><span class="nv">status</span><span class="p">,</span><span class="nv">Values</span><span class="err">=</span><span class="nv">available</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># K8s 中未被任何 Pod 引用的 PVC</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="nv">kubectl</span><span class="w"> </span><span class="nv">get</span><span class="w"> </span><span class="nv">pvc</span><span class="w"> </span><span class="o">--</span><span class="nv">all</span><span class="o">-</span><span class="nv">namespaces</span><span class="w"> </span><span class="o">-</span><span class="err">o</span><span class="w"> </span><span class="nv">json</span><span class="w"> </span><span class="err">|</span><span class="w"> </span><span class="nv">jq</span><span class="w"> </span><span class="p">&#39;</span><span class="s">...</span><span class="p">&#39;</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="c1"># Idle Load Balancer</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="nv">aws</span><span class="w"> </span><span class="nv">elbv2</span><span class="w"> </span><span class="nv">describe</span><span class="o">-</span><span class="nv">load</span><span class="o">-</span><span class="nv">balancers</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="err">没有</span><span class="w"> </span><span class="nv">active</span><span class="w"> </span><span class="nv">target</span>
+</code></pre></div>
+<h3 id="32-rightsizing">3.2 Rightsizing（合理规格）<a class="headerlink" href="#32-rightsizing" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 收集 7 天峰值利用率</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">rightsize_recommendation</span><span class="p">(</span><span class="n">instance</span><span class="p">):</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="n">cpu_p95</span> <span class="o">=</span> <span class="n">query_prom_p95</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;node_cpu_usage</span><span class="se">{{</span><span class="s2">instance=&#39;</span><span class="si">{</span><span class="n">instance</span><span class="si">}</span><span class="s2">&#39;</span><span class="se">}}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;7d&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    <span class="n">mem_p95</span> <span class="o">=</span> <span class="n">query_prom_p95</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;node_mem_usage</span><span class="se">{{</span><span class="s2">instance=&#39;</span><span class="si">{</span><span class="n">instance</span><span class="si">}</span><span class="s2">&#39;</span><span class="se">}}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;7d&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    <span class="n">current_specs</span> <span class="o">=</span> <span class="n">describe_instance</span><span class="p">(</span><span class="n">instance</span><span class="p">)</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">target_specs</span> <span class="o">=</span> <span class="n">pick_smallest_fit</span><span class="p">(</span><span class="n">cpu_p95</span> <span class="o">*</span> <span class="mf">1.2</span><span class="p">,</span> <span class="n">mem_p95</span> <span class="o">*</span> <span class="mf">1.2</span><span class="p">)</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="k">if</span> <span class="n">target_specs</span><span class="o">.</span><span class="n">price</span> <span class="o">&lt;</span> <span class="n">current_specs</span><span class="o">.</span><span class="n">price</span> <span class="o">*</span> <span class="mf">0.8</span><span class="p">:</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>        <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>            <span class="s2">&quot;current&quot;</span><span class="p">:</span> <span class="n">current_specs</span><span class="p">,</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>            <span class="s2">&quot;recommend&quot;</span><span class="p">:</span> <span class="n">target_specs</span><span class="p">,</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>            <span class="s2">&quot;monthly_saving&quot;</span><span class="p">:</span> <span class="n">current_specs</span><span class="o">.</span><span class="n">price</span> <span class="o">-</span> <span class="n">target_specs</span><span class="o">.</span><span class="n">price</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>        <span class="p">}</span>
+</code></pre></div>
+<h3 id="33-ri-savings-plan-spot">3.3 预留实例（RI）/ Savings Plan / Spot<a class="headerlink" href="#33-ri-savings-plan-spot" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">策略</th>
-<th style="text-align: left;">适用</th>
-<th style="text-align: left;">效果</th>
+<th style="text-align: left;">方案</th>
+<th style="text-align: center;">折扣</th>
+<th style="text-align: left;">适合</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">基于 HPA</td>
-<td style="text-align: left;">稳定流量</td>
-<td style="text-align: left;">基础</td>
+<td style="text-align: left;"><strong>按需 (On-Demand)</strong></td>
+<td style="text-align: center;">0%</td>
+<td style="text-align: left;">临时 / 不确定负载</td>
 </tr>
 <tr>
-<td style="text-align: left;">预测性扩缩</td>
-<td style="text-align: left;">周期性流量</td>
-<td style="text-align: left;">提前准备</td>
+<td style="text-align: left;"><strong>预留实例 1 年</strong></td>
+<td style="text-align: center;">30-40%</td>
+<td style="text-align: left;">长期稳定负载</td>
 </tr>
 <tr>
-<td style="text-align: left;">突发弹性</td>
-<td style="text-align: left;">不可预测尖刺</td>
-<td style="text-align: left;">快速响应</td>
+<td style="text-align: left;"><strong>预留实例 3 年</strong></td>
+<td style="text-align: center;">50-60%</td>
+<td style="text-align: left;">极度稳定</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Savings Plan</strong></td>
+<td style="text-align: center;">30-72%</td>
+<td style="text-align: left;">灵活（AWS 跨实例族）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Spot / 抢占</strong></td>
+<td style="text-align: center;"><strong>70-90%</strong></td>
+<td style="text-align: left;"><strong>批处理 / 容错</strong></td>
 </tr>
 </tbody>
 </table>
-<h2 id="_4">成本异常检测<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<ul>
-<li>资源使用率突增检测（可能被攻击或有 Bug）</li>
-<li>Token 成本异常分析（按模型/用户/场景）</li>
-<li>GP U 空闲率监控（避免浪费）</li>
-</ul>
+<p><strong>实战配比</strong>：基线负载 70% RI + 弹性负载 30% On-Demand + 任务负载 100% Spot。</p>
+<h3 id="34-k8s">3.4 K8s 集群成本优化<a class="headerlink" href="#34-k8s" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>✅ Cluster Autoscaler 自动扩缩
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>✅ HPA / VPA 自动伸缩
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>✅ Karpenter（AWS）/ 国产替代品：自动选最便宜机型
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>✅ Bin-packing 调度（节点装满再开新节点）
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>✅ 多 NodePool（按需/Spot 混部）
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>✅ Spot Pool + 优雅退出
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>✅ Pod 资源 request/limit 校准
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>✅ 闲时 hibernate（开发/测试集群）
+</code></pre></div>
+<h3 id="35">3.5 存储成本<a class="headerlink" href="#35" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>分层存储:
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  热数据  SSD            $0.10/GB
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  温数据  HDD            $0.04/GB
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  冷数据  对象存储 / 归档  $0.004/GB
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>对象存储分层（S3）:
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  Standard         热
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>  Intelligent      AI 自动迁移
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>  IA (Infrequent)  温
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>  Glacier          冷（提取慢）
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>  Deep Archive     极冷（提取 12h+）
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>策略:
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>  ✅ 生命周期规则自动迁移
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>  ✅ 删除孤儿 Snapshot
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>  ✅ 压缩 + 去重（ZFS/Btrfs/对象存储天然）
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>  ✅ 数据保留期严格
+</code></pre></div>
+<h3 id="36">3.6 网络成本（最容易被忽略）<a class="headerlink" href="#36" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>公网流量出口最贵:
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  AWS: $0.09/GB
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  GCP: $0.12/GB
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  阿里云: ¥0.5-0.8/GB
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>优化:
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  ✅ CDN 缓存（流量便宜 10x）
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  ✅ 私有连接（VPC Peering / Direct Connect）
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>  ✅ 跨可用区流量收敛
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>  ✅ 压缩 + HTTP/2 / QUIC
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>  ✅ 出口流量监控（哪个服务在烧钱）
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>PrivateLink / VPC Endpoint:
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>  → 替代 NAT 网关访问 S3/RDS，省 NAT 成本
+</code></pre></div>
+<h2 id="tag-label">四、Tag / Label 体系（一切的基础）<a class="headerlink" href="#tag-label" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 推荐标签<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>必填:
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  cost-center      成本中心
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  team             团队
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  business         业务线
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>  env              环境 (prod/staging/dev)
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>  service          服务名
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>  owner            责任人
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>推荐:
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>  project          项目
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>  ticket           关联工单
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>  expire           销毁时间（临时资源）
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>  data-classification 数据等级
+</code></pre></div>
+<h3 id="42-tag">4.2 Tag 治理<a class="headerlink" href="#42-tag" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Tag 合规扫描（每日）</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">scan_tag_compliance</span><span class="p">(</span><span class="n">resources</span><span class="p">):</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="n">REQUIRED</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;cost-center&#39;</span><span class="p">,</span> <span class="s1">&#39;team&#39;</span><span class="p">,</span> <span class="s1">&#39;env&#39;</span><span class="p">,</span> <span class="s1">&#39;owner&#39;</span><span class="p">]</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="n">violations</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">resources</span><span class="p">:</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>        <span class="n">missing</span> <span class="o">=</span> <span class="p">[</span><span class="n">t</span> <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">REQUIRED</span> <span class="k">if</span> <span class="n">t</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">r</span><span class="o">.</span><span class="n">tags</span><span class="p">]</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>        <span class="k">if</span> <span class="n">missing</span><span class="p">:</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>            <span class="n">violations</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">&quot;resource&quot;</span><span class="p">:</span> <span class="n">r</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="s2">&quot;missing&quot;</span><span class="p">:</span> <span class="n">missing</span><span class="p">})</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    <span class="k">return</span> <span class="n">violations</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="c1"># 违规处理:</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="c1">#   - 通知 owner</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="c1">#   - 一周宽限</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="c1">#   - 仍不补 → 标记 ToBeDeleted</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="c1">#   - 月底彻底删除</span>
+</code></pre></div>
+<h3 id="43-k8s-label-annotation">4.3 K8s Label / Annotation<a class="headerlink" href="#43-k8s-label-annotation" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">order-api</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">    </span><span class="nt">team</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">payment</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">    </span><span class="nt">cost-center</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cc-001</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span><span class="nt">env</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">prod</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">  </span><span class="nt">annotations</span><span class="p">:</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="w">    </span><span class="nt">cost.cncf.io/business</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;电商核心&quot;</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="w">    </span><span class="nt">cost.cncf.io/owner</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;zhangsan@company.com&quot;</span>
+</code></pre></div>
+<h2 id="_2">五、可见性工具<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 多云成本管理<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>AWS Cost Explorer</strong></td>
+<td style="text-align: left;">AWS 原生</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GCP Cost Management</strong></td>
+<td style="text-align: left;">GCP 原生</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Azure Cost Management</strong></td>
+<td style="text-align: left;">Azure 原生</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>阿里云费用中心</strong></td>
+<td style="text-align: left;">国内</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CloudHealth / Cloudability</strong></td>
+<td style="text-align: left;">商业</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Apptio Cloudability</strong></td>
+<td style="text-align: left;">商业</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Spot.io / NetApp</strong></td>
+<td style="text-align: left;">商业</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-k8s">5.2 K8s 成本可视化（开源）<a class="headerlink" href="#52-k8s" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>OpenCost</strong> ⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">CNCF, K8s 成本归因事实标准</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Kubecost</strong></td>
+<td style="text-align: left;">OpenCost 商业版 + UI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CAST AI</strong></td>
+<td style="text-align: left;">自动优化平台</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PerfectScale</strong></td>
+<td style="text-align: left;">K8s rightsizing</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Komiser</strong></td>
+<td style="text-align: left;">多云成本可视化</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CloudCarbonFootprint</strong></td>
+<td style="text-align: left;">碳足迹 + 成本</td>
+</tr>
+</tbody>
+</table>
+<h3 id="53-opencost">5.3 OpenCost 部署示例<a class="headerlink" href="#53-opencost" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>opencost<span class="w"> </span>https://opencost.github.io/opencost-helm-chart
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>helm<span class="w"> </span>install<span class="w"> </span>opencost<span class="w"> </span>opencost/opencost<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">  </span>--namespace<span class="w"> </span>opencost<span class="w"> </span>--create-namespace<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">  </span>--set<span class="w"> </span>opencost.prometheus.internal.enabled<span class="o">=</span><span class="nb">true</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1"># 查看按 namespace 成本</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>opencost<span class="w"> </span>--window<span class="w"> </span>7d<span class="w"> </span>--aggregate<span class="w"> </span>namespace
+</code></pre></div>
+<h3 id="54">5.4 自建账单分析（推荐）<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>账单导出（CUR/账单 API）
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>   ↓
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>S3 / OSS
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>   ↓
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>Spark / DuckDB ETL
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>   ↓
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>PG / ClickHouse
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>   ↓
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>Superset / Grafana
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>   ↓
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>团队/业务/产品看板
+</code></pre></div>
+<h2 id="ai-gpu-2025">六、AI / GPU 成本优化（2025 主战场）<a class="headerlink" href="#ai-gpu-2025" title="Permanent link">&para;</a></h2>
+<h3 id="61-gpu">6.1 GPU 是新的"成本黑洞"<a class="headerlink" href="#61-gpu" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>单卡价格（2025）:
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  A100 80GB:  ¥10万+/年（云上租）
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>  H100 80GB:  ¥20万+/年
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>  H200:        ¥25万+/年
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>  4090 24GB:  ¥1.5万/年（消费级，灰色市场）
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>  L20 / L40:  ¥5-8万/年
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>100 张 H100 集群:
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>  硬件折旧:  ¥2000万 / 3年
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>  电费:     ¥120万 / 年
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>  机房:     ¥100万 / 年
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>  人力:     ¥300万 / 年
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>→ 一年烧 ¥1000 万很常见
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>→ 利用率从 30% 提到 70% = 省 ¥400 万
+</code></pre></div>
+<h3 id="62-gpu">6.2 GPU 利用率监控<a class="headerlink" href="#62-gpu" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># DCGM Exporter 关键指标</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nv">DCGM_FI_DEV_GPU_UTIL</span><span class="w">              </span><span class="c1"># SM 利用率</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nv">DCGM_FI_DEV_FB_USED</span><span class="w">               </span><span class="c1"># 显存使用</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nv">DCGM_FI_DEV_FB_FREE</span><span class="w">               </span><span class="c1"># 显存空闲</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nv">DCGM_FI_DEV_POWER_USAGE</span><span class="w">           </span><span class="c1"># 功耗</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="nv">DCGM_FI_DEV_GPU_TEMP</span><span class="w">              </span><span class="c1"># 温度</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="nv">DCGM_FI_PROF_PIPE_TENSOR_ACTIVE</span><span class="w">   </span><span class="c1"># Tensor Core 利用率</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="nv">DCGM_FI_PROF_SM_OCCUPANCY</span><span class="w">         </span><span class="c1"># SM 占用率</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="nv">DCGM_FI_DEV_PCIE_TX</span><span class="o">/</span><span class="nv">RX_THROUGHPUT</span><span class="w"> </span><span class="c1"># PCIe 吞吐</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="c1"># 推理利用率指标</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="nv">vllm</span><span class="err">:</span><span class="nv">gpu_cache_usage_perc</span><span class="w">         </span><span class="c1"># KV Cache 利用率</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="nv">vllm</span><span class="err">:</span><span class="nv">num_requests_running</span><span class="w">         </span><span class="c1"># 并发请求数</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="nv">vllm</span><span class="err">:</span><span class="nv">e2e_request_latency_seconds</span><span class="w">  </span><span class="c1"># 端到端延迟</span>
+</code></pre></div>
+<h3 id="63">6.3 训练成本优化<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>1. 算力调度
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>   ✅ Gang Scheduling（一组 Pod 同时启动，避免抢资源死锁）
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>   ✅ Topology-Aware（NVLink/IB 拓扑感知）
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>   ✅ 优先级队列（在线推理 &gt; 训练 &gt; 测试）
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>2. 训练加速
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>   ✅ Mixed Precision (FP16/BF16) → 2x 速度
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>   ✅ Gradient Checkpointing → 省 50% 显存
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>   ✅ ZeRO-3 / FSDP → 大模型分片
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>   ✅ DeepSpeed / Megatron-LM
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>   ✅ Flash Attention 2 / 3
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>   ✅ Liger Kernel / Unsloth → 单卡微调 2x
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a>3. 数据加速
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>   ✅ NVMe + DataLoader 多 worker
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a>   ✅ 预处理离线化
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>   ✅ 数据格式: WebDataset / MosaicML StreamingDataset
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a>
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a>4. Checkpoint 优化
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>   ✅ 异步 checkpoint
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a>   ✅ 增量 checkpoint
+<a id="__codelineno-14-22" name="__codelineno-14-22" href="#__codelineno-14-22"></a>   ✅ 分布式 checkpoint
+</code></pre></div>
+<h3 id="64">6.4 推理成本优化（重头戏）<a class="headerlink" href="#64" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>A. 模型层面
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>   - 量化 (INT8/INT4/FP8)        → 显存省 4-8x，速度 +50%
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>   - 蒸馏 (大模型 → 小模型)        → 成本省 5-10x
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>   - LoRA / QLoRA 微调            → 训练成本省 10x
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>   - 推测解码 (Speculative Decoding) → 速度 +30-50%
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>B. 推理引擎
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>   - vLLM ⭐                       → PagedAttention，吞吐 +5-10x
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>   - SGLang                       → RadixAttention，KV 复用
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>   - TensorRT-LLM                 → NVIDIA 极致优化
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>   - llama.cpp / MLC              → CPU/边缘
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>   - TGI (HuggingFace)            → 老牌
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>C. 调度层面
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>   - 连续批处理 (Continuous Batching)
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>   - Prefill-Decode 分离 (PD 分离)
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>   - 多模型共置 (Model Routing)
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>   - 动态 LoRA 加载
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>   - KV Cache 跨请求复用
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>D. 路由策略
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>   - 简单请求 → 小模型 (7B)
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>   - 复杂请求 → 大模型 (72B)
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>   - 长上下文 → 专用模型
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>   - 多模态 → 专用模型
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>E. 缓存
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>   - Response Cache (Redis)       → 重复 query 命中
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a>   - Prompt Cache                 → 系统提示词复用
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>   - KV Cache Persistence
+</code></pre></div>
+<h3 id="65-vllm">6.5 vLLM 推理成本示例<a class="headerlink" href="#65-vllm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># vLLM 部署：单 H100 跑 Qwen3-32B-AWQ</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="c1"># 量化前: H100 单卡跑不下 32B（160GB FP16）</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="c1"># 量化后: AWQ-INT4 仅需 ~20GB，单卡跑 + 大量 KV</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="nt">containers</span><span class="p">:</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm/vllm-openai:latest</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">  </span><span class="nt">args</span><span class="p">:</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--model=Qwen/Qwen3-32B-AWQ</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--quantization=awq</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--max-model-len=32768</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--gpu-memory-utilization=0.9</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--max-num-seqs=128</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--enable-prefix-caching</span><span class="w">     </span><span class="c1"># KV Cache 复用</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--enable-chunked-prefill</span><span class="w">    </span><span class="c1"># Prefill 切片</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="w">  </span><span class="nt">resources</span><span class="p">:</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="w">    </span><span class="nt">limits</span><span class="p">:</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="w">      </span><span class="nt">nvidia.com/gpu</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1</span>
+</code></pre></div>
+<p><strong>成本对比</strong>：
+| 部署 | 显存 | 吞吐 | 单 token 成本 |
+|:---|:---:|:---:|:---:|
+| FP16 不量化 | 64GB × 2 卡 | 100 token/s | ¥0.01 |
+| AWQ INT4 | 20GB × 1 卡 | 80 token/s | <strong>¥0.0015</strong> |
+| 量化 + Prefix Cache | 20GB × 1 卡 | 200 token/s | <strong>¥0.0006</strong> |</p>
+<p>→ <strong>优化 16x</strong></p>
+<h3 id="66-gpu-k8s">6.6 GPU 调度（K8s）<a class="headerlink" href="#66-gpu-k8s" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>框架:
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>  ✅ Volcano（CNCF, 中国主导）
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>  ✅ Kueue（Kubernetes 原生）
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>  ✅ KubeRay（Ray on K8s）
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>  ✅ Run.AI（商业）
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>特性:
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>  - Gang scheduling
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>  - 多队列优先级
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>  - 公平调度 (DRF / Capacity)
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>  - GPU 拓扑感知
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>  - MPS / MIG 切分
+</code></pre></div>
+<h3 id="67-gpu-mig-mps-timeslicing">6.7 GPU 切分（MIG / MPS / TimeSlicing）<a class="headerlink" href="#67-gpu-mig-mps-timeslicing" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">方式</th>
+<th style="text-align: left;">隔离</th>
+<th style="text-align: left;">适合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>MIG</strong></td>
+<td style="text-align: left;">硬隔离 (A100/H100)</td>
+<td style="text-align: left;">多租户推理</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MPS</strong></td>
+<td style="text-align: left;">进程级</td>
+<td style="text-align: left;">多任务共享</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Time Slicing</strong></td>
+<td style="text-align: left;">时间片</td>
+<td style="text-align: left;">开发测试</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HAMI</strong></td>
+<td style="text-align: left;">国产 vGPU 方案</td>
+<td style="text-align: left;">国内主流</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># MIG 切 1 张 A100 80GB 为 7 个 10GB 实例</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConfigMap</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mig-config</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="nt">data</span><span class="p">:</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">  </span><span class="nt">config.yaml</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">    </span><span class="no">version: v1</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">    </span><span class="no">mig-configs:</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">      </span><span class="no">all-1g.10gb:</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">        </span><span class="no">- devices: all</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="w">          </span><span class="no">mig-enabled: true</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w">          </span><span class="no">mig-devices:</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="w">            </span><span class="no">&quot;1g.10gb&quot;: 7</span>
+</code></pre></div>
+<h3 id="68-gpu">6.8 共享 GPU 池<a class="headerlink" href="#68-gpu" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>HAMI / 阿里 cGPU / 腾讯 qGPU / vCUDA:
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>  ✅ 显存软切分（按 MB）
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>  ✅ 算力按比例
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>  ✅ 适合：多个小模型部署 / 测试环境
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>  ❌ 不适合: 强隔离场景
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>效果:
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>  原本 1 卡 1 服务 → 1 卡 4-8 服务
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>  利用率 30% → 70%
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>中国头部团队（字节、阿里、商汤）大量在用
+</code></pre></div>
+<h2 id="_3">七、推理成本看板（生产实战）<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="71">7.1 关键指标<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>利用率:
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>  - GPU SM 利用率（按服务）
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>  - KV Cache 利用率
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>  - 显存利用率
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>  - 平均 batch size
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>  - QPS
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>成本:
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>  - 单 token 成本
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>  - 单请求成本
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>  - 单用户日成本
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>  - 模型 ROI
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a>业务:
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a>  - 命中率（缓存）
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>  - 模型路由分布
+<a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a>  - 长尾请求占比
+</code></pre></div>
+<h3 id="72-token">7.2 单 token 成本计算<a class="headerlink" href="#72-token" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">cost_per_token</span><span class="p">(</span><span class="n">deployment</span><span class="p">):</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>    <span class="n">gpu_cost_per_hour</span> <span class="o">=</span> <span class="mi">12</span>     <span class="c1"># H100 云上 ¥12/h</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="n">num_gpus</span> <span class="o">=</span> <span class="n">deployment</span><span class="o">.</span><span class="n">num_gpus</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="n">tokens_per_hour</span> <span class="o">=</span> <span class="n">deployment</span><span class="o">.</span><span class="n">throughput</span> <span class="o">*</span> <span class="mi">3600</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>    <span class="k">return</span> <span class="p">(</span><span class="n">gpu_cost_per_hour</span> <span class="o">*</span> <span class="n">num_gpus</span><span class="p">)</span> <span class="o">/</span> <span class="n">tokens_per_hour</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="c1"># 例:</span>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="c1">#   单 H100 + Qwen3-32B-AWQ, 200 token/s</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="c1">#   = ¥12 / (200 * 3600) = ¥0.0000167/token</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="c1">#   1M token ≈ ¥16.7</span>
+</code></pre></div>
+<h3 id="73">7.3 模型路由省钱<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># 路由策略示例</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">route</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>    <span class="c1"># 简单分类问题 → 小模型</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">intent</span> <span class="o">==</span> <span class="s2">&quot;classify&quot;</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">prompt</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">:</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>        <span class="k">return</span> <span class="s2">&quot;Qwen3-7B&quot;</span>           <span class="c1"># ¥0.5/1M token</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>    <span class="c1"># 长上下文 RAG</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">context_len</span> <span class="o">&gt;</span> <span class="mi">32</span><span class="n">k</span><span class="p">:</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>        <span class="k">return</span> <span class="s2">&quot;Qwen3-32B-AWQ&quot;</span>      <span class="c1"># ¥5/1M token</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>    <span class="c1"># 复杂推理 / 代码生成</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>    <span class="k">if</span> <span class="n">request</span><span class="o">.</span><span class="n">task</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;code&quot;</span><span class="p">,</span> <span class="s2">&quot;math&quot;</span><span class="p">,</span> <span class="s2">&quot;reasoning&quot;</span><span class="p">]:</span>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>        <span class="k">return</span> <span class="s2">&quot;DeepSeek-V3&quot;</span>        <span class="c1"># ¥20/1M token</span>
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>    <span class="c1"># 默认</span>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>    <span class="k">return</span> <span class="s2">&quot;Qwen3-14B&quot;</span>              <span class="c1"># ¥2/1M token</span>
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a>
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a><span class="c1"># 实测: 路由后平均成本下降 60%（多数请求被小模型接住）</span>
+</code></pre></div>
+<h2 id="kv-cache">八、KV Cache 优化（成本关键点）<a class="headerlink" href="#kv-cache" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>KV Cache 决定一切:
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>  - 显存最大占用就是它
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>  - 决定最大并发
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>  - 决定吞吐天花板
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>优化技术:
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>  1. PagedAttention（vLLM）        分页管理，碎片降为 0
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>  2. Prefix Caching（前缀缓存）     系统提示词复用
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>  3. KV Cache 量化（FP8）          显存省 2x
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>  4. RadixAttention（SGLang）      前缀树共享
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>  5. KV Cache 跨请求持久化          多轮对话省
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>  6. KV Cache 异步换出（CPU/磁盘）   长会话超长上下文
+</code></pre></div>
+<h2 id="pd-prefill-decode">九、PD 分离（Prefill-Decode 分离）<a class="headerlink" href="#pd-prefill-decode" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>传统方式:
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>  Prefill 和 Decode 共用 GPU
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>  → Prefill 长请求阻塞 Decode 短请求
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>  → P99 TTFT 抖动
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>PD 分离:
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>  Prefill 节点 (计算密集) 和 Decode 节点 (内存带宽密集) 分开部署
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>  → 互不干扰
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>  → 各自优化
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>效果:
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>  - TTFT P99 降 50%
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>  - TPOT 更稳定
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>  - 总吞吐 +30%
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>
+<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>工具:
+<a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a>  - vLLM 0.6+ 实验性 PD
+<a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a>  - DistServe (论文)
+<a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>  - llm-d (Hugging Face)
+<a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a>  - Mooncake (月之暗面开源)
+</code></pre></div>
+<h2 id="_4">十、成本异常检测<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># 用 1 章异常检测的方法做成本监控</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">detect_cost_anomaly</span><span class="p">(</span><span class="n">daily_costs</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="s1">&#39;service&#39;</span><span class="p">):</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;日均成本突增 &gt;50% = 异常&quot;&quot;&quot;</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">daily_costs</span><span class="p">)</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>    <span class="n">yesterday</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>    <span class="n">baseline</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">8</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>    <span class="n">spike</span> <span class="o">=</span> <span class="p">(</span><span class="n">yesterday</span> <span class="o">-</span> <span class="n">baseline</span><span class="p">)</span> <span class="o">/</span> <span class="n">baseline</span>
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>    <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">spike</span> <span class="o">&gt;</span> <span class="mf">0.5</span><span class="p">]</span>
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="c1"># 触发条件:</span>
+<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="c1">#  - 某服务日成本环比 +50%</span>
+<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="c1">#  - 某 region 网络出口流量 +100%</span>
+<a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="c1">#  - 某团队总成本突破预算</span>
+<a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="c1">#  - 某 GPU 利用率突降 + 成本未降 (浪费)</span>
+</code></pre></div>
+<h2 id="finops_1">十一、FinOps 组织机制<a class="headerlink" href="#finops_1" title="Permanent link">&para;</a></h2>
+<h3 id="111">11.1 角色<a class="headerlink" href="#111" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>FinOps 团队（2-5 人）:
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>  - 成本数据工程师
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>  - 成本分析师
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>  - FinOps 实践者
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>  - SRE / 平台工程师
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>合作角色:
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>  - 财务 (Finance)
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>  - 业务负责人 (Business Owner)
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>  - 平台/SRE
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>  - 采购
+</code></pre></div>
+<h3 id="112-kpi">11.2 KPI<a class="headerlink" href="#112-kpi" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>公司级:
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>  ✅ 单位收入成本（成本/营收）
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>  ✅ 月度云成本增长率 vs 业务增长率
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>  ✅ 浪费率（闲置 + 低利用）
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>团队级:
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>  ✅ 业务单价成本（每订单 / 每用户 / 每 token）
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>  ✅ 资源利用率
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>  ✅ Tag 合规率
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>  ✅ 预算执行率
+</code></pre></div>
+<h3 id="113">11.3 治理流程<a class="headerlink" href="#113" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>月度:
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>  - 各团队成本月报
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>  - TOP 浪费项整改
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>  - Spot/RI 比例评估
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>  - 新业务成本评估
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>季度:
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>  - 全公司 FinOps 复盘
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>  - 预算调整
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>  - 工具/流程升级
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>年度:
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>  - 多年合同 / RI 续约
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a>  - 厂商谈判
+<a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a>  - 架构决策（多云 vs 单云）
+</code></pre></div>
+<h2 id="_5">十二、常见坑<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>没有 Tag</strong></td>
+<td style="text-align: left;">强制 + 扫描 + 处罚</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>看不到</strong></td>
+<td style="text-align: left;">先建看板，再谈优化</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>数据延迟 1 天</strong></td>
+<td style="text-align: left;">接近实时（小时级）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有 owner</strong></td>
+<td style="text-align: left;">每个资源必有 owner</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>优化没人执行</strong></td>
+<td style="text-align: left;">KPI 绑定 + 复盘</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>盲目用 Spot</strong></td>
+<td style="text-align: left;">弹性 / 可重试场景才用</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>预留过头</strong></td>
+<td style="text-align: left;">业务变化快需求时谨慎 RI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>存储忘了清</strong></td>
+<td style="text-align: left;">生命周期规则</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>网络出口爆炸</strong></td>
+<td style="text-align: left;">出口流量监控</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GPU 利用率低</strong></td>
+<td style="text-align: left;">监控 + 共享 + 路由</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>训练不量化</strong></td>
+<td style="text-align: left;">必上 MP/BF16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>推理不量化</strong></td>
+<td style="text-align: left;">INT4/INT8 / FP8 必上</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有 KV Cache 复用</strong></td>
+<td style="text-align: left;">必开 prefix caching</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>大小模型混用</strong></td>
+<td style="text-align: left;">模型路由</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>多云分散</strong></td>
+<td style="text-align: left;">集中归一 / 厂商谈判</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Carbon 不算</strong></td>
+<td style="text-align: left;">ESG 时代要算碳</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">十三、最佳实践清单<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>基础设施:
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>☐ Tag 体系 + 强制扫描
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>☐ 多云账单统一入库
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>☐ 实时看板（成本 + 利用率）
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>☐ 异常告警
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>CPU/存储/网络:
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>☐ Rightsizing 周期评审
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>☐ RI/SP 比例规划
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>☐ Spot 适用场景识别
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>☐ 闲置资源月度清理
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>☐ 网络出口监控
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>☐ 存储分层 + 生命周期
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a>K8s:
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a>☐ HPA/VPA 启用
+<a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>☐ Cluster Autoscaler
+<a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a>☐ Karpenter（如适用）
+<a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a>☐ Bin-packing 调度
+<a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a>☐ 资源 request/limit 校准
+<a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a>
+<a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a>AI / GPU:
+<a id="__codelineno-29-23" name="__codelineno-29-23" href="#__codelineno-29-23"></a>☐ DCGM Exporter
+<a id="__codelineno-29-24" name="__codelineno-29-24" href="#__codelineno-29-24"></a>☐ GPU 利用率看板
+<a id="__codelineno-29-25" name="__codelineno-29-25" href="#__codelineno-29-25"></a>☐ 推理量化（INT4/INT8）
+<a id="__codelineno-29-26" name="__codelineno-29-26" href="#__codelineno-29-26"></a>☐ vLLM + Prefix Cache
+<a id="__codelineno-29-27" name="__codelineno-29-27" href="#__codelineno-29-27"></a>☐ 模型路由（大小模型）
+<a id="__codelineno-29-28" name="__codelineno-29-28" href="#__codelineno-29-28"></a>☐ MIG / MPS / HAMI 切分
+<a id="__codelineno-29-29" name="__codelineno-29-29" href="#__codelineno-29-29"></a>☐ PD 分离（高级）
+<a id="__codelineno-29-30" name="__codelineno-29-30" href="#__codelineno-29-30"></a>☐ 单 token 成本指标
+<a id="__codelineno-29-31" name="__codelineno-29-31" href="#__codelineno-29-31"></a>☐ Spot GPU 用于训练
+<a id="__codelineno-29-32" name="__codelineno-29-32" href="#__codelineno-29-32"></a>
+<a id="__codelineno-29-33" name="__codelineno-29-33" href="#__codelineno-29-33"></a>组织:
+<a id="__codelineno-29-34" name="__codelineno-29-34" href="#__codelineno-29-34"></a>☐ FinOps 团队
+<a id="__codelineno-29-35" name="__codelineno-29-35" href="#__codelineno-29-35"></a>☐ 月度成本评审
+<a id="__codelineno-29-36" name="__codelineno-29-36" href="#__codelineno-29-36"></a>☐ 业务成本 KPI
+<a id="__codelineno-29-37" name="__codelineno-29-37" href="#__codelineno-29-37"></a>☐ 浪费奖惩制度
+</code></pre></div>
+<h2 id="_7">十四、学习路径<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>入门（1 个月）:
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>  1. 装 OpenCost + Grafana
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>  2. 建 Tag 体系
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>  3. 写 5 条浪费告警
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>  4. 第一次 Rightsizing
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>中级（3 个月）:
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>  5. K8s HPA/VPA/CAS 全开
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>  6. Karpenter / Spot 混部
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>  7. 存储 / 网络专项
+<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>  8. 月度成本月报机制
+<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a>
+<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>高级（半年+）:
+<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>  9. GPU 利用率优化
+<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a>  10. vLLM 量化 + Prefix Cache
+<a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a>  11. 模型路由 + 大小模型混部
+<a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a>  12. MIG / HAMI 共享
+<a id="__codelineno-30-18" name="__codelineno-30-18" href="#__codelineno-30-18"></a>  13. PD 分离实战
+<a id="__codelineno-30-19" name="__codelineno-30-19" href="#__codelineno-30-19"></a>  14. FinOps 组织建设
+</code></pre></div>
+<h2 id="_8">十五、参考资料<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>书:
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>  - 《Cloud FinOps》(O&#39;Reilly)
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>  - 《The Cost of Cloud》(Andreessen Horowitz)
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>  - 《Designing ML Systems》(Huyen) - 推理成本章节
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>社区:
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>  - FinOps Foundation: https://www.finops.org/
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>  - CNCF FinOps SIG
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>  - 国内 FinOps 联盟（云原生计算基金会）
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>开源:
+<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a>  - OpenCost: https://www.opencost.io/
+<a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a>  - Karpenter: https://karpenter.sh/
+<a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a>  - Volcano: https://volcano.sh/
+<a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a>  - HAMI: https://github.com/Project-HAMi/HAMi
+<a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a>  - vLLM: https://github.com/vllm-project/vllm
+<a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a>  - SGLang: https://github.com/sgl-project/sglang
+<a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a>
+<a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a>商业:
+<a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a>  - CloudHealth / Apptio Cloudability
+<a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a>  - Spot.io / NetApp
+<a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a>  - CAST AI
+<a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a>  - Densify
+<a id="__codelineno-31-24" name="__codelineno-31-24" href="#__codelineno-31-24"></a>  - 阿里云 FinOps / 腾讯云 TCM Cost
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：2025 SRE 的两大成本主战场——<strong>FinOps（CPU/存储/网络）</strong> 已经成熟，<strong>AI 成本（GPU/推理/训练）</strong> 才刚刚开始。<strong>GPU 单卡 ¥10-25 万/年</strong>，利用率从 30% 提到 70% 直接省百万。<strong>量化（INT4/FP8）+ vLLM + Prefix Cache + 模型路由 + HAMI/MIG</strong> 是 AI 成本优化的五大支柱，把这五点做透，推理成本能压到原来的 1/10。</p>
+</blockquote>
 
 
 

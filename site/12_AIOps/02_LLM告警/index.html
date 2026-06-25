@@ -1212,10 +1212,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#llm_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        智能告警架构
+        一、为什么需要 LLM 告警
       
     </span>
   </a>
@@ -1223,10 +1223,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#holmesgpt" class="md-nav__link">
+  <a href="#llm_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HolmesGPT
+        二、LLM 告警的四代演进
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、典型架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、最小可用版本（MVP）
       
     </span>
   </a>
@@ -1237,7 +1259,401 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        告警前后对比
+        五、提示词工程（核心中的核心）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、提示词工程（核心中的核心）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 系统提示词模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 上下文拼接策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 输出格式约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、RAG 知识库建设
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、RAG 知识库建设">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 知识来源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 文档切分与索引
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 中文 Embedding 选型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-rerank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 重排（Rerank）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-calling-tool-use-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、Function Calling / Tool Use（取证 Agent）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、Function Calling / Tool Use（取证 Agent）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 给 LLM 装"手"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 工具白名单 + 风险分级
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、模型选型（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、模型选型（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 主流模型对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 推荐栈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-r1o1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 何时上推理模型（R1/o1）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llm_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、告警收敛（必须做在 LLM 之前）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、告警收敛（必须做在 LLM 之前）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 三段式收敛
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 聚类实现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-correlation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 关联（Correlation）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、告警内容降噪与质量度量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、告警内容降噪与质量度量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 LLM 告警质量评分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 人工反馈闭环
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 离线评估
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、流式输出与延迟优化
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、常见坑（生产血泪）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、开源项目 / 商业产品
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十三、开源项目 / 商业产品">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 开源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 商业 / 闭源
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、完整代码示例（生产骨架）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、ROI 数据（参考行业披露）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十七、参考资料
       
     </span>
   </a>
@@ -1715,10 +2131,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#llm_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        智能告警架构
+        一、为什么需要 LLM 告警
       
     </span>
   </a>
@@ -1726,10 +2142,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#holmesgpt" class="md-nav__link">
+  <a href="#llm_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HolmesGPT
+        二、LLM 告警的四代演进
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、典型架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mvp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、最小可用版本（MVP）
       
     </span>
   </a>
@@ -1740,7 +2178,401 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        告警前后对比
+        五、提示词工程（核心中的核心）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、提示词工程（核心中的核心）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 系统提示词模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 上下文拼接策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 输出格式约束
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、RAG 知识库建设
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、RAG 知识库建设">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 知识来源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 文档切分与索引
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-embedding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 中文 Embedding 选型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-rerank" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 重排（Rerank）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#function-calling-tool-use-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、Function Calling / Tool Use（取证 Agent）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、Function Calling / Tool Use（取证 Agent）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 给 LLM 装"手"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 工具白名单 + 风险分级
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、模型选型（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、模型选型（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 主流模型对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 推荐栈
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-r1o1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 何时上推理模型（R1/o1）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llm_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、告警收敛（必须做在 LLM 之前）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、告警收敛（必须做在 LLM 之前）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 三段式收敛
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 聚类实现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-correlation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 关联（Correlation）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、告警内容降噪与质量度量
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、告警内容降噪与质量度量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 LLM 告警质量评分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 人工反馈闭环
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 离线评估
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、流式输出与延迟优化
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、常见坑（生产血泪）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、开源项目 / 商业产品
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十三、开源项目 / 商业产品">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 开源
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 商业 / 闭源
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、完整代码示例（生产骨架）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、ROI 数据（参考行业披露）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十七、参考资料
       
     </span>
   </a>
@@ -1816,50 +2648,988 @@
 
 
 <h1 id="llm">LLM 告警<a class="headerlink" href="#llm" title="Permanent link">&para;</a></h1>
-<h2 id="_1">智能告警架构<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>告警触发
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  │
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  ▼
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>告警上下文采集器
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  ├─ 当前指标快照（前后15min）
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  ├─ 关联 Pod/Node 状态
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  ├─ 最近日志
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  ├─ 最近变更记录
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  └─ 历史同类告警匹配
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  │
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  ▼
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>LLM 分析引擎（HolmesGPT）
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  ├─ 根因推断
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  ├─ 影响范围评估
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>  ├─ 严重等级（P0-P3）
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>  ├─ 修复建议
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>  └─ 经验匹配
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>  │
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>  ▼
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>行动决策
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>  ├─ 自动修复（已知模式）
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>  ├─ 人工确认（发送诊断报告）
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>  └─ 自动降噪（只记录不打扰）
+<blockquote>
+<p>用大模型把"告警风暴 + 海量上下文 + 多源信号"压缩成<strong>一句人类能读懂的话 + 可执行建议</strong>。<strong>这是 2025 AIOps 落地最快、ROI 最高的方向</strong>。</p>
+</blockquote>
+<h2 id="llm_1">一、为什么需要 LLM 告警<a class="headerlink" href="#llm_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>传统告警的硬伤:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  - 一次故障 → 几十上百条告警
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  - 信息碎片化（Prom 告警/Trace/日志/K8s 事件分散）
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  - 缺乏上下文（值班看到&quot;CPU 高&quot;不知该不该处理）
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  - 经验依赖人（老工程师离职 → 知识断层）
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  - 跨团队语言不同（开发/运维/SRE/DBA 各说各的）
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>LLM 解决:
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  ✅ 多源信号融合（指标 + 日志 + Trace + 变更 + Runbook）
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  ✅ 自然语言摘要（一句话讲清故障）
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  ✅ 根因建议（&quot;很可能是 XXX 引起，建议先 YYY&quot;）
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  ✅ 自动调用工具（Function Calling 执行命令）
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>  ✅ 知识沉淀（Runbook + 历史故障 RAG）
 </code></pre></div>
-<h2 id="holmesgpt">HolmesGPT<a class="headerlink" href="#holmesgpt" title="Permanent link">&para;</a></h2>
-<p>HolmesGPT 是 CNCF Sandbox 项目，开源的 AI 告警诊断 Agent。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># 部署 HolmesGPT</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>robusta<span class="w"> </span>https://robusta-charts.storage.googleapis.com
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>helm<span class="w"> </span>install<span class="w"> </span>holmesgpt<span class="w"> </span>robusta/holmesgpt<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--set<span class="w"> </span>openai.apiKey<span class="o">=</span>&lt;key&gt;<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span>--set<span class="w"> </span>sinks.prometheus.url<span class="o">=</span>http://prometheus:9090
+<h2 id="llm_2">二、LLM 告警的四代演进<a class="headerlink" href="#llm_2" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">代</th>
+<th style="text-align: left;">形态</th>
+<th style="text-align: left;">特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>0 代</strong></td>
+<td style="text-align: left;">模板拼接</td>
+<td style="text-align: left;">Prom 告警 + 邮件模板</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>1 代</strong></td>
+<td style="text-align: left;">LLM 摘要</td>
+<td style="text-align: left;">单条告警喂 LLM 生成自然语言</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2 代</strong></td>
+<td style="text-align: left;">RAG 增强</td>
+<td style="text-align: left;">拼接 Runbook / 历史故障 / Wiki</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>3 代</strong></td>
+<td style="text-align: left;">Agent + Tools</td>
+<td style="text-align: left;">LLM 自主调用 kubectl/SQL/HTTP 取证</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>4 代</strong></td>
+<td style="text-align: left;">多 Agent 协作</td>
+<td style="text-align: left;">多角色 Agent（SRE/DBA/网络）协同</td>
+</tr>
+</tbody>
+</table>
+<p><strong>当前主流：2-3 代</strong>。4 代仅头部团队（字节、阿里、Google SRE）在试。</p>
+<h2 id="_1">三、典型架构<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>┌────────── 告警源 ──────────────────────────┐
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>│ Prometheus Alertmanager / Zabbix /        │
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>│ Grafana / 日志告警 / K8s Events            │
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>└──────────┬─────────────────────────────────┘
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>           ↓
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>┌────────── 收敛层（必备）─────────────────────┐
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>│ 去重 / 抑制 / 聚类 / 关联（不做这步就废）   │
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>└──────────┬─────────────────────────────────┘
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>           ↓
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>┌────────── 上下文增强 ──────────────────────┐
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>│ 当前指标 + 日志 + Trace + 变更 + 拓扑 +    │
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>│ Runbook + 历史相似故障                    │
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>└──────────┬─────────────────────────────────┘
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>           ↓
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>┌────────── LLM Agent ───────────────────────┐
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>│ 系统提示词 + 上下文 + 工具                 │
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>│ Function Calling / Tool Use                │
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>│ RAG 检索（向量库）                         │
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>└──────────┬─────────────────────────────────┘
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>           ↓
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>┌────────── 输出 ────────────────────────────┐
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>│ 1. 自然语言摘要                            │
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>│ 2. 影响范围 / 严重度                       │
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>│ 3. 根因猜测（Top 3 + 置信度）              │
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>│ 4. 处置建议（Runbook 链接）                │
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>│ 5. 自动执行结果（如果允许）                │
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>└──────────┬─────────────────────────────────┘
+<a id="__codelineno-1-28" name="__codelineno-1-28" href="#__codelineno-1-28"></a>           ↓
+<a id="__codelineno-1-29" name="__codelineno-1-29" href="#__codelineno-1-29"></a>┌────────── 通知 ────────────────────────────┐
+<a id="__codelineno-1-30" name="__codelineno-1-30" href="#__codelineno-1-30"></a>│ 企业微信 / 钉钉 / 飞书 / 短信 / 电话       │
+<a id="__codelineno-1-31" name="__codelineno-1-31" href="#__codelineno-1-31"></a>└────────────────────────────────────────────┘
 </code></pre></div>
-<h2 id="_2">告警前后对比<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>传统告警：
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  [P0] GPU 利用率 98% &gt; 阈值 90%
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>LLM 告警：
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  [P0 智能诊断] GPU 利用率突增 98%
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  根因：decoded Pod 显存碎片化导致 batch size 下降
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  影响：TPOT 上升 40%，P99 延迟 5.2s
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  建议：重启 Pod（3min 恢复）
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>  关联：过去 2h 已有 3 次同类抖动
+<h2 id="mvp">四、最小可用版本（MVP）<a class="headerlink" href="#mvp" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># 100 行实现 LLM 告警，立即可用</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span><span class="o">,</span><span class="w"> </span><span class="nn">requests</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://vllm-server:8000/v1&quot;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;EMPTY&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="n">SYSTEM</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;你是资深 SRE。收到一条监控告警 + 上下文，请：</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="s2">1. 用一句话概括故障</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="s2">2. 评估严重度（P0/P1/P2/P3）</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="s2">3. 给出 Top 3 可能原因（带置信度）</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="s2">4. 给出立即可执行的处置步骤</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="s2">5. 如果无法判断，明确说&quot;信息不足&quot;</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="s2">输出 JSON 格式。&quot;&quot;&quot;</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">enrich</span><span class="p">(</span><span class="n">alert</span><span class="p">):</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;拉取上下文&quot;&quot;&quot;</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    <span class="k">return</span> <span class="p">{</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        <span class="s2">&quot;alert&quot;</span><span class="p">:</span> <span class="n">alert</span><span class="p">,</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>        <span class="s2">&quot;metrics_5min&quot;</span><span class="p">:</span> <span class="n">query_prometheus</span><span class="p">(</span><span class="n">alert</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">]),</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>        <span class="s2">&quot;recent_logs&quot;</span><span class="p">:</span> <span class="n">query_loki</span><span class="p">(</span><span class="n">alert</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">],</span> <span class="n">minutes</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>        <span class="s2">&quot;recent_traces&quot;</span><span class="p">:</span> <span class="n">query_tempo</span><span class="p">(</span><span class="n">alert</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">],</span> <span class="n">minutes</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>        <span class="s2">&quot;recent_changes&quot;</span><span class="p">:</span> <span class="n">query_changelog</span><span class="p">(</span><span class="n">alert</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">],</span> <span class="n">hours</span><span class="o">=</span><span class="mi">24</span><span class="p">),</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>        <span class="s2">&quot;topology&quot;</span><span class="p">:</span> <span class="n">query_topology</span><span class="p">(</span><span class="n">alert</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">]),</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>        <span class="s2">&quot;runbook&quot;</span><span class="p">:</span> <span class="n">rag_search</span><span class="p">(</span><span class="n">alert</span><span class="p">[</span><span class="s1">&#39;annotations&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;description&#39;</span><span class="p">))</span>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>    <span class="p">}</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="k">def</span><span class="w"> </span><span class="nf">llm_summarize</span><span class="p">(</span><span class="n">alert</span><span class="p">):</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>    <span class="n">ctx</span> <span class="o">=</span> <span class="n">enrich</span><span class="p">(</span><span class="n">alert</span><span class="p">)</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>    <span class="n">rsp</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a>        <span class="n">model</span><span class="o">=</span><span class="s2">&quot;Qwen2.5-32B-Instruct&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a>        <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a>            <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">SYSTEM</span><span class="p">},</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>            <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)}</span>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a>        <span class="p">],</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a>        <span class="n">temperature</span><span class="o">=</span><span class="mf">0.1</span><span class="p">,</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a>        <span class="n">response_format</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;json_object&quot;</span><span class="p">}</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a>    <span class="p">)</span>
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a>    <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">rsp</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a><span class="c1"># Alertmanager webhook</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/webhook&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a><span class="k">def</span><span class="w"> </span><span class="nf">webhook</span><span class="p">(</span><span class="n">req</span><span class="p">):</span>
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a>    <span class="k">for</span> <span class="n">alert</span> <span class="ow">in</span> <span class="n">req</span><span class="p">[</span><span class="s1">&#39;alerts&#39;</span><span class="p">]:</span>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">llm_summarize</span><span class="p">(</span><span class="n">alert</span><span class="p">)</span>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a>        <span class="n">send_to_wechat</span><span class="p">(</span><span class="n">format_card</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
 </code></pre></div>
+<h2 id="_2">五、提示词工程（核心中的核心）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 系统提示词模板<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>你是一名拥有 10 年经验的 SRE 工程师，负责生产环境告警分析。
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>【背景】
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>- 我们是一家 [行业] 公司
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>- 关键业务: [业务列表]
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>- 主要技术栈: K8s + 微服务 + MySQL + Redis + Kafka
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>- SLO: 99.95% 可用性
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>【告警分级标准】
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>- P0: 全站不可用 / 数据损坏
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>- P1: 核心功能受损 / 大面积影响
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>- P2: 部分功能降级 / 性能下降
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>- P3: 监控异常 / 容量预警
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>【你的任务】
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>基于提供的告警信息和上下文，输出 JSON：
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>{
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>  &quot;summary&quot;: &quot;一句话概括（≤ 50 字）&quot;,
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>  &quot;severity&quot;: &quot;P0/P1/P2/P3&quot;,
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>  &quot;impact_scope&quot;: &quot;影响范围描述&quot;,
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>  &quot;root_causes&quot;: [
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>    {&quot;cause&quot;: &quot;...&quot;, &quot;confidence&quot;: 0.8, &quot;evidence&quot;: &quot;...&quot;},
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    {&quot;cause&quot;: &quot;...&quot;, &quot;confidence&quot;: 0.5, &quot;evidence&quot;: &quot;...&quot;}
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>  ],
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>  &quot;actions&quot;: [
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>    {&quot;step&quot;: &quot;...&quot;, &quot;command&quot;: &quot;kubectl ...&quot;, &quot;risk&quot;: &quot;low&quot;},
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>    ...
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>  ],
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a>  &quot;need_escalate&quot;: false,
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>  &quot;similar_incidents&quot;: [&quot;INC-1234&quot;, &quot;INC-1235&quot;]
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>}
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>【输出原则】
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>1. 简洁优先：值班工程师 30 秒内能读完
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>2. 证据驱动：每个判断要引用上下文中的数据
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a>3. 谨慎升级：除非有明确证据，不要随便建议重启
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>4. 知道你不知道：信息不足时直接说&quot;信息不足&quot;
+</code></pre></div>
+<h3 id="52">5.2 上下文拼接策略<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">build_context</span><span class="p">(</span><span class="n">alert</span><span class="p">):</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="n">ctx</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="c1"># 1. 告警本身（必有）</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">ctx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# 告警</span><span class="se">\n</span><span class="si">{</span><span class="n">alert</span><span class="o">.</span><span class="n">summary</span><span class="si">}</span><span class="se">\n</span><span class="s2">实例: </span><span class="si">{</span><span class="n">alert</span><span class="o">.</span><span class="n">instance</span><span class="si">}</span><span class="se">\n</span><span class="s2">标签: </span><span class="si">{</span><span class="n">alert</span><span class="o">.</span><span class="n">labels</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="c1"># 2. 关联指标（最近 30 分钟）</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="n">metrics</span> <span class="o">=</span> <span class="n">query_related_metrics</span><span class="p">(</span><span class="n">alert</span><span class="p">)</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>    <span class="n">ctx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# 相关指标趋势</span><span class="se">\n</span><span class="si">{</span><span class="n">format_metrics_ascii</span><span class="p">(</span><span class="n">metrics</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="c1"># 3. 日志（错误 + 紧邻告警）</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="n">logs</span> <span class="o">=</span> <span class="n">query_recent_errors</span><span class="p">(</span><span class="n">alert</span><span class="p">,</span> <span class="n">minutes</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>    <span class="n">ctx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# 最近错误日志</span><span class="se">\n</span><span class="si">{</span><span class="n">logs</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="c1"># 4. Trace（慢请求）</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="n">traces</span> <span class="o">=</span> <span class="n">query_slow_traces</span><span class="p">(</span><span class="n">alert</span><span class="p">,</span> <span class="n">minutes</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>    <span class="n">ctx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# 慢调用链</span><span class="se">\n</span><span class="si">{</span><span class="n">traces</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>    <span class="c1"># 5. 变更（24h 内）</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>    <span class="n">changes</span> <span class="o">=</span> <span class="n">query_changes</span><span class="p">(</span><span class="n">alert</span><span class="o">.</span><span class="n">service</span><span class="p">,</span> <span class="n">hours</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>    <span class="n">ctx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# 最近变更</span><span class="se">\n</span><span class="si">{</span><span class="n">changes</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>    <span class="c1"># 6. 历史相似（RAG）</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>    <span class="n">similar</span> <span class="o">=</span> <span class="n">vector_search</span><span class="p">(</span><span class="n">alert</span><span class="o">.</span><span class="n">summary</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>    <span class="n">ctx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# 历史相似故障</span><span class="se">\n</span><span class="si">{</span><span class="n">similar</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>    <span class="c1"># 7. Runbook</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>    <span class="n">runbook</span> <span class="o">=</span> <span class="n">rag_get_runbook</span><span class="p">(</span><span class="n">alert</span><span class="o">.</span><span class="n">alertname</span><span class="p">)</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>    <span class="n">ctx</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;# Runbook</span><span class="se">\n</span><span class="si">{</span><span class="n">runbook</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a>    <span class="k">return</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ctx</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="53">5.3 输出格式约束<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># 方法 1: response_format=json_object（OpenAI/vLLM 支持）</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">response_format</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;json_object&quot;</span><span class="p">}</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># 方法 2: JSON Schema（更严格）</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">response_format</span><span class="o">=</span><span class="p">{</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;json_schema&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>    <span class="s2">&quot;json_schema&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>        <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;alert_analysis&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="s2">&quot;schema&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>            <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>            <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>                <span class="s2">&quot;summary&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">},</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>                <span class="s2">&quot;severity&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;enum&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;P0&quot;</span><span class="p">,</span><span class="s2">&quot;P1&quot;</span><span class="p">,</span><span class="s2">&quot;P2&quot;</span><span class="p">,</span><span class="s2">&quot;P3&quot;</span><span class="p">]},</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>                <span class="s2">&quot;root_causes&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;array&quot;</span><span class="p">,</span> <span class="s2">&quot;items&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">}}</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>            <span class="p">},</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>            <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;summary&quot;</span><span class="p">,</span><span class="s2">&quot;severity&quot;</span><span class="p">,</span><span class="s2">&quot;root_causes&quot;</span><span class="p">]</span>
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>        <span class="p">}</span>
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>    <span class="p">}</span>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="p">}</span>
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a><span class="c1"># 方法 3: Guided Decoding（vLLM/SGLang 原生）</span>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="c1"># guided_json=schema 强制约束输出</span>
+</code></pre></div>
+<h2 id="rag">六、RAG 知识库建设<a class="headerlink" href="#rag" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 知识来源<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">来源</th>
+<th style="text-align: left;">内容</th>
+<th style="text-align: left;">更新频率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Runbook</strong></td>
+<td style="text-align: left;">标准处置手册</td>
+<td style="text-align: left;">月级</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>历史 Incident</strong></td>
+<td style="text-align: left;">已解决故障记录</td>
+<td style="text-align: left;">实时（每次故障后）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Wiki / Confluence</strong></td>
+<td style="text-align: left;">系统设计 / 架构文档</td>
+<td style="text-align: left;">周级</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>变更工单</strong></td>
+<td style="text-align: left;">上线记录</td>
+<td style="text-align: left;">实时</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>拓扑/CMDB</strong></td>
+<td style="text-align: left;">服务依赖关系</td>
+<td style="text-align: left;">日级</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>聊天记录</strong></td>
+<td style="text-align: left;">复盘群对话</td>
+<td style="text-align: left;">月级（脱敏）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="62">6.2 文档切分与索引<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># 推荐方案：LangChain + ChromaDB / Milvus / pgvector</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.text_splitter</span><span class="w"> </span><span class="kn">import</span> <span class="n">RecursiveCharacterTextSplitter</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.embeddings</span><span class="w"> </span><span class="kn">import</span> <span class="n">HuggingFaceEmbeddings</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.vectorstores</span><span class="w"> </span><span class="kn">import</span> <span class="n">Chroma</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">splitter</span> <span class="o">=</span> <span class="n">RecursiveCharacterTextSplitter</span><span class="p">(</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="n">chunk_size</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    <span class="n">chunk_overlap</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="n">separators</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">## &quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">### &quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;。&quot;</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">]</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="p">)</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="n">embeddings</span> <span class="o">=</span> <span class="n">HuggingFaceEmbeddings</span><span class="p">(</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>    <span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;BAAI/bge-large-zh-v1.5&quot;</span>   <span class="c1"># 中文首选</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="p">)</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="n">vectorstore</span> <span class="o">=</span> <span class="n">Chroma</span><span class="o">.</span><span class="n">from_documents</span><span class="p">(</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>    <span class="n">documents</span><span class="o">=</span><span class="n">splitter</span><span class="o">.</span><span class="n">split_documents</span><span class="p">(</span><span class="n">runbooks</span><span class="p">),</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>    <span class="n">embedding</span><span class="o">=</span><span class="n">embeddings</span><span class="p">,</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>    <span class="n">persist_directory</span><span class="o">=</span><span class="s2">&quot;./vectorstore&quot;</span>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="p">)</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="c1"># 检索</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="k">def</span><span class="w"> </span><span class="nf">rag_search</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+<a id="__codelineno-6-24" name="__codelineno-6-24" href="#__codelineno-6-24"></a>    <span class="k">return</span> <span class="n">vectorstore</span><span class="o">.</span><span class="n">similarity_search</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">top_k</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="63-embedding">6.3 中文 Embedding 选型<a class="headerlink" href="#63-embedding" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">模型</th>
+<th style="text-align: center;">维度</th>
+<th style="text-align: center;">中文得分</th>
+<th style="text-align: center;">推荐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>bge-large-zh-v1.5</strong></td>
+<td style="text-align: center;">1024</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;"><strong>首选</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>bge-m3</strong></td>
+<td style="text-align: center;">1024</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">多语言+长文档</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>m3e-large</strong></td>
+<td style="text-align: center;">1024</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">老牌</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>conan-embedding</strong></td>
+<td style="text-align: center;">1792</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">2024 新</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>stella-base-zh-v3</strong></td>
+<td style="text-align: center;">1024</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">国产</td>
+</tr>
+<tr>
+<td style="text-align: left;">OpenAI text-embedding-3</td>
+<td style="text-align: center;">3072</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: center;">英文好</td>
+</tr>
+</tbody>
+</table>
+<h3 id="64-rerank">6.4 重排（Rerank）<a class="headerlink" href="#64-rerank" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># 向量召回 50 条 → BGE-Reranker 精排 5 条</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sentence_transformers</span><span class="w"> </span><span class="kn">import</span> <span class="n">CrossEncoder</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">reranker</span> <span class="o">=</span> <span class="n">CrossEncoder</span><span class="p">(</span><span class="s2">&quot;BAAI/bge-reranker-large&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">retrieve_with_rerank</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">5</span><span class="p">):</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="n">candidates</span> <span class="o">=</span> <span class="n">vectorstore</span><span class="o">.</span><span class="n">similarity_search</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>    <span class="n">pairs</span> <span class="o">=</span> <span class="p">[[</span><span class="n">query</span><span class="p">,</span> <span class="n">c</span><span class="o">.</span><span class="n">page_content</span><span class="p">]</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">candidates</span><span class="p">]</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="n">scores</span> <span class="o">=</span> <span class="n">reranker</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="n">sorted_idx</span> <span class="o">=</span> <span class="n">scores</span><span class="o">.</span><span class="n">argsort</span><span class="p">()[::</span><span class="o">-</span><span class="mi">1</span><span class="p">][:</span><span class="n">top_k</span><span class="p">]</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="k">return</span> <span class="p">[</span><span class="n">candidates</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">sorted_idx</span><span class="p">]</span>
+</code></pre></div>
+<p><strong>经验</strong>：向量召回 + Rerank 精度提升 30%+，必装。</p>
+<h2 id="function-calling-tool-use-agent">七、Function Calling / Tool Use（取证 Agent）<a class="headerlink" href="#function-calling-tool-use-agent" title="Permanent link">&para;</a></h2>
+<h3 id="71-llm">7.1 给 LLM 装"手"<a class="headerlink" href="#71-llm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">tools</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  <span class="p">{</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;function&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;query_prometheus&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;查询 Prometheus 指标&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>      <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>        <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>          <span class="s2">&quot;query&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span> <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;PromQL&quot;</span><span class="p">},</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>          <span class="s2">&quot;start&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">},</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>          <span class="s2">&quot;end&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">}</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>        <span class="p">}</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>      <span class="p">}</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>    <span class="p">}</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>  <span class="p">},</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>  <span class="p">{</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;function&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>    <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;kubectl_describe&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;查看 K8s 资源详情&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>      <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>    <span class="p">}</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a>  <span class="p">},</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>  <span class="p">{</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a>    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;function&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a>    <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;query_logs&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a>      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;查询 Loki/ES 日志&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a>      <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<a id="__codelineno-8-31" name="__codelineno-8-31" href="#__codelineno-8-31"></a>    <span class="p">}</span>
+<a id="__codelineno-8-32" name="__codelineno-8-32" href="#__codelineno-8-32"></a>  <span class="p">},</span>
+<a id="__codelineno-8-33" name="__codelineno-8-33" href="#__codelineno-8-33"></a>  <span class="p">{</span>
+<a id="__codelineno-8-34" name="__codelineno-8-34" href="#__codelineno-8-34"></a>    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;function&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-35" name="__codelineno-8-35" href="#__codelineno-8-35"></a>    <span class="s2">&quot;function&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-8-36" name="__codelineno-8-36" href="#__codelineno-8-36"></a>      <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;query_mysql_slow&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-37" name="__codelineno-8-37" href="#__codelineno-8-37"></a>      <span class="s2">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;查询 MySQL 慢日志&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-38" name="__codelineno-8-38" href="#__codelineno-8-38"></a>      <span class="s2">&quot;parameters&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">}</span>
+<a id="__codelineno-8-39" name="__codelineno-8-39" href="#__codelineno-8-39"></a>    <span class="p">}</span>
+<a id="__codelineno-8-40" name="__codelineno-8-40" href="#__codelineno-8-40"></a>  <span class="p">},</span>
+<a id="__codelineno-8-41" name="__codelineno-8-41" href="#__codelineno-8-41"></a><span class="p">]</span>
+<a id="__codelineno-8-42" name="__codelineno-8-42" href="#__codelineno-8-42"></a>
+<a id="__codelineno-8-43" name="__codelineno-8-43" href="#__codelineno-8-43"></a><span class="c1"># LLM 自主调用</span>
+<a id="__codelineno-8-44" name="__codelineno-8-44" href="#__codelineno-8-44"></a><span class="n">rsp</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+<a id="__codelineno-8-45" name="__codelineno-8-45" href="#__codelineno-8-45"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;qwen2.5-32b&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-46" name="__codelineno-8-46" href="#__codelineno-8-46"></a>    <span class="n">messages</span><span class="o">=</span><span class="p">[</span><span class="o">...</span><span class="p">],</span>
+<a id="__codelineno-8-47" name="__codelineno-8-47" href="#__codelineno-8-47"></a>    <span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">,</span>
+<a id="__codelineno-8-48" name="__codelineno-8-48" href="#__codelineno-8-48"></a>    <span class="n">tool_choice</span><span class="o">=</span><span class="s2">&quot;auto&quot;</span>
+<a id="__codelineno-8-49" name="__codelineno-8-49" href="#__codelineno-8-49"></a><span class="p">)</span>
+<a id="__codelineno-8-50" name="__codelineno-8-50" href="#__codelineno-8-50"></a>
+<a id="__codelineno-8-51" name="__codelineno-8-51" href="#__codelineno-8-51"></a><span class="c1"># 处理工具调用循环</span>
+<a id="__codelineno-8-52" name="__codelineno-8-52" href="#__codelineno-8-52"></a><span class="k">while</span> <span class="n">rsp</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">finish_reason</span> <span class="o">==</span> <span class="s2">&quot;tool_calls&quot;</span><span class="p">:</span>
+<a id="__codelineno-8-53" name="__codelineno-8-53" href="#__codelineno-8-53"></a>    <span class="k">for</span> <span class="n">call</span> <span class="ow">in</span> <span class="n">rsp</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">tool_calls</span><span class="p">:</span>
+<a id="__codelineno-8-54" name="__codelineno-8-54" href="#__codelineno-8-54"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">dispatch_tool</span><span class="p">(</span><span class="n">call</span><span class="o">.</span><span class="n">function</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">call</span><span class="o">.</span><span class="n">function</span><span class="o">.</span><span class="n">arguments</span><span class="p">)</span>
+<a id="__codelineno-8-55" name="__codelineno-8-55" href="#__codelineno-8-55"></a>        <span class="n">messages</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;tool&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">result</span><span class="p">,</span> <span class="s2">&quot;tool_call_id&quot;</span><span class="p">:</span> <span class="n">call</span><span class="o">.</span><span class="n">id</span><span class="p">})</span>
+<a id="__codelineno-8-56" name="__codelineno-8-56" href="#__codelineno-8-56"></a>    <span class="n">rsp</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;qwen2.5-32b&quot;</span><span class="p">,</span> <span class="n">messages</span><span class="o">=</span><span class="n">messages</span><span class="p">,</span> <span class="n">tools</span><span class="o">=</span><span class="n">tools</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="72">7.2 工具白名单 + 风险分级<a class="headerlink" href="#72" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">风险</th>
+<th style="text-align: left;">操作</th>
+<th style="text-align: center;">是否需审批</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🟢 Read-only</td>
+<td style="text-align: left;">kubectl get/describe、PromQL 查询、日志查询</td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td style="text-align: center;">🟡 Mid-risk</td>
+<td style="text-align: left;">rollout restart、scale up</td>
+<td style="text-align: center;">⚠️ Slack 确认</td>
+</tr>
+<tr>
+<td style="text-align: center;">🔴 High-risk</td>
+<td style="text-align: left;">delete、apply、SQL 改写</td>
+<td style="text-align: center;">❌ 禁止（仅建议）</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">TOOL_RISK</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>    <span class="s2">&quot;kubectl_get&quot;</span><span class="p">:</span> <span class="s2">&quot;low&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="s2">&quot;kubectl_describe&quot;</span><span class="p">:</span> <span class="s2">&quot;low&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="s2">&quot;query_prometheus&quot;</span><span class="p">:</span> <span class="s2">&quot;low&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="s2">&quot;kubectl_restart&quot;</span><span class="p">:</span> <span class="s2">&quot;mid&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="s2">&quot;kubectl_scale&quot;</span><span class="p">:</span> <span class="s2">&quot;mid&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="s2">&quot;kubectl_delete&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">,</span>  <span class="c1"># 直接拒绝</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="p">}</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="k">def</span><span class="w"> </span><span class="nf">dispatch_tool</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    <span class="k">if</span> <span class="n">TOOL_RISK</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;high&quot;</span><span class="p">:</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>        <span class="k">return</span> <span class="s2">&quot;拒绝执行：高危操作需人工&quot;</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>    <span class="k">if</span> <span class="n">TOOL_RISK</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;mid&quot;</span><span class="p">:</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">request_human_approval</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>            <span class="k">return</span> <span class="s2">&quot;用户未授权&quot;</span>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>    <span class="k">return</span> <span class="n">TOOLS</span><span class="p">[</span><span class="n">name</span><span class="p">](</span><span class="o">**</span><span class="n">args</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="2025">八、模型选型（2025）<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h2>
+<h3 id="81">8.1 主流模型对比<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">模型</th>
+<th style="text-align: center;">参数</th>
+<th style="text-align: center;">推理速度</th>
+<th style="text-align: center;">中文</th>
+<th style="text-align: center;">工具调用</th>
+<th style="text-align: center;">私有化</th>
+<th style="text-align: left;">推荐场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>DeepSeek-V3</strong></td>
+<td style="text-align: center;">671B MoE</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">私有化首选</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Qwen3-32B/72B</strong></td>
+<td style="text-align: center;">32B/72B</td>
+<td style="text-align: center;">快</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;"><strong>强推</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Qwen2.5-32B</strong></td>
+<td style="text-align: center;">32B</td>
+<td style="text-align: center;">快</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">性价比</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GLM-4-9B/32B</strong></td>
+<td style="text-align: center;">9B/32B</td>
+<td style="text-align: center;">极快</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">中等规模</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DeepSeek-R1</strong></td>
+<td style="text-align: center;">671B 推理</td>
+<td style="text-align: center;">慢</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">复杂根因分析</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Llama-3.3-70B</strong></td>
+<td style="text-align: center;">70B</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">英文场景</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GPT-4o / 4.1</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: left;">不可联网用</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Claude 3.5 Sonnet</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: left;">公司外不用</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82">8.2 推荐栈<a class="headerlink" href="#82" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>中小团队（私有化）:
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  推理:  vLLM 部署 Qwen3-32B
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  Embed: BGE-large-zh / bge-m3
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  Rerank: bge-reranker-large
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  向量库: Milvus / pgvector
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>  框架:  LangChain / LlamaIndex / Dify
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>大型团队:
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>  推理:  vLLM/SGLang 集群 + Qwen3-72B + DeepSeek-V3
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>  路由:  简单告警 → 32B，复杂根因 → 72B/R1
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>  Embed: 多模型集成
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>  向量库: Milvus / Vespa
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>  框架:  自研 Agent 编排
+</code></pre></div>
+<h3 id="83-r1o1">8.3 何时上推理模型（R1/o1）<a class="headerlink" href="#83-r1o1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>✅ 上 R1/推理模型:
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  - 复杂多维根因分析
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>  - 历史故障对比推演
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>  - 容量/演练计划生成
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>❌ 不要上:
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>  - 单条告警摘要（普通模型够用）
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>  - 实时高频调用（贵+慢）
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>  - 简单分类任务
+</code></pre></div>
+<h2 id="llm_3">九、告警收敛（必须做在 LLM 之前）<a class="headerlink" href="#llm_3" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 三段式收敛<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>1. 去重 (Dedup)
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>   - 相同 fingerprint 在 5 分钟窗口内合并
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>   - alertmanager 自带
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>2. 抑制 (Inhibit)
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>   - 父告警触发时压制子告警
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>   - 例: 节点宕机 → 该节点所有 Pod 告警压制
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>3. 聚类 (Cluster)
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>   - 同时间窗口 + 同业务/同服务 → 一组
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>   - 算法: DBSCAN / 时间窗口 + 标签匹配
+</code></pre></div>
+<h3 id="92">9.2 聚类实现<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.cluster</span><span class="w"> </span><span class="kn">import</span> <span class="n">DBSCAN</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">cluster_alerts</span><span class="p">(</span><span class="n">alerts</span><span class="p">,</span> <span class="n">time_window</span><span class="o">=</span><span class="mi">300</span><span class="p">):</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="c1"># 特征：时间戳 + 标签编码</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>    <span class="n">features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>        <span class="p">[</span><span class="n">a</span><span class="o">.</span><span class="n">timestamp</span><span class="o">.</span><span class="n">timestamp</span><span class="p">(),</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>         <span class="nb">hash</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">service</span><span class="p">),</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>         <span class="nb">hash</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">severity</span><span class="p">),</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>         <span class="nb">hash</span><span class="p">(</span><span class="n">a</span><span class="o">.</span><span class="n">region</span><span class="p">)]</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>        <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">alerts</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>    <span class="p">])</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    <span class="c1"># 归一化时间</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>    <span class="n">features</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">features</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">features</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">())</span> <span class="o">/</span> <span class="n">time_window</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>    <span class="n">clusters</span> <span class="o">=</span> <span class="n">DBSCAN</span><span class="p">(</span><span class="n">eps</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">min_samples</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">fit_predict</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>    <span class="k">return</span> <span class="n">clusters</span>
+</code></pre></div>
+<h3 id="93-correlation">9.3 关联（Correlation）<a class="headerlink" href="#93-correlation" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>基于拓扑:
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>  CMDB 中的服务依赖 → 上游异常时下游告警自动归并
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>基于因果:
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>  Granger Causality 检测指标因果链
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>  PCMCI 算法挖掘根因
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>基于历史:
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>  相似事件向量化 → 同模式归并
+</code></pre></div>
+<h2 id="_3">十、告警内容降噪与质量度量<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="101-llm">10.1 LLM 告警质量评分<a class="headerlink" href="#101-llm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">metrics</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>    <span class="s2">&quot;actionability&quot;</span><span class="p">:</span> <span class="s2">&quot;可执行性（能直接照做？）&quot;</span><span class="p">,</span>   <span class="c1"># 1-5</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="s2">&quot;accuracy&quot;</span><span class="p">:</span> <span class="s2">&quot;根因准确度&quot;</span><span class="p">,</span>                  <span class="c1"># 1-5</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="s2">&quot;brevity&quot;</span><span class="p">:</span> <span class="s2">&quot;简洁度（30s 能读完？）&quot;</span><span class="p">,</span>         <span class="c1"># 1-5</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>    <span class="s2">&quot;completeness&quot;</span><span class="p">:</span> <span class="s2">&quot;信息完整（影响范围？）&quot;</span><span class="p">,</span>     <span class="c1"># 1-5</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>    <span class="s2">&quot;false_positive_rate&quot;</span><span class="p">:</span> <span class="s2">&quot;误报率&quot;</span><span class="p">,</span>            <span class="c1"># %</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="p">}</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="c1"># 周报跟踪 + 持续优化提示词</span>
+</code></pre></div>
+<h3 id="102">10.2 人工反馈闭环<a class="headerlink" href="#102" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># 在通知卡片里加 👍 / 👎 按钮</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="c1"># 反馈写回 → 微调数据 / RAG 增强</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/feedback&quot;</span><span class="p">)</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">feedback</span><span class="p">(</span><span class="n">alert_id</span><span class="p">,</span> <span class="n">rating</span><span class="p">,</span> <span class="n">comment</span><span class="p">):</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>    <span class="n">save_feedback</span><span class="p">(</span><span class="n">alert_id</span><span class="p">,</span> <span class="n">rating</span><span class="p">,</span> <span class="n">comment</span><span class="p">)</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>    <span class="k">if</span> <span class="n">rating</span> <span class="o">==</span> <span class="s2">&quot;👎&quot;</span><span class="p">:</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>        <span class="c1"># 加入&quot;反例库&quot;，下次类似情况优先 RAG</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>        <span class="n">add_to_negative_examples</span><span class="p">(</span><span class="n">alert_id</span><span class="p">,</span> <span class="n">comment</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="103">10.3 离线评估<a class="headerlink" href="#103" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># 准备金标准数据集（历史故障 + 专家答案）</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="n">gold_dataset</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="p">{</span><span class="s2">&quot;alert&quot;</span><span class="p">:</span> <span class="o">...</span><span class="p">,</span> <span class="s2">&quot;expected_severity&quot;</span><span class="p">:</span> <span class="s2">&quot;P1&quot;</span><span class="p">,</span> <span class="s2">&quot;expected_cause&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">}</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="p">]</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="c1"># LLM 跑一遍 → 对比</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="k">for</span> <span class="n">case</span> <span class="ow">in</span> <span class="n">gold_dataset</span><span class="p">:</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>    <span class="n">result</span> <span class="o">=</span> <span class="n">llm_summarize</span><span class="p">(</span><span class="n">case</span><span class="p">[</span><span class="s1">&#39;alert&#39;</span><span class="p">])</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>    <span class="n">score</span> <span class="o">=</span> <span class="n">evaluate</span><span class="p">(</span><span class="n">result</span><span class="p">,</span> <span class="n">case</span><span class="p">)</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="c1"># 关键指标:</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="c1">#   - 严重度准确率</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="c1">#   - 根因 Top-1/Top-3 命中率</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="c1">#   - 摘要 ROUGE/BLEU（参考但不绝对）</span>
+</code></pre></div>
+<h2 id="_4">十一、流式输出与延迟优化<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># 流式输出：值班看到第一行 &lt; 1s</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="n">rsp</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="n">rsp</span><span class="p">:</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>    <span class="n">content</span> <span class="o">=</span> <span class="n">chunk</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">delta</span><span class="o">.</span><span class="n">content</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>    <span class="k">if</span> <span class="n">content</span><span class="p">:</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>        <span class="n">send_to_wechat_stream</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="c1"># 优化点:</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="c1">#   1. KV Cache 复用（同上下文重复查询）</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="c1">#   2. Prefill 切片（大上下文分块）</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="c1">#   3. 推理参数: max_tokens=512, temperature=0.1</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="c1">#   4. 模型路由: 简单告警走 7B，复杂走 32B</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="c1">#   5. 推理批处理（vLLM 自动）</span>
+</code></pre></div>
+<h2 id="_5">十二、常见坑（生产血泪）<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>直接喂原始告警风暴</strong></td>
+<td style="text-align: left;">必先收敛去重抑制</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>上下文太长 token 爆</strong></td>
+<td style="text-align: left;">截断 + 摘要 + 重要信号优先</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>JSON 格式不稳定</strong></td>
+<td style="text-align: left;">guided_json / response_format 强约束</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>幻觉乱推荐命令</strong></td>
+<td style="text-align: left;">工具白名单 + 风险分级</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RAG 召回不准</strong></td>
+<td style="text-align: left;">bge-reranker 必加</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>响应慢（10s+）</strong></td>
+<td style="text-align: left;">流式输出 + 路由小模型</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>告警和处置脱节</strong></td>
+<td style="text-align: left;">处置步骤要可点击直接执行</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>变更未关联</strong></td>
+<td style="text-align: left;">必拉 24h 变更记录</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>拓扑未关联</strong></td>
+<td style="text-align: left;">CMDB / 服务图谱必接</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有人工反馈</strong></td>
+<td style="text-align: left;">反馈闭环是改进核心</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>盲目用 GPT-4</strong></td>
+<td style="text-align: left;">私有化大模型 + 本地推理省钱</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>prompt 写死</strong></td>
+<td style="text-align: left;">模板化 + 版本管理</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>告警语言不一致</strong></td>
+<td style="text-align: left;">风格统一（"已发现"vs"疑似"）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>打扰频率过高</strong></td>
+<td style="text-align: left;">分级通知（P0 电话/P3 邮件）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>无演练机制</strong></td>
+<td style="text-align: left;">故障注入 + 离线评估</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">十三、开源项目 / 商业产品<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="131">13.1 开源<a class="headerlink" href="#131" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">项目</th>
+<th style="text-align: left;">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Dify</strong></td>
+<td style="text-align: left;">LLMOps 平台（国产，开箱即用）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>LangChain / LangGraph</strong></td>
+<td style="text-align: left;">LLM 编排框架</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>LlamaIndex</strong></td>
+<td style="text-align: left;">RAG 框架</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>AutoGen</strong></td>
+<td style="text-align: left;">Microsoft 多 Agent</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MetaGPT</strong></td>
+<td style="text-align: left;">中国多 Agent</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Robusta</strong></td>
+<td style="text-align: left;">K8s 告警 + LLM</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PagerDuty AIOps</strong></td>
+<td style="text-align: left;">商业</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>OpsBeacon</strong></td>
+<td style="text-align: left;">LLM Ops 助手</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HolmesGPT</strong></td>
+<td style="text-align: left;">K8s LLM 根因分析</td>
+</tr>
+</tbody>
+</table>
+<h3 id="132">13.2 商业 / 闭源<a class="headerlink" href="#132" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: left;">厂商</th>
+<th style="text-align: left;">特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Datadog Bits AI</strong></td>
+<td style="text-align: left;">Datadog</td>
+<td style="text-align: left;">全栈 AI</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>New Relic AI</strong></td>
+<td style="text-align: left;">New Relic</td>
+<td style="text-align: left;">摘要 + RCA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dynatrace Davis</strong></td>
+<td style="text-align: left;">Dynatrace</td>
+<td style="text-align: left;">因果 + LLM</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Splunk AI</strong></td>
+<td style="text-align: left;">Splunk</td>
+<td style="text-align: left;">SOAR + LLM</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PagerDuty Copilot</strong></td>
+<td style="text-align: left;">PagerDuty</td>
+<td style="text-align: left;">告警 + 处置</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>阿里 ARMS / 应用观测</strong></td>
+<td style="text-align: left;">阿里云</td>
+<td style="text-align: left;">国内主流</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>腾讯云 APM AIOps</strong></td>
+<td style="text-align: left;">腾讯云</td>
+<td style="text-align: left;">国内</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>观测云</strong></td>
+<td style="text-align: left;">观测云</td>
+<td style="text-align: left;">国产</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_7">十四、完整代码示例（生产骨架）<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span><span class="o">,</span><span class="w"> </span><span class="nn">json</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">fastapi</span><span class="w"> </span><span class="kn">import</span> <span class="n">FastAPI</span><span class="p">,</span> <span class="n">Request</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.embeddings</span><span class="w"> </span><span class="kn">import</span> <span class="n">HuggingFaceEmbeddings</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langchain.vectorstores</span><span class="w"> </span><span class="kn">import</span> <span class="n">Milvus</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="kn">from</span><span class="w"> </span><span class="nn">prometheus_api_client</span><span class="w"> </span><span class="kn">import</span> <span class="n">PrometheusConnect</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="n">llm</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;LLM_URL&quot;</span><span class="p">),</span> <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;EMPTY&quot;</span><span class="p">)</span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="n">embed</span> <span class="o">=</span> <span class="n">HuggingFaceEmbeddings</span><span class="p">(</span><span class="n">model_name</span><span class="o">=</span><span class="s2">&quot;BAAI/bge-large-zh-v1.5&quot;</span><span class="p">)</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="n">vs</span> <span class="o">=</span> <span class="n">Milvus</span><span class="p">(</span><span class="n">embed</span><span class="p">,</span> <span class="n">connection_args</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;uri&quot;</span><span class="p">:</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;MILVUS_URL&quot;</span><span class="p">)})</span>
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="n">prom</span> <span class="o">=</span> <span class="n">PrometheusConnect</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;PROM_URL&quot;</span><span class="p">))</span>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="n">SYSTEM</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;prompts/sre.txt&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="n">TOOLS</span> <span class="o">=</span> <span class="p">[</span><span class="o">...</span><span class="p">]</span>  <span class="c1"># 见第七节</span>
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/alertmanager-webhook&quot;</span><span class="p">)</span>
+<a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a><span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">webhook</span><span class="p">(</span><span class="n">req</span><span class="p">:</span> <span class="n">Request</span><span class="p">):</span>
+<a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>    <span class="n">data</span> <span class="o">=</span> <span class="k">await</span> <span class="n">req</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a>    <span class="k">for</span> <span class="n">alert</span> <span class="ow">in</span> <span class="n">collapse_alerts</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;alerts&#39;</span><span class="p">]):</span>     <span class="c1"># 收敛</span>
+<a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a>        <span class="n">ctx</span> <span class="o">=</span> <span class="n">build_context</span><span class="p">(</span><span class="n">alert</span><span class="p">)</span>                     <span class="c1"># 增强</span>
+<a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a>        <span class="n">result</span> <span class="o">=</span> <span class="n">analyze</span><span class="p">(</span><span class="n">alert</span><span class="p">,</span> <span class="n">ctx</span><span class="p">)</span>                   <span class="c1"># LLM</span>
+<a id="__codelineno-19-24" name="__codelineno-19-24" href="#__codelineno-19-24"></a>        <span class="n">send_notification</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>                      <span class="c1"># 通知</span>
+<a id="__codelineno-19-25" name="__codelineno-19-25" href="#__codelineno-19-25"></a>        <span class="n">log_for_feedback</span><span class="p">(</span><span class="n">alert</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>                <span class="c1"># 闭环</span>
+<a id="__codelineno-19-26" name="__codelineno-19-26" href="#__codelineno-19-26"></a>    <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;ok&quot;</span><span class="p">}</span>
+<a id="__codelineno-19-27" name="__codelineno-19-27" href="#__codelineno-19-27"></a>
+<a id="__codelineno-19-28" name="__codelineno-19-28" href="#__codelineno-19-28"></a><span class="k">def</span><span class="w"> </span><span class="nf">collapse_alerts</span><span class="p">(</span><span class="n">alerts</span><span class="p">):</span>
+<a id="__codelineno-19-29" name="__codelineno-19-29" href="#__codelineno-19-29"></a>    <span class="c1"># 去重 + 抑制 + 聚类</span>
+<a id="__codelineno-19-30" name="__codelineno-19-30" href="#__codelineno-19-30"></a>    <span class="o">...</span>
+<a id="__codelineno-19-31" name="__codelineno-19-31" href="#__codelineno-19-31"></a>
+<a id="__codelineno-19-32" name="__codelineno-19-32" href="#__codelineno-19-32"></a><span class="k">def</span><span class="w"> </span><span class="nf">build_context</span><span class="p">(</span><span class="n">alert</span><span class="p">):</span>
+<a id="__codelineno-19-33" name="__codelineno-19-33" href="#__codelineno-19-33"></a>    <span class="n">ctx</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;alert&quot;</span><span class="p">:</span> <span class="n">alert</span><span class="p">}</span>
+<a id="__codelineno-19-34" name="__codelineno-19-34" href="#__codelineno-19-34"></a>    <span class="n">ctx</span><span class="p">[</span><span class="s2">&quot;metrics&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">prom</span><span class="o">.</span><span class="n">custom_query</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;...</span><span class="si">{</span><span class="n">alert</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">][</span><span class="s1">&#39;service&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">...&quot;</span><span class="p">)</span>
+<a id="__codelineno-19-35" name="__codelineno-19-35" href="#__codelineno-19-35"></a>    <span class="n">ctx</span><span class="p">[</span><span class="s2">&quot;logs&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">query_loki</span><span class="p">(</span><span class="n">alert</span><span class="p">)</span>
+<a id="__codelineno-19-36" name="__codelineno-19-36" href="#__codelineno-19-36"></a>    <span class="n">ctx</span><span class="p">[</span><span class="s2">&quot;traces&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">query_tempo</span><span class="p">(</span><span class="n">alert</span><span class="p">)</span>
+<a id="__codelineno-19-37" name="__codelineno-19-37" href="#__codelineno-19-37"></a>    <span class="n">ctx</span><span class="p">[</span><span class="s2">&quot;changes&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">query_changelog</span><span class="p">(</span><span class="n">alert</span><span class="p">)</span>
+<a id="__codelineno-19-38" name="__codelineno-19-38" href="#__codelineno-19-38"></a>    <span class="n">ctx</span><span class="p">[</span><span class="s2">&quot;similar&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">vs</span><span class="o">.</span><span class="n">similarity_search</span><span class="p">(</span><span class="n">alert</span><span class="p">[</span><span class="s1">&#39;annotations&#39;</span><span class="p">][</span><span class="s1">&#39;summary&#39;</span><span class="p">],</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-19-39" name="__codelineno-19-39" href="#__codelineno-19-39"></a>    <span class="n">ctx</span><span class="p">[</span><span class="s2">&quot;runbook&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_runbook</span><span class="p">(</span><span class="n">alert</span><span class="p">[</span><span class="s1">&#39;labels&#39;</span><span class="p">][</span><span class="s1">&#39;alertname&#39;</span><span class="p">])</span>
+<a id="__codelineno-19-40" name="__codelineno-19-40" href="#__codelineno-19-40"></a>    <span class="k">return</span> <span class="n">ctx</span>
+<a id="__codelineno-19-41" name="__codelineno-19-41" href="#__codelineno-19-41"></a>
+<a id="__codelineno-19-42" name="__codelineno-19-42" href="#__codelineno-19-42"></a><span class="k">def</span><span class="w"> </span><span class="nf">analyze</span><span class="p">(</span><span class="n">alert</span><span class="p">,</span> <span class="n">ctx</span><span class="p">):</span>
+<a id="__codelineno-19-43" name="__codelineno-19-43" href="#__codelineno-19-43"></a>    <span class="n">messages</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-19-44" name="__codelineno-19-44" href="#__codelineno-19-44"></a>        <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">SYSTEM</span><span class="p">},</span>
+<a id="__codelineno-19-45" name="__codelineno-19-45" href="#__codelineno-19-45"></a>        <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)}</span>
+<a id="__codelineno-19-46" name="__codelineno-19-46" href="#__codelineno-19-46"></a>    <span class="p">]</span>
+<a id="__codelineno-19-47" name="__codelineno-19-47" href="#__codelineno-19-47"></a>    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+<a id="__codelineno-19-48" name="__codelineno-19-48" href="#__codelineno-19-48"></a>        <span class="n">rsp</span> <span class="o">=</span> <span class="n">llm</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+<a id="__codelineno-19-49" name="__codelineno-19-49" href="#__codelineno-19-49"></a>            <span class="n">model</span><span class="o">=</span><span class="s2">&quot;Qwen3-32B-Instruct&quot;</span><span class="p">,</span>
+<a id="__codelineno-19-50" name="__codelineno-19-50" href="#__codelineno-19-50"></a>            <span class="n">messages</span><span class="o">=</span><span class="n">messages</span><span class="p">,</span>
+<a id="__codelineno-19-51" name="__codelineno-19-51" href="#__codelineno-19-51"></a>            <span class="n">tools</span><span class="o">=</span><span class="n">TOOLS</span><span class="p">,</span>
+<a id="__codelineno-19-52" name="__codelineno-19-52" href="#__codelineno-19-52"></a>            <span class="n">response_format</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;json_object&quot;</span><span class="p">},</span>
+<a id="__codelineno-19-53" name="__codelineno-19-53" href="#__codelineno-19-53"></a>            <span class="n">temperature</span><span class="o">=</span><span class="mf">0.1</span>
+<a id="__codelineno-19-54" name="__codelineno-19-54" href="#__codelineno-19-54"></a>        <span class="p">)</span>
+<a id="__codelineno-19-55" name="__codelineno-19-55" href="#__codelineno-19-55"></a>        <span class="n">msg</span> <span class="o">=</span> <span class="n">rsp</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span>
+<a id="__codelineno-19-56" name="__codelineno-19-56" href="#__codelineno-19-56"></a>        <span class="n">messages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<a id="__codelineno-19-57" name="__codelineno-19-57" href="#__codelineno-19-57"></a>        <span class="k">if</span> <span class="n">msg</span><span class="o">.</span><span class="n">tool_calls</span><span class="p">:</span>
+<a id="__codelineno-19-58" name="__codelineno-19-58" href="#__codelineno-19-58"></a>            <span class="k">for</span> <span class="n">call</span> <span class="ow">in</span> <span class="n">msg</span><span class="o">.</span><span class="n">tool_calls</span><span class="p">:</span>
+<a id="__codelineno-19-59" name="__codelineno-19-59" href="#__codelineno-19-59"></a>                <span class="n">result</span> <span class="o">=</span> <span class="n">dispatch_tool</span><span class="p">(</span><span class="n">call</span><span class="o">.</span><span class="n">function</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">call</span><span class="o">.</span><span class="n">function</span><span class="o">.</span><span class="n">arguments</span><span class="p">))</span>
+<a id="__codelineno-19-60" name="__codelineno-19-60" href="#__codelineno-19-60"></a>                <span class="n">messages</span><span class="o">.</span><span class="n">append</span><span class="p">({</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;tool&quot;</span><span class="p">,</span> <span class="s2">&quot;tool_call_id&quot;</span><span class="p">:</span> <span class="n">call</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">result</span><span class="p">})</span>
+<a id="__codelineno-19-61" name="__codelineno-19-61" href="#__codelineno-19-61"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-19-62" name="__codelineno-19-62" href="#__codelineno-19-62"></a>            <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<a id="__codelineno-19-63" name="__codelineno-19-63" href="#__codelineno-19-63"></a>
+<a id="__codelineno-19-64" name="__codelineno-19-64" href="#__codelineno-19-64"></a><span class="k">def</span><span class="w"> </span><span class="nf">send_notification</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+<a id="__codelineno-19-65" name="__codelineno-19-65" href="#__codelineno-19-65"></a>    <span class="n">card</span> <span class="o">=</span> <span class="n">format_wechat_card</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<a id="__codelineno-19-66" name="__codelineno-19-66" href="#__codelineno-19-66"></a>    <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">WECHAT_WEBHOOK</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">card</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="roi">十五、ROI 数据（参考行业披露）<a class="headerlink" href="#roi" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>落地一年常见效果（参考 Google SRE / 字节 / 阿里）:
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>  ✅ 告警量减少 60-80%
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>  ✅ MTTR 缩短 30-50%
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>  ✅ 值班负担减少 50%
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>  ✅ 新人上手时间从月 → 周
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>  ✅ 跨团队沟通效率 +40%
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>成本（百节点规模）:
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>  - 推理服务（Qwen3-32B × 2 实例 × A100）: 8 万/年
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>  - 向量库 + Embedding: 2 万/年
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>  - 开发投入: 1-2 人月起步
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>  - ROI: 通常 3-6 个月回本（按节省值班 + 减少事故）
+</code></pre></div>
+<h2 id="_8">十六、学习路径<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>第 1 周（最小可用）:
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>  1. 装 vLLM + Qwen3-7B
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>  2. 写最小提示词
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>  3. Alertmanager webhook 接入
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>  4. 输出到企业微信
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>第 1 个月（生产可用）:
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>  5. 加 RAG（Runbook + 历史故障）
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>  6. 加告警收敛
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>  7. 加 Function Calling 取证
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>  8. 加用户反馈
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>第 3 个月（智能化）:
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>  9. 离线评估 + 提示词版本管理
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>  10. 多模型路由（小模型/大模型）
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>  11. Agent 化（多步推理）
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>  12. 自动化执行（低风险）
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>第半年+（进阶）:
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a>  13. 多 Agent 协作（SRE/DBA/网络）
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a>  14. 因果分析 + 故障预测
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a>  15. 自训练故障摘要模型（LoRA）
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a>  16. 自研平台化
+</code></pre></div>
+<h2 id="_9">十七、参考资料<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>论文:
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>  - &quot;An Empirical Investigation of Practical Log Anomaly Detection&quot;
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>  - &quot;LM-PACE: Production AIOps with LLMs&quot; (Google, 2024)
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>  - &quot;OpsGPT: A Domain-Specific LLM for IT Operations&quot;
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>  - &quot;ReAct: Synergizing Reasoning and Acting in LLMs&quot;
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>博客:
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>  - Google SRE Workbook（Site Reliability Engineering）
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>  - Netflix Tech Blog AIOps 系列
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>  - 字节跳动 SRE 公众号
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>  - 阿里云原生 AIOps 系列
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>开源:
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>  - Dify: https://github.com/langgenius/dify
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>  - HolmesGPT: https://github.com/robusta-dev/holmesgpt
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>  - LangChain: https://github.com/langchain-ai/langchain
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a>  - bge-large-zh: https://huggingface.co/BAAI/bge-large-zh-v1.5
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a>  - Qwen: https://github.com/QwenLM/Qwen
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：LLM 告警是 AIOps <strong>最容易落地、ROI 最高的方向</strong>。第一阶段（1 周）就能跑起来，第三阶段（3 个月）能见到明显业务价值。<strong>最容易翻车的不是模型选错，而是没做告警收敛、没建 RAG 知识库、工具调用没有风险分级</strong>。私有化首推 <strong>vLLM + Qwen3-32B + bge-large-zh-v1.5 + Milvus</strong>，这是 2025 中文 AIOps 的黄金组合。</p>
+</blockquote>
 
 
 

@@ -1271,7 +1271,18 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        自动修复模式
+        一、为什么要自动化修复
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l0-l5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、自动化等级（L0-L5）
       
     </span>
   </a>
@@ -1282,7 +1293,467 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        已知故障模式库
+        三、典型自愈场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、典型自愈场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 K8s / 云原生场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 中间件场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 应用层场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 推理 / GPU 场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、自动化修复的架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、决策引擎：四种实现
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、决策引擎：四种实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 规则引擎（最稳）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-argo-workflows-tekton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 流程图引擎（Argo Workflows / Tekton）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-llm-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 LLM Agent 决策（新势力）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-rl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 RL 强化学习（实验阶段）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、风险评估（自动化的"刹车"）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、风险评估（自动化的&#34;刹车&#34;）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 风险等级分类
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 风险评估器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 黑白名单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 频次限制（防止失控循环）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、执行引擎
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、执行引擎">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Kubernetes 操作
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-ssh-ansible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 SSH / Ansible 执行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 第三方平台集成
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、验证 + 回滚（自愈的安全网）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、验证 + 回滚（自愈的安全网）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 多维验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 自动回滚
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-canary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 金丝雀自愈（Canary）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、审计与可观测
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、审计与可观测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 必须记录的字段
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 看板指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 周期性 Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、开源工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、开源工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 流程编排
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 K8s 自愈框架
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 配置/运维自动化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-llm-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 LLM Agent / 智能体
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、典型实战：Pod 自愈流水线
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、典型实战：节点磁盘满清理
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、常见坑（生产血泪）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、最佳实践清单（Checklist）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、参考资料
       
     </span>
   </a>
@@ -1707,7 +2178,18 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        自动修复模式
+        一、为什么要自动化修复
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#l0-l5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、自动化等级（L0-L5）
       
     </span>
   </a>
@@ -1718,7 +2200,467 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        已知故障模式库
+        三、典型自愈场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、典型自愈场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 K8s / 云原生场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 中间件场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 应用层场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 推理 / GPU 场景
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、自动化修复的架构
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、决策引擎：四种实现
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、决策引擎：四种实现">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 规则引擎（最稳）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-argo-workflows-tekton" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 流程图引擎（Argo Workflows / Tekton）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-llm-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 LLM Agent 决策（新势力）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-rl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 RL 强化学习（实验阶段）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、风险评估（自动化的"刹车"）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、风险评估（自动化的&#34;刹车&#34;）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 风险等级分类
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 风险评估器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 黑白名单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 频次限制（防止失控循环）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、执行引擎
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、执行引擎">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-kubernetes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Kubernetes 操作
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-ssh-ansible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 SSH / Ansible 执行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 第三方平台集成
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、验证 + 回滚（自愈的安全网）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、验证 + 回滚（自愈的安全网）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 多维验证
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 自动回滚
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-canary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 金丝雀自愈（Canary）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、审计与可观测
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、审计与可观测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 必须记录的字段
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 看板指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 周期性 Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、开源工具
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、开源工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 流程编排
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 K8s 自愈框架
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 配置/运维自动化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#104-llm-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.4 LLM Agent / 智能体
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、典型实战：Pod 自愈流水线
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、典型实战：节点磁盘满清理
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、常见坑（生产血泪）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、最佳实践清单（Checklist）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、参考资料
       
     </span>
   </a>
@@ -1794,62 +2736,936 @@
 
 
 <h1 id="_1">自动化修复<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">自动修复模式<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>AIOps 终极目标：<strong>机器知道、机器决定、机器执行</strong>。从"告警 → 人工"到"告警 → 自愈"，是 SRE 进化的最高形态——但也是<strong>最容易翻车的方向</strong>。</p>
+</blockquote>
+<h2 id="_2">一、为什么要自动化修复<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>痛点:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  - 半夜被叫醒做&quot;教科书操作&quot;（rollout restart / drain）
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  - 重复同样的处置 N 次
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  - 人手不够（一个 SRE 管 1000+ 服务）
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  - MTTR 受限于&quot;人响应时间&quot;
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>目标:
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  - 标准化处置 → 流程化
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  - 流程化 → 脚本化
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  - 脚本化 → 自动化（要审批）
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  - 自动化 → 自愈（无人干预）
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>→ 自动化的核心不是&quot;省人&quot;，而是&quot;标准化 + 一致性 + 速度&quot;
+</code></pre></div>
+<h2 id="l0-l5">二、自动化等级（L0-L5）<a class="headerlink" href="#l0-l5" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>L0 全人工        手册操作，无脚本
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>L1 脚本化        有脚本，但需人工执行
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>L2 平台化        Web 平台一键执行，有审批
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>L3 半自动        监控触发推荐，人工确认
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>L4 受控自动      低风险场景自动执行，高风险审批
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>L5 全自动自愈    端到端无人干预
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>行业现状（2025）:
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  - 中小团队: L1-L2
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  - 头部互联网: L3-L4
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  - Google SRE: L4-L5（特定场景）
+</code></pre></div>
+<p><strong>经验</strong>：<strong>不要跳级</strong>。L0→L5 必须经过 L1-L4，每一级稳定半年再上下一级。</p>
+<h2 id="_3">三、典型自愈场景<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="31-k8s">3.1 K8s / 云原生场景<a class="headerlink" href="#31-k8s" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">模式</th>
 <th style="text-align: left;">场景</th>
-<th style="text-align: left;">实现</th>
+<th style="text-align: left;">触发</th>
+<th style="text-align: left;">修复动作</th>
+<th style="text-align: center;">风险</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">重启</td>
-<td style="text-align: left;">Pod OOM/无响应</td>
-<td style="text-align: left;">kubectl delete pod</td>
+<td style="text-align: left;">Pod CrashLoopBackOff</td>
+<td style="text-align: left;">K8s Event</td>
+<td style="text-align: left;">rollout restart 上一稳定版本</td>
+<td style="text-align: center;">🟡</td>
 </tr>
 <tr>
-<td style="text-align: left;">回滚</td>
-<td style="text-align: left;">新版本异常</td>
-<td style="text-align: left;">kubectl rollout undo</td>
+<td style="text-align: left;">HPA 触底无效</td>
+<td style="text-align: left;">CPU/Mem 持续高</td>
+<td style="text-align: left;">强制扩容 + 告警</td>
+<td style="text-align: center;">🟢</td>
 </tr>
 <tr>
-<td style="text-align: left;">扩容</td>
-<td style="text-align: left;">负载突增</td>
-<td style="text-align: left;">kubectl scale</td>
-</tr>
-<tr>
-<td style="text-align: left;">迁移</td>
-<td style="text-align: left;">节点异常</td>
+<td style="text-align: left;">节点 NotReady</td>
+<td style="text-align: left;">kubelet 失联</td>
 <td style="text-align: left;">cordon + drain</td>
+<td style="text-align: center;">🟡</td>
 </tr>
 <tr>
-<td style="text-align: left;">清理</td>
-<td style="text-align: left;">磁盘满</td>
-<td style="text-align: left;">清理日志/临时文件</td>
+<td style="text-align: left;">节点磁盘满</td>
+<td style="text-align: left;">disk &gt; 90%</td>
+<td style="text-align: left;">清理日志/镜像</td>
+<td style="text-align: center;">🟢</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pod OOMKilled 3 次</td>
+<td style="text-align: left;">event 触发</td>
+<td style="text-align: left;">自动增加 limit</td>
+<td style="text-align: center;">🟡</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ingress 5xx 突增</td>
+<td style="text-align: left;">Prom 告警</td>
+<td style="text-align: left;">rollback 上一版本</td>
+<td style="text-align: center;">🟡</td>
+</tr>
+<tr>
+<td style="text-align: left;">ConfigMap 误更新</td>
+<td style="text-align: left;">webhook</td>
+<td style="text-align: left;">校验 + 回滚</td>
+<td style="text-align: center;">🟡</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_3">已知故障模式库<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># patterns.yaml</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">patterns</span><span class="p">:</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gpu-oom</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">symptoms</span><span class="p">:</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">metric</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nvidia_smi_memory_used</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&gt;</span><span class="nv"> </span><span class="s">95%&quot;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">log</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;CUDA</span><span class="nv"> </span><span class="s">out</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">memory&quot;</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">    </span><span class="nt">action</span><span class="p">:</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">restart_pod</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">      </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;kubectl</span><span class="nv"> </span><span class="s">delete</span><span class="nv"> </span><span class="s">pod</span><span class="nv"> </span><span class="s">{{.pod_name}}</span><span class="nv"> </span><span class="s">-n</span><span class="nv"> </span><span class="s">{{.namespace}}&quot;</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pod-crashloop</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">    </span><span class="nt">symptoms</span><span class="p">:</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">metric</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kube_pod_container_status_restarts_total</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;increase</span><span class="nv"> </span><span class="s">&gt;</span><span class="nv"> </span><span class="s">5</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">5m&quot;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">    </span><span class="nt">action</span><span class="p">:</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">describe_and_notify</span>
+<h3 id="32">3.2 中间件场景<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">场景</th>
+<th style="text-align: left;">触发</th>
+<th style="text-align: left;">修复动作</th>
+<th style="text-align: center;">风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">MySQL 主从延迟</td>
+<td style="text-align: left;">repl_lag &gt; N</td>
+<td style="text-align: left;">重启 slave 线程 / kill 长事务</td>
+<td style="text-align: center;">🟡</td>
+</tr>
+<tr>
+<td style="text-align: left;">Redis Master 挂</td>
+<td style="text-align: left;">Sentinel 检测</td>
+<td style="text-align: left;">自动 failover</td>
+<td style="text-align: center;">🟢</td>
+</tr>
+<tr>
+<td style="text-align: left;">Kafka 消费滞后</td>
+<td style="text-align: left;">lag &gt; N</td>
+<td style="text-align: left;">扩容消费者</td>
+<td style="text-align: center;">🟢</td>
+</tr>
+<tr>
+<td style="text-align: left;">ES 红色</td>
+<td style="text-align: left;">cluster.health</td>
+<td style="text-align: left;">关闭异常 shard</td>
+<td style="text-align: center;">🔴</td>
+</tr>
+<tr>
+<td style="text-align: left;">ZK 节点掉线</td>
+<td style="text-align: left;">health check</td>
+<td style="text-align: left;">kubectl restart</td>
+<td style="text-align: center;">🟡</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33">3.3 应用层场景<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">场景</th>
+<th style="text-align: left;">触发</th>
+<th style="text-align: left;">修复动作</th>
+<th style="text-align: center;">风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">JVM Full GC 频繁</td>
+<td style="text-align: left;">gc.time</td>
+<td style="text-align: left;">dump + 重启</td>
+<td style="text-align: center;">🟡</td>
+</tr>
+<tr>
+<td style="text-align: left;">内存泄漏</td>
+<td style="text-align: left;">mem 线性增长</td>
+<td style="text-align: left;">rolling restart</td>
+<td style="text-align: center;">🟡</td>
+</tr>
+<tr>
+<td style="text-align: left;">死锁</td>
+<td style="text-align: left;">thread dump</td>
+<td style="text-align: left;">kill -3 + restart</td>
+<td style="text-align: center;">🟡</td>
+</tr>
+<tr>
+<td style="text-align: left;">连接池耗尽</td>
+<td style="text-align: left;">connection pool exhausted</td>
+<td style="text-align: left;">restart</td>
+<td style="text-align: center;">🟡</td>
+</tr>
+<tr>
+<td style="text-align: left;">限流降级</td>
+<td style="text-align: left;">QPS 异常</td>
+<td style="text-align: left;">自动降级开关</td>
+<td style="text-align: center;">🟡</td>
+</tr>
+</tbody>
+</table>
+<h3 id="34-gpu">3.4 推理 / GPU 场景<a class="headerlink" href="#34-gpu" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">场景</th>
+<th style="text-align: left;">触发</th>
+<th style="text-align: left;">修复</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">GPU XID 错误</td>
+<td style="text-align: left;">dcgm</td>
+<td style="text-align: left;">隔离节点 + 通知</td>
+</tr>
+<tr>
+<td style="text-align: left;">显存碎片</td>
+<td style="text-align: left;">gpu_mem_frag</td>
+<td style="text-align: left;">重启推理 worker</td>
+</tr>
+<tr>
+<td style="text-align: left;">TPOT 突增</td>
+<td style="text-align: left;">metric</td>
+<td style="text-align: left;">扩容 + 流量切换</td>
+</tr>
+<tr>
+<td style="text-align: left;">模型 OOM</td>
+<td style="text-align: left;">OOM event</td>
+<td style="text-align: left;">降 batch size</td>
+</tr>
+<tr>
+<td style="text-align: left;">KV Cache 满</td>
+<td style="text-align: left;">cache_pressure</td>
+<td style="text-align: left;">限流 + 扩容</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">四、自动化修复的架构<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>┌────── 告警 / 信号源 ────────────────────┐
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>│ Prometheus / Loki / K8s Event / Custom │
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>└────────────┬────────────────────────────┘
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>             ↓
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>┌────── 决策引擎 ─────────────────────────┐
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>│  规则匹配 / LLM 推荐 / 模型决策          │
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>└────────────┬────────────────────────────┘
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>             ↓
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>┌────── 风险评估 ─────────────────────────┐
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>│  风险等级 / 影响范围 / 业务窗口          │
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>└────────────┬────────────────────────────┘
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>             ↓
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>┌────── 审批层（按风险）──────────────────┐
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>│ 🟢 自动执行                              │
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>│ 🟡 ChatOps 一键确认                      │
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>│ 🔴 强制人工审批                          │
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>└────────────┬────────────────────────────┘
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>             ↓
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>┌────── 执行引擎 ─────────────────────────┐
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>│ kubectl / Ansible / Salt / Custom API   │
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>└────────────┬────────────────────────────┘
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>             ↓
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>┌────── 验证 + 回滚 ──────────────────────┐
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>│ 监控 60s 是否恢复，未恢复自动回滚         │
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>└────────────┬────────────────────────────┘
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>             ↓
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>┌────── 审计 + 通知 ──────────────────────┐
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>│ 操作日志 + Slack/微信 通知 + 报表        │
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>└─────────────────────────────────────────┘
 </code></pre></div>
+<h2 id="_5">五、决策引擎：四种实现<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 规则引擎（最稳）<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 简单 YAML 规则</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">rules</span><span class="p">:</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PodCrashLoopRecover</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="nt">when</span><span class="p">:</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">      </span><span class="nt">alertname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PodCrashLoopBackOff</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">      </span><span class="nt">times_within</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10m &gt;= 3</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="nt">do</span><span class="p">:</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubectl_rollout_undo</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">        </span><span class="nt">params</span><span class="p">:</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="w">          </span><span class="nt">namespace</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{</span><span class="nv"> </span><span class="s">.labels.namespace</span><span class="nv"> </span><span class="s">}}&quot;</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">          </span><span class="nt">deployment</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{</span><span class="nv"> </span><span class="s">.labels.deployment</span><span class="nv"> </span><span class="s">}}&quot;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">wait</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">        </span><span class="nt">params</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">duration</span><span class="p">:</span><span class="w"> </span><span class="nv">60s</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">verify_health</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="nt">on_failure</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">notify_oncall</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="nt">risk</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">medium</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NodeDiskFullCleanup</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="nt">when</span><span class="p">:</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">      </span><span class="nt">alertname</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NodeDiskFull</span>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="w">      </span><span class="nt">severity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">P2</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a><span class="w">    </span><span class="nt">do</span><span class="p">:</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ssh_run</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a><span class="w">        </span><span class="nt">params</span><span class="p">:</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a><span class="w">          </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;docker</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">prune</span><span class="nv"> </span><span class="s">-af</span><span class="nv"> </span><span class="s">&amp;&amp;</span><span class="nv"> </span><span class="s">journalctl</span><span class="nv"> </span><span class="s">--vacuum-size=1G&quot;</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">verify_disk_usage</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a><span class="w">    </span><span class="nt">risk</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">low</span>
+</code></pre></div>
+<h3 id="52-argo-workflows-tekton">5.2 流程图引擎（Argo Workflows / Tekton）<a class="headerlink" href="#52-argo-workflows-tekton" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Argo Workflow 修复 Pod 不健康</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">argoproj.io/v1alpha1</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Workflow</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nt">generateName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pod-recovery-</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="nt">entrypoint</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="nt">arguments</span><span class="p">:</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="nt">parameters</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[{</span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="nv">pod_name</span><span class="p p-Indicator">},</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="nv">namespace</span><span class="p p-Indicator">}]</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="nt">templates</span><span class="p">:</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">      </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="nv">diagnose</span><span class="p p-Indicator">,</span><span class="nt"> template</span><span class="p">:</span><span class="w"> </span><span class="nv">kubectl-describe</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="nv">collect-logs</span><span class="p p-Indicator">,</span><span class="nt"> template</span><span class="p">:</span><span class="w"> </span><span class="nv">kubectl-logs</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="nv">restart</span><span class="p p-Indicator">,</span><span class="nt"> template</span><span class="p">:</span><span class="w"> </span><span class="nv">rollout-restart</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="nv">verify</span><span class="p p-Indicator">,</span><span class="nt"> template</span><span class="p">:</span><span class="w"> </span><span class="nv">check-health</span><span class="p p-Indicator">}</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="nv">rollback</span><span class="p p-Indicator">,</span><span class="nt"> template</span><span class="p">:</span><span class="w"> </span><span class="nv">rollback</span><span class="p p-Indicator">,</span><span class="nt"> when</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;verify.status</span><span class="nv"> </span><span class="s">!=</span><span class="nv"> </span><span class="s">&#39;Healthy&#39;&quot;</span><span class="p p-Indicator">}</span>
+</code></pre></div>
+<h3 id="53-llm-agent">5.3 LLM Agent 决策（新势力）<a class="headerlink" href="#53-llm-agent" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># 让 LLM 看告警 + 上下文，输出&quot;操作计划&quot;</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">result</span> <span class="o">=</span> <span class="n">llm</span><span class="o">.</span><span class="n">chat</span><span class="p">([</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;system&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;你是 SRE Agent，根据告警推荐处置步骤...&quot;</span><span class="p">},</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">alert_context</span><span class="p">}</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="p">],</span> <span class="n">tools</span><span class="o">=</span><span class="p">[</span><span class="n">kubectl_get</span><span class="p">,</span> <span class="n">kubectl_describe</span><span class="p">,</span> <span class="n">kubectl_logs</span><span class="p">,</span> <span class="n">kubectl_restart</span><span class="p">])</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># LLM 自主调用工具诊断，最后给出建议</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="c1"># 建议执行命令需经过 风险评估 + 审批</span>
+</code></pre></div>
+<p><strong>强制约束</strong>：LLM 推荐 ≠ LLM 执行。<strong>严格分离</strong>。</p>
+<h3 id="54-rl">5.4 RL 强化学习（实验阶段）<a class="headerlink" href="#54-rl" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>仅适合:
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  - 有海量历史数据
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  - 可定义清晰奖励函数
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  - 容忍探索成本
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>案例:
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  - 自动调参（K8s HPA 参数）
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  - 自适应限流
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>  - 容量预测决策
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>中小团队: 不推荐，过早优化
+</code></pre></div>
+<h2 id="_6">六、风险评估（自动化的"刹车"）<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 风险等级分类<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">等级</th>
+<th style="text-align: left;">标志</th>
+<th style="text-align: left;">例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">🟢 <strong>可逆 + 影响小</strong></td>
+<td style="text-align: left;">自动执行</td>
+<td style="text-align: left;">清理临时文件、扩容</td>
+</tr>
+<tr>
+<td style="text-align: center;">🟡 <strong>可逆 + 中等影响</strong></td>
+<td style="text-align: left;">ChatOps 确认</td>
+<td style="text-align: left;">rollout restart、failover</td>
+</tr>
+<tr>
+<td style="text-align: center;">🔴 <strong>不可逆 / 高影响</strong></td>
+<td style="text-align: left;">强制人工</td>
+<td style="text-align: left;">delete pvc、drop table</td>
+</tr>
+<tr>
+<td style="text-align: center;">⛔ <strong>永久禁止</strong></td>
+<td style="text-align: left;">永远不自动</td>
+<td style="text-align: left;">rm -rf、kubectl delete ns</td>
+</tr>
+</tbody>
+</table>
+<h3 id="62">6.2 风险评估器<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">assess_risk</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="n">risk_score</span> <span class="o">=</span> <span class="mi">0</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>    <span class="c1"># 影响范围</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>    <span class="k">if</span> <span class="n">action</span><span class="o">.</span><span class="n">scope</span> <span class="o">==</span> <span class="s2">&quot;single-pod&quot;</span><span class="p">:</span>   <span class="n">risk_score</span> <span class="o">+=</span> <span class="mi">1</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>    <span class="k">elif</span> <span class="n">action</span><span class="o">.</span><span class="n">scope</span> <span class="o">==</span> <span class="s2">&quot;service&quot;</span><span class="p">:</span>    <span class="n">risk_score</span> <span class="o">+=</span> <span class="mi">3</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="k">elif</span> <span class="n">action</span><span class="o">.</span><span class="n">scope</span> <span class="o">==</span> <span class="s2">&quot;cluster&quot;</span><span class="p">:</span>    <span class="n">risk_score</span> <span class="o">+=</span> <span class="mi">5</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>    <span class="c1"># 可逆性</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="k">if</span> <span class="n">action</span><span class="o">.</span><span class="n">reversible</span><span class="p">:</span>              <span class="n">risk_score</span> <span class="o">+=</span> <span class="mi">0</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="k">else</span><span class="p">:</span>                              <span class="n">risk_score</span> <span class="o">+=</span> <span class="mi">5</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>    <span class="c1"># 业务时段</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>    <span class="k">if</span> <span class="n">is_peak_time</span><span class="p">():</span>                 <span class="n">risk_score</span> <span class="o">+=</span> <span class="mi">2</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>    <span class="c1"># 当前是否在变更窗口</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>    <span class="k">if</span> <span class="n">is_change_window</span><span class="p">():</span>             <span class="n">risk_score</span> <span class="o">-=</span> <span class="mi">1</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>    <span class="c1"># 历史成功率</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>    <span class="n">history_success</span> <span class="o">=</span> <span class="n">get_success_rate</span><span class="p">(</span><span class="n">action</span><span class="o">.</span><span class="n">type</span><span class="p">)</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>    <span class="k">if</span> <span class="n">history_success</span> <span class="o">&lt;</span> <span class="mf">0.9</span><span class="p">:</span>          <span class="n">risk_score</span> <span class="o">+=</span> <span class="mi">2</span>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>    <span class="k">if</span> <span class="n">risk_score</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">:</span>    <span class="k">return</span> <span class="s2">&quot;auto&quot;</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>    <span class="k">elif</span> <span class="n">risk_score</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">:</span>  <span class="k">return</span> <span class="s2">&quot;chatops&quot;</span>
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>    <span class="k">else</span><span class="p">:</span>                  <span class="k">return</span> <span class="s2">&quot;manual&quot;</span>
+</code></pre></div>
+<h3 id="63">6.3 黑白名单<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 严禁自动执行的命令</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="nt">blacklist</span><span class="p">:</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;kubectl</span><span class="nv"> </span><span class="s">delete</span><span class="nv"> </span><span class="s">namespace&quot;</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;kubectl</span><span class="nv"> </span><span class="s">delete</span><span class="nv"> </span><span class="s">pvc&quot;</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;DROP</span><span class="nv"> </span><span class="s">TABLE&quot;</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;DROP</span><span class="nv"> </span><span class="s">DATABASE&quot;</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;rm</span><span class="nv"> </span><span class="s">-rf</span><span class="nv"> </span><span class="s">/&quot;</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;force-delete&quot;</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;kill</span><span class="nv"> </span><span class="s">-9</span><span class="nv"> </span><span class="s">1&quot;</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="c1"># 完全可自动的白名单</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="nt">whitelist</span><span class="p">:</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;kubectl</span><span class="nv"> </span><span class="s">rollout</span><span class="nv"> </span><span class="s">restart&quot;</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;kubectl</span><span class="nv"> </span><span class="s">scale</span><span class="nv"> </span><span class="s">--replicas=*&quot;</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;kubectl</span><span class="nv"> </span><span class="s">cordon&quot;</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;kubectl</span><span class="nv"> </span><span class="s">drain</span><span class="nv"> </span><span class="s">--ignore-daemonsets&quot;</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;docker</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">prune&quot;</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;journalctl</span><span class="nv"> </span><span class="s">--vacuum-size=*&quot;</span>
+</code></pre></div>
+<h3 id="64">6.4 频次限制（防止失控循环）<a class="headerlink" href="#64" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># 同一服务 1 小时内自愈次数限制</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="n">rate_limits</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="s2">&quot;rollout_restart&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;per_service_per_hour&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">},</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>    <span class="s2">&quot;scale_up&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;per_service_per_hour&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">},</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="s2">&quot;node_drain&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;per_cluster_per_hour&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">},</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="p">}</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">check_rate_limit</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    <span class="n">count</span> <span class="o">=</span> <span class="n">count_recent</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="mi">3600</span><span class="p">)</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="n">limit</span> <span class="o">=</span> <span class="n">rate_limits</span><span class="p">[</span><span class="n">action</span><span class="p">][</span><span class="s2">&quot;per_service_per_hour&quot;</span><span class="p">]</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>    <span class="k">if</span> <span class="n">count</span> <span class="o">&gt;=</span> <span class="n">limit</span><span class="p">:</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>        <span class="k">raise</span> <span class="n">CircuitOpen</span><span class="p">(</span><span class="s2">&quot;自愈次数超限，转人工&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="_7">七、执行引擎<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="71-kubernetes">7.1 Kubernetes 操作<a class="headerlink" href="#71-kubernetes" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">kubernetes</span><span class="w"> </span><span class="kn">import</span> <span class="n">client</span><span class="p">,</span> <span class="n">config</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">config</span><span class="o">.</span><span class="n">load_incluster_config</span><span class="p">()</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">apps_v1</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">AppsV1Api</span><span class="p">()</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">core_v1</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">CoreV1Api</span><span class="p">()</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1"># rollout restart</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">rollout_restart</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">namespace</span><span class="p">):</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;spec&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;template&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;annotations&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>        <span class="s2">&quot;kubectl.kubernetes.io/restartedAt&quot;</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">()</span><span class="o">.</span><span class="n">isoformat</span><span class="p">()</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    <span class="p">}}}}}</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    <span class="n">apps_v1</span><span class="o">.</span><span class="n">patch_namespaced_deployment</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">namespace</span><span class="p">,</span> <span class="n">body</span><span class="p">)</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a><span class="c1"># scale</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a><span class="k">def</span><span class="w"> </span><span class="nf">scale</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">namespace</span><span class="p">,</span> <span class="n">replicas</span><span class="p">):</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;spec&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;replicas&quot;</span><span class="p">:</span> <span class="n">replicas</span><span class="p">}}</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>    <span class="n">apps_v1</span><span class="o">.</span><span class="n">patch_namespaced_deployment_scale</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">namespace</span><span class="p">,</span> <span class="n">body</span><span class="p">)</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a><span class="c1"># cordon + drain</span>
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a><span class="k">def</span><span class="w"> </span><span class="nf">drain_node</span><span class="p">(</span><span class="n">node_name</span><span class="p">):</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>    <span class="c1"># 1. cordon</span>
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>    <span class="n">body</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;spec&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;unschedulable&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}}</span>
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>    <span class="n">core_v1</span><span class="o">.</span><span class="n">patch_node</span><span class="p">(</span><span class="n">node_name</span><span class="p">,</span> <span class="n">body</span><span class="p">)</span>
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>    <span class="c1"># 2. evict pods</span>
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>    <span class="n">pods</span> <span class="o">=</span> <span class="n">core_v1</span><span class="o">.</span><span class="n">list_pod_for_all_namespaces</span><span class="p">(</span><span class="n">field_selector</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;spec.nodeName=</span><span class="si">{</span><span class="n">node_name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>    <span class="k">for</span> <span class="n">pod</span> <span class="ow">in</span> <span class="n">pods</span><span class="o">.</span><span class="n">items</span><span class="p">:</span>
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>        <span class="n">eviction</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">V1Eviction</span><span class="p">(</span><span class="n">metadata</span><span class="o">=</span><span class="n">client</span><span class="o">.</span><span class="n">V1ObjectMeta</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">pod</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="n">pod</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">namespace</span><span class="p">))</span>
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>        <span class="n">core_v1</span><span class="o">.</span><span class="n">create_namespaced_pod_eviction</span><span class="p">(</span><span class="n">pod</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">pod</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">namespace</span><span class="p">,</span> <span class="n">eviction</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="72-ssh-ansible">7.2 SSH / Ansible 执行<a class="headerlink" href="#72-ssh-ansible" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">paramiko</span><span class="o">,</span><span class="w"> </span><span class="nn">ansible_runner</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="c1"># 简单 SSH</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">ssh_run</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">cmd</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">60</span><span class="p">):</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>    <span class="n">client</span> <span class="o">=</span> <span class="n">paramiko</span><span class="o">.</span><span class="n">SSHClient</span><span class="p">()</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    <span class="n">client</span><span class="o">.</span><span class="n">set_missing_host_key_policy</span><span class="p">(</span><span class="n">paramiko</span><span class="o">.</span><span class="n">AutoAddPolicy</span><span class="p">())</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="n">client</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">key_filename</span><span class="o">=</span><span class="s1">&#39;/keys/ops&#39;</span><span class="p">)</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    <span class="n">stdin</span><span class="p">,</span> <span class="n">stdout</span><span class="p">,</span> <span class="n">stderr</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">exec_command</span><span class="p">(</span><span class="n">cmd</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="n">timeout</span><span class="p">)</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>    <span class="k">return</span> <span class="n">stdout</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(),</span> <span class="n">stderr</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">()</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="c1"># Ansible Runner（批量）</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="n">result</span> <span class="o">=</span> <span class="n">ansible_runner</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>    <span class="n">private_data_dir</span><span class="o">=</span><span class="s1">&#39;/tmp/ans&#39;</span><span class="p">,</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>    <span class="n">playbook</span><span class="o">=</span><span class="s1">&#39;cleanup_disk.yml&#39;</span><span class="p">,</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>    <span class="n">inventory</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;all&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;hosts&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;node-101&#39;</span><span class="p">:</span> <span class="p">{},</span> <span class="s1">&#39;node-102&#39;</span><span class="p">:</span> <span class="p">{}}}},</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>    <span class="n">extravars</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;min_free_gb&#39;</span><span class="p">:</span> <span class="mi">50</span><span class="p">}</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="p">)</span>
+</code></pre></div>
+<h3 id="73">7.3 第三方平台集成<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># 蓝鲸作业平台 / 公司 IT 自动化平台</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">run_blueking_job</span><span class="p">(</span><span class="n">job_id</span><span class="p">,</span> <span class="n">params</span><span class="p">):</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BK_URL</span><span class="si">}</span><span class="s2">/api/v3/job_instance&quot;</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>        <span class="s2">&quot;bk_biz_id&quot;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>        <span class="s2">&quot;job_id&quot;</span><span class="p">:</span> <span class="n">job_id</span><span class="p">,</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>        <span class="s2">&quot;global_var_list&quot;</span><span class="p">:</span> <span class="n">params</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="p">})</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    <span class="k">return</span> <span class="n">r</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="c1"># Jenkins</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="k">def</span><span class="w"> </span><span class="nf">trigger_jenkins</span><span class="p">(</span><span class="n">job</span><span class="p">,</span> <span class="n">params</span><span class="p">):</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>    <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">JENKINS_URL</span><span class="si">}</span><span class="s2">/job/</span><span class="si">{</span><span class="n">job</span><span class="si">}</span><span class="s2">/buildWithParameters&quot;</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span> <span class="n">auth</span><span class="o">=</span><span class="p">(</span><span class="n">USER</span><span class="p">,</span> <span class="n">TOKEN</span><span class="p">))</span>
+</code></pre></div>
+<h2 id="_8">八、验证 + 回滚（自愈的安全网）<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="81">8.1 多维验证<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">verify_recovery</span><span class="p">(</span><span class="n">target</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">300</span><span class="p">):</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;自愈后必须验证&quot;&quot;&quot;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="k">while</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span> <span class="o">&lt;</span> <span class="n">timeout</span><span class="p">:</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>        <span class="c1"># 1. K8s 状态</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">check_k8s_healthy</span><span class="p">(</span><span class="n">target</span><span class="p">):</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span> <span class="k">continue</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>        <span class="c1"># 2. 业务指标恢复</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>        <span class="n">error_rate</span> <span class="o">=</span> <span class="n">query_prom</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;rate(http_5xx</span><span class="se">{{</span><span class="s1">service=&quot;</span><span class="si">{</span><span class="n">target</span><span class="si">}</span><span class="s1">&quot;</span><span class="se">}}</span><span class="s1">[1m])&#39;</span><span class="p">)</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>        <span class="k">if</span> <span class="n">error_rate</span> <span class="o">&gt;</span> <span class="mf">0.01</span><span class="p">:</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span> <span class="k">continue</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>        <span class="c1"># 3. 业务 SLO 不再 burn</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>        <span class="k">if</span> <span class="n">is_slo_burning</span><span class="p">(</span><span class="n">target</span><span class="p">):</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span> <span class="k">continue</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>        <span class="c1"># 4. 自定义健康检查</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">custom_health_check</span><span class="p">(</span><span class="n">target</span><span class="p">):</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span> <span class="k">continue</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a>        <span class="k">return</span> <span class="kc">True</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a>    <span class="k">return</span> <span class="kc">False</span>
+</code></pre></div>
+<h3 id="82">8.2 自动回滚<a class="headerlink" href="#82" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">safe_execute</span><span class="p">(</span><span class="n">action</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="n">snapshot</span> <span class="o">=</span> <span class="n">take_snapshot</span><span class="p">(</span><span class="n">target</span><span class="p">)</span>   <span class="c1"># 保存当前状态</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>        <span class="n">action</span><span class="o">.</span><span class="n">execute</span><span class="p">()</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">verify_recovery</span><span class="p">(</span><span class="n">target</span><span class="p">):</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>            <span class="n">rollback</span><span class="p">(</span><span class="n">snapshot</span><span class="p">)</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>            <span class="n">notify</span><span class="p">(</span><span class="s2">&quot;自愈失败，已回滚&quot;</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>            <span class="k">return</span> <span class="s2">&quot;rolled_back&quot;</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>        <span class="k">return</span> <span class="s2">&quot;success&quot;</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>        <span class="n">rollback</span><span class="p">(</span><span class="n">snapshot</span><span class="p">)</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>        <span class="n">notify</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;自愈异常 </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">，已回滚&quot;</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>        <span class="k">raise</span>
+</code></pre></div>
+<h3 id="83-canary">8.3 金丝雀自愈（Canary）<a class="headerlink" href="#83-canary" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>影响范围 &gt; 1 节点时:
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>  1. 先在 1 个节点试
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>  2. 等 5 分钟观察
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>  3. 没问题再批量推
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>对应工具:
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>  - Argo Rollouts
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>  - Flagger
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>  - 自研发布编排
+</code></pre></div>
+<h2 id="_9">九、审计与可观测<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 必须记录的字段<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">audit_log</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>    <span class="s2">&quot;timestamp&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>    <span class="s2">&quot;trigger&quot;</span><span class="p">:</span> <span class="s2">&quot;alert/manual/scheduled&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>    <span class="s2">&quot;alert_id&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>    <span class="s2">&quot;rule_id&quot;</span><span class="p">:</span> <span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>    <span class="s2">&quot;action&quot;</span><span class="p">:</span> <span class="s2">&quot;rollout_restart&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>    <span class="s2">&quot;target&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">},</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>    <span class="s2">&quot;executor&quot;</span><span class="p">:</span> <span class="s2">&quot;service-account-x&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>    <span class="s2">&quot;approver&quot;</span><span class="p">:</span> <span class="s2">&quot;system/zhangsan&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>    <span class="s2">&quot;risk_assessment&quot;</span><span class="p">:</span> <span class="s2">&quot;medium&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>    <span class="s2">&quot;pre_state&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">},</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>    <span class="s2">&quot;post_state&quot;</span><span class="p">:</span> <span class="p">{</span><span class="o">...</span><span class="p">},</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>    <span class="s2">&quot;verification&quot;</span><span class="p">:</span> <span class="s2">&quot;passed/failed&quot;</span><span class="p">,</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>    <span class="s2">&quot;duration_sec&quot;</span><span class="p">:</span> <span class="mi">45</span><span class="p">,</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>    <span class="s2">&quot;rollback&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>    <span class="s2">&quot;outcome&quot;</span><span class="p">:</span> <span class="s2">&quot;recovered&quot;</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="92">9.2 看板指标<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>自愈次数趋势
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>自愈成功率
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>TOP 自愈场景
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>回滚率
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>人工干预率
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>平均自愈时长 (MTTR-A)
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>按风险等级分布
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>按业务/团队分布
+</code></pre></div>
+<h3 id="93-review">9.3 周期性 Review<a class="headerlink" href="#93-review" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>每周:
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>  - 检查回滚率 &gt; 5% 的规则
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>  - 检查频次超限的规则
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>每月:
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>  - 评估新增自愈场景
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>  - 评估升降级（L2 → L3 / L3 → L4）
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>每季:
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>  - 自愈策略整体复盘
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>  - 黑白名单更新
+</code></pre></div>
+<h2 id="_10">十、开源工具<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h3 id="101">10.1 流程编排<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Argo Workflows</strong></td>
+<td style="text-align: left;">K8s 原生，DAG 编排</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Tekton</strong></td>
+<td style="text-align: left;">K8s 原生，CI/CD</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Apache Airflow</strong></td>
+<td style="text-align: left;">DAG 通用</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Temporal</strong></td>
+<td style="text-align: left;">持久化工作流</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>n8n</strong></td>
+<td style="text-align: left;">低代码</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Activepieces</strong></td>
+<td style="text-align: left;">开源 Zapier</td>
+</tr>
+</tbody>
+</table>
+<h3 id="102-k8s">10.2 K8s 自愈框架<a class="headerlink" href="#102-k8s" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Robusta</strong></td>
+<td style="text-align: left;">K8s 告警 + 自愈 + 通知</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>KubeAuto</strong></td>
+<td style="text-align: left;">K8s 自愈引擎</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>k8s-event-watcher</strong></td>
+<td style="text-align: left;">事件触发动作</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Kured</strong></td>
+<td style="text-align: left;">节点自动重启</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Descheduler</strong></td>
+<td style="text-align: left;">自动重新调度</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GoldPinger</strong></td>
+<td style="text-align: left;">健康检查 + 自愈</td>
+</tr>
+</tbody>
+</table>
+<h3 id="103">10.3 配置/运维自动化<a class="headerlink" href="#103" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Ansible</strong></td>
+<td style="text-align: left;">Agentless 配置</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SaltStack</strong></td>
+<td style="text-align: left;">大规模</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Puppet / Chef</strong></td>
+<td style="text-align: left;">老牌</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pulumi / Terraform</strong></td>
+<td style="text-align: left;">IaC</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Crossplane</strong></td>
+<td style="text-align: left;">K8s 控制平面</td>
+</tr>
+</tbody>
+</table>
+<h3 id="104-llm-agent">10.4 LLM Agent / 智能体<a class="headerlink" href="#104-llm-agent" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>HolmesGPT</strong></td>
+<td style="text-align: left;">K8s LLM 根因分析（开源）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>K8sGPT</strong></td>
+<td style="text-align: left;">K8s 诊断 LLM</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dify Agent</strong></td>
+<td style="text-align: left;">LLMOps</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>LangChain Agents</strong></td>
+<td style="text-align: left;">通用</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>AutoGen / CrewAI</strong></td>
+<td style="text-align: left;">多 Agent</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pod">十一、典型实战：Pod 自愈流水线<a class="headerlink" href="#pod" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># robusta-action 示例</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">robusta.api</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="nd">@action</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">crashloop_recover</span><span class="p">(</span><span class="n">event</span><span class="p">:</span> <span class="n">PodEvent</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="n">GenParams</span><span class="p">):</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>    <span class="n">pod</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">get_pod</span><span class="p">()</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>    <span class="c1"># 1. 收集证据</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>    <span class="n">logs</span> <span class="o">=</span> <span class="n">pod</span><span class="o">.</span><span class="n">get_logs</span><span class="p">(</span><span class="n">tail</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>    <span class="n">events</span> <span class="o">=</span> <span class="n">pod</span><span class="o">.</span><span class="n">get_events</span><span class="p">()</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>    <span class="c1"># 2. 风险评估</span>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>    <span class="k">if</span> <span class="n">pod</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">namespace</span> <span class="ow">in</span> <span class="p">[</span><span class="s2">&quot;kube-system&quot;</span><span class="p">,</span> <span class="s2">&quot;production-core&quot;</span><span class="p">]:</span>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>        <span class="n">send_alert</span><span class="p">(</span><span class="s2">&quot;生产核心命名空间不自动处理&quot;</span><span class="p">,</span> <span class="n">logs</span><span class="p">)</span>
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>        <span class="k">return</span>
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>    <span class="c1"># 3. 频次检查</span>
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>    <span class="k">if</span> <span class="n">recent_restart_count</span><span class="p">(</span><span class="n">pod</span><span class="p">,</span> <span class="n">hours</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">:</span>
+<a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a>        <span class="n">send_alert</span><span class="p">(</span><span class="s2">&quot;已多次自愈，转人工&quot;</span><span class="p">,</span> <span class="n">pod</span><span class="p">)</span>
+<a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>        <span class="k">return</span>
+<a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a>
+<a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a>    <span class="c1"># 4. 执行</span>
+<a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a>    <span class="k">if</span> <span class="n">pod</span><span class="o">.</span><span class="n">status</span><span class="o">.</span><span class="n">containerStatuses</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">restartCount</span> <span class="o">&gt;=</span> <span class="mi">3</span><span class="p">:</span>
+<a id="__codelineno-19-24" name="__codelineno-19-24" href="#__codelineno-19-24"></a>        <span class="c1"># 回滚到上一稳定版本</span>
+<a id="__codelineno-19-25" name="__codelineno-19-25" href="#__codelineno-19-25"></a>        <span class="n">deployment</span> <span class="o">=</span> <span class="n">pod</span><span class="o">.</span><span class="n">get_owner</span><span class="p">()</span>
+<a id="__codelineno-19-26" name="__codelineno-19-26" href="#__codelineno-19-26"></a>        <span class="n">deployment</span><span class="o">.</span><span class="n">rollout_undo</span><span class="p">()</span>
+<a id="__codelineno-19-27" name="__codelineno-19-27" href="#__codelineno-19-27"></a>
+<a id="__codelineno-19-28" name="__codelineno-19-28" href="#__codelineno-19-28"></a>        <span class="c1"># 5. 验证</span>
+<a id="__codelineno-19-29" name="__codelineno-19-29" href="#__codelineno-19-29"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">wait_for_healthy</span><span class="p">(</span><span class="n">deployment</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">180</span><span class="p">):</span>
+<a id="__codelineno-19-30" name="__codelineno-19-30" href="#__codelineno-19-30"></a>            <span class="n">deployment</span><span class="o">.</span><span class="n">rollout_undo</span><span class="p">()</span>  <span class="c1"># 二次回滚</span>
+<a id="__codelineno-19-31" name="__codelineno-19-31" href="#__codelineno-19-31"></a>            <span class="n">send_alert</span><span class="p">(</span><span class="s2">&quot;自愈失败，已二次回滚&quot;</span><span class="p">,</span> <span class="n">deployment</span><span class="p">)</span>
+<a id="__codelineno-19-32" name="__codelineno-19-32" href="#__codelineno-19-32"></a>        <span class="k">else</span><span class="p">:</span>
+<a id="__codelineno-19-33" name="__codelineno-19-33" href="#__codelineno-19-33"></a>            <span class="n">send_info</span><span class="p">(</span><span class="s2">&quot;自愈成功&quot;</span><span class="p">,</span> <span class="n">deployment</span><span class="p">)</span>
+<a id="__codelineno-19-34" name="__codelineno-19-34" href="#__codelineno-19-34"></a>
+<a id="__codelineno-19-35" name="__codelineno-19-35" href="#__codelineno-19-35"></a>    <span class="c1"># 6. 审计</span>
+<a id="__codelineno-19-36" name="__codelineno-19-36" href="#__codelineno-19-36"></a>    <span class="n">audit_log</span><span class="p">(</span><span class="s2">&quot;crashloop_recover&quot;</span><span class="p">,</span> <span class="n">pod</span><span class="p">,</span> <span class="s2">&quot;success&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="_11">十二、典型实战：节点磁盘满清理<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># Ansible playbook 自动执行</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Clean node disk</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">  </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{</span><span class="nv"> </span><span class="s">target_host</span><span class="nv"> </span><span class="s">}}&quot;</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">  </span><span class="nt">become</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">  </span><span class="nt">tasks</span><span class="p">:</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Check current disk usage</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;df</span><span class="nv"> </span><span class="s">/</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">tail</span><span class="nv"> </span><span class="s">-1</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">awk</span><span class="nv"> </span><span class="s">&#39;{print</span><span class="nv"> </span><span class="s">$5}&#39;</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">tr</span><span class="nv"> </span><span class="s">-d</span><span class="nv"> </span><span class="s">&#39;%&#39;&quot;</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">      </span><span class="nt">register</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disk_before</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Stop low-priority workload</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;systemctl</span><span class="nv"> </span><span class="s">stop</span><span class="nv"> </span><span class="s">low-priority.service&quot;</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="w">      </span><span class="nt">ignore_errors</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">yes</span>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Clean docker</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;docker</span><span class="nv"> </span><span class="s">system</span><span class="nv"> </span><span class="s">prune</span><span class="nv"> </span><span class="s">-af</span><span class="nv"> </span><span class="s">--volumes&quot;</span>
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>
+<a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Clean journal</span>
+<a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;journalctl</span><span class="nv"> </span><span class="s">--vacuum-size=1G&quot;</span>
+<a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a>
+<a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Clean apt cache</span>
+<a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;apt-get</span><span class="nv"> </span><span class="s">clean&quot;</span>
+<a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a>
+<a id="__codelineno-20-23" name="__codelineno-20-23" href="#__codelineno-20-23"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Truncate /tmp old files</span>
+<a id="__codelineno-20-24" name="__codelineno-20-24" href="#__codelineno-20-24"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;find</span><span class="nv"> </span><span class="s">/tmp</span><span class="nv"> </span><span class="s">-type</span><span class="nv"> </span><span class="s">f</span><span class="nv"> </span><span class="s">-atime</span><span class="nv"> </span><span class="s">+7</span><span class="nv"> </span><span class="s">-delete&quot;</span>
+<a id="__codelineno-20-25" name="__codelineno-20-25" href="#__codelineno-20-25"></a>
+<a id="__codelineno-20-26" name="__codelineno-20-26" href="#__codelineno-20-26"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Verify</span>
+<a id="__codelineno-20-27" name="__codelineno-20-27" href="#__codelineno-20-27"></a><span class="w">      </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;df</span><span class="nv"> </span><span class="s">/</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">tail</span><span class="nv"> </span><span class="s">-1</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">awk</span><span class="nv"> </span><span class="s">&#39;{print</span><span class="nv"> </span><span class="s">$5}&#39;</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">tr</span><span class="nv"> </span><span class="s">-d</span><span class="nv"> </span><span class="s">&#39;%&#39;&quot;</span>
+<a id="__codelineno-20-28" name="__codelineno-20-28" href="#__codelineno-20-28"></a><span class="w">      </span><span class="nt">register</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disk_after</span>
+<a id="__codelineno-20-29" name="__codelineno-20-29" href="#__codelineno-20-29"></a>
+<a id="__codelineno-20-30" name="__codelineno-20-30" href="#__codelineno-20-30"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Notify</span>
+<a id="__codelineno-20-31" name="__codelineno-20-31" href="#__codelineno-20-31"></a><span class="w">      </span><span class="nt">uri</span><span class="p">:</span>
+<a id="__codelineno-20-32" name="__codelineno-20-32" href="#__codelineno-20-32"></a><span class="w">        </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;{{</span><span class="nv"> </span><span class="s">webhook</span><span class="nv"> </span><span class="s">}}&quot;</span>
+<a id="__codelineno-20-33" name="__codelineno-20-33" href="#__codelineno-20-33"></a><span class="w">        </span><span class="nt">method</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">POST</span>
+<a id="__codelineno-20-34" name="__codelineno-20-34" href="#__codelineno-20-34"></a><span class="w">        </span><span class="nt">body_format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">json</span>
+<a id="__codelineno-20-35" name="__codelineno-20-35" href="#__codelineno-20-35"></a><span class="w">        </span><span class="nt">body</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="s">&quot;text&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;{{</span><span class="nv"> </span><span class="s">inventory_hostname</span><span class="nv"> </span><span class="s">}}</span><span class="nv"> </span><span class="s">disk:</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">disk_before.stdout</span><span class="nv"> </span><span class="s">}}%</span><span class="nv"> </span><span class="s">→</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">disk_after.stdout</span><span class="nv"> </span><span class="s">}}%&quot;</span><span class="p p-Indicator">}</span>
+</code></pre></div>
+<h2 id="_12">十三、常见坑（生产血泪）<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>自愈循环</strong></td>
+<td style="text-align: left;">频次限制 + 熔断</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>风险评估缺失</strong></td>
+<td style="text-align: left;">必上风险等级 + 黑白名单</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有验证就完事</strong></td>
+<td style="text-align: left;">必须 verify_recovery</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有回滚</strong></td>
+<td style="text-align: left;">失败必回滚</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>审计不全</strong></td>
+<td style="text-align: left;">输入/输出/状态都记录</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>直接执行 LLM 建议</strong></td>
+<td style="text-align: left;">LLM 推荐 ≠ 执行</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>静默执行</strong></td>
+<td style="text-align: left;">必通知 + ChatOps</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有"叫停"按钮</strong></td>
+<td style="text-align: left;">一键暂停所有自动化</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨集群盲操作</strong></td>
+<td style="text-align: left;">集群隔离 + 单集群确认</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>凌晨自动改配置</strong></td>
+<td style="text-align: left;">变更窗口 + 业务时段限制</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>删除类操作上自动</strong></td>
+<td style="text-align: left;">永远人工</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DB 自愈</strong></td>
+<td style="text-align: left;">数据库类操作慎用自动</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>测试不充分</strong></td>
+<td style="text-align: left;">必先在 staging / 演练验证</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>权限过大</strong></td>
+<td style="text-align: left;">最小权限 + 审计</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>依赖单点</strong></td>
+<td style="text-align: left;">自愈系统本身要高可用</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checklist">十四、最佳实践清单（Checklist）<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>设计:
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>☐ 明确自动化等级（L0-L5）
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>☐ 风险评估有清晰规则
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>☐ 黑白名单完整
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>☐ 频次限制 + 熔断
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>执行:
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>☐ 严格审批（按风险）
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>☐ Pre/Post 快照
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>☐ 多维验证
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>☐ 自动回滚
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>☐ 金丝雀模式
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>可观测:
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>☐ 全量审计日志
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>☐ 自愈看板
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>☐ 周期 Review
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>☐ 异常告警（自愈失败/超限）
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a>安全:
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a>☐ 最小权限 (RBAC)
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a>☐ 操作脱敏审计
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a>☐ 一键 Kill Switch
+<a id="__codelineno-21-24" name="__codelineno-21-24" href="#__codelineno-21-24"></a>☐ 跨集群隔离
+<a id="__codelineno-21-25" name="__codelineno-21-25" href="#__codelineno-21-25"></a>
+<a id="__codelineno-21-26" name="__codelineno-21-26" href="#__codelineno-21-26"></a>人机协作:
+<a id="__codelineno-21-27" name="__codelineno-21-27" href="#__codelineno-21-27"></a>☐ ChatOps 确认通道
+<a id="__codelineno-21-28" name="__codelineno-21-28" href="#__codelineno-21-28"></a>☐ 失败必通知
+<a id="__codelineno-21-29" name="__codelineno-21-29" href="#__codelineno-21-29"></a>☐ 成功也通知（可静默）
+<a id="__codelineno-21-30" name="__codelineno-21-30" href="#__codelineno-21-30"></a>☐ 持续闭环改进
+</code></pre></div>
+<h2 id="_13">十五、学习路径<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>入门（1 周）:
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>  1. 写第一个 K8s 自愈脚本（rollout restart）
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>  2. Robusta 或 Argo 跑通
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>  3. 接入告警 → 触发自愈
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>中级（1 个月）:
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>  4. 风险评估 + 黑白名单
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>  5. 验证 + 回滚机制
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>  6. ChatOps 一键确认
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>  7. 审计 + 看板
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>高级（3 个月）:
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>  8. LLM Agent 推荐自愈
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>  9. 多场景规则库
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>  10. 自愈成功率优化
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>  11. 演练 + 故障注入
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a>
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a>专家:
+<a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a>  12. RL / 自适应决策
+<a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a>  13. 自愈平台化
+<a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a>  14. 跨团队自愈生态
+</code></pre></div>
+<h2 id="_14">十六、参考资料<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>书:
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>  - 《Site Reliability Engineering》(Google)
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>  - 《Chaos Engineering》(O&#39;Reilly)
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>  - 《Building Secure &amp; Reliable Systems》(Google)
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>博客:
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>  - Netflix Chaos Engineering
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>  - Uber SRE Blog
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>  - 字节跳动稳定性建设
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>  - 阿里 SRE 实践
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>开源:
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>  - Robusta: https://github.com/robusta-dev/robusta
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>  - HolmesGPT: https://github.com/robusta-dev/holmesgpt
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>  - K8sGPT: https://github.com/k8sgpt-ai/k8sgpt
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a>  - Argo Workflows: https://argoproj.github.io/
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a>  - Ansible: https://ansible.com/
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a>
+<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>混沌工程:
+<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a>  - ChaosMesh
+<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a>  - LitmusChaos
+<a id="__codelineno-23-22" name="__codelineno-23-22" href="#__codelineno-23-22"></a>  - Chaos Monkey
+<a id="__codelineno-23-23" name="__codelineno-23-23" href="#__codelineno-23-23"></a>  - Gremlin
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：自动化修复是 <strong>AIOps 的"高压电"</strong>——做对了能省大量人力，做错了可能毁掉整个生产环境。<strong>先标准化 → 脚本化 → 半自动 → 全自动</strong>，每一步都要稳定半年。<strong>风险评估 + 黑白名单 + 频次熔断 + 自动回滚</strong> 是四大安全网，<strong>LLM 推荐 ≠ LLM 执行</strong> 是底线。中小团队建议从 <strong>K8s Pod 自愈 + 磁盘清理 + Pod 扩容</strong> 三个低风险场景起步，做稳一年再扩展。</p>
+</blockquote>
 
 
 
