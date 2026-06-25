@@ -8,12 +8,11 @@ theme:
   name: material
   language: zh
   features:
-    - navigation.sections
-    - navigation.expand
     - navigation.path
     - navigation.indexes
     - navigation.top
     - navigation.footer
+    - navigation.prune
     - toc.follow
     - search.suggest
     - search.highlight
