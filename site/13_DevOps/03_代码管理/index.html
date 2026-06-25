@@ -1306,10 +1306,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Git 工作流
+        一、为什么代码管理重要
       
     </span>
   </a>
@@ -1317,10 +1317,870 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#git" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代码审查规范
+        二、Git 核心概念再梳理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、Git 核心概念再梳理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Git 内部模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 关键命令分层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 命令速查
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、Git 工作流（团队的根本选择）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、Git 工作流（团队的根本选择）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-gitflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 GitFlow（重型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-github-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 GitHub Flow（简化版）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-gitlab-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 GitLab Flow（折中）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-trunk-based-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Trunk-Based Development（精英推荐）⭐⭐⭐⭐⭐
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 选型决策表
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventional-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、提交规范（Conventional Commits）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、提交规范（Conventional Commits）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 标准格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 自动生成 Changelog + 版本号
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pr-mr-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、PR / MR 文化（Code Review）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、PR / MR 文化（Code Review）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Code Review 原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 PR 模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 自动化辅助
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-reviewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 自动化 Reviewer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、代码托管平台对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、代码托管平台对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 主流平台
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-gitlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 GitLab 私有化部署（国内主流）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-gitlab-vs-gitlab-ceee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 极狐 GitLab vs GitLab CE/EE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monorepo-vs-polyrepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、Monorepo vs Polyrepo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、Monorepo vs Polyrepo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-monorepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Monorepo 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-monorepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Monorepo 实战要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、大仓库优化技术
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、大仓库优化技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 性能问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-shallow-sparse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Shallow + Sparse 示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-git-lfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Git LFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-dvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 替代方案：DVC（数据 + 模型 版本）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、安全治理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、安全治理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 必装清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-pre-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Pre-commit 钩子
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-secret" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Secret 已泄漏怎么办
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、Hooks 自动化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、Hooks 自动化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 客户端钩子
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-gitlab-server-side-github-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 服务端钩子（GitLab Server-side / GitHub App）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、版本与发布
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、版本与发布">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-semver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 语义化版本（SemVer）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Tag 策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 自动发布
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、协作流程（团队）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、协作流程（团队）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 分支保护示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 分支命名规范
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-rfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 大型变更（RFC 流程）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-lfs-submodule-subtree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、Git LFS / Submodule / Subtree
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十三、Git LFS / Submodule / Subtree">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-submodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 Submodule（子模块）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-subtree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 Subtree（更简单的替代）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、Git 常见操作场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十四、Git 常见操作场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 撤销错误推送
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 把 commit 拆分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 合并 commit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144-bug" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.4 二分查找 bug
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#145-reflog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.5 救命 reflog
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#146-cherry-pick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.6 仅 cherry-pick 部分提交
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#147" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.7 暂存当前工作
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、AI 辅助代码管理（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十五、AI 辅助代码管理（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-ai-commit-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.1 AI 写 commit message
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-ai-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.2 AI Code Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.3 AI 总结仓库
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、典型坑（生产血泪）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十七、最佳实践 Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十八、技术栈推荐（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十八、技术栈推荐（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#181-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.1 小团队（&lt; 30 人）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#182-30-300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.2 中型团队（30-300 人）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#183-monorepo-300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.3 大型 / Monorepo（&gt; 300 人）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十九、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二十、参考资料
       
     </span>
   </a>
@@ -1676,10 +2536,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Git 工作流
+        一、为什么代码管理重要
       
     </span>
   </a>
@@ -1687,10 +2547,870 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#git" class="md-nav__link">
     <span class="md-ellipsis">
       
-        代码审查规范
+        二、Git 核心概念再梳理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、Git 核心概念再梳理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Git 内部模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 关键命令分层
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 命令速查
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、Git 工作流（团队的根本选择）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、Git 工作流（团队的根本选择）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-gitflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 GitFlow（重型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-github-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 GitHub Flow（简化版）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-gitlab-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 GitLab Flow（折中）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-trunk-based-development" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Trunk-Based Development（精英推荐）⭐⭐⭐⭐⭐
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 选型决策表
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventional-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、提交规范（Conventional Commits）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、提交规范（Conventional Commits）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 标准格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 自动生成 Changelog + 版本号
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pr-mr-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、PR / MR 文化（Code Review）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、PR / MR 文化（Code Review）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Code Review 原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-pr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 PR 模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 自动化辅助
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-reviewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 自动化 Reviewer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、代码托管平台对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、代码托管平台对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 主流平台
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-gitlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 GitLab 私有化部署（国内主流）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-gitlab-vs-gitlab-ceee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 极狐 GitLab vs GitLab CE/EE
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monorepo-vs-polyrepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、Monorepo vs Polyrepo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、Monorepo vs Polyrepo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-monorepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Monorepo 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-monorepo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Monorepo 实战要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、大仓库优化技术
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、大仓库优化技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 性能问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-shallow-sparse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Shallow + Sparse 示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-git-lfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Git LFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-dvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 替代方案：DVC（数据 + 模型 版本）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、安全治理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、安全治理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 必装清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-pre-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Pre-commit 钩子
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-secret" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Secret 已泄漏怎么办
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、Hooks 自动化
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、Hooks 自动化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 客户端钩子
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-gitlab-server-side-github-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 服务端钩子（GitLab Server-side / GitHub App）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、版本与发布
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、版本与发布">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-semver" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 语义化版本（SemVer）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-tag" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Tag 策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 自动发布
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、协作流程（团队）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、协作流程（团队）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 分支保护示例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 分支命名规范
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123-rfc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 大型变更（RFC 流程）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-lfs-submodule-subtree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、Git LFS / Submodule / Subtree
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十三、Git LFS / Submodule / Subtree">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131-submodule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 Submodule（子模块）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132-subtree" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 Subtree（更简单的替代）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、Git 常见操作场景
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十四、Git 常见操作场景">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 撤销错误推送
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 把 commit 拆分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-commit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 合并 commit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#144-bug" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.4 二分查找 bug
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#145-reflog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.5 救命 reflog
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#146-cherry-pick" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.6 仅 cherry-pick 部分提交
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#147" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.7 暂存当前工作
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、AI 辅助代码管理（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十五、AI 辅助代码管理（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-ai-commit-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.1 AI 写 commit message
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-ai-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.2 AI Code Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.3 AI 总结仓库
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、典型坑（生产血泪）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十七、最佳实践 Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十八、技术栈推荐（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十八、技术栈推荐（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#181-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.1 小团队（&lt; 30 人）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#182-30-300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.2 中型团队（30-300 人）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#183-monorepo-300" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.3 大型 / Monorepo（&gt; 300 人）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十九、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二十、参考资料
       
     </span>
   </a>
@@ -1766,40 +3486,1207 @@
 
 
 <h1 id="_1">代码管理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="git">Git 工作流<a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Git 是开发者的"母语"，但<strong>90% 的人只会 add/commit/push/pull 这四招</strong>。代码管理 = Git 工作流 + 分支策略 + 代码托管平台 + 协作流程 + 安全治理，是 DevOps 第一公里。</p>
+</blockquote>
+<h2 id="_2">一、为什么代码管理重要<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>代码管理决定:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  - 团队协作效率（合并冲突、Review 时长）
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  - 发布节奏（一周一次 vs 一天 N 次）
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  - 故障回滚速度（找到那次提交多久）
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  - 知识传承（commit message 就是项目史）
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>  - 安全合规（谁改了什么、什么时候）
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>  - 工程文化（PR 文化 / Trunk-Based）
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>→ 烂的代码管理会拖死再好的 CI/CD
+</code></pre></div>
+<h2 id="git">二、Git 核心概念再梳理<a class="headerlink" href="#git" title="Permanent link">&para;</a></h2>
+<h3 id="21-git">2.1 Git 内部模型<a class="headerlink" href="#21-git" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>4 种对象:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  Blob       文件内容
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  Tree       目录结构
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  Commit     提交（指向 tree + parent commit）
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  Tag        标签
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>3 个区域:
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  Working Directory  工作区
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  Index/Staging      暂存区
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  Repository         本地仓库
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>+ Remote             远程仓库
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>引用:
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  HEAD               当前指向（commit/branch）
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  branch             分支引用（指向 commit）
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  tag                标签（不可变）
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  reflog             本地操作历史（救命）
+</code></pre></div>
+<h3 id="22">2.2 关键命令分层<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>基础（每天用）:
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  add commit push pull status diff log
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>进阶（每周用）:
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  branch checkout merge rebase reset
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>  stash cherry-pick tag
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>高阶（救命用）:
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>  reflog reset --hard
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>  rebase -i (interactive)
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>  bisect (二分查找)
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>  filter-branch / filter-repo
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>  worktree
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>  submodule / subtree
+</code></pre></div>
+<h3 id="23">2.3 命令速查<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># 配置</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Your Name&quot;</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;you@company.com&quot;</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>core.autocrlf<span class="w"> </span>input<span class="w">    </span><span class="c1"># Linux/Mac</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>pull.rebase<span class="w"> </span><span class="nb">true</span><span class="w">       </span><span class="c1"># pull 用 rebase</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>init.defaultBranch<span class="w"> </span>main
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="c1"># 日志查看</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>--graph<span class="w"> </span>--all<span class="w"> </span>--decorate
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>git<span class="w"> </span>log<span class="w"> </span>-p<span class="w"> </span>path/file<span class="w">                       </span><span class="c1"># 文件历史</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>git<span class="w"> </span>log<span class="w"> </span>--author<span class="o">=</span><span class="s2">&quot;zhangsan&quot;</span><span class="w"> </span>--since<span class="o">=</span><span class="s2">&quot;1 month ago&quot;</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>git<span class="w"> </span>log<span class="w"> </span>--grep<span class="o">=</span><span class="s2">&quot;bug&quot;</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>git<span class="w"> </span>shortlog<span class="w"> </span>-sn<span class="w">                            </span><span class="c1"># 提交者排名</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="c1"># 比较</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>git<span class="w"> </span>diff<span class="w">                                    </span><span class="c1"># 工作区 vs 暂存区</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>git<span class="w"> </span>diff<span class="w"> </span>--staged<span class="w">                           </span><span class="c1"># 暂存区 vs HEAD</span>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>git<span class="w"> </span>diff<span class="w"> </span>main..feature<span class="w">                      </span><span class="c1"># 分支间</span>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>git<span class="w"> </span>diff<span class="w"> </span>main...feature<span class="w">                     </span><span class="c1"># feature 自分叉以来的</span>
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a><span class="c1"># 撤销</span>
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>git<span class="w"> </span>restore<span class="w"> </span>&lt;file&gt;<span class="w">                          </span><span class="c1"># 撤销工作区改动</span>
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>git<span class="w"> </span>restore<span class="w"> </span>--staged<span class="w"> </span>&lt;file&gt;<span class="w">                 </span><span class="c1"># 撤销暂存</span>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>git<span class="w"> </span>reset<span class="w"> </span>--soft<span class="w"> </span>HEAD~1<span class="w">                     </span><span class="c1"># 回退保留改动</span>
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>git<span class="w"> </span>reset<span class="w"> </span>--mixed<span class="w"> </span>HEAD~1<span class="w">                    </span><span class="c1"># 回退保留工作区</span>
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>HEAD~1<span class="w">                     </span><span class="c1"># 回退完全丢弃 ⚠️</span>
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>git<span class="w"> </span>revert<span class="w"> </span>&lt;commit&gt;<span class="w">                         </span><span class="c1"># 反向提交（安全）</span>
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>
+<a id="__codelineno-3-29" name="__codelineno-3-29" href="#__codelineno-3-29"></a><span class="c1"># 分支</span>
+<a id="__codelineno-3-30" name="__codelineno-3-30" href="#__codelineno-3-30"></a>git<span class="w"> </span>switch<span class="w"> </span>main<span class="w">                             </span><span class="c1"># 切换</span>
+<a id="__codelineno-3-31" name="__codelineno-3-31" href="#__codelineno-3-31"></a>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>feature<span class="w">                       </span><span class="c1"># 创建并切换</span>
+<a id="__codelineno-3-32" name="__codelineno-3-32" href="#__codelineno-3-32"></a>git<span class="w"> </span>branch<span class="w"> </span>-d<span class="w"> </span>branch<span class="w">                        </span><span class="c1"># 删除已合并</span>
+<a id="__codelineno-3-33" name="__codelineno-3-33" href="#__codelineno-3-33"></a>git<span class="w"> </span>branch<span class="w"> </span>-D<span class="w"> </span>branch<span class="w">                        </span><span class="c1"># 强删</span>
+<a id="__codelineno-3-34" name="__codelineno-3-34" href="#__codelineno-3-34"></a>git<span class="w"> </span>branch<span class="w"> </span>-m<span class="w"> </span>old<span class="w"> </span>new<span class="w">                       </span><span class="c1"># 重命名</span>
+<a id="__codelineno-3-35" name="__codelineno-3-35" href="#__codelineno-3-35"></a>
+<a id="__codelineno-3-36" name="__codelineno-3-36" href="#__codelineno-3-36"></a><span class="c1"># 合并</span>
+<a id="__codelineno-3-37" name="__codelineno-3-37" href="#__codelineno-3-37"></a>git<span class="w"> </span>merge<span class="w"> </span>feature<span class="w">                           </span><span class="c1"># 普通合并</span>
+<a id="__codelineno-3-38" name="__codelineno-3-38" href="#__codelineno-3-38"></a>git<span class="w"> </span>merge<span class="w"> </span>--squash<span class="w"> </span>feature<span class="w">                  </span><span class="c1"># 压缩合并</span>
+<a id="__codelineno-3-39" name="__codelineno-3-39" href="#__codelineno-3-39"></a>git<span class="w"> </span>merge<span class="w"> </span>--no-ff<span class="w"> </span>feature<span class="w">                   </span><span class="c1"># 保留合并节点</span>
+<a id="__codelineno-3-40" name="__codelineno-3-40" href="#__codelineno-3-40"></a>git<span class="w"> </span>rebase<span class="w"> </span>main<span class="w">                             </span><span class="c1"># 变基</span>
+<a id="__codelineno-3-41" name="__codelineno-3-41" href="#__codelineno-3-41"></a>
+<a id="__codelineno-3-42" name="__codelineno-3-42" href="#__codelineno-3-42"></a><span class="c1"># 拉取与推送</span>
+<a id="__codelineno-3-43" name="__codelineno-3-43" href="#__codelineno-3-43"></a>git<span class="w"> </span>fetch<span class="w"> </span>--all<span class="w"> </span>--prune<span class="w">                     </span><span class="c1"># 抓取并清理失效远程</span>
+<a id="__codelineno-3-44" name="__codelineno-3-44" href="#__codelineno-3-44"></a>git<span class="w"> </span>pull<span class="w"> </span>--rebase<span class="w"> </span>origin<span class="w"> </span>main
+<a id="__codelineno-3-45" name="__codelineno-3-45" href="#__codelineno-3-45"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+<a id="__codelineno-3-46" name="__codelineno-3-46" href="#__codelineno-3-46"></a>git<span class="w"> </span>push<span class="w"> </span>--force-with-lease<span class="w">                 </span><span class="c1"># 安全的强推</span>
+<a id="__codelineno-3-47" name="__codelineno-3-47" href="#__codelineno-3-47"></a>
+<a id="__codelineno-3-48" name="__codelineno-3-48" href="#__codelineno-3-48"></a><span class="c1"># 暂存</span>
+<a id="__codelineno-3-49" name="__codelineno-3-49" href="#__codelineno-3-49"></a>git<span class="w"> </span>stash<span class="w"> </span>push<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;WIP&quot;</span>
+<a id="__codelineno-3-50" name="__codelineno-3-50" href="#__codelineno-3-50"></a>git<span class="w"> </span>stash<span class="w"> </span>list
+<a id="__codelineno-3-51" name="__codelineno-3-51" href="#__codelineno-3-51"></a>git<span class="w"> </span>stash<span class="w"> </span>pop<span class="w"> </span>/<span class="w"> </span>apply<span class="w"> </span>/<span class="w"> </span>drop
+</code></pre></div>
+<h2 id="git_1">三、Git 工作流（团队的根本选择）<a class="headerlink" href="#git_1" title="Permanent link">&para;</a></h2>
+<h3 id="31-gitflow">3.1 GitFlow（重型）<a class="headerlink" href="#31-gitflow" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>master                ←  生产
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  ↑
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>release/x.y.z          ←  发布分支
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  ↑
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>develop               ←  集成分支
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>  ↑
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>feature/xxx           ←  特性分支
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  ↑
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>hotfix/xxx            ←  热修
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>适合:
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>  ✅ 强版本节奏（每月/季度）
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>  ✅ 多版本并存
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>  ✅ 客户端产品
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>  ✅ ToB / 私有化部署
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>不适合:
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>  ❌ 持续交付（每天发布）
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>  ❌ SaaS 单一版本
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>  ❌ 小团队（流程太重）
+</code></pre></div>
+<h3 id="32-github-flow">3.2 GitHub Flow（简化版）<a class="headerlink" href="#32-github-flow" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>main                  ← 唯一长期分支
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  ↑
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>feature/xxx           ← 短命特性分支
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  ↑
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>PR + Review + CI
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>  ↑
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>合入 main → 自动部署
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>适合:
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>  ✅ SaaS / 持续交付
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>  ✅ 小到中型团队
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>  ✅ 开源项目
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>注意:
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>  - feature 分支寿命 &lt; 1 周
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>  - 必须 PR + Review
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>  - main 永远可发布
+</code></pre></div>
+<h3 id="33-gitlab-flow">3.3 GitLab Flow（折中）<a class="headerlink" href="#33-gitlab-flow" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>main                  ← 持续集成
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  ↓
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>production            ← 生产追主线
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  ↓
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>release/x.y            ← 老版本维护
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>或者环境分支:
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  main → pre-prod → production
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>适合:
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>  ✅ 多环境 + 持续交付
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>  ✅ ToC 业务
+</code></pre></div>
+<h3 id="34-trunk-based-development">3.4 Trunk-Based Development（精英推荐）⭐⭐⭐⭐⭐<a class="headerlink" href="#34-trunk-based-development" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>main (trunk)          ← 唯一长期分支
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  ↑↓ 
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>short-lived branch    ← 寿命 &lt; 1 天
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  ↑
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>PR + CI 通过 → 合 main
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>  ↑
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>Feature Flag 控制启用
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>特征:
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>  ✅ 极短分支生命（&lt; 24h）
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>  ✅ Trunk 永远可发布
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>  ✅ Feature Flags 替代分支
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>  ✅ 持续集成（每天合数次）
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>  ✅ 强测试覆盖
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>为什么是&quot;精英方法&quot;:
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>  - Google / Facebook / Netflix / Amazon 都用
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>  - DORA 报告显示与高绩效正相关
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>  - 减少合并冲突
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>  - 减少集成地狱
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>挑战:
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>  ⚠️ 需要强 CI + 单元测试覆盖
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>  ⚠️ 需要 Feature Flags 系统
+<a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>  ⚠️ 需要良好工程文化
+</code></pre></div>
+<h3 id="35">3.5 选型决策表<a class="headerlink" href="#35" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">工作流</th>
-<th style="text-align: left;">特点</th>
-<th style="text-align: left;">适用场景</th>
+<th style="text-align: left;">团队 / 业务</th>
+<th style="text-align: left;">推荐</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Trunk-based</td>
-<td style="text-align: left;">频繁合并到 main</td>
-<td style="text-align: left;">CI/CD 成熟团队</td>
-</tr>
-<tr>
+<td style="text-align: left;"><strong>开源项目</strong></td>
 <td style="text-align: left;">GitHub Flow</td>
-<td style="text-align: left;">feature branch → PR → main</td>
-<td style="text-align: left;">通用</td>
 </tr>
 <tr>
+<td style="text-align: left;"><strong>小团队 SaaS</strong></td>
+<td style="text-align: left;">GitHub Flow / Trunk-Based</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>中型 SaaS</strong></td>
+<td style="text-align: left;">Trunk-Based + Feature Flags</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>大型互联网</strong></td>
+<td style="text-align: left;">Trunk-Based + Monorepo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>强版本 ToB</strong></td>
 <td style="text-align: left;">GitFlow</td>
-<td style="text-align: left;">develop/release/hotfix 多分支</td>
-<td style="text-align: left;">版本发布型产品</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>多环境 + 法规重</strong></td>
+<td style="text-align: left;">GitLab Flow</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_2">代码审查规范<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>所有代码变更必须通过 MR/PR</li>
-<li>至少 1 人 Review 通过才能合并</li>
-<li>Review 关注：逻辑正确性 / 安全性 / 性能 / 可维护性</li>
-<li>CI 流水线必须全部通过</li>
-</ul>
+<h2 id="conventional-commits">四、提交规范（Conventional Commits）<a class="headerlink" href="#conventional-commits" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 标准格式<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>&lt;body&gt;
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>&lt;footer&gt;
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>type:
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>  feat:     新功能
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>  fix:      修 bug
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>  docs:     文档
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>  style:    格式（不影响代码运行）
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>  refactor: 重构（既不是新功能也不是修 bug）
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>  perf:     性能优化
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>  test:     测试
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>  build:    构建系统/依赖
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>  ci:       CI 配置
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>  chore:    其他杂项
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>  revert:   回滚
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>scope: 影响范围（auth/api/db/...）
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>subject: 简短描述（≤ 50 字符）
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>body: 详细说明（可选）
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a>footer: BREAKING CHANGE / Closes #123（可选）
+</code></pre></div>
+<h3 id="42">4.2 示例<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>feat(order): 支持优惠券抵扣下单
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>- 新增 coupon_id 字段到订单表
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>- 抵扣金额计入订单 promotion_amount
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>- 兼容老 API（无 coupon_id 时按原逻辑）
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>Closes #1024
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>Co-authored-by: lisi &lt;lisi@company.com&gt;
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>---
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>fix(payment): 修复退款金额超过订单金额的边界 Bug
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>退款金额计算时未考虑历史退款，导致可能超额。
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>现加上历史退款累计校验。
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>Closes #1180
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>---
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>feat(api)!: 重构用户接口，移除已过时字段
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>BREAKING CHANGE: GET /v1/user 不再返回 deprecated_field
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>迁移至 GET /v2/user 或使用 GET /v1/user?legacy=true
+</code></pre></div>
+<h3 id="43">4.3 工具<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Commitizen（交互式提交）</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>commitizen<span class="w"> </span>cz-conventional-changelog
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="nb">echo</span><span class="w"> </span><span class="s1">&#39;{&quot;path&quot;: &quot;cz-conventional-changelog&quot;}&#39;</span><span class="w"> </span>&gt;<span class="w"> </span>~/.czrc
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>git<span class="w"> </span>cz
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="c1"># commitlint + husky（提交前校验）</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>npm<span class="w"> </span>install<span class="w"> </span>--save-dev<span class="w"> </span>@commitlint/cli<span class="w"> </span>@commitlint/config-conventional<span class="w"> </span>husky
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;module.exports = {extends: [&#39;@commitlint/config-conventional&#39;]};&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>commitlint.config.js
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>npx<span class="w"> </span>husky<span class="w"> </span>add<span class="w"> </span>.husky/commit-msg<span class="w"> </span><span class="s1">&#39;npx --no -- commitlint --edit $1&#39;</span>
+</code></pre></div>
+<h3 id="44-changelog">4.4 自动生成 Changelog + 版本号<a class="headerlink" href="#44-changelog" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># release-please / standard-version / semantic-release</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>standard-version
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>standard-version<span class="w">    </span><span class="c1"># 自动按 commit 类型 bump 版本 + 生成 CHANGELOG.md</span>
+</code></pre></div>
+<h2 id="pr-mr-code-review">五、PR / MR 文化（Code Review）<a class="headerlink" href="#pr-mr-code-review" title="Permanent link">&para;</a></h2>
+<h3 id="51-code-review">5.1 Code Review 原则<a class="headerlink" href="#51-code-review" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>作者要做:
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>  ✅ 描述清楚（What + Why）
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>  ✅ 关联 Issue
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>  ✅ 控制 diff 大小（&lt; 400 行最佳）
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>  ✅ 自审一遍再发
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>  ✅ 截屏 + 测试结果
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>Reviewer 要做:
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>  ✅ 24h 内响应
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>  ✅ 看设计、不只看语法
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>  ✅ 提建议而非命令
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>  ✅ 抓出可读性 / 风险 / 测试
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>  ✅ Approve / Request Changes 明确
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>共同遵守:
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>  ❌ 不要 LGTM 万岁（必须实质 Review）
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>  ❌ 不要个人攻击
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>  ❌ 不要堵塞低级问题（拼写交给 Lint）
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>  ❌ 不要小问题打回整个 PR
+</code></pre></div>
+<h3 id="52-pr">5.2 PR 模板<a class="headerlink" href="#52-pr" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="gu">## What</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>本次改动做了什么（一句话）
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="gu">## Why</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>为什么要这么做（业务背景 / 性能 / Bug）
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="gu">## How</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>关键设计/实现思路
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="gu">## Test</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="k">- [ ]</span> 单元测试 已加
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="k">- [ ]</span> 集成测试 已加
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="k">- [ ]</span> 手工测试 已过
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="k">- [ ]</span> 性能影响 已评估
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="gu">## Risk</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>风险点 / 回滚方案
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="gu">## Screenshots</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a>（如有 UI 改动）
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="gu">## Checklist</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a><span class="k">- [ ]</span> 自测通过
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="k">- [ ]</span> CHANGELOG 已更新
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="k">- [ ]</span> 文档已更新
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a><span class="k">- [ ]</span> 是否需要 DBA 介入
+<a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a><span class="k">- [ ]</span> 是否需要灰度
+<a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a>
+<a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a>Closes <span class="ni">#xxx</span>
+</code></pre></div>
+<h3 id="53">5.3 自动化辅助<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># CODEOWNERS（谁该 review）</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="c1"># .github/CODEOWNERS</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="l l-Scalar l-Scalar-Plain">/services/order/        @order-team</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="l l-Scalar l-Scalar-Plain">/services/payment/      @payment-team @security-team</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="l l-Scalar l-Scalar-Plain">/infra/                 @sre-team</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="l l-Scalar l-Scalar-Plain">*.go                    @backend-leads</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="l l-Scalar l-Scalar-Plain"># Branch Protection 规则</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="l l-Scalar l-Scalar-Plain">require_approvals</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="nt">require_codeowners</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="nt">require_status_checks</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">ci/lint</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">ci/test</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">ci/security</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="nt">require_signed_commits</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="nt">restrict_push</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="nt">delete_after_merge</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+<h3 id="54-reviewer">5.4 自动化 Reviewer<a class="headerlink" href="#54-reviewer" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Reviewer-lottery</strong></td>
+<td style="text-align: left;">自动指派</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dangerfile</strong></td>
+<td style="text-align: left;">自动审查规则</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sourcery / CodeRabbit</strong></td>
+<td style="text-align: left;">AI Review</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GitHub Copilot for PR</strong></td>
+<td style="text-align: left;">AI Review</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DeepCode / Snyk</strong></td>
+<td style="text-align: left;">安全 Review</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">六、代码托管平台对比<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 主流平台<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">平台</th>
+<th style="text-align: left;">类型</th>
+<th style="text-align: center;">私有化</th>
+<th style="text-align: center;">国内主流</th>
+<th style="text-align: left;">特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>GitHub</strong></td>
+<td style="text-align: left;">SaaS</td>
+<td style="text-align: center;">Enterprise</td>
+<td style="text-align: center;">⭐⭐</td>
+<td style="text-align: left;">国际主流，社区最大</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GitLab CE/EE</strong></td>
+<td style="text-align: left;">自建/SaaS</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">国内私有化首选</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Bitbucket</strong></td>
+<td style="text-align: left;">SaaS / Data Center</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⭐⭐</td>
+<td style="text-align: left;">Atlassian 系</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gitea</strong></td>
+<td style="text-align: left;">开源轻量</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: left;">小团队私有</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gogs</strong></td>
+<td style="text-align: left;">开源</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⭐⭐</td>
+<td style="text-align: left;">Gitea 前身</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Forgejo</strong></td>
+<td style="text-align: left;">Gitea Fork</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⭐⭐</td>
+<td style="text-align: left;">社区驱动</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>AWS CodeCommit</strong></td>
+<td style="text-align: left;">云服务</td>
+<td style="text-align: center;">AWS</td>
+<td style="text-align: center;">⭐</td>
+<td style="text-align: left;">AWS 生态</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>腾讯 CODING</strong></td>
+<td style="text-align: left;">国产</td>
+<td style="text-align: center;">SaaS</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: left;">一体化</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>阿里云 Codeup</strong></td>
+<td style="text-align: left;">国产</td>
+<td style="text-align: center;">SaaS</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: left;">与云效集成</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>华为云 CodeArts Repo</strong></td>
+<td style="text-align: left;">国产</td>
+<td style="text-align: center;">SaaS</td>
+<td style="text-align: center;">⭐⭐⭐</td>
+<td style="text-align: left;">信创</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>极狐 GitLab</strong></td>
+<td style="text-align: left;">GitLab 中国版</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: left;">合规版</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Gitee</strong></td>
+<td style="text-align: left;">国产</td>
+<td style="text-align: center;">SaaS / 企业版</td>
+<td style="text-align: center;">⭐⭐⭐⭐</td>
+<td style="text-align: left;">国内开源社区</td>
+</tr>
+</tbody>
+</table>
+<h3 id="62-gitlab">6.2 GitLab 私有化部署（国内主流）<a class="headerlink" href="#62-gitlab" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># 单节点（小团队）</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span>--hostname<span class="w"> </span>gitlab.company.com<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">443</span>:443<span class="w"> </span>-p<span class="w"> </span><span class="m">80</span>:80<span class="w"> </span>-p<span class="w"> </span><span class="m">22</span>:22<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">  </span>--restart<span class="w"> </span>always<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">  </span>--volume<span class="w"> </span>/srv/gitlab/config:/etc/gitlab<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">  </span>--volume<span class="w"> </span>/srv/gitlab/logs:/var/log/gitlab<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">  </span>--volume<span class="w"> </span>/srv/gitlab/data:/var/opt/gitlab<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">  </span>--shm-size<span class="w"> </span>256m<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">  </span>gitlab/gitlab-ce:latest
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="c1"># 集群（中大团队）参考 GitLab Reference Architecture:</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="c1"># - PostgreSQL HA (Patroni)</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="c1"># - Redis Sentinel</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="c1"># - Gitaly cluster (3+ 节点)</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="c1"># - Sidekiq workers</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="c1"># - Praefect</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="c1"># - MinIO/S3 对象存储</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="c1"># - Nginx LB</span>
+</code></pre></div>
+<h3 id="63-gitlab-vs-gitlab-ceee">6.3 极狐 GitLab vs GitLab CE/EE<a class="headerlink" href="#63-gitlab-vs-gitlab-ceee" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>极狐 GitLab = GitLab 中国合规版
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>  ✅ 数据本地化
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>  ✅ 中文支持
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>  ✅ 信创适配
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>  ✅ 与国内云厂深度合作
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>  ⚠️ 部分功能与上游有差异
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>中国大陆部署选:
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>  - 极狐 GitLab（合规要求高）
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>  - GitLab CE（开源够用）
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>  - Gitea（小团队/边缘）
+</code></pre></div>
+<h2 id="monorepo-vs-polyrepo">七、Monorepo vs Polyrepo<a class="headerlink" href="#monorepo-vs-polyrepo" title="Permanent link">&para;</a></h2>
+<h3 id="71">7.1 对比<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">维度</th>
+<th style="text-align: left;">Monorepo</th>
+<th style="text-align: left;">Polyrepo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">代码共享</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">跨服务重构</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">权限隔离</td>
+<td style="text-align: left;">⭐⭐</td>
+<td style="text-align: left;">⭐⭐⭐⭐⭐</td>
+</tr>
+<tr>
+<td style="text-align: left;">工具复杂度</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">低</td>
+</tr>
+<tr>
+<td style="text-align: left;">CI 工作量</td>
+<td style="text-align: left;">高（增量 build）</td>
+<td style="text-align: left;">低</td>
+</tr>
+<tr>
+<td style="text-align: left;">代码所有权</td>
+<td style="text-align: left;">CODEOWNERS</td>
+<td style="text-align: left;">仓库级</td>
+</tr>
+<tr>
+<td style="text-align: left;">国内主流度</td>
+<td style="text-align: left;">字节/阿里走 Monorepo</td>
+<td style="text-align: left;">大多数</td>
+</tr>
+<tr>
+<td style="text-align: left;">工具</td>
+<td style="text-align: left;">Bazel/Nx/Pants/Lerna</td>
+<td style="text-align: left;">无需</td>
+</tr>
+</tbody>
+</table>
+<h3 id="72-monorepo">7.2 Monorepo 工具<a class="headerlink" href="#72-monorepo" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">适合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Bazel</strong></td>
+<td style="text-align: left;">Google 系，最重最强</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pants</strong></td>
+<td style="text-align: left;">类似 Bazel</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Buck2</strong></td>
+<td style="text-align: left;">Meta 出品（Bazel 替代）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Nx</strong></td>
+<td style="text-align: left;">Node/TS 主流</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Lerna</strong></td>
+<td style="text-align: left;">npm 早期</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Turbo</strong></td>
+<td style="text-align: left;">Vercel 出品，简单</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Rush</strong></td>
+<td style="text-align: left;">Microsoft 出品</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pnpm Workspaces</strong></td>
+<td style="text-align: left;">简单依赖</td>
+</tr>
+</tbody>
+</table>
+<h3 id="73-monorepo">7.3 Monorepo 实战要点<a class="headerlink" href="#73-monorepo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>✅ 增量构建（只 build 改变的）
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>✅ 增量测试（只测改变影响的）
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>✅ 跨包依赖图
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>✅ CODEOWNERS 细化（路径级权限）
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>✅ Git sparse-checkout（按需 clone）
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>✅ Git LFS（大文件）
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>✅ Bot 自动维护（依赖升级）
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>工具:
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>  - Bazel Remote Cache
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>  - Nx Cloud
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>  - Buck2 daemon
+</code></pre></div>
+<h2 id="_4">八、大仓库优化技术<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="81">8.1 性能问题<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>仓库大了:
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>  - clone 慢（GB 级）
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>  - 历史长（百万 commit）
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>  - 文件多（万级文件）
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>  - 二进制资产（图片/视频）
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>解决方案:
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>  1. Shallow Clone        --depth=1（最快）
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>  2. Partial Clone        --filter=blob:none（按需）
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>  3. Sparse Checkout      只 checkout 部分路径
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>  4. Git LFS              大文件外挂
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>  5. Bare Repository      镜像同步
+</code></pre></div>
+<h3 id="82-shallow-sparse">8.2 Shallow + Sparse 示例<a class="headerlink" href="#82-shallow-sparse" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># 只 clone 最新 commit</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>git<span class="w"> </span>clone<span class="w"> </span>--depth<span class="o">=</span><span class="m">1</span><span class="w"> </span>--filter<span class="o">=</span>blob:none<span class="w"> </span>https://github.com/big/repo.git
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="c1"># 进入 + 启用 sparse</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="nb">cd</span><span class="w"> </span>repo
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>git<span class="w"> </span>sparse-checkout<span class="w"> </span>init<span class="w"> </span>--cone
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>git<span class="w"> </span>sparse-checkout<span class="w"> </span><span class="nb">set</span><span class="w"> </span>services/order<span class="w"> </span>docs/
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="c1"># 后续按需加路径</span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>git<span class="w"> </span>sparse-checkout<span class="w"> </span>add<span class="w"> </span>services/payment
+</code></pre></div>
+<h3 id="83-git-lfs">8.3 Git LFS<a class="headerlink" href="#83-git-lfs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># 安装</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>git<span class="w"> </span>lfs<span class="w"> </span>install
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1"># 跟踪大文件类型</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="s2">&quot;*.psd&quot;</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>git<span class="w"> </span>lfs<span class="w"> </span>track<span class="w"> </span><span class="s2">&quot;*.mp4&quot;</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>git<span class="w"> </span>add<span class="w"> </span>.gitattributes
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Track binaries with LFS&quot;</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="c1"># 服务端: GitLab/GitHub 自带，或自建 lfs-server</span>
+</code></pre></div>
+<h3 id="84-dvc">8.4 替代方案：DVC（数据 + 模型 版本）<a class="headerlink" href="#84-dvc" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># ML/AI 项目数据版本</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>pip<span class="w"> </span>install<span class="w"> </span>dvc
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>dvc<span class="w"> </span>init
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>dvc<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>s3://bucket/dvc-store
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>dvc<span class="w"> </span>add<span class="w"> </span>data/big-dataset.parquet
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>dvc<span class="w"> </span>push
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a><span class="c1"># Git 只存元数据</span>
+</code></pre></div>
+<h2 id="_5">九、安全治理<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 必装清单<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>✅ Branch Protection
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>  - main/master 禁止直接 push
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>  - 强制 PR + Review
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>  - 强制 CI 通过
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>✅ Signed Commits
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>  - GPG / SSH 签名
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>  - 配合 Sigstore / Vigilant Mode
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>✅ Secret Scan
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>  - 在 push 时 + 在仓库历史中
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>  - gitleaks / trufflehog / detect-secrets
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>  - GitHub Secret Scanning（免费给公开仓库）
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>  - GitLab Secret Detection
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>✅ 依赖扫描
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a>  - Dependabot / Renovate / Snyk
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a>  - 自动 PR 升级漏洞依赖
+<a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a>
+<a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a>✅ Code Scanning（SAST）
+<a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a>  - GitHub CodeQL
+<a id="__codelineno-22-22" name="__codelineno-22-22" href="#__codelineno-22-22"></a>  - SonarQube / Semgrep
+<a id="__codelineno-22-23" name="__codelineno-22-23" href="#__codelineno-22-23"></a>  - Snyk Code
+<a id="__codelineno-22-24" name="__codelineno-22-24" href="#__codelineno-22-24"></a>
+<a id="__codelineno-22-25" name="__codelineno-22-25" href="#__codelineno-22-25"></a>✅ License 扫描
+<a id="__codelineno-22-26" name="__codelineno-22-26" href="#__codelineno-22-26"></a>  - FOSSA / Snyk License
+<a id="__codelineno-22-27" name="__codelineno-22-27" href="#__codelineno-22-27"></a>  - 防止 GPL 污染商业代码
+<a id="__codelineno-22-28" name="__codelineno-22-28" href="#__codelineno-22-28"></a>
+<a id="__codelineno-22-29" name="__codelineno-22-29" href="#__codelineno-22-29"></a>✅ 审计日志
+<a id="__codelineno-22-30" name="__codelineno-22-30" href="#__codelineno-22-30"></a>  - 谁 push / merge / 修改设置
+<a id="__codelineno-22-31" name="__codelineno-22-31" href="#__codelineno-22-31"></a>  - 季度审计
+</code></pre></div>
+<h3 id="92-pre-commit">9.2 Pre-commit 钩子<a class="headerlink" href="#92-pre-commit" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># .pre-commit-config.yaml</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="nt">repos</span><span class="p">:</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/pre-commit/pre-commit-hooks</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v4.6.0</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">trailing-whitespace</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">end-of-file-fixer</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">check-yaml</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">check-added-large-files</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">detect-private-key</span>
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/gitleaks/gitleaks</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v8.18.0</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gitleaks</span>
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/golangci/golangci-lint</span>
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a><span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1.58.0</span>
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a><span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">golangci-lint</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>pip<span class="w"> </span>install<span class="w"> </span>pre-commit
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>pre-commit<span class="w"> </span>install
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>pre-commit<span class="w"> </span>run<span class="w"> </span>--all-files
+</code></pre></div>
+<h3 id="93-secret">9.3 Secret 已泄漏怎么办<a class="headerlink" href="#93-secret" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>不要只是 reset / push --force！历史仍在！
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>正确步骤:
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>  1. 立即撤销该 Secret（改密码 / rotate token）
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>  2. 用 git-filter-repo 从历史中彻底删除
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>  3. 通知所有 fork / clone 者重新 clone
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>  4. 审计是否已被访问
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a># 删除历史中的文件
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>git filter-repo --path secrets.json --invert-paths
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>git push --force --all
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>git push --force --tags
+</code></pre></div>
+<h2 id="hooks">十、Hooks 自动化<a class="headerlink" href="#hooks" title="Permanent link">&para;</a></h2>
+<h3 id="101">10.1 客户端钩子<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>pre-commit            提交前（lint/test）
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>prepare-commit-msg    生成提交信息
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>commit-msg            校验信息（commitlint）
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>post-commit           提交后通知
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>pre-push              推送前（重测试）
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>post-checkout         切换分支后
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>post-merge            合并后
+</code></pre></div>
+<h3 id="102-gitlab-server-side-github-app">10.2 服务端钩子（GitLab Server-side / GitHub App）<a class="headerlink" href="#102-gitlab-server-side-github-app" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>pre-receive           推送前校验（拒绝大文件、敏感词）
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>update                按引用校验
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>post-receive          推送后触发 webhook / CI
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>实战:
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>  - 强制 commit message 规范
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>  - 禁止 force-push 到 main
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>  - 禁止 push 大于 100MB 的文件
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>  - 推送时自动触发 Argo CD 同步
+</code></pre></div>
+<h2 id="_6">十一、版本与发布<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="111-semver">11.1 语义化版本（SemVer）<a class="headerlink" href="#111-semver" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>MAJOR.MINOR.PATCH
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>MAJOR: 不兼容变更
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>MINOR: 向下兼容的功能
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>PATCH: 向下兼容的修复
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>预发布: 1.0.0-alpha.1 / 1.0.0-beta.2 / 1.0.0-rc.1
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>构建号: 1.0.0+20260622.git.abcdef
+</code></pre></div>
+<h3 id="112-tag">11.2 Tag 策略<a class="headerlink" href="#112-tag" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="c1"># 创建带注释的 tag（推荐）</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>git<span class="w"> </span>tag<span class="w"> </span>-a<span class="w"> </span>v1.2.3<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Release 1.2.3&quot;</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>v1.2.3
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="c1"># 列出</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>git<span class="w"> </span>tag<span class="w"> </span>-l<span class="w"> </span><span class="s1">&#39;v1.*&#39;</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a><span class="c1"># 删除</span>
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>git<span class="w"> </span>tag<span class="w"> </span>-d<span class="w"> </span>v1.2.3
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>--delete<span class="w"> </span>v1.2.3
+</code></pre></div>
+<h3 id="113">11.3 自动发布<a class="headerlink" href="#113" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1"># .github/workflows/release.yml</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">main</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="w">  </span><span class="nt">release</span><span class="p">:</span>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a><span class="w">    </span><span class="nt">permissions</span><span class="p">:</span>
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a><span class="w">      </span><span class="nt">contents</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">write</span>
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a><span class="w">      </span><span class="nt">pull-requests</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">write</span>
+<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a><span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">googleapis/release-please-action@v4</span>
+<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a><span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a><span class="w">          </span><span class="nt">release-type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">simple</span>
+</code></pre></div>
+<p><code>release-please</code> 自动：
+- 分析 conventional commits
+- 计算下个版本号
+- 生成 CHANGELOG
+- 开 Release PR
+- 合入后打 tag + 发布</p>
+<h2 id="_7">十二、协作流程（团队）<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="121">12.1 分支保护示例<a class="headerlink" href="#121" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="c1"># GitHub branch protection</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a><span class="nt">main</span><span class="p">:</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="w">  </span><span class="nt">require_pull_request</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="w">  </span><span class="nt">required_approvals</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="w">  </span><span class="nt">require_codeowner_reviews</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="w">  </span><span class="nt">dismiss_stale_reviews</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="w">  </span><span class="nt">require_status_checks</span><span class="p">:</span>
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci/lint</span>
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci/test</span>
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci/security</span>
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ci/coverage</span>
+<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a><span class="w">  </span><span class="nt">require_branches_up_to_date</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a><span class="w">  </span><span class="nt">require_signed_commits</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a><span class="w">  </span><span class="nt">enforce_admins</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">      </span><span class="c1"># 紧急情况可绕过</span>
+<a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a><span class="w">  </span><span class="nt">allow_force_pushes</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a><span class="w">  </span><span class="nt">allow_deletions</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a>
+<a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a><span class="nt">release/*</span><span class="p">:</span>
+<a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a><span class="w">  </span><span class="nt">require_pull_request</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a><span class="w">  </span><span class="nt">required_approvals</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3</span><span class="w">      </span><span class="c1"># 更严</span>
+<a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a><span class="w">  </span><span class="nt">restrictions</span><span class="p">:</span>
+<a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a><span class="w">    </span><span class="nt">users</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[]</span>
+<a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a><span class="w">    </span><span class="nt">teams</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">release-managers</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+<h3 id="122">12.2 分支命名规范<a class="headerlink" href="#122" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>feature/&lt;jira-id&gt;-short-desc      feature/PROJ-123-add-coupon
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>fix/&lt;jira-id&gt;-short-desc          fix/PROJ-456-refund-bug
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>hotfix/&lt;id&gt;-&lt;desc&gt;                 hotfix/CRIT-001-payment-down
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>release/&lt;version&gt;                  release/1.2.0
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>chore/&lt;desc&gt;                       chore/update-deps
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>experiment/&lt;desc&gt;                  experiment/new-ml-model
+<a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>
+<a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a>❌ 不规范:
+<a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a>  - test / fix / my-branch
+<a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a>  - dev_zhangsan_20260622
+<a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a>  - feature1
+</code></pre></div>
+<h3 id="123-rfc">12.3 大型变更（RFC 流程）<a class="headerlink" href="#123-rfc" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>重大变更先写 RFC:
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>  1. /docs/rfc/0001-new-arch.md
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>  2. 描述: 背景 + 方案 + 备选 + 风险
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>  3. PR 给团队讨论
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>  4. 决议后开始实现
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a>例子:
+<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a>  - RFC 选型新框架
+<a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a>  - RFC 数据库迁移
+<a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a>  - RFC API 大改
+<a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a>  - RFC 服务拆分
+</code></pre></div>
+<h2 id="git-lfs-submodule-subtree">十三、Git LFS / Submodule / Subtree<a class="headerlink" href="#git-lfs-submodule-subtree" title="Permanent link">&para;</a></h2>
+<h3 id="131-submodule">13.1 Submodule（子模块）<a class="headerlink" href="#131-submodule" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># 加子模块</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>git<span class="w"> </span>submodule<span class="w"> </span>add<span class="w"> </span>https://github.com/lib/utils.git<span class="w"> </span>libs/utils
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>git<span class="w"> </span>submodule<span class="w"> </span>init
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--remote
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="c1"># Clone 带子模块的仓库</span>
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a>git<span class="w"> </span>clone<span class="w"> </span>--recurse-submodules<span class="w"> </span>&lt;url&gt;
+<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>git<span class="w"> </span>submodule<span class="w"> </span>update<span class="w"> </span>--init<span class="w"> </span>--recursive
+<a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>
+<a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a>特点:
+<a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a><span class="w">  </span>✅<span class="w"> </span>引用特定<span class="w"> </span>commit
+<a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a><span class="w">  </span>✅<span class="w"> </span>子模块独立维护
+<a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a><span class="w">  </span>❌<span class="w"> </span>子模块管理复杂
+<a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a><span class="w">  </span>❌<span class="w"> </span>CI<span class="w"> </span>处理麻烦
+</code></pre></div>
+<h3 id="132-subtree">13.2 Subtree（更简单的替代）<a class="headerlink" href="#132-subtree" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="c1"># 加子树</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>git<span class="w"> </span>subtree<span class="w"> </span>add<span class="w"> </span>--prefix<span class="o">=</span>libs/utils<span class="w"> </span>https://github.com/lib/utils.git<span class="w"> </span>main<span class="w"> </span>--squash
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="c1"># 拉子树更新</span>
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>git<span class="w"> </span>subtree<span class="w"> </span>pull<span class="w"> </span>--prefix<span class="o">=</span>libs/utils<span class="w"> </span>https://github.com/lib/utils.git<span class="w"> </span>main<span class="w"> </span>--squash
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>
+<a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a>特点:
+<a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a><span class="w">  </span>✅<span class="w"> </span>子代码合入本仓库
+<a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a><span class="w">  </span>✅<span class="w"> </span>用户无感
+<a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a><span class="w">  </span>❌<span class="w"> </span>历史略乱
+<a id="__codelineno-35-11" name="__codelineno-35-11" href="#__codelineno-35-11"></a>
+<a id="__codelineno-35-12" name="__codelineno-35-12" href="#__codelineno-35-12"></a>经验:<span class="w"> </span>内部团队首选<span class="w"> </span>Subtree<span class="w"> </span>/<span class="w"> </span>Monorepo，开源依赖用<span class="w"> </span>Submodule。
+</code></pre></div>
+<h2 id="git_2">十四、Git 常见操作场景<a class="headerlink" href="#git_2" title="Permanent link">&para;</a></h2>
+<h3 id="141">14.1 撤销错误推送<a class="headerlink" href="#141" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="c1"># 强制回滚（团队商议后）</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>&lt;good-commit&gt;
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>git<span class="w"> </span>push<span class="w"> </span>--force-with-lease<span class="w"> </span>origin<span class="w"> </span>main
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="c1"># 更安全: revert（保留历史）</span>
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>git<span class="w"> </span>revert<span class="w"> </span>&lt;bad-commit&gt;
+<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>main
+</code></pre></div>
+<h3 id="142-commit">14.2 把 commit 拆分<a class="headerlink" href="#142-commit" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>HEAD~5
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a><span class="c1"># 选择 commit 标 &#39;edit&#39;</span>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="c1"># git reset HEAD^</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="c1"># git add -p &lt;逐块加&gt;</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="c1"># git commit -m &quot;split commit 1&quot;</span>
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a><span class="c1"># git commit -m &quot;split commit 2&quot;</span>
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="c1"># git rebase --continue</span>
+</code></pre></div>
+<h3 id="143-commit">14.3 合并 commit<a class="headerlink" href="#143-commit" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>git<span class="w"> </span>rebase<span class="w"> </span>-i<span class="w"> </span>HEAD~5
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="c1"># 把 pick 改成 squash 或 fixup</span>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a><span class="c1"># 保存退出</span>
+</code></pre></div>
+<h3 id="144-bug">14.4 二分查找 bug<a class="headerlink" href="#144-bug" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>git<span class="w"> </span>bisect<span class="w"> </span>start
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>git<span class="w"> </span>bisect<span class="w"> </span>bad<span class="w">                    </span><span class="c1"># 当前坏</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>git<span class="w"> </span>bisect<span class="w"> </span>good<span class="w"> </span>v1.0<span class="w">              </span><span class="c1"># 1.0 是好的</span>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="c1"># Git 自动 checkout 中间 commit</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a><span class="c1"># 测试 → git bisect good/bad</span>
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a><span class="c1"># 直到找到引入 bug 的 commit</span>
+<a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a>git<span class="w"> </span>bisect<span class="w"> </span>reset
+</code></pre></div>
+<h3 id="145-reflog">14.5 救命 reflog<a class="headerlink" href="#145-reflog" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="c1"># 误删分支 / hard reset 救回</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>git<span class="w"> </span>reflog
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="c1"># 找到 HEAD@{N} 是想要的状态</span>
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>git<span class="w"> </span>reset<span class="w"> </span>--hard<span class="w"> </span>HEAD@<span class="o">{</span><span class="m">5</span><span class="o">}</span>
+</code></pre></div>
+<h3 id="146-cherry-pick">14.6 仅 cherry-pick 部分提交<a class="headerlink" href="#146-cherry-pick" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>git<span class="w"> </span>cherry-pick<span class="w"> </span>&lt;commit&gt;
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>git<span class="w"> </span>cherry-pick<span class="w"> </span>A..B<span class="w">              </span><span class="c1"># 范围</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>git<span class="w"> </span>cherry-pick<span class="w"> </span>-x<span class="w"> </span>&lt;commit&gt;<span class="w">       </span><span class="c1"># 附加来源</span>
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>git<span class="w"> </span>cherry-pick<span class="w"> </span>--continue<span class="w">        </span><span class="c1"># 解决冲突后</span>
+</code></pre></div>
+<h3 id="147">14.7 暂存当前工作<a class="headerlink" href="#147" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>git<span class="w"> </span>stash<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;WIP feature&quot;</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>git<span class="w"> </span>stash<span class="w"> </span>list
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>git<span class="w"> </span>stash<span class="w"> </span>show<span class="w"> </span>stash@<span class="o">{</span><span class="m">0</span><span class="o">}</span><span class="w"> </span>-p
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>git<span class="w"> </span>stash<span class="w"> </span>pop<span class="w"> </span>/<span class="w"> </span>apply
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>git<span class="w"> </span>stash<span class="w"> </span>drop<span class="w"> </span>stash@<span class="o">{</span><span class="m">0</span><span class="o">}</span>
+</code></pre></div>
+<h2 id="ai-2025">十五、AI 辅助代码管理（2025）<a class="headerlink" href="#ai-2025" title="Permanent link">&para;</a></h2>
+<h3 id="151-ai-commit-message">15.1 AI 写 commit message<a class="headerlink" href="#151-ai-commit-message" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="c1"># OpenCommit / aicommit2 / git-aicommit</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>opencommit
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>oco
+<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a>
+<a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a><span class="c1"># 或自建 LLM</span>
+<a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>git<span class="w"> </span>diff<span class="w"> </span>--staged<span class="w"> </span><span class="p">|</span><span class="w"> </span>curl<span class="w"> </span>...<span class="w"> </span>-d<span class="w"> </span>@-<span class="w"> </span>
+<a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a><span class="c1"># → 自动生成 conventional commit</span>
+</code></pre></div>
+<h3 id="152-ai-code-review">15.2 AI Code Review<a class="headerlink" href="#152-ai-code-review" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">工具</th>
+<th style="text-align: left;">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>CodeRabbit</strong></td>
+<td style="text-align: left;">PR AI 审查</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sourcery</strong></td>
+<td style="text-align: left;">AI 优化建议</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GitHub Copilot for PR</strong></td>
+<td style="text-align: left;">AI 总结 + 审查</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Codium PR-Agent</strong></td>
+<td style="text-align: left;">开源 AI Reviewer</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CodeAnt AI</strong></td>
+<td style="text-align: left;">全栈 AI 审查</td>
+</tr>
+</tbody>
+</table>
+<h3 id="153-ai">15.3 AI 总结仓库<a class="headerlink" href="#153-ai" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>&quot;这个仓库做什么的？&quot;
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>&quot;最近 30 天 TOP 5 改动？&quot;
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>&quot;谁负责 payment 模块？&quot;
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>工具:
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>  - GitHub Copilot Workspace
+<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>  - Sourcegraph Cody
+<a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>  - Mutable AI
+<a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a>  - Aider
+</code></pre></div>
+<h2 id="_8">十六、典型坑（生产血泪）<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>直接 push main</strong></td>
+<td style="text-align: left;">必上 branch protection</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>大量 force-push</strong></td>
+<td style="text-align: left;">--force-with-lease</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>secret 入仓</strong></td>
+<td style="text-align: left;">pre-commit + gitleaks + 历史扫描</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>二进制文件入 Git</strong></td>
+<td style="text-align: left;">LFS / 外部存储</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>长寿命 feature 分支</strong></td>
+<td style="text-align: left;">Trunk-Based + Feature Flags</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MR 巨大无法 Review</strong></td>
+<td style="text-align: left;">&lt; 400 行</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>多个无关改动一个 PR</strong></td>
+<td style="text-align: left;">拆分</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>commit 写啥的随便</strong></td>
+<td style="text-align: left;">Conventional Commits</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>无 tag 无 release</strong></td>
+<td style="text-align: left;">release-please / semantic-release</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没人 Review</strong></td>
+<td style="text-align: left;">CODEOWNERS + 多人审</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>rebase vs merge 乱用</strong></td>
+<td style="text-align: left;">公开分支永远不 rebase</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>直接编辑公共历史</strong></td>
+<td style="text-align: left;">别动！</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>fork + 私自合并</strong></td>
+<td style="text-align: left;">用 GitHub Flow 标准化</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有 CI 强制</strong></td>
+<td style="text-align: left;">必上 required status checks</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>submodule 抓死</strong></td>
+<td style="text-align: left;">改 subtree / monorepo</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨仓库改动协调</strong></td>
+<td style="text-align: left;">RFC / 重构需要平台支持</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checklist">十七、最佳实践 Checklist<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>仓库设置:
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>☐ Branch protection（main 必保护）
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>☐ Required reviewers + CODEOWNERS
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>☐ Required CI checks
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>☐ 强制 conventional commits
+<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>☐ Signed commits（高安全要求）
+<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>☐ Secret scanning
+<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>☐ Dependency scanning
+<a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a>☐ SAST scanning
+<a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a>
+<a id="__codelineno-45-11" name="__codelineno-45-11" href="#__codelineno-45-11"></a>工作流:
+<a id="__codelineno-45-12" name="__codelineno-45-12" href="#__codelineno-45-12"></a>☐ Trunk-Based 或明确 GitFlow/GitHub Flow
+<a id="__codelineno-45-13" name="__codelineno-45-13" href="#__codelineno-45-13"></a>☐ 短命分支（&lt; 1 周）
+<a id="__codelineno-45-14" name="__codelineno-45-14" href="#__codelineno-45-14"></a>☐ 小 PR（&lt; 400 行）
+<a id="__codelineno-45-15" name="__codelineno-45-15" href="#__codelineno-45-15"></a>☐ PR 模板
+<a id="__codelineno-45-16" name="__codelineno-45-16" href="#__codelineno-45-16"></a>☐ 24h Review SLA
+<a id="__codelineno-45-17" name="__codelineno-45-17" href="#__codelineno-45-17"></a>☐ Feature Flags 替代长寿命分支
+<a id="__codelineno-45-18" name="__codelineno-45-18" href="#__codelineno-45-18"></a>
+<a id="__codelineno-45-19" name="__codelineno-45-19" href="#__codelineno-45-19"></a>提交:
+<a id="__codelineno-45-20" name="__codelineno-45-20" href="#__codelineno-45-20"></a>☐ Conventional Commits
+<a id="__codelineno-45-21" name="__codelineno-45-21" href="#__codelineno-45-21"></a>☐ pre-commit 钩子（lint + secret）
+<a id="__codelineno-45-22" name="__codelineno-45-22" href="#__codelineno-45-22"></a>☐ commitlint 校验
+<a id="__codelineno-45-23" name="__codelineno-45-23" href="#__codelineno-45-23"></a>☐ 一次提交一件事
+<a id="__codelineno-45-24" name="__codelineno-45-24" href="#__codelineno-45-24"></a>
+<a id="__codelineno-45-25" name="__codelineno-45-25" href="#__codelineno-45-25"></a>发布:
+<a id="__codelineno-45-26" name="__codelineno-45-26" href="#__codelineno-45-26"></a>☐ SemVer 版本号
+<a id="__codelineno-45-27" name="__codelineno-45-27" href="#__codelineno-45-27"></a>☐ 自动 CHANGELOG (release-please)
+<a id="__codelineno-45-28" name="__codelineno-45-28" href="#__codelineno-45-28"></a>☐ Signed tags
+<a id="__codelineno-45-29" name="__codelineno-45-29" href="#__codelineno-45-29"></a>☐ Release notes
+<a id="__codelineno-45-30" name="__codelineno-45-30" href="#__codelineno-45-30"></a>
+<a id="__codelineno-45-31" name="__codelineno-45-31" href="#__codelineno-45-31"></a>度量:
+<a id="__codelineno-45-32" name="__codelineno-45-32" href="#__codelineno-45-32"></a>☐ PR 平均关闭时间
+<a id="__codelineno-45-33" name="__codelineno-45-33" href="#__codelineno-45-33"></a>☐ PR 平均大小
+<a id="__codelineno-45-34" name="__codelineno-45-34" href="#__codelineno-45-34"></a>☐ Review 响应时间
+<a id="__codelineno-45-35" name="__codelineno-45-35" href="#__codelineno-45-35"></a>☐ Lead Time for Changes
+</code></pre></div>
+<h2 id="2025">十八、技术栈推荐（2025）<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h2>
+<h3 id="181-30">18.1 小团队（&lt; 30 人）<a class="headerlink" href="#181-30" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a>托管:        Gitea / Gitee 私有 / GitLab CE
+<a id="__codelineno-46-2" name="__codelineno-46-2" href="#__codelineno-46-2"></a>工作流:      GitHub Flow
+<a id="__codelineno-46-3" name="__codelineno-46-3" href="#__codelineno-46-3"></a>提交规范:    Conventional Commits + commitlint
+<a id="__codelineno-46-4" name="__codelineno-46-4" href="#__codelineno-46-4"></a>PR Review:   2 个 Approval + CODEOWNERS
+<a id="__codelineno-46-5" name="__codelineno-46-5" href="#__codelineno-46-5"></a>安全:        pre-commit + gitleaks + Dependabot
+<a id="__codelineno-46-6" name="__codelineno-46-6" href="#__codelineno-46-6"></a>版本:        release-please
+</code></pre></div>
+<h3 id="182-30-300">18.2 中型团队（30-300 人）<a class="headerlink" href="#182-30-300" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-47-1" name="__codelineno-47-1" href="#__codelineno-47-1"></a>托管:        GitLab EE / 极狐 GitLab
+<a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a>工作流:      Trunk-Based + Feature Flags
+<a id="__codelineno-47-3" name="__codelineno-47-3" href="#__codelineno-47-3"></a>提交:        commitlint + Husky 强制
+<a id="__codelineno-47-4" name="__codelineno-47-4" href="#__codelineno-47-4"></a>Review:      CODEOWNERS + 2 个 Approval + AI Reviewer
+<a id="__codelineno-47-5" name="__codelineno-47-5" href="#__codelineno-47-5"></a>安全:        GitLab Secret Detection + SAST + Dependency
+<a id="__codelineno-47-6" name="__codelineno-47-6" href="#__codelineno-47-6"></a>监控:        DORA 度量
+<a id="__codelineno-47-7" name="__codelineno-47-7" href="#__codelineno-47-7"></a>仓库管理:    Monorepo or Polyrepo 明确选择
+</code></pre></div>
+<h3 id="183-monorepo-300">18.3 大型 / Monorepo（&gt; 300 人）<a class="headerlink" href="#183-monorepo-300" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a>托管:        自建 GitLab 集群 / GitHub Enterprise
+<a id="__codelineno-48-2" name="__codelineno-48-2" href="#__codelineno-48-2"></a>策略:        Monorepo + Bazel/Nx
+<a id="__codelineno-48-3" name="__codelineno-48-3" href="#__codelineno-48-3"></a>工作流:      Trunk-Based + Strict CI
+<a id="__codelineno-48-4" name="__codelineno-48-4" href="#__codelineno-48-4"></a>工具:        增量 build/test 缓存（Bazel Remote Cache / Nx Cloud）
+<a id="__codelineno-48-5" name="__codelineno-48-5" href="#__codelineno-48-5"></a>权限:        CODEOWNERS 细粒度
+<a id="__codelineno-48-6" name="__codelineno-48-6" href="#__codelineno-48-6"></a>开发者门户:  Backstage
+<a id="__codelineno-48-7" name="__codelineno-48-7" href="#__codelineno-48-7"></a>AI:          Copilot for Business + 自训练
+<a id="__codelineno-48-8" name="__codelineno-48-8" href="#__codelineno-48-8"></a>治理:        RFC 流程
+</code></pre></div>
+<h2 id="_9">十九、学习路径<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-49-1" name="__codelineno-49-1" href="#__codelineno-49-1"></a>入门（1 周）:
+<a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a>  1. Git 基础命令熟练
+<a id="__codelineno-49-3" name="__codelineno-49-3" href="#__codelineno-49-3"></a>  2. 一次 PR 走完
+<a id="__codelineno-49-4" name="__codelineno-49-4" href="#__codelineno-49-4"></a>  3. 基础 rebase + merge
+<a id="__codelineno-49-5" name="__codelineno-49-5" href="#__codelineno-49-5"></a>
+<a id="__codelineno-49-6" name="__codelineno-49-6" href="#__codelineno-49-6"></a>中级（1 个月）:
+<a id="__codelineno-49-7" name="__codelineno-49-7" href="#__codelineno-49-7"></a>  4. Conventional Commits
+<a id="__codelineno-49-8" name="__codelineno-49-8" href="#__codelineno-49-8"></a>  5. Trunk-Based / GitFlow 选型
+<a id="__codelineno-49-9" name="__codelineno-49-9" href="#__codelineno-49-9"></a>  6. Branch protection
+<a id="__codelineno-49-10" name="__codelineno-49-10" href="#__codelineno-49-10"></a>  7. CODEOWNERS
+<a id="__codelineno-49-11" name="__codelineno-49-11" href="#__codelineno-49-11"></a>  8. pre-commit hooks
+<a id="__codelineno-49-12" name="__codelineno-49-12" href="#__codelineno-49-12"></a>
+<a id="__codelineno-49-13" name="__codelineno-49-13" href="#__codelineno-49-13"></a>高级（3 个月）:
+<a id="__codelineno-49-14" name="__codelineno-49-14" href="#__codelineno-49-14"></a>  9. Monorepo 工具（Nx/Bazel）
+<a id="__codelineno-49-15" name="__codelineno-49-15" href="#__codelineno-49-15"></a>  10. Git LFS / Submodule / Subtree
+<a id="__codelineno-49-16" name="__codelineno-49-16" href="#__codelineno-49-16"></a>  11. release-please 自动发布
+<a id="__codelineno-49-17" name="__codelineno-49-17" href="#__codelineno-49-17"></a>  12. 复杂 rebase / cherry-pick / bisect
+<a id="__codelineno-49-18" name="__codelineno-49-18" href="#__codelineno-49-18"></a>  13. AI Code Review
+<a id="__codelineno-49-19" name="__codelineno-49-19" href="#__codelineno-49-19"></a>
+<a id="__codelineno-49-20" name="__codelineno-49-20" href="#__codelineno-49-20"></a>专家:
+<a id="__codelineno-49-21" name="__codelineno-49-21" href="#__codelineno-49-21"></a>  14. 自定义 server-side hooks
+<a id="__codelineno-49-22" name="__codelineno-49-22" href="#__codelineno-49-22"></a>  15. 仓库审计 / 合规
+<a id="__codelineno-49-23" name="__codelineno-49-23" href="#__codelineno-49-23"></a>  16. 跨组织治理
+<a id="__codelineno-49-24" name="__codelineno-49-24" href="#__codelineno-49-24"></a>  17. Backstage / 自研开发者平台
+</code></pre></div>
+<h2 id="_10">二十、参考资料<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a>书:
+<a id="__codelineno-50-2" name="__codelineno-50-2" href="#__codelineno-50-2"></a>  - 《Pro Git》(Scott Chacon) - 中文版在线免费
+<a id="__codelineno-50-3" name="__codelineno-50-3" href="#__codelineno-50-3"></a>  - 《Trunk-Based Development》(Paul Hammant)
+<a id="__codelineno-50-4" name="__codelineno-50-4" href="#__codelineno-50-4"></a>  - 《Accelerate》(DORA 系列)
+<a id="__codelineno-50-5" name="__codelineno-50-5" href="#__codelineno-50-5"></a>
+<a id="__codelineno-50-6" name="__codelineno-50-6" href="#__codelineno-50-6"></a>官方:
+<a id="__codelineno-50-7" name="__codelineno-50-7" href="#__codelineno-50-7"></a>  - Git: https://git-scm.com/doc
+<a id="__codelineno-50-8" name="__codelineno-50-8" href="#__codelineno-50-8"></a>  - GitHub Docs
+<a id="__codelineno-50-9" name="__codelineno-50-9" href="#__codelineno-50-9"></a>  - GitLab Docs
+<a id="__codelineno-50-10" name="__codelineno-50-10" href="#__codelineno-50-10"></a>  - Conventional Commits: https://www.conventionalcommits.org/
+<a id="__codelineno-50-11" name="__codelineno-50-11" href="#__codelineno-50-11"></a>
+<a id="__codelineno-50-12" name="__codelineno-50-12" href="#__codelineno-50-12"></a>社区:
+<a id="__codelineno-50-13" name="__codelineno-50-13" href="#__codelineno-50-13"></a>  - Trunk Based Development: https://trunkbaseddevelopment.com/
+<a id="__codelineno-50-14" name="__codelineno-50-14" href="#__codelineno-50-14"></a>  - Atlassian Git Tutorials
+<a id="__codelineno-50-15" name="__codelineno-50-15" href="#__codelineno-50-15"></a>  - Oh My Git!（互动游戏学 Git）
+<a id="__codelineno-50-16" name="__codelineno-50-16" href="#__codelineno-50-16"></a>
+<a id="__codelineno-50-17" name="__codelineno-50-17" href="#__codelineno-50-17"></a>工具:
+<a id="__codelineno-50-18" name="__codelineno-50-18" href="#__codelineno-50-18"></a>  - https://learngitbranching.js.org（可视化练习）
+<a id="__codelineno-50-19" name="__codelineno-50-19" href="#__codelineno-50-19"></a>  - https://ohmyz.sh + oh-my-zsh git 插件
+<a id="__codelineno-50-20" name="__codelineno-50-20" href="#__codelineno-50-20"></a>  - GitLens (VSCode 插件)
+<a id="__codelineno-50-21" name="__codelineno-50-21" href="#__codelineno-50-21"></a>  - lazygit / tig（终端 UI）
+<a id="__codelineno-50-22" name="__codelineno-50-22" href="#__codelineno-50-22"></a>  - delta（更好看的 diff）
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：代码管理是 DevOps 的"第一公里"。<strong>选对工作流（推荐 Trunk-Based + Feature Flags）+ 配齐规范（Conventional Commits + CODEOWNERS + Branch Protection）+ 强化安全（Secret Scanning + Signed Commits）+ 拥抱 AI（Copilot + AI Review）</strong> = 团队效率指数级提升。最容易翻车的不是 Git 命令，而是：<strong>没有 PR 文化、没有提交规范、没有分支保护</strong>——这三条做不到，再先进的 CI/CD 都是花架子。</p>
+</blockquote>
 
 
 
