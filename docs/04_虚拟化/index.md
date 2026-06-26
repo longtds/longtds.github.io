@@ -1,84 +1,72 @@
-# 04_虚拟化 · 概述
+# 04. 虚拟化
 
-> 虚拟化把硬件资源池化，是云计算的根基。从全虚拟化到容器，再到 GPU 虚拟化和机密计算，技术不断演化。
+> 虚拟化是云原生 / AI / 信创的核心算力底座。本章按 **基础 → 进阶 → 高级 → 最佳实践 → 发展与展望** 五层递进，覆盖从 KVM/qcow2 到 KubeVirt/MIG、从 libvirt 到 OpenStack、从开源到国产化的完整知识链。
 
-## 一、虚拟化发展简史
+## 章节结构
 
-| 阶段 | 时期 | 代表技术 |
-|:---|:---:|:---|
-| 大型机时代 | 1970s | IBM VM/370 |
-| 全虚拟化软件 | 1999 | VMware Workstation |
-| 硬件辅助 | 2005-2006 | Intel VT-x / AMD-V |
-| 开源主流 | 2007-2012 | KVM 进入内核、Xen 兴起 |
-| 容器化 | 2013-至今 | Docker、cgroup/namespace |
-| 异构虚拟化 | 2018-至今 | GPU 虚拟化、SR-IOV |
-| 机密虚拟化 | 2020-至今 | SEV/TDX 内存加密 |
-
-## 二、虚拟化技术分类
-
-```
-按抽象层次:
-├── 硬件层虚拟化（Type 1 Hypervisor）   - ESXi/KVM/Xen/Hyper-V
-├── 操作系统层虚拟化（容器）            - Docker/LXC/Podman
-├── 应用层虚拟化                       - JVM/Wasm/V8
-└── 桌面/应用流化                      - Citrix/VDI
-
-按性能损耗:
-全虚拟化 (1990s) → 半虚拟化 (Xen 早期) → 硬件辅助 (现在) → 直通 (PCI/SR-IOV)
-   损耗 30%        损耗 10%             损耗 < 5%           零损耗
-```
-
-## 三、KVM 体系架构
-
-```
-┌──────────────────────────────────────────┐
-│   VM1       VM2       VM3   (Guest OS)   │
-├──────────────────────────────────────────┤
-│   QEMU     QEMU      QEMU   (用户态)     │
-├──────────────────────────────────────────┤
-│         KVM 内核模块 (kvm.ko)            │
-├──────────────────────────────────────────┤
-│   Linux Kernel (Host OS)                 │
-├──────────────────────────────────────────┤
-│   CPU (VT-x/AMD-V) / 内存 / 硬件         │
-└──────────────────────────────────────────┘
-```
-
-| 组件 | 作用 |
-|:---|:---|
-| KVM | 内核模块，提供 VCPU 调度和内存虚拟化 |
-| QEMU | 用户态进程，模拟硬件设备 |
-| libvirt | 管理 API（virsh/virt-manager 基于此） |
-| OVS/Linux Bridge | 网络虚拟化 |
-
-## 四、容器 vs 虚拟机
-
-| 维度 | 虚拟机 | 容器 |
+| 章节 | 适合人群 | 核心内容 |
 |:---|:---|:---|
-| 隔离粒度 | Hypervisor + Guest OS | Linux 内核 namespace |
-| 启动时间 | 10s-1min | < 1s |
-| 资源开销 | 高（GB 级内存） | 低（MB 级） |
-| 安全性 | 强（硬件隔离） | 弱（共享内核） |
-| 兼容性 | 跑任何 OS | 仅 Linux 应用 |
-| 密度 | 几十/物理机 | 上千/物理机 |
-| 适用场景 | 多租户、合规、Windows | 微服务、CI/CD |
+| [01_基础](01_基础/README.md) | 入职 1 年内 | Type1/2 / VT-x+EPT / virtio / qcow2 / KVM+libvirt / virt-install / virsh / cloud-init |
+| [02_进阶](02_进阶/README.md) | 独立运维 5-50 台 | libvirt XML / 存储池(NFS/LVM/Ceph) / OVS+VLAN+SR-IOV / Proxmox VE 集群 / NUMA+HugePage 调优 / PBS 备份 / Windows VM |
+| [03_高级](03_高级/README.md) | 平台架构师 | GPU 虚拟化(MIG/vGPU/SR-IOV) / PCI 直通 / RT/DPDK / 机密计算(SEV-SNP/TDX) / HCI / KubeVirt+Kata+Firecracker / 国产化 |
+| [04_最佳实践](04_最佳实践/README.md) | 团队负责人 | 平台选型决策 / 容量水位 / HA+DR / 3-2-1 备份 / 监控告警 / 变更纪律 / 等保合规 / 国产化路线 |
+| [99_发展与展望](99_发展与展望.md) | 所有人 | KubeVirt+microVM / GPU 切片标配 / 机密 VM 主流 / DPU 卸载 / OpenStack 回归 / 信创替代 / 5 年趋势 |
 
-**趋势**：两者融合 → Kata Containers、gVisor、Firecracker。
+## 学习路径
 
-## 五、本章组织
+```
+入门 (1-3 月)
+  └─ 01_基础: 装 KVM + virt-install + bridge + qcow2 + cloud-init + 20 题
 
-| 子章节 | 内容 |
-|:---|:---|
-| **01_技术原理** | 全虚拟化/半虚拟化/硬件辅助、CPU/内存/IO 虚拟化 |
-| **02_KVM** | libvirt 管理、磁盘格式、网络模式、迁移 |
-| **03_GPU虚拟化** | vGPU、MIG、SR-IOV、PCI 直通 |
-| **04_容器vs虚拟机** | 选型决策、安全沙箱 |
+进阶 (3-12 月)
+  └─ 02_进阶: Proxmox+Ceph 3 节点 + NUMA/HugePage + PBS 备份 + Windows + OVS+VLAN
 
-## 六、学习路径
+高级 (1-2 年)
+  └─ 03_高级: PCI 直通 GPU / MIG 切片 / RT+DPDK / KubeVirt+Kata / 国产 Hypervisor
 
-1. **理解原理** → CPU 虚拟化扩展（VT-x/AMD-V）
-2. **掌握 KVM** → 命令行 virsh、qcow2 磁盘、virtio 设备
-3. **进阶网络** → Open vSwitch、SR-IOV
-4. **GPU 虚拟化** → vGPU/MIG（AI 时代必备）
+工程化 (2-3 年)
+  └─ 04_最佳实践: 容量画像 + DR 演练 + 变更纪律 + 等保 3 级 + 国产化路径
 
-> 📖 虚拟化是云计算的"砖"，容器是云原生的"瓦"，缺一不可。
+展望 (持续)
+  └─ 99_发展与展望: KubeVirt + GPU 切片 + 机密计算 + DPU + 信创六条线
+```
+
+## 核心判断
+
+```
+学习心法:
+  1. 生产永远 KVM + libvirt + virtio + qcow2 + bridge
+  2. iproute2 (ip/ss) 完全替代 ifconfig/netstat/route
+  3. 集群从 3 节点起步：Proxmox VE 是中小首选
+  4. NUMA + HugePage + CPU pinning 是大 VM 性能基本盘
+  5. 备份不演练 = 没备份
+  6. 快照是回滚，不是备份
+  7. 容量水位 75%/85%/90% 三色线
+  8. K8s 大集群必上 KubeVirt 看 VM
+  9. AI 集群必上 MIG / 国产 vGPU
+  10. 国产化提前 2-3 月联调
+
+红线:
+  ❌ CPU 不开 VT / BIOS 没改
+  ❌ cache=writeback 上生产
+  ❌ DB VM 超分 1:8
+  ❌ 大 VM 跨 NUMA
+  ❌ 没装 qemu-guest-agent
+  ❌ 嵌套虚拟化跑生产
+  ❌ 快照当备份用
+  ❌ HA 集群 < 3 节点 / 心跳网混业务
+  ❌ 共享存储无 fence
+  ❌ 备份不验证 / 不异地
+  ❌ VMware vCSA 不备份
+```
+
+## 相关章节
+
+- 配合 [01_服务器](../01_服务器/index.md) 看 CPU/PCIe/IOMMU 硬件
+- 配合 [02_Linux](../02_Linux/index.md) 看内核虚拟化栈
+- 配合 [03_网络](../03_网络/index.md) 看 OVS / VXLAN / SR-IOV / DPU
+- 配合 [05_私有云](../05_私有云/index.md) 看 OpenStack / Ironic / Magnum
+- 配合 [07_Kubernetes](../07_Kubernetes/index.md) 看 KubeVirt / Kata / Harvester
+- 配合 [11_AI基础设施](../11_AI基础设施/index.md) 看 GPU 切片 / MIG / GPU Operator
+- 配合 [14_安全](../14_安全/index.md) 看机密计算 / 等保合规
+- 配合 [16_故障排查](../16_故障排查/index.md) 看 VM 卡顿 / 迁移失败实战

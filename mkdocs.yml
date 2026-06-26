@@ -101,12 +101,10 @@ nav:
 
   - 04_虚拟化:
     - 概述: 04_虚拟化/index.md
-    - 01_技术原理: 04_虚拟化/01_技术原理/README.md
-    - 02_KVM: 04_虚拟化/02_KVM/README.md
-    - 03_GPU虚拟化: 04_虚拟化/03_GPU虚拟化/README.md
-    - 04_VMware_vSphere: 04_虚拟化/04_VMware_vSphere/README.md
-    - 05_Proxmox_VE: 04_虚拟化/05_Proxmox_VE/README.md
-    - 06_容器vs虚拟机: 04_虚拟化/06_容器vs虚拟机/README.md
+    - 01_基础: 04_虚拟化/01_基础/README.md
+    - 02_进阶: 04_虚拟化/02_进阶/README.md
+    - 03_高级: 04_虚拟化/03_高级/README.md
+    - 04_最佳实践: 04_虚拟化/04_最佳实践/README.md
     - 99_发展与展望: 04_虚拟化/99_发展与展望.md
 
   - 05_私有云:
