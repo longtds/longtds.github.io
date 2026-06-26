@@ -1,5 +1,5 @@
 site_name: 技术手册
-site_description: 服务器 · Linux · 网络 · 虚拟化 · 容器 · K8s · 中间件 · 大数据 · AI · AIOps · 安全 · 渗透测试
+site_description: 服务器 · Linux · 网络 · 虚拟化 · 容器 · K8s · DevOps · 中间件 · 大数据 · AI · AIOps · 认证 · 安全 · 渗透测试
 site_author: tech-handbook
 repo_url: https://gitlab.company.com/tech-handbook
 edit_uri: edit/main/docs/
@@ -20,8 +20,9 @@ theme:
     - content.code.copy
     - content.code.annotate
   palette:
-    primary: indigo
-    accent: teal
+    - scheme: default
+      primary: indigo
+      accent: teal
   font:
     text: Noto Sans SC
     code: JetBrains Mono
@@ -87,8 +88,8 @@ nav:
     - 01_系统管理: 02_Linux/01_系统管理/README.md
     - 02_存储与文件系统: 02_Linux/02_存储与文件系统/README.md
     - 03_系统调优: 02_Linux/03_系统调优/README.md
-    - 04_性能排查: 02_Linux/04_性能排查/README.md
-    - 05_系统维护: 02_Linux/05_系统维护/README.md
+    - 04_系统维护: 02_Linux/04_系统维护/README.md
+    - 05_性能排查: 02_Linux/05_性能排查/README.md
     - 06_Shell脚本: 02_Linux/06_Shell脚本/README.md
     - 99_发展与展望: 02_Linux/99_发展与展望.md
 
@@ -111,15 +112,15 @@ nav:
     - 01_技术原理: 04_虚拟化/01_技术原理/README.md
     - 02_KVM: 04_虚拟化/02_KVM/README.md
     - 03_GPU虚拟化: 04_虚拟化/03_GPU虚拟化/README.md
-    - 04_容器vs虚拟机: 04_虚拟化/04_容器vs虚拟机/README.md
-    - 05_VMware_vSphere: 04_虚拟化/05_VMware_vSphere/README.md
-    - 06_Proxmox_VE: 04_虚拟化/06_Proxmox_VE/README.md
+    - 04_VMware_vSphere: 04_虚拟化/04_VMware_vSphere/README.md
+    - 05_Proxmox_VE: 04_虚拟化/05_Proxmox_VE/README.md
+    - 06_容器vs虚拟机: 04_虚拟化/06_容器vs虚拟机/README.md
     - 99_发展与展望: 04_虚拟化/99_发展与展望.md
 
   - 05_私有云:
     - 概述: 05_私有云/index.md
-    - 01_OpenStack: 05_私有云/01_OpenStack/README.md
-    - 02_云平台选型: 05_私有云/02_云平台选型/README.md
+    - 01_云平台选型: 05_私有云/01_云平台选型/README.md
+    - 02_OpenStack: 05_私有云/02_OpenStack/README.md
     - 03_自动化管理: 05_私有云/03_自动化管理/README.md
     - 99_发展与展望: 05_私有云/99_发展与展望.md
 
@@ -138,19 +139,19 @@ nav:
     - 03_网络: 07_Kubernetes/03_网络/README.md
     - 04_存储: 07_Kubernetes/04_存储/README.md
     - 05_调度与资源管理: 07_Kubernetes/05_调度与资源管理/README.md
-    - 06_Operator开发: 07_Kubernetes/06_Operator开发/README.md
-    - 07_安全: 07_Kubernetes/07_安全/README.md
-    - 08_CICD: 07_Kubernetes/08_CICD/README.md
-    - 09_可观测性: 07_Kubernetes/09_可观测性/README.md
-    - 10_集群运维: 07_Kubernetes/10_集群运维/README.md
+    - 06_安全: 07_Kubernetes/06_安全/README.md
+    - 07_可观测性: 07_Kubernetes/07_可观测性/README.md
+    - 08_集群运维: 07_Kubernetes/08_集群运维/README.md
+    - 09_CICD: 07_Kubernetes/09_CICD/README.md
+    - 10_Operator开发: 07_Kubernetes/10_Operator开发/README.md
     - 11_生态工具: 07_Kubernetes/11_生态工具/README.md
     - 99_发展与展望: 07_Kubernetes/99_发展与展望.md
 
   - 08_DevOps:
     - 概述: 08_DevOps/index.md
-    - 01_基础设施即代码: 08_DevOps/01_基础设施即代码/README.md
+    - 01_代码管理: 08_DevOps/01_代码管理/README.md
     - 02_CICD: 08_DevOps/02_CICD/README.md
-    - 03_代码管理: 08_DevOps/03_代码管理/README.md
+    - 03_基础设施即代码: 08_DevOps/03_基础设施即代码/README.md
     - 04_容器化CI: 08_DevOps/04_容器化CI/README.md
     - 05_部署策略: 08_DevOps/05_部署策略/README.md
     - 99_发展与展望: 08_DevOps/99_发展与展望.md
@@ -194,8 +195,8 @@ nav:
   - 12_AIOps:
     - 概述: 12_AIOps/index.md
     - 01_异常检测: 12_AIOps/01_异常检测/README.md
-    - 02_LLM告警: 12_AIOps/02_LLM告警/README.md
-    - 03_告警管理: 12_AIOps/03_告警管理/README.md
+    - 02_告警管理: 12_AIOps/02_告警管理/README.md
+    - 03_LLM告警: 12_AIOps/03_LLM告警/README.md
     - 04_自动化修复: 12_AIOps/04_自动化修复/README.md
     - 05_成本优化: 12_AIOps/05_成本优化/README.md
     - 06_运维知识库: 12_AIOps/06_运维知识库/README.md
@@ -210,14 +211,14 @@ nav:
 
   - 14_安全:
     - 概述: 14_安全/index.md
-    - 01_Linux安全: 14_安全/01_Linux安全/README.md
-    - 02_容器安全: 14_安全/02_容器安全/README.md
-    - 03_K8s安全: 14_安全/03_K8s安全/README.md
-    - 04_网络安全: 14_安全/04_网络安全/README.md
-    - 05_密钥管理: 14_安全/05_密钥管理/README.md
-    - 06_供应链安全: 14_安全/06_供应链安全/README.md
-    - 07_网络安全基础: 14_安全/07_网络安全基础/README.md
-    - 08_加密与认证: 14_安全/08_加密与认证/README.md
+    - 01_网络安全基础: 14_安全/01_网络安全基础/README.md
+    - 02_加密与认证: 14_安全/02_加密与认证/README.md
+    - 03_Linux安全: 14_安全/03_Linux安全/README.md
+    - 04_容器安全: 14_安全/04_容器安全/README.md
+    - 05_K8s安全: 14_安全/05_K8s安全/README.md
+    - 06_网络安全: 14_安全/06_网络安全/README.md
+    - 07_密钥管理: 14_安全/07_密钥管理/README.md
+    - 08_供应链安全: 14_安全/08_供应链安全/README.md
     - 09_漏洞管理: 14_安全/09_漏洞管理/README.md
     - 10_安全运营: 14_安全/10_安全运营/README.md
     - 99_发展与展望: 14_安全/99_发展与展望.md
@@ -225,16 +226,16 @@ nav:
   - 15_渗透测试:
     - 概述: 15_渗透测试/index.md
     - 00_Kali概述: 15_渗透测试/00_Kali概述.md
-    - 01_信息收集: 15_渗透测试/01_信息收集/README.md
-    - 02_漏洞扫描: 15_渗透测试/02_漏洞扫描/README.md
-    - 03_网络攻击: 15_渗透测试/03_网络攻击/README.md
-    - 04_Web攻击: 15_渗透测试/04_Web攻击/README.md
-    - 05_认证攻击: 15_渗透测试/05_认证攻击/README.md
-    - 06_后渗透: 15_渗透测试/06_后渗透/README.md
-    - 07_社会工程学: 15_渗透测试/07_社会工程学/README.md
-    - 08_防御加固: 15_渗透测试/08_防御加固/README.md
-    - 09_CTF实战: 15_渗透测试/09_CTF实战/README.md
-    - 10_方法论: 15_渗透测试/10_方法论/README.md
+    - 01_方法论: 15_渗透测试/01_方法论/README.md
+    - 02_信息收集: 15_渗透测试/02_信息收集/README.md
+    - 03_漏洞扫描: 15_渗透测试/03_漏洞扫描/README.md
+    - 04_网络攻击: 15_渗透测试/04_网络攻击/README.md
+    - 05_Web攻击: 15_渗透测试/05_Web攻击/README.md
+    - 06_认证攻击: 15_渗透测试/06_认证攻击/README.md
+    - 07_后渗透: 15_渗透测试/07_后渗透/README.md
+    - 08_社会工程学: 15_渗透测试/08_社会工程学/README.md
+    - 09_防御加固: 15_渗透测试/09_防御加固/README.md
+    - 10_CTF实战: 15_渗透测试/10_CTF实战/README.md
     - 99_发展与展望: 15_渗透测试/99_发展与展望.md
 
   - 16_故障排查:
