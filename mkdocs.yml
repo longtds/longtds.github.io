@@ -85,12 +85,10 @@ nav:
 
   - 02_Linux:
     - 概述: 02_Linux/index.md
-    - 01_系统管理: 02_Linux/01_系统管理/README.md
-    - 02_存储与文件系统: 02_Linux/02_存储与文件系统/README.md
-    - 03_系统调优: 02_Linux/03_系统调优/README.md
-    - 04_系统维护: 02_Linux/04_系统维护/README.md
-    - 05_性能排查: 02_Linux/05_性能排查/README.md
-    - 06_Shell脚本: 02_Linux/06_Shell脚本/README.md
+    - 01_基础: 02_Linux/01_基础/README.md
+    - 02_进阶: 02_Linux/02_进阶/README.md
+    - 03_高级: 02_Linux/03_高级/README.md
+    - 04_最佳实践: 02_Linux/04_最佳实践/README.md
     - 99_发展与展望: 02_Linux/99_发展与展望.md
 
   - 03_网络:
