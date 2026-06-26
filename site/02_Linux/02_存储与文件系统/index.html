@@ -535,21 +535,49 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        文件系统对比
+        一、磁盘基础
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、磁盘基础">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 设备识别
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lvm" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#12-smart" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LVM 逻辑卷管理
+        1.2 SMART 健康检查
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-nvme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 NVMe 专用
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -557,7 +585,672 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        磁盘性能测试
+        二、分区表
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、分区表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-mbr-vs-gpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 MBR vs GPT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-partedgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 parted（GPT 推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-fdisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 fdisk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-ssdnvme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 分区对齐（SSD/NVMe 重要）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 扩容分区（在线）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、文件系统
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、文件系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 选型矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-ext4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 ext4 实战
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-xfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 XFS（高性能）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-btrfscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Btrfs（CoW + 快照）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-zfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 ZFS（企业级）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、LVM（逻辑卷管理）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、LVM（逻辑卷管理）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 标准流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 扩缩容
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 快照
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-thin-provisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Thin Provisioning（超分）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 在线迁移（更换磁盘）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raid-raid-mdadm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、RAID（软 RAID / mdadm）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、RAID（软 RAID / mdadm）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-raid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 RAID 级别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-mdadm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 mdadm 实战
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-raid-vs-raid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 硬 RAID vs 软 RAID
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fstab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、挂载与 fstab
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、挂载与 fstab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 mount 命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-etcfstab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 /etc/fstab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 常用挂载选项
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-systemdautomount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 自动挂载（systemd.automount）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、网络存储
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、网络存储">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-nfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 NFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-cifs-smb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 CIFS / SMB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-iscsi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 iSCSI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-ceph-rbd-cephfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Ceph RBD / CephFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-fuses3fsgoofysrclone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 对象存储 FUSE（s3fs/goofys/rclone）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#luks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、磁盘加密（LUKS）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、磁盘加密（LUKS）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 全盘加密
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-etccrypttab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 /etc/crypttab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-tpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 TPM 解锁（无密码）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、I/O 性能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、I/O 性能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 监控
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-fio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 fio 压测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-io" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 I/O 调度器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-readahead-queue-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 readahead / queue depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、磁盘配额
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、磁盘配额">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-ext4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 ext4 配额
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-xfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 XFS 项目配额
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、备份与恢复
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、备份与恢复">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 工具选型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-rsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 rsync 实战
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-restic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 restic（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-systemd-timer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 systemd timer 自动备份
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、推荐栈（2025）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、国产化清单
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、参考资料
       
     </span>
   </a>
@@ -1732,21 +2425,49 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        文件系统对比
+        一、磁盘基础
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、磁盘基础">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 设备识别
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lvm" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#12-smart" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LVM 逻辑卷管理
+        1.2 SMART 健康检查
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-nvme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 NVMe 专用
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1754,7 +2475,672 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        磁盘性能测试
+        二、分区表
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、分区表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-mbr-vs-gpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 MBR vs GPT
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-partedgpt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 parted（GPT 推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-fdisk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 fdisk
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-ssdnvme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 分区对齐（SSD/NVMe 重要）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.5 扩容分区（在线）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、文件系统
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、文件系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 选型矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-ext4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 ext4 实战
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-xfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 XFS（高性能）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-btrfscow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Btrfs（CoW + 快照）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-zfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 ZFS（企业级）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lvm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、LVM（逻辑卷管理）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、LVM（逻辑卷管理）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 标准流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 扩缩容
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 快照
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-thin-provisioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 Thin Provisioning（超分）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.6 在线迁移（更换磁盘）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#raid-raid-mdadm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、RAID（软 RAID / mdadm）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、RAID（软 RAID / mdadm）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-raid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 RAID 级别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-mdadm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 mdadm 实战
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-raid-vs-raid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 硬 RAID vs 软 RAID
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fstab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、挂载与 fstab
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、挂载与 fstab">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-mount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 mount 命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-etcfstab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 /etc/fstab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 常用挂载选项
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-systemdautomount" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 自动挂载（systemd.automount）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、网络存储
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、网络存储">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-nfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 NFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-cifs-smb" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 CIFS / SMB
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-iscsi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 iSCSI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-ceph-rbd-cephfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Ceph RBD / CephFS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-fuses3fsgoofysrclone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 对象存储 FUSE（s3fs/goofys/rclone）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#luks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、磁盘加密（LUKS）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、磁盘加密（LUKS）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 全盘加密
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-etccrypttab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 /etc/crypttab
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-tpm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 TPM 解锁（无密码）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#io" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、I/O 性能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、I/O 性能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 监控
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-fio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 fio 压测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-io" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 I/O 调度器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-readahead-queue-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 readahead / queue depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、磁盘配额
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、磁盘配额">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-ext4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 ext4 配额
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-xfs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 XFS 项目配额
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、备份与恢复
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、备份与恢复">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 工具选型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-rsync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 rsync 实战
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-restic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 restic（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-systemd-timer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 systemd timer 自动备份
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、推荐栈（2025）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、国产化清单
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、参考资料
       
     </span>
   </a>
@@ -1830,79 +3216,1137 @@
 
 
 <h1 id="_1">存储与文件系统<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">文件系统对比<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>Linux 存储栈 = <strong>块设备（磁盘/SSD/NVMe）→ RAID/MultiPath → LVM（卷管理）→ 文件系统（ext4/xfs/btrfs/zfs）→ 挂载（mount）→ 网络存储（NFS/CIFS/iSCSI）</strong>。每一层都有运维细节，本章给完整手册。</p>
+</blockquote>
+<h2 id="_2">一、磁盘基础<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="11">1.1 设备识别<a class="headerlink" href="#11" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 看磁盘</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>lsblk<span class="w">                                          </span><span class="c1"># 块设备树（最常用）</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>lsblk<span class="w"> </span>-f<span class="w">                                        </span><span class="c1"># 含文件系统</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>lsblk<span class="w"> </span>-d<span class="w"> </span>-o<span class="w"> </span>NAME,SIZE,ROTA,MODEL<span class="w">                </span><span class="c1"># 是否旋转盘 (SSD=0)</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>lsblk<span class="w"> </span>-e7<span class="w">                                       </span><span class="c1"># 排除 loop</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>fdisk<span class="w"> </span>-l<span class="w">                                        </span><span class="c1"># 全部磁盘 + 分区</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>parted<span class="w"> </span>-l<span class="w">                                        </span><span class="c1"># GPT 友好</span>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># 详细信息</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>hdparm<span class="w"> </span>-i<span class="w"> </span>/dev/sda<span class="w">                              </span><span class="c1"># SATA/IDE</span>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>smartctl<span class="w"> </span>-a<span class="w"> </span>/dev/sda<span class="w">                            </span><span class="c1"># SMART (健康)</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>smartctl<span class="w"> </span>-a<span class="w"> </span>/dev/nvme0<span class="w">                          </span><span class="c1"># NVMe</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>nvme<span class="w"> </span>list<span class="w">                                        </span><span class="c1"># NVMe 设备</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>nvme<span class="w"> </span>smart-log<span class="w"> </span>/dev/nvme0n1
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="c1"># 总线</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>lspci<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>raid
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>lspci<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>nvme
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>lsscsi<span class="w">                                          </span><span class="c1"># SCSI 设备</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="c1"># 设备名约定</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>/dev/sda<span class="w">     </span>SATA<span class="w"> </span>/<span class="w"> </span>SAS<span class="w"> </span>第<span class="w"> </span><span class="m">1</span><span class="w"> </span>块
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>/dev/nvme0n1<span class="w"> </span>NVMe<span class="w"> </span>第<span class="w"> </span><span class="m">1</span><span class="w"> </span>块第<span class="w"> </span><span class="m">1</span><span class="w"> </span>namespace
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>/dev/vda<span class="w">     </span>virtio<span class="w"> </span><span class="o">(</span>KVM<span class="w"> </span>虚拟盘<span class="o">)</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>/dev/xvda<span class="w">    </span>Xen<span class="w"> </span>虚拟盘
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>/dev/mapper/*<span class="w"> </span>LVM<span class="w"> </span>/<span class="w"> </span>dm-crypt<span class="w"> </span>/<span class="w"> </span>multipath
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>/dev/md0<span class="w">     </span>mdadm<span class="w"> </span>RAID
+</code></pre></div>
+<h3 id="12-smart">1.2 SMART 健康检查<a class="headerlink" href="#12-smart" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># 安装</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>dnf<span class="w"> </span>install<span class="w"> </span>smartmontools<span class="w">                       </span><span class="c1"># RHEL</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>apt<span class="w"> </span>install<span class="w"> </span>smartmontools<span class="w">                       </span><span class="c1"># Ubuntu</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># 状态</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>smartctl<span class="w"> </span>-H<span class="w"> </span>/dev/sda<span class="w">                            </span><span class="c1"># 健康 (PASSED/FAILED)</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>smartctl<span class="w"> </span>-a<span class="w"> </span>/dev/sda<span class="w">                            </span><span class="c1"># 完整属性</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># 关键 SMART 属性</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># 5    Reallocated_Sector_Ct      重映射扇区 (&gt; 0 警惕)</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># 187  Reported_Uncorrect          报告未校正错误</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># 188  Command_Timeout             命令超时</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c1"># 196  Reallocation_Event_Count</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="c1"># 197  Current_Pending_Sector      待重映射扇区 ⭐</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="c1"># 198  Offline_Uncorrectable</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="c1"># 199  UDMA_CRC_Error_Count        线缆/接触问题</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="c1"># 主动扫描</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>smartctl<span class="w"> </span>-t<span class="w"> </span>short<span class="w"> </span>/dev/sda<span class="w">                      </span><span class="c1"># 短测试 (2 min)</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>smartctl<span class="w"> </span>-t<span class="w"> </span>long<span class="w"> </span>/dev/sda<span class="w">                       </span><span class="c1"># 完整扫描 (几小时)</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>smartctl<span class="w"> </span>-l<span class="w"> </span>selftest<span class="w"> </span>/dev/sda<span class="w">                   </span><span class="c1"># 看结果</span>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="c1"># 后台服务</span>
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>smartd
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a><span class="c1"># 配置 /etc/smartd.conf</span>
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>DEVICESCAN<span class="w"> </span>-a<span class="w"> </span>-o<span class="w"> </span>on<span class="w"> </span>-S<span class="w"> </span>on<span class="w"> </span>-n<span class="w"> </span>standby,q<span class="w"> </span>-s<span class="w"> </span><span class="o">(</span>S/../.././02<span class="p">|</span>L/../../6/03<span class="o">)</span><span class="w"> </span>-m<span class="w"> </span>admin@example.com
+</code></pre></div>
+<h3 id="13-nvme">1.3 NVMe 专用<a class="headerlink" href="#13-nvme" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>nvme<span class="w"> </span>list
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>nvme<span class="w"> </span>id-ctrl<span class="w"> </span>/dev/nvme0
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>nvme<span class="w"> </span>smart-log<span class="w"> </span>/dev/nvme0n1<span class="w">                     </span><span class="c1"># 健康/耐久度</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># 关注:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="c1"># - percentage_used         消耗百分比</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># - power_on_hours</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># - critical_warning        != 0 时告警</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="c1"># - media_errors</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># 性能测试</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>nvme<span class="w"> </span>io-passthru<span class="w"> </span>...<span class="w">                            </span><span class="c1"># 高级</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>fio<span class="w"> </span>--name<span class="o">=</span><span class="nb">test</span><span class="w"> </span>--filename<span class="o">=</span>/dev/nvme0n1<span class="w"> </span>--rw<span class="o">=</span>randread<span class="w"> </span>--bs<span class="o">=</span>4k<span class="w"> </span>--numjobs<span class="o">=</span><span class="m">4</span><span class="w"> </span>--iodepth<span class="o">=</span><span class="m">64</span><span class="w"> </span>--time_based<span class="w"> </span>--runtime<span class="o">=</span><span class="m">30</span><span class="w"> </span>--direct<span class="o">=</span><span class="m">1</span>
+</code></pre></div>
+<h2 id="_3">二、分区表<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="21-mbr-vs-gpt">2.1 MBR vs GPT<a class="headerlink" href="#21-mbr-vs-gpt" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">文件系统</th>
-<th style="text-align: center;">最大文件</th>
-<th style="text-align: center;">最大卷</th>
 <th style="text-align: left;">特性</th>
-<th style="text-align: left;">场景</th>
+<th style="text-align: left;">MBR</th>
+<th style="text-align: left;">GPT ⭐</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">ext4</td>
-<td style="text-align: center;">16TB</td>
-<td style="text-align: center;">1EB</td>
-<td style="text-align: left;">成熟稳定</td>
-<td style="text-align: left;">通用默认</td>
+<td style="text-align: left;">最大盘容量</td>
+<td style="text-align: left;">2TB</td>
+<td style="text-align: left;">9.4 ZB</td>
 </tr>
 <tr>
-<td style="text-align: left;">XFS</td>
-<td style="text-align: center;">8EB</td>
-<td style="text-align: center;">8EB</td>
-<td style="text-align: left;">高性能，适合大文件</td>
-<td style="text-align: left;">大文件存储</td>
+<td style="text-align: left;">分区数</td>
+<td style="text-align: left;">4 主 / 扩展</td>
+<td style="text-align: left;">128</td>
 </tr>
 <tr>
-<td style="text-align: left;">ZFS</td>
-<td style="text-align: center;">16EB</td>
-<td style="text-align: center;">256ZB</td>
-<td style="text-align: left;">数据完整性/压缩/快照</td>
-<td style="text-align: left;">存储服务器</td>
+<td style="text-align: left;">备份</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">头尾各一份</td>
 </tr>
 <tr>
-<td style="text-align: left;">Btrfs</td>
-<td style="text-align: center;">16EB</td>
-<td style="text-align: center;">16EB</td>
-<td style="text-align: left;">Cow/快照/校验</td>
-<td style="text-align: left;">高级存储</td>
+<td style="text-align: left;">UEFI 启动</td>
+<td style="text-align: left;">需 BIOS</td>
+<td style="text-align: left;">原生</td>
+</tr>
+<tr>
+<td style="text-align: left;">校验</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">CRC32</td>
+</tr>
+<tr>
+<td style="text-align: left;">推荐</td>
+<td style="text-align: left;">历史遗留</td>
+<td style="text-align: left;">一律 GPT</td>
 </tr>
 </tbody>
 </table>
-<h2 id="lvm">LVM 逻辑卷管理<a class="headerlink" href="#lvm" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 创建 PV</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>pvcreate<span class="w"> </span>/dev/sdb<span class="w"> </span>/dev/sdc
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># 创建 VG</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>vgcreate<span class="w"> </span>data_vg<span class="w"> </span>/dev/sdb<span class="w"> </span>/dev/sdc
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># 创建 LV</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>lvcreate<span class="w"> </span>-L<span class="w"> </span>500G<span class="w"> </span>-n<span class="w"> </span>data_lv<span class="w"> </span>data_vg
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># 格式化与挂载</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>mkfs.xfs<span class="w"> </span>/dev/data_vg/data_lv
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>mount<span class="w"> </span>/dev/data_vg/data_lv<span class="w"> </span>/data
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="c1"># 扩容</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>lvextend<span class="w"> </span>-L<span class="w"> </span>+100G<span class="w"> </span>/dev/data_vg/data_lv
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>xfs_growfs<span class="w"> </span>/data
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="c1"># 查看状态</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>pvdisplay
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>vgdisplay
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>lvdisplay
+<h3 id="22-partedgpt">2.2 parted（GPT 推荐）<a class="headerlink" href="#22-partedgpt" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>parted<span class="w"> </span>/dev/sda
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="o">(</span>parted<span class="o">)</span><span class="w"> </span>print
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="o">(</span>parted<span class="o">)</span><span class="w"> </span>mklabel<span class="w"> </span>gpt<span class="w">                            </span><span class="c1"># 注意：擦写整盘</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="o">(</span>parted<span class="o">)</span><span class="w"> </span>mkpart<span class="w"> </span>primary<span class="w"> </span>ext4<span class="w"> </span><span class="m">0</span>%<span class="w"> </span><span class="m">100</span>%<span class="w">            </span><span class="c1"># 用百分比避免对齐问题</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="o">(</span>parted<span class="o">)</span><span class="w"> </span>mkpart<span class="w"> </span>primary<span class="w"> </span>1MiB<span class="w"> </span>100GiB<span class="w">             </span><span class="c1"># 显式对齐</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="o">(</span>parted<span class="o">)</span><span class="w"> </span>name<span class="w"> </span><span class="m">1</span><span class="w"> </span>root
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="o">(</span>parted<span class="o">)</span><span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>boot<span class="w"> </span>on<span class="w">                          </span><span class="c1"># 启动标志</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="o">(</span>parted<span class="o">)</span><span class="w"> </span>align-check<span class="w"> </span>optimal<span class="w"> </span><span class="m">1</span><span class="w">                  </span><span class="c1"># 检查对齐 ⭐</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="o">(</span>parted<span class="o">)</span><span class="w"> </span>quit
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="c1"># 非交互</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>parted<span class="w"> </span>-s<span class="w"> </span>/dev/sdb<span class="w"> </span>mklabel<span class="w"> </span>gpt<span class="w"> </span>mkpart<span class="w"> </span>data<span class="w"> </span>ext4<span class="w"> </span><span class="m">0</span>%<span class="w"> </span><span class="m">100</span>%
 </code></pre></div>
-<h2 id="_3">磁盘性能测试<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># 顺序读写</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/zero<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/tmp/test<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>1M<span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">4096</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/tmp/test<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/dev/null<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>1M<span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">4096</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="c1"># fio 基准测试</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>fio<span class="w"> </span>--name<span class="o">=</span><span class="nb">test</span><span class="w"> </span>--ioengine<span class="o">=</span>libaio<span class="w"> </span>--rw<span class="o">=</span>randread<span class="w"> </span>--bs<span class="o">=</span>4k<span class="w"> </span>--numjobs<span class="o">=</span><span class="m">4</span><span class="w"> </span>--size<span class="o">=</span>1G<span class="w"> </span>--runtime<span class="o">=</span><span class="m">60</span>
+<h3 id="23-fdisk">2.3 fdisk<a class="headerlink" href="#23-fdisk" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>fdisk<span class="w"> </span>/dev/sda
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="c1"># m  help</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># p  print</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># n  new</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="c1"># d  delete</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="c1"># t  change type (8e LVM / 83 Linux / 8300 GPT Linux)</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># w  write</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1"># q  quit</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="c1"># 自动化</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="nb">echo</span><span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;n\np\n\n\n\nw&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>fdisk<span class="w"> </span>/dev/sdb
 </code></pre></div>
+<h3 id="24-ssdnvme">2.4 分区对齐（SSD/NVMe 重要）<a class="headerlink" href="#24-ssdnvme" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># 4K 对齐：从扇区 2048 起（1MiB 边界）</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>fdisk<span class="w"> </span>-l<span class="w"> </span>/dev/sda
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># 看 Start 是否 2048 的倍数 → 是 = 对齐</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="c1"># parted 用百分比或 MiB 自动对齐</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="c1"># fdisk 默认对齐到 2048</span>
+</code></pre></div>
+<h3 id="25">2.5 扩容分区（在线）<a class="headerlink" href="#25" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># 1. 扩容底层（云盘 / 物理盘）</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1"># 2. 通知内核</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nb">echo</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>&gt;<span class="w"> </span>/sys/class/block/sda/device/rescan
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>partprobe<span class="w"> </span>/dev/sda<span class="w">                              </span><span class="c1"># 重读分区表</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="c1"># 3. 扩容分区</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>growpart<span class="w"> </span>/dev/sda<span class="w"> </span><span class="m">1</span><span class="w">                             </span><span class="c1"># cloud-utils-growpart</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c1"># 4. 扩容文件系统</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>resize2fs<span class="w"> </span>/dev/sda1<span class="w">                             </span><span class="c1"># ext4</span>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>xfs_growfs<span class="w"> </span>/<span class="w">                                     </span><span class="c1"># XFS (按挂载点)</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>btrfs<span class="w"> </span>filesystem<span class="w"> </span>resize<span class="w"> </span>max<span class="w"> </span>/<span class="w">                    </span><span class="c1"># btrfs</span>
+</code></pre></div>
+<h2 id="_4">三、文件系统<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 选型矩阵<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">文件系统</th>
+<th style="text-align: left;">主导</th>
+<th style="text-align: center;">最大文件/卷</th>
+<th style="text-align: left;">特性</th>
+<th style="text-align: left;">适合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>ext4</strong> ⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">Linux</td>
+<td style="text-align: center;">16TB / 1EB</td>
+<td style="text-align: left;">稳定通用</td>
+<td style="text-align: left;">通用首选</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>XFS</strong> ⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">SGI/RH</td>
+<td style="text-align: center;">8EB</td>
+<td style="text-align: left;">大文件 / 高吞吐</td>
+<td style="text-align: left;">RHEL 默认</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Btrfs</strong> ⭐⭐⭐⭐</td>
+<td style="text-align: left;">Oracle</td>
+<td style="text-align: center;">16EB</td>
+<td style="text-align: left;">CoW / 快照 / 压缩</td>
+<td style="text-align: left;">桌面 / SUSE</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ZFS</strong> ⭐⭐⭐⭐</td>
+<td style="text-align: left;">Sun</td>
+<td style="text-align: center;">16EB</td>
+<td style="text-align: left;">CoW / RAID-Z / dedup</td>
+<td style="text-align: left;">存储服务器</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>F2FS</strong></td>
+<td style="text-align: left;">Samsung</td>
+<td style="text-align: center;">16TB</td>
+<td style="text-align: left;">Flash 友好</td>
+<td style="text-align: left;">移动 / SSD</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ceph FS</strong></td>
+<td style="text-align: left;">RH</td>
+<td style="text-align: center;">分布式</td>
+<td style="text-align: left;">集群</td>
+<td style="text-align: left;">大规模</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GlusterFS</strong></td>
+<td style="text-align: left;">RH</td>
+<td style="text-align: center;">分布式</td>
+<td style="text-align: left;">集群</td>
+<td style="text-align: left;">文件共享</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-ext4">3.2 ext4 实战<a class="headerlink" href="#32-ext4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># 创建</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>mkfs.ext4<span class="w"> </span>/dev/sdb1
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>mkfs.ext4<span class="w"> </span>-L<span class="w"> </span>data<span class="w"> </span>-m<span class="w"> </span><span class="m">1</span><span class="w"> </span>-b<span class="w"> </span><span class="m">4096</span><span class="w"> </span>/dev/sdb1<span class="w">         </span><span class="c1"># -m 保留 root 1% / -b 块大小</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># 调优</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>tune2fs<span class="w"> </span>-l<span class="w"> </span>/dev/sdb1<span class="w">                              </span><span class="c1"># 看参数</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>tune2fs<span class="w"> </span>-m<span class="w"> </span><span class="m">0</span><span class="w"> </span>/dev/sdb1<span class="w">                            </span><span class="c1"># 0% 保留（数据盘可省 5%）</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>tune2fs<span class="w"> </span>-c<span class="w"> </span><span class="m">0</span><span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w"> </span>/dev/sdb1<span class="w">                       </span><span class="c1"># 关闭周期性 fsck</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>tune2fs<span class="w"> </span>-L<span class="w"> </span>newlabel<span class="w"> </span>/dev/sdb1
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>tune2fs<span class="w"> </span>-U<span class="w"> </span>random<span class="w"> </span>/dev/sdb1<span class="w">                       </span><span class="c1"># 重置 UUID</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="c1"># 看信息</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>dumpe2fs<span class="w"> </span>-h<span class="w"> </span>/dev/sdb1
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>blkid<span class="w"> </span>/dev/sdb1<span class="w">                                   </span><span class="c1"># UUID/LABEL</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="c1"># 修复</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>e2fsck<span class="w"> </span>-f<span class="w"> </span>/dev/sdb1<span class="w">                               </span><span class="c1"># 必须未挂载</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>e2fsck<span class="w"> </span>-y<span class="w"> </span>/dev/sdb1<span class="w">                               </span><span class="c1"># 自动 yes</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>e2fsck<span class="w"> </span>-p<span class="w"> </span>/dev/sdb1<span class="w">                               </span><span class="c1"># parallel 修复</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>e2fsck<span class="w"> </span>-B<span class="w"> </span><span class="m">4096</span><span class="w"> </span>-b<span class="w"> </span><span class="m">32768</span><span class="w"> </span>/dev/sdb1<span class="w">                 </span><span class="c1"># 备份 superblock</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a><span class="c1"># 扩缩容（在线）</span>
+<a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>resize2fs<span class="w"> </span>/dev/sdb1<span class="w">                               </span><span class="c1"># 自动到底</span>
+<a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>resize2fs<span class="w"> </span>/dev/sdb1<span class="w"> </span>50G<span class="w">                           </span><span class="c1"># 缩到 50G (需先卸载并 fsck)</span>
+</code></pre></div>
+<h3 id="33-xfs">3.3 XFS（高性能）<a class="headerlink" href="#33-xfs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 创建</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>mkfs.xfs<span class="w"> </span>-f<span class="w"> </span>/dev/sdb1
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>mkfs.xfs<span class="w"> </span>-L<span class="w"> </span>data<span class="w"> </span>-f<span class="w"> </span>/dev/sdb1
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>mkfs.xfs<span class="w"> </span>-d<span class="w"> </span><span class="nv">agcount</span><span class="o">=</span><span class="m">8</span><span class="w"> </span>-l<span class="w"> </span><span class="nv">size</span><span class="o">=</span>64m<span class="w"> </span>/dev/sdb1<span class="w">       </span><span class="c1"># 高级</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># 信息</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>xfs_info<span class="w"> </span>/mountpoint
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>xfs_db<span class="w"> </span>-r<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;sb 0&quot;</span><span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;p&quot;</span><span class="w"> </span>/dev/sdb1
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1"># 扩容（仅扩，不能缩）</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>xfs_growfs<span class="w"> </span>/mountpoint<span class="w">                            </span><span class="c1"># 自动到底</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="c1"># 修复（卸载后）</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>xfs_repair<span class="w"> </span>/dev/sdb1
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>xfs_repair<span class="w"> </span>-L<span class="w"> </span>/dev/sdb1<span class="w">                           </span><span class="c1"># 强制清 log（数据丢失风险）</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="c1"># 配额（XFS 项目配额）</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>mount<span class="w"> </span>-o<span class="w"> </span>uquota,gquota,pquota<span class="w"> </span>/dev/sdb1<span class="w"> </span>/data
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>xfs_quota<span class="w"> </span>-x<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;limit bsoft=10g bhard=11g alice&#39;</span><span class="w"> </span>/data
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="c1"># 优势：</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a><span class="c1"># - 高并发写入</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="c1"># - 大文件友好</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="c1"># - 在线碎片整理</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="c1"># - RHEL 7+ 默认</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="c1"># 缺点：不能缩容</span>
+</code></pre></div>
+<h3 id="34-btrfscow">3.4 Btrfs（CoW + 快照）<a class="headerlink" href="#34-btrfscow" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># 创建</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>mkfs.btrfs<span class="w"> </span>-L<span class="w"> </span>data<span class="w"> </span>/dev/sdb1
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>mkfs.btrfs<span class="w"> </span>-d<span class="w"> </span>raid1<span class="w"> </span>-m<span class="w"> </span>raid1<span class="w"> </span>/dev/sdb<span class="w"> </span>/dev/sdc<span class="w">    </span><span class="c1"># RAID-1 mirror</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="c1"># 子卷</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>btrfs<span class="w"> </span>subvolume<span class="w"> </span>create<span class="w"> </span>/mnt/data/sub1
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>btrfs<span class="w"> </span>subvolume<span class="w"> </span>list<span class="w"> </span>/mnt/data
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>btrfs<span class="w"> </span>subvolume<span class="w"> </span>delete<span class="w"> </span>/mnt/data/sub1
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="c1"># 快照</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>btrfs<span class="w"> </span>subvolume<span class="w"> </span>snapshot<span class="w"> </span>/mnt/data<span class="w"> </span>/mnt/data/.snap-<span class="k">$(</span>date<span class="w"> </span>+%F-%H%M<span class="k">)</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>btrfs<span class="w"> </span>subvolume<span class="w"> </span>snapshot<span class="w"> </span>-r<span class="w"> </span>/mnt/data<span class="w"> </span>/mnt/data/.snap-ro<span class="w">       </span><span class="c1"># 只读</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="c1"># 压缩 (zstd 推荐)</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>mount<span class="w"> </span>-o<span class="w"> </span><span class="nv">compress</span><span class="o">=</span>zstd:3<span class="w"> </span>/dev/sdb1<span class="w"> </span>/mnt/data
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="c1"># /etc/fstab: defaults,compress=zstd:3 0 0</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="c1"># 配额</span>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>btrfs<span class="w"> </span>quota<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>/mnt/data
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>btrfs<span class="w"> </span>qgroup<span class="w"> </span>limit<span class="w"> </span>10G<span class="w"> </span>/mnt/data/sub1
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="c1"># 扩缩容</span>
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>btrfs<span class="w"> </span>filesystem<span class="w"> </span>resize<span class="w"> </span>+10G<span class="w"> </span>/mnt/data
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>btrfs<span class="w"> </span>filesystem<span class="w"> </span>resize<span class="w"> </span>-5G<span class="w"> </span>/mnt/data
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>btrfs<span class="w"> </span>filesystem<span class="w"> </span>resize<span class="w"> </span>max<span class="w"> </span>/mnt/data
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a><span class="c1"># 平衡</span>
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>btrfs<span class="w"> </span>balance<span class="w"> </span>start<span class="w"> </span>/mnt/data
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>btrfs<span class="w"> </span>balance<span class="w"> </span>status<span class="w"> </span>/mnt/data
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a>
+<a id="__codelineno-9-31" name="__codelineno-9-31" href="#__codelineno-9-31"></a><span class="c1"># 健康</span>
+<a id="__codelineno-9-32" name="__codelineno-9-32" href="#__codelineno-9-32"></a>btrfs<span class="w"> </span>filesystem<span class="w"> </span>usage<span class="w"> </span>/mnt/data
+<a id="__codelineno-9-33" name="__codelineno-9-33" href="#__codelineno-9-33"></a>btrfs<span class="w"> </span>scrub<span class="w"> </span>start<span class="w"> </span>/mnt/data<span class="w">                       </span><span class="c1"># 周期扫描</span>
+<a id="__codelineno-9-34" name="__codelineno-9-34" href="#__codelineno-9-34"></a>btrfs<span class="w"> </span>scrub<span class="w"> </span>status<span class="w"> </span>/mnt/data
+<a id="__codelineno-9-35" name="__codelineno-9-35" href="#__codelineno-9-35"></a>
+<a id="__codelineno-9-36" name="__codelineno-9-36" href="#__codelineno-9-36"></a><span class="c1"># 优势：CoW + 快照 + 透明压缩 + RAID</span>
+<a id="__codelineno-9-37" name="__codelineno-9-37" href="#__codelineno-9-37"></a><span class="c1"># 缺点：RAID-5/6 稳定性历史问题</span>
+</code></pre></div>
+<h3 id="35-zfs">3.5 ZFS（企业级）<a class="headerlink" href="#35-zfs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># 安装（Ubuntu 默认支持）</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>apt<span class="w"> </span>install<span class="w"> </span>zfsutils-linux<span class="w">                        </span><span class="c1"># Ubuntu</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>dnf<span class="w"> </span>install<span class="w"> </span>zfs-fuse<span class="w">                              </span><span class="c1"># RHEL (DKMS)</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="c1"># 创建 pool</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>zpool<span class="w"> </span>create<span class="w"> </span>-o<span class="w"> </span><span class="nv">ashift</span><span class="o">=</span><span class="m">12</span><span class="w"> </span>-O<span class="w"> </span><span class="nv">compression</span><span class="o">=</span>lz4<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="w">  </span>-O<span class="w"> </span><span class="nv">atime</span><span class="o">=</span>off<span class="w"> </span>tank<span class="w"> </span>mirror<span class="w"> </span>/dev/sdb<span class="w"> </span>/dev/sdc<span class="w">      </span><span class="c1"># mirror = RAID-1</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>zpool<span class="w"> </span>create<span class="w"> </span>tank<span class="w"> </span>raidz2<span class="w"> </span>/dev/sd<span class="o">{</span>b,c,d,e<span class="o">}</span><span class="w">         </span><span class="c1"># RAID-Z2</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="c1"># Dataset</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>zfs<span class="w"> </span>create<span class="w"> </span>tank/data
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>zfs<span class="w"> </span>create<span class="w"> </span>tank/data/logs
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>zfs<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="nv">compression</span><span class="o">=</span>zstd<span class="w"> </span>tank/data
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>zfs<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="nv">quota</span><span class="o">=</span>100G<span class="w"> </span>tank/data/logs
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>zfs<span class="w"> </span><span class="nb">set</span><span class="w"> </span><span class="nv">recordsize</span><span class="o">=</span>1M<span class="w"> </span>tank/bigfiles<span class="w">               </span><span class="c1"># 大文件</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a><span class="c1"># 快照</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>zfs<span class="w"> </span>snapshot<span class="w"> </span>tank/data@daily-<span class="k">$(</span>date<span class="w"> </span>+%F<span class="k">)</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>zfs<span class="w"> </span>list<span class="w"> </span>-t<span class="w"> </span>snapshot
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>zfs<span class="w"> </span>rollback<span class="w"> </span>tank/data@daily-2026-06-26
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>zfs<span class="w"> </span>clone<span class="w"> </span>tank/data@daily<span class="w"> </span>tank/data-test
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a>
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a><span class="c1"># 发送/接收（远程备份）</span>
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a>zfs<span class="w"> </span>send<span class="w"> </span>tank/data@daily<span class="w"> </span><span class="p">|</span><span class="w"> </span>ssh<span class="w"> </span>backup-srv<span class="w"> </span><span class="s2">&quot;zfs receive backup-pool/data&quot;</span>
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>zfs<span class="w"> </span>send<span class="w"> </span>-i<span class="w"> </span>@yesterday<span class="w"> </span>tank/data@today<span class="w"> </span><span class="p">|</span><span class="w"> </span>ssh<span class="w"> </span>...<span class="w"> </span><span class="p">|</span><span class="w"> </span>zfs<span class="w"> </span>receive<span class="w"> </span>-F<span class="w"> </span>...
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a><span class="c1"># 健康</span>
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>zpool<span class="w"> </span>status<span class="w"> </span>-v<span class="w"> </span>tank
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>zpool<span class="w"> </span>scrub<span class="w"> </span>tank
+<a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>zpool<span class="w"> </span>list
+<a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a>
+<a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a><span class="c1"># ARC 缓存监控</span>
+<a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>arc_summary
+<a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a>zpool<span class="w"> </span>iostat<span class="w"> </span>-v<span class="w"> </span>tank<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>
+<a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a><span class="c1"># 优势:</span>
+<a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a><span class="c1"># - 端到端校验</span>
+<a id="__codelineno-10-38" name="__codelineno-10-38" href="#__codelineno-10-38"></a><span class="c1"># - RAID-Z (省一块校验盘)</span>
+<a id="__codelineno-10-39" name="__codelineno-10-39" href="#__codelineno-10-39"></a><span class="c1"># - 内置压缩/dedup/加密</span>
+<a id="__codelineno-10-40" name="__codelineno-10-40" href="#__codelineno-10-40"></a><span class="c1"># - 发送/接收增量备份</span>
+<a id="__codelineno-10-41" name="__codelineno-10-41" href="#__codelineno-10-41"></a><span class="c1"># 缺点：内存消耗大（ARC 占 50% RAM）</span>
+</code></pre></div>
+<h2 id="lvm">四、LVM（逻辑卷管理）<a class="headerlink" href="#lvm" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 概念<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>PV (Physical Volume)    物理卷    = 一块磁盘/分区
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>VG (Volume Group)       卷组      = 多个 PV 池化
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>LV (Logical Volume)     逻辑卷    = 从 VG 切出的&quot;虚拟分区&quot;
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>优势:
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>  - 动态扩缩容
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>  - 快照
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>  - 跨磁盘聚合
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>  - 镜像 / RAID
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>  - thin provisioning
+</code></pre></div>
+<h3 id="42">4.2 标准流程<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># 1. PV</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>pvcreate<span class="w"> </span>/dev/sdb<span class="w"> </span>/dev/sdc
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>pvs<span class="w">                                                </span><span class="c1"># 简洁</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>pvdisplay<span class="w">                                          </span><span class="c1"># 详细</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>pvscan
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># 2. VG</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>vgcreate<span class="w"> </span>vg_data<span class="w"> </span>/dev/sdb<span class="w"> </span>/dev/sdc
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>vgs
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>vgdisplay
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>vgextend<span class="w"> </span>vg_data<span class="w"> </span>/dev/sdd<span class="w">                          </span><span class="c1"># 加盘</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>vgreduce<span class="w"> </span>vg_data<span class="w"> </span>/dev/sdd<span class="w">                          </span><span class="c1"># 移除（需先 pvmove）</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="c1"># 3. LV</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>lvcreate<span class="w"> </span>-L<span class="w"> </span>100G<span class="w"> </span>-n<span class="w"> </span>lv_logs<span class="w"> </span>vg_data
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>lvcreate<span class="w"> </span>-l<span class="w"> </span><span class="m">100</span>%FREE<span class="w"> </span>-n<span class="w"> </span>lv_data<span class="w"> </span>vg_data<span class="w">           </span><span class="c1"># 用全部空间</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>lvcreate<span class="w"> </span>-L<span class="w"> </span>50G<span class="w"> </span>-n<span class="w"> </span>lv_mirror<span class="w"> </span>-m1<span class="w"> </span>vg_data<span class="w">          </span><span class="c1"># 镜像 (RAID-1)</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>lvcreate<span class="w"> </span>-L<span class="w"> </span>100G<span class="w"> </span>-n<span class="w"> </span>lv_stripe<span class="w"> </span>-i<span class="w"> </span><span class="m">2</span><span class="w"> </span>vg_data<span class="w">        </span><span class="c1"># 条带 (RAID-0, 2 盘)</span>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="c1"># 4. 格式化 + 挂载</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>mkfs.xfs<span class="w"> </span>/dev/vg_data/lv_logs
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a>mkdir<span class="w"> </span>/var/log/app
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a>mount<span class="w"> </span>/dev/vg_data/lv_logs<span class="w"> </span>/var/log/app
+<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a>
+<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="c1"># 5. /etc/fstab</span>
+<a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;/dev/vg_data/lv_logs /var/log/app xfs defaults 0 0&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/fstab
+</code></pre></div>
+<h3 id="43">4.3 扩缩容<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 扩容（在线，ext4/xfs/btrfs）</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>lvextend<span class="w"> </span>-L<span class="w"> </span>+50G<span class="w"> </span>/dev/vg_data/lv_logs
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>lvextend<span class="w"> </span>-l<span class="w"> </span>+100%FREE<span class="w"> </span>/dev/vg_data/lv_logs<span class="w">        </span><span class="c1"># 用剩余</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="c1"># 同时扩文件系统</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>lvextend<span class="w"> </span>-r<span class="w"> </span>-L<span class="w"> </span>+50G<span class="w"> </span>/dev/vg_data/lv_logs<span class="w">          </span><span class="c1"># -r 自动 resize fs</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1"># 或分两步:</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>lvextend<span class="w"> </span>-L<span class="w"> </span>+50G<span class="w"> </span>/dev/vg_data/lv_logs
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>xfs_growfs<span class="w"> </span>/var/log/app<span class="w">                            </span><span class="c1"># XFS</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>resize2fs<span class="w"> </span>/dev/vg_data/lv_logs<span class="w">                     </span><span class="c1"># ext4</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="c1"># 缩容（XFS 不支持！只能 ext4）</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>umount<span class="w"> </span>/var/log/app
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>e2fsck<span class="w"> </span>-f<span class="w"> </span>/dev/vg_data/lv_logs
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>resize2fs<span class="w"> </span>/dev/vg_data/lv_logs<span class="w"> </span>80G<span class="w">                 </span><span class="c1"># 先缩 fs</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>lvreduce<span class="w"> </span>-L<span class="w"> </span>80G<span class="w"> </span>/dev/vg_data/lv_logs<span class="w">               </span><span class="c1"># 再缩 LV</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>mount<span class="w"> </span>/var/log/app
+</code></pre></div>
+<h3 id="44">4.4 快照<a class="headerlink" href="#44" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># 创建（CoW，原 LV 改动会写到 snapshot 空间）</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>lvcreate<span class="w"> </span>-L<span class="w"> </span>10G<span class="w"> </span>-s<span class="w"> </span>-n<span class="w"> </span>snap1<span class="w"> </span>/dev/vg_data/lv_data
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># -L 10G = 预留 10G 给 CoW 数据（满了快照失效）</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="c1"># 挂载快照</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>mkdir<span class="w"> </span>/mnt/snap
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>mount<span class="w"> </span>/dev/vg_data/snap1<span class="w"> </span>/mnt/snap
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="c1"># 备份后删除</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>rsync<span class="w"> </span>-av<span class="w"> </span>/mnt/snap/<span class="w"> </span>/backup/
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>umount<span class="w"> </span>/mnt/snap
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>lvremove<span class="w"> </span>/dev/vg_data/snap1
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="c1"># 回滚到快照</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>lvconvert<span class="w"> </span>--merge<span class="w"> </span>/dev/vg_data/snap1<span class="w">               </span><span class="c1"># 下次重启自动 merge</span>
+</code></pre></div>
+<h3 id="45-thin-provisioning">4.5 Thin Provisioning（超分）<a class="headerlink" href="#45-thin-provisioning" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># 创建 thin pool</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>lvcreate<span class="w"> </span>-L<span class="w"> </span>1T<span class="w"> </span>-T<span class="w"> </span>vg_data/tpool
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="c1"># 创建 thin LV (虚拟容量可大于 pool)</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>lvcreate<span class="w"> </span>-V<span class="w"> </span>500G<span class="w"> </span>-T<span class="w"> </span>vg_data/tpool<span class="w"> </span>-n<span class="w"> </span>lv_thin1
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>lvcreate<span class="w"> </span>-V<span class="w"> </span>500G<span class="w"> </span>-T<span class="w"> </span>vg_data/tpool<span class="w"> </span>-n<span class="w"> </span>lv_thin2
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>lvcreate<span class="w"> </span>-V<span class="w"> </span>500G<span class="w"> </span>-T<span class="w"> </span>vg_data/tpool<span class="w"> </span>-n<span class="w"> </span>lv_thin3
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="c1"># 总虚拟 1.5T，但实际占用 &lt; 1T</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="c1"># 注意: pool 满了所有 thin LV 都崩</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="c1"># 监控</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>lvs<span class="w"> </span>-o<span class="w"> </span>name,size,data_percent,metadata_percent
+</code></pre></div>
+<h3 id="46">4.6 在线迁移（更换磁盘）<a class="headerlink" href="#46" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># 把数据从 /dev/sdb 挪到 /dev/sdd</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>pvcreate<span class="w"> </span>/dev/sdd
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>vgextend<span class="w"> </span>vg_data<span class="w"> </span>/dev/sdd
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>pvmove<span class="w"> </span>/dev/sdb<span class="w"> </span>/dev/sdd<span class="w">                           </span><span class="c1"># 在线迁移</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>vgreduce<span class="w"> </span>vg_data<span class="w"> </span>/dev/sdb
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>pvremove<span class="w"> </span>/dev/sdb
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="c1"># 然后可以拔掉 sdb</span>
+</code></pre></div>
+<h2 id="raid-raid-mdadm">五、RAID（软 RAID / mdadm）<a class="headerlink" href="#raid-raid-mdadm" title="Permanent link">&para;</a></h2>
+<h3 id="51-raid">5.1 RAID 级别<a class="headerlink" href="#51-raid" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">级别</th>
+<th style="text-align: center;">盘数</th>
+<th style="text-align: center;">容量</th>
+<th style="text-align: center;">性能</th>
+<th style="text-align: left;">容错</th>
+<th style="text-align: left;">用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>RAID-0</strong></td>
+<td style="text-align: center;">≥2</td>
+<td style="text-align: center;">100%</td>
+<td style="text-align: center;">读+写 ↑↑</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">临时数据</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RAID-1</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">50%</td>
+<td style="text-align: center;">读 ↑ 写 =</td>
+<td style="text-align: left;">1 盘</td>
+<td style="text-align: left;">系统盘</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RAID-5</strong></td>
+<td style="text-align: center;">≥3</td>
+<td style="text-align: center;">N-1</td>
+<td style="text-align: center;">读 ↑ 写 ↓</td>
+<td style="text-align: left;">1 盘</td>
+<td style="text-align: left;">通用</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RAID-6</strong></td>
+<td style="text-align: center;">≥4</td>
+<td style="text-align: center;">N-2</td>
+<td style="text-align: center;">读 ↑ 写 ↓↓</td>
+<td style="text-align: left;">2 盘</td>
+<td style="text-align: left;">大容量</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RAID-10</strong></td>
+<td style="text-align: center;">≥4 (偶)</td>
+<td style="text-align: center;">50%</td>
+<td style="text-align: center;">读+写 ↑↑</td>
+<td style="text-align: left;">多盘</td>
+<td style="text-align: left;">数据库 ⭐</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-mdadm">5.2 mdadm 实战<a class="headerlink" href="#52-mdadm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># 创建 RAID-10</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>mdadm<span class="w"> </span>--create<span class="w"> </span>/dev/md0<span class="w"> </span>--level<span class="o">=</span><span class="m">10</span><span class="w"> </span>--raid-devices<span class="o">=</span><span class="m">4</span><span class="w"> </span>/dev/sd<span class="o">[</span>b-e<span class="o">]</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="c1"># 或</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>mdadm<span class="w"> </span>-C<span class="w"> </span>/dev/md0<span class="w"> </span>-l<span class="w"> </span><span class="m">10</span><span class="w"> </span>-n<span class="w"> </span><span class="m">4</span><span class="w"> </span>/dev/sd<span class="o">{</span>b,c,d,e<span class="o">}</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="c1"># 看状态</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>cat<span class="w"> </span>/proc/mdstat
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>mdadm<span class="w"> </span>--detail<span class="w"> </span>/dev/md0
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>mdadm<span class="w"> </span>--examine<span class="w"> </span>/dev/sdb
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="c1"># 保存配置（不然重启认不出）</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>mdadm<span class="w"> </span>--detail<span class="w"> </span>--scan<span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/mdadm.conf<span class="w">          </span><span class="c1"># RHEL</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>mdadm<span class="w"> </span>--detail<span class="w"> </span>--scan<span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/mdadm/mdadm.conf<span class="w">    </span><span class="c1"># Ubuntu</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>update-initramfs<span class="w"> </span>-u
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a>
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="c1"># 故障盘处理</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a>mdadm<span class="w"> </span>/dev/md0<span class="w"> </span>--fail<span class="w"> </span>/dev/sdb<span class="w">                    </span><span class="c1"># 标记故障</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a>mdadm<span class="w"> </span>/dev/md0<span class="w"> </span>--remove<span class="w"> </span>/dev/sdb<span class="w">                  </span><span class="c1"># 移除</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="c1"># 物理换盘</span>
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a>mdadm<span class="w"> </span>/dev/md0<span class="w"> </span>--add<span class="w"> </span>/dev/sdb<span class="w">                     </span><span class="c1"># 加入（自动 rebuild）</span>
+<a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a>
+<a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a><span class="c1"># 重建监控</span>
+<a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a>watch<span class="w"> </span>cat<span class="w"> </span>/proc/mdstat
+<a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a>mdadm<span class="w"> </span>--monitor<span class="w"> </span>--mail<span class="o">=</span>admin@example.com<span class="w"> </span>--daemonise<span class="w"> </span>/dev/md0
+<a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a>
+<a id="__codelineno-17-26" name="__codelineno-17-26" href="#__codelineno-17-26"></a><span class="c1"># 增加盘数（RAID-5/6 reshape）</span>
+<a id="__codelineno-17-27" name="__codelineno-17-27" href="#__codelineno-17-27"></a>mdadm<span class="w"> </span>--add<span class="w"> </span>/dev/md0<span class="w"> </span>/dev/sdf
+<a id="__codelineno-17-28" name="__codelineno-17-28" href="#__codelineno-17-28"></a>mdadm<span class="w"> </span>--grow<span class="w"> </span>/dev/md0<span class="w"> </span>--raid-devices<span class="o">=</span><span class="m">5</span>
+<a id="__codelineno-17-29" name="__codelineno-17-29" href="#__codelineno-17-29"></a>
+<a id="__codelineno-17-30" name="__codelineno-17-30" href="#__codelineno-17-30"></a><span class="c1"># 停止</span>
+<a id="__codelineno-17-31" name="__codelineno-17-31" href="#__codelineno-17-31"></a>mdadm<span class="w"> </span>--stop<span class="w"> </span>/dev/md0
+<a id="__codelineno-17-32" name="__codelineno-17-32" href="#__codelineno-17-32"></a>mdadm<span class="w"> </span>--zero-superblock<span class="w"> </span>/dev/sd<span class="o">[</span>b-e<span class="o">]</span><span class="w">              </span><span class="c1"># 清元数据</span>
+</code></pre></div>
+<h3 id="53-raid-vs-raid">5.3 硬 RAID vs 软 RAID<a class="headerlink" href="#53-raid-vs-raid" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>硬 RAID:
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>  ✅ 性能强（独立缓存 + 电池）
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>  ✅ 可启动盘
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>  ❌ 卡坏需要同型号 / 兼容
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>  ❌ 故障定位难
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>  代表: LSI MegaRAID / PERC / HP Smart Array
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>软 RAID (mdadm):
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>  ✅ 通用 / 可移植
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a>  ✅ 故障明显
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a>  ❌ 性能略低
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>  ❌ 启动盘配置复杂
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>ZFS / Btrfs:
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a>  ✅ 文件系统层 RAID
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>  ✅ 数据校验
+<a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a>  ❌ ZFS 用内存多
+<a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a>
+<a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a>推荐:
+<a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a>  - 数据库 / 关键: 硬 RAID-10 + 电池
+<a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a>  - 大文件存储: ZFS RAID-Z2
+<a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a>  - K8s 节点系统盘: 软 RAID-1
+</code></pre></div>
+<h2 id="fstab">六、挂载与 fstab<a class="headerlink" href="#fstab" title="Permanent link">&para;</a></h2>
+<h3 id="61-mount">6.1 mount 命令<a class="headerlink" href="#61-mount" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># 临时挂载</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>mount<span class="w"> </span>/dev/sdb1<span class="w"> </span>/data
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>mount<span class="w"> </span>-t<span class="w"> </span>xfs<span class="w"> </span>-o<span class="w"> </span>noatime,nodiratime<span class="w"> </span>/dev/sdb1<span class="w"> </span>/data
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>mount<span class="w"> </span>-o<span class="w"> </span>remount,rw<span class="w"> </span>/<span class="w">                              </span><span class="c1"># 重新挂载（root rw）</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>mount<span class="w"> </span>-o<span class="w"> </span>remount,ro<span class="w"> </span>/home<span class="w">                          </span><span class="c1"># 改为只读</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="c1"># bind 挂载（同一目录挂到另一处）</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>mount<span class="w"> </span>--bind<span class="w"> </span>/src<span class="w"> </span>/dst
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="c1"># tmpfs（内存盘）</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>mount<span class="w"> </span>-t<span class="w"> </span>tmpfs<span class="w"> </span>-o<span class="w"> </span><span class="nv">size</span><span class="o">=</span>2G<span class="w"> </span>tmpfs<span class="w"> </span>/tmp
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="c1"># 卸载</span>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>umount<span class="w"> </span>/data
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>umount<span class="w"> </span>-l<span class="w"> </span>/data<span class="w">                                    </span><span class="c1"># lazy（占用时延迟卸载）</span>
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>umount<span class="w"> </span>-f<span class="w"> </span>/data<span class="w">                                    </span><span class="c1"># force（NFS 卡死时）</span>
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>fuser<span class="w"> </span>-m<span class="w"> </span>/data<span class="w">                                     </span><span class="c1"># 谁在用</span>
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>lsof<span class="w"> </span>+D<span class="w"> </span>/data
+</code></pre></div>
+<h3 id="62-etcfstab">6.2 /etc/fstab<a class="headerlink" href="#62-etcfstab" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a># device  mountpoint  fstype  options  dump  fsck
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>UUID=xxx-xxx-xxx  /          ext4  defaults                          1 1
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>UUID=yyy-yyy-yyy  /boot      ext4  defaults                          1 2
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>UUID=zzz-zzz-zzz  /data      xfs   defaults,noatime,nodiratime       0 0
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>LABEL=swap        swap       swap  defaults                          0 0
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>/dev/vg/lv        /var/log   ext4  defaults                          0 0
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>tmpfs             /tmp       tmpfs defaults,size=4G,mode=1777        0 0
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a># NFS
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>nfs-srv:/export   /mnt/nfs   nfs   defaults,_netdev,vers=4.1         0 0
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a># 网络挂载关键：_netdev (等网络就绪)
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a># 检查 fstab
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>mount -a                                          # 挂载 fstab 全部
+<a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a>findmnt --verify --verbose                        # 检查语法
+<a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a>systemctl daemon-reload                           # systemd 重新生成 .mount unit
+</code></pre></div>
+<h3 id="63">6.3 常用挂载选项<a class="headerlink" href="#63" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>defaults        = rw,suid,dev,exec,auto,nouser,async
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>noatime         不更新访问时间 ⭐ 性能 +
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>nodiratime
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>relatime        仅每天更新一次访问时间（更宽容）
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>nodev           不解析设备文件（安全）
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>nosuid          忽略 suid 位
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>noexec          不允许执行
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>ro              只读
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a># 大数据 / DB / 容器:
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>noatime,nodiratime         性能 +
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>discard                    SSD TRIM（或定期 fstrim）
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>data=writeback             ext4 性能（牺牲一致性）
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a># NFS:
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>vers=4.1
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>hard / soft                死等 / 超时
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>intr                       可中断
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>rsize=1048576,wsize=1048576
+</code></pre></div>
+<h3 id="64-systemdautomount">6.4 自动挂载（systemd.automount）<a class="headerlink" href="#64-systemdautomount" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># /etc/systemd/system/mnt-data.mount</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="k">[Unit]</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="na">Description</span><span class="o">=</span><span class="s">Mount /mnt/data</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="k">[Mount]</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="na">What</span><span class="o">=</span><span class="s">//server/share</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="na">Where</span><span class="o">=</span><span class="s">/mnt/data</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="na">Type</span><span class="o">=</span><span class="s">cifs</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="na">Options</span><span class="o">=</span><span class="s">credentials=/etc/samba/creds,vers=3.0</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="k">[Install]</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># /etc/systemd/system/mnt-data.automount</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="k">[Unit]</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="na">Description</span><span class="o">=</span><span class="s">Automount /mnt/data</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="k">[Automount]</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="na">Where</span><span class="o">=</span><span class="s">/mnt/data</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="na">TimeoutIdleSec</span><span class="o">=</span><span class="s">600</span><span class="w">                                </span><span class="c1"># 10 分钟不用就卸载</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="k">[Install]</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">multi-user.target</span>
+</code></pre></div>
+<h2 id="_5">七、网络存储<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="71-nfs">7.1 NFS<a class="headerlink" href="#71-nfs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># 服务端 (RHEL)</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>dnf<span class="w"> </span>install<span class="w"> </span>nfs-utils
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>nfs-server
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="c1"># /etc/exports</span>
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>/data<span class="w">         </span><span class="m">192</span>.168.1.0/24<span class="o">(</span>rw,sync,no_root_squash,no_subtree_check<span class="o">)</span>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>/backup<span class="w">       </span><span class="m">10</span>.0.0.0/8<span class="o">(</span>rw,async,no_root_squash<span class="o">)</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="c1"># 应用</span>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>exportfs<span class="w"> </span>-ra<span class="w">                                       </span><span class="c1"># 重载</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>exportfs<span class="w"> </span>-v<span class="w">                                        </span><span class="c1"># 当前 export</span>
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="c1"># 客户端</span>
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>dnf<span class="w"> </span>install<span class="w"> </span>nfs-utils
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>showmount<span class="w"> </span>-e<span class="w"> </span>nfs-srv<span class="w">                              </span><span class="c1"># 查询</span>
+<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>mount<span class="w"> </span>-t<span class="w"> </span>nfs<span class="w"> </span>-o<span class="w"> </span><span class="nv">vers</span><span class="o">=</span><span class="m">4</span>.1<span class="w"> </span>nfs-srv:/data<span class="w"> </span>/mnt/data
+<a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a>
+<a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a><span class="c1"># /etc/fstab:</span>
+<a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>nfs-srv:/data<span class="w"> </span>/mnt/data<span class="w"> </span>nfs<span class="w"> </span>defaults,_netdev,vers<span class="o">=</span><span class="m">4</span>.1,hard,intr<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a>
+<a id="__codelineno-24-21" name="__codelineno-24-21" href="#__codelineno-24-21"></a><span class="c1"># 性能选项</span>
+<a id="__codelineno-24-22" name="__codelineno-24-22" href="#__codelineno-24-22"></a><span class="nv">vers</span><span class="o">=</span><span class="m">4</span>.1<span class="w">                  </span><span class="c1"># NFSv4 多</span>
+<a id="__codelineno-24-23" name="__codelineno-24-23" href="#__codelineno-24-23"></a><span class="nv">rsize</span><span class="o">=</span><span class="m">1048576</span>,wsize<span class="o">=</span><span class="m">1048576</span><span class="w">  </span><span class="c1"># 大块</span>
+<a id="__codelineno-24-24" name="__codelineno-24-24" href="#__codelineno-24-24"></a>async<span class="w">                     </span><span class="c1"># 服务端</span>
+<a id="__codelineno-24-25" name="__codelineno-24-25" href="#__codelineno-24-25"></a><span class="nv">nconnect</span><span class="o">=</span><span class="m">4</span><span class="w">                </span><span class="c1"># 多连接 (kernel 5.3+)</span>
+<a id="__codelineno-24-26" name="__codelineno-24-26" href="#__codelineno-24-26"></a>
+<a id="__codelineno-24-27" name="__codelineno-24-27" href="#__codelineno-24-27"></a><span class="c1"># 排查</span>
+<a id="__codelineno-24-28" name="__codelineno-24-28" href="#__codelineno-24-28"></a>nfsstat<span class="w"> </span>-c<span class="w">                </span><span class="c1"># 客户端统计</span>
+<a id="__codelineno-24-29" name="__codelineno-24-29" href="#__codelineno-24-29"></a>nfsstat<span class="w"> </span>-s<span class="w">                </span><span class="c1"># 服务端</span>
+<a id="__codelineno-24-30" name="__codelineno-24-30" href="#__codelineno-24-30"></a>rpcinfo<span class="w"> </span>-p<span class="w"> </span>nfs-srv
+</code></pre></div>
+<h3 id="72-cifs-smb">7.2 CIFS / SMB<a class="headerlink" href="#72-cifs-smb" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># 客户端</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>dnf<span class="w"> </span>install<span class="w"> </span>cifs-utils
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="c1"># 凭据</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>/etc/samba/creds<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="s">username=alice</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="s">password=xxx</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="s">domain=CORP</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="s">EOF</span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>/etc/samba/creds
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="c1"># 挂载</span>
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>mount<span class="w"> </span>-t<span class="w"> </span>cifs<span class="w"> </span>//smb-srv/share<span class="w"> </span>/mnt/smb<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="w">  </span>-o<span class="w"> </span><span class="nv">credentials</span><span class="o">=</span>/etc/samba/creds,vers<span class="o">=</span><span class="m">3</span>.0,iocharset<span class="o">=</span>utf8,uid<span class="o">=</span>alice,gid<span class="o">=</span>alice
+</code></pre></div>
+<h3 id="73-iscsi">7.3 iSCSI<a class="headerlink" href="#73-iscsi" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># Initiator (客户端)</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>dnf<span class="w"> </span>install<span class="w"> </span>iscsi-initiator-utils
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="c1"># 发现 target</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>iscsiadm<span class="w"> </span>-m<span class="w"> </span>discovery<span class="w"> </span>-t<span class="w"> </span>st<span class="w"> </span>-p<span class="w"> </span><span class="m">192</span>.168.1.100
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="c1"># 登录</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>iscsiadm<span class="w"> </span>-m<span class="w"> </span>node<span class="w"> </span>-T<span class="w"> </span>iqn.2024-01.com.example:target<span class="w"> </span>-l
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a><span class="c1"># 看新设备</span>
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>lsblk
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a><span class="c1"># 出现 /dev/sda 之类</span>
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a><span class="c1"># 持久化</span>
+<a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a>iscsiadm<span class="w"> </span>-m<span class="w"> </span>node<span class="w"> </span>-T<span class="w"> </span>iqn...<span class="w"> </span>-o<span class="w"> </span>update<span class="w"> </span>-n<span class="w"> </span>node.startup<span class="w"> </span>-v<span class="w"> </span>automatic
+<a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a>
+<a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a><span class="c1"># 卸载</span>
+<a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a>iscsiadm<span class="w"> </span>-m<span class="w"> </span>node<span class="w"> </span>-T<span class="w"> </span>iqn...<span class="w"> </span>-u
+<a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a>iscsiadm<span class="w"> </span>-m<span class="w"> </span>node<span class="w"> </span>-T<span class="w"> </span>iqn...<span class="w"> </span>-o<span class="w"> </span>delete
+</code></pre></div>
+<h3 id="74-ceph-rbd-cephfs">7.4 Ceph RBD / CephFS<a class="headerlink" href="#74-ceph-rbd-cephfs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="c1"># 块设备 RBD</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>rbd<span class="w"> </span>map<span class="w"> </span>mypool/myimage<span class="w"> </span>--id<span class="w"> </span>admin
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>mkfs.xfs<span class="w"> </span>/dev/rbd0
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>mount<span class="w"> </span>/dev/rbd0<span class="w"> </span>/mnt/ceph
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="c1"># CephFS</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>mount<span class="w"> </span>-t<span class="w"> </span>ceph<span class="w"> </span>mon1:6789:/<span class="w"> </span>/mnt/cephfs<span class="w"> </span>-o<span class="w"> </span><span class="nv">name</span><span class="o">=</span>admin,secretfile<span class="o">=</span>/etc/ceph/admin.key
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a><span class="c1"># K8s CSI 使用更标准</span>
+</code></pre></div>
+<h3 id="75-fuses3fsgoofysrclone">7.5 对象存储 FUSE（s3fs/goofys/rclone）<a class="headerlink" href="#75-fuses3fsgoofysrclone" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># s3fs（兼容 S3 协议）</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>s3fs<span class="w"> </span>my-bucket<span class="w"> </span>/mnt/s3<span class="w"> </span>-o<span class="w"> </span><span class="nv">passwd_file</span><span class="o">=</span>/etc/s3.pwd
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1"># rclone mount</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>rclone<span class="w"> </span>mount<span class="w"> </span>s3:bucket<span class="w"> </span>/mnt/s3<span class="w"> </span>--vfs-cache-mode<span class="w"> </span>writes<span class="w"> </span>--daemon
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="c1"># 注意：FUSE 性能远不如本地，仅日志/备份场景</span>
+</code></pre></div>
+<h2 id="luks">八、磁盘加密（LUKS）<a class="headerlink" href="#luks" title="Permanent link">&para;</a></h2>
+<h3 id="81">8.1 全盘加密<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="c1"># 创建</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>cryptsetup<span class="w"> </span>luksFormat<span class="w"> </span>/dev/sdb
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="c1"># 输入密码</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>cryptsetup<span class="w"> </span>luksOpen<span class="w"> </span>/dev/sdb<span class="w"> </span>encrypted_data
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="c1"># 出现 /dev/mapper/encrypted_data</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>mkfs.xfs<span class="w"> </span>/dev/mapper/encrypted_data
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>mount<span class="w"> </span>/dev/mapper/encrypted_data<span class="w"> </span>/data
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="c1"># 关闭</span>
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>umount<span class="w"> </span>/data
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>cryptsetup<span class="w"> </span>luksClose<span class="w"> </span>encrypted_data
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a><span class="c1"># 备份 header（关键！）</span>
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a>cryptsetup<span class="w"> </span>luksHeaderBackup<span class="w"> </span>/dev/sdb<span class="w"> </span>--header-backup-file<span class="w"> </span>luks-header.bin
+</code></pre></div>
+<h3 id="82-etccrypttab">8.2 /etc/crypttab<a class="headerlink" href="#82-etccrypttab" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a># name          device          keyfile         options
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>encrypted_data  /dev/sdb        /etc/cryptkey   luks,timeout=30
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a># 然后 /etc/fstab:
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>/dev/mapper/encrypted_data /data xfs defaults 0 0
+</code></pre></div>
+<h3 id="83-tpm">8.3 TPM 解锁（无密码）<a class="headerlink" href="#83-tpm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="c1"># systemd-cryptenroll 集成 TPM 2.0</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>systemd-cryptenroll<span class="w"> </span>--tpm2-device<span class="o">=</span>auto<span class="w"> </span>--tpm2-pcrs<span class="o">=</span><span class="m">7</span>+11<span class="w"> </span>/dev/sdb
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="c1"># 自动从 TPM 解锁，无需输密码</span>
+</code></pre></div>
+<h2 id="io">九、I/O 性能<a class="headerlink" href="#io" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 监控<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="c1"># 实时</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>iostat<span class="w"> </span>-xz<span class="w"> </span><span class="m">1</span><span class="w">                                       </span><span class="c1"># 看 %util, await, svctm</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>iotop<span class="w"> </span>-o<span class="w">                                            </span><span class="c1"># 谁在 I/O</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>nvme-stas<span class="w"> </span>/<span class="w"> </span>nvme<span class="w"> </span>list-subsys
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="c1"># 历史</span>
+<a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>sar<span class="w"> </span>-d<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">10</span>
+<a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a>sar<span class="w"> </span>-d<span class="w"> </span>-f<span class="w"> </span>/var/log/sa/sa12
+<a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a>
+<a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="c1"># 关键指标</span>
+<a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a>%util<span class="w">    </span>设备繁忙时间<span class="w"> </span>%<span class="w"> </span><span class="o">(</span>接近<span class="w"> </span><span class="m">100</span><span class="w"> </span>满<span class="o">)</span>
+<a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a>await<span class="w">    </span>平均<span class="w"> </span>I/O<span class="w"> </span>等待<span class="w"> </span>ms<span class="w"> </span><span class="o">(</span><span class="nv">高</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>慢<span class="o">)</span>
+<a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a>svctm<span class="w">    </span>平均服务时间<span class="w"> </span>ms<span class="w"> </span><span class="o">(</span>硬件<span class="o">)</span>
+<a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a>r/s<span class="w"> </span>w/s<span class="w">  </span>读写<span class="w"> </span>IOPS
+<a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a>rkB/s<span class="w"> </span>wkB/s<span class="w"> </span>吞吐
+<a id="__codelineno-32-16" name="__codelineno-32-16" href="#__codelineno-32-16"></a>aqu-sz<span class="w">   </span>平均队列长度
+</code></pre></div>
+<h3 id="92-fio">9.2 fio 压测<a class="headerlink" href="#92-fio" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="c1"># 顺序读</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>fio<span class="w"> </span>--name<span class="o">=</span>seqread<span class="w"> </span>--filename<span class="o">=</span>/dev/nvme0n1<span class="w"> </span>--rw<span class="o">=</span><span class="nb">read</span><span class="w"> </span>--bs<span class="o">=</span>1M<span class="w"> </span>--numjobs<span class="o">=</span><span class="m">1</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="w">    </span>--iodepth<span class="o">=</span><span class="m">32</span><span class="w"> </span>--time_based<span class="w"> </span>--runtime<span class="o">=</span><span class="m">30</span><span class="w"> </span>--direct<span class="o">=</span><span class="m">1</span><span class="w"> </span>--group_reporting
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="c1"># 随机读</span>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>fio<span class="w"> </span>--name<span class="o">=</span>randread<span class="w"> </span>--filename<span class="o">=</span>/data/test.dat<span class="w"> </span>--rw<span class="o">=</span>randread<span class="w"> </span>--bs<span class="o">=</span>4k<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a><span class="w">    </span>--numjobs<span class="o">=</span><span class="m">4</span><span class="w"> </span>--iodepth<span class="o">=</span><span class="m">64</span><span class="w"> </span>--size<span class="o">=</span>10G<span class="w"> </span>--time_based<span class="w"> </span>--runtime<span class="o">=</span><span class="m">30</span><span class="w"> </span>--direct<span class="o">=</span><span class="m">1</span>
+<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a>
+<a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a><span class="c1"># 数据库典型（70% 读 30% 写）</span>
+<a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a>fio<span class="w"> </span>--name<span class="o">=</span>db<span class="w"> </span>--filename<span class="o">=</span>/data/test.dat<span class="w"> </span>--rw<span class="o">=</span>randrw<span class="w"> </span>--rwmixread<span class="o">=</span><span class="m">70</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a><span class="w">    </span>--bs<span class="o">=</span>8k<span class="w"> </span>--numjobs<span class="o">=</span><span class="m">4</span><span class="w"> </span>--iodepth<span class="o">=</span><span class="m">32</span><span class="w"> </span>--size<span class="o">=</span>20G<span class="w"> </span>--time_based<span class="w"> </span>--runtime<span class="o">=</span><span class="m">120</span><span class="w"> </span>--direct<span class="o">=</span><span class="m">1</span>
+<a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a>
+<a id="__codelineno-33-13" name="__codelineno-33-13" href="#__codelineno-33-13"></a><span class="c1"># 完整 4 项基线</span>
+<a id="__codelineno-33-14" name="__codelineno-33-14" href="#__codelineno-33-14"></a><span class="k">for</span><span class="w"> </span>rw<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>write<span class="w"> </span>randread<span class="w"> </span>randwrite<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<a id="__codelineno-33-15" name="__codelineno-33-15" href="#__codelineno-33-15"></a><span class="w">  </span>fio<span class="w"> </span>--name<span class="o">=</span><span class="nv">$rw</span><span class="w"> </span>--filename<span class="o">=</span>/dev/sdX<span class="w"> </span>--rw<span class="o">=</span><span class="nv">$rw</span><span class="w"> </span>--bs<span class="o">=</span>4k<span class="w"> </span>--numjobs<span class="o">=</span><span class="m">4</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-33-16" name="__codelineno-33-16" href="#__codelineno-33-16"></a><span class="w">      </span>--iodepth<span class="o">=</span><span class="m">64</span><span class="w"> </span>--time_based<span class="w"> </span>--runtime<span class="o">=</span><span class="m">30</span><span class="w"> </span>--direct<span class="o">=</span><span class="m">1</span><span class="w"> </span>--group_reporting
+<a id="__codelineno-33-17" name="__codelineno-33-17" href="#__codelineno-33-17"></a><span class="k">done</span>
+<a id="__codelineno-33-18" name="__codelineno-33-18" href="#__codelineno-33-18"></a>
+<a id="__codelineno-33-19" name="__codelineno-33-19" href="#__codelineno-33-19"></a><span class="c1"># 注意:</span>
+<a id="__codelineno-33-20" name="__codelineno-33-20" href="#__codelineno-33-20"></a><span class="c1"># - --direct=1 绕过 page cache</span>
+<a id="__codelineno-33-21" name="__codelineno-33-21" href="#__codelineno-33-21"></a><span class="c1"># - --filename 不要打到生产数据</span>
+<a id="__codelineno-33-22" name="__codelineno-33-22" href="#__codelineno-33-22"></a><span class="c1"># - SSD 上 fio 一段时间后会进入稳态</span>
+</code></pre></div>
+<h3 id="93-io">9.3 I/O 调度器<a class="headerlink" href="#93-io" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># 看当前</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>cat<span class="w"> </span>/sys/block/sda/queue/scheduler
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a><span class="c1"># [mq-deadline] kyber bfq none</span>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="c1"># 临时切换</span>
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a><span class="nb">echo</span><span class="w"> </span>none<span class="w"> </span>&gt;<span class="w"> </span>/sys/block/nvme0n1/queue/scheduler<span class="w">        </span><span class="c1"># NVMe 推荐</span>
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="nb">echo</span><span class="w"> </span>mq-deadline<span class="w"> </span>&gt;<span class="w"> </span>/sys/block/sda/queue/scheduler<span class="w">     </span><span class="c1"># SSD/SATA</span>
+<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>
+<a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a><span class="c1"># 持久化（GRUB）</span>
+<a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a><span class="nv">GRUB_CMDLINE_LINUX</span><span class="o">=</span><span class="s2">&quot;elevator=mq-deadline&quot;</span>
+<a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a><span class="c1"># 或 udev:</span>
+<a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>/etc/udev/rules.d/60-scheduler.rules<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a><span class="s">ACTION==&quot;add|change&quot;, KERNEL==&quot;nvme*&quot;, ATTR{queue/scheduler}=&quot;none&quot;</span>
+<a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a><span class="s">ACTION==&quot;add|change&quot;, KERNEL==&quot;sd[a-z]&quot;, ATTR{queue/rotational}==&quot;0&quot;, ATTR{queue/scheduler}=&quot;mq-deadline&quot;</span>
+<a id="__codelineno-34-15" name="__codelineno-34-15" href="#__codelineno-34-15"></a><span class="s">ACTION==&quot;add|change&quot;, KERNEL==&quot;sd[a-z]&quot;, ATTR{queue/rotational}==&quot;1&quot;, ATTR{queue/scheduler}=&quot;bfq&quot;</span>
+<a id="__codelineno-34-16" name="__codelineno-34-16" href="#__codelineno-34-16"></a><span class="s">EOF</span>
+<a id="__codelineno-34-17" name="__codelineno-34-17" href="#__codelineno-34-17"></a>
+<a id="__codelineno-34-18" name="__codelineno-34-18" href="#__codelineno-34-18"></a><span class="c1"># 选型:</span>
+<a id="__codelineno-34-19" name="__codelineno-34-19" href="#__codelineno-34-19"></a><span class="c1"># NVMe SSD: none / mq-deadline</span>
+<a id="__codelineno-34-20" name="__codelineno-34-20" href="#__codelineno-34-20"></a><span class="c1"># SATA SSD: mq-deadline</span>
+<a id="__codelineno-34-21" name="__codelineno-34-21" href="#__codelineno-34-21"></a><span class="c1"># HDD: bfq / mq-deadline</span>
+</code></pre></div>
+<h3 id="94-readahead-queue-depth">9.4 readahead / queue depth<a class="headerlink" href="#94-readahead-queue-depth" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="c1"># Readahead (KB)</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>blockdev<span class="w"> </span>--getra<span class="w"> </span>/dev/sda<span class="w">                          </span><span class="c1"># 默认 256 (128KB)</span>
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>blockdev<span class="w"> </span>--setra<span class="w"> </span><span class="m">4096</span><span class="w"> </span>/dev/sda<span class="w">                     </span><span class="c1"># 2MB (顺序大文件场景)</span>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a><span class="c1"># Queue depth</span>
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>cat<span class="w"> </span>/sys/block/sda/queue/nr_requests<span class="w">               </span><span class="c1"># 默认 128</span>
+<a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a><span class="nb">echo</span><span class="w"> </span><span class="m">256</span><span class="w"> </span>&gt;<span class="w"> </span>/sys/block/sda/queue/nr_requests<span class="w">        </span><span class="c1"># 高并发</span>
+<a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a>
+<a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a><span class="c1"># 持久化：udev</span>
+</code></pre></div>
+<h2 id="_6">十、磁盘配额<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="101-ext4">10.1 ext4 配额<a class="headerlink" href="#101-ext4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="c1"># /etc/fstab 加 usrquota,grpquota</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>/dev/sdb1<span class="w"> </span>/data<span class="w"> </span>ext4<span class="w"> </span>defaults,usrquota,grpquota<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>mount<span class="w"> </span>-o<span class="w"> </span>remount<span class="w"> </span>/data
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a><span class="c1"># 初始化</span>
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>quotacheck<span class="w"> </span>-cum<span class="w"> </span>/data
+<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>quotaon<span class="w"> </span>-uv<span class="w"> </span>/data
+<a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>
+<a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a><span class="c1"># 设置</span>
+<a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a>edquota<span class="w"> </span>-u<span class="w"> </span>alice<span class="w">                                   </span><span class="c1"># 交互</span>
+<a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a>setquota<span class="w"> </span>-u<span class="w"> </span>alice<span class="w"> </span>1G<span class="w"> </span><span class="m">1</span>.2G<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>/data<span class="w">                </span><span class="c1"># soft hard</span>
+<a id="__codelineno-36-12" name="__codelineno-36-12" href="#__codelineno-36-12"></a>
+<a id="__codelineno-36-13" name="__codelineno-36-13" href="#__codelineno-36-13"></a><span class="c1"># 看</span>
+<a id="__codelineno-36-14" name="__codelineno-36-14" href="#__codelineno-36-14"></a>quota<span class="w"> </span>-u<span class="w"> </span>alice
+<a id="__codelineno-36-15" name="__codelineno-36-15" href="#__codelineno-36-15"></a>repquota<span class="w"> </span>-a
+</code></pre></div>
+<h3 id="102-xfs">10.2 XFS 项目配额<a class="headerlink" href="#102-xfs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>mount<span class="w"> </span>-o<span class="w"> </span>uquota,gquota,pquota<span class="w"> </span>/dev/sdb1<span class="w"> </span>/data
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a><span class="c1"># 用户/组</span>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>xfs_quota<span class="w"> </span>-x<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;limit bsoft=1g bhard=2g alice&#39;</span><span class="w"> </span>/data
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>xfs_quota<span class="w"> </span>-x<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;report -u&#39;</span><span class="w"> </span>/data
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a><span class="c1"># 项目（按目录配额）⭐</span>
+<a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;10:/data/project_a&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/projects
+<a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;project_a:10&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/projid
+<a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a>xfs_quota<span class="w"> </span>-x<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;project -s project_a&#39;</span><span class="w"> </span>/data
+<a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a>xfs_quota<span class="w"> </span>-x<span class="w"> </span>-c<span class="w"> </span><span class="s1">&#39;limit -p bsoft=10g bhard=12g project_a&#39;</span><span class="w"> </span>/data
+</code></pre></div>
+<h2 id="_7">十一、备份与恢复<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="111">11.1 工具选型<a class="headerlink" href="#111" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>rsync               增量同步，最常用 ⭐
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>tar                  归档
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>borg / restic ⭐     去重 + 加密 + 增量
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>rsnapshot           基于 rsync 的版本化备份
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>duplicity / duplicati  加密远程备份
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a>zfs send/receive    ZFS 原生
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>btrfs send/receive  Btrfs 原生
+<a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a>LVM snapshot + rsync   常见组合
+</code></pre></div>
+<h3 id="112-rsync">11.2 rsync 实战<a class="headerlink" href="#112-rsync" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="c1"># 本地</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>rsync<span class="w"> </span>-avh<span class="w"> </span>--delete<span class="w"> </span>/src/<span class="w"> </span>/dst/
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a><span class="c1"># 远程</span>
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>rsync<span class="w"> </span>-avhP<span class="w"> </span>--delete<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;ssh -p 22&quot;</span><span class="w"> </span>/src/<span class="w"> </span>user@host:/dst/
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a>
+<a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a><span class="c1"># 增量 + 排除</span>
+<a id="__codelineno-39-8" name="__codelineno-39-8" href="#__codelineno-39-8"></a>rsync<span class="w"> </span>-avh<span class="w"> </span>--delete<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-39-9" name="__codelineno-39-9" href="#__codelineno-39-9"></a><span class="w">  </span>--exclude<span class="o">=</span>*.tmp<span class="w"> </span>--exclude<span class="o">=</span>cache/<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-39-10" name="__codelineno-39-10" href="#__codelineno-39-10"></a><span class="w">  </span>/src/<span class="w"> </span>/dst/
+<a id="__codelineno-39-11" name="__codelineno-39-11" href="#__codelineno-39-11"></a>
+<a id="__codelineno-39-12" name="__codelineno-39-12" href="#__codelineno-39-12"></a><span class="c1"># 重要选项</span>
+<a id="__codelineno-39-13" name="__codelineno-39-13" href="#__codelineno-39-13"></a>-a<span class="w">    </span>archive<span class="w"> </span><span class="o">(=</span>-rlptgoD<span class="o">)</span>
+<a id="__codelineno-39-14" name="__codelineno-39-14" href="#__codelineno-39-14"></a>-v<span class="w">    </span>verbose
+<a id="__codelineno-39-15" name="__codelineno-39-15" href="#__codelineno-39-15"></a>-h<span class="w">    </span>human-readable
+<a id="__codelineno-39-16" name="__codelineno-39-16" href="#__codelineno-39-16"></a>-P<span class="w">    </span>--progress<span class="w"> </span>+<span class="w"> </span>--partial
+<a id="__codelineno-39-17" name="__codelineno-39-17" href="#__codelineno-39-17"></a>--delete<span class="w">    </span>删除<span class="w"> </span>dst<span class="w"> </span>多余的
+<a id="__codelineno-39-18" name="__codelineno-39-18" href="#__codelineno-39-18"></a>--link-dest<span class="o">=</span>/old/backup<span class="w">   </span>硬链接到旧备份（节省空间，rsnapshot<span class="w"> </span>用）
+<a id="__codelineno-39-19" name="__codelineno-39-19" href="#__codelineno-39-19"></a>--bwlimit<span class="o">=</span>10M<span class="w">             </span>限速
+<a id="__codelineno-39-20" name="__codelineno-39-20" href="#__codelineno-39-20"></a>-z<span class="w">    </span>压缩传输（局域网不需要）
+<a id="__codelineno-39-21" name="__codelineno-39-21" href="#__codelineno-39-21"></a>
+<a id="__codelineno-39-22" name="__codelineno-39-22" href="#__codelineno-39-22"></a><span class="c1"># 监控数据传输状态：cron + rsync + logrotate</span>
+</code></pre></div>
+<h3 id="113-restic">11.3 restic（推荐）<a class="headerlink" href="#113-restic" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="c1"># 初始化（S3 后端）</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RESTIC_REPOSITORY</span><span class="o">=</span>s3:s3.amazonaws.com/bucket/backup
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">RESTIC_PASSWORD</span><span class="o">=</span>xxx
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>restic<span class="w"> </span>init
+<a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>
+<a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a><span class="c1"># 备份</span>
+<a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a>restic<span class="w"> </span>backup<span class="w"> </span>/data<span class="w"> </span>/etc<span class="w"> </span>--exclude<span class="o">=</span>/data/cache<span class="w"> </span>--tag<span class="w"> </span>prod
+<a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a>
+<a id="__codelineno-40-9" name="__codelineno-40-9" href="#__codelineno-40-9"></a><span class="c1"># 列快照</span>
+<a id="__codelineno-40-10" name="__codelineno-40-10" href="#__codelineno-40-10"></a>restic<span class="w"> </span>snapshots
+<a id="__codelineno-40-11" name="__codelineno-40-11" href="#__codelineno-40-11"></a>restic<span class="w"> </span>stats
+<a id="__codelineno-40-12" name="__codelineno-40-12" href="#__codelineno-40-12"></a>
+<a id="__codelineno-40-13" name="__codelineno-40-13" href="#__codelineno-40-13"></a><span class="c1"># 恢复</span>
+<a id="__codelineno-40-14" name="__codelineno-40-14" href="#__codelineno-40-14"></a>restic<span class="w"> </span>restore<span class="w"> </span>latest<span class="w"> </span>--target<span class="w"> </span>/restore<span class="w"> </span>--include<span class="w"> </span>/data
+<a id="__codelineno-40-15" name="__codelineno-40-15" href="#__codelineno-40-15"></a>
+<a id="__codelineno-40-16" name="__codelineno-40-16" href="#__codelineno-40-16"></a><span class="c1"># 保留策略</span>
+<a id="__codelineno-40-17" name="__codelineno-40-17" href="#__codelineno-40-17"></a>restic<span class="w"> </span>forget<span class="w"> </span>--keep-daily<span class="w"> </span><span class="m">7</span><span class="w"> </span>--keep-weekly<span class="w"> </span><span class="m">4</span><span class="w"> </span>--keep-monthly<span class="w"> </span><span class="m">6</span><span class="w"> </span>--prune
+<a id="__codelineno-40-18" name="__codelineno-40-18" href="#__codelineno-40-18"></a>
+<a id="__codelineno-40-19" name="__codelineno-40-19" href="#__codelineno-40-19"></a><span class="c1"># 自动化（systemd timer + restic backup）</span>
+</code></pre></div>
+<h3 id="114-systemd-timer">11.4 systemd timer 自动备份<a class="headerlink" href="#114-systemd-timer" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="c1"># /etc/systemd/system/backup.service</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="k">[Service]</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a><span class="na">Type</span><span class="o">=</span><span class="s">oneshot</span>
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a><span class="na">Environment</span><span class="o">=</span><span class="s">RESTIC_REPOSITORY=s3:s3.amazonaws.com/bucket</span>
+<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a><span class="na">EnvironmentFile</span><span class="o">=</span><span class="s">/etc/restic.env</span>
+<a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/restic backup /data --tag daily</span>
+<a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/bin/restic forget --keep-daily 7 --keep-weekly 4 --prune</span>
+<a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a>
+<a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a><span class="c1"># /etc/systemd/system/backup.timer</span>
+<a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a><span class="k">[Timer]</span>
+<a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a><span class="na">OnCalendar</span><span class="o">=</span><span class="s">*-*-* 02:00</span>
+<a id="__codelineno-41-12" name="__codelineno-41-12" href="#__codelineno-41-12"></a><span class="na">RandomizedDelaySec</span><span class="o">=</span><span class="s">30min</span>
+<a id="__codelineno-41-13" name="__codelineno-41-13" href="#__codelineno-41-13"></a><span class="na">Persistent</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-41-14" name="__codelineno-41-14" href="#__codelineno-41-14"></a>
+<a id="__codelineno-41-15" name="__codelineno-41-15" href="#__codelineno-41-15"></a><span class="k">[Install]</span>
+<a id="__codelineno-41-16" name="__codelineno-41-16" href="#__codelineno-41-16"></a><span class="na">WantedBy</span><span class="o">=</span><span class="s">timers.target</span>
+</code></pre></div>
+<h2 id="_8">十二、典型坑<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>/etc/fstab 写错主机起不来</strong></td>
+<td style="text-align: left;">用 <code>mount -a</code> 测，UUID 别用设备名</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NFS 死锁卡 ls</strong></td>
+<td style="text-align: left;">hard,intr 或 soft + 重启</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>XFS 没法缩</strong></td>
+<td style="text-align: left;">设计时算清楚 / 用 ext4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>LVM thin pool 满了崩</strong></td>
+<td style="text-align: left;">监控 data_percent + 报警</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>mdadm 没保存 config</strong></td>
+<td style="text-align: left;">mdadm.conf + initramfs</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>iostat %util 看错</strong></td>
+<td style="text-align: left;">现代多队列 SSD %util 接近 100 也正常</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>不开 noatime</strong></td>
+<td style="text-align: left;">频繁元数据写入影响性能</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SSD 不开 TRIM</strong></td>
+<td style="text-align: left;">fstrim weekly timer</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没监控 SMART</strong></td>
+<td style="text-align: left;">smartd + 告警</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>大盘对齐错</strong></td>
+<td style="text-align: left;">parted 用百分比 / GPT</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>加密盘忘备份 header</strong></td>
+<td style="text-align: left;">luksHeaderBackup</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨主机挂同一磁盘</strong></td>
+<td style="text-align: left;">仅 OCFS2 / GFS2 集群 fs</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>rsync --delete 误删</strong></td>
+<td style="text-align: left;">先 --dry-run</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>删 LV 没卸载</strong></td>
+<td style="text-align: left;">mount 状态删了一定崩</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ceph RBD 没多路径</strong></td>
+<td style="text-align: left;">单 mon 挂掉无法挂</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2025">十三、推荐栈（2025）<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>通用服务器:
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>  分区:     GPT
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>  逻辑卷:   LVM 或 物理直挂
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>  文件系统: XFS (RHEL) / ext4 (Ubuntu)
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>  挂载:     noatime,nodiratime
+<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>  备份:     restic + S3 / 兼容存储
+<a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a>
+<a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a>数据库:
+<a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a>  RAID-10 硬件 RAID
+<a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a>  XFS (大表友好) / ext4
+<a id="__codelineno-42-11" name="__codelineno-42-11" href="#__codelineno-42-11"></a>  LVM 留 20% 空间快照备份
+<a id="__codelineno-42-12" name="__codelineno-42-12" href="#__codelineno-42-12"></a>  数据/日志/binlog 分盘
+<a id="__codelineno-42-13" name="__codelineno-42-13" href="#__codelineno-42-13"></a>
+<a id="__codelineno-42-14" name="__codelineno-42-14" href="#__codelineno-42-14"></a>K8s 节点:
+<a id="__codelineno-42-15" name="__codelineno-42-15" href="#__codelineno-42-15"></a>  系统盘 RAID-1 软 RAID
+<a id="__codelineno-42-16" name="__codelineno-42-16" href="#__codelineno-42-16"></a>  数据盘 ext4 + LVM (动态扩)
+<a id="__codelineno-42-17" name="__codelineno-42-17" href="#__codelineno-42-17"></a>  CSI: Ceph RBD / OpenEBS / Longhorn
+<a id="__codelineno-42-18" name="__codelineno-42-18" href="#__codelineno-42-18"></a>
+<a id="__codelineno-42-19" name="__codelineno-42-19" href="#__codelineno-42-19"></a>存储节点:
+<a id="__codelineno-42-20" name="__codelineno-42-20" href="#__codelineno-42-20"></a>  ZFS RAID-Z2 / Z3
+<a id="__codelineno-42-21" name="__codelineno-42-21" href="#__codelineno-42-21"></a>  + ARC (大内存)
+<a id="__codelineno-42-22" name="__codelineno-42-22" href="#__codelineno-42-22"></a>  + L2ARC (NVMe 二级缓存)
+<a id="__codelineno-42-23" name="__codelineno-42-23" href="#__codelineno-42-23"></a>  + ZIL/SLOG (NVMe 写日志)
+<a id="__codelineno-42-24" name="__codelineno-42-24" href="#__codelineno-42-24"></a>  或 Ceph 分布式
+</code></pre></div>
+<h2 id="_9">十四、国产化清单<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a>存储产品:
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a>  - 华为 OceanStor (集中式 + 分布式)
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a>  - 浪潮 AS/HF 系列
+<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a>  - 中科曙光 ParaStor
+<a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a>  - 紫光西部数据
+<a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>  - DDN 国产代理
+<a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a>
+<a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a>分布式存储:
+<a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a>  - 阿里云盘古
+<a id="__codelineno-43-10" name="__codelineno-43-10" href="#__codelineno-43-10"></a>  - 腾讯 CFS / CBS
+<a id="__codelineno-43-11" name="__codelineno-43-11" href="#__codelineno-43-11"></a>  - 华为 FusionStorage / DSS
+<a id="__codelineno-43-12" name="__codelineno-43-12" href="#__codelineno-43-12"></a>  - 浪潮 AS13000
+<a id="__codelineno-43-13" name="__codelineno-43-13" href="#__codelineno-43-13"></a>
+<a id="__codelineno-43-14" name="__codelineno-43-14" href="#__codelineno-43-14"></a>国产文件系统:
+<a id="__codelineno-43-15" name="__codelineno-43-15" href="#__codelineno-43-15"></a>  - 龙蜥 OS 内核支持 ext4/XFS/Btrfs
+<a id="__codelineno-43-16" name="__codelineno-43-16" href="#__codelineno-43-16"></a>  - openEuler 同上
+<a id="__codelineno-43-17" name="__codelineno-43-17" href="#__codelineno-43-17"></a>  - 麒麟 V10 同上
+</code></pre></div>
+<h2 id="_10">十五、学习路径<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>入门（2 周）:
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a>  1. 磁盘 + 分区基础 (fdisk/parted/lsblk)
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a>  2. ext4 + XFS 创建/挂载/扩容
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a>  3. fstab 配置
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a>  4. SMART 监控
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a>
+<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a>中级（1 月）:
+<a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a>  5. LVM 全套
+<a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a>  6. mdadm 软 RAID
+<a id="__codelineno-44-10" name="__codelineno-44-10" href="#__codelineno-44-10"></a>  7. NFS / CIFS 客户端
+<a id="__codelineno-44-11" name="__codelineno-44-11" href="#__codelineno-44-11"></a>  8. fio 性能压测
+<a id="__codelineno-44-12" name="__codelineno-44-12" href="#__codelineno-44-12"></a>  9. rsync 备份
+<a id="__codelineno-44-13" name="__codelineno-44-13" href="#__codelineno-44-13"></a>
+<a id="__codelineno-44-14" name="__codelineno-44-14" href="#__codelineno-44-14"></a>高级（3 月+）:
+<a id="__codelineno-44-15" name="__codelineno-44-15" href="#__codelineno-44-15"></a>  10. ZFS / Btrfs CoW + 快照
+<a id="__codelineno-44-16" name="__codelineno-44-16" href="#__codelineno-44-16"></a>  11. iSCSI / Ceph RBD
+<a id="__codelineno-44-17" name="__codelineno-44-17" href="#__codelineno-44-17"></a>  12. LUKS 加密
+<a id="__codelineno-44-18" name="__codelineno-44-18" href="#__codelineno-44-18"></a>  13. I/O 调度器调优
+<a id="__codelineno-44-19" name="__codelineno-44-19" href="#__codelineno-44-19"></a>  14. restic 增量备份
+<a id="__codelineno-44-20" name="__codelineno-44-20" href="#__codelineno-44-20"></a>
+<a id="__codelineno-44-21" name="__codelineno-44-21" href="#__codelineno-44-21"></a>专家:
+<a id="__codelineno-44-22" name="__codelineno-44-22" href="#__codelineno-44-22"></a>  15. 自研分布式存储
+<a id="__codelineno-44-23" name="__codelineno-44-23" href="#__codelineno-44-23"></a>  16. Ceph 集群运维
+<a id="__codelineno-44-24" name="__codelineno-44-24" href="#__codelineno-44-24"></a>  17. 存储 SAN/NAS 架构
+</code></pre></div>
+<h2 id="_11">十六、参考资料<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a>官方:
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>  - Linux Filesystems
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>  - LVM HOWTO
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a>  - mdadm Wiki
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>  - ZFS on Linux
+<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>  - Btrfs Wiki
+<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a>  - XFS Documentation
+<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>  - Ceph Documentation
+<a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a>
+<a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a>书籍:
+<a id="__codelineno-45-11" name="__codelineno-45-11" href="#__codelineno-45-11"></a>  - 《鸟哥的 Linux 私房菜 - 服务器篇》
+<a id="__codelineno-45-12" name="__codelineno-45-12" href="#__codelineno-45-12"></a>  - 《Linux 存储管理实战》
+<a id="__codelineno-45-13" name="__codelineno-45-13" href="#__codelineno-45-13"></a>  - Storage 性能基础 (Brendan Gregg)
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：Linux 存储 = <strong>GPT + LVM + XFS（或 ext4）+ noatime + restic 备份</strong>——这套组合扛 80% 生产场景。<strong>XFS 不能缩</strong>这一条记牢，规划时多留 20% 空间。<strong>SMART + smartd</strong> 是免费的硬盘故障预防——很多生产事故是早就预警没人看。<strong>fio --direct=1</strong> 是真实性能基准，看 %util 已经过时（多队列设备误导大）。</p>
+</blockquote>
 
 
 
