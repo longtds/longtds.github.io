@@ -1165,18 +1165,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        框架对比
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vllm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        vLLM 部署
+        一、五大框架选型矩阵
       
     </span>
   </a>
@@ -1187,7 +1176,595 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        选型建议
+        二、核心技术对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心技术对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 关键技术速查
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-benchmarkh100-llama-3-70b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 性能 Benchmark（H100, Llama-3-70B）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、vLLM 深度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、vLLM 深度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 启动参数（核心 30 个）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-pagedattention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 PagedAttention 原理（必懂）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-chunked-prefill-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Chunked Prefill（长 context 必开）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-prefix-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Prefix Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-speculative-decoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Speculative Decoding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-multi-lora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Multi-LoRA 动态加载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-vllm-cheatsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 vLLM 调优 Cheatsheet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sglang" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、SGLang 深度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、SGLang 深度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 关键能力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 启动
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-sglang-python-dsl-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 SGLang Python DSL（编排 Agent）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 结构化输出
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tgi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、TGI 深度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、TGI 深度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 工业级特性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 启动
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tensorrt-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、TensorRT-LLM 深度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、TensorRT-LLM 深度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 极致性能优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 工作流
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-fp8-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 FP8 量化 build
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-triton-inference-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Triton Inference Server 部署
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llamacpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、llama.cpp 深度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、llama.cpp 深度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 编译 + 运行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-gguf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 GGUF 量化等级
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triton-inference-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、Triton Inference Server
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、Triton Inference Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 通用推理网关
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-model-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Model Repo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、性能调优总论
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、性能调优总论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 核心调优手柄
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Benchmark 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 关键指标定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、模型兼容性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、模型兼容性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 vLLM 支持模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 国产模型推荐部署
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、最佳实践 Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、推荐栈（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十三、推荐栈（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 中小团队
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 中型企业
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 大型 / 大模型生产
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、参考资料
       
     </span>
   </a>
@@ -1732,18 +2309,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        框架对比
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#vllm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        vLLM 部署
+        一、五大框架选型矩阵
       
     </span>
   </a>
@@ -1754,7 +2320,595 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        选型建议
+        二、核心技术对比
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、核心技术对比">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 关键技术速查
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-benchmarkh100-llama-3-70b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 性能 Benchmark（H100, Llama-3-70B）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、vLLM 深度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、vLLM 深度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-30" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 启动参数（核心 30 个）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-pagedattention" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 PagedAttention 原理（必懂）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-chunked-prefill-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Chunked Prefill（长 context 必开）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-prefix-caching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Prefix Caching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-speculative-decoding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.6 Speculative Decoding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-multi-lora" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.7 Multi-LoRA 动态加载
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-vllm-cheatsheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.8 vLLM 调优 Cheatsheet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sglang" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、SGLang 深度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、SGLang 深度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 安装
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 关键能力
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 启动
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-sglang-python-dsl-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 SGLang Python DSL（编排 Agent）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 结构化输出
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tgi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、TGI 深度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、TGI 深度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 工业级特性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 启动
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 API
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tensorrt-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、TensorRT-LLM 深度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、TensorRT-LLM 深度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 极致性能优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 工作流
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-fp8-build" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 FP8 量化 build
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-triton-inference-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 Triton Inference Server 部署
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#llamacpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、llama.cpp 深度
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、llama.cpp 深度">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 优势
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 编译 + 运行
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-gguf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 GGUF 量化等级
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#triton-inference-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、Triton Inference Server
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、Triton Inference Server">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 通用推理网关
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-model-repo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Model Repo
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、性能调优总论
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、性能调优总论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 核心调优手柄
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Benchmark 工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 关键指标定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、模型兼容性
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、模型兼容性">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 vLLM 支持模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 国产模型推荐部署
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、最佳实践 Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、推荐栈（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十三、推荐栈（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 中小团队
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 中型企业
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 大型 / 大模型生产
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、参考资料
       
     </span>
   </a>
@@ -1830,77 +2984,1042 @@
 
 
 <h1 id="_1">推理框架<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">框架对比<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>推理框架是 GPU 与业务之间的核心。<strong>vLLM、SGLang、TGI、TensorRT-LLM、llama.cpp</strong> 是 2025 五大主流。<strong>选错框架成本翻倍，吞吐量减半</strong>。本章给完整选型矩阵 + 各家深度调优指南。</p>
+</blockquote>
+<h2 id="_2">一、五大框架选型矩阵<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">框架</th>
-<th style="text-align: left;">核心算法</th>
-<th style="text-align: center;">性能</th>
-<th style="text-align: center;">社区</th>
-<th style="text-align: center;">云原生</th>
-<th style="text-align: left;">特色</th>
+<th style="text-align: left;">主导</th>
+<th style="text-align: left;">长项</th>
+<th style="text-align: left;">短板</th>
+<th style="text-align: left;">适合</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">vLLM</td>
-<td style="text-align: left;">PagedAttention</td>
-<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
-<td style="text-align: center;">⭐⭐⭐⭐⭐</td>
-<td style="text-align: center;">✅</td>
-<td style="text-align: left;">最成熟，社区最大</td>
+<td style="text-align: left;"><strong>vLLM</strong> ⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">UC Berkeley</td>
+<td style="text-align: left;">PagedAttention 鼻祖，生态最全</td>
+<td style="text-align: left;">个别 op 落后 SGLang</td>
+<td style="text-align: left;">通用首选</td>
 </tr>
 <tr>
-<td style="text-align: left;">TGI</td>
-<td style="text-align: left;">连续批处理</td>
-<td style="text-align: center;">⭐⭐⭐⭐</td>
-<td style="text-align: center;">⭐⭐⭐⭐</td>
-<td style="text-align: center;">✅</td>
-<td style="text-align: left;">HuggingFace 出品</td>
+<td style="text-align: left;"><strong>SGLang</strong> ⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">LMSYS</td>
+<td style="text-align: left;">RadixAttention 复用 prefix，Structured output</td>
+<td style="text-align: left;">文档少，新</td>
+<td style="text-align: left;">高吞吐 / Agent 场景</td>
 </tr>
 <tr>
-<td style="text-align: left;">SGLang</td>
-<td style="text-align: left;">RadixAttention</td>
-<td style="text-align: center;">⭐⭐⭐⭐</td>
-<td style="text-align: center;">⭐⭐⭐</td>
-<td style="text-align: center;">✅</td>
-<td style="text-align: left;">结构化输出</td>
+<td style="text-align: left;"><strong>TGI</strong> ⭐⭐⭐⭐</td>
+<td style="text-align: left;">HuggingFace</td>
+<td style="text-align: left;">工业级稳定，K8s 友好</td>
+<td style="text-align: left;">性能略低于 vLLM</td>
+<td style="text-align: left;">企业级</td>
 </tr>
 <tr>
-<td style="text-align: left;">llm-d</td>
-<td style="text-align: left;">分布式推理</td>
-<td style="text-align: center;">⭐⭐⭐</td>
-<td style="text-align: center;">⭐⭐</td>
-<td style="text-align: center;">CNCF Sandbox</td>
-<td style="text-align: left;">K8s 原生</td>
+<td style="text-align: left;"><strong>TensorRT-LLM</strong> ⭐⭐⭐⭐</td>
+<td style="text-align: left;">NVIDIA</td>
+<td style="text-align: left;">FP8 极致优化，速度最快</td>
+<td style="text-align: left;">模型支持少，部署复杂</td>
+<td style="text-align: left;">NV 死忠 + 大模型生产</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>llama.cpp</strong> ⭐⭐⭐⭐</td>
+<td style="text-align: left;">ggerganov</td>
+<td style="text-align: left;">CPU+GPU 混合，量化丰富</td>
+<td style="text-align: left;">多卡支持弱</td>
+<td style="text-align: left;">边缘 / 桌面 / 小规模</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>llm-d</strong></td>
+<td style="text-align: left;">Google/IBM</td>
+<td style="text-align: left;">PD 分离、多副本</td>
+<td style="text-align: left;">早期</td>
+<td style="text-align: left;">大规模分布式 (2025+)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MLC-LLM</strong></td>
+<td style="text-align: left;">TVM</td>
+<td style="text-align: left;">多端 (mobile/web/edge)</td>
+<td style="text-align: left;">上手陡</td>
+<td style="text-align: left;">跨平台部署</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DeepSpeed-FastGen</strong></td>
+<td style="text-align: left;">Microsoft</td>
+<td style="text-align: left;">Dynamic SplitFuse</td>
+<td style="text-align: left;">维护减少</td>
+<td style="text-align: left;">老项目</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Triton Inference Server</strong></td>
+<td style="text-align: left;">NVIDIA</td>
+<td style="text-align: left;">通用推理服务 (CV/NLP/LLM)</td>
+<td style="text-align: left;">LLM 特化少</td>
+<td style="text-align: left;">多模型 / 多模态</td>
 </tr>
 </tbody>
 </table>
-<h2 id="vllm">vLLM 部署<a class="headerlink" href="#vllm" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Docker 部署</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>docker<span class="w"> </span>run<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>-p<span class="w"> </span><span class="m">8000</span>:8000<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span>vllm/vllm-openai:latest<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span>--model<span class="w"> </span>meta-llama/Llama-3.1-8B-Instruct<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span>--tensor-parallel-size<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span>--max-model-len<span class="w"> </span><span class="m">8192</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span>--gpu-memory-utilization<span class="w"> </span><span class="m">0</span>.9
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># API 调用</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>curl<span class="w"> </span>http://localhost:8000/v1/chat/completions<span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="s1">    &quot;model&quot;: &quot;meta-llama/Llama-3.1-8B-Instruct&quot;,</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="s1">    &quot;messages&quot;: [{&quot;role&quot;: &quot;user&quot;, &quot;content&quot;: &quot;Hello&quot;}]</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="s1">  }&#39;</span>
+<h2 id="_3">二、核心技术对比<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 关键技术速查<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">技术</th>
+<th style="text-align: center;">vLLM</th>
+<th style="text-align: center;">SGLang</th>
+<th style="text-align: center;">TGI</th>
+<th style="text-align: center;">TRT-LLM</th>
+<th style="text-align: center;">llama.cpp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">PagedAttention</td>
+<td style="text-align: center;">✅ 原创</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">RadixAttention (prefix 复用)</td>
+<td style="text-align: center;">实验</td>
+<td style="text-align: center;">⭐ 原创</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Continuous Batching</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: left;">Chunked Prefill</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Prefix Caching</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅ RadixTree</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Speculative Decoding</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅ EAGLE-3</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tensor Parallel</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⚠️ 弱</td>
+</tr>
+<tr>
+<td style="text-align: left;">Pipeline Parallel</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">FP8</td>
+<td style="text-align: center;">✅ H100+</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⭐ 最强</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">INT4 (AWQ/GPTQ)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⭐ GGUF</td>
+</tr>
+<tr>
+<td style="text-align: left;">KV Cache 量化</td>
+<td style="text-align: center;">✅ FP8</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">LoRA 多适配</td>
+<td style="text-align: center;">✅ Multi-LoRA</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⚠️</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">结构化输出 (JSON/Regex)</td>
+<td style="text-align: center;">✅ Outlines</td>
+<td style="text-align: center;">⭐ 原生</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⚠️</td>
+<td style="text-align: center;">✅ Grammar</td>
+</tr>
+<tr>
+<td style="text-align: left;">Function Calling</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multimodal (Vision)</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: left;">OpenAI API</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">⚠️ 需 wrapper</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td style="text-align: left;">Disaggregated PD</td>
+<td style="text-align: center;">✅ 1.0+</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">实验</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22-benchmarkh100-llama-3-70b">2.2 性能 Benchmark（H100, Llama-3-70B）<a class="headerlink" href="#22-benchmarkh100-llama-3-70b" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>单 H100 80G (TP=1, AWQ INT4):
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  vLLM      1450 tok/s (输出)
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  SGLang     1520 tok/s
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  TGI        1380 tok/s
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  TRT-LLM   1680 tok/s (FP8)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>2 × H100 80G (TP=2, FP16):
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  vLLM      2800 tok/s
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  SGLang     2950 tok/s
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  TGI        2650 tok/s
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  TRT-LLM   3400 tok/s (FP8)
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>TTFT (Time-to-First-Token, 4K context):
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  vLLM       150 ms
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>  SGLang     130 ms (RadixCache 命中时 &lt; 50ms)
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>  TGI        180 ms
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>  TRT-LLM   140 ms
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>* 上述为参考值，与硬件/数据集/参数高度相关
 </code></pre></div>
-<h2 id="_3">选型建议<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>通用场景</strong>：vLLM（最成熟，生态最好）</li>
-<li><strong>K8s 原生</strong>：llm-d（CNCF Sandbox，分布式原生）</li>
-<li><strong>结构化输出</strong>：SGLang（函数调用/JSON 模式）</li>
-<li><strong>快速实验</strong>：TGI（部署最简单）</li>
-</ul>
+<h2 id="vllm">三、vLLM 深度<a class="headerlink" href="#vllm" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 安装<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># pip (官方)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>pip<span class="w"> </span>install<span class="w"> </span>vllm<span class="w">                       </span><span class="c1"># 默认带 PyTorch</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># 或 uv</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>vllm
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># Docker</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>docker<span class="w"> </span>run<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>-p<span class="w"> </span><span class="m">8000</span>:8000<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">  </span>-v<span class="w"> </span>~/.cache/huggingface:/root/.cache/huggingface<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span>vllm/vllm-openai:latest<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span>--model<span class="w"> </span>meta-llama/Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">  </span>--tensor-parallel-size<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span>--dtype<span class="w"> </span>bfloat16<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">  </span>--gpu-memory-utilization<span class="w"> </span><span class="m">0</span>.9
+</code></pre></div>
+<h3 id="32-30">3.2 启动参数（核心 30 个）<a class="headerlink" href="#32-30" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>vllm<span class="w"> </span>serve<span class="w"> </span>&lt;model&gt;<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">  </span><span class="c1"># 模型</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span>--model<span class="w"> </span>meta-llama/Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span>--tokenizer-mode<span class="w"> </span>auto<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span>--trust-remote-code<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span>--revision<span class="w"> </span>main<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">  </span>--download-dir<span class="w"> </span>/data/models<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="c1"># 并行</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span>--tensor-parallel-size<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\ </span><span class="w">          </span><span class="c1"># TP, 单节点多卡</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span>--pipeline-parallel-size<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\ </span><span class="w">        </span><span class="c1"># PP, 跨节点</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">  </span>--data-parallel-size<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\ </span><span class="w">            </span><span class="c1"># DP</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">  </span><span class="c1"># 精度</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">  </span>--dtype<span class="w"> </span>bfloat16<span class="w"> </span><span class="se">\ </span><span class="w">                  </span><span class="c1"># auto/half/float16/bfloat16/float</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">  </span>--quantization<span class="w"> </span>awq<span class="w"> </span><span class="se">\ </span><span class="w">                </span><span class="c1"># awq/gptq/fp8/none</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">  </span>--kv-cache-dtype<span class="w"> </span>fp8<span class="w"> </span><span class="se">\ </span><span class="w">              </span><span class="c1"># fp8 减半 KV</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">  </span><span class="c1"># 上下文/批</span>
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">  </span>--max-model-len<span class="w"> </span><span class="m">32768</span><span class="w"> </span><span class="se">\ </span><span class="w">             </span><span class="c1"># 最大上下文（含 prompt+gen）</span>
+<a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">  </span>--max-num-seqs<span class="w"> </span><span class="m">256</span><span class="w"> </span><span class="se">\ </span><span class="w">                </span><span class="c1"># 最大并发请求</span>
+<a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">  </span>--max-num-batched-tokens<span class="w"> </span><span class="m">8192</span><span class="w"> </span><span class="se">\ </span><span class="w">     </span><span class="c1"># 单步 batch 最大 token</span>
+<a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">  </span>--gpu-memory-utilization<span class="w"> </span><span class="m">0</span>.9<span class="w"> </span><span class="se">\ </span><span class="w">      </span><span class="c1"># 显存利用率（KV cache 占用）</span>
+<a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>
+<a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">  </span><span class="c1"># 调度</span>
+<a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">  </span>--enable-chunked-prefill<span class="w"> </span><span class="se">\ </span><span class="w">          </span><span class="c1"># 长序列分块（推荐）</span>
+<a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">  </span>--enable-prefix-caching<span class="w"> </span><span class="se">\ </span><span class="w">            </span><span class="c1"># Prefix 缓存（多次相同 prompt 加速）</span>
+<a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">  </span>--num-scheduler-steps<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="se">\ </span><span class="w">           </span><span class="c1"># multi-step scheduling</span>
+<a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>
+<a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">  </span><span class="c1"># 推测解码</span>
+<a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="w">  </span>--speculative-model<span class="w"> </span>facebook/opt-125m<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-32" name="__codelineno-2-32" href="#__codelineno-2-32"></a><span class="w">  </span>--num-speculative-tokens<span class="w"> </span><span class="m">5</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-33" name="__codelineno-2-33" href="#__codelineno-2-33"></a>
+<a id="__codelineno-2-34" name="__codelineno-2-34" href="#__codelineno-2-34"></a><span class="w">  </span><span class="c1"># LoRA</span>
+<a id="__codelineno-2-35" name="__codelineno-2-35" href="#__codelineno-2-35"></a><span class="w">  </span>--enable-lora<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-36" name="__codelineno-2-36" href="#__codelineno-2-36"></a><span class="w">  </span>--max-loras<span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-37" name="__codelineno-2-37" href="#__codelineno-2-37"></a><span class="w">  </span>--max-lora-rank<span class="w"> </span><span class="m">64</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-38" name="__codelineno-2-38" href="#__codelineno-2-38"></a><span class="w">  </span>--lora-modules<span class="w"> </span><span class="nv">sql</span><span class="o">=</span>path1<span class="w"> </span><span class="nv">chat</span><span class="o">=</span>path2<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-39" name="__codelineno-2-39" href="#__codelineno-2-39"></a>
+<a id="__codelineno-2-40" name="__codelineno-2-40" href="#__codelineno-2-40"></a><span class="w">  </span><span class="c1"># 服务</span>
+<a id="__codelineno-2-41" name="__codelineno-2-41" href="#__codelineno-2-41"></a><span class="w">  </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">8000</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-42" name="__codelineno-2-42" href="#__codelineno-2-42"></a><span class="w">  </span>--api-key<span class="w"> </span>your-key<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-43" name="__codelineno-2-43" href="#__codelineno-2-43"></a><span class="w">  </span>--served-model-name<span class="w"> </span>llama3-70b<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-44" name="__codelineno-2-44" href="#__codelineno-2-44"></a><span class="w">  </span>--chat-template<span class="w"> </span>/path/to/chat_template.jinja<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-2-45" name="__codelineno-2-45" href="#__codelineno-2-45"></a><span class="w">  </span>--max-log-len<span class="w"> </span><span class="m">100</span><span class="w"> </span><span class="se">\ </span><span class="w">                 </span><span class="c1"># log 截断</span>
+<a id="__codelineno-2-46" name="__codelineno-2-46" href="#__codelineno-2-46"></a><span class="w">  </span>--disable-log-requests<span class="w"> </span><span class="se">\ </span><span class="w">            </span><span class="c1"># 高并发关日志</span>
+<a id="__codelineno-2-47" name="__codelineno-2-47" href="#__codelineno-2-47"></a>
+<a id="__codelineno-2-48" name="__codelineno-2-48" href="#__codelineno-2-48"></a><span class="w">  </span><span class="c1"># 性能</span>
+<a id="__codelineno-2-49" name="__codelineno-2-49" href="#__codelineno-2-49"></a><span class="w">  </span>--disable-custom-all-reduce<span class="w"> </span><span class="se">\ </span><span class="w">       </span><span class="c1"># 跨 NUMA 时</span>
+<a id="__codelineno-2-50" name="__codelineno-2-50" href="#__codelineno-2-50"></a><span class="w">  </span>--swap-space<span class="w"> </span><span class="m">16</span><span class="w">                      </span><span class="c1"># CPU offload 大小 GB</span>
+</code></pre></div>
+<h3 id="33-pagedattention">3.3 PagedAttention 原理（必懂）<a class="headerlink" href="#33-pagedattention" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>传统 KV Cache:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  每个请求分配大段连续显存 → 碎片严重 → 浪费 60-80%
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>PagedAttention (vLLM 原创):
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  仿操作系统虚拟内存
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  - Block (16 token / block)
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  - Block Table (虚拟 → 物理映射)
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>  - 多个请求共享 prefix blocks
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>效果:
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>  显存利用率 60% → 96%
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>  吞吐量 2-4x
+</code></pre></div>
+<h3 id="34-chunked-prefill-context">3.4 Chunked Prefill（长 context 必开）<a class="headerlink" href="#34-chunked-prefill-context" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>问题:
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  默认 prefill 一次性算完所有 prompt
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  长 prompt (32K) → prefill 几秒钟
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  期间所有 decode 请求被阻塞 → TPOT 飙升
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>Chunked Prefill:
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  把长 prefill 切成多步
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  与 decode 交错执行
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>  prefill 慢一点，decode 不阻塞
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>启用:
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>  --enable-chunked-prefill
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>  --max-num-batched-tokens 2048-8192
+</code></pre></div>
+<h3 id="35-prefix-caching">3.5 Prefix Caching<a class="headerlink" href="#35-prefix-caching" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>场景:
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  - System prompt 长且固定
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  - 多轮对话 history 重复
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  - RAG context 部分相同
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>启用:
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  --enable-prefix-caching
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>收益:
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>  TTFT 降 50-95%（前缀越长收益越大）
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>  RAG/Agent 场景效果最显著
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>策略:
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>  vLLM v1: LRU 自动淘汰
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>  SGLang RadixAttention: 更精细
+</code></pre></div>
+<h3 id="36-speculative-decoding">3.6 Speculative Decoding<a class="headerlink" href="#36-speculative-decoding" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>原理:
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  小模型 draft → 大模型 verify (并行)
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  接受率 60-80% → 加速 2-3x
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>配置:
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>  方式 1: 独立小模型
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    --speculative-model facebook/opt-125m
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>    --num-speculative-tokens 5
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>  方式 2: EAGLE / Medusa (推荐)
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    --speculative-model meta-llama/EAGLE-llama3-70b
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>  方式 3: N-gram (无需模型)
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>    --speculative-model &quot;[ngram]&quot;
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>注意:
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>  小 batch 加速明显
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>  大 batch (&gt;32) 收益递减
+</code></pre></div>
+<h3 id="37-multi-lora">3.7 Multi-LoRA 动态加载<a class="headerlink" href="#37-multi-lora" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># 启动时声明</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>vllm<span class="w"> </span>serve<span class="w"> </span>meta-llama/Meta-Llama-3-8B<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">  </span>--enable-lora<span class="w"> </span>--max-loras<span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span>--lora-modules<span class="w"> </span><span class="nv">sql</span><span class="o">=</span>/path/lora-sql<span class="w"> </span><span class="nv">code</span><span class="o">=</span>/path/lora-code
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c1"># 运行时动态加载 (API)</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/v1/load_lora_adapter<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;lora_name&quot;: &quot;math&quot;, &quot;lora_path&quot;: &quot;/path/lora-math&quot;}&#39;</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="c1"># 请求时指定</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>curl<span class="w"> </span>http://localhost:8000/v1/chat/completions<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;model&quot;: &quot;sql&quot;, &quot;messages&quot;: [...]}&#39;</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a><span class="c1"># 卸载</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/v1/unload_lora_adapter<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;lora_name&quot;: &quot;math&quot;}&#39;</span>
+</code></pre></div>
+<h3 id="38-vllm-cheatsheet">3.8 vLLM 调优 Cheatsheet<a class="headerlink" href="#38-vllm-cheatsheet" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 高吞吐配置</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>vllm<span class="w"> </span>serve<span class="w"> </span>Llama-3-70B-AWQ<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span>-tp<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span>--quantization<span class="w"> </span>awq<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span>--kv-cache-dtype<span class="w"> </span>fp8<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span>--max-num-seqs<span class="w"> </span><span class="m">512</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span>--max-num-batched-tokens<span class="w"> </span><span class="m">8192</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span>--enable-chunked-prefill<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span>--enable-prefix-caching<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span>--gpu-memory-utilization<span class="w"> </span><span class="m">0</span>.95<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">  </span>--disable-log-requests
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="c1"># 低延迟配置 (in-context learning)</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>vllm<span class="w"> </span>serve<span class="w"> </span>Llama-3-8B<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">  </span>--enable-prefix-caching<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="w">  </span>--max-num-seqs<span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="se">\ </span><span class="w">             </span><span class="c1"># 小并发</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="w">  </span>--max-num-batched-tokens<span class="w"> </span><span class="m">4096</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="w">  </span>--speculative-model<span class="w"> </span><span class="s2">&quot;[ngram]&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="w">  </span>--num-speculative-tokens<span class="w"> </span><span class="m">5</span>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="c1"># 极致长上下文 (1M token)</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>vllm<span class="w"> </span>serve<span class="w"> </span>gradientai/Llama-3-70B-Instruct-Gradient-1048k<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="w">  </span>--max-model-len<span class="w"> </span><span class="m">1048576</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="w">  </span>-tp<span class="w"> </span><span class="m">8</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a><span class="w">  </span>--enable-chunked-prefill<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="w">  </span>--max-num-batched-tokens<span class="w"> </span><span class="m">2048</span><span class="w">   </span><span class="c1"># 小 chunk 防 OOM</span>
+</code></pre></div>
+<h2 id="sglang">四、SGLang 深度<a class="headerlink" href="#sglang" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 安装<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;sglang[all]&quot;</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># 或</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>docker<span class="w"> </span>run<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>-p<span class="w"> </span><span class="m">30000</span>:30000<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span>lmsysorg/sglang:latest<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span>python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="w">    </span>--model<span class="w"> </span>meta-llama/Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="w">    </span>--tp<span class="w"> </span><span class="m">2</span><span class="w"> </span>--port<span class="w"> </span><span class="m">30000</span>
+</code></pre></div>
+<h3 id="42">4.2 关键能力<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>RadixAttention ⭐
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  Prefix 自动复用 (基于 Radix Tree)
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  Agent / 多轮场景大幅提速
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  比 vLLM prefix caching 更精细
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>Structured Generation ⭐
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>  原生支持 JSON Schema / Regex / 自定义语法
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>  无需外部库
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>Multi-Modal
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>  LLaVA / InternVL / Qwen-VL 一键
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>Function Calling
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>  原生 OpenAI API 兼容
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>EAGLE-2/3 推测解码 ⭐
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>  比 vLLM 实现更快
+</code></pre></div>
+<h3 id="43">4.3 启动<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>sglang.launch_server<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">  </span>--model-path<span class="w"> </span>Qwen/Qwen2.5-72B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span>--tp<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">  </span>--port<span class="w"> </span><span class="m">30000</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">  </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">  </span>--mem-fraction-static<span class="w"> </span><span class="m">0</span>.85<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">  </span>--max-running-requests<span class="w"> </span><span class="m">256</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="w">  </span>--enable-cache-report<span class="w"> </span><span class="se">\ </span><span class="w">             </span><span class="c1"># 看 cache 命中率</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">  </span>--disable-cuda-graph<span class="w"> </span><span class="se">\ </span><span class="w">               </span><span class="c1"># 调试时关</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">  </span>--schedule-policy<span class="w"> </span>lpm<span class="w">                  </span><span class="c1"># lpm/random/fcfs</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">  </span>--chunked-prefill-size<span class="w"> </span><span class="m">8192</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">  </span>--speculative-algorithm<span class="w"> </span>EAGLE<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w">  </span>--speculative-draft-model-path<span class="w"> </span>lmsys/sglang-EAGLE-llama3-instruct-70B<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">  </span>--speculative-num-steps<span class="w"> </span><span class="m">5</span>
+</code></pre></div>
+<h3 id="44-sglang-python-dsl-agent">4.4 SGLang Python DSL（编排 Agent）<a class="headerlink" href="#44-sglang-python-dsl-agent" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">sglang</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sgl</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">sgl</span><span class="o">.</span><span class="n">set_default_backend</span><span class="p">(</span><span class="n">sgl</span><span class="o">.</span><span class="n">RuntimeEndpoint</span><span class="p">(</span><span class="s2">&quot;http://localhost:30000&quot;</span><span class="p">))</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nd">@sgl</span><span class="o">.</span><span class="n">function</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">multi_turn_question</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">q1</span><span class="p">,</span> <span class="n">q2</span><span class="p">):</span>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;You are a helpful assistant.</span><span class="se">\n</span><span class="s2">&quot;</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;User: &quot;</span> <span class="o">+</span> <span class="n">q1</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;Assistant:&quot;</span> <span class="o">+</span> <span class="n">sgl</span><span class="o">.</span><span class="n">gen</span><span class="p">(</span><span class="s2">&quot;answer1&quot;</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">User: &quot;</span> <span class="o">+</span> <span class="n">q2</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;Assistant:&quot;</span> <span class="o">+</span> <span class="n">sgl</span><span class="o">.</span><span class="n">gen</span><span class="p">(</span><span class="s2">&quot;answer2&quot;</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">256</span><span class="p">)</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="n">state</span> <span class="o">=</span> <span class="n">multi_turn_question</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>    <span class="n">q1</span><span class="o">=</span><span class="s2">&quot;What is the capital of France?&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>    <span class="n">q2</span><span class="o">=</span><span class="s2">&quot;How about Germany?&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="p">)</span>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">state</span><span class="p">[</span><span class="s2">&quot;answer1&quot;</span><span class="p">],</span> <span class="n">state</span><span class="p">[</span><span class="s2">&quot;answer2&quot;</span><span class="p">])</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="c1"># 自动复用 prefix（system prompt + q1）</span>
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="c1"># 多轮对话最快</span>
+</code></pre></div>
+<h3 id="45">4.5 结构化输出<a class="headerlink" href="#45" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nd">@sgl</span><span class="o">.</span><span class="n">function</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">extract</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;Extract person info from: &quot;</span> <span class="o">+</span> <span class="n">text</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;Name: &quot;</span> <span class="o">+</span> <span class="n">sgl</span><span class="o">.</span><span class="n">gen</span><span class="p">(</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;[A-Z][a-z]+&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="s2">&quot;Age: &quot;</span> <span class="o">+</span> <span class="n">sgl</span><span class="o">.</span><span class="n">gen</span><span class="p">(</span><span class="s2">&quot;age&quot;</span><span class="p">,</span> <span class="n">regex</span><span class="o">=</span><span class="sa">r</span><span class="s2">&quot;\d+&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1"># 严格保证输出格式</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="c1"># vLLM 同效果需要 outlines 库</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="c1"># JSON Schema</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="nd">@sgl</span><span class="o">.</span><span class="n">function</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="k">def</span><span class="w"> </span><span class="nf">json_out</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    <span class="n">s</span> <span class="o">+=</span> <span class="n">sgl</span><span class="o">.</span><span class="n">gen</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="n">json_schema</span><span class="o">=</span><span class="s1">&#39;{</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>        <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>        <span class="s2">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">},</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;integer&quot;</span><span class="p">}}</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>    <span class="p">}</span><span class="s1">&#39;)</span>
+</code></pre></div>
+<h2 id="tgi">五、TGI 深度<a class="headerlink" href="#tgi" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 工业级特性<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>✅ K8s 友好（HuggingFace 官方维护）
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>✅ Quantization 一键 (BitsAndBytes / AWQ / GPTQ / EETQ)
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>✅ Token Streaming + SSE
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>✅ Prometheus metrics 原生
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>✅ Tracing (OpenTelemetry)
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>✅ Safetensors 默认
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>✅ Sharding (Tensor Parallel)
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>✅ Watermarking
+</code></pre></div>
+<h3 id="52">5.2 启动<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># Docker</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>docker<span class="w"> </span>run<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>--shm-size<span class="w"> </span>1g<span class="w"> </span>-p<span class="w"> </span><span class="m">8080</span>:80<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span>-v<span class="w"> </span><span class="nv">$PWD</span>/data:/data<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span>ghcr.io/huggingface/text-generation-inference:latest<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">  </span>--model-id<span class="w"> </span>meta-llama/Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">  </span>--num-shard<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">  </span>--max-input-length<span class="w"> </span><span class="m">8000</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">  </span>--max-total-tokens<span class="w"> </span><span class="m">16000</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">  </span>--max-batch-prefill-tokens<span class="w"> </span><span class="m">8192</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">  </span>--max-batch-total-tokens<span class="w"> </span><span class="m">32768</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="w">  </span>--quantize<span class="w"> </span>awq<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">  </span>--dtype<span class="w"> </span>float16
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="c1"># Helm (生产)</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>helm<span class="w"> </span>install<span class="w"> </span>tgi<span class="w"> </span>huggingface/text-generation-inference<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">  </span>--set<span class="w"> </span>model.id<span class="o">=</span>Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w">  </span>--set<span class="w"> </span><span class="nv">replicaCount</span><span class="o">=</span><span class="m">2</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">  </span>--set<span class="w"> </span>resources.limits.nvidia.com/gpu<span class="o">=</span><span class="m">2</span>
+</code></pre></div>
+<h3 id="53-api">5.3 API<a class="headerlink" href="#53-api" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># Generate</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>curl<span class="w"> </span>http://localhost:8080/generate<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;inputs&quot;: &quot;Hello&quot;, &quot;parameters&quot;: {&quot;max_new_tokens&quot;: 100, &quot;temperature&quot;: 0.7}}&#39;</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="c1"># Stream</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>curl<span class="w"> </span>http://localhost:8080/generate_stream<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;Accept: text/event-stream&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;...&#39;</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="c1"># OpenAI API 兼容</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a>curl<span class="w"> </span>http://localhost:8080/v1/chat/completions<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;model&quot;: &quot;tgi&quot;, &quot;messages&quot;: [...]}&#39;</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="c1"># Metrics</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>curl<span class="w"> </span>http://localhost:8080/metrics<span class="w">      </span><span class="c1"># Prometheus</span>
+</code></pre></div>
+<h2 id="tensorrt-llm">六、TensorRT-LLM 深度<a class="headerlink" href="#tensorrt-llm" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 极致性能优势<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>- FP8 推理（H100 比 FP16 快 1.5-2x）
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>- Custom CUDA kernel（GEMM / Attention 优化）
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>- In-Flight Batching (Continuous Batching)
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>- Paged KV Cache
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>- Multi-LoRA
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>- Speculative Decoding (EAGLE-3)
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>- Multimodal (Vision/Audio)
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>劣势:
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>- 模型转换复杂（每个模型要 build engine）
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>- engine 不跨硬件（H100 build 的不能跑 A100）
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>- 部分模型支持滞后
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a>- 单独编译，flexibility 差
+</code></pre></div>
+<h3 id="62">6.2 工作流<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># 1. Clone TensorRT-LLM</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NVIDIA/TensorRT-LLM
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="nb">cd</span><span class="w"> </span>TensorRT-LLM
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>git<span class="w"> </span>lfs<span class="w"> </span>install
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="c1"># 2. 转 checkpoint (HF → TRT-LLM format)</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>python<span class="w"> </span>examples/llama/convert_checkpoint.py<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">  </span>--model_dir<span class="w"> </span>meta-llama/Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">  </span>--output_dir<span class="w"> </span>./llama3_70b_ckpt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">  </span>--dtype<span class="w"> </span>float16<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">  </span>--tp_size<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="c1"># 3. Build engine</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a>trtllm-build<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="w">  </span>--checkpoint_dir<span class="w"> </span>./llama3_70b_ckpt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="w">  </span>--output_dir<span class="w"> </span>./llama3_70b_engine<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="w">  </span>--gemm_plugin<span class="w"> </span>float16<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="w">  </span>--gpt_attention_plugin<span class="w"> </span>float16<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a><span class="w">  </span>--max_input_len<span class="w"> </span><span class="m">8192</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="w">  </span>--max_seq_len<span class="w"> </span><span class="m">16384</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a><span class="w">  </span>--max_batch_size<span class="w"> </span><span class="m">32</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a><span class="w">  </span>--use_paged_context_fmha<span class="w"> </span><span class="nb">enable</span>
+<a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a>
+<a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a><span class="c1"># 4. Run</span>
+<a id="__codelineno-18-25" name="__codelineno-18-25" href="#__codelineno-18-25"></a>python<span class="w"> </span>examples/run.py<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-26" name="__codelineno-18-26" href="#__codelineno-18-26"></a><span class="w">  </span>--engine_dir<span class="w"> </span>./llama3_70b_engine<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-27" name="__codelineno-18-27" href="#__codelineno-18-27"></a><span class="w">  </span>--max_output_len<span class="w"> </span><span class="m">256</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-28" name="__codelineno-18-28" href="#__codelineno-18-28"></a><span class="w">  </span>--tokenizer_dir<span class="w"> </span>meta-llama/Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-29" name="__codelineno-18-29" href="#__codelineno-18-29"></a><span class="w">  </span>--input_text<span class="w"> </span><span class="s2">&quot;Hello&quot;</span>
+</code></pre></div>
+<h3 id="63-fp8-build">6.3 FP8 量化 build<a class="headerlink" href="#63-fp8-build" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># 量化 (NVIDIA Quantization Toolkit)</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>python<span class="w"> </span>examples/quantization/quantize.py<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">  </span>--model_dir<span class="w"> </span>meta-llama/Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">  </span>--output_dir<span class="w"> </span>./llama3_70b_fp8_ckpt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">  </span>--dtype<span class="w"> </span>float16<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">  </span>--qformat<span class="w"> </span>fp8<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">  </span>--calib_size<span class="w"> </span><span class="m">512</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">  </span>--tp_size<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>trtllm-build<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">  </span>--checkpoint_dir<span class="w"> </span>./llama3_70b_fp8_ckpt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="w">  </span>--output_dir<span class="w"> </span>./llama3_70b_fp8_engine<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="w">  </span>--gemm_plugin<span class="w"> </span>fp8<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">  </span>--use_fp8_context_fmha<span class="w"> </span><span class="nb">enable</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="w">  </span>--max_batch_size<span class="w"> </span><span class="m">64</span>
+</code></pre></div>
+<h3 id="64-triton-inference-server">6.4 Triton Inference Server 部署<a class="headerlink" href="#64-triton-inference-server" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># 推荐生产部署方式：TRT-LLM engine + Triton Server</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/triton-inference-server/tensorrtllm_backend
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="c1"># 配置 model_repo</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>model_repo/
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>├──<span class="w"> </span>ensemble/
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>├──<span class="w"> </span>preprocessing/
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>├──<span class="w"> </span>postprocessing/
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>└──<span class="w"> </span>tensorrt_llm/
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">    </span>└──<span class="w"> </span><span class="m">1</span>/
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">        </span>└──<span class="w"> </span>llama3_70b_fp8_engine/
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="c1"># 启动</span>
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a>docker<span class="w"> </span>run<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>-p<span class="w"> </span><span class="m">8000</span>-8002:8000-8002<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="w">  </span>-v<span class="w"> </span><span class="nv">$PWD</span>/model_repo:/models<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="w">  </span>nvcr.io/nvidia/tritonserver:24.10-trtllm-python-py3<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a><span class="w">  </span>tritonserver<span class="w"> </span>--model-repository<span class="o">=</span>/models
+</code></pre></div>
+<h2 id="llamacpp">七、llama.cpp 深度<a class="headerlink" href="#llamacpp" title="Permanent link">&para;</a></h2>
+<h3 id="71">7.1 优势<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>- CPU + GPU 混合推理（GPU 不够用 CPU 顶）
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>- GGUF 格式生态最广
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>- 多种量化（Q2_K ~ Q8_0）
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>- 单机部署最简单（一个二进制）
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>- 跨平台（Linux/Mac/Win/iOS/Android）
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>- 适合家用 / 边缘 / 桌面
+</code></pre></div>
+<h3 id="72">7.2 编译 + 运行<a class="headerlink" href="#72" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># 编译（带 CUDA）</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ggerganov/llama.cpp
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="nb">cd</span><span class="w"> </span>llama.cpp
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>make<span class="w"> </span><span class="nv">GGML_CUDA</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>-j
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="c1"># 或 cmake</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>cmake<span class="w"> </span>-B<span class="w"> </span>build<span class="w"> </span>-DGGML_CUDA<span class="o">=</span>ON
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>cmake<span class="w"> </span>--build<span class="w"> </span>build<span class="w"> </span>--config<span class="w"> </span>Release<span class="w"> </span>-j
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="c1"># 下载 GGUF</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>huggingface-cli<span class="w"> </span>download<span class="w"> </span>TheBloke/Llama-3-70B-Instruct-GGUF<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="w">  </span>llama-3-70b-instruct.Q4_K_M.gguf<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a><span class="w">  </span>--local-dir<span class="w"> </span>./models
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a><span class="c1"># 推理</span>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>./build/bin/llama-cli<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a><span class="w">  </span>-m<span class="w"> </span>./models/llama-3-70b-instruct.Q4_K_M.gguf<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a><span class="w">  </span>-p<span class="w"> </span><span class="s2">&quot;Hello&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a><span class="w">  </span>-n<span class="w"> </span><span class="m">256</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a><span class="w">  </span>-ngl<span class="w"> </span><span class="m">80</span><span class="w">                              </span><span class="c1"># offload 80 层到 GPU</span>
+<a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a>
+<a id="__codelineno-22-22" name="__codelineno-22-22" href="#__codelineno-22-22"></a><span class="c1"># Server (OpenAI API)</span>
+<a id="__codelineno-22-23" name="__codelineno-22-23" href="#__codelineno-22-23"></a>./build/bin/llama-server<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-24" name="__codelineno-22-24" href="#__codelineno-22-24"></a><span class="w">  </span>-m<span class="w"> </span>./models/llama-3-70b-instruct.Q4_K_M.gguf<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-25" name="__codelineno-22-25" href="#__codelineno-22-25"></a><span class="w">  </span>--host<span class="w"> </span><span class="m">0</span>.0.0.0<span class="w"> </span>--port<span class="w"> </span><span class="m">8080</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-26" name="__codelineno-22-26" href="#__codelineno-22-26"></a><span class="w">  </span>-ngl<span class="w"> </span><span class="m">80</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-22-27" name="__codelineno-22-27" href="#__codelineno-22-27"></a><span class="w">  </span>-c<span class="w"> </span><span class="m">8192</span><span class="w">                              </span><span class="c1"># context size</span>
+</code></pre></div>
+<h3 id="73-gguf">7.3 GGUF 量化等级<a class="headerlink" href="#73-gguf" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>Q2_K     2.5 bit, 最激进, 损失明显
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>Q3_K_M   3.4 bit, 可用
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>Q4_K_S   4.0 bit, 标准
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>Q4_K_M   4.5 bit, 推荐 ⭐
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>Q5_K_M   5.5 bit, 高质量
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>Q6_K     6.5 bit, 接近无损
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>Q8_0     8 bit, 几乎无损
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>F16      16 bit, 原版
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>70B Q4_K_M ≈ 40GB → 单张 48G L40S/A6000 即可
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>70B Q5_K_M ≈ 48GB → A100 80G 余 32GB KV
+</code></pre></div>
+<h2 id="triton-inference-server">八、Triton Inference Server<a class="headerlink" href="#triton-inference-server" title="Permanent link">&para;</a></h2>
+<h3 id="81">8.1 通用推理网关<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>不只 LLM，全模态:
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>  - LLM (TRT-LLM backend)
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>  - PyTorch / ONNX / TensorRT
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>  - CV / 音频 / 多模态
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>  - Python backend (任意自定义)
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>部署:
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>  - 多模型管理
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>  - 版本控制
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>  - Ensemble (流水线)
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>  - Business Logic Scripting
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>适合:
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>  - 平台型部署
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>  - 多模型混部
+<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>  - 与企业 ML 平台集成
+</code></pre></div>
+<h3 id="82-model-repo">8.2 Model Repo<a class="headerlink" href="#82-model-repo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>model_repo/
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>├── llama3_70b/
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>│   ├── config.pbtxt
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>│   └── 1/                              # version 1
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>│       └── model.engine
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>├── embed_bge/
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>│   ├── config.pbtxt
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>│   └── 1/
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>│       └── model.onnx
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>└── rerank_bge/
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>    ├── config.pbtxt
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>    └── 1/
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>        └── model.py                     # Python backend
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>docker<span class="w"> </span>run<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>-p<span class="w"> </span><span class="m">8000</span>-8002:8000-8002<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="w">  </span>-v<span class="w"> </span><span class="nv">$PWD</span>/model_repo:/models<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="w">  </span>nvcr.io/nvidia/tritonserver:24.10-py3<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="w">  </span>tritonserver<span class="w"> </span>--model-repository<span class="o">=</span>/models
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="c1"># HTTP:  :8000</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="c1"># gRPC:  :8001</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a><span class="c1"># Metrics: :8002 (Prometheus)</span>
+</code></pre></div>
+<h2 id="_4">九、性能调优总论<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 核心调优手柄<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>吞吐量优先:
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>  ↑ max_num_seqs (并发数)
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>  ↑ max_num_batched_tokens (单步 token 数)
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>  ↑ gpu_memory_utilization (0.9-0.95)
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>  ✅ Continuous Batching
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>  ✅ Prefix Caching
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>  ✅ Speculative Decoding (小 batch)
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>  ✅ FP8 / INT4 量化
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>  ✅ KV Cache FP8
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>延迟优先:
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>  ↓ max_num_seqs (减少排队)
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>  ↑ tensor-parallel (拆分模型, 减算时间)
+<a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a>  ✅ Speculative Decoding
+<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a>  ✅ Prefix Caching
+<a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a>  ✅ Chunked Prefill
+<a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a>  ✅ EAGLE-2/3
+<a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a>
+<a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a>长 context:
+<a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a>  ✅ Chunked Prefill (必开)
+<a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a>  ✅ Prefix Caching
+<a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a>  ↓ max_num_batched_tokens (防 OOM)
+<a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a>  ✅ KV Cache 量化 / 卸载
+<a id="__codelineno-27-24" name="__codelineno-27-24" href="#__codelineno-27-24"></a>
+<a id="__codelineno-27-25" name="__codelineno-27-25" href="#__codelineno-27-25"></a>多 LoRA:
+<a id="__codelineno-27-26" name="__codelineno-27-26" href="#__codelineno-27-26"></a>  vLLM/SGLang Multi-LoRA
+<a id="__codelineno-27-27" name="__codelineno-27-27" href="#__codelineno-27-27"></a>  动态加载 / 卸载
+<a id="__codelineno-27-28" name="__codelineno-27-28" href="#__codelineno-27-28"></a>
+<a id="__codelineno-27-29" name="__codelineno-27-29" href="#__codelineno-27-29"></a>多模型:
+<a id="__codelineno-27-30" name="__codelineno-27-30" href="#__codelineno-27-30"></a>  Triton Server 平台
+<a id="__codelineno-27-31" name="__codelineno-27-31" href="#__codelineno-27-31"></a>  或 多个 vLLM 实例 + Nginx
+</code></pre></div>
+<h3 id="92-benchmark">9.2 Benchmark 工具<a class="headerlink" href="#92-benchmark" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># vLLM 自带</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>python<span class="w"> </span>-m<span class="w"> </span>vllm.entrypoints.benchmarks.benchmark_serving<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="w">  </span>--backend<span class="w"> </span>vllm<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="w">  </span>--base-url<span class="w"> </span>http://localhost:8000<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="w">  </span>--model<span class="w"> </span>meta-llama/Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="w">  </span>--num-prompts<span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="w">  </span>--request-rate<span class="w"> </span>inf<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="w">  </span>--dataset-name<span class="w"> </span>sharegpt<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="w">  </span>--dataset-path<span class="w"> </span>/data/ShareGPT_V3_unfiltered_cleaned_split.json
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="c1"># 输出关键指标:</span>
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="c1"># - Throughput: requests/s, tokens/s</span>
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="c1"># - TTFT: P50/P99 ms</span>
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="c1"># - TPOT: P50/P99 ms (Time Per Output Token)</span>
+<a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="c1"># - E2E latency: P50/P99 ms</span>
+<a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a>
+<a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a><span class="c1"># 第三方</span>
+<a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a><span class="c1"># - genai-perf (NVIDIA, 跨框架)</span>
+<a id="__codelineno-28-19" name="__codelineno-28-19" href="#__codelineno-28-19"></a><span class="c1"># - llmperf (Anyscale)</span>
+<a id="__codelineno-28-20" name="__codelineno-28-20" href="#__codelineno-28-20"></a><span class="c1"># - locust + custom (自定义业务)</span>
+</code></pre></div>
+<h3 id="93">9.3 关键指标定义<a class="headerlink" href="#93" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>TTFT  Time To First Token         首 token 延迟
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>TPOT  Time Per Output Token        每 token 平均生成时间
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>ITL   Inter-Token Latency          相邻 token 间隔
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>TPS   Tokens Per Second            吞吐
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>RPS   Requests Per Second          请求吞吐
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>Goodput  实际有效吞吐（剔除超时）
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>合格目标 (2025):
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>  TTFT P99   &lt; 500ms (短 prompt)
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>  TPOT P99   &lt; 50ms (流式聊天)
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>  Throughput &gt; 1500 tokens/s/H100 (70B AWQ)
+</code></pre></div>
+<h2 id="_5">十、模型兼容性<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="101-vllm">10.1 vLLM 支持模型<a class="headerlink" href="#101-vllm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Llama 1/2/3/3.1/3.2/3.3
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>Qwen 1/2/2.5/3 (含 VL/Audio)
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>Mistral / Mixtral
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>DeepSeek V2/V3 (含 MoE)
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>Yi / InternLM / Baichuan
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>ChatGLM / GLM-4
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>Gemma 2/3
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>Phi 3/3.5/4
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>Command-R / Aya
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>Falcon
+<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>StableLM
+<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a>BGE / E5 (embedding)
+<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>Reranker
+<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>Whisper (Audio)
+<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a>LLaVA / InternVL / Qwen-VL / Pixtral (VLM)
+<a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a>...
+<a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a>完整列表: docs.vllm.ai/en/latest/models/supported_models.html
+</code></pre></div>
+<h3 id="102">10.2 国产模型推荐部署<a class="headerlink" href="#102" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>通用 LLM:
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>  Qwen2.5-72B-Instruct          vLLM/SGLang/TGI
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>  DeepSeek-V3                    SGLang (MoE 友好)
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>  GLM-4-9B/32B/Plus              vLLM
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>  Yi-1.5-34B                     vLLM
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>  Baichuan2-13B                  vLLM
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>  InternLM3-8B                   vLLM
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>  Telechat                       vLLM (中国电信)
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>  Hunyuan-Large                  vLLM (腾讯)
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>多模态:
+<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a>  Qwen2-VL / Qwen2.5-VL         vLLM/SGLang
+<a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a>  InternVL2-/2.5                  vLLM
+<a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a>  CogVLM2                        vLLM
+<a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a>
+<a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a>代码:
+<a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a>  DeepSeek-Coder-V2              vLLM
+<a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a>  Qwen2.5-Coder-32B              vLLM
+<a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a>  CodeLlama                       vLLM
+<a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a>
+<a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a>数学:
+<a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a>  DeepSeek-Math                  vLLM
+<a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a>  Qwen2.5-Math                   vLLM
+</code></pre></div>
+<h2 id="_6">十一、典型坑<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>vLLM 启动 OOM</strong></td>
+<td style="text-align: left;">减小 <code>gpu_memory_utilization</code> / <code>max_model_len</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>vLLM 长 prompt TTFT 高</strong></td>
+<td style="text-align: left;">开 <code>chunked-prefill</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Multi-LoRA 速度跳水</strong></td>
+<td style="text-align: left;"><code>max_loras</code> 不要过大</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>量化精度差</strong></td>
+<td style="text-align: left;">用 AWQ &gt; GPTQ &gt; BNB</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TRT-LLM engine 不通用</strong></td>
+<td style="text-align: left;">同机型 build</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TGI 模型支持滞后</strong></td>
+<td style="text-align: left;">用 vLLM/SGLang 替代</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>llama.cpp 单 batch</strong></td>
+<td style="text-align: left;">高并发别用</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>prefix 命中低</strong></td>
+<td style="text-align: left;">检查 system prompt 是否完全一致</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>speculative 反而变慢</strong></td>
+<td style="text-align: left;">小 model 接受率低 → 关</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>K8s 重启 lose 缓存</strong></td>
+<td style="text-align: left;">上 Prefix Caching 持久化（实验）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>流式 SSE 卡顿</strong></td>
+<td style="text-align: left;">检查反向代理 buffering / 网络</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>多机 TP 慢</strong></td>
+<td style="text-align: left;">用 PP 替代 / 优化 NCCL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>bf16 vs fp16 选错</strong></td>
+<td style="text-align: left;">A100 用 BF16, T4 用 FP16</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TGI 性能低于 vLLM</strong></td>
+<td style="text-align: left;">切 vLLM/SGLang</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checklist">十二、最佳实践 Checklist<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>选型:
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>☐ 主用 vLLM 或 SGLang
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>☐ 极致性能用 TRT-LLM
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>☐ 边缘/桌面用 llama.cpp
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>☐ 多模型平台用 Triton
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>
+<a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>部署:
+<a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a>☐ Docker 容器化
+<a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a>☐ GPU 持久化模式
+<a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a>☐ 显存利用 0.9+
+<a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a>☐ Chunked Prefill 开
+<a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a>☐ Prefix Caching 开
+<a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a>☐ KV Cache FP8
+<a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a>
+<a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a>调优:
+<a id="__codelineno-32-16" name="__codelineno-32-16" href="#__codelineno-32-16"></a>☐ Benchmark 基线
+<a id="__codelineno-32-17" name="__codelineno-32-17" href="#__codelineno-32-17"></a>☐ 量化（AWQ INT4 / FP8）
+<a id="__codelineno-32-18" name="__codelineno-32-18" href="#__codelineno-32-18"></a>☐ Speculative Decoding（小 batch 场景）
+<a id="__codelineno-32-19" name="__codelineno-32-19" href="#__codelineno-32-19"></a>☐ Multi-LoRA（多用户）
+<a id="__codelineno-32-20" name="__codelineno-32-20" href="#__codelineno-32-20"></a>☐ 监控 TTFT/TPOT/Throughput
+<a id="__codelineno-32-21" name="__codelineno-32-21" href="#__codelineno-32-21"></a>
+<a id="__codelineno-32-22" name="__codelineno-32-22" href="#__codelineno-32-22"></a>生产:
+<a id="__codelineno-32-23" name="__codelineno-32-23" href="#__codelineno-32-23"></a>☐ Prometheus metrics
+<a id="__codelineno-32-24" name="__codelineno-32-24" href="#__codelineno-32-24"></a>☐ K8s + HPA + KEDA
+<a id="__codelineno-32-25" name="__codelineno-32-25" href="#__codelineno-32-25"></a>☐ 健康检查 + readiness
+<a id="__codelineno-32-26" name="__codelineno-32-26" href="#__codelineno-32-26"></a>☐ 灰度发布
+<a id="__codelineno-32-27" name="__codelineno-32-27" href="#__codelineno-32-27"></a>☐ A/B Testing
+<a id="__codelineno-32-28" name="__codelineno-32-28" href="#__codelineno-32-28"></a>☐ 自动模型热更新
+</code></pre></div>
+<h2 id="2025">十三、推荐栈（2025）<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h2>
+<h3 id="131">13.1 中小团队<a class="headerlink" href="#131" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>- vLLM 主部署
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>- Docker + 单机多卡
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>- Nginx 负载均衡
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>- Prometheus + Grafana
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>- 模型 HuggingFace 拉取
+</code></pre></div>
+<h3 id="132">13.2 中型企业<a class="headerlink" href="#132" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>- vLLM / SGLang 双栈
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>- K8s + GPU Operator
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>- KEDA HPA (按 QPS / TPOT)
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>- Triton 多模型平台
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>- Harbor 镜像 + Model Registry
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>- LiteLLM / OpenRouter 路由层
+</code></pre></div>
+<h3 id="133">13.3 大型 / 大模型生产<a class="headerlink" href="#133" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>- TRT-LLM FP8 极致优化
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>- vLLM Disaggregated PD (Prefill/Decode 分离)
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>- 跨集群多副本负载均衡
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>- 自动模型版本管理
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>- A/B / 灰度 / Canary
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>- 主备 (DR) + 跨 region
+<a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a>- 自研路由层（按用户/任务路由不同模型）
+</code></pre></div>
+<h2 id="_7">十四、学习路径<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>入门（1 月）:
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>  1. vLLM 跑通 Llama-3-8B
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>  2. OpenAI API 兼容
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>  3. Docker 部署
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>  4. Prometheus 监控
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>  5. AWQ / GPTQ 量化模型加载
+<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>
+<a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>中级（3 月）:
+<a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a>  6. PagedAttention 原理
+<a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a>  7. Continuous Batching
+<a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a>  8. Prefix Caching / RadixAttention
+<a id="__codelineno-36-12" name="__codelineno-36-12" href="#__codelineno-36-12"></a>  9. SGLang 切换 / 对比
+<a id="__codelineno-36-13" name="__codelineno-36-13" href="#__codelineno-36-13"></a>  10. Multi-LoRA
+<a id="__codelineno-36-14" name="__codelineno-36-14" href="#__codelineno-36-14"></a>  11. K8s 部署 + HPA
+<a id="__codelineno-36-15" name="__codelineno-36-15" href="#__codelineno-36-15"></a>
+<a id="__codelineno-36-16" name="__codelineno-36-16" href="#__codelineno-36-16"></a>高级（6 月+）:
+<a id="__codelineno-36-17" name="__codelineno-36-17" href="#__codelineno-36-17"></a>  12. TRT-LLM build engine
+<a id="__codelineno-36-18" name="__codelineno-36-18" href="#__codelineno-36-18"></a>  13. FP8 / SmoothQuant
+<a id="__codelineno-36-19" name="__codelineno-36-19" href="#__codelineno-36-19"></a>  14. Speculative Decoding (EAGLE)
+<a id="__codelineno-36-20" name="__codelineno-36-20" href="#__codelineno-36-20"></a>  15. PD 分离架构
+<a id="__codelineno-36-21" name="__codelineno-36-21" href="#__codelineno-36-21"></a>  16. 自定义 CUDA kernel (Triton)
+<a id="__codelineno-36-22" name="__codelineno-36-22" href="#__codelineno-36-22"></a>  17. 万卡推理集群
+<a id="__codelineno-36-23" name="__codelineno-36-23" href="#__codelineno-36-23"></a>
+<a id="__codelineno-36-24" name="__codelineno-36-24" href="#__codelineno-36-24"></a>专家:
+<a id="__codelineno-36-25" name="__codelineno-36-25" href="#__codelineno-36-25"></a>  18. 框架内核源码
+<a id="__codelineno-36-26" name="__codelineno-36-26" href="#__codelineno-36-26"></a>  19. 自研推理引擎
+<a id="__codelineno-36-27" name="__codelineno-36-27" href="#__codelineno-36-27"></a>  20. 多模态融合推理
+</code></pre></div>
+<h2 id="_8">十五、参考资料<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>官方:
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>  - vLLM: https://docs.vllm.ai/
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>  - SGLang: https://docs.sglang.ai/
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>  - TGI: https://huggingface.co/docs/text-generation-inference/
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>  - TensorRT-LLM: https://nvidia.github.io/TensorRT-LLM/
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>  - llama.cpp: https://github.com/ggerganov/llama.cpp
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a>  - Triton Server: https://github.com/triton-inference-server
+<a id="__codelineno-37-8" name="__codelineno-37-8" href="#__codelineno-37-8"></a>
+<a id="__codelineno-37-9" name="__codelineno-37-9" href="#__codelineno-37-9"></a>论文:
+<a id="__codelineno-37-10" name="__codelineno-37-10" href="#__codelineno-37-10"></a>  - vLLM/PagedAttention (2023 SOSP)
+<a id="__codelineno-37-11" name="__codelineno-37-11" href="#__codelineno-37-11"></a>  - FlashAttention 1/2/3
+<a id="__codelineno-37-12" name="__codelineno-37-12" href="#__codelineno-37-12"></a>  - Continuous Batching (Orca, OSDI &#39;22)
+<a id="__codelineno-37-13" name="__codelineno-37-13" href="#__codelineno-37-13"></a>  - Sarathi-Serve (Chunked Prefill)
+<a id="__codelineno-37-14" name="__codelineno-37-14" href="#__codelineno-37-14"></a>  - SGLang/RadixAttention
+<a id="__codelineno-37-15" name="__codelineno-37-15" href="#__codelineno-37-15"></a>  - EAGLE-1/2/3
+<a id="__codelineno-37-16" name="__codelineno-37-16" href="#__codelineno-37-16"></a>  - DeepSeek-V3 (Mixtral / MLA)
+<a id="__codelineno-37-17" name="__codelineno-37-17" href="#__codelineno-37-17"></a>
+<a id="__codelineno-37-18" name="__codelineno-37-18" href="#__codelineno-37-18"></a>社区:
+<a id="__codelineno-37-19" name="__codelineno-37-19" href="#__codelineno-37-19"></a>  - vLLM Slack
+<a id="__codelineno-37-20" name="__codelineno-37-20" href="#__codelineno-37-20"></a>  - SGLang Discord
+<a id="__codelineno-37-21" name="__codelineno-37-21" href="#__codelineno-37-21"></a>  - r/LocalLLaMA
+<a id="__codelineno-37-22" name="__codelineno-37-22" href="#__codelineno-37-22"></a>  - 国内: GPU Mode 中文 / AI Infra
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：<strong>vLLM 主战场（生态最强）+ SGLang 高吞吐 + TRT-LLM 极致性能 + llama.cpp 边缘</strong>——这套组合覆盖 95% 推理场景。<strong>先把 vLLM 的 30 个核心参数练熟</strong>，然后再看 SGLang 的 RadixAttention 和 TRT-LLM 的 FP8。<strong>性能上限是硬件决定的，但 70% 的潜力用错框架/调参就浪费了</strong>——框架知识就是这 70% 的钥匙。</p>
+</blockquote>
 
 
 

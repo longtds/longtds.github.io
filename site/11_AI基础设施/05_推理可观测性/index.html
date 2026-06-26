@@ -1246,10 +1246,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#llm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        核心指标
+        一、LLM 可观测三维
       
     </span>
   </a>
@@ -1257,13 +1257,274 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#token" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Token 计量与成本
+        二、核心指标（必监控）
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="二、核心指标（必监控）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 性能指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 资源指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 业务指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prometheus-vllm-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、Prometheus + vLLM Metrics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、Prometheus + vLLM Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-vllm-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 vLLM 内置 metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-sglang-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 SGLang metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-prometheus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Prometheus 配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-k8s-servicemonitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 K8s ServiceMonitor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、Grafana 仪表盘
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、Grafana 仪表盘">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 推理服务监控
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-gpu-dcgm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 GPU 监控（DCGM）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Dashboard 设计模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#langfuse-heliconellm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、Langfuse / Helicone（LLM 业务监控）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、Langfuse / Helicone（LLM 业务监控）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 为什么需要 LLM 专用监控
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-langfuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Langfuse（开源 ⭐ 推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-helicone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Helicone（替代品）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 评估与 Dataset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opentelemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、OpenTelemetry 集成
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、OpenTelemetry 集成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-otel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 OTel 标准
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-openllmetryotel-for-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 OpenLLMetry（OTel for LLM）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-otel-collector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 OTel Collector 配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1271,7 +1532,290 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        模型质量监控
+        七、日志
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、日志">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 vLLM 日志配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-loki-promtail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Loki + Promtail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 关键日志事件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、告警规则（生产必备）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sli-slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、SLI / SLO 设计
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、SLI / SLO 设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-sli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 推理服务 SLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 SLO 目标（参考）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-error-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Error Budget 燃烧告警
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、Trace（分布式追踪）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、Trace（分布式追踪）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-rag-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 RAG / Agent 多步追踪
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-jaeger-tempo-langfuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Jaeger / Tempo / Langfuse
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、质量监控（Quality）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、质量监控（Quality）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 自动评估
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 漂移检测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 安全监控
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、最佳实践 Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、推荐栈（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十四、推荐栈（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 中小团队
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 中大企业
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 大规模
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、参考资料
       
     </span>
   </a>
@@ -1729,10 +2273,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#llm" class="md-nav__link">
     <span class="md-ellipsis">
       
-        核心指标
+        一、LLM 可观测三维
       
     </span>
   </a>
@@ -1740,13 +2284,274 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#token" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Token 计量与成本
+        二、核心指标（必监控）
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="二、核心指标（必监控）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 性能指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 资源指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 业务指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prometheus-vllm-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、Prometheus + vLLM Metrics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、Prometheus + vLLM Metrics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-vllm-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 vLLM 内置 metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-sglang-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 SGLang metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-prometheus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Prometheus 配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-k8s-servicemonitor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 K8s ServiceMonitor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grafana" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、Grafana 仪表盘
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、Grafana 仪表盘">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 推理服务监控
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-gpu-dcgm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 GPU 监控（DCGM）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Dashboard 设计模板
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#langfuse-heliconellm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、Langfuse / Helicone（LLM 业务监控）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、Langfuse / Helicone（LLM 业务监控）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 为什么需要 LLM 专用监控
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-langfuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Langfuse（开源 ⭐ 推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-helicone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Helicone（替代品）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 评估与 Dataset
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#opentelemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、OpenTelemetry 集成
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、OpenTelemetry 集成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-otel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 OTel 标准
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-openllmetryotel-for-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 OpenLLMetry（OTel for LLM）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-otel-collector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 OTel Collector 配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1754,7 +2559,290 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        模型质量监控
+        七、日志
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、日志">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 vLLM 日志配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-loki-promtail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Loki + Promtail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 关键日志事件
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、告警规则（生产必备）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sli-slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、SLI / SLO 设计
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、SLI / SLO 设计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-sli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 推理服务 SLI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 SLO 目标（参考）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-error-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Error Budget 燃烧告警
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trace" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、Trace（分布式追踪）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、Trace（分布式追踪）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-rag-agent" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 RAG / Agent 多步追踪
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-jaeger-tempo-langfuse" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Jaeger / Tempo / Langfuse
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、质量监控（Quality）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、质量监控（Quality）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 自动评估
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 漂移检测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 安全监控
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、最佳实践 Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、推荐栈（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十四、推荐栈（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 中小团队
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 中大企业
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 大规模
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、参考资料
       
     </span>
   </a>
@@ -1830,61 +2918,845 @@
 
 
 <h1 id="_1">推理可观测性<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">核心指标<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>LLM 推理可观测 = <strong>三大支柱（Metrics + Logs + Traces）+ LLM 专有指标（TTFT/TPOT/Throughput/MBU）+ 业务指标（Quality/Cost/Hallucination）</strong>。<strong>Prometheus + Grafana + Langfuse + OpenTelemetry</strong> 是 2025 标配。</p>
+</blockquote>
+<h2 id="llm">一、LLM 可观测三维<a class="headerlink" href="#llm" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>传统应用:                LLM 应用:
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  - CPU / 内存             - GPU 显存 / 显存带宽
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  - QPS / 延迟              - TTFT / TPOT / Goodput
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  - 错误率                  - 错误率 + 质量评估
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>                            - Token 消耗（成本）
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>                            - 模型漂移
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                            - 幻觉率
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>                            - User Feedback
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                            - 安全（Prompt Injection / Jailbreak）
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>→ LLM 多了 &quot;成本 + 质量 + 安全&quot; 三维
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>→ 传统 APM 不够用
+</code></pre></div>
+<h2 id="_2">二、核心指标（必监控）<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 性能指标<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>TTFT (Time-To-First-Token) ⭐
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  首 token 延迟
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  目标 P99 &lt; 500ms (短 prompt)
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  P99 &lt; 2s (4K prompt)
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>TPOT (Time-Per-Output-Token) ⭐
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  每生成 token 平均耗时
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  目标 P99 &lt; 50ms (流式聊天体验)
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>ITL (Inter-Token Latency)
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  token 间隔抖动
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  P99 - P50 &lt; 30ms
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>E2E Latency
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  端到端（=TTFT + N × TPOT）
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>Throughput
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  Tokens/s (output) ⭐
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  Tokens/s (input + output)
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  Requests/s
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>Goodput
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  有效吞吐（剔除超时 / 错误）
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>Queue Time
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>  请求排队时间
+<a id="__codelineno-1-27" name="__codelineno-1-27" href="#__codelineno-1-27"></a>  P99 &lt; 100ms 才合格
+</code></pre></div>
+<h3 id="22">2.2 资源指标<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>GPU:
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  SM Util %               真实算力利用
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  Memory Util %           显存带宽利用 ⭐ memory-bound 关键
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  Memory Used GB
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>  Temp / Power / Clock
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>KV Cache:
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  Utilization %           ⭐ vLLM 核心指标
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>  Hit Rate (Prefix Cache) ⭐
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>  Spillover (CPU offload)
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>Engine:
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>  Running Requests
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>  Waiting Requests
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>  Preempted Requests      ⭐ 抢占说明过载
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>  Swapped Requests        ⭐ 显存不够换 CPU
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>  Generation Throughput
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>  Prefill Throughput
+</code></pre></div>
+<h3 id="23">2.3 业务指标<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Tokens 消耗:
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  Input Tokens / 次
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  Output Tokens / 次
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  Total Tokens / 天 / 用户 / 模型
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>成本:
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  Cost per 1K input tokens
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>  Cost per 1K output tokens
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  Cost per user / day
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  Cost per request
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>质量:
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>  User Feedback (thumbs up/down)
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>  Refusal Rate (模型拒答率)
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>  Hallucination Score (检测幻觉)
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>  Quality Score (LLM-as-judge)
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>安全:
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>  Prompt Injection 检出
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>  Jailbreak 尝试
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>  PII 泄漏
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>  毒性输出
+<a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>
+<a id="__codelineno-3-24" name="__codelineno-3-24" href="#__codelineno-3-24"></a>业务:
+<a id="__codelineno-3-25" name="__codelineno-3-25" href="#__codelineno-3-25"></a>  Conversion Rate
+<a id="__codelineno-3-26" name="__codelineno-3-26" href="#__codelineno-3-26"></a>  Session Length
+<a id="__codelineno-3-27" name="__codelineno-3-27" href="#__codelineno-3-27"></a>  Active Users
+<a id="__codelineno-3-28" name="__codelineno-3-28" href="#__codelineno-3-28"></a>  Retention
+</code></pre></div>
+<h2 id="prometheus-vllm-metrics">三、Prometheus + vLLM Metrics<a class="headerlink" href="#prometheus-vllm-metrics" title="Permanent link">&para;</a></h2>
+<h3 id="31-vllm-metrics">3.1 vLLM 内置 metrics<a class="headerlink" href="#31-vllm-metrics" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># vLLM 0.4+ 自带 /metrics endpoint</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>curl<span class="w"> </span>http://vllm:8000/metrics
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># 关键指标（部分）:</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>vllm:num_requests_running<span class="w">              </span><span class="c1"># 运行中请求数</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>vllm:num_requests_waiting<span class="w">              </span><span class="c1"># 排队请求数</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>vllm:num_requests_swapped<span class="w">              </span><span class="c1"># 换出的请求</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>vllm:gpu_cache_usage_perc<span class="w">              </span><span class="c1"># KV cache 利用率 ⭐</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>vllm:cpu_cache_usage_perc<span class="w">              </span><span class="c1"># CPU offload cache</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>vllm:num_preemptions_total<span class="w">             </span><span class="c1"># 抢占次数</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>vllm:prompt_tokens_total<span class="w">                </span><span class="c1"># input token 累计</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>vllm:generation_tokens_total<span class="w">            </span><span class="c1"># output token 累计</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>vllm:time_to_first_token_seconds<span class="w">       </span><span class="c1"># TTFT histogram</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>vllm:time_per_output_token_seconds<span class="w">     </span><span class="c1"># TPOT histogram</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>vllm:e2e_request_latency_seconds<span class="w">       </span><span class="c1"># E2E</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>vllm:request_prefill_time_seconds<span class="w">      </span><span class="c1"># Prefill 时间</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>vllm:request_decode_time_seconds<span class="w">       </span><span class="c1"># Decode 时间</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>vllm:request_queue_time_seconds<span class="w">        </span><span class="c1"># 排队时间</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a>vllm:request_success_total<span class="w">              </span><span class="c1"># 成功请求数</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a>vllm:cache_config_info<span class="w">                  </span><span class="c1"># 配置信息</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>vllm:lora_requests_info<span class="w">                 </span><span class="c1"># LoRA 使用情况</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>vllm:spec_decode_num_accepted_tokens<span class="w">   </span><span class="c1"># 推测解码接受数</span>
+</code></pre></div>
+<h3 id="32-sglang-metrics">3.2 SGLang metrics<a class="headerlink" href="#32-sglang-metrics" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>curl<span class="w"> </span>http://sglang:30000/metrics
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># 关键:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>sglang:num_running_reqs
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>sglang:num_waiting_reqs
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>sglang:cache_hit_rate<span class="w">                   </span><span class="c1"># RadixCache 命中率 ⭐</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>sglang:gen_throughput
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>sglang:prefill_throughput
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>sglang:queue_time_seconds
+</code></pre></div>
+<h3 id="33-prometheus">3.3 Prometheus 配置<a class="headerlink" href="#33-prometheus" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># prometheus.yml</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">scrape_configs</span><span class="p">:</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">targets</span><span class="p">:</span>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm-1:8000</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm-2:8000</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w">    </span><span class="nt">metrics_path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/metrics</span>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dcgm</span>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="nt">scrape_interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">targets</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;dcgm-exporter:9400&#39;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sglang</span>
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a><span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span>
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">targets</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;sglang:30000&#39;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>
+<a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="w">  </span><span class="c1"># 节点</span>
+<a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">node-exporter</span>
+<a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span>
+<a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">targets</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&#39;node-exporter:9100&#39;</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+<h3 id="34-k8s-servicemonitor">3.4 K8s ServiceMonitor<a class="headerlink" href="#34-k8s-servicemonitor" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">monitoring.coreos.com/v1</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ServiceMonitor</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">  </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> release</span><span class="p">:</span><span class="w"> </span><span class="nv">prometheus</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">  </span><span class="nt">selector</span><span class="p">:</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> app</span><span class="p">:</span><span class="w"> </span><span class="nv">vllm</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">  </span><span class="nt">endpoints</span><span class="p">:</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http</span><span class="w">                          </span><span class="c1"># service port name</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/metrics</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="w">      </span><span class="nt">interval</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5s</span>
+</code></pre></div>
+<h2 id="grafana">四、Grafana 仪表盘<a class="headerlink" href="#grafana" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 推理服务监控<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 实时 TTFT P99</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kr">histogram_quantile</span><span class="o">(</span><span class="mf">0.99</span><span class="p">,</span><span class="w"> </span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="k">sum</span><span class="w"> </span><span class="k">by</span><span class="o">(</span><span class="nv">le</span><span class="p">,</span><span class="w"> </span><span class="nv">model</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="kr">rate</span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">time_to_first_token_seconds_bucket</span><span class="p">[</span><span class="s">2m</span><span class="p">]</span><span class="o">))</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="o">)</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># TPOT P99</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="kr">histogram_quantile</span><span class="o">(</span><span class="mf">0.99</span><span class="p">,</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span><span class="k">sum</span><span class="w"> </span><span class="k">by</span><span class="o">(</span><span class="nv">le</span><span class="p">,</span><span class="w"> </span><span class="nv">model</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="kr">rate</span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">time_per_output_token_seconds_bucket</span><span class="p">[</span><span class="s">2m</span><span class="p">]</span><span class="o">))</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="o">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">1000</span><span class="w">   </span><span class="c1"># ms</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="c1"># Throughput (tokens/s)</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="k">sum</span><span class="w"> </span><span class="k">by</span><span class="o">(</span><span class="nv">model</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="kr">rate</span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">generation_tokens_total</span><span class="p">[</span><span class="s">2m</span><span class="p">]</span><span class="o">))</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="c1"># QPS</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="k">sum</span><span class="w"> </span><span class="k">by</span><span class="o">(</span><span class="nv">model</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="kr">rate</span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">request_success_total</span><span class="p">[</span><span class="s">2m</span><span class="p">]</span><span class="o">))</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="c1"># KV Cache 利用率</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="k">avg</span><span class="w"> </span><span class="k">by</span><span class="o">(</span><span class="nv">model</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">gpu_cache_usage_perc</span><span class="o">)</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a><span class="c1"># Queue Length</span>
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a><span class="k">sum</span><span class="w"> </span><span class="k">by</span><span class="o">(</span><span class="nv">model</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">num_requests_waiting</span><span class="o">)</span>
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>
+<a id="__codelineno-8-23" name="__codelineno-8-23" href="#__codelineno-8-23"></a><span class="c1"># Preemption rate</span>
+<a id="__codelineno-8-24" name="__codelineno-8-24" href="#__codelineno-8-24"></a><span class="k">sum</span><span class="w"> </span><span class="k">by</span><span class="o">(</span><span class="nv">model</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="kr">rate</span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">num_preemptions_total</span><span class="p">[</span><span class="s">5m</span><span class="p">]</span><span class="o">))</span>
+<a id="__codelineno-8-25" name="__codelineno-8-25" href="#__codelineno-8-25"></a>
+<a id="__codelineno-8-26" name="__codelineno-8-26" href="#__codelineno-8-26"></a><span class="c1"># 各模型 QPS 分布</span>
+<a id="__codelineno-8-27" name="__codelineno-8-27" href="#__codelineno-8-27"></a><span class="k">sum</span><span class="w"> </span><span class="k">by</span><span class="o">(</span><span class="nv">model</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="kr">rate</span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">request_success_total</span><span class="p">[</span><span class="s">2m</span><span class="p">]</span><span class="o">))</span>
+<a id="__codelineno-8-28" name="__codelineno-8-28" href="#__codelineno-8-28"></a>
+<a id="__codelineno-8-29" name="__codelineno-8-29" href="#__codelineno-8-29"></a><span class="c1"># 用户级 Token 消耗（需打 user label）</span>
+<a id="__codelineno-8-30" name="__codelineno-8-30" href="#__codelineno-8-30"></a><span class="k">sum</span><span class="w"> </span><span class="k">by</span><span class="o">(</span><span class="nv">user</span><span class="o">)</span><span class="w"> </span><span class="o">(</span><span class="kr">rate</span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">generation_tokens_total</span><span class="p">[</span><span class="s">1h</span><span class="p">]</span><span class="o">))</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">3600</span>
+</code></pre></div>
+<h3 id="42-gpu-dcgm">4.2 GPU 监控（DCGM）<a class="headerlink" href="#42-gpu-dcgm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># GPU 利用率（SM Util）</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nv">DCGM_FI_PROF_SM_OCCUPANCY</span><span class="p">{</span><span class="nl">gpu</span><span class="o">=~</span><span class="p">&quot;</span><span class="s">$gpu</span><span class="p">&quot;}</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># 显存利用</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="nv">DCGM_FI_DEV_MEM_COPY_UTIL</span><span class="p">{</span><span class="nl">gpu</span><span class="o">=~</span><span class="p">&quot;</span><span class="s">$gpu</span><span class="p">&quot;}</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1"># 显存占用</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="nv">DCGM_FI_DEV_FB_USED</span><span class="p">{</span><span class="nl">gpu</span><span class="o">=~</span><span class="p">&quot;</span><span class="s">$gpu</span><span class="p">&quot;}</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="nv">DCGM_FI_DEV_FB_TOTAL</span><span class="p">{</span><span class="nl">gpu</span><span class="o">=~</span><span class="p">&quot;</span><span class="s">$gpu</span><span class="p">&quot;}</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="c1"># 温度</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="nv">DCGM_FI_DEV_GPU_TEMP</span><span class="p">{</span><span class="nl">gpu</span><span class="o">=~</span><span class="p">&quot;</span><span class="s">$gpu</span><span class="p">&quot;}</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="c1"># 功耗</span>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="nv">DCGM_FI_DEV_POWER_USAGE</span><span class="p">{</span><span class="nl">gpu</span><span class="o">=~</span><span class="p">&quot;</span><span class="s">$gpu</span><span class="p">&quot;}</span>
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="c1"># XID 错误</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="nv">DCGM_FI_DEV_XID_ERRORS</span><span class="p">{</span><span class="nl">gpu</span><span class="o">=~</span><span class="p">&quot;</span><span class="s">$gpu</span><span class="p">&quot;}</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a><span class="c1"># 已知 dashboard:</span>
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a><span class="c1"># - vLLM: Grafana ID 21130</span>
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a><span class="c1"># - DCGM: Grafana ID 12239</span>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a><span class="c1"># - NVIDIA GPU: 14574</span>
+</code></pre></div>
+<h3 id="43-dashboard">4.3 Dashboard 设计模板<a class="headerlink" href="#43-dashboard" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>推理服务概览页:
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  ┌─────────────┬─────────────┬─────────────┐
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  │ QPS         │ TTFT P99    │ TPOT P99    │
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  │ 245 req/s   │ 187 ms       │ 28 ms        │
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  ├─────────────┼─────────────┼─────────────┤
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>  │ Throughput  │ Queue Len   │ Error Rate  │
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>  │ 4520 tok/s  │ 5            │ 0.02%       │
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>  └─────────────┴─────────────┴─────────────┘
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>  时序图:
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    - TTFT/TPOT 趋势（5min）
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    - QPS by model
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>    - GPU 利用率（SM/Mem/Temp）
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>    - KV Cache 利用率
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>    - Queue Length
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>    - Token 累计（input/output）
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>  分布图:
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>    - Latency Heatmap
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>    - Token 长度分布
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>    - User TPM 分布
+</code></pre></div>
+<h2 id="langfuse-heliconellm">五、Langfuse / Helicone（LLM 业务监控）<a class="headerlink" href="#langfuse-heliconellm" title="Permanent link">&para;</a></h2>
+<h3 id="51-llm">5.1 为什么需要 LLM 专用监控<a class="headerlink" href="#51-llm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>Prometheus + Grafana 解决:
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  ✅ 性能 / 资源 / 错误率
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>但解决不了:
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>  ❌ 单次请求完整 prompt + response（追踪问题）
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>  ❌ 模型质量评估
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>  ❌ 用户反馈关联
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>  ❌ Agent 多步骤追踪
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>  ❌ 成本归因到用户/特性
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>  ❌ Prompt 版本管理 + A/B
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>  ❌ 数据集采集（fine-tune 用）
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>→ 需要 LLM 专用平台
+</code></pre></div>
+<h3 id="52-langfuse">5.2 Langfuse（开源 ⭐ 推荐）<a class="headerlink" href="#52-langfuse" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Docker 部署</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/langfuse/langfuse
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="nb">cd</span><span class="w"> </span>langfuse
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="c1"># Web: http://localhost:3000</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># Python SDK</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>pip<span class="w"> </span>install<span class="w"> </span>langfuse
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>from<span class="w"> </span>langfuse.openai<span class="w"> </span>import<span class="w"> </span>openai<span class="w">          </span><span class="c1"># 自动 trace</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="nv">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>openai.OpenAI<span class="o">(</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="w">    </span><span class="nv">base_url</span><span class="o">=</span><span class="s2">&quot;http://vllm:8000/v1&quot;</span>,
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">    </span><span class="nv">api_key</span><span class="o">=</span><span class="s2">&quot;dummy&quot;</span>
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="o">)</span>
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="nv">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>client.chat.completions.create<span class="o">(</span>
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="w">    </span><span class="nv">model</span><span class="o">=</span><span class="s2">&quot;llama-3-70b&quot;</span>,
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="w">    </span><span class="nv">messages</span><span class="o">=[{</span><span class="s2">&quot;role&quot;</span>:<span class="w"> </span><span class="s2">&quot;user&quot;</span>,<span class="w"> </span><span class="s2">&quot;content&quot;</span>:<span class="w"> </span><span class="s2">&quot;Hi&quot;</span><span class="o">}]</span>,
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="w">    </span><span class="nv">name</span><span class="o">=</span><span class="s2">&quot;my-trace&quot;</span>,<span class="w">                      </span><span class="c1"># 自定义名称</span>
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="w">    </span><span class="nv">user_id</span><span class="o">=</span><span class="s2">&quot;user-123&quot;</span>,<span class="w">                   </span><span class="c1"># 用户归因</span>
+<a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="w">    </span><span class="nv">session_id</span><span class="o">=</span><span class="s2">&quot;sess-xyz&quot;</span>,<span class="w">                </span><span class="c1"># 会话归因</span>
+<a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="w">    </span><span class="nv">metadata</span><span class="o">={</span><span class="s2">&quot;feature&quot;</span>:<span class="w"> </span><span class="s2">&quot;chatbot&quot;</span>,<span class="w"> </span><span class="s2">&quot;version&quot;</span>:<span class="w"> </span><span class="s2">&quot;v2&quot;</span><span class="o">}</span>
+<a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="o">)</span>
+<a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="c1"># 自动上报 prompt / response / tokens / cost / latency</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 手动 trace (Agent / RAG)</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langfuse</span><span class="w"> </span><span class="kn">import</span> <span class="n">Langfuse</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">lf</span> <span class="o">=</span> <span class="n">Langfuse</span><span class="p">()</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="n">trace</span> <span class="o">=</span> <span class="n">lf</span><span class="o">.</span><span class="n">trace</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;rag-query&quot;</span><span class="p">,</span> <span class="n">user_id</span><span class="o">=</span><span class="s2">&quot;user-123&quot;</span><span class="p">)</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="n">retrieval</span> <span class="o">=</span> <span class="n">trace</span><span class="o">.</span><span class="n">span</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;retrieval&quot;</span><span class="p">,</span> <span class="nb">input</span><span class="o">=</span><span class="n">query</span><span class="p">)</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="n">docs</span> <span class="o">=</span> <span class="n">retriever</span><span class="o">.</span><span class="n">retrieve</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="n">retrieval</span><span class="o">.</span><span class="n">end</span><span class="p">(</span><span class="n">output</span><span class="o">=</span><span class="n">docs</span><span class="p">)</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="n">generation</span> <span class="o">=</span> <span class="n">trace</span><span class="o">.</span><span class="n">generation</span><span class="p">(</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;answer&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama-3-70b&quot;</span><span class="p">,</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a>    <span class="nb">input</span><span class="o">=</span><span class="n">prompt</span><span class="p">,</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a>    <span class="n">output</span><span class="o">=</span><span class="n">answer</span><span class="p">,</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a>    <span class="n">usage</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="mi">1200</span><span class="p">,</span> <span class="s2">&quot;output&quot;</span><span class="p">:</span> <span class="mi">350</span><span class="p">}</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a><span class="p">)</span>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="n">trace</span><span class="o">.</span><span class="n">end</span><span class="p">()</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="c1"># Langfuse UI 上：</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="c1">#   - 完整 trace tree</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="c1">#   - 每个 span 耗时 / token / cost</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a><span class="c1">#   - prompt + response 全文</span>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="c1">#   - 关联用户 / session / metadata</span>
+</code></pre></div>
+<h3 id="53-helicone">5.3 Helicone（替代品）<a class="headerlink" href="#53-helicone" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># Helicone 通过 proxy 自动 trace</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="n">client</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">(</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://oai.helicone.ai/v1&quot;</span><span class="p">,</span>   <span class="c1"># 走代理</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="n">api_key</span><span class="o">=</span><span class="n">OPENAI_KEY</span><span class="p">,</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="n">default_headers</span><span class="o">=</span><span class="p">{</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>        <span class="s2">&quot;Helicone-Auth&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Bearer </span><span class="si">{</span><span class="n">HELICONE_KEY</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>        <span class="s2">&quot;Helicone-User-Id&quot;</span><span class="p">:</span> <span class="s2">&quot;user-123&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>        <span class="s2">&quot;Helicone-Property-Feature&quot;</span><span class="p">:</span> <span class="s2">&quot;chatbot&quot;</span><span class="p">,</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>    <span class="p">}</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="p">)</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="c1"># 后台:</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="c1">#   - dashboard.helicone.ai</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="c1">#   - 自动监控所有 API 调用</span>
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="c1">#   - 缓存 + 限流 + 重试 + A/B</span>
+</code></pre></div>
+<h3 id="54-dataset">5.4 评估与 Dataset<a class="headerlink" href="#54-dataset" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># Langfuse Datasets（自动评估）</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">langfuse</span><span class="w"> </span><span class="kn">import</span> <span class="n">Langfuse</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="n">lf</span> <span class="o">=</span> <span class="n">Langfuse</span><span class="p">()</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="c1"># 1. 创建评估集</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="n">dataset</span> <span class="o">=</span> <span class="n">lf</span><span class="o">.</span><span class="n">create_dataset</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;customer-qa&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">seed_data</span><span class="p">:</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>    <span class="n">lf</span><span class="o">.</span><span class="n">create_dataset_item</span><span class="p">(</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>        <span class="n">dataset_name</span><span class="o">=</span><span class="s2">&quot;customer-qa&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>        <span class="nb">input</span><span class="o">=</span><span class="n">item</span><span class="p">[</span><span class="s2">&quot;question&quot;</span><span class="p">],</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>        <span class="n">expected_output</span><span class="o">=</span><span class="n">item</span><span class="p">[</span><span class="s2">&quot;answer&quot;</span><span class="p">]</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>    <span class="p">)</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="c1"># 2. 跑评估</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lf</span><span class="o">.</span><span class="n">get_dataset</span><span class="p">(</span><span class="s2">&quot;customer-qa&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">items</span><span class="p">:</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>    <span class="n">answer</span> <span class="o">=</span> <span class="n">my_rag_pipeline</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">input</span><span class="p">)</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>    <span class="n">item</span><span class="o">.</span><span class="n">link</span><span class="p">(</span><span class="n">trace_id</span><span class="o">=</span><span class="n">current_trace_id</span><span class="p">,</span> <span class="n">run_name</span><span class="o">=</span><span class="s2">&quot;v2.0&quot;</span><span class="p">)</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="c1"># 3. 在 Langfuse UI 看对比</span>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="c1">#    - v1.0 vs v2.0 准确率</span>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a><span class="c1">#    - 哪些 query 退化</span>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a><span class="c1">#    - LLM-as-judge 自动评分</span>
+</code></pre></div>
+<h2 id="opentelemetry">六、OpenTelemetry 集成<a class="headerlink" href="#opentelemetry" title="Permanent link">&para;</a></h2>
+<h3 id="61-otel">6.1 OTel 标准<a class="headerlink" href="#61-otel" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>2024+ LLM Semantic Conventions 已立标准
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>  - gen_ai.system               (openai, anthropic, vllm, ...)
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>  - gen_ai.request.model
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>  - gen_ai.request.max_tokens
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>  - gen_ai.request.temperature
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>  - gen_ai.response.model
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>  - gen_ai.usage.input_tokens
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>  - gen_ai.usage.output_tokens
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>  - gen_ai.response.finish_reasons
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>→ 所有 trace 系统可消费
+</code></pre></div>
+<h3 id="62-openllmetryotel-for-llm">6.2 OpenLLMetry（OTel for LLM）<a class="headerlink" href="#62-openllmetryotel-for-llm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>pip<span class="w"> </span>install<span class="w"> </span>traceloop-sdk
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>from<span class="w"> </span>traceloop.sdk<span class="w"> </span>import<span class="w"> </span>Traceloop
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>Traceloop.init<span class="o">(</span><span class="nv">api_endpoint</span><span class="o">=</span><span class="s2">&quot;http://otel-collector:4317&quot;</span><span class="o">)</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="c1"># 自动 instrument:</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="c1"># - openai / anthropic / cohere / langchain / llamaindex / vllm</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="c1"># - 自动产生 OTel trace</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="c1"># - 任何 OTel-compatible backend 可消费 (Jaeger, Tempo, DataDog, ...)</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>import<span class="w"> </span>openai
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="nv">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>openai.chat.completions.create<span class="o">(</span>...<span class="o">)</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="c1"># 自动 trace</span>
+</code></pre></div>
+<h3 id="63-otel-collector">6.3 OTel Collector 配置<a class="headerlink" href="#63-otel-collector" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># otel-collector-config.yaml</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="nt">receivers</span><span class="p">:</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">  </span><span class="nt">otlp</span><span class="p">:</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">    </span><span class="nt">protocols</span><span class="p">:</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">      </span><span class="nt">grpc</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> endpoint</span><span class="p">:</span><span class="w"> </span><span class="nv">0.0.0.0</span><span class="p p-Indicator">:</span><span class="nv">4317</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">      </span><span class="nt">http</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> endpoint</span><span class="p">:</span><span class="w"> </span><span class="nv">0.0.0.0</span><span class="p p-Indicator">:</span><span class="nv">4318</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="nt">processors</span><span class="p">:</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">  </span><span class="nt">batch</span><span class="p">:</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">  </span><span class="nt">attributes</span><span class="p">:</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">    </span><span class="nt">actions</span><span class="p">:</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gen_ai.usage.cost</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w">        </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">insert</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="w">        </span><span class="nt">from_attribute</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gen_ai.usage.input_tokens</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="w">        </span><span class="c1"># 计算成本（自定义 processor）</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a>
+<a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="nt">exporters</span><span class="p">:</span>
+<a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="w">  </span><span class="nt">otlphttp/langfuse</span><span class="p">:</span>
+<a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a><span class="w">    </span><span class="nt">endpoint</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://cloud.langfuse.com/api/public/otel</span>
+<a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="w">  </span><span class="nt">prometheus</span><span class="p">:</span>
+<a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a><span class="w">    </span><span class="nt">endpoint</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.0.0.0:8889</span>
+<a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a><span class="w">  </span><span class="nt">loki</span><span class="p">:</span>
+<a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a><span class="w">    </span><span class="nt">endpoint</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://loki:3100/loki/api/v1/push</span>
+<a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a>
+<a id="__codelineno-18-25" name="__codelineno-18-25" href="#__codelineno-18-25"></a><span class="nt">service</span><span class="p">:</span>
+<a id="__codelineno-18-26" name="__codelineno-18-26" href="#__codelineno-18-26"></a><span class="w">  </span><span class="nt">pipelines</span><span class="p">:</span>
+<a id="__codelineno-18-27" name="__codelineno-18-27" href="#__codelineno-18-27"></a><span class="w">    </span><span class="nt">traces</span><span class="p">:</span>
+<a id="__codelineno-18-28" name="__codelineno-18-28" href="#__codelineno-18-28"></a><span class="w">      </span><span class="nt">receivers</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">otlp</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-18-29" name="__codelineno-18-29" href="#__codelineno-18-29"></a><span class="w">      </span><span class="nt">processors</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">batch</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">attributes</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-18-30" name="__codelineno-18-30" href="#__codelineno-18-30"></a><span class="w">      </span><span class="nt">exporters</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">otlphttp/langfuse</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-18-31" name="__codelineno-18-31" href="#__codelineno-18-31"></a><span class="w">    </span><span class="nt">metrics</span><span class="p">:</span>
+<a id="__codelineno-18-32" name="__codelineno-18-32" href="#__codelineno-18-32"></a><span class="w">      </span><span class="nt">receivers</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">otlp</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-18-33" name="__codelineno-18-33" href="#__codelineno-18-33"></a><span class="w">      </span><span class="nt">exporters</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">prometheus</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+<h2 id="_3">七、日志<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="71-vllm">7.1 vLLM 日志配置<a class="headerlink" href="#71-vllm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># 关闭请求日志（高并发降噪）</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>vllm<span class="w"> </span>serve<span class="w"> </span>--disable-log-requests
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="c1"># 自定义日志级别</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="nv">VLLM_LOGGING_LEVEL</span><span class="o">=</span>DEBUG<span class="w"> </span>vllm<span class="w"> </span>serve<span class="w"> </span>...
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="c1"># 结构化日志</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>vllm<span class="w"> </span>serve<span class="w"> </span>...<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-c
+</code></pre></div>
+<h3 id="72-loki-promtail">7.2 Loki + Promtail<a class="headerlink" href="#72-loki-promtail" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># promtail-config.yaml</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nt">scrape_configs</span><span class="p">:</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">job_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">    </span><span class="nt">static_configs</span><span class="p">:</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">targets</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">localhost</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">        </span><span class="nt">labels</span><span class="p">:</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">          </span><span class="nt">job</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">          </span><span class="nt">__path__</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/log/vllm/*.log</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="w">    </span><span class="nt">pipeline_stages</span><span class="p">:</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">json</span><span class="p">:</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">          </span><span class="nt">expressions</span><span class="p">:</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="w">            </span><span class="nt">level</span><span class="p">:</span>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="w">            </span><span class="nt">request_id</span><span class="p">:</span>
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="w">            </span><span class="nt">user_id</span><span class="p">:</span>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="w">            </span><span class="nt">model</span><span class="p">:</span>
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="w">            </span><span class="nt">tokens</span><span class="p">:</span>
+<a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">labels</span><span class="p">:</span>
+<a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a><span class="w">          </span><span class="nt">level</span><span class="p">:</span>
+<a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a><span class="w">          </span><span class="nt">model</span><span class="p">:</span>
+<a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">timestamp</span><span class="p">:</span>
+<a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a><span class="w">          </span><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">timestamp</span>
+<a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a><span class="w">          </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">RFC3339</span>
+</code></pre></div>
+<h3 id="73">7.3 关键日志事件<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>✅ 记录:
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>  - 请求开始 / 结束（含 user, model, tokens）
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>  - 错误（4xx / 5xx）
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>  - GPU OOM
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>  - Preemption / Swap
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>  - 模型加载 / 卸载
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>  - LoRA 加载
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>  - Prompt injection 检测
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>❌ 不记录（合规）:
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>  - 完整 prompt（PII 风险）→ 摘要 / hash
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>  - 用户身份证 / 邮箱
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>  → 用 Langfuse 受控环境
+</code></pre></div>
+<h2 id="_4">八、告警规则（生产必备）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># prometheus alerts</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="nt">groups</span><span class="p">:</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="w">    </span><span class="nt">rules</span><span class="p">:</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">alert</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VllmTTFTHigh</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">        </span><span class="nt">expr</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="w">          </span><span class="no">histogram_quantile(0.99,</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="w">            </span><span class="no">sum by(le, model) (rate(vllm:time_to_first_token_seconds_bucket[5m]))</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="w">          </span><span class="no">) &gt; 2</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">        </span><span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="w">        </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> severity</span><span class="p">:</span><span class="w"> </span><span class="nv">warning</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="w">        </span><span class="nt">annotations</span><span class="p">:</span>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a><span class="w">          </span><span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;TTFT</span><span class="nv"> </span><span class="s">P99</span><span class="nv"> </span><span class="s">&gt;</span><span class="nv"> </span><span class="s">2s</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">$labels.model</span><span class="nv"> </span><span class="s">}}&quot;</span>
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">alert</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VllmTPOTHigh</span>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a><span class="w">        </span><span class="nt">expr</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a><span class="w">          </span><span class="no">histogram_quantile(0.99,</span>
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a><span class="w">            </span><span class="no">sum by(le, model) (rate(vllm:time_per_output_token_seconds_bucket[5m]))</span>
+<a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a><span class="w">          </span><span class="no">) &gt; 0.1</span>
+<a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a><span class="w">        </span><span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m</span>
+<a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a><span class="w">        </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> severity</span><span class="p">:</span><span class="w"> </span><span class="nv">warning</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-22-22" name="__codelineno-22-22" href="#__codelineno-22-22"></a>
+<a id="__codelineno-22-23" name="__codelineno-22-23" href="#__codelineno-22-23"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">alert</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VllmQueueTooLong</span>
+<a id="__codelineno-22-24" name="__codelineno-22-24" href="#__codelineno-22-24"></a><span class="w">        </span><span class="nt">expr</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm:num_requests_waiting &gt; 50</span>
+<a id="__codelineno-22-25" name="__codelineno-22-25" href="#__codelineno-22-25"></a><span class="w">        </span><span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3m</span>
+<a id="__codelineno-22-26" name="__codelineno-22-26" href="#__codelineno-22-26"></a><span class="w">        </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> severity</span><span class="p">:</span><span class="w"> </span><span class="nv">critical</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-22-27" name="__codelineno-22-27" href="#__codelineno-22-27"></a>
+<a id="__codelineno-22-28" name="__codelineno-22-28" href="#__codelineno-22-28"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">alert</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VllmPreemptionHigh</span>
+<a id="__codelineno-22-29" name="__codelineno-22-29" href="#__codelineno-22-29"></a><span class="w">        </span><span class="nt">expr</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rate(vllm:num_preemptions_total[5m]) &gt; 10</span>
+<a id="__codelineno-22-30" name="__codelineno-22-30" href="#__codelineno-22-30"></a><span class="w">        </span><span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m</span>
+<a id="__codelineno-22-31" name="__codelineno-22-31" href="#__codelineno-22-31"></a><span class="w">        </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> severity</span><span class="p">:</span><span class="w"> </span><span class="nv">critical</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-22-32" name="__codelineno-22-32" href="#__codelineno-22-32"></a>
+<a id="__codelineno-22-33" name="__codelineno-22-33" href="#__codelineno-22-33"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">alert</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VllmGPUMemoryHigh</span>
+<a id="__codelineno-22-34" name="__codelineno-22-34" href="#__codelineno-22-34"></a><span class="w">        </span><span class="nt">expr</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm:gpu_cache_usage_perc &gt; 0.95</span>
+<a id="__codelineno-22-35" name="__codelineno-22-35" href="#__codelineno-22-35"></a><span class="w">        </span><span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m</span>
+<a id="__codelineno-22-36" name="__codelineno-22-36" href="#__codelineno-22-36"></a><span class="w">        </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> severity</span><span class="p">:</span><span class="w"> </span><span class="nv">warning</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-22-37" name="__codelineno-22-37" href="#__codelineno-22-37"></a>
+<a id="__codelineno-22-38" name="__codelineno-22-38" href="#__codelineno-22-38"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">alert</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">GPUTempHigh</span>
+<a id="__codelineno-22-39" name="__codelineno-22-39" href="#__codelineno-22-39"></a><span class="w">        </span><span class="nt">expr</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DCGM_FI_DEV_GPU_TEMP &gt; 85</span>
+<a id="__codelineno-22-40" name="__codelineno-22-40" href="#__codelineno-22-40"></a><span class="w">        </span><span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m</span>
+<a id="__codelineno-22-41" name="__codelineno-22-41" href="#__codelineno-22-41"></a><span class="w">        </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> severity</span><span class="p">:</span><span class="w"> </span><span class="nv">critical</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-22-42" name="__codelineno-22-42" href="#__codelineno-22-42"></a>
+<a id="__codelineno-22-43" name="__codelineno-22-43" href="#__codelineno-22-43"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">alert</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">GPUECCError</span>
+<a id="__codelineno-22-44" name="__codelineno-22-44" href="#__codelineno-22-44"></a><span class="w">        </span><span class="nt">expr</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">increase(DCGM_FI_DEV_XID_ERRORS[1h]) &gt; 0</span>
+<a id="__codelineno-22-45" name="__codelineno-22-45" href="#__codelineno-22-45"></a><span class="w">        </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> severity</span><span class="p">:</span><span class="w"> </span><span class="nv">critical</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-22-46" name="__codelineno-22-46" href="#__codelineno-22-46"></a><span class="w">        </span><span class="nt">annotations</span><span class="p">:</span>
+<a id="__codelineno-22-47" name="__codelineno-22-47" href="#__codelineno-22-47"></a><span class="w">          </span><span class="nt">summary</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;XID</span><span class="nv"> </span><span class="s">error</span><span class="nv"> </span><span class="s">on</span><span class="nv"> </span><span class="s">GPU</span><span class="nv"> </span><span class="s">{{</span><span class="nv"> </span><span class="s">$labels.gpu</span><span class="nv"> </span><span class="s">}}&quot;</span>
+<a id="__codelineno-22-48" name="__codelineno-22-48" href="#__codelineno-22-48"></a>
+<a id="__codelineno-22-49" name="__codelineno-22-49" href="#__codelineno-22-49"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">alert</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VllmErrorRateHigh</span>
+<a id="__codelineno-22-50" name="__codelineno-22-50" href="#__codelineno-22-50"></a><span class="w">        </span><span class="nt">expr</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<a id="__codelineno-22-51" name="__codelineno-22-51" href="#__codelineno-22-51"></a><span class="w">          </span><span class="no">sum(rate(vllm:request_errors_total[5m])) /</span>
+<a id="__codelineno-22-52" name="__codelineno-22-52" href="#__codelineno-22-52"></a><span class="w">          </span><span class="no">sum(rate(vllm:request_total[5m])) &gt; 0.01</span>
+<a id="__codelineno-22-53" name="__codelineno-22-53" href="#__codelineno-22-53"></a><span class="w">        </span><span class="nt">for</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5m</span>
+<a id="__codelineno-22-54" name="__codelineno-22-54" href="#__codelineno-22-54"></a><span class="w">        </span><span class="nt">labels</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> severity</span><span class="p">:</span><span class="w"> </span><span class="nv">critical</span><span class="w"> </span><span class="p p-Indicator">}</span>
+</code></pre></div>
+<h2 id="sli-slo">九、SLI / SLO 设计<a class="headerlink" href="#sli-slo" title="Permanent link">&para;</a></h2>
+<h3 id="91-sli">9.1 推理服务 SLI<a class="headerlink" href="#91-sli" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>可用性 SLI:
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>  Success Rate = success_requests / total_requests
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>性能 SLI:
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>  TTFT &lt; 500ms 占比     (prompt &lt; 1K)
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>  TTFT &lt; 2s 占比         (prompt 1K-8K)
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>  TPOT &lt; 50ms 占比
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>容量 SLI:
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>  Goodput (剔除超时)
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>  QPS 上限
+</code></pre></div>
+<h3 id="92-slo">9.2 SLO 目标（参考）<a class="headerlink" href="#92-slo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>Chat 应用:
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>  Availability    99.5% / month
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>  TTFT P99        &lt; 500ms (短) / 2s (长)
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>  TPOT P99        &lt; 50ms
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>  Error Rate       &lt; 0.5%
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>API 服务:
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>  Availability    99.9%
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>  TTFT P99        &lt; 1s
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>  TPOT P99        &lt; 30ms
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>Agent / 复杂任务:
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>  Availability    99.0%
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>  E2E P99          &lt; 30s
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>  Success Rate     &gt; 90%
+<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>
+<a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a>→ 错误预算 = 1 - SLO
+<a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a>  99.5% → 1 月 3.6 小时不可用
+<a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>  99.9% → 1 月 43 分钟
+</code></pre></div>
+<h3 id="93-error-budget">9.3 Error Budget 燃烧告警<a class="headerlink" href="#93-error-budget" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># Burn Rate Alert（快烧 / 慢烧）</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a><span class="k">sum</span><span class="o">(</span><span class="kr">rate</span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">request_errors_total</span><span class="p">[</span><span class="s">5m</span><span class="p">]</span><span class="o">))</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="k">sum</span><span class="o">(</span><span class="kr">rate</span><span class="o">(</span><span class="nv">vllm</span><span class="err">:</span><span class="nv">request_total</span><span class="p">[</span><span class="s">5m</span><span class="p">]</span><span class="o">))</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="w">  </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">14.4</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="o">(</span><span class="mi">1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">0.995</span><span class="o">)</span><span class="w">    </span><span class="c1"># 14.4x 速率 = 1h 烧完 1 天预算</span>
+</code></pre></div>
+<h2 id="trace">十、Trace（分布式追踪）<a class="headerlink" href="#trace" title="Permanent link">&para;</a></h2>
+<h3 id="101-rag-agent">10.1 RAG / Agent 多步追踪<a class="headerlink" href="#101-rag-agent" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># OpenTelemetry RAG trace</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">opentelemetry</span><span class="w"> </span><span class="kn">import</span> <span class="n">trace</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="n">tracer</span> <span class="o">=</span> <span class="n">trace</span><span class="o">.</span><span class="n">get_tracer</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="nd">@tracer</span><span class="o">.</span><span class="n">start_as_current_span</span><span class="p">(</span><span class="s2">&quot;rag-pipeline&quot;</span><span class="p">)</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">rag_query</span><span class="p">(</span><span class="n">question</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>    <span class="k">with</span> <span class="n">tracer</span><span class="o">.</span><span class="n">start_as_current_span</span><span class="p">(</span><span class="s2">&quot;embed&quot;</span><span class="p">):</span>
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>        <span class="n">emb</span> <span class="o">=</span> <span class="n">embedder</span><span class="o">.</span><span class="n">embed</span><span class="p">(</span><span class="n">question</span><span class="p">)</span>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>    <span class="k">with</span> <span class="n">tracer</span><span class="o">.</span><span class="n">start_as_current_span</span><span class="p">(</span><span class="s2">&quot;retrieve&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">span</span><span class="p">:</span>
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>        <span class="n">docs</span> <span class="o">=</span> <span class="n">vector_db</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">emb</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>        <span class="n">span</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s2">&quot;doc_count&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">docs</span><span class="p">))</span>
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a>    <span class="k">with</span> <span class="n">tracer</span><span class="o">.</span><span class="n">start_as_current_span</span><span class="p">(</span><span class="s2">&quot;rerank&quot;</span><span class="p">):</span>
+<a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a>        <span class="n">docs</span> <span class="o">=</span> <span class="n">reranker</span><span class="o">.</span><span class="n">rerank</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">docs</span><span class="p">)[:</span><span class="mi">3</span><span class="p">]</span>
+<a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a>
+<a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a>    <span class="k">with</span> <span class="n">tracer</span><span class="o">.</span><span class="n">start_as_current_span</span><span class="p">(</span><span class="s2">&quot;generate&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">span</span><span class="p">:</span>
+<a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a>        <span class="n">prompt</span> <span class="o">=</span> <span class="n">format_prompt</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">docs</span><span class="p">)</span>
+<a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a>        <span class="n">span</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s2">&quot;gen_ai.request.model&quot;</span><span class="p">,</span> <span class="s2">&quot;llama-3-70b&quot;</span><span class="p">)</span>
+<a id="__codelineno-26-20" name="__codelineno-26-20" href="#__codelineno-26-20"></a>        <span class="n">response</span> <span class="o">=</span> <span class="n">llm</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+<a id="__codelineno-26-21" name="__codelineno-26-21" href="#__codelineno-26-21"></a>        <span class="n">span</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s2">&quot;gen_ai.usage.input_tokens&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">(</span><span class="n">prompt</span><span class="p">))</span>
+<a id="__codelineno-26-22" name="__codelineno-26-22" href="#__codelineno-26-22"></a>        <span class="n">span</span><span class="o">.</span><span class="n">set_attribute</span><span class="p">(</span><span class="s2">&quot;gen_ai.usage.output_tokens&quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">(</span><span class="n">response</span><span class="p">))</span>
+<a id="__codelineno-26-23" name="__codelineno-26-23" href="#__codelineno-26-23"></a>
+<a id="__codelineno-26-24" name="__codelineno-26-24" href="#__codelineno-26-24"></a>    <span class="k">return</span> <span class="n">response</span>
+<a id="__codelineno-26-25" name="__codelineno-26-25" href="#__codelineno-26-25"></a>
+<a id="__codelineno-26-26" name="__codelineno-26-26" href="#__codelineno-26-26"></a><span class="c1"># Jaeger UI 可视化:</span>
+<a id="__codelineno-26-27" name="__codelineno-26-27" href="#__codelineno-26-27"></a><span class="c1"># rag-pipeline (5.3s)</span>
+<a id="__codelineno-26-28" name="__codelineno-26-28" href="#__codelineno-26-28"></a><span class="c1">#   ├─ embed       (20ms)</span>
+<a id="__codelineno-26-29" name="__codelineno-26-29" href="#__codelineno-26-29"></a><span class="c1">#   ├─ retrieve    (80ms)</span>
+<a id="__codelineno-26-30" name="__codelineno-26-30" href="#__codelineno-26-30"></a><span class="c1">#   ├─ rerank      (200ms)</span>
+<a id="__codelineno-26-31" name="__codelineno-26-31" href="#__codelineno-26-31"></a><span class="c1">#   └─ generate    (5000ms)  ← 瓶颈</span>
+</code></pre></div>
+<h3 id="102-jaeger-tempo-langfuse">10.2 Jaeger / Tempo / Langfuse<a class="headerlink" href="#102-jaeger-tempo-langfuse" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>工具选型:
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>  Jaeger          老牌通用 trace
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>  Tempo           Grafana 出品 (与 Loki/Prometheus 一体)
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>  Langfuse        LLM 业务级 ⭐
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>  Phoenix (Arize) LLM eval + trace
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>  LangSmith       LangChain 官方
+</code></pre></div>
+<h2 id="quality">十一、质量监控（Quality）<a class="headerlink" href="#quality" title="Permanent link">&para;</a></h2>
+<h3 id="111">11.1 自动评估<a class="headerlink" href="#111" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># LLM-as-judge</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">quality_score</span><span class="p">(</span><span class="n">question</span><span class="p">,</span> <span class="n">answer</span><span class="p">,</span> <span class="n">ground_truth</span><span class="p">):</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>    <span class="n">judge_prompt</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;&quot;&quot;</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="s2">    Rate the answer quality (1-10) compared to ground truth.</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="s2">    Question: </span><span class="si">{</span><span class="n">question</span><span class="si">}</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="s2">    Answer: </span><span class="si">{</span><span class="n">answer</span><span class="si">}</span>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="s2">    Ground Truth: </span><span class="si">{</span><span class="n">ground_truth</span><span class="si">}</span>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="s2">    Score only:</span>
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="s2">    &quot;&quot;&quot;</span>
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>    <span class="n">score</span> <span class="o">=</span> <span class="n">judge_llm</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="n">judge_prompt</span><span class="p">)</span>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a><span class="c1"># 抽样 1% 流量评估</span>
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="k">if</span> <span class="n">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mf">0.01</span><span class="p">:</span>
+<a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a>    <span class="n">quality</span> <span class="o">=</span> <span class="n">quality_score</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">gt</span><span class="p">)</span>
+<a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a>    <span class="n">prometheus_metric</span><span class="o">.</span><span class="n">observe</span><span class="p">(</span><span class="n">quality</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="112">11.2 漂移检测<a class="headerlink" href="#112" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>模型质量漂移:
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>  ↓ Accuracy on benchmark
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>  ↑ Refusal rate
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>  ↑ Toxicity score
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>  ↑ Hallucination rate
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>工具:
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>  - Phoenix (Arize)
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>  - Evidently AI
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>  - Langfuse Evals
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>  - 自研周期评测
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>自动告警: 关键指标降 10% → 阻断发布 / 回滚
+</code></pre></div>
+<h3 id="113">11.3 安全监控<a class="headerlink" href="#113" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>Prompt Injection 检测:
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>  - LLM Guard
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>  - Rebuff
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>  - PromptArmor
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>  - LangKit (Whylabs)
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>  - 国产: 火山方舟内容安全
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>PII 检测:
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>  - Presidio (微软)
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>  - 关键词 + 正则 + NER
+<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>
+<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a>Jailbreak 检测:
+<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>  - 已知 jailbreak prompt 库
+<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>  - 行为异常基线
+<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a>
+<a id="__codelineno-30-16" name="__codelineno-30-16" href="#__codelineno-30-16"></a>合规审计:
+<a id="__codelineno-30-17" name="__codelineno-30-17" href="#__codelineno-30-17"></a>  - 全 prompt / response 留存（脱敏）
+<a id="__codelineno-30-18" name="__codelineno-30-18" href="#__codelineno-30-18"></a>  - 国内: 等保 / 个保法
+</code></pre></div>
+<h2 id="_5">十二、典型坑<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">指标</th>
-<th style="text-align: left;">全称</th>
-<th style="text-align: left;">含义</th>
-<th style="text-align: center;">正常值</th>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">TTFT</td>
-<td style="text-align: left;">Time to First Token</td>
-<td style="text-align: left;">首 Token 延迟</td>
-<td style="text-align: center;">&lt; 500ms</td>
+<td style="text-align: left;"><strong>只看 TTFT 不看 TPOT</strong></td>
+<td style="text-align: left;">都看（用户感受是 TPOT 慢）</td>
 </tr>
 <tr>
-<td style="text-align: left;">TPOT</td>
-<td style="text-align: left;">Time per Output Token</td>
-<td style="text-align: left;">每秒生成速度</td>
-<td style="text-align: center;">&gt; 30 tokens/s</td>
+<td style="text-align: left;"><strong>histogram bucket 太粗</strong></td>
+<td style="text-align: left;">加 0.1/0.2/0.5/1/2/5/10s</td>
 </tr>
 <tr>
-<td style="text-align: left;">ITL</td>
-<td style="text-align: left;">Inter-Token Latency</td>
-<td style="text-align: left;">Token间延迟</td>
-<td style="text-align: center;">&lt; 30ms</td>
+<td style="text-align: left;"><strong>不监控 KV Cache 利用</strong></td>
+<td style="text-align: left;">vLLM 核心指标</td>
 </tr>
 <tr>
-<td style="text-align: left;">Throughput</td>
-<td style="text-align: left;">吞吐量</td>
-<td style="text-align: left;">每秒请求数</td>
-<td style="text-align: center;">取决于模型和 GPU</td>
+<td style="text-align: left;"><strong>抢占发生不告警</strong></td>
+<td style="text-align: left;">必告警（说明过载）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没监控 GPU XID</strong></td>
+<td style="text-align: left;">DCGM exporter 必装</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>日志记完整 prompt</strong></td>
+<td style="text-align: left;">PII / 合规风险</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>告警没分级</strong></td>
+<td style="text-align: left;">warning vs critical 区分</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SLO 拍脑袋</strong></td>
+<td style="text-align: left;">业务需求驱动</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>trace 采样率 100%</strong></td>
+<td style="text-align: left;">1-10% 已够</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DataDog 全开</strong></td>
+<td style="text-align: left;">成本爆炸 / 采样 + 自托管</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>不监控成本</strong></td>
+<td style="text-align: left;">单 user / day token 监控</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没质量监控</strong></td>
+<td style="text-align: left;">模型漂移无感知</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>多副本指标不聚合</strong></td>
+<td style="text-align: left;">加 model / version label</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Token 数与 cost 关联弱</strong></td>
+<td style="text-align: left;">接 Langfuse</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>告警直接发开发</strong></td>
+<td style="text-align: left;">走 AlertManager 分级</td>
 </tr>
 </tbody>
 </table>
-<h2 id="token">Token 计量与成本<a class="headerlink" href="#token" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Token 使用统计</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">{</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;llama-3.1-8b&quot;</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="s2">&quot;input_tokens&quot;</span><span class="p">:</span> <span class="mi">150</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="s2">&quot;output_tokens&quot;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="s2">&quot;total_tokens&quot;</span><span class="p">:</span> <span class="mi">350</span><span class="p">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="s2">&quot;cost_per_token&quot;</span><span class="p">:</span> <span class="mf">0.000003</span><span class="p">,</span>  <span class="c1"># $/token</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="s2">&quot;request_cost&quot;</span><span class="p">:</span> <span class="mf">0.00105</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="p">}</span>
+<h2 id="checklist">十三、最佳实践 Checklist<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>基础（必须）:
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>☐ vLLM /metrics 接 Prometheus
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>☐ DCGM exporter 接 Prometheus
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>☐ Grafana dashboard 部署
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>☐ 关键告警规则（5个起）
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>☐ TTFT/TPOT/QPS/Error 监控
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>中级（推荐）:
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>☐ Langfuse / Helicone 接入
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>☐ User / Model / Feature 维度归因
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>☐ Token 消耗 + Cost 监控
+<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a>☐ SLI/SLO 定义
+<a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a>☐ Error Budget 燃烧告警
+<a id="__codelineno-31-14" name="__codelineno-31-14" href="#__codelineno-31-14"></a>☐ OpenTelemetry trace
+<a id="__codelineno-31-15" name="__codelineno-31-15" href="#__codelineno-31-15"></a>☐ AlertManager 分级路由
+<a id="__codelineno-31-16" name="__codelineno-31-16" href="#__codelineno-31-16"></a>
+<a id="__codelineno-31-17" name="__codelineno-31-17" href="#__codelineno-31-17"></a>高级（生产标杆）:
+<a id="__codelineno-31-18" name="__codelineno-31-18" href="#__codelineno-31-18"></a>☐ 质量自动评估（LLM-as-judge）
+<a id="__codelineno-31-19" name="__codelineno-31-19" href="#__codelineno-31-19"></a>☐ 漂移检测
+<a id="__codelineno-31-20" name="__codelineno-31-20" href="#__codelineno-31-20"></a>☐ A/B 自动评测
+<a id="__codelineno-31-21" name="__codelineno-31-21" href="#__codelineno-31-21"></a>☐ Prompt injection / PII 监控
+<a id="__codelineno-31-22" name="__codelineno-31-22" href="#__codelineno-31-22"></a>☐ Dataset 自动采集
+<a id="__codelineno-31-23" name="__codelineno-31-23" href="#__codelineno-31-23"></a>☐ 用户反馈关联
+<a id="__codelineno-31-24" name="__codelineno-31-24" href="#__codelineno-31-24"></a>☐ 跨服务 RAG/Agent trace
+<a id="__codelineno-31-25" name="__codelineno-31-25" href="#__codelineno-31-25"></a>☐ 等保审计留存
 </code></pre></div>
-<h2 id="_3">模型质量监控<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<ul>
-<li>输出长度分布监控（突增可能指示异常）</li>
-<li>Embedding 相似度漂移（模型退化检测）</li>
-<li>幻觉率评估（抽样检查）</li>
-<li>用户反馈收集（赞/踩）</li>
-</ul>
+<h2 id="2025">十四、推荐栈（2025）<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h2>
+<h3 id="141">14.1 中小团队<a class="headerlink" href="#141" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>Metric:    Prometheus + Grafana + DCGM
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>LLM:       Langfuse 自托管
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>Log:       Loki + Promtail
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>Trace:     OpenTelemetry + Langfuse
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>Alert:     AlertManager + 飞书
+</code></pre></div>
+<h3 id="142">14.2 中大企业<a class="headerlink" href="#142" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>+ Mimir / Thanos (Prometheus 长期存储)
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>+ Tempo (Trace 长期存储)
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>+ Langfuse Enterprise / Helicone Pro
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>+ Arize Phoenix (评估)
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>+ DataDog / NewRelic (商业全栈)
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>+ PagerDuty / 国内: 派欧云
+</code></pre></div>
+<h3 id="143">14.3 大规模<a class="headerlink" href="#143" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>+ 自研监控平台
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>+ 自动质量评估流水线
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>+ 全栈关联（业务 + 推理 + GPU）
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>+ AIOps（详见 12_AIOps）
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>+ 实时漂移检测
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>+ 安全审计 + 国密合规
+</code></pre></div>
+<h2 id="_6">十五、学习路径<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>入门（2 周）:
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>  1. Prometheus + Grafana 部署
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>  2. vLLM metrics 接入
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>  3. DCGM exporter
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>  4. 基础 dashboard
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>
+<a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a>中级（1 月）:
+<a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a>  5. Langfuse 部署 + SDK
+<a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a>  6. SLO / Error Budget
+<a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a>  7. AlertManager 分级
+<a id="__codelineno-35-11" name="__codelineno-35-11" href="#__codelineno-35-11"></a>  8. OpenTelemetry trace
+<a id="__codelineno-35-12" name="__codelineno-35-12" href="#__codelineno-35-12"></a>
+<a id="__codelineno-35-13" name="__codelineno-35-13" href="#__codelineno-35-13"></a>高级（3 月+）:
+<a id="__codelineno-35-14" name="__codelineno-35-14" href="#__codelineno-35-14"></a>  9. RAG / Agent trace
+<a id="__codelineno-35-15" name="__codelineno-35-15" href="#__codelineno-35-15"></a>  10. 质量评估 + A/B
+<a id="__codelineno-35-16" name="__codelineno-35-16" href="#__codelineno-35-16"></a>  11. 漂移检测 + 自愈
+<a id="__codelineno-35-17" name="__codelineno-35-17" href="#__codelineno-35-17"></a>  12. 跨集群聚合
+<a id="__codelineno-35-18" name="__codelineno-35-18" href="#__codelineno-35-18"></a>
+<a id="__codelineno-35-19" name="__codelineno-35-19" href="#__codelineno-35-19"></a>专家:
+<a id="__codelineno-35-20" name="__codelineno-35-20" href="#__codelineno-35-20"></a>  13. 自研评估平台
+<a id="__codelineno-35-21" name="__codelineno-35-21" href="#__codelineno-35-21"></a>  14. AIOps 集成
+<a id="__codelineno-35-22" name="__codelineno-35-22" href="#__codelineno-35-22"></a>  15. 安全 + 合规审计
+</code></pre></div>
+<h2 id="_7">十六、参考资料<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>官方:
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>  - vLLM Metrics: https://docs.vllm.ai/en/latest/serving/metrics.html
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>  - DCGM Exporter: https://github.com/NVIDIA/dcgm-exporter
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>  - OpenLLMetry: https://github.com/traceloop/openllmetry
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>  - Langfuse: https://langfuse.com/docs
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>  - OTel GenAI Conventions: https://opentelemetry.io/docs/specs/semconv/gen-ai/
+<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>  - Phoenix: https://docs.arize.com/phoenix
+<a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>
+<a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a>社区:
+<a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a>  - SRE Workbook (SLO)
+<a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a>  - Grafana Dashboards 21130 / 12239
+<a id="__codelineno-36-12" name="__codelineno-36-12" href="#__codelineno-36-12"></a>  - r/LocalLLaMA (监控讨论)
+<a id="__codelineno-36-13" name="__codelineno-36-13" href="#__codelineno-36-13"></a>
+<a id="__codelineno-36-14" name="__codelineno-36-14" href="#__codelineno-36-14"></a>报告:
+<a id="__codelineno-36-15" name="__codelineno-36-15" href="#__codelineno-36-15"></a>  - The State of LLM Observability (Galileo)
+<a id="__codelineno-36-16" name="__codelineno-36-16" href="#__codelineno-36-16"></a>  - LLM Reliability Survey (Microsoft)
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：LLM 可观测 = <strong>传统三大支柱（Prometheus/Loki/Trace）+ LLM 专有维度（TTFT/TPOT/Token/Cost/Quality/Safety）</strong>。<strong>Prometheus+Grafana+DCGM</strong> 解决性能与资源问题（基础设施层），<strong>Langfuse / Helicone</strong> 解决业务与质量问题（应用层）——<strong>两层都要有</strong>。最容易翻车的是只监控 TTFT 不监控 TPOT，导致用户感受卡顿但仪表盘"一切正常"；以及不监控 KV Cache 利用率，导致抢占暴增却找不到原因。</p>
+</blockquote>
 
 
 

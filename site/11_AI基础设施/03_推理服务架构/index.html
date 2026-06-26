@@ -1193,7 +1193,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        总体架构
+        一、推理服务架构演进
       
     </span>
   </a>
@@ -1201,13 +1201,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#pd-prefilldecode-disaggregation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        解耦式推理
+        二、PD 分离（Prefill/Decode Disaggregation）
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="二、PD 分离（Prefill/Decode Disaggregation）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-pd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 为什么要 PD 分离
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-pd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 PD 分离架构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 主流实现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-vllm-pd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 vLLM PD 分离启动
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1215,7 +1265,451 @@
   <a href="#kv-cache" class="md-nav__link">
     <span class="md-ellipsis">
       
-        KV Cache 管理
+        三、KV Cache 共享与多级缓存
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、KV Cache 共享与多级缓存">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 痛点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 多级缓存设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-lmcache-kv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 LMCache（开源 KV 共享）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-mooncake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Mooncake 部署
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、智能路由
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、智能路由">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 路由策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-litellm-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 LiteLLM Router
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-litellm-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 LiteLLM Proxy（生产推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-kserve-modelmesh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 KServe + ModelMesh
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、负载均衡
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、负载均衡">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-l7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 L7 网关选型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-nginx-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Nginx LLM 配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-envoy-rate-limit-retry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Envoy Rate Limit + Retry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、自动扩缩
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、自动扩缩">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-hpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 HPA 基础
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-keda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 KEDA（按业务指标）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-gpu-spot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 GPU Spot 弹性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、模型仓库与版本管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、模型仓库与版本管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-model-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Model Registry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 K8s 模型分发
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 模型灰度发布
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、多模型多租户
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、多模型多租户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 模型路由策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-llm-router-routellm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 LLM Router / RouteLLM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 多租户隔离
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、推理网关全栈
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、推理网关全栈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 推荐架构（2025）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 完整组件清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、最佳实践 Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、推荐栈（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、推荐栈（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 中小团队
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 中大企业
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 大规模 / 大模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、参考资料
       
     </span>
   </a>
@@ -1732,7 +2226,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        总体架构
+        一、推理服务架构演进
       
     </span>
   </a>
@@ -1740,13 +2234,63 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#pd-prefilldecode-disaggregation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        解耦式推理
+        二、PD 分离（Prefill/Decode Disaggregation）
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="二、PD 分离（Prefill/Decode Disaggregation）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-pd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 为什么要 PD 分离
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-pd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 PD 分离架构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 主流实现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-vllm-pd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 vLLM PD 分离启动
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1754,7 +2298,451 @@
   <a href="#kv-cache" class="md-nav__link">
     <span class="md-ellipsis">
       
-        KV Cache 管理
+        三、KV Cache 共享与多级缓存
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、KV Cache 共享与多级缓存">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 痛点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 多级缓存设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-lmcache-kv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 LMCache（开源 KV 共享）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-mooncake" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Mooncake 部署
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、智能路由
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、智能路由">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 路由策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-litellm-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 LiteLLM Router
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-litellm-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 LiteLLM Proxy（生产推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-kserve-modelmesh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 KServe + ModelMesh
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、负载均衡
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、负载均衡">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-l7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 L7 网关选型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-nginx-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Nginx LLM 配置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-envoy-rate-limit-retry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Envoy Rate Limit + Retry
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、自动扩缩
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、自动扩缩">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-hpa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 HPA 基础
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-keda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 KEDA（按业务指标）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-gpu-spot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 GPU Spot 弹性
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、模型仓库与版本管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、模型仓库与版本管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-model-registry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Model Registry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 K8s 模型分发
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 模型灰度发布
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、多模型多租户
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、多模型多租户">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 模型路由策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-llm-router-routellm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 LLM Router / RouteLLM
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 多租户隔离
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、推理网关全栈
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、推理网关全栈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 推荐架构（2025）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 完整组件清单
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、最佳实践 Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、推荐栈（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、推荐栈（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 中小团队
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 中大企业
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 大规模 / 大模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、参考资料
       
     </span>
   </a>
@@ -1830,64 +2818,831 @@
 
 
 <h1 id="_1">推理服务架构<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="_2">总体架构<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>用户请求
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    │
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    ▼
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>┌──────────┐
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│  网关     │ ← 语义路由/负载均衡/鉴权
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│(Kong/Nginx)│
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>└────┬─────┘
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>     │
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>     ▼
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>┌──────────┐
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│  模型调度  │ ← 模型分发/灰度/版本管理
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│(KServe)   │
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>└────┬─────┘
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>     │
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>     ▼
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>┌──────────┐   ┌──────────┐
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>│ Prefill  │──→│ Decode   │ ← 解耦式推理
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│ Pods     │   │ Pods     │
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>└──────────┘   └──────────┘
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>     │              │
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>     └──────┬───────┘
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>            ▼
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>       ┌──────────┐
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>       │ vLLM     │
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>       │ TGI      │
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>       └──────────┘
+<blockquote>
+<p>单机 vLLM 起步，<strong>生产架构需要 8 层</strong>：路由 → 鉴权 → 限流 → 负载均衡 → 推理副本 → KV Cache 共享 → 模型仓库 → 监控。<strong>llm-d / vLLM Production Stack / AIBrix</strong> 是 2025 推理生产架构事实标准。<strong>PD 分离 + Prefix Cache 共享</strong> 是新一代核心。</p>
+</blockquote>
+<h2 id="_2">一、推理服务架构演进<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>v1 单机 vLLM
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  client → vLLM (单 Pod) → GPU
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>v2 多副本 + LB
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  client → LB → [vLLM A, vLLM B, ...] → GPU
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>v3 多模型 + 路由
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  client → API Gateway → Router → [70B, 7B, embed, ...]
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>v4 PD 分离 + Cache 共享 (2024+)
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  client → Router → Prefill Pool (H100)
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>                  → Decode Pool (H200)
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>                  ↔ Shared KV Cache (RDMA/Mooncake)
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>v5 全栈分布式 (llm-d / 2025)
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>  + 智能路由（prefix-aware / load-aware）
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>  + 多级 cache（GPU HBM → CPU RAM → SSD）
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>  + 模型版本管理 + 灰度
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>  + 跨集群多 region
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>  + 自动扩缩 + Spot 抢占
 </code></pre></div>
-<h2 id="_3">解耦式推理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<p>2026 年的主流架构，将 prefill 和 decode 分离：</p>
+<h2 id="pd-prefilldecode-disaggregation">二、PD 分离（Prefill/Decode Disaggregation）<a class="headerlink" href="#pd-prefilldecode-disaggregation" title="Permanent link">&para;</a></h2>
+<h3 id="21-pd">2.1 为什么要 PD 分离<a class="headerlink" href="#21-pd" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Prefill 阶段:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  - Compute-bound
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  - 一次性算完 N 个 prompt token
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  - 用算力强的卡 (H100, MI300X)
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  - 时间 ~ O(N²) (attention)
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>Decode 阶段:
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  - Memory-bound
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  - 逐 token 生成
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  - 用带宽高的卡 (H200, MI300X)
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  - 单 token ~ 几十 ms
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>混在一起的问题:
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  - Prefill 长 prompt 会阻塞 decode
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  - 两者资源需求不同，GPU 利用率低
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  - SLA TTFT / TPOT 难同时优化
+</code></pre></div>
+<h3 id="22-pd">2.2 PD 分离架构<a class="headerlink" href="#22-pd" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>                  Router
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>                   │
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>        ┌──────────┴───────────┐
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        ▼                      ▼
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    Prefill Pool          Decode Pool
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    [H100 × N]            [H200 × M]
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    高算力                 高带宽
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>        │                      │
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>        └────► KV Cache ◄──────┘
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>              (RDMA transfer
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>              or shared memory)
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>流程:
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>  1. Router 收请求
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>  2. Prefill 节点算完 prompt → KV Cache
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>  3. KV Cache 通过 RDMA 传到 Decode 节点 (微秒级)
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>  4. Decode 节点边生成边返回流式 token
+</code></pre></div>
+<h3 id="23">2.3 主流实现<a class="headerlink" href="#23" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Mooncake (Kimi/月之暗面 开源)
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  - 业界首个开源 PD 分离系统
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  - KVCache 中心化池 + Cache-aware Routing
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  - RDMA / NVLink Networking
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>  - 论文 FAST &#39;25
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  - https://github.com/kvcache-ai/Mooncake
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>DistServe (UCSD)
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  - 学术派
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>  - 论文 OSDI &#39;24
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>vLLM Disaggregated Prefill (v0.6+)
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>  - 内置 PD 模式
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>  - --kv-transfer-config
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>SGLang PD (v0.4+)
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>  - 内置 RDMA / NCCL 传输
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>NVIDIA Dynamo (2025)
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>  - NVIDIA 官方分布式推理
+<a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>  - 替代 TRT-LLM Triton 经典栈
+<a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>  - 集成 KV-aware routing
+</code></pre></div>
+<h3 id="24-vllm-pd">2.4 vLLM PD 分离启动<a class="headerlink" href="#24-vllm-pd" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Prefill 节点</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>vllm<span class="w"> </span>serve<span class="w"> </span>meta-llama/Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span>--port<span class="w"> </span><span class="m">8100</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span>--kv-transfer-config<span class="w"> </span><span class="s1">&#39;{&quot;kv_connector&quot;:&quot;PyNcclConnector&quot;,&quot;kv_role&quot;:&quot;kv_producer&quot;,&quot;kv_rank&quot;:0,&quot;kv_parallel_size&quot;:2}&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span>-tp<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># Decode 节点</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>vllm<span class="w"> </span>serve<span class="w"> </span>meta-llama/Meta-Llama-3-70B-Instruct<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span>--port<span class="w"> </span><span class="m">8200</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span>--kv-transfer-config<span class="w"> </span><span class="s1">&#39;{&quot;kv_connector&quot;:&quot;PyNcclConnector&quot;,&quot;kv_role&quot;:&quot;kv_consumer&quot;,&quot;kv_rank&quot;:1,&quot;kv_parallel_size&quot;:2}&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">  </span>-tp<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="c1"># Router (vLLM 自带 / 自研)</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="c1"># 转 prompt → prefill → 收 KV → 转 decode</span>
+</code></pre></div>
+<h2 id="kv-cache">三、KV Cache 共享与多级缓存<a class="headerlink" href="#kv-cache" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 痛点<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>单机 prefix cache → 仅在本副本命中
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>多副本架构 → 同 prefix 在不同副本被重复计算
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>长 system prompt + RAG → 大量浪费
+</code></pre></div>
+<h3 id="32">3.2 多级缓存设计<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>L1 GPU HBM Cache       ~80 GB    ns 级
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>L2 CPU RAM Cache        ~1 TB     us 级 (通过 PCIe)
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>L3 NVMe Local SSD       ~10 TB    100us-ms 级
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>L4 Distributed Cache    &gt;100 TB   ms 级 (RDMA)
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>策略:
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  热 prefix (system / 常用) 留 L1
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  温 prefix (一次会话) 落 L2/L3
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>  冷 prefix 直接重算
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>vLLM v1 / SGLang 都支持多级
+</code></pre></div>
+<h3 id="33-lmcache-kv">3.3 LMCache（开源 KV 共享）<a class="headerlink" href="#33-lmcache-kv" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>pip<span class="w"> </span>install<span class="w"> </span>lmcache
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="c1"># 启动 LMCache server</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>lmcache<span class="w"> </span>serve<span class="w"> </span>--port<span class="w"> </span><span class="m">8888</span><span class="w"> </span>--backend<span class="w"> </span>redis://...
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="c1"># vLLM 集成</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="nb">export</span><span class="w"> </span><span class="nv">LMCACHE_USE_EXPERIMENTAL_FEATURES</span><span class="o">=</span><span class="m">1</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>vllm<span class="w"> </span>serve<span class="w"> </span>meta-llama/Meta-Llama-3-8B<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="w">  </span>--kv-transfer-config<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a><span class="s1">    &quot;kv_connector&quot;: &quot;LMCacheConnector&quot;,</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a><span class="s1">    &quot;kv_role&quot;: &quot;kv_both&quot;,</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a><span class="s1">    &quot;lmcache_url&quot;: &quot;lmcache://lmcache-server:8888&quot;</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a><span class="s1">  }&#39;</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a><span class="c1"># 效果:</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a><span class="c1"># - Prefix 跨副本共享</span>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a><span class="c1"># - RAG 场景 TTFT 降 60-90%</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a><span class="c1"># - Agent 场景多轮加速</span>
+</code></pre></div>
+<h3 id="34-mooncake">3.4 Mooncake 部署<a class="headerlink" href="#34-mooncake" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Clone</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/kvcache-ai/Mooncake
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Mooncake Store (KV Cache Pool)</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--name<span class="w"> </span>mooncake-store<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">50051</span>:50051<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="w">  </span>mooncake/store:latest<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="w">  </span>--hbm-size<span class="w"> </span><span class="m">40</span><span class="w"> </span><span class="se">\ </span><span class="w">                      </span><span class="c1"># GB</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="w">  </span>--dram-size<span class="w"> </span><span class="m">200</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="w">  </span>--ssd-size<span class="w"> </span><span class="m">1000</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="w">  </span>--backend<span class="w"> </span>rdma
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="c1"># vLLM with Mooncake</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>vllm<span class="w"> </span>serve<span class="w"> </span>model<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="w">  </span>--kv-transfer-config<span class="w"> </span><span class="s1">&#39;{</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="s1">    &quot;kv_connector&quot;: &quot;MooncakeConnector&quot;,</span>
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="s1">    &quot;kv_role&quot;: &quot;kv_consumer&quot;,</span>
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a><span class="s1">    &quot;mooncake_url&quot;: &quot;mooncake://store:50051&quot;</span>
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a><span class="s1">  }&#39;</span>
+</code></pre></div>
+<h2 id="_3">四、智能路由<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 路由策略<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>Round-Robin (RR)         无脑轮询
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  ❌ 无 cache 感知 / 无 load 感知
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>Least Connections (LC)   最少连接
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>  ❌ 不能区分长短请求
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>Hash by SessionID         会话粘性
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>  ✅ 同会话同副本（cache 友好）
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>  ❌ 副本宕机丢 cache
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>Prefix Hash               prefix 一致性哈希
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>  ✅ 同 prefix 路由同副本
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>  ✅ Cache 友好
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>  ⭐ 推荐
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>Load-Aware                负载感知
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>  - Pending Queue Length
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a>  - GPU Util
+<a id="__codelineno-9-19" name="__codelineno-9-19" href="#__codelineno-9-19"></a>  - KV Cache 占用
+<a id="__codelineno-9-20" name="__codelineno-9-20" href="#__codelineno-9-20"></a>  - TTFT 预测
+<a id="__codelineno-9-21" name="__codelineno-9-21" href="#__codelineno-9-21"></a>
+<a id="__codelineno-9-22" name="__codelineno-9-22" href="#__codelineno-9-22"></a>Cost-Aware                成本感知
+<a id="__codelineno-9-23" name="__codelineno-9-23" href="#__codelineno-9-23"></a>  - 简单 query → 小模型 (7B)
+<a id="__codelineno-9-24" name="__codelineno-9-24" href="#__codelineno-9-24"></a>  - 复杂 query → 大模型 (70B)
+<a id="__codelineno-9-25" name="__codelineno-9-25" href="#__codelineno-9-25"></a>  - LLM Router / RouteLLM
+<a id="__codelineno-9-26" name="__codelineno-9-26" href="#__codelineno-9-26"></a>
+<a id="__codelineno-9-27" name="__codelineno-9-27" href="#__codelineno-9-27"></a>Cache-Aware (最优)
+<a id="__codelineno-9-28" name="__codelineno-9-28" href="#__codelineno-9-28"></a>  + Prefix Hash
+<a id="__codelineno-9-29" name="__codelineno-9-29" href="#__codelineno-9-29"></a>  + Load-Aware
+<a id="__codelineno-9-30" name="__codelineno-9-30" href="#__codelineno-9-30"></a>  + 跨副本 KV 转移
+</code></pre></div>
+<h3 id="42-litellm-router">4.2 LiteLLM Router<a class="headerlink" href="#42-litellm-router" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">litellm</span><span class="w"> </span><span class="kn">import</span> <span class="n">Router</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">model_list</span> <span class="o">=</span> <span class="p">[</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="p">{</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>        <span class="s2">&quot;model_name&quot;</span><span class="p">:</span> <span class="s2">&quot;llama-70b&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>        <span class="s2">&quot;litellm_params&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>            <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;openai/llama-3-70b&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>            <span class="s2">&quot;api_base&quot;</span><span class="p">:</span> <span class="s2">&quot;http://vllm-1:8000/v1&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>            <span class="s2">&quot;api_key&quot;</span><span class="p">:</span> <span class="s2">&quot;anything&quot;</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>        <span class="p">},</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>        <span class="s2">&quot;tpm&quot;</span><span class="p">:</span> <span class="mi">100000</span><span class="p">,</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    <span class="p">},</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>    <span class="p">{</span>
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>        <span class="s2">&quot;model_name&quot;</span><span class="p">:</span> <span class="s2">&quot;llama-70b&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>        <span class="s2">&quot;litellm_params&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>            <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;openai/llama-3-70b&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>            <span class="s2">&quot;api_base&quot;</span><span class="p">:</span> <span class="s2">&quot;http://vllm-2:8000/v1&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>            <span class="s2">&quot;api_key&quot;</span><span class="p">:</span> <span class="s2">&quot;anything&quot;</span>
+<a id="__codelineno-10-19" name="__codelineno-10-19" href="#__codelineno-10-19"></a>        <span class="p">},</span>
+<a id="__codelineno-10-20" name="__codelineno-10-20" href="#__codelineno-10-20"></a>        <span class="s2">&quot;tpm&quot;</span><span class="p">:</span> <span class="mi">100000</span><span class="p">,</span>
+<a id="__codelineno-10-21" name="__codelineno-10-21" href="#__codelineno-10-21"></a>    <span class="p">}</span>
+<a id="__codelineno-10-22" name="__codelineno-10-22" href="#__codelineno-10-22"></a><span class="p">]</span>
+<a id="__codelineno-10-23" name="__codelineno-10-23" href="#__codelineno-10-23"></a>
+<a id="__codelineno-10-24" name="__codelineno-10-24" href="#__codelineno-10-24"></a><span class="n">router</span> <span class="o">=</span> <span class="n">Router</span><span class="p">(</span>
+<a id="__codelineno-10-25" name="__codelineno-10-25" href="#__codelineno-10-25"></a>    <span class="n">model_list</span><span class="o">=</span><span class="n">model_list</span><span class="p">,</span>
+<a id="__codelineno-10-26" name="__codelineno-10-26" href="#__codelineno-10-26"></a>    <span class="n">routing_strategy</span><span class="o">=</span><span class="s2">&quot;least-busy&quot;</span><span class="p">,</span>          <span class="c1"># or simple-shuffle / usage-based-routing-v2 / latency-based-routing</span>
+<a id="__codelineno-10-27" name="__codelineno-10-27" href="#__codelineno-10-27"></a>    <span class="n">num_retries</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+<a id="__codelineno-10-28" name="__codelineno-10-28" href="#__codelineno-10-28"></a>    <span class="n">timeout</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+<a id="__codelineno-10-29" name="__codelineno-10-29" href="#__codelineno-10-29"></a>    <span class="n">fallbacks</span><span class="o">=</span><span class="p">[{</span><span class="s2">&quot;llama-70b&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;llama-8b&quot;</span><span class="p">]}],</span>
+<a id="__codelineno-10-30" name="__codelineno-10-30" href="#__codelineno-10-30"></a>    <span class="n">cache_responses</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-10-31" name="__codelineno-10-31" href="#__codelineno-10-31"></a>    <span class="n">redis_host</span><span class="o">=</span><span class="s2">&quot;redis&quot;</span><span class="p">,</span> <span class="n">redis_port</span><span class="o">=</span><span class="mi">6379</span><span class="p">,</span>
+<a id="__codelineno-10-32" name="__codelineno-10-32" href="#__codelineno-10-32"></a><span class="p">)</span>
+<a id="__codelineno-10-33" name="__codelineno-10-33" href="#__codelineno-10-33"></a>
+<a id="__codelineno-10-34" name="__codelineno-10-34" href="#__codelineno-10-34"></a><span class="n">response</span> <span class="o">=</span> <span class="n">router</span><span class="o">.</span><span class="n">completion</span><span class="p">(</span>
+<a id="__codelineno-10-35" name="__codelineno-10-35" href="#__codelineno-10-35"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;llama-70b&quot;</span><span class="p">,</span>
+<a id="__codelineno-10-36" name="__codelineno-10-36" href="#__codelineno-10-36"></a>    <span class="n">messages</span><span class="o">=</span><span class="p">[{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;hi&quot;</span><span class="p">}]</span>
+<a id="__codelineno-10-37" name="__codelineno-10-37" href="#__codelineno-10-37"></a><span class="p">)</span>
+</code></pre></div>
+<h3 id="43-litellm-proxy">4.3 LiteLLM Proxy（生产推荐）<a class="headerlink" href="#43-litellm-proxy" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># config.yaml</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nt">model_list</span><span class="p">:</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">model_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">llama-70b</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="nt">litellm_params</span><span class="p">:</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">      </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai/Meta-Llama-3-70B-Instruct</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">      </span><span class="nt">api_base</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://vllm-1:8000/v1</span>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">      </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dummy</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">model_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">qwen-72b</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="nt">litellm_params</span><span class="p">:</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">      </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">openai/Qwen2.5-72B-Instruct</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">      </span><span class="nt">api_base</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://sglang-1:30000/v1</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">model_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gpt-4o</span>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="nt">litellm_params</span><span class="p">:</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="w">      </span><span class="nt">model</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gpt-4o</span>
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">      </span><span class="nt">api_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">os.environ/OPENAI_API_KEY</span>
+<a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a>
+<a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="nt">router_settings</span><span class="p">:</span>
+<a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="w">  </span><span class="nt">routing_strategy</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">usage-based-routing-v2</span>
+<a id="__codelineno-11-21" name="__codelineno-11-21" href="#__codelineno-11-21"></a><span class="w">  </span><span class="nt">redis_host</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">redis</span>
+<a id="__codelineno-11-22" name="__codelineno-11-22" href="#__codelineno-11-22"></a>
+<a id="__codelineno-11-23" name="__codelineno-11-23" href="#__codelineno-11-23"></a><span class="nt">general_settings</span><span class="p">:</span>
+<a id="__codelineno-11-24" name="__codelineno-11-24" href="#__codelineno-11-24"></a><span class="w">  </span><span class="nt">master_key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sk-xxx</span>
+<a id="__codelineno-11-25" name="__codelineno-11-25" href="#__codelineno-11-25"></a><span class="w">  </span><span class="nt">database_url</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres://...</span><span class="w">           </span><span class="c1"># 用户管理</span>
+<a id="__codelineno-11-26" name="__codelineno-11-26" href="#__codelineno-11-26"></a>
+<a id="__codelineno-11-27" name="__codelineno-11-27" href="#__codelineno-11-27"></a><span class="nt">litellm_settings</span><span class="p">:</span>
+<a id="__codelineno-11-28" name="__codelineno-11-28" href="#__codelineno-11-28"></a><span class="w">  </span><span class="nt">set_verbose</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<a id="__codelineno-11-29" name="__codelineno-11-29" href="#__codelineno-11-29"></a><span class="w">  </span><span class="nt">callbacks</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">prometheus</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">langfuse</span><span class="p p-Indicator">]</span><span class="w">      </span><span class="c1"># 监控</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>litellm<span class="w"> </span>--config<span class="w"> </span>config.yaml<span class="w"> </span>--port<span class="w"> </span><span class="m">4000</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1"># 客户端用统一 OpenAI 协议</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>curl<span class="w"> </span>http://litellm:4000/v1/chat/completions<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer sk-xxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;model&quot;: &quot;llama-70b&quot;, &quot;messages&quot;: [...]}&#39;</span>
+</code></pre></div>
+<h3 id="44-kserve-modelmesh">4.4 KServe + ModelMesh<a class="headerlink" href="#44-kserve-modelmesh" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># K8s 原生模型服务</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">serving.kserve.io/v1beta1</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">InferenceService</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="nt">metadata</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">llama3-70b</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="w">  </span><span class="nt">predictor</span><span class="p">:</span>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="w">    </span><span class="nt">minReplicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="w">    </span><span class="nt">maxReplicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="w">    </span><span class="nt">scaleTarget</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">80</span><span class="w">                       </span><span class="c1"># GPU util</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="w">    </span><span class="nt">containers</span><span class="p">:</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm/vllm-openai:latest</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="w">        </span><span class="nt">args</span><span class="p">:</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--model=meta-llama/Meta-Llama-3-70B-Instruct</span>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">-tp=2</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="w">        </span><span class="nt">resources</span><span class="p">:</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="w">          </span><span class="nt">limits</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> nvidia.com/gpu</span><span class="p">:</span><span class="w"> </span><span class="nv">2</span><span class="w"> </span><span class="p p-Indicator">}</span>
+</code></pre></div>
+<h2 id="_4">五、负载均衡<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="51-l7">5.1 L7 网关选型<a class="headerlink" href="#51-l7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>Nginx              简单 / 静态配置
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>HAProxy            高性能 / 复杂规则
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>Envoy              动态配置 / 服务网格
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>APISIX             插件丰富 / 国产
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>Traefik            K8s 原生
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>LiteLLM Proxy ⭐    LLM 专用 / OpenAI 协议
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>Gateway API        K8s 标准
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>Istio + Envoy      服务网格内
+</code></pre></div>
+<h3 id="52-nginx-llm">5.2 Nginx LLM 配置<a class="headerlink" href="#52-nginx-llm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="k">upstream</span><span class="w"> </span><span class="s">vllm_pool</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">    </span><span class="kn">least_conn</span><span class="p">;</span><span class="w">                                </span><span class="c1"># 最少连接</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="c1"># 或 hash $http_x_session_id consistent;   # 会话粘性</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span><span class="kn">server</span><span class="w"> </span><span class="n">vllm-1</span><span class="p">:</span><span class="mi">8000</span><span class="w"> </span><span class="s">max_fails=2</span><span class="w"> </span><span class="s">fail_timeout=30s</span><span class="p">;</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">    </span><span class="kn">server</span><span class="w"> </span><span class="n">vllm-2</span><span class="p">:</span><span class="mi">8000</span><span class="w"> </span><span class="s">max_fails=2</span><span class="w"> </span><span class="s">fail_timeout=30s</span><span class="p">;</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="kn">server</span><span class="w"> </span><span class="n">vllm-3</span><span class="p">:</span><span class="mi">8000</span><span class="w"> </span><span class="s">backup</span><span class="p">;</span><span class="w">                 </span><span class="c1"># 备份节点</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">    </span><span class="kn">keepalive</span><span class="w"> </span><span class="mi">32</span><span class="p">;</span><span class="w">                              </span><span class="c1"># 连接复用</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="p">}</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="k">server</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">    </span><span class="kn">listen</span><span class="w"> </span><span class="mi">80</span><span class="p">;</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/v1/</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://vllm_pool</span><span class="p">;</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w">        </span><span class="kn">proxy_http_version</span><span class="w"> </span><span class="mi">1</span><span class="s">.1</span><span class="p">;</span>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Connection</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="p">;</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="w">        </span><span class="c1"># SSE 流式必加</span>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a><span class="w">        </span><span class="kn">proxy_buffering</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a><span class="w">        </span><span class="kn">proxy_cache</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a><span class="w">        </span><span class="kn">proxy_read_timeout</span><span class="w"> </span><span class="s">600s</span><span class="p">;</span>
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="w">        </span><span class="kn">proxy_send_timeout</span><span class="w"> </span><span class="s">600s</span><span class="p">;</span>
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="w">        </span><span class="kn">chunked_transfer_encoding</span><span class="w"> </span><span class="no">on</span><span class="p">;</span>
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a><span class="w">        </span><span class="c1"># WebSocket (可选)</span>
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Upgrade</span><span class="w"> </span><span class="nv">$http_upgrade</span><span class="p">;</span>
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a><span class="w">        </span><span class="kn">proxy_set_header</span><span class="w"> </span><span class="s">Connection</span><span class="w"> </span><span class="s">&quot;upgrade&quot;</span><span class="p">;</span>
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a>
+<a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a><span class="w">    </span><span class="kn">location</span><span class="w"> </span><span class="s">/health</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a><span class="w">        </span><span class="kn">access_log</span><span class="w"> </span><span class="no">off</span><span class="p">;</span>
+<a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a><span class="w">        </span><span class="kn">proxy_pass</span><span class="w"> </span><span class="s">http://vllm_pool/health</span><span class="p">;</span>
+<a id="__codelineno-15-35" name="__codelineno-15-35" href="#__codelineno-15-35"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-15-36" name="__codelineno-15-36" href="#__codelineno-15-36"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="53-envoy-rate-limit-retry">5.3 Envoy Rate Limit + Retry<a class="headerlink" href="#53-envoy-rate-limit-retry" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># rate limiting filter</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="nt">http_filters</span><span class="p">:</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">envoy.filters.http.ratelimit</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="w">    </span><span class="nt">typed_config</span><span class="p">:</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="w">      </span><span class="nt">domain</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">llm-api</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="w">      </span><span class="nt">rate_limit_service</span><span class="p">:</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="w">        </span><span class="nt">grpc_service</span><span class="p">:</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="w">          </span><span class="nt">envoy_grpc</span><span class="p">:</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="w">            </span><span class="nt">cluster_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rate-limit-cluster</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="nt">route_config</span><span class="p">:</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="w">  </span><span class="nt">virtual_hosts</span><span class="p">:</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">llm</span>
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a><span class="w">      </span><span class="nt">domains</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;*&quot;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a><span class="w">      </span><span class="nt">routes</span><span class="p">:</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">match</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> prefix</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/v1/&quot;</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-16-17" name="__codelineno-16-17" href="#__codelineno-16-17"></a><span class="w">          </span><span class="nt">route</span><span class="p">:</span>
+<a id="__codelineno-16-18" name="__codelineno-16-18" href="#__codelineno-16-18"></a><span class="w">            </span><span class="nt">cluster</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm_cluster</span>
+<a id="__codelineno-16-19" name="__codelineno-16-19" href="#__codelineno-16-19"></a><span class="w">            </span><span class="nt">timeout</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">600s</span><span class="w">                  </span><span class="c1"># 流式长连接</span>
+<a id="__codelineno-16-20" name="__codelineno-16-20" href="#__codelineno-16-20"></a><span class="w">            </span><span class="nt">retry_policy</span><span class="p">:</span>
+<a id="__codelineno-16-21" name="__codelineno-16-21" href="#__codelineno-16-21"></a><span class="w">              </span><span class="nt">retry_on</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;gateway-error,retriable-status-codes&quot;</span>
+<a id="__codelineno-16-22" name="__codelineno-16-22" href="#__codelineno-16-22"></a><span class="w">              </span><span class="nt">num_retries</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<a id="__codelineno-16-23" name="__codelineno-16-23" href="#__codelineno-16-23"></a><span class="w">              </span><span class="nt">retriable_status_codes</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">503</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-16-24" name="__codelineno-16-24" href="#__codelineno-16-24"></a><span class="w">            </span><span class="nt">rate_limits</span><span class="p">:</span>
+<a id="__codelineno-16-25" name="__codelineno-16-25" href="#__codelineno-16-25"></a><span class="w">              </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">actions</span><span class="p">:</span>
+<a id="__codelineno-16-26" name="__codelineno-16-26" href="#__codelineno-16-26"></a><span class="w">                  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">request_headers</span><span class="p">:</span>
+<a id="__codelineno-16-27" name="__codelineno-16-27" href="#__codelineno-16-27"></a><span class="w">                      </span><span class="nt">header_name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;x-user-id&quot;</span>
+<a id="__codelineno-16-28" name="__codelineno-16-28" href="#__codelineno-16-28"></a><span class="w">                      </span><span class="nt">descriptor_key</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;user_id&quot;</span>
+</code></pre></div>
+<h2 id="_5">六、自动扩缩<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="61-hpa">6.1 HPA 基础<a class="headerlink" href="#61-hpa" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># 按 CPU/GPU</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">autoscaling/v2</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HorizontalPodAutoscaler</span>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="nt">metadata</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">vllm-hpa</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">  </span><span class="nt">scaleTargetRef</span><span class="p">:</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">    </span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">apps/v1</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">    </span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deployment</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="w">  </span><span class="nt">minReplicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w">  </span><span class="nt">maxReplicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">  </span><span class="nt">metrics</span><span class="p">:</span>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Resource</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w">      </span><span class="nt">resource</span><span class="p">:</span>
+<a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="w">        </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cpu</span>
+<a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="w">        </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> type</span><span class="p">:</span><span class="w"> </span><span class="nv">Utilization</span><span class="p p-Indicator">,</span><span class="nt"> averageUtilization</span><span class="p">:</span><span class="w"> </span><span class="nv">70</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="w">  </span><span class="nt">behavior</span><span class="p">:</span>
+<a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="w">    </span><span class="nt">scaleUp</span><span class="p">:</span>
+<a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="w">      </span><span class="nt">stabilizationWindowSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
+<a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="w">      </span><span class="nt">policies</span><span class="p">:</span>
+<a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Percent</span>
+<a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a><span class="w">          </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a><span class="w">          </span><span class="nt">periodSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15</span>
+<a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a><span class="w">    </span><span class="nt">scaleDown</span><span class="p">:</span>
+<a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a><span class="w">      </span><span class="nt">stabilizationWindowSeconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">300</span><span class="w">       </span><span class="c1"># 5min 防抖</span>
+</code></pre></div>
+<h3 id="62-keda">6.2 KEDA（按业务指标）<a class="headerlink" href="#62-keda" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">keda.sh/v1alpha1</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ScaledObject</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="nt">metadata</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">vllm-scaler</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">  </span><span class="nt">scaleTargetRef</span><span class="p">:</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vllm</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="w">  </span><span class="nt">minReplicaCount</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">  </span><span class="nt">maxReplicaCount</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">  </span><span class="nt">cooldownPeriod</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">300</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">  </span><span class="nt">triggers</span><span class="p">:</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">    </span><span class="c1"># 按 QPS（Prometheus）</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">prometheus</span>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="w">      </span><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="w">        </span><span class="nt">serverAddress</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://prom:9090</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="w">        </span><span class="nt">threshold</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;100&#39;</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="w">        </span><span class="nt">query</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sum(rate(vllm:request_total[2m]))</span>
+<a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a>
+<a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="w">    </span><span class="c1"># 按 GPU pending queue（vLLM metric）</span>
+<a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">prometheus</span>
+<a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="w">      </span><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a><span class="w">        </span><span class="nt">serverAddress</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://prom:9090</span>
+<a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a><span class="w">        </span><span class="nt">threshold</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;20&#39;</span><span class="w">                     </span><span class="c1"># 排队 20 个就扩</span>
+<a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a><span class="w">        </span><span class="nt">query</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">avg(vllm:num_requests_waiting)</span>
+<a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a>
+<a id="__codelineno-18-25" name="__codelineno-18-25" href="#__codelineno-18-25"></a><span class="w">    </span><span class="c1"># 按 TPOT P99</span>
+<a id="__codelineno-18-26" name="__codelineno-18-26" href="#__codelineno-18-26"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">prometheus</span>
+<a id="__codelineno-18-27" name="__codelineno-18-27" href="#__codelineno-18-27"></a><span class="w">      </span><span class="nt">metadata</span><span class="p">:</span>
+<a id="__codelineno-18-28" name="__codelineno-18-28" href="#__codelineno-18-28"></a><span class="w">        </span><span class="nt">serverAddress</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">http://prom:9090</span>
+<a id="__codelineno-18-29" name="__codelineno-18-29" href="#__codelineno-18-29"></a><span class="w">        </span><span class="nt">threshold</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;100&#39;</span><span class="w">                    </span><span class="c1"># 100ms</span>
+<a id="__codelineno-18-30" name="__codelineno-18-30" href="#__codelineno-18-30"></a><span class="w">        </span><span class="nt">query</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">histogram_quantile(0.99, vllm:time_per_output_token_seconds_bucket) * 1000</span>
+</code></pre></div>
+<h3 id="63-gpu-spot">6.3 GPU Spot 弹性<a class="headerlink" href="#63-gpu-spot" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># 主用 Reserved + Spot 弹性峰值</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nt">nodeSelector</span><span class="p">:</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">  </span><span class="nt">node.kubernetes.io/instance-type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gpu-spot</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="nt">tolerations</span><span class="p">:</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">key</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">spot</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">    </span><span class="nt">operator</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Equal</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">    </span><span class="nt">effect</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">NoSchedule</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="c1"># 应对中断</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="nt">lifecycle</span><span class="p">:</span>
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="w">  </span><span class="nt">preStop</span><span class="p">:</span>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="w">    </span><span class="nt">exec</span><span class="p">:</span>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">      </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;/bin/sh&quot;</span><span class="p p-Indicator">,</span><span class="s">&quot;-c&quot;</span><span class="p p-Indicator">,</span><span class="s">&quot;sleep</span><span class="nv"> </span><span class="s">30&quot;</span><span class="p p-Indicator">]</span><span class="w">  </span><span class="c1"># 优雅退出 (drain)</span>
+</code></pre></div>
+<h2 id="_6">七、模型仓库与版本管理<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="71-model-registry">7.1 Model Registry<a class="headerlink" href="#71-model-registry" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>开源:
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>  - MLflow Model Registry
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>  - DVC (Data Version Control)
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>  - Hugging Face Hub (自建版本)
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>  - JFrog ML / 自研
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>商业:
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>  - Weights &amp; Biases Model
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>  - Neptune.ai
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>  - Vertex AI Model Registry
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>  - SageMaker Model Registry
+</code></pre></div>
+<h3 id="72-k8s">7.2 K8s 模型分发<a class="headerlink" href="#72-k8s" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># 方案 A: PVC 共享存储</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="nt">volumes</span><span class="p">:</span>
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">models</span>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="w">    </span><span class="nt">persistentVolumeClaim</span><span class="p">:</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a><span class="w">      </span><span class="nt">claimName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">models-pvc</span>
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a><span class="c1"># 优点：拉取一次，多副本共享</span>
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a><span class="c1"># 缺点：PVC 单点</span>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a><span class="c1"># 方案 B: Init Container 预拉</span>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a><span class="nt">initContainers</span><span class="p">:</span>
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">model-pull</span>
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">huggingface/downloader</span>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a><span class="w">    </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;hf&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;download&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;Meta-Llama-3-70B&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;/models&quot;</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a><span class="w">    </span><span class="nt">volumeMounts</span><span class="p">:</span>
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">models</span><span class="p p-Indicator">,</span><span class="nt"> mountPath</span><span class="p">:</span><span class="w"> </span><span class="nv">/models</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a><span class="c1"># 优点：节点本地</span>
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a><span class="c1"># 缺点：启动慢</span>
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a><span class="c1"># 方案 C: OCI 镜像内嵌</span>
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a><span class="c1"># 把模型打进镜像（小模型 OK，大模型不推荐）</span>
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a>
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a><span class="c1"># 方案 D: 节点 NVMe + DaemonSet 预热</span>
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a><span class="c1"># 大模型 + 多节点最佳实践</span>
+</code></pre></div>
+<h3 id="73">7.3 模型灰度发布<a class="headerlink" href="#73" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># Istio VirtualService 流量切分</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">networking.istio.io/v1beta1</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VirtualService</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="nt">metadata</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">llama</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="w">  </span><span class="nt">hosts</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">llama-api</span><span class="p p-Indicator">]</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a><span class="w">  </span><span class="nt">http</span><span class="p">:</span>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">route</span><span class="p">:</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">destination</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> host</span><span class="p">:</span><span class="w"> </span><span class="nv">llama-v1</span><span class="p p-Indicator">,</span><span class="nt"> port</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> number</span><span class="p">:</span><span class="w"> </span><span class="nv">8000</span><span class="w"> </span><span class="p p-Indicator">}</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">          </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">90</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">destination</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> host</span><span class="p">:</span><span class="w"> </span><span class="nv">llama-v2</span><span class="p p-Indicator">,</span><span class="nt"> port</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> number</span><span class="p">:</span><span class="w"> </span><span class="nv">8000</span><span class="w"> </span><span class="p p-Indicator">}</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="w">          </span><span class="nt">weight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># 或 Argo Rollouts 渐进发布</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">argoproj.io/v1alpha1</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Rollout</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="nt">metadata</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">vllm</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">  </span><span class="nt">strategy</span><span class="p">:</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">    </span><span class="nt">canary</span><span class="p">:</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="w">      </span><span class="nt">steps</span><span class="p">:</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">setWeight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pause</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> duration</span><span class="p">:</span><span class="w"> </span><span class="nv">10m</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">setWeight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">pause</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> duration</span><span class="p">:</span><span class="w"> </span><span class="nv">30m</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">setWeight</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">100</span>
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a><span class="w">      </span><span class="nt">analysis</span><span class="p">:</span>
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a><span class="w">        </span><span class="nt">templates</span><span class="p">:</span>
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">templateName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">success-rate</span>
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a><span class="w">          </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">templateName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">latency-p99</span>
+</code></pre></div>
+<h2 id="_7">八、多模型多租户<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="81">8.1 模型路由策略<a class="headerlink" href="#81" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>策略 1: 按模型名（最简单）
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>  /v1/chat → model: llama-70b → vLLM-1
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>  /v1/chat → model: qwen-72b → SGLang-1
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>策略 2: 按 API key 配额
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>  user_A → 70B
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>  user_B → 8B（成本控制）
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>策略 3: 按任务路由（RouteLLM）
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>  简单 QA → 8B 模型
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>  复杂推理 → 70B
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>  代码 → coder model
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>策略 4: 按负载动态切换
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>  主模型超时 → 备用模型 fallback
+</code></pre></div>
+<h3 id="82-llm-router-routellm">8.2 LLM Router / RouteLLM<a class="headerlink" href="#82-llm-router-routellm" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>pip<span class="w"> </span>install<span class="w"> </span>routellm
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>from<span class="w"> </span>routellm.controller<span class="w"> </span>import<span class="w"> </span>Controller
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="nv">client</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>Controller<span class="o">(</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">    </span><span class="nv">routers</span><span class="o">=[</span><span class="s2">&quot;mf&quot;</span><span class="o">]</span>,<span class="w">                       </span><span class="c1"># matrix factorization</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="w">    </span><span class="nv">strong_model</span><span class="o">=</span><span class="s2">&quot;gpt-4o&quot;</span>,
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="w">    </span><span class="nv">weak_model</span><span class="o">=</span><span class="s2">&quot;ollama_chat/llama3&quot;</span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="o">)</span>
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="nv">response</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>client.chat.completions.create<span class="o">(</span>
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="w">    </span><span class="nv">model</span><span class="o">=</span><span class="s2">&quot;router-mf-0.11593&quot;</span>,<span class="w">            </span><span class="c1"># threshold 0.11593</span>
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a><span class="w">    </span><span class="nv">messages</span><span class="o">=[</span>...<span class="o">]</span>
+<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a><span class="o">)</span>
+<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a><span class="c1"># 自动按 query 难度路由</span>
+<a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="c1"># 简单 → weak / 难 → strong</span>
+<a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a><span class="c1"># 70% 请求路由到 weak，成本降 80%</span>
+</code></pre></div>
+<h3 id="83">8.3 多租户隔离<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>方案 A: 物理隔离
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>  每租户独立 GPU 池 / Deployment
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>  成本高但最隔离
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>方案 B: 资源配额
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>  K8s ResourceQuota + LimitRange
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>  按租户分配 GPU 配额
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>方案 C: API Key 限流
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>  LiteLLM rate-limit per key
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>  QPS / TPM 配额
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>方案 D: MIG 切片
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a>  H100 切成 7 个 MIG → 7 租户
+<a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a>  硬件级隔离 + 共享主机
+</code></pre></div>
+<h2 id="_8">九、推理网关全栈<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="91-2025">9.1 推荐架构（2025）<a class="headerlink" href="#91-2025" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>                ┌──────────────────────┐
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>Internet ──→  WAF/CDN (Cloudflare/雷池)
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>                ↓
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>                ┌──────────────────────┐
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>                Ingress (Nginx/Envoy)
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>                ↓
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>                ┌──────────────────────┐
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>                Auth Gateway (Keycloak)
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>                ↓
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>                ┌──────────────────────┐
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>                LiteLLM Proxy (路由+限流+计费)
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>                ↓
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>                ┌──────────────────────┐
+<a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a>                Inference Pool
+<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a>                ├── vLLM × N (主推理)
+<a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a>                ├── SGLang × M (备用 / agent)
+<a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a>                ├── Embedding × K (BGE)
+<a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a>                └── Reranker × L
+<a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a>                ↓
+<a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a>                ┌──────────────────────┐
+<a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a>                Shared KV Cache
+<a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a>                (LMCache / Mooncake)
+<a id="__codelineno-27-23" name="__codelineno-27-23" href="#__codelineno-27-23"></a>                ↓
+<a id="__codelineno-27-24" name="__codelineno-27-24" href="#__codelineno-27-24"></a>                ┌──────────────────────┐
+<a id="__codelineno-27-25" name="__codelineno-27-25" href="#__codelineno-27-25"></a>                Model Registry
+<a id="__codelineno-27-26" name="__codelineno-27-26" href="#__codelineno-27-26"></a>                (HF / MLflow / OCI)
+</code></pre></div>
+<h3 id="92">9.2 完整组件清单<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>入口层:
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>  WAF:              Cloudflare / 雷池
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>  CDN:              Cloudflare / 阿里云
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a>  DDoS:             高防 IP
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>网关层:
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>  Ingress:         Nginx Ingress / Envoy
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>  Auth:            Keycloak / Authelia
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>  Rate Limit:      Envoy / Kong / APISIX
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a>路由层:
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>  LLM Router:     LiteLLM Proxy / OpenRouter
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>  Cost Routing:    RouteLLM
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a>
+<a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a>推理层:
+<a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a>  Engine:          vLLM / SGLang / TGI / TRT-LLM
+<a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a>  Embedding:       BGE / E5 / TEI (HF Text Embeddings Inference)
+<a id="__codelineno-28-18" name="__codelineno-28-18" href="#__codelineno-28-18"></a>  Reranker:        BGE Reranker / Cohere
+<a id="__codelineno-28-19" name="__codelineno-28-19" href="#__codelineno-28-19"></a>
+<a id="__codelineno-28-20" name="__codelineno-28-20" href="#__codelineno-28-20"></a>存储层:
+<a id="__codelineno-28-21" name="__codelineno-28-21" href="#__codelineno-28-21"></a>  KV Cache:       LMCache / Mooncake
+<a id="__codelineno-28-22" name="__codelineno-28-22" href="#__codelineno-28-22"></a>  Model:          PVC / OCI / S3 / Harbor
+<a id="__codelineno-28-23" name="__codelineno-28-23" href="#__codelineno-28-23"></a>
+<a id="__codelineno-28-24" name="__codelineno-28-24" href="#__codelineno-28-24"></a>可观测:
+<a id="__codelineno-28-25" name="__codelineno-28-25" href="#__codelineno-28-25"></a>  Metric:         Prometheus + vLLM/SGLang exporter
+<a id="__codelineno-28-26" name="__codelineno-28-26" href="#__codelineno-28-26"></a>  Trace:          OpenTelemetry / Langfuse / Helicone
+<a id="__codelineno-28-27" name="__codelineno-28-27" href="#__codelineno-28-27"></a>  Log:            Loki / ELK
+<a id="__codelineno-28-28" name="__codelineno-28-28" href="#__codelineno-28-28"></a>  Dashboard:      Grafana
+<a id="__codelineno-28-29" name="__codelineno-28-29" href="#__codelineno-28-29"></a>
+<a id="__codelineno-28-30" name="__codelineno-28-30" href="#__codelineno-28-30"></a>平台:
+<a id="__codelineno-28-31" name="__codelineno-28-31" href="#__codelineno-28-31"></a>  K8s + GPU Operator + KEDA + Argo Rollouts
+</code></pre></div>
+<h2 id="_9">十、典型坑<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">阶段</th>
-<th style="text-align: left;">资源需求</th>
-<th style="text-align: left;">特点</th>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Prefill</td>
-<td style="text-align: left;">计算密集（GPU Compute）</td>
-<td style="text-align: left;">并行处理输入 Token</td>
+<td style="text-align: left;"><strong>单机性能 OK，多副本不线性</strong></td>
+<td style="text-align: left;">检查 cache 命中 / 路由策略</td>
 </tr>
 <tr>
-<td style="text-align: left;">Decode</td>
-<td style="text-align: left;">显存密集（Memory Bandwidth）</td>
-<td style="text-align: left;">逐个生成输出 Token</td>
+<td style="text-align: left;"><strong>流式 SSE 卡顿</strong></td>
+<td style="text-align: left;">Nginx <code>proxy_buffering off</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HPA 扩缩抖动</strong></td>
+<td style="text-align: left;"><code>stabilizationWindowSeconds</code> 调大</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>冷启动慢</strong></td>
+<td style="text-align: left;">Init Container + 预热 + min replicas ≥ 2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GPU 利用率低</strong></td>
+<td style="text-align: left;">看 SM Util / KV Cache 利用率</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PD 分离 KV 传输瓶颈</strong></td>
+<td style="text-align: left;">RDMA / NVLink Networking</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>多副本 cache 不共享</strong></td>
+<td style="text-align: left;">LMCache / Mooncake</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TPOT 抖动</strong></td>
+<td style="text-align: left;">长 prompt 阻塞，开 chunked prefill</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>路由没有 cache awareness</strong></td>
+<td style="text-align: left;">LiteLLM least-busy 不够，需 Prefix Hash</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>模型下载慢</strong></td>
+<td style="text-align: left;">镜像源 / 预拉 / 镜像内嵌</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>K8s 单 Pod 拉模型</strong></td>
+<td style="text-align: left;">DaemonSet 节点预热</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>客户端长连接超时</strong></td>
+<td style="text-align: left;">Nginx/Envoy timeout &gt; vLLM 流式上限</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>多模型抢 GPU</strong></td>
+<td style="text-align: left;">MIG / 显存配额</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>A/B 没指标决策</strong></td>
+<td style="text-align: left;">Langfuse + 离线评测</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>没有 fallback</strong></td>
+<td style="text-align: left;">LiteLLM fallbacks 配置</td>
 </tr>
 </tbody>
 </table>
-<h2 id="kv-cache">KV Cache 管理<a class="headerlink" href="#kv-cache" title="Permanent link">&para;</a></h2>
-<p>KV Cache 是推理过程中缓存 Key-Value 对的技术，减少重复计算。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># vLLM 配置</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>--max-model-len<span class="w"> </span><span class="m">8192</span><span class="w">          </span><span class="c1"># 最大上下文长度</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>--gpu-memory-utilization<span class="w"> </span><span class="m">0</span>.9<span class="w">  </span><span class="c1"># 显存利用率</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>--block-size<span class="w"> </span><span class="m">16</span><span class="w">               </span><span class="c1"># KV Block 大小</span>
+<h2 id="checklist">十一、最佳实践 Checklist<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>入口:
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>☐ WAF + Rate Limit
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>☐ TLS 1.3 + HTTP/2
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>☐ SSE 流式配置正确
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>路由:
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>☐ LiteLLM Proxy 统一入口
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>☐ Prefix-aware routing
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>☐ Cost-aware routing (大小模型)
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>☐ Health Check / Fallback
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a>
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>推理:
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a>☐ vLLM / SGLang 主部署
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a>☐ PD 分离（大规模）
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a>☐ Multi-LoRA
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a>☐ FP8 / INT4 量化
+<a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a>
+<a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a>缓存:
+<a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a>☐ Prefix Caching 开
+<a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a>☐ KV Cache FP8
+<a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a>☐ LMCache / Mooncake 跨副本共享
+<a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a>
+<a id="__codelineno-29-23" name="__codelineno-29-23" href="#__codelineno-29-23"></a>扩缩:
+<a id="__codelineno-29-24" name="__codelineno-29-24" href="#__codelineno-29-24"></a>☐ HPA + KEDA
+<a id="__codelineno-29-25" name="__codelineno-29-25" href="#__codelineno-29-25"></a>☐ min replicas ≥ 2
+<a id="__codelineno-29-26" name="__codelineno-29-26" href="#__codelineno-29-26"></a>☐ 冷启动 &lt; 60s
+<a id="__codelineno-29-27" name="__codelineno-29-27" href="#__codelineno-29-27"></a>☐ Spot 弹性
+<a id="__codelineno-29-28" name="__codelineno-29-28" href="#__codelineno-29-28"></a>
+<a id="__codelineno-29-29" name="__codelineno-29-29" href="#__codelineno-29-29"></a>监控:
+<a id="__codelineno-29-30" name="__codelineno-29-30" href="#__codelineno-29-30"></a>☐ TTFT / TPOT / Throughput
+<a id="__codelineno-29-31" name="__codelineno-29-31" href="#__codelineno-29-31"></a>☐ KV Cache 利用率
+<a id="__codelineno-29-32" name="__codelineno-29-32" href="#__codelineno-29-32"></a>☐ Queue Length
+<a id="__codelineno-29-33" name="__codelineno-29-33" href="#__codelineno-29-33"></a>☐ 模型 quality (Langfuse)
+<a id="__codelineno-29-34" name="__codelineno-29-34" href="#__codelineno-29-34"></a>☐ Cost per 1K tokens
+<a id="__codelineno-29-35" name="__codelineno-29-35" href="#__codelineno-29-35"></a>
+<a id="__codelineno-29-36" name="__codelineno-29-36" href="#__codelineno-29-36"></a>发布:
+<a id="__codelineno-29-37" name="__codelineno-29-37" href="#__codelineno-29-37"></a>☐ 灰度 / Canary
+<a id="__codelineno-29-38" name="__codelineno-29-38" href="#__codelineno-29-38"></a>☐ 自动回滚
+<a id="__codelineno-29-39" name="__codelineno-29-39" href="#__codelineno-29-39"></a>☐ A/B 评测
+<a id="__codelineno-29-40" name="__codelineno-29-40" href="#__codelineno-29-40"></a>☐ 模型版本管理
 </code></pre></div>
+<h2 id="2025">十二、推荐栈（2025）<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h2>
+<h3 id="121">12.1 中小团队<a class="headerlink" href="#121" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>- vLLM 主推理 (Docker / K8s)
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>- Nginx 负载均衡
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>- HPA CPU 触发
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>- Prometheus + Grafana
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>- Harbor 模型 / 镜像
+</code></pre></div>
+<h3 id="122">12.2 中大企业<a class="headerlink" href="#122" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>- vLLM + SGLang 双栈
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>- LiteLLM Proxy 统一入口
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>- K8s + GPU Operator + KEDA
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>- LMCache 跨副本 KV 共享
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>- Argo Rollouts 灰度
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>- Langfuse 业务级监控
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>- MIG 多租户切片
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>- 模型仓库 (HF + 内部 OCI)
+</code></pre></div>
+<h3 id="123">12.3 大规模 / 大模型<a class="headerlink" href="#123" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>- vLLM Disaggregated PD + Mooncake
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>- 跨 region 多活
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>- llm-d / NVIDIA Dynamo
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>- 自研路由层（业务 / cost / cache）
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>- 自动模型版本 + A/B
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a>- HSM / 国密 / 合规审计
+<a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a>- 弹性 Spot + Reserved 混合
+</code></pre></div>
+<h2 id="_10">十三、学习路径<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>入门（1 月）:
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>  1. 单机 vLLM 部署
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>  2. K8s Deployment + Service
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>  3. Prometheus 接入
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>  4. HPA 配置
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a>中级（3 月）:
+<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a>  5. KEDA 业务指标扩缩
+<a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a>  6. LiteLLM Proxy 路由
+<a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a>  7. 多模型部署
+<a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a>  8. 灰度发布
+<a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a>  9. Multi-LoRA
+<a id="__codelineno-33-13" name="__codelineno-33-13" href="#__codelineno-33-13"></a>
+<a id="__codelineno-33-14" name="__codelineno-33-14" href="#__codelineno-33-14"></a>高级（6 月+）:
+<a id="__codelineno-33-15" name="__codelineno-33-15" href="#__codelineno-33-15"></a>  10. PD 分离 (vLLM / SGLang)
+<a id="__codelineno-33-16" name="__codelineno-33-16" href="#__codelineno-33-16"></a>  11. LMCache / Mooncake 部署
+<a id="__codelineno-33-17" name="__codelineno-33-17" href="#__codelineno-33-17"></a>  12. 跨集群多活
+<a id="__codelineno-33-18" name="__codelineno-33-18" href="#__codelineno-33-18"></a>  13. 自研路由 + cache 策略
+<a id="__codelineno-33-19" name="__codelineno-33-19" href="#__codelineno-33-19"></a>  14. SLA 极致优化 (TTFT P99 &lt; 200ms)
+<a id="__codelineno-33-20" name="__codelineno-33-20" href="#__codelineno-33-20"></a>
+<a id="__codelineno-33-21" name="__codelineno-33-21" href="#__codelineno-33-21"></a>专家:
+<a id="__codelineno-33-22" name="__codelineno-33-22" href="#__codelineno-33-22"></a>  15. 自研推理网关
+<a id="__codelineno-33-23" name="__codelineno-33-23" href="#__codelineno-33-23"></a>  16. 万卡推理集群运维
+<a id="__codelineno-33-24" name="__codelineno-33-24" href="#__codelineno-33-24"></a>  17. 推理调度系统设计
+</code></pre></div>
+<h2 id="_11">十四、参考资料<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>官方:
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>  - vLLM Production Stack: https://github.com/vllm-project/production-stack
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>  - llm-d: https://github.com/llm-d/llm-d
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>  - LiteLLM: https://docs.litellm.ai/
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>  - KServe: https://kserve.github.io/
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>  - NVIDIA Dynamo: https://github.com/triton-inference-server/dynamo
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a>  - Mooncake: https://github.com/kvcache-ai/Mooncake
+<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>  - LMCache: https://github.com/LMCache/LMCache
+<a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>
+<a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a>论文:
+<a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a>  - Mooncake (FAST &#39;25)
+<a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a>  - DistServe (OSDI &#39;24)
+<a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a>  - Splitwise (ISCA &#39;24)
+<a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a>  - RouteLLM
+<a id="__codelineno-34-15" name="__codelineno-34-15" href="#__codelineno-34-15"></a>  - SkyServe (UCB)
+<a id="__codelineno-34-16" name="__codelineno-34-16" href="#__codelineno-34-16"></a>
+<a id="__codelineno-34-17" name="__codelineno-34-17" href="#__codelineno-34-17"></a>社区:
+<a id="__codelineno-34-18" name="__codelineno-34-18" href="#__codelineno-34-18"></a>  - vLLM/SGLang Slack
+<a id="__codelineno-34-19" name="__codelineno-34-19" href="#__codelineno-34-19"></a>  - LMSys
+<a id="__codelineno-34-20" name="__codelineno-34-20" href="#__codelineno-34-20"></a>  - Anyscale Ray Serve
+<a id="__codelineno-34-21" name="__codelineno-34-21" href="#__codelineno-34-21"></a>  - 国内: AI Infra 中文社区
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：2025 推理生产架构 = <strong>LiteLLM Proxy（路由）+ vLLM/SGLang（推理）+ LMCache/Mooncake（缓存）+ KEDA（扩缩）+ Langfuse（监控）</strong>。<strong>PD 分离 + Prefix Cache 跨副本共享</strong> 是新一代核心，能把成本降 30-50%。最容易翻车的不是性能，而是：<strong>冷启动慢、流式 SSE 配错、HPA 扩缩抖、多副本不共享 cache</strong>——把这四个工程问题解决，比框架内核优化收益大十倍。</p>
+</blockquote>
 
 
 

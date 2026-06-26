@@ -1134,10 +1134,604 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gpu_1" class="md-nav__link">
+  <a href="#gpu-2025" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GPU 架构演进
+        一、GPU 选型矩阵（2025 主流）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、GPU 选型矩阵（2025 主流）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-nvidia-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 NVIDIA 数据中心 GPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-nvidia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 NVIDIA 消费级（推理可用）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 国产 GPU 矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-amd-intel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 AMD / Intel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、显存带宽 vs 算力（核心矛盾）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、显存带宽 vs 算力（核心矛盾）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 推理是显存带宽密集型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-prefill-vs-decode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Prefill vs Decode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-mfumbu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 算力利用率 (MFU/MBU)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、显存计算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、显存计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 模型权重
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-kv-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 KV Cache 计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 显存预算公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、互联拓扑
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、互联拓扑">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-intra-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 节点内（Intra-Node）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-inter-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 节点间（Inter-Node）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 拓扑亲和（关键）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、CUDA 软件栈
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、CUDA 软件栈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 版本关系（必记）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 容器化（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 关键库
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、监控与诊断
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、监控与诊断">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-nvidia-smi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 nvidia-smi 基础
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-dcgm-data-center-gpu-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 DCGM (Data Center GPU Manager) ⭐
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 关键 GPU 指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-nsys-nsight-computeprofile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 nsys / nsight-compute（Profile）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、故障与排查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、故障与排查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 常见错误
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-xid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 XID 错误码（重要）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 GPU 掉卡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 GPU 压测
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpu-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、GPU 调度（K8s）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、GPU 调度（K8s）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-nvidia-gpu-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 NVIDIA GPU Operator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 GPU 共享方案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-mig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 MIG 配置实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-volcano-yunikorn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Volcano / Yunikorn 调度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、量化精度与推理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、量化精度与推理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 精度对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 量化方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 实战量化命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、电力 &amp; 散热
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、电力 &amp; 散热">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 功耗
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 散热
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 功耗调优
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、典型集群规格（参考）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、典型集群规格（参考）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 训练集群
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 推理集群
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 国产对标
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、典型坑
       
     </span>
   </a>
@@ -1145,10 +1739,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gpu-vs" class="md-nav__link">
+  <a href="#2025" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GPU 选型：推理 vs 训练
+        十三、推荐栈（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十三、推荐栈（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 训练（仅参考）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 推理（你的主战场）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 国产/信创
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、学习路径
       
     </span>
   </a>
@@ -1156,10 +1800,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gpu-cuda" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GPU 驱动与 CUDA
+        十五、参考资料
       
     </span>
   </a>
@@ -1729,10 +2373,604 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#gpu_1" class="md-nav__link">
+  <a href="#gpu-2025" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GPU 架构演进
+        一、GPU 选型矩阵（2025 主流）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、GPU 选型矩阵（2025 主流）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-nvidia-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 NVIDIA 数据中心 GPU
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-nvidia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 NVIDIA 消费级（推理可用）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 国产 GPU 矩阵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-amd-intel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 AMD / Intel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、显存带宽 vs 算力（核心矛盾）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、显存带宽 vs 算力（核心矛盾）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 推理是显存带宽密集型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-prefill-vs-decode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Prefill vs Decode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-mfumbu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 算力利用率 (MFU/MBU)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、显存计算
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、显存计算">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 模型权重
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-kv-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 KV Cache 计算
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 显存预算公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、互联拓扑
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、互联拓扑">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-intra-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 节点内（Intra-Node）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-inter-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 节点间（Inter-Node）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 拓扑亲和（关键）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuda" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、CUDA 软件栈
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、CUDA 软件栈">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 版本关系（必记）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 容器化（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 关键库
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、监控与诊断
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、监控与诊断">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-nvidia-smi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 nvidia-smi 基础
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-dcgm-data-center-gpu-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 DCGM (Data Center GPU Manager) ⭐
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 关键 GPU 指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64-nsys-nsight-computeprofile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 nsys / nsight-compute（Profile）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、故障与排查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、故障与排查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 常见错误
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-xid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 XID 错误码（重要）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 GPU 掉卡
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 GPU 压测
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpu-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、GPU 调度（K8s）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、GPU 调度（K8s）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-nvidia-gpu-operator" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 NVIDIA GPU Operator
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 GPU 共享方案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-mig" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 MIG 配置实例
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-volcano-yunikorn" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Volcano / Yunikorn 调度
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、量化精度与推理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、量化精度与推理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 精度对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 量化方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 实战量化命令
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、电力 &amp; 散热
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、电力 &amp; 散热">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 功耗
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 散热
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 功耗调优
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、典型集群规格（参考）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、典型集群规格（参考）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 训练集群
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 推理集群
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 国产对标
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、典型坑
       
     </span>
   </a>
@@ -1740,10 +2978,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gpu-vs" class="md-nav__link">
+  <a href="#2025" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GPU 选型：推理 vs 训练
+        十三、推荐栈（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十三、推荐栈（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#131" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.1 训练（仅参考）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#132" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.2 推理（你的主战场）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#133" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13.3 国产/信创
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、学习路径
       
     </span>
   </a>
@@ -1751,10 +3039,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gpu-cuda" class="md-nav__link">
+  <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
       
-        GPU 驱动与 CUDA
+        十五、参考资料
       
     </span>
   </a>
@@ -1830,82 +3118,1143 @@
 
 
 <h1 id="gpu">GPU 与硬件<a class="headerlink" href="#gpu" title="Permanent link">&para;</a></h1>
-<h2 id="gpu_1">GPU 架构演进<a class="headerlink" href="#gpu_1" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>LLM 推理是硬件密集型工作，<strong>显存带宽、显存容量、互联拓扑、量化精度</strong>四要素决定服务上限。<strong>理解硬件是性能调优的起点</strong>——不懂 HBM 带宽，永远调不好 vLLM；不懂 NVLink，做不好张量并行。</p>
+</blockquote>
+<h2 id="gpu-2025">一、GPU 选型矩阵（2025 主流）<a class="headerlink" href="#gpu-2025" title="Permanent link">&para;</a></h2>
+<h3 id="11-nvidia-gpu">1.1 NVIDIA 数据中心 GPU<a class="headerlink" href="#11-nvidia-gpu" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
+<th style="text-align: left;">型号</th>
 <th style="text-align: left;">架构</th>
-<th style="text-align: center;">发布时间</th>
-<th style="text-align: left;">代表卡</th>
-<th style="text-align: left;">关键特性</th>
+<th style="text-align: center;">显存</th>
+<th style="text-align: center;">带宽</th>
+<th style="text-align: center;">FP16/BF16</th>
+<th style="text-align: center;">FP8</th>
+<th style="text-align: center;">INT8</th>
+<th style="text-align: left;">NVLink</th>
+<th style="text-align: left;">适用</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Ampere</td>
-<td style="text-align: center;">2020</td>
-<td style="text-align: left;">A100</td>
-<td style="text-align: left;">MIG、TF32、80GB HBM2e</td>
-</tr>
-<tr>
+<td style="text-align: left;"><strong>H200</strong> ⭐⭐⭐⭐⭐</td>
 <td style="text-align: left;">Hopper</td>
-<td style="text-align: center;">2022</td>
-<td style="text-align: left;">H100</td>
-<td style="text-align: left;">Transformer Engine、FP8、NVLink 4.0</td>
+<td style="text-align: center;">141GB HBM3e</td>
+<td style="text-align: center;">4.8 TB/s</td>
+<td style="text-align: center;">989 TFLOPS</td>
+<td style="text-align: center;">1979</td>
+<td style="text-align: center;">3958</td>
+<td style="text-align: left;">NVLink4 900GB/s</td>
+<td style="text-align: left;">大模型推理首选</td>
 </tr>
 <tr>
-<td style="text-align: left;">Blackwell</td>
-<td style="text-align: center;">2024</td>
-<td style="text-align: left;">B200</td>
-<td style="text-align: left;">第二代 Transformer Engine、FP4</td>
+<td style="text-align: left;"><strong>H100 SXM</strong></td>
+<td style="text-align: left;">Hopper</td>
+<td style="text-align: center;">80GB HBM3</td>
+<td style="text-align: center;">3.35 TB/s</td>
+<td style="text-align: center;">989</td>
+<td style="text-align: center;">1979</td>
+<td style="text-align: center;">3958</td>
+<td style="text-align: left;">900GB/s</td>
+<td style="text-align: left;">70B-405B 训练/推理</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>H100 PCIe</strong></td>
+<td style="text-align: left;">Hopper</td>
+<td style="text-align: center;">80GB HBM3</td>
+<td style="text-align: center;">2.0 TB/s</td>
+<td style="text-align: center;">756</td>
+<td style="text-align: center;">1513</td>
+<td style="text-align: center;">3026</td>
+<td style="text-align: left;">NVLink 600GB/s</td>
+<td style="text-align: left;">替代 SXM 性价比</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>L40S</strong> ⭐⭐⭐⭐</td>
+<td style="text-align: left;">Ada</td>
+<td style="text-align: center;">48GB GDDR6</td>
+<td style="text-align: center;">864 GB/s</td>
+<td style="text-align: center;">362</td>
+<td style="text-align: center;">733</td>
+<td style="text-align: center;">1466</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">中小模型 / 微调</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>L40</strong></td>
+<td style="text-align: left;">Ada</td>
+<td style="text-align: center;">48GB GDDR6</td>
+<td style="text-align: center;">864 GB/s</td>
+<td style="text-align: center;">181</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">724</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">推理</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>A100 80G SXM</strong></td>
+<td style="text-align: left;">Ampere</td>
+<td style="text-align: center;">80GB HBM2e</td>
+<td style="text-align: center;">2.0 TB/s</td>
+<td style="text-align: center;">312</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">624</td>
+<td style="text-align: left;">600GB/s</td>
+<td style="text-align: left;">老牌主力</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>A100 40G</strong></td>
+<td style="text-align: left;">Ampere</td>
+<td style="text-align: center;">40GB HBM2</td>
+<td style="text-align: center;">1.55 TB/s</td>
+<td style="text-align: center;">312</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">624</td>
+<td style="text-align: left;">600GB/s</td>
+<td style="text-align: left;">7B-30B 推理</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>A10/A10G</strong></td>
+<td style="text-align: left;">Ampere</td>
+<td style="text-align: center;">24GB GDDR6</td>
+<td style="text-align: center;">600 GB/s</td>
+<td style="text-align: center;">125</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">250</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">小模型</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>L4</strong></td>
+<td style="text-align: left;">Ada</td>
+<td style="text-align: center;">24GB GDDR6</td>
+<td style="text-align: center;">300 GB/s</td>
+<td style="text-align: center;">121</td>
+<td style="text-align: center;">242</td>
+<td style="text-align: center;">485</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">边缘 / 中小批</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T4</strong> ⭐⭐⭐</td>
+<td style="text-align: left;">Turing</td>
+<td style="text-align: center;">16GB GDDR6</td>
+<td style="text-align: center;">320 GB/s</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">-</td>
+<td style="text-align: center;">130</td>
+<td style="text-align: left;">无</td>
+<td style="text-align: left;">老旧但便宜</td>
 </tr>
 </tbody>
 </table>
-<h2 id="gpu-vs">GPU 选型：推理 vs 训练<a class="headerlink" href="#gpu-vs" title="Permanent link">&para;</a></h2>
+<h3 id="12-nvidia">1.2 NVIDIA 消费级（推理可用）<a class="headerlink" href="#12-nvidia" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">场景</th>
-<th style="text-align: left;">推荐卡</th>
-<th style="text-align: left;">原因</th>
+<th style="text-align: left;">型号</th>
+<th style="text-align: center;">显存</th>
+<th style="text-align: center;">带宽</th>
+<th style="text-align: center;">FP16</th>
+<th style="text-align: center;">价格梯度</th>
+<th style="text-align: left;">备注</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">在线推理（低延迟）</td>
-<td style="text-align: left;">L40S / A100-80G</td>
-<td style="text-align: left;">大显存、高吞吐</td>
+<td style="text-align: left;"><strong>RTX 5090</strong></td>
+<td style="text-align: center;">32GB GDDR7</td>
+<td style="text-align: center;">1.79 TB/s</td>
+<td style="text-align: center;">419</td>
+<td style="text-align: center;">$$$$</td>
+<td style="text-align: left;">2025 旗舰</td>
 </tr>
 <tr>
-<td style="text-align: left;">离线批量推理</td>
-<td style="text-align: left;">A100 / H100</td>
-<td style="text-align: left;">高吞吐量</td>
+<td style="text-align: left;"><strong>RTX 4090</strong></td>
+<td style="text-align: center;">24GB GDDR6X</td>
+<td style="text-align: center;">1.0 TB/s</td>
+<td style="text-align: center;">165</td>
+<td style="text-align: center;">$$$</td>
+<td style="text-align: left;">主流 LLM 部署</td>
 </tr>
 <tr>
-<td style="text-align: left;">大模型训练</td>
-<td style="text-align: left;">H100 / B200</td>
-<td style="text-align: left;">NVLink、高带宽</td>
+<td style="text-align: left;"><strong>RTX 3090</strong></td>
+<td style="text-align: center;">24GB GDDR6X</td>
+<td style="text-align: center;">936 GB/s</td>
+<td style="text-align: center;">142</td>
+<td style="text-align: center;">$$</td>
+<td style="text-align: left;">二手主力</td>
 </tr>
 <tr>
-<td style="text-align: left;">边缘推理</td>
-<td style="text-align: left;">T4 / L4</td>
-<td style="text-align: left;">功耗低、体积小</td>
+<td style="text-align: left;"><strong>RTX A6000</strong></td>
+<td style="text-align: center;">48GB GDDR6</td>
+<td style="text-align: center;">768 GB/s</td>
+<td style="text-align: center;">155</td>
+<td style="text-align: center;">$$$$</td>
+<td style="text-align: left;">工作站 48G</td>
 </tr>
 </tbody>
 </table>
-<h2 id="gpu-cuda">GPU 驱动与 CUDA<a class="headerlink" href="#gpu-cuda" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 查看 GPU 信息</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>nvidia-smi
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>nvidia-smi<span class="w"> </span>topo<span class="w"> </span>-m<span class="w">       </span><span class="c1"># GPU 拓扑</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>nvidia-smi<span class="w"> </span>-q<span class="w"> </span>-d<span class="w"> </span>MEMORY<span class="w">  </span><span class="c1"># 显存信息</span>
+<h3 id="13-gpu">1.3 国产 GPU 矩阵<a class="headerlink" href="#13-gpu" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">型号</th>
+<th style="text-align: left;">厂商</th>
+<th style="text-align: center;">显存</th>
+<th style="text-align: center;">带宽</th>
+<th style="text-align: center;">FP16</th>
+<th style="text-align: left;">生态</th>
+<th style="text-align: left;">状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>昇腾 910B/910C</strong> ⭐</td>
+<td style="text-align: left;">华为</td>
+<td style="text-align: center;">64GB HBM2e</td>
+<td style="text-align: center;">1.6 TB/s</td>
+<td style="text-align: center;">320</td>
+<td style="text-align: left;">CANN/MindSpore/PyTorch+插件</td>
+<td style="text-align: left;">主流</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>昇腾 910</strong></td>
+<td style="text-align: left;">华为</td>
+<td style="text-align: center;">32GB</td>
+<td style="text-align: center;">1.2 TB/s</td>
+<td style="text-align: center;">256</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">老款</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>思元 MLU370-X8</strong></td>
+<td style="text-align: left;">寒武纪</td>
+<td style="text-align: center;">24GB</td>
+<td style="text-align: center;">614 GB/s</td>
+<td style="text-align: center;">96</td>
+<td style="text-align: left;">Cambricon Neuware</td>
+<td style="text-align: left;">国密合规</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>思元 590</strong></td>
+<td style="text-align: left;">寒武纪</td>
+<td style="text-align: center;">80GB</td>
+<td style="text-align: center;">2.0 TB/s</td>
+<td style="text-align: center;">256</td>
+<td style="text-align: left;">-</td>
+<td style="text-align: left;">2024+</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>天数智芯 BI-V100/V150</strong></td>
+<td style="text-align: left;">天数智芯</td>
+<td style="text-align: center;">32GB</td>
+<td style="text-align: center;">1.2 TB/s</td>
+<td style="text-align: center;">147</td>
+<td style="text-align: left;">CUDA 兼容</td>
+<td style="text-align: left;">算力中心</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>沐曦 C500</strong></td>
+<td style="text-align: left;">沐曦</td>
+<td style="text-align: center;">64GB</td>
+<td style="text-align: center;">1.55 TB/s</td>
+<td style="text-align: center;">280</td>
+<td style="text-align: left;">CUDA 兼容</td>
+<td style="text-align: left;">2024</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>燧原 邃思 2.5</strong></td>
+<td style="text-align: left;">燧原</td>
+<td style="text-align: center;">32GB</td>
+<td style="text-align: center;">1.6 TB/s</td>
+<td style="text-align: center;">256</td>
+<td style="text-align: left;">TopsRider</td>
+<td style="text-align: left;">算力中心</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>海光 DCU K100/Z100</strong></td>
+<td style="text-align: left;">海光</td>
+<td style="text-align: center;">64GB</td>
+<td style="text-align: center;">1.6 TB/s</td>
+<td style="text-align: center;">350</td>
+<td style="text-align: left;">DTK (ROCm fork)</td>
+<td style="text-align: left;">信创</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>摩尔线程 MTT S4000</strong></td>
+<td style="text-align: left;">摩尔线程</td>
+<td style="text-align: center;">48GB</td>
+<td style="text-align: center;">768 GB/s</td>
+<td style="text-align: center;">100</td>
+<td style="text-align: left;">MUSA</td>
+<td style="text-align: left;">2024</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>壁仞 BR104</strong></td>
+<td style="text-align: left;">壁仞</td>
+<td style="text-align: center;">32GB</td>
+<td style="text-align: center;">819 GB/s</td>
+<td style="text-align: center;">256</td>
+<td style="text-align: left;">BIRENSUPA</td>
+<td style="text-align: left;">训练</td>
+</tr>
+</tbody>
+</table>
+<h3 id="14-amd-intel">1.4 AMD / Intel<a class="headerlink" href="#14-amd-intel" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>AMD MI300X    192GB HBM3, 5.3 TB/s, 1300 TFLOPS FP16 (强力 H100 替代)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>AMD MI300A    APU + GPU 集成
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>AMD MI250X    128GB HBM2e
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>AMD MI210     64GB
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># CUDA 版本管理</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>nvcc<span class="w"> </span>--version
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>ls<span class="w"> </span>/usr/local/cuda/
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># NCCL 检查</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>nccl-tests
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>Intel Gaudi 3  128GB HBM2e, 3.7 TB/s, 1835 TFLOPS BF16
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Intel Gaudi 2  96GB HBM2e, 2.45 TB/s
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>Intel Max 1550 (PVC) 128GB HBM2e
 </code></pre></div>
+<h2 id="vs">二、显存带宽 vs 算力（核心矛盾）<a class="headerlink" href="#vs" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 推理是<strong>显存带宽密集型</strong><a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>LLM Decode 阶段:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  - 每生成 1 token 要把全部模型权重过一遍
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  - 70B FP16 = 140 GB → H100 PCIe 2 TB/s → 单 token 70ms (理论)
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  - 实际: ~50 token/s (单 batch)
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>→ 算力够，但带宽不够
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>→ Roofline 模型: 大多数 op 卡在 memory-bound 区
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>→ 这就是为什么 H200 (4.8TB/s) 比 H100 推理快 2x，算力却几乎一样
+</code></pre></div>
+<h3 id="22-prefill-vs-decode">2.2 Prefill vs Decode<a class="headerlink" href="#22-prefill-vs-decode" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Prefill (Prompt 处理):
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  - 计算密集 (compute-bound)
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  - 算力越高越好
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  - 大 batch / 长序列友好
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>Decode (生成):
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  - 显存带宽密集 (memory-bound)
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  - 带宽越高越好
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>  - 小 batch 难以利用算力
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>→ 这就是为什么搞 PD 分离 (Prefill/Decode Disaggregation)
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>→ Prefill 节点用 H100/L40S，Decode 节点用 H200/MI300X
+</code></pre></div>
+<h3 id="23-mfumbu">2.3 算力利用率 (MFU/MBU)<a class="headerlink" href="#23-mfumbu" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>MFU (Model FLOPs Utilization)
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  实际 FLOPs / 理论峰值 FLOPs
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  训练: 30-50% 算优秀
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  推理: 通常 &lt; 10%（memory-bound 决定）
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>MBU (Model Bandwidth Utilization) ⭐ 推理关键指标
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  实际带宽用量 / 理论峰值带宽
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>  良好: &gt; 60%
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>  优秀: &gt; 80%
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>公式:
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>  Decode 单 token 理论耗时 = 模型大小 / GPU 带宽
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>  Llama-70B FP16 / H100 = 140GB / 3.35TB/s = 42 ms
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>  实测 70 ms → MBU = 60%
+</code></pre></div>
+<h2 id="_1">三、显存计算<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 模型权重<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">精度</th>
+<th style="text-align: center;">字节/参数</th>
+<th style="text-align: center;">7B</th>
+<th style="text-align: center;">13B</th>
+<th style="text-align: center;">70B</th>
+<th style="text-align: center;">175B</th>
+<th style="text-align: center;">405B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">FP32</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">28GB</td>
+<td style="text-align: center;">52GB</td>
+<td style="text-align: center;">280GB</td>
+<td style="text-align: center;">700GB</td>
+<td style="text-align: center;">1620GB</td>
+</tr>
+<tr>
+<td style="text-align: left;">FP16/BF16</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">14GB</td>
+<td style="text-align: center;">26GB</td>
+<td style="text-align: center;">140GB</td>
+<td style="text-align: center;">350GB</td>
+<td style="text-align: center;">810GB</td>
+</tr>
+<tr>
+<td style="text-align: left;">FP8</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">7GB</td>
+<td style="text-align: center;">13GB</td>
+<td style="text-align: center;">70GB</td>
+<td style="text-align: center;">175GB</td>
+<td style="text-align: center;">405GB</td>
+</tr>
+<tr>
+<td style="text-align: left;">INT4</td>
+<td style="text-align: center;">0.5</td>
+<td style="text-align: center;">3.5GB</td>
+<td style="text-align: center;">6.5GB</td>
+<td style="text-align: center;">35GB</td>
+<td style="text-align: center;">88GB</td>
+<td style="text-align: center;">203GB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="32-kv-cache">3.2 KV Cache 计算<a class="headerlink" href="#32-kv-cache" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>单 token KV Cache = 2 × num_layers × num_heads × head_dim × dtype_size
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>                  = 2 × n_l × d_model × dtype_size
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>Llama2-70B (n_l=80, d_model=8192) FP16:
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  单 token = 2 × 80 × 8192 × 2 = 2.6 MB
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>  4K context × 256 并发 = 4096 × 256 × 2.6 MB ≈ 2.6 TB
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>  → 这就是为什么需要 PagedAttention
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  → 或者 KV Cache 量化 (INT8/FP8) 减半
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>GQA (Group Query Attention) 减少 KV:
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>  Llama3-70B (n_kv_heads=8, n_q_heads=64): 减少到 1/8
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>  Llama3-405B: 同 GQA, 减少到 1/8
+</code></pre></div>
+<h3 id="33">3.3 显存预算公式<a class="headerlink" href="#33" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Total = Model_Weights + KV_Cache + Activations + Framework_Overhead
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>KV_Cache_Budget = Total_VRAM × 0.7 - Model_Weights
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>                  (保守 70%，留 30% 给激活和 fragmentation)
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>例: H100 80G 跑 Llama-70B FP16
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  权重: 140 GB → 需要 2 × H100 (Tensor Parallel)
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>  剩余: 160 - 140 = 20 GB → KV Cache
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>  → 单 token 2.6 MB → 20GB / 2.6MB ≈ 7700 token
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>  → 4K context × 1.9 并发 (不够实用)
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>→ 必须量化:
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>  FP8: 权重 70GB → 单卡 + 10GB KV cache → 仍紧张
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>  INT4 (AWQ/GPTQ): 权重 35GB → 单卡 + 45GB KV cache → 16 并发可用
+</code></pre></div>
+<h2 id="_2">四、互联拓扑<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="41-intra-node">4.1 节点内（Intra-Node）<a class="headerlink" href="#41-intra-node" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>PCIe 4.0  x16   32 GB/s (双向 64 GB/s)
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>PCIe 5.0  x16   64 GB/s
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>PCIe 6.0  x16   128 GB/s
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>NVLink 3 (A100)    600 GB/s/GPU (12 link × 50 GB/s)
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>NVLink 4 (H100)    900 GB/s/GPU (18 link × 50 GB/s)
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>NVLink 5 (Blackwell) 1.8 TB/s
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>NVSwitch (HGX/DGX H100):
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>  8 GPU 全互联，每对都是 900 GB/s
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>  → 张量并行 TP=8 友好
+</code></pre></div>
+<h3 id="42-inter-node">4.2 节点间（Inter-Node）<a class="headerlink" href="#42-inter-node" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>RoCE / IB:
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  IB HDR 200 Gb/s = 25 GB/s
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  IB NDR 400 Gb/s = 50 GB/s
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  IB XDR 800 Gb/s = 100 GB/s (2024+)
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>  RoCE 400Gbps (Ethernet)
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>  Spectrum-X (NV) 800 Gbps
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>GPU Direct RDMA:
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>  GPU 内存 ↔ NIC 直接 DMA，不经 CPU
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>  延迟 &lt; 2us
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>NCCL 集合通信:
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>  AllReduce/AllGather/ReduceScatter
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>  自动选 NVLink/PCIe/RDMA
+</code></pre></div>
+<h3 id="43">4.3 拓扑亲和（关键）<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 看 GPU 拓扑</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>nvidia-smi<span class="w"> </span>topo<span class="w"> </span>-m
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># 输出:</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c1">#         GPU0   GPU1   GPU2   ...</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># GPU0    X      NV12   NV12   ...</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># GPU1    NV12   X      NV12   ...</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="c1"># </span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="c1"># NV12: 12-link NVLink (满速)</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1"># PIX:  PCIe + 1 hop</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a><span class="c1"># PXB:  PCIe + bridge</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="c1"># NODE: 跨 NUMA node</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="c1"># SYS:  跨 socket</span>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="c1"># 选 GPU 时 优先 NV12 连接</span>
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a><span class="c1"># 跨 NUMA = 性能腰斩</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># 设置 CPU 亲和（NUMA 绑定）</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="c1"># 看 GPU NUMA 归属</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>nvidia-smi<span class="w"> </span>topo<span class="w"> </span>-mp
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="c1"># GPU0 NUMA: 0</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="c1"># GPU1 NUMA: 0</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># GPU2 NUMA: 1</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1"># GPU3 NUMA: 1</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="c1"># 启动时绑核</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>numactl<span class="w"> </span>--cpunodebind<span class="o">=</span><span class="m">0</span><span class="w"> </span>--membind<span class="o">=</span><span class="m">0</span><span class="w"> </span>python<span class="w"> </span>serve.py<span class="w"> </span>--gpu<span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a><span class="c1"># K8s</span>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>spec:
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a><span class="w">  </span>containers:
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a><span class="w">    </span>-<span class="w"> </span>resources:
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a><span class="w">        </span>limits:<span class="w"> </span><span class="o">{</span><span class="w"> </span>nvidia.com/gpu:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">}</span>
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a><span class="w">  </span>nodeSelector:<span class="w"> </span><span class="o">{</span><span class="w"> </span>nvidia.com/gpu.product:<span class="w"> </span>H100-SXM5-80GB<span class="w"> </span><span class="o">}</span>
+<a id="__codelineno-9-18" name="__codelineno-9-18" href="#__codelineno-9-18"></a><span class="w">  </span>topologySpreadConstraints:<span class="w"> </span>...
+</code></pre></div>
+<h2 id="cuda">五、CUDA 软件栈<a class="headerlink" href="#cuda" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 版本关系（必记）<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>NVIDIA Driver  ──→  CUDA Runtime  ──→  cuDNN/NCCL  ──→  PyTorch/vLLM
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>   570.x         ──→  CUDA 12.6      ──→   9.x          ──→  PyTorch 2.5+
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>向后兼容:
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  Driver 兼容更老的 CUDA Runtime（但反之不行）
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>  CUDA Runtime 与 cuDNN 严格绑定
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>查询:
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>  nvidia-smi              → Driver 版本 + CUDA 兼容上限
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>  nvcc --version          → CUDA Toolkit 版本
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>  cat /usr/include/cudnn_version.h → cuDNN 版本
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>  python -c &quot;import torch; print(torch.version.cuda, torch.backends.cudnn.version())&quot;
+</code></pre></div>
+<h3 id="52">5.2 容器化（推荐）<a class="headerlink" href="#52" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># 主机只装 Driver</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>apt<span class="w"> </span>install<span class="w"> </span>nvidia-driver-570<span class="w"> </span>nvidia-container-toolkit
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># 容器内带 CUDA Runtime</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>docker<span class="w"> </span>run<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>nvidia/cuda:12.6-runtime-ubuntu22.04<span class="w"> </span>nvidia-smi
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>docker<span class="w"> </span>run<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>vllm/vllm-openai:latest
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="c1"># Kubernetes</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="c1"># 安装 NVIDIA GPU Operator</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>helm<span class="w"> </span>install<span class="w"> </span>gpu-operator<span class="w"> </span>nvidia/gpu-operator<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">  </span>-n<span class="w"> </span>gpu-operator<span class="w"> </span>--create-namespace
+</code></pre></div>
+<h3 id="53">5.3 关键库<a class="headerlink" href="#53" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>PyTorch       推理基座
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>Transformers  HuggingFace 模型 hub
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>Accelerate    多卡 / FSDP 工具
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>DeepSpeed     训练为主 + 推理 (ZeRO Inference)
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>Triton (OpenAI) GPU kernel DSL ⭐ 学一次，写自定义 op
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>CUTLASS       CUDA C++ GEMM 模板库
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>FlashAttention 注意力优化库 ⭐ 已并入 PyTorch SDPA
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>xFormers      Meta 优化库
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>TensorRT-LLM  NV 推理优化
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>vLLM/SGLang   推理引擎（详见 02_推理框架）
+</code></pre></div>
+<h2 id="_3">六、监控与诊断<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="61-nvidia-smi">6.1 nvidia-smi 基础<a class="headerlink" href="#61-nvidia-smi" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># 实时</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>nvidia-smi
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>watch<span class="w"> </span>-n<span class="w"> </span><span class="m">1</span><span class="w"> </span>nvidia-smi
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>nvidia-smi<span class="w"> </span>-l<span class="w"> </span><span class="m">1</span><span class="w">                        </span><span class="c1"># 刷新 1s</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>nvidia-smi<span class="w"> </span>--query-gpu<span class="o">=</span>index,name,utilization.gpu,memory.used,memory.total,temperature.gpu,power.draw<span class="w"> </span>--format<span class="o">=</span>csv<span class="w"> </span>-l<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1"># 历史</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>nvidia-smi<span class="w"> </span>dmon<span class="w"> </span>-s<span class="w"> </span>pucvmet<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w">        </span><span class="c1"># 实时多指标</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>nvidia-smi<span class="w"> </span>--query-gpu<span class="o">=</span>timestamp,name,utilization.gpu,memory.used<span class="w"> </span>--format<span class="o">=</span>csv,nounits<span class="w"> </span>-lms<span class="w"> </span><span class="m">100</span><span class="w"> </span>&gt;<span class="w"> </span>log.csv
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="c1"># 进程</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a>nvidia-smi<span class="w"> </span>pmon<span class="w">                        </span><span class="c1"># 各进程 GPU 占用</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>fuser<span class="w"> </span>-v<span class="w"> </span>/dev/nvidia*<span class="w">                   </span><span class="c1"># 谁在用 GPU</span>
+</code></pre></div>
+<h3 id="62-dcgm-data-center-gpu-manager">6.2 DCGM (Data Center GPU Manager) ⭐<a class="headerlink" href="#62-dcgm-data-center-gpu-manager" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># 安装</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>apt<span class="w"> </span>install<span class="w"> </span>datacenter-gpu-manager
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="c1"># 启动 nv-hostengine</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>systemctl<span class="w"> </span>start<span class="w"> </span>nvidia-dcgm
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="c1"># CLI</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>dcgmi<span class="w"> </span>discovery<span class="w"> </span>-l<span class="w">                      </span><span class="c1"># 列出 GPU</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>dcgmi<span class="w"> </span>health<span class="w"> </span>-g<span class="w"> </span><span class="m">0</span><span class="w"> </span>-c<span class="w">                    </span><span class="c1"># 健康检查</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>dcgmi<span class="w"> </span>diag<span class="w"> </span>-g<span class="w"> </span><span class="m">0</span><span class="w"> </span>-r<span class="w"> </span><span class="m">3</span><span class="w">                    </span><span class="c1"># 诊断（耗时几分钟）</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="c1"># 持续监控 (Prometheus exporter)</span>
+<a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span>--gpus<span class="w"> </span>all<span class="w"> </span>--rm<span class="w"> </span>-p<span class="w"> </span><span class="m">9400</span>:9400<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w">  </span>nvcr.io/nvidia/k8s/dcgm-exporter:3.3.7-3.4.0-ubuntu22.04
+<a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a>
+<a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="c1"># Prometheus 抓取</span>
+<a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a>-<span class="w"> </span>job_name:<span class="w"> </span>dcgm
+<a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="w">  </span>static_configs:
+<a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="w">    </span>-<span class="w"> </span>targets:<span class="w"> </span><span class="o">[</span><span class="s1">&#39;gpu-host:9400&#39;</span><span class="o">]</span>
+<a id="__codelineno-14-20" name="__codelineno-14-20" href="#__codelineno-14-20"></a>
+<a id="__codelineno-14-21" name="__codelineno-14-21" href="#__codelineno-14-21"></a><span class="c1"># Grafana dashboard: 12239 (官方 DCGM)</span>
+</code></pre></div>
+<h3 id="63-gpu">6.3 关键 GPU 指标<a class="headerlink" href="#63-gpu" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>基础:
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>  GPU Util %             → 看似活跃但不代表算力利用
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>  SM Util % (DCGM)        → 真实算力利用 ⭐
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>  Memory Util %          → 显存带宽利用
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>  Memory Used GB         → 显存占用
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>  Temp °C                → 温度（&lt; 85°C）
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>  Power Draw W           → 功耗
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>  Clock SM/Mem MHz       → 频率（看是否降频）
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>进阶:
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>  PCIe RX/TX MB/s        → PCIe 流量
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>  NVLink RX/TX           → NVLink 流量
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>  ECC errors             → 显存 ECC 错误（关键！）
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>  XID errors             → 内核报告的 GPU 错误码
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>诊断:
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>  GPU Util 100% 但 SM Util 30%
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a>  → kernel 启动开销大 / batch 太小
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>  Memory Util 100%
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>  → memory-bound，加大 batch / KV cache 量化
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>  PCIe TX 高
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>  → 跨卡通信瓶颈，检查 NVLink 利用
+</code></pre></div>
+<h3 id="64-nsys-nsight-computeprofile">6.4 nsys / nsight-compute（Profile）<a class="headerlink" href="#64-nsys-nsight-computeprofile" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># nsys (system-wide profile)</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>nsys<span class="w"> </span>profile<span class="w"> </span>-o<span class="w"> </span>trace<span class="w"> </span>--trace<span class="o">=</span>cuda,nvtx,cudnn<span class="w"> </span>python<span class="w"> </span>infer.py
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>nsys-ui<span class="w"> </span>trace.nsys-rep<span class="w">                  </span><span class="c1"># GUI 看</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="c1"># nsight-compute (kernel 级)</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>ncu<span class="w"> </span>--target-processes<span class="w"> </span>all<span class="w"> </span>-o<span class="w"> </span>profile<span class="w"> </span>python<span class="w"> </span>infer.py
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>ncu<span class="w"> </span>--section<span class="w"> </span>MemoryWorkloadAnalysis<span class="w"> </span>-o<span class="w"> </span>mem<span class="w"> </span>python<span class="w"> </span>infer.py
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a><span class="c1"># Triton kernel</span>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>@triton.jit
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>def<span class="w"> </span>kernel<span class="o">(</span>...<span class="o">)</span>:<span class="w"> </span>...
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="c1"># 内嵌 print/profile</span>
+</code></pre></div>
+<h2 id="_4">七、故障与排查<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="71">7.1 常见错误<a class="headerlink" href="#71" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">错误</th>
+<th style="text-align: left;">原因</th>
+<th style="text-align: left;">处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>CUDA out of memory</strong></td>
+<td style="text-align: left;">显存不足</td>
+<td style="text-align: left;">减小 batch / 量化 / 释放缓存</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CUDA illegal memory access</strong></td>
+<td style="text-align: left;">越界 / 同步错</td>
+<td style="text-align: left;">检查 indexing / 启用 <code>CUDA_LAUNCH_BLOCKING=1</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NCCL timeout</strong></td>
+<td style="text-align: left;">通信阻塞</td>
+<td style="text-align: left;">检查互联 / <code>NCCL_TIMEOUT</code> 调大</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>XID 13 / 31 / 79</strong></td>
+<td style="text-align: left;">硬件错误</td>
+<td style="text-align: left;">重启 / 报修</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>XID 48 / 63 / 64</strong></td>
+<td style="text-align: left;">ECC 错误</td>
+<td style="text-align: left;">报修 GPU</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>No CUDA-capable device</strong></td>
+<td style="text-align: left;">驱动 / 容器配置</td>
+<td style="text-align: left;">检查 nvidia-container-toolkit</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>kernel not callable</strong></td>
+<td style="text-align: left;">CUDA / cuDNN 不匹配</td>
+<td style="text-align: left;">检查版本兼容</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Bus Error</strong></td>
+<td style="text-align: left;">PCIe 不稳 / GPU 掉卡</td>
+<td style="text-align: left;">重启 / 换插槽</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Watchdog Timeout</strong></td>
+<td style="text-align: left;">kernel 跑太久</td>
+<td style="text-align: left;">优化 / 拆分</td>
+</tr>
+</tbody>
+</table>
+<h3 id="72-xid">7.2 XID 错误码（重要）<a class="headerlink" href="#72-xid" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>dmesg<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>xid
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>journalctl<span class="w"> </span>-k<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>xid
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="c1"># 常见:</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="c1"># XID 13   显存 ECC 错误 → 报修</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="c1"># XID 31   GPU memory page fault → app bug</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="c1"># XID 43/45 内核重启 → driver 问题</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="c1"># XID 63   ECC double-bit 错 → 报修（必须换卡）</span>
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="c1"># XID 64   ECC 阈值告警</span>
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="c1"># XID 79   GPU 从总线掉了 → 报修</span>
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="c1"># XID 109/110 GPU reset 失败</span>
+<a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>
+<a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="c1"># 完整列表:</span>
+<a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a>https://docs.nvidia.com/deploy/xid-errors/
+</code></pre></div>
+<h3 id="73-gpu">7.3 GPU 掉卡<a class="headerlink" href="#73-gpu" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># 现象: nvidia-smi 找不到 / lspci 找不到</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>lspci<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>nvidia
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>ls<span class="w"> </span>/dev/nvidia*
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="c1"># 排查:</span>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="c1"># 1. dmesg | grep -i nvrm</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="c1"># 2. 看 PCIe 状态: lspci -vvv -s &lt;bus:dev.func&gt;</span>
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="c1"># 3. fan / 温度: ipmitool sensor</span>
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="c1"># 4. 重启大法</span>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="c1"># 5. 重置 PCIe: setpci -s &lt;bus&gt; CAP_PM+4.b=4</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="c1"># 6. 修复模式: nvidia-smi -r （需要先 stop 所有 GPU 进程）</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="c1"># 报修阈值:</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="c1"># - XID 63/74/79/45 → 立即报修</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="c1"># - Single-bit ECC &gt; 阈值 → 报修</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="c1"># - 温度持续 &gt; 85°C → 检查散热</span>
+</code></pre></div>
+<h3 id="74-gpu">7.4 GPU 压测<a class="headerlink" href="#74-gpu" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># gpu-burn (检测稳定性，跑 1-24 小时)</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/wilicc/gpu-burn
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="nb">cd</span><span class="w"> </span>gpu-burn<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>./gpu_burn<span class="w"> </span><span class="m">3600</span><span class="w">                        </span><span class="c1"># 1 小时</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="c1"># DCGM 诊断 (官方)</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>dcgmi<span class="w"> </span>diag<span class="w"> </span>-g<span class="w"> </span><span class="m">0</span><span class="w"> </span>-r<span class="w"> </span><span class="m">3</span><span class="w">                    </span><span class="c1"># Level 3 (~10 min)</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>dcgmi<span class="w"> </span>diag<span class="w"> </span>-g<span class="w"> </span><span class="m">0</span><span class="w"> </span>-r<span class="w"> </span><span class="m">4</span><span class="w">                    </span><span class="c1"># Level 4 (~30 min, 完整)</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="c1"># nccl-tests (多卡通信)</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/NVIDIA/nccl-tests
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>make<span class="w"> </span><span class="nv">CUDA_HOME</span><span class="o">=</span>/usr/local/cuda<span class="w"> </span><span class="nv">MPI</span><span class="o">=</span><span class="m">1</span>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>mpirun<span class="w"> </span>-np<span class="w"> </span><span class="m">8</span><span class="w"> </span>./build/all_reduce_perf<span class="w"> </span>-b<span class="w"> </span><span class="m">8</span><span class="w"> </span>-e<span class="w"> </span>256M<span class="w"> </span>-f<span class="w"> </span><span class="m">2</span><span class="w"> </span>-g<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="c1"># 期望 bandwidth:</span>
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="c1"># NVLink: &gt; 200 GB/s busBW</span>
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a><span class="c1"># PCIe 4.0: ~12 GB/s</span>
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a><span class="c1"># Cross-node IB 200G: ~20 GB/s</span>
+</code></pre></div>
+<h2 id="gpu-k8s">八、GPU 调度（K8s）<a class="headerlink" href="#gpu-k8s" title="Permanent link">&para;</a></h2>
+<h3 id="81-nvidia-gpu-operator">8.1 NVIDIA GPU Operator<a class="headerlink" href="#81-nvidia-gpu-operator" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># 一键安装（生产推荐）</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>nvidia<span class="w"> </span>https://helm.ngc.nvidia.com/nvidia
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>helm<span class="w"> </span>install<span class="w"> </span>gpu-operator<span class="w"> </span>nvidia/gpu-operator<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">  </span>-n<span class="w"> </span>gpu-operator<span class="w"> </span>--create-namespace<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">  </span>--set<span class="w"> </span>driver.enabled<span class="o">=</span><span class="nb">false</span><span class="w">   </span><span class="c1"># 主机已装则关闭</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="c1"># 自动安装:</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="c1"># - nvidia-device-plugin</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="c1"># - DCGM exporter</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="c1"># - Container Toolkit</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="c1"># - MIG manager</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="c1"># - GFD (GPU Feature Discovery)</span>
+</code></pre></div>
+<h3 id="82-gpu">8.2 GPU 共享方案<a class="headerlink" href="#82-gpu" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>1. 整卡独占 (Exclusive)
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>   resources: { limits: { nvidia.com/gpu: 1 } }
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>   适合: 训练 / 大模型推理
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>2. MIG (Multi-Instance GPU) ⭐ A100/H100 专属
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>   一张 H100 → 7 个独立实例 (1g.10gb, 2g.20gb, ...)
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>   硬件级隔离，性能稳定
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>   适合: 中小模型多租户
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>3. Time-Slicing (时间片)
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>   多容器共享单卡，轮转使用
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>   配置: device-plugin replicas
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>   适合: 开发 / 测试
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>4. MPS (Multi-Process Service)
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>   多进程共享 GPU context
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>   并发计算，不隔离显存
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>   适合: 同租户多模型
+<a id="__codelineno-21-19" name="__codelineno-21-19" href="#__codelineno-21-19"></a>
+<a id="__codelineno-21-20" name="__codelineno-21-20" href="#__codelineno-21-20"></a>5. vGPU (商业)
+<a id="__codelineno-21-21" name="__codelineno-21-21" href="#__codelineno-21-21"></a>   NVIDIA AI Enterprise license
+<a id="__codelineno-21-22" name="__codelineno-21-22" href="#__codelineno-21-22"></a>   软件级切分
+<a id="__codelineno-21-23" name="__codelineno-21-23" href="#__codelineno-21-23"></a>
+<a id="__codelineno-21-24" name="__codelineno-21-24" href="#__codelineno-21-24"></a>6. 阿里 cGPU / 腾讯 qGPU / 华为 Volcano vGPU
+<a id="__codelineno-21-25" name="__codelineno-21-25" href="#__codelineno-21-25"></a>   国产共享方案，按显存切片
+</code></pre></div>
+<h3 id="83-mig">8.3 MIG 配置实例<a class="headerlink" href="#83-mig" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># 开启 MIG (需要 root)</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>nvidia-smi<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w"> </span>-mig<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>nvidia-smi<span class="w"> </span>mig<span class="w"> </span>-lgip<span class="w">                    </span><span class="c1"># 列出可用 profile</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>nvidia-smi<span class="w"> </span>mig<span class="w"> </span>-cgi<span class="w"> </span>1g.10gb,1g.10gb,1g.10gb,1g.10gb,1g.10gb,1g.10gb,1g.10gb<span class="w"> </span>-C
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="c1"># K8s 中</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>apiVersion:<span class="w"> </span>v1
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>kind:<span class="w"> </span>Pod
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>spec:
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="w">  </span>containers:
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="w">    </span>-<span class="w"> </span>name:<span class="w"> </span>ai
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="w">      </span>resources:
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a><span class="w">        </span>limits:<span class="w"> </span><span class="o">{</span><span class="w"> </span>nvidia.com/mig-1g.10gb:<span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="o">}</span>
+</code></pre></div>
+<h3 id="84-volcano-yunikorn">8.4 Volcano / Yunikorn 调度<a class="headerlink" href="#84-volcano-yunikorn" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Gang Scheduling (训练必须)</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">batch.volcano.sh/v1alpha1</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Job</span>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="nt">metadata</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> name</span><span class="p">:</span><span class="w"> </span><span class="nv">llm-train</span><span class="w"> </span><span class="p p-Indicator">}</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a><span class="w">  </span><span class="nt">minAvailable</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span><span class="w">                     </span><span class="c1"># 必须 8 个 Pod 同时就绪</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a><span class="w">  </span><span class="nt">schedulerName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">volcano</span>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="w">  </span><span class="nt">tasks</span><span class="p">:</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">replicas</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8</span>
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a><span class="w">      </span><span class="nt">template</span><span class="p">:</span>
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="w">        </span><span class="nt">spec</span><span class="p">:</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="w">          </span><span class="nt">containers</span><span class="p">:</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="w">            </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">resources</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> limits</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{</span><span class="nt"> nvidia.com/gpu</span><span class="p">:</span><span class="w"> </span><span class="nv">1</span><span class="w"> </span><span class="p p-Indicator">}</span><span class="w"> </span><span class="p p-Indicator">}</span>
+</code></pre></div>
+<h2 id="_5">九、量化精度与推理<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 精度对比<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">精度</th>
+<th style="text-align: center;">字节</th>
+<th style="text-align: center;">训练</th>
+<th style="text-align: center;">推理</th>
+<th style="text-align: left;">精度损失</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>FP32</strong></td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">❌ 太慢</td>
+<td style="text-align: left;">无</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>BF16</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">~0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>FP16</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">⚠️ 易溢出</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">~0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>FP8</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">✅ H100+</td>
+<td style="text-align: center;">✅ H100+</td>
+<td style="text-align: left;">&lt; 1% (E4M3)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>INT8</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">1-3%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>AWQ/GPTQ INT4</strong></td>
+<td style="text-align: center;">0.5</td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">1-5%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NF4 (QLoRA)</strong></td>
+<td style="text-align: center;">0.5</td>
+<td style="text-align: center;">LoRA</td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: left;">~1%</td>
+</tr>
+</tbody>
+</table>
+<h3 id="92">9.2 量化方法<a class="headerlink" href="#92" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>权重量化 (Weight-Only):
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>  AWQ (Activation-aware Weight Quantization)
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>    保留关键权重精度，最优 INT4
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>  GPTQ (Generative Pre-trained Transformer Quantization)
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>    OBQ 算法，逐层校准
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>  GGUF (llama.cpp)
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>    Q2_K, Q3_K, Q4_K_M, Q5_K_M, Q6_K, Q8_0
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>    CPU+GPU 混合推理
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>激活量化:
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>  SmoothQuant
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>    平滑激活分布，INT8 准确度高
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>  FP8 (H100 / MI300)
+<a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>    硬件原生 FP8，E4M3 (推理) / E5M2 (训练)
+<a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>
+<a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>KV Cache 量化:
+<a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a>  vLLM kv-cache-dtype=fp8
+<a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a>  INT4 KV Cache (实验)
+<a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>  → 减半显存，几乎无损
+<a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a>
+<a id="__codelineno-24-21" name="__codelineno-24-21" href="#__codelineno-24-21"></a>后训练 vs 量化感知:
+<a id="__codelineno-24-22" name="__codelineno-24-22" href="#__codelineno-24-22"></a>  PTQ (Post-Training)    无需重训，1-2% 精度损失
+<a id="__codelineno-24-23" name="__codelineno-24-23" href="#__codelineno-24-23"></a>  QAT (Quantization-Aware) 训练时量化，损失 &lt; 0.5%
+</code></pre></div>
+<h3 id="93">9.3 实战量化命令<a class="headerlink" href="#93" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># llama.cpp GGUF 量化</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>./llama-quantize<span class="w"> </span>llama-7b-f16.gguf<span class="w"> </span>llama-7b-q4_k_m.gguf<span class="w"> </span>q4_k_m
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="c1"># AWQ (autoawq)</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>python<span class="w"> </span>-m<span class="w"> </span>awq.entry<span class="w"> </span>--model_path<span class="w"> </span>llama-70b<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="w">  </span>--w_bit<span class="w"> </span><span class="m">4</span><span class="w"> </span>--q_group_size<span class="w"> </span><span class="m">128</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="w">  </span>--dump_quant<span class="w"> </span>llama-70b-awq
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="c1"># GPTQ (auto-gptq)</span>
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>from<span class="w"> </span>auto_gptq<span class="w"> </span>import<span class="w"> </span>AutoGPTQForCausalLM,<span class="w"> </span>BaseQuantizeConfig
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="nv">quantize_config</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>BaseQuantizeConfig<span class="o">(</span><span class="nv">bits</span><span class="o">=</span><span class="m">4</span>,<span class="w"> </span><span class="nv">group_size</span><span class="o">=</span><span class="m">128</span>,<span class="w"> </span><span class="nv">desc_act</span><span class="o">=</span>False<span class="o">)</span>
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="nv">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>AutoGPTQForCausalLM.from_pretrained<span class="o">(</span>model_path,<span class="w"> </span>quantize_config<span class="o">)</span>
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>model.quantize<span class="o">(</span>calibration_data<span class="o">)</span>
+<a id="__codelineno-25-14" name="__codelineno-25-14" href="#__codelineno-25-14"></a>model.save_quantized<span class="o">(</span>output_dir<span class="o">)</span>
+<a id="__codelineno-25-15" name="__codelineno-25-15" href="#__codelineno-25-15"></a>
+<a id="__codelineno-25-16" name="__codelineno-25-16" href="#__codelineno-25-16"></a><span class="c1"># TensorRT-LLM FP8</span>
+<a id="__codelineno-25-17" name="__codelineno-25-17" href="#__codelineno-25-17"></a>trtllm-build<span class="w"> </span>--checkpoint_dir<span class="w"> </span>llama_fp8/<span class="w"> </span>--output_dir<span class="w"> </span>engine_fp8/<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-25-18" name="__codelineno-25-18" href="#__codelineno-25-18"></a><span class="w">  </span>--gemm_plugin<span class="w"> </span>fp8<span class="w"> </span>--use_fp8_context_fmha<span class="w"> </span><span class="nb">enable</span>
+<a id="__codelineno-25-19" name="__codelineno-25-19" href="#__codelineno-25-19"></a>
+<a id="__codelineno-25-20" name="__codelineno-25-20" href="#__codelineno-25-20"></a><span class="c1"># vLLM 部署量化模型</span>
+<a id="__codelineno-25-21" name="__codelineno-25-21" href="#__codelineno-25-21"></a>vllm<span class="w"> </span>serve<span class="w"> </span>TheBloke/Llama-2-70B-AWQ<span class="w"> </span>--quantization<span class="w"> </span>awq<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-25-22" name="__codelineno-25-22" href="#__codelineno-25-22"></a><span class="w">  </span>--gpu-memory-utilization<span class="w"> </span><span class="m">0</span>.9<span class="w"> </span>-tp<span class="w"> </span><span class="m">1</span>
+</code></pre></div>
+<h2 id="_6">十、电力 &amp; 散热<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="101">10.1 功耗<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>H100 SXM5    700W
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>H100 PCIe    350W
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>H200          700W
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>A100 SXM      400W
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>A100 PCIe    300W
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>L40S          350W
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>RTX 4090     450W
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>8 × H100 SXM5 服务器 (DGX H100):
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>  GPU: 700 × 8 = 5.6 KW
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>  CPU + RAM + NIC: ~1 KW
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>  整机: ~6.5 KW
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>  → 单机柜放不下太多 (一般机柜 &lt; 20 KW)
+</code></pre></div>
+<h3 id="102">10.2 散热<a class="headerlink" href="#102" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>风冷:
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>  - 入风温度 &lt; 27°C (ASHRAE A2)
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>  - GPU 入风 &lt; 32°C
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>  - 8 × H100 风冷需要强力风扇
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>液冷 (推荐):
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>  - D2C (Direct to Chip)
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>  - 单机柜可达 50-100 KW
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>  - PUE &lt; 1.1
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>国内液冷主流: 浪潮 / 中科曙光 / 联想 / 华为 / 阿里灵骏
+</code></pre></div>
+<h3 id="103">10.3 功耗调优<a class="headerlink" href="#103" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># 限功率（不限频可能更高）</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>nvidia-smi<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w"> </span>-pl<span class="w"> </span><span class="m">600</span><span class="w">                 </span><span class="c1"># 限制 GPU 0 到 600W</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1"># 持久模式（避免频繁初始化）</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>nvidia-smi<span class="w"> </span>-pm<span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="c1"># 计算模式</span>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>nvidia-smi<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w"> </span>-c<span class="w"> </span><span class="m">0</span><span class="w">                    </span><span class="c1"># DEFAULT (允许多进程)</span>
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>nvidia-smi<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w"> </span>-c<span class="w"> </span><span class="m">3</span><span class="w">                    </span><span class="c1"># EXCLUSIVE_PROCESS (独占)</span>
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="c1"># 频率锁定</span>
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a>nvidia-smi<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w"> </span>-lgc<span class="w"> </span><span class="m">1980</span>,1980<span class="w">          </span><span class="c1"># 锁 GPU clock</span>
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>nvidia-smi<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w"> </span>-lmc<span class="w"> </span><span class="m">1593</span>,1593<span class="w">          </span><span class="c1"># 锁 mem clock</span>
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a>
+<a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="c1"># 重置</span>
+<a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a>nvidia-smi<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w"> </span>-rgc
+<a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a>nvidia-smi<span class="w"> </span>-i<span class="w"> </span><span class="m">0</span><span class="w"> </span>-rmc
+</code></pre></div>
+<h2 id="_7">十一、典型集群规格（参考）<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="111">11.1 训练集群<a class="headerlink" href="#111" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>Llama-70B 训练:
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>  - 32 × H100 80G SXM5 (4 节点 × 8 GPU)
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>  - NVLink 4 + IB NDR 400Gb × 8/节点
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>  - PFS: WekaFS / Lustre / GPFS, 10 PB+
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>  - 网络: spine-leaf, 1:1 GPU-NIC
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>Llama-405B 训练:
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>  - 128 GPU+ (16 节点)
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>  - 同上 + 2× 网络
+</code></pre></div>
+<h3 id="112">11.2 推理集群<a class="headerlink" href="#112" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a>中等规模 (日活 1M):
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>  - 16 × H100 80G (2 DGX or 2× 8卡服务器)
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>  - 跑 70B FP8 / TP=2
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>  - QPS 100+
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>大规模 (日活 100M):
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a>  - 100+ × H100/H200
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>  - PD 分离: Prefill 节点 H100, Decode 节点 H200
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>  - 多副本负载均衡
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>  - 自动扩缩 (HPA + KEDA)
+</code></pre></div>
+<h3 id="113">11.3 国产对标<a class="headerlink" href="#113" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>华为 Atlas 900 SuperPoD
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>  - 1024 × 昇腾 910B/910C
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>  - 192 PFlops FP16
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>寒武纪 思元 集群
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>  - 通过 K8s + Operator 调度
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>阿里灵骏
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>  - HPN7 网络 (改良 RoCE, 200/400G)
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>  - PAI-Lingjun 弹性算力
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>  - GPU 集群即服务
+</code></pre></div>
+<h2 id="_8">十二、典型坑<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>看 GPU Util 90% 就以为饱和</strong></td>
+<td style="text-align: left;">看 SM Util / MBU</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PCIe Gen3 跑大模型</strong></td>
+<td style="text-align: left;">至少 Gen4 / NVLink</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨 NUMA 用 GPU</strong></td>
+<td style="text-align: left;">绑核 + 同 NUMA 显卡</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>不开 ECC</strong></td>
+<td style="text-align: left;">数据中心必开</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>驱动版本乱</strong></td>
+<td style="text-align: left;">全集群统一</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MIG 没 reconcile</strong></td>
+<td style="text-align: left;">GPU Operator MIG Manager</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Docker 不带 nvidia-container-toolkit</strong></td>
+<td style="text-align: left;">必装</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>K8s Pod 抢 GPU</strong></td>
+<td style="text-align: left;">Volcano gang scheduling</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>温度不监控</strong></td>
+<td style="text-align: left;">DCGM + Prometheus</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>XID 错误不处置</strong></td>
+<td style="text-align: left;">监控告警 + 自动隔离</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>量化只 FP16</strong></td>
+<td style="text-align: left;">INT4/FP8 显存翻 2-4 倍</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>共享 GPU 不隔离</strong></td>
+<td style="text-align: left;">MIG &gt; vGPU &gt; Time-Slicing</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>持续模式没开</strong></td>
+<td style="text-align: left;">nvidia-smi -pm 1 (减少初始化)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>训练 batch 不够</strong></td>
+<td style="text-align: left;">用更大 GPU / 减小模型 / 梯度累加</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨节点用 PCIe 通信</strong></td>
+<td style="text-align: left;">RDMA / NVLink Network</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2025">十三、推荐栈（2025）<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h2>
+<h3 id="131">13.1 训练（仅参考）<a class="headerlink" href="#131" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>硬件:    H100 / H200 / MI300X / 昇腾 910C
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>互联:    NVLink 4 + IB NDR 400Gb
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a>存储:    Weka / Lustre / GPFS / 阿里 CPFS
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a>框架:    PyTorch FSDP / Megatron-LM / DeepSpeed
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a>调度:    K8s + Volcano / Slurm
+</code></pre></div>
+<h3 id="132">13.2 推理（你的主战场）<a class="headerlink" href="#132" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a>硬件:    H100/H200 (主流) + L40S/L4 (中小)
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>        国产: 昇腾 910B / 海光 K100
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>存储:    NVMe local (KV cache spillover)
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>框架:    vLLM / SGLang / TGI / TensorRT-LLM
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>量化:    AWQ INT4 / FP8 / GGUF
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>调度:    K8s + GPU Operator + KEDA HPA
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a>监控:    DCGM + Prometheus + Grafana
+</code></pre></div>
+<h3 id="133">13.3 国产/信创<a class="headerlink" href="#133" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>+ 昇腾 910B/910C + CANN + MindSpore-Lite
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>+ 海光 DCU + DTK (ROCm fork)
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>+ 寒武纪 思元 + Neuware
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>+ 摩尔线程 MTT + MUSA
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>+ 国密 / 等保合规集群
+</code></pre></div>
+<h2 id="_9">十四、学习路径<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>入门（1 月）:
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>  1. GPU 架构（SM/CUDA core/tensor core）
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>  2. nvidia-smi / DCGM 熟练
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>  3. PyTorch + Transformers 基本推理
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>  4. 显存计算 + 量化基础
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>  5. vLLM 跑通
+<a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a>
+<a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a>中级（3 月）:
+<a id="__codelineno-35-9" name="__codelineno-35-9" href="#__codelineno-35-9"></a>  6. CUDA C++ 基础 (sample)
+<a id="__codelineno-35-10" name="__codelineno-35-10" href="#__codelineno-35-10"></a>  7. Triton kernel DSL
+<a id="__codelineno-35-11" name="__codelineno-35-11" href="#__codelineno-35-11"></a>  8. FlashAttention / PagedAttention 原理
+<a id="__codelineno-35-12" name="__codelineno-35-12" href="#__codelineno-35-12"></a>  9. TensorRT-LLM 部署
+<a id="__codelineno-35-13" name="__codelineno-35-13" href="#__codelineno-35-13"></a>  10. MIG / GPU 共享调度
+<a id="__codelineno-35-14" name="__codelineno-35-14" href="#__codelineno-35-14"></a>
+<a id="__codelineno-35-15" name="__codelineno-35-15" href="#__codelineno-35-15"></a>高级（6 月+）:
+<a id="__codelineno-35-16" name="__codelineno-35-16" href="#__codelineno-35-16"></a>  11. 自定义 CUDA op
+<a id="__codelineno-35-17" name="__codelineno-35-17" href="#__codelineno-35-17"></a>  12. NCCL / 分布式通信优化
+<a id="__codelineno-35-18" name="__codelineno-35-18" href="#__codelineno-35-18"></a>  13. PD 分离推理架构
+<a id="__codelineno-35-19" name="__codelineno-35-19" href="#__codelineno-35-19"></a>  14. 国产 GPU 适配 (昇腾 / 海光)
+<a id="__codelineno-35-20" name="__codelineno-35-20" href="#__codelineno-35-20"></a>  15. 万卡集群运维
+<a id="__codelineno-35-21" name="__codelineno-35-21" href="#__codelineno-35-21"></a>
+<a id="__codelineno-35-22" name="__codelineno-35-22" href="#__codelineno-35-22"></a>专家:
+<a id="__codelineno-35-23" name="__codelineno-35-23" href="#__codelineno-35-23"></a>  16. Kernel fusion / 自动 codegen
+<a id="__codelineno-35-24" name="__codelineno-35-24" href="#__codelineno-35-24"></a>  17. 推理服务 SLA 极致优化
+<a id="__codelineno-35-25" name="__codelineno-35-25" href="#__codelineno-35-25"></a>  18. 故障预测 + 自愈
+<a id="__codelineno-35-26" name="__codelineno-35-26" href="#__codelineno-35-26"></a>  19. 算力调度系统
+</code></pre></div>
+<h2 id="_10">十五、参考资料<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>官方:
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>  - NVIDIA Deep Learning Performance Guide
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>  - cuDNN / CUDA Programming Guide
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>  - NCCL Developer Guide
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>  - DCGM Documentation
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>  - PyTorch Profiler
+<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>
+<a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>学习:
+<a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a>  - GPU Mode 社区 (CUDA + Triton)
+<a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a>  - NVIDIA Deep Learning Institute (DLI)
+<a id="__codelineno-36-11" name="__codelineno-36-11" href="#__codelineno-36-11"></a>  - HuggingFace Inference Optimization
+<a id="__codelineno-36-12" name="__codelineno-36-12" href="#__codelineno-36-12"></a>
+<a id="__codelineno-36-13" name="__codelineno-36-13" href="#__codelineno-36-13"></a>社区:
+<a id="__codelineno-36-14" name="__codelineno-36-14" href="#__codelineno-36-14"></a>  - r/LocalLLaMA
+<a id="__codelineno-36-15" name="__codelineno-36-15" href="#__codelineno-36-15"></a>  - vLLM Slack
+<a id="__codelineno-36-16" name="__codelineno-36-16" href="#__codelineno-36-16"></a>  - SGLang Discord
+<a id="__codelineno-36-17" name="__codelineno-36-17" href="#__codelineno-36-17"></a>  - 国内: AIInfra / GPU Mode 中文
+<a id="__codelineno-36-18" name="__codelineno-36-18" href="#__codelineno-36-18"></a>
+<a id="__codelineno-36-19" name="__codelineno-36-19" href="#__codelineno-36-19"></a>报告:
+<a id="__codelineno-36-20" name="__codelineno-36-20" href="#__codelineno-36-20"></a>  - LMSys Chatbot Arena
+<a id="__codelineno-36-21" name="__codelineno-36-21" href="#__codelineno-36-21"></a>  - MLPerf Inference
+<a id="__codelineno-36-22" name="__codelineno-36-22" href="#__codelineno-36-22"></a>  - SemiAnalysis (硬件分析)
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：LLM 推理硬件选型是<strong>带宽 × 显存 × 互联</strong> 三维优化问题。<strong>H200 &gt; H100 &gt; MI300X &gt; A100 &gt; L40S</strong> 是 2025 推理首选梯度，但<strong>国产替代（昇腾/海光）已可承担 70-90% 场景</strong>——核心限制不在硬件，在 CUDA 生态。<strong>先把 nvidia-smi、DCGM、XID 错误码、量化精度、KV Cache 计算这五项打牢，再谈框架优化</strong>——上层 vLLM 的所有调参，本质都是在这五项之上。</p>
+</blockquote>
 
 
 
