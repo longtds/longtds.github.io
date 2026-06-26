@@ -1326,10 +1326,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#linux_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        安全基线
+        一、Linux 攻击面全景
       
     </span>
   </a>
@@ -1337,13 +1337,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ssh" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SSH 加固
+        二、加固框架与基线
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="二、加固框架与基线">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 业界标准
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 自动化加固工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1351,7 +1379,634 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        审计
+        三、账户与认证
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、账户与认证">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 密码策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-root" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 禁用 root 远程登录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 SSH 密钥规范
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-sudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 sudo 最小化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-mfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 多因素认证（MFA）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、文件系统安全
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、文件系统安全">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 权限基线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-suid-sgid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 SUID / SGID 治理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 挂载选项
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-luks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 LUKS 全盘加密
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-fim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 文件完整性监控（FIM）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、Capability 与最小权限
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、Capability 与最小权限">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-linux-capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Linux Capability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-systemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 systemd 服务硬化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、内核安全
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、内核安全">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-sysctl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 关键 sysctl
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-selinux-apparmor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 SELinux / AppArmor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-seccomp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 seccomp（系统调用过滤）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 内核更新策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、网络访问控制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、网络访问控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-iptables-nftables-firewalld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 iptables / nftables / firewalld
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 端口治理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-hids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 主机入侵检测（HIDS）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-fail2ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 fail2ban（爆破防护）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、日志与审计
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、日志与审计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-linux-auditd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Linux 审计子系统（auditd）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-systemd-journald" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 systemd-journald
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 集中日志（必备）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、进程与运行时检测
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、进程与运行时检测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 异常进程发现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-rkhunter-chkrootkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 rkhunter / chkrootkit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-falco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Falco（运行时威胁检测）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-ebpf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 eBPF 现代检测
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、补丁与漏洞管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、补丁与漏洞管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 漏洞扫描
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-patch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 patch 流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 自动更新策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、应急响应（IR）速查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、应急响应（IR）速查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 入侵迹象排查
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 IR 处置步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 取证工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、合规与等保
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、合规与等保">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 等保 2.0 三级要求要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 工具映射
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、加固 Checklist（生产可对照）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、技术栈推荐（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十五、技术栈推荐（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.1 小团队
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.2 中大企业
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十七、参考资料
       
     </span>
   </a>
@@ -1827,10 +2482,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#linux_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        安全基线
+        一、Linux 攻击面全景
       
     </span>
   </a>
@@ -1838,13 +2493,41 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ssh" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SSH 加固
+        二、加固框架与基线
       
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="二、加固框架与基线">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 业界标准
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 自动化加固工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1852,7 +2535,634 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        审计
+        三、账户与认证
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、账户与认证">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 密码策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-root" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 禁用 root 远程登录
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-ssh" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 SSH 密钥规范
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-sudo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 sudo 最小化
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-mfa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 多因素认证（MFA）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、文件系统安全
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、文件系统安全">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 权限基线
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-suid-sgid" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 SUID / SGID 治理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 挂载选项
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-luks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 LUKS 全盘加密
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-fim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 文件完整性监控（FIM）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、Capability 与最小权限
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、Capability 与最小权限">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-linux-capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Linux Capability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-systemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 systemd 服务硬化
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、内核安全
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、内核安全">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-sysctl" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 关键 sysctl
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-selinux-apparmor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 SELinux / AppArmor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#63-seccomp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.3 seccomp（系统调用过滤）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.4 内核更新策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、网络访问控制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、网络访问控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-iptables-nftables-firewalld" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 iptables / nftables / firewalld
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 端口治理
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-hids" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 主机入侵检测（HIDS）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-fail2ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 fail2ban（爆破防护）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、日志与审计
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、日志与审计">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-linux-auditd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Linux 审计子系统（auditd）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-systemd-journald" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 systemd-journald
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 集中日志（必备）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、进程与运行时检测
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、进程与运行时检测">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 异常进程发现
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-rkhunter-chkrootkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 rkhunter / chkrootkit
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#93-falco" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.3 Falco（运行时威胁检测）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#94-ebpf" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.4 eBPF 现代检测
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、补丁与漏洞管理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、补丁与漏洞管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 漏洞扫描
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-patch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 patch 流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#103" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.3 自动更新策略
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、应急响应（IR）速查
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十一、应急响应（IR）速查">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 入侵迹象排查
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-ir" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 IR 处置步骤
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 取证工具
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、合规与等保
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、合规与等保">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 等保 2.0 三级要求要点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 工具映射
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、加固 Checklist（生产可对照）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十五、技术栈推荐（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十五、技术栈推荐（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.1 小团队
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.2 中大企业
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十六、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十七、参考资料
       
     </span>
   </a>
@@ -1928,34 +3238,938 @@
 
 
 <h1 id="linux">Linux 安全<a class="headerlink" href="#linux" title="Permanent link">&para;</a></h1>
-<h2 id="_1">安全基线<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># 系统安全基线检查</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="m">1</span>.<span class="w"> </span>最小化安装（不必要的包不装）
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="m">2</span>.<span class="w"> </span>设置<span class="w"> </span>SELinux/AppArmor
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="m">3</span>.<span class="w"> </span>配置防火墙（iptables/nftables）
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="m">4</span>.<span class="w"> </span>禁用<span class="w"> </span>root<span class="w"> </span>远程登录
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="m">5</span>.<span class="w"> </span>配置<span class="w"> </span>SSH<span class="w"> </span>密钥认证
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="m">6</span>.<span class="w"> </span>设置密码策略（复杂度/过期时间）
+<blockquote>
+<p>没有"安全的 Linux"，只有"被加固到一定程度的 Linux"。<strong>系统加固 = 最小权限 + 日志审计 + 内核加固 + 入侵检测</strong>，是所有上层安全的地基。</p>
+</blockquote>
+<h2 id="linux_1">一、Linux 攻击面全景<a class="headerlink" href="#linux_1" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1. 网络层      开放端口 / 弱协议 / 暴露服务
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>2. 账户层      弱密码 / sudo 滥用 / root 远程
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>3. 权限层      SUID/SGID 滥用 / 文件权限松 / Capability
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>4. 内核层      0day / 内核模块 / eBPF 滥用
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>5. 应用层      老旧软件 / 配置错误 / 0day
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>6. 供应链      软件包来源 / 依赖污染
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>7. 物理/启动   未加密磁盘 / Bootloader 篡改
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>8. 内部威胁    员工跳板 / 横向移动 / 后门
 </code></pre></div>
-<h2 id="ssh">SSH 加固<a class="headerlink" href="#ssh" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># /etc/ssh/sshd_config</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>PermitRootLogin<span class="w"> </span>no
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>PasswordAuthentication<span class="w"> </span>no
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>PubkeyAuthentication<span class="w"> </span>yes
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>MaxAuthTries<span class="w"> </span><span class="m">3</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>ClientAliveInterval<span class="w"> </span><span class="m">300</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>ClientAliveCountMax<span class="w"> </span><span class="m">2</span>
+<h2 id="_1">二、加固框架与基线<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="21">2.1 业界标准<a class="headerlink" href="#21" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">标准</th>
+<th style="text-align: left;">来源</th>
+<th style="text-align: left;">适用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>CIS Benchmarks</strong> ⭐⭐⭐⭐⭐</td>
+<td style="text-align: left;">Center for Internet Security</td>
+<td style="text-align: left;">全行业事实标准</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DISA STIG</strong></td>
+<td style="text-align: left;">美军</td>
+<td style="text-align: left;">政府 / 军用</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>NIST 800-53 / 800-171</strong></td>
+<td style="text-align: left;">NIST</td>
+<td style="text-align: left;">美企合规</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PCI-DSS</strong></td>
+<td style="text-align: left;">支付卡组织</td>
+<td style="text-align: left;">金融支付</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>等保 2.0</strong></td>
+<td style="text-align: left;">中国</td>
+<td style="text-align: left;">国内合规必备</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>GB/T 22239</strong></td>
+<td style="text-align: left;">中国</td>
+<td style="text-align: left;">等保配套</td>
+</tr>
+</tbody>
+</table>
+<h3 id="22">2.2 自动化加固工具<a class="headerlink" href="#22" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># OpenSCAP（最主流）</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>yum<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>openscap-scanner<span class="w"> </span>scap-security-guide
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>oscap<span class="w"> </span>xccdf<span class="w"> </span><span class="nb">eval</span><span class="w"> </span>--profile<span class="w"> </span>xccdf_org.ssgproject.content_profile_cis<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--results<span class="w"> </span>scan.xml<span class="w"> </span>--report<span class="w"> </span>report.html<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span>/usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># Lynis（轻量审计）</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>lynis
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>lynis<span class="w"> </span>audit<span class="w"> </span>system
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># CIS-CAT Pro（商业，覆盖最全）</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c1"># Ansible-lockdown（开源 CIS Ansible Role）</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>ansible-galaxy<span class="w"> </span>install<span class="w"> </span>ansible-lockdown.rhel9_cis
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>ansible-playbook<span class="w"> </span>-i<span class="w"> </span>inventory<span class="w"> </span>site.yml<span class="w"> </span>-e<span class="w"> </span><span class="nv">rhel9cis_section1</span><span class="o">=</span><span class="nb">true</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="c1"># 国内: 麒麟基线、统信基线</span>
 </code></pre></div>
-<h2 id="_2">审计<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># auditd 规则</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>auditctl<span class="w"> </span>-w<span class="w"> </span>/etc/passwd<span class="w"> </span>-p<span class="w"> </span>wa<span class="w"> </span>-k<span class="w"> </span>passwd_changes
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>auditctl<span class="w"> </span>-w<span class="w"> </span>/etc/shadow<span class="w"> </span>-p<span class="w"> </span>wa<span class="w"> </span>-k<span class="w"> </span>shadow_changes
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>auditctl<span class="w"> </span>-a<span class="w"> </span>exit,always<span class="w"> </span>-S<span class="w"> </span>execve<span class="w"> </span>-k<span class="w"> </span>shell_commands
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="c1"># 查看审计日志</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>ausearch<span class="w"> </span>-k<span class="w"> </span>passwd_changes
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>aureport<span class="w"> </span>-k
+<h2 id="_2">三、账户与认证<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 密码策略<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># /etc/security/pwquality.conf</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nv">minlen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">14</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nv">minclass</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="w">               </span><span class="c1"># 大写+小写+数字+特殊</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nv">maxrepeat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nv">maxclassrepeat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="nv">dictcheck</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nv">usercheck</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nv">enforcing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nv">remember</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="c1"># /etc/login.defs</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>PASS_MAX_DAYS<span class="w">   </span><span class="m">90</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>PASS_MIN_DAYS<span class="w">   </span><span class="m">1</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>PASS_MIN_LEN<span class="w">    </span><span class="m">14</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>PASS_WARN_AGE<span class="w">   </span><span class="m">7</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="c1"># /etc/pam.d/system-auth (账户锁定)</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>auth<span class="w"> </span>required<span class="w"> </span>pam_faillock.so<span class="w"> </span>preauth<span class="w"> </span>silent<span class="w"> </span><span class="nv">deny</span><span class="o">=</span><span class="m">5</span><span class="w"> </span><span class="nv">unlock_time</span><span class="o">=</span><span class="m">900</span>
+<a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>auth<span class="w"> </span>required<span class="w"> </span>pam_faillock.so<span class="w"> </span>authfail<span class="w"> </span>audit<span class="w"> </span><span class="nv">deny</span><span class="o">=</span><span class="m">5</span><span class="w"> </span><span class="nv">unlock_time</span><span class="o">=</span><span class="m">900</span>
 </code></pre></div>
+<h3 id="32-root">3.2 禁用 root 远程登录<a class="headerlink" href="#32-root" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># /etc/ssh/sshd_config</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>PermitRootLogin<span class="w"> </span>no
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>PasswordAuthentication<span class="w"> </span>no<span class="w">           </span><span class="c1"># 强制密钥</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>PubkeyAuthentication<span class="w"> </span>yes
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>ChallengeResponseAuthentication<span class="w"> </span>no
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>UsePAM<span class="w"> </span>yes
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>X11Forwarding<span class="w"> </span>no
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>AllowTcpForwarding<span class="w"> </span>no
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>AllowAgentForwarding<span class="w"> </span>no
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>MaxAuthTries<span class="w"> </span><span class="m">3</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>MaxSessions<span class="w"> </span><span class="m">5</span>
+<a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>ClientAliveInterval<span class="w"> </span><span class="m">300</span>
+<a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a>ClientAliveCountMax<span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>LoginGraceTime<span class="w"> </span><span class="m">30</span>
+<a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>AllowUsers<span class="w"> </span>ops<span class="w"> </span>sre<span class="w"> </span>admin<span class="w">            </span><span class="c1"># 白名单</span>
+<a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>Protocol<span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>HostKeyAlgorithms<span class="w"> </span>ssh-ed25519,rsa-sha2-512,rsa-sha2-256
+<a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>KexAlgorithms<span class="w"> </span>curve25519-sha256,curve25519-sha256@libssh.org,diffie-hellman-group16-sha512
+<a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>Ciphers<span class="w"> </span>chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com
+<a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>MACs<span class="w"> </span>hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com
+</code></pre></div>
+<h3 id="33-ssh">3.3 SSH 密钥规范<a class="headerlink" href="#33-ssh" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># 生成 ed25519（推荐，比 RSA 安全且快）</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;user@company.com&quot;</span><span class="w"> </span>-f<span class="w"> </span>~/.ssh/id_ed25519
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># RSA 至少 4096</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>ssh-keygen<span class="w"> </span>-t<span class="w"> </span>rsa<span class="w"> </span>-b<span class="w"> </span><span class="m">4096</span><span class="w"> </span>-C<span class="w"> </span><span class="s2">&quot;...&quot;</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># 私钥强制加密</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>~/.ssh/id_*
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>~/.ssh
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="c1"># Authorized keys 加限制</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="c1"># /home/user/.ssh/authorized_keys</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="nv">from</span><span class="o">=</span><span class="s2">&quot;10.0.0.0/8&quot;</span>,command<span class="o">=</span><span class="s2">&quot;/usr/local/bin/restricted-cmd&quot;</span>,no-port-forwarding,no-X11-forwarding<span class="w"> </span>ssh-ed25519<span class="w"> </span>AAA...
+</code></pre></div>
+<h3 id="34-sudo">3.4 sudo 最小化<a class="headerlink" href="#34-sudo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># /etc/sudoers.d/ops</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>%ops<span class="w"> </span><span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span><span class="w"> </span>/usr/bin/systemctl<span class="w"> </span>status<span class="w"> </span>*,<span class="w"> </span>/usr/bin/journalctl<span class="w"> </span>-u<span class="w"> </span>*
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># DBA 只能改特定服务</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>%dba<span class="w"> </span><span class="nv">ALL</span><span class="o">=(</span>postgres<span class="o">)</span><span class="w"> </span>/usr/bin/psql,<span class="w"> </span>/usr/bin/pg_dump,<span class="w"> </span>!/usr/bin/su
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># 全部 sudo 必须记录密码 + 日志</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>Defaults<span class="w"> </span><span class="nv">logfile</span><span class="o">=</span><span class="s2">&quot;/var/log/sudo.log&quot;</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>Defaults<span class="w"> </span>log_input,log_output
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>Defaults<span class="w"> </span><span class="nv">iolog_dir</span><span class="o">=</span><span class="s2">&quot;/var/log/sudo-io&quot;</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="c1"># 禁止 sudo su -</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>%ops<span class="w"> </span><span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span><span class="w"> </span>!/usr/bin/su*
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a><span class="c1"># 限制时间窗口</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>%ops<span class="w"> </span><span class="nv">ALL</span><span class="o">=(</span>ALL<span class="o">)</span><span class="w"> </span>NOPASSWD:<span class="w"> </span>ALL<span class="w">  </span><span class="c1"># 千万不要</span>
+</code></pre></div>
+<h3 id="35-mfa">3.5 多因素认证（MFA）<a class="headerlink" href="#35-mfa" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Google Authenticator</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>apt<span class="w"> </span>install<span class="w"> </span>libpam-google-authenticator
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>google-authenticator
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># /etc/pam.d/sshd</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>auth<span class="w"> </span>required<span class="w"> </span>pam_google_authenticator.so
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="c1"># /etc/ssh/sshd_config</span>
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>ChallengeResponseAuthentication<span class="w"> </span>yes
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>AuthenticationMethods<span class="w"> </span>publickey,keyboard-interactive
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="c1"># 企业级:</span>
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="c1">#   - Duo Security</span>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="c1">#   - Okta</span>
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="c1">#   - 国内: 数字证书 + 短信 / U-Key</span>
+</code></pre></div>
+<h2 id="_3">四、文件系统安全<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="41">4.1 权限基线<a class="headerlink" href="#41" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># 关键文件权限</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>/etc/passwd
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>chmod<span class="w"> </span><span class="m">000</span><span class="w"> </span>/etc/shadow<span class="w">                </span><span class="c1"># 实际 0600 由 PAM 管</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>/etc/group
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>/etc/ssh/sshd_config
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>chmod<span class="w"> </span><span class="m">600</span><span class="w"> </span>/root/.ssh/authorized_keys
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>chmod<span class="w"> </span><span class="m">700</span><span class="w"> </span>/root/.ssh
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="c1"># 全系统检查</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>find<span class="w"> </span>/<span class="w"> </span>-perm<span class="w"> </span>-002<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-not<span class="w"> </span>-path<span class="w"> </span><span class="s2">&quot;/proc/*&quot;</span><span class="w">     </span><span class="c1"># 全局可写</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>find<span class="w"> </span>/<span class="w"> </span>-nouser<span class="w"> </span>-o<span class="w"> </span>-nogroup<span class="w">                         </span><span class="c1"># 无主文件</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>find<span class="w"> </span>/<span class="w"> </span>-perm<span class="w"> </span>-4000<span class="w"> </span>-type<span class="w"> </span>f<span class="w">                         </span><span class="c1"># SUID</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>find<span class="w"> </span>/<span class="w"> </span>-perm<span class="w"> </span>-2000<span class="w"> </span>-type<span class="w"> </span>f<span class="w">                         </span><span class="c1"># SGID</span>
+</code></pre></div>
+<h3 id="42-suid-sgid">4.2 SUID / SGID 治理<a class="headerlink" href="#42-suid-sgid" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># 列出所有 SUID（攻击面）</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>find<span class="w"> </span>/<span class="w"> </span>-perm<span class="w"> </span>-4000<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># 高危 SUID（gtfobins 中的二进制）</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="c1">#   /bin/su        正常</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1">#   /bin/sudo      正常</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1">#   /usr/bin/passwd 正常</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="c1">#   /usr/bin/find  ❌ 应该去 SUID</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="c1">#   /usr/bin/vim   ❌</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1">#   /usr/bin/awk   ❌</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a><span class="c1"># 去 SUID</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>chmod<span class="w"> </span>u-s<span class="w"> </span>/usr/bin/find
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>chmod<span class="w"> </span>u-s<span class="w"> </span>/usr/bin/vim
+</code></pre></div>
+<h3 id="43">4.3 挂载选项<a class="headerlink" href="#43" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># /etc/fstab 加 nosuid/nodev/noexec</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>/dev/sdb1<span class="w"> </span>/home<span class="w">    </span>ext4<span class="w"> </span>defaults,nosuid,nodev<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>tmpfs<span class="w">    </span>/tmp<span class="w">      </span>tmpfs<span class="w"> </span>defaults,nosuid,nodev,noexec,size<span class="o">=</span>2G<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>tmpfs<span class="w">    </span>/var/tmp<span class="w">  </span>tmpfs<span class="w"> </span>defaults,nosuid,nodev,noexec,size<span class="o">=</span>1G<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>/dev/sdb2<span class="w"> </span>/var/log<span class="w"> </span>ext4<span class="w"> </span>defaults,nosuid,nodev,noexec<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="c1"># /dev/shm 也要锁定</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>tmpfs<span class="w"> </span>/dev/shm<span class="w"> </span>tmpfs<span class="w"> </span>defaults,nosuid,nodev,noexec<span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">0</span>
+</code></pre></div>
+<h3 id="44-luks">4.4 LUKS 全盘加密<a class="headerlink" href="#44-luks" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># 安装时启用 / 后期加密</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>cryptsetup<span class="w"> </span>luksFormat<span class="w"> </span>/dev/sdb1
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>cryptsetup<span class="w"> </span>luksOpen<span class="w"> </span>/dev/sdb1<span class="w"> </span>secure
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>mkfs.ext4<span class="w"> </span>/dev/mapper/secure
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>mount<span class="w"> </span>/dev/mapper/secure<span class="w"> </span>/secure
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1"># /etc/crypttab + TPM 2.0 自动解锁</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>secure<span class="w"> </span>/dev/sdb1<span class="w"> </span>none<span class="w"> </span>tpm2-device<span class="o">=</span>auto
+</code></pre></div>
+<h3 id="45-fim">4.5 文件完整性监控（FIM）<a class="headerlink" href="#45-fim" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># AIDE</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>apt<span class="w"> </span>install<span class="w"> </span>aide
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>aideinit<span class="w">                              </span><span class="c1"># 初始化基线</span>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>mv<span class="w"> </span>/var/lib/aide/aide.db.new<span class="w"> </span>/var/lib/aide/aide.db
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>aide<span class="w"> </span>--check<span class="w">                          </span><span class="c1"># 每日定时检查</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="c1"># 关键路径:</span>
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="c1">#   /etc/passwd, /etc/shadow</span>
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="c1">#   /etc/ssh/*</span>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="c1">#   /etc/sudoers*</span>
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="c1">#   /etc/cron*</span>
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="c1">#   /usr/bin, /usr/sbin, /bin, /sbin</span>
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="c1">#   /boot</span>
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="c1"># Tripwire（商业版功能多）</span>
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="c1"># Wazuh / OSSEC（含 FIM + HIDS）</span>
+</code></pre></div>
+<h2 id="capability">五、Capability 与最小权限<a class="headerlink" href="#capability" title="Permanent link">&para;</a></h2>
+<h3 id="51-linux-capability">5.1 Linux Capability<a class="headerlink" href="#51-linux-capability" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># 不要 root 全权，按 capability 拆分</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="c1"># 38 个 capabilities 列表</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>getcap<span class="w"> </span>/usr/bin/ping<span class="w">        </span><span class="c1"># cap_net_raw=ep</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>setcap<span class="w"> </span><span class="nv">cap_net_bind_service</span><span class="o">=</span>+ep<span class="w"> </span>/usr/local/bin/myapp<span class="w">     </span><span class="c1"># 允许 80 端口绑定（非 root）</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>setcap<span class="w"> </span>-r<span class="w"> </span>/usr/local/bin/myapp<span class="w">                            </span><span class="c1"># 撤销</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="c1"># 常见高危 capability</span>
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="c1">#   CAP_SYS_ADMIN     全能力等价 root</span>
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="c1">#   CAP_SYS_PTRACE    可调试任何进程</span>
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="c1">#   CAP_DAC_OVERRIDE  绕过 DAC</span>
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="c1">#   CAP_NET_RAW       原始套接字</span>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="c1">#   CAP_NET_ADMIN     网络管理</span>
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="c1">#   CAP_SYS_MODULE    加载内核模块</span>
+</code></pre></div>
+<h3 id="52-systemd">5.2 systemd 服务硬化<a class="headerlink" href="#52-systemd" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># /etc/systemd/system/myapp.service</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="k">[Service]</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="na">ExecStart</span><span class="o">=</span><span class="s">/usr/local/bin/myapp</span>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="na">User</span><span class="o">=</span><span class="s">myapp</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="na">Group</span><span class="o">=</span><span class="s">myapp</span>
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1"># 文件系统</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a><span class="na">ProtectSystem</span><span class="o">=</span><span class="s">strict</span>
+<a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a><span class="na">ProtectHome</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-10" name="__codelineno-13-10" href="#__codelineno-13-10"></a><span class="na">ReadWritePaths</span><span class="o">=</span><span class="s">/var/lib/myapp /var/log/myapp</span>
+<a id="__codelineno-13-11" name="__codelineno-13-11" href="#__codelineno-13-11"></a><span class="na">PrivateTmp</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-12" name="__codelineno-13-12" href="#__codelineno-13-12"></a><span class="na">PrivateDevices</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-13" name="__codelineno-13-13" href="#__codelineno-13-13"></a>
+<a id="__codelineno-13-14" name="__codelineno-13-14" href="#__codelineno-13-14"></a><span class="c1"># 网络</span>
+<a id="__codelineno-13-15" name="__codelineno-13-15" href="#__codelineno-13-15"></a><span class="na">RestrictAddressFamilies</span><span class="o">=</span><span class="s">AF_INET AF_INET6 AF_UNIX</span>
+<a id="__codelineno-13-16" name="__codelineno-13-16" href="#__codelineno-13-16"></a><span class="na">PrivateNetwork</span><span class="o">=</span><span class="s">false</span><span class="w">                </span><span class="c1"># 隔离网络的话 true</span>
+<a id="__codelineno-13-17" name="__codelineno-13-17" href="#__codelineno-13-17"></a>
+<a id="__codelineno-13-18" name="__codelineno-13-18" href="#__codelineno-13-18"></a><span class="c1"># 进程</span>
+<a id="__codelineno-13-19" name="__codelineno-13-19" href="#__codelineno-13-19"></a><span class="na">NoNewPrivileges</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-20" name="__codelineno-13-20" href="#__codelineno-13-20"></a><span class="na">RestrictSUIDSGID</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-21" name="__codelineno-13-21" href="#__codelineno-13-21"></a><span class="na">LockPersonality</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-22" name="__codelineno-13-22" href="#__codelineno-13-22"></a><span class="na">ProtectKernelTunables</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-23" name="__codelineno-13-23" href="#__codelineno-13-23"></a><span class="na">ProtectKernelModules</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-24" name="__codelineno-13-24" href="#__codelineno-13-24"></a><span class="na">ProtectKernelLogs</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-25" name="__codelineno-13-25" href="#__codelineno-13-25"></a><span class="na">ProtectControlGroups</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-26" name="__codelineno-13-26" href="#__codelineno-13-26"></a><span class="na">RestrictNamespaces</span><span class="o">=</span><span class="s">true</span>
+<a id="__codelineno-13-27" name="__codelineno-13-27" href="#__codelineno-13-27"></a><span class="na">SystemCallFilter</span><span class="o">=</span><span class="s">@system-service</span>
+<a id="__codelineno-13-28" name="__codelineno-13-28" href="#__codelineno-13-28"></a><span class="na">SystemCallErrorNumber</span><span class="o">=</span><span class="s">EPERM</span>
+<a id="__codelineno-13-29" name="__codelineno-13-29" href="#__codelineno-13-29"></a>
+<a id="__codelineno-13-30" name="__codelineno-13-30" href="#__codelineno-13-30"></a><span class="c1"># Capability</span>
+<a id="__codelineno-13-31" name="__codelineno-13-31" href="#__codelineno-13-31"></a><span class="na">CapabilityBoundingSet</span><span class="o">=</span><span class="s">CAP_NET_BIND_SERVICE</span>
+<a id="__codelineno-13-32" name="__codelineno-13-32" href="#__codelineno-13-32"></a><span class="na">AmbientCapabilities</span><span class="o">=</span><span class="s">CAP_NET_BIND_SERVICE</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># 评分检查</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>systemd-analyze<span class="w"> </span>security<span class="w"> </span>myapp.service
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># 0 (perfect) - 10 (UNSAFE)</span>
+</code></pre></div>
+<h2 id="_4">六、内核安全<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="61-sysctl">6.1 关键 sysctl<a class="headerlink" href="#61-sysctl" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># /etc/sysctl.d/99-security.conf</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="c1"># 网络</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>net.ipv4.ip_forward<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>net.ipv4.conf.all.send_redirects<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>net.ipv4.conf.default.send_redirects<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>net.ipv4.conf.all.accept_redirects<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>net.ipv4.conf.all.secure_redirects<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>net.ipv4.conf.all.accept_source_route<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>net.ipv4.conf.all.log_martians<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>net.ipv4.icmp_echo_ignore_broadcasts<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>net.ipv4.icmp_ignore_bogus_error_responses<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>net.ipv4.tcp_syncookies<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a>net.ipv4.tcp_rfc1337<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a>net.ipv6.conf.all.accept_redirects<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a>net.ipv6.conf.all.accept_source_route<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a>
+<a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="c1"># 内核</span>
+<a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a>kernel.randomize_va_space<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="w">       </span><span class="c1"># ASLR</span>
+<a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a>kernel.dmesg_restrict<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a>kernel.kptr_restrict<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+<a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a>kernel.yama.ptrace_scope<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="w">        </span><span class="c1"># 限制 ptrace</span>
+<a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a>kernel.unprivileged_bpf_disabled<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a>kernel.kexec_load_disabled<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a>kernel.sysrq<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a>kernel.core_uses_pid<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a>fs.protected_hardlinks<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a>fs.protected_symlinks<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span>
+<a id="__codelineno-15-29" name="__codelineno-15-29" href="#__codelineno-15-29"></a>fs.suid_dumpable<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span>
+<a id="__codelineno-15-30" name="__codelineno-15-30" href="#__codelineno-15-30"></a>
+<a id="__codelineno-15-31" name="__codelineno-15-31" href="#__codelineno-15-31"></a><span class="c1"># 模块</span>
+<a id="__codelineno-15-32" name="__codelineno-15-32" href="#__codelineno-15-32"></a>kernel.modules_disabled<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w">         </span><span class="c1"># 极严格时启用（生产前测试）</span>
+<a id="__codelineno-15-33" name="__codelineno-15-33" href="#__codelineno-15-33"></a>
+<a id="__codelineno-15-34" name="__codelineno-15-34" href="#__codelineno-15-34"></a>sysctl<span class="w"> </span>--system
+</code></pre></div>
+<h3 id="62-selinux-apparmor">6.2 SELinux / AppArmor<a class="headerlink" href="#62-selinux-apparmor" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># SELinux（RHEL 系）</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>sestatus<span class="w">                            </span><span class="c1"># 查看</span>
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>setenforce<span class="w"> </span><span class="m">1</span><span class="w">                        </span><span class="c1"># 启用强制</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="c1"># /etc/selinux/config</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="nv">SELINUX</span><span class="o">=</span>enforcing
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="nv">SELINUXTYPE</span><span class="o">=</span>targeted
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="c1"># 排查</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>ausearch<span class="w"> </span>-m<span class="w"> </span>AVC<span class="w"> </span>-ts<span class="w"> </span>recent
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a>audit2allow<span class="w"> </span>-a<span class="w">                      </span><span class="c1"># 生成策略</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="c1"># AppArmor（Debian/Ubuntu 系）</span>
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>apparmor_status
+<a id="__codelineno-16-14" name="__codelineno-16-14" href="#__codelineno-16-14"></a>aa-enforce<span class="w"> </span>/etc/apparmor.d/usr.bin.myapp
+<a id="__codelineno-16-15" name="__codelineno-16-15" href="#__codelineno-16-15"></a>aa-complain<span class="w"> </span>/etc/apparmor.d/usr.bin.myapp<span class="w">     </span><span class="c1"># 调试模式</span>
+<a id="__codelineno-16-16" name="__codelineno-16-16" href="#__codelineno-16-16"></a>aa-logprof<span class="w">                          </span><span class="c1"># 自动学习</span>
+</code></pre></div>
+<h3 id="63-seccomp">6.3 seccomp（系统调用过滤）<a class="headerlink" href="#63-seccomp" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1">// systemd / Docker / K8s 已经内置</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="c1">// 应用层用 libseccomp 直接限制 syscalls</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;seccomp.h&gt;</span>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="n">scmp_filter_ctx</span><span class="w"> </span><span class="n">ctx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">seccomp_init</span><span class="p">(</span><span class="n">SCMP_ACT_KILL</span><span class="p">);</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="n">seccomp_rule_add</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span><span class="w"> </span><span class="n">SCMP_ACT_ALLOW</span><span class="p">,</span><span class="w"> </span><span class="n">SCMP_SYS</span><span class="p">(</span><span class="n">read</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="n">seccomp_rule_add</span><span class="p">(</span><span class="n">ctx</span><span class="p">,</span><span class="w"> </span><span class="n">SCMP_ACT_ALLOW</span><span class="p">,</span><span class="w"> </span><span class="n">SCMP_SYS</span><span class="p">(</span><span class="n">write</span><span class="p">),</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="n">seccomp_load</span><span class="p">(</span><span class="n">ctx</span><span class="p">);</span>
+</code></pre></div>
+<h3 id="64">6.4 内核更新策略<a class="headerlink" href="#64" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># 自动安全更新</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="c1"># Ubuntu</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>apt<span class="w"> </span>install<span class="w"> </span>unattended-upgrades
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>dpkg-reconfigure<span class="w"> </span>unattended-upgrades
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="c1"># RHEL/CentOS</span>
+<a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a>dnf<span class="w"> </span>install<span class="w"> </span>dnf-automatic
+<a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>dnf-automatic-install.timer
+<a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a>
+<a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="c1"># 关键: 漏洞披露后 7 天内打补丁</span>
+<a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="c1"># 0day 紧急 24-48 小时</span>
+<a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a>
+<a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="c1"># 内核热补丁（不重启）</span>
+<a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="c1"># - kpatch (Red Hat)</span>
+<a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="c1"># - kgraft (SUSE)</span>
+<a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="c1"># - 阿里云 / 腾讯云 KSplice</span>
+</code></pre></div>
+<h2 id="_5">七、网络访问控制<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="71-iptables-nftables-firewalld">7.1 iptables / nftables / firewalld<a class="headerlink" href="#71-iptables-nftables-firewalld" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># nftables（替代 iptables，2025 标准）</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>nft<span class="w"> </span>list<span class="w"> </span>ruleset
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="c1"># /etc/nftables.conf</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>table<span class="w"> </span>inet<span class="w"> </span>filter<span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">  </span>chain<span class="w"> </span>input<span class="w"> </span><span class="o">{</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">    </span><span class="nb">type</span><span class="w"> </span>filter<span class="w"> </span>hook<span class="w"> </span>input<span class="w"> </span>priority<span class="w"> </span>filter<span class="p">;</span><span class="w"> </span>policy<span class="w"> </span>drop<span class="p">;</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">    </span>ct<span class="w"> </span>state<span class="w"> </span>established,related<span class="w"> </span>accept
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">    </span>ct<span class="w"> </span>state<span class="w"> </span>invalid<span class="w"> </span>drop
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">    </span>iif<span class="w"> </span>lo<span class="w"> </span>accept
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">    </span>ip<span class="w"> </span>protocol<span class="w"> </span>icmp<span class="w"> </span>limit<span class="w"> </span>rate<span class="w"> </span><span class="m">5</span>/second<span class="w"> </span>accept
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="w">    </span><span class="c1"># SSH 限速防爆破</span>
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">    </span>tcp<span class="w"> </span>dport<span class="w"> </span><span class="m">22</span><span class="w"> </span>ct<span class="w"> </span>state<span class="w"> </span>new<span class="w"> </span>limit<span class="w"> </span>rate<span class="w"> </span><span class="m">3</span>/minute<span class="w"> </span>accept
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="w">    </span>tcp<span class="w"> </span>dport<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="m">80</span>,<span class="w"> </span><span class="m">443</span><span class="w"> </span><span class="o">}</span><span class="w"> </span>accept
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a><span class="w">    </span><span class="c1"># 业务端口仅内网</span>
+<a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a><span class="w">    </span>ip<span class="w"> </span>saddr<span class="w"> </span><span class="m">10</span>.0.0.0/8<span class="w"> </span>tcp<span class="w"> </span>dport<span class="w"> </span><span class="m">5432</span><span class="w"> </span>accept
+<a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>
+<a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a><span class="w">    </span>log<span class="w"> </span>prefix<span class="w"> </span><span class="s2">&quot;DROP: &quot;</span><span class="w"> </span>limit<span class="w"> </span>rate<span class="w"> </span><span class="m">5</span>/minute
+<a id="__codelineno-19-22" name="__codelineno-19-22" href="#__codelineno-19-22"></a><span class="w">  </span><span class="o">}</span>
+<a id="__codelineno-19-23" name="__codelineno-19-23" href="#__codelineno-19-23"></a><span class="w">  </span>chain<span class="w"> </span>forward<span class="w"> </span><span class="o">{</span><span class="w"> </span><span class="nb">type</span><span class="w"> </span>filter<span class="w"> </span>hook<span class="w"> </span>forward<span class="w"> </span>priority<span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span>policy<span class="w"> </span>drop<span class="p">;</span><span class="w"> </span><span class="o">}</span>
+<a id="__codelineno-19-24" name="__codelineno-19-24" href="#__codelineno-19-24"></a><span class="w">  </span>chain<span class="w"> </span>output<span class="w">  </span><span class="o">{</span><span class="w"> </span><span class="nb">type</span><span class="w"> </span>filter<span class="w"> </span>hook<span class="w"> </span>output<span class="w">  </span>priority<span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span>policy<span class="w"> </span>accept<span class="p">;</span><span class="w"> </span><span class="o">}</span>
+<a id="__codelineno-19-25" name="__codelineno-19-25" href="#__codelineno-19-25"></a><span class="o">}</span>
+</code></pre></div>
+<h3 id="72">7.2 端口治理<a class="headerlink" href="#72" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># 列出监听端口</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>ss<span class="w"> </span>-tulnp
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>ss<span class="w"> </span>-tuln4
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>netstat<span class="w"> </span>-tulnp<span class="w">                       </span><span class="c1"># 老命令</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="c1"># 关闭无用服务</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>systemctl<span class="w"> </span>disable<span class="w"> </span>--now<span class="w"> </span>rpcbind<span class="w"> </span>cups<span class="w"> </span>avahi-daemon
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="c1"># 仅监听本地</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="c1"># 改 /etc/mysql/mysql.conf.d/mysqld.cnf</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>bind-address<span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">127</span>.0.0.1
+</code></pre></div>
+<h3 id="73-hids">7.3 主机入侵检测（HIDS）<a class="headerlink" href="#73-hids" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>✅ Wazuh           开源 SIEM + HIDS，功能最全
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>✅ OSSEC           老牌
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>✅ AIDE / Tripwire 文件完整性
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>✅ Falco           容器/K8s 运行时
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>✅ Suricata        网络 IDS
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>✅ Auditd          内核审计
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>国产:
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>  ✅ 安全狗
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>  ✅ 云锁
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>  ✅ 360 主机卫士
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>  ✅ 雷池 / 长亭洞鉴
+</code></pre></div>
+<h3 id="74-fail2ban">7.4 fail2ban（爆破防护）<a class="headerlink" href="#74-fail2ban" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># /etc/fail2ban/jail.local</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="k">[DEFAULT]</span>
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="na">bantime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">86400</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a><span class="na">findtime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">600</span>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="na">maxretry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">5</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a><span class="na">ignoreip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">127.0.0.1/8 10.0.0.0/8</span>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="k">[sshd]</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a><span class="na">enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a><span class="na">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">22</span>
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a><span class="na">filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">sshd</span>
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a><span class="na">logpath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/var/log/auth.log</span>
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a><span class="k">[nginx-http-auth]</span>
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a><span class="na">enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a><span class="na">filter</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">nginx-http-auth</span>
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a><span class="na">port</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">http,https</span>
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a><span class="na">logpath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">/var/log/nginx/error.log</span>
+</code></pre></div>
+<h2 id="_6">八、日志与审计<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="81-linux-auditd">8.1 Linux 审计子系统（auditd）<a class="headerlink" href="#81-linux-auditd" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>auditd
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>auditd
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="c1"># /etc/audit/rules.d/audit.rules</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="c1"># 监控关键文件</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>-w<span class="w"> </span>/etc/passwd<span class="w"> </span>-p<span class="w"> </span>wa<span class="w"> </span>-k<span class="w"> </span>identity
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>-w<span class="w"> </span>/etc/shadow<span class="w"> </span>-p<span class="w"> </span>wa<span class="w"> </span>-k<span class="w"> </span>identity
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a>-w<span class="w"> </span>/etc/sudoers<span class="w"> </span>-p<span class="w"> </span>wa<span class="w"> </span>-k<span class="w"> </span>privilege
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>-w<span class="w"> </span>/etc/ssh/sshd_config<span class="w"> </span>-p<span class="w"> </span>wa<span class="w"> </span>-k<span class="w"> </span>ssh
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>-w<span class="w"> </span>/root/.ssh<span class="w"> </span>-p<span class="w"> </span>wa<span class="w"> </span>-k<span class="w"> </span>ssh
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a><span class="c1"># 监控关键命令</span>
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a>-a<span class="w"> </span>always,exit<span class="w"> </span>-F<span class="w"> </span><span class="nv">arch</span><span class="o">=</span>b64<span class="w"> </span>-S<span class="w"> </span>execve<span class="w"> </span>-F<span class="w"> </span><span class="nv">path</span><span class="o">=</span>/bin/su<span class="w"> </span>-k<span class="w"> </span>su
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>-a<span class="w"> </span>always,exit<span class="w"> </span>-F<span class="w"> </span><span class="nv">arch</span><span class="o">=</span>b64<span class="w"> </span>-S<span class="w"> </span>execve<span class="w"> </span>-F<span class="w"> </span><span class="nv">path</span><span class="o">=</span>/usr/bin/sudo<span class="w"> </span>-k<span class="w"> </span>sudo
+<a id="__codelineno-23-15" name="__codelineno-23-15" href="#__codelineno-23-15"></a>
+<a id="__codelineno-23-16" name="__codelineno-23-16" href="#__codelineno-23-16"></a><span class="c1"># 监控权限变更</span>
+<a id="__codelineno-23-17" name="__codelineno-23-17" href="#__codelineno-23-17"></a>-a<span class="w"> </span>always,exit<span class="w"> </span>-F<span class="w"> </span><span class="nv">arch</span><span class="o">=</span>b64<span class="w"> </span>-S<span class="w"> </span>chmod,fchmod,fchmodat<span class="w"> </span>-F<span class="w"> </span>auid&gt;<span class="o">=</span><span class="m">1000</span><span class="w"> </span>-k<span class="w"> </span>perm_mod
+<a id="__codelineno-23-18" name="__codelineno-23-18" href="#__codelineno-23-18"></a>-a<span class="w"> </span>always,exit<span class="w"> </span>-F<span class="w"> </span><span class="nv">arch</span><span class="o">=</span>b64<span class="w"> </span>-S<span class="w"> </span>chown,fchown,fchownat<span class="w"> </span>-F<span class="w"> </span>auid&gt;<span class="o">=</span><span class="m">1000</span><span class="w"> </span>-k<span class="w"> </span>perm_mod
+<a id="__codelineno-23-19" name="__codelineno-23-19" href="#__codelineno-23-19"></a>
+<a id="__codelineno-23-20" name="__codelineno-23-20" href="#__codelineno-23-20"></a><span class="c1"># 监控文件删除（异常清痕）</span>
+<a id="__codelineno-23-21" name="__codelineno-23-21" href="#__codelineno-23-21"></a>-a<span class="w"> </span>always,exit<span class="w"> </span>-F<span class="w"> </span><span class="nv">arch</span><span class="o">=</span>b64<span class="w"> </span>-S<span class="w"> </span>unlink,unlinkat,rename,renameat<span class="w"> </span>-F<span class="w"> </span>auid&gt;<span class="o">=</span><span class="m">1000</span><span class="w"> </span>-k<span class="w"> </span>delete
+<a id="__codelineno-23-22" name="__codelineno-23-22" href="#__codelineno-23-22"></a>
+<a id="__codelineno-23-23" name="__codelineno-23-23" href="#__codelineno-23-23"></a><span class="c1"># 监控网络相关</span>
+<a id="__codelineno-23-24" name="__codelineno-23-24" href="#__codelineno-23-24"></a>-a<span class="w"> </span>always,exit<span class="w"> </span>-F<span class="w"> </span><span class="nv">arch</span><span class="o">=</span>b64<span class="w"> </span>-S<span class="w"> </span>socket,bind,connect<span class="w"> </span>-F<span class="w"> </span><span class="nv">success</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>-k<span class="w"> </span>net
+<a id="__codelineno-23-25" name="__codelineno-23-25" href="#__codelineno-23-25"></a>
+<a id="__codelineno-23-26" name="__codelineno-23-26" href="#__codelineno-23-26"></a>augenrules<span class="w"> </span>--load
+<a id="__codelineno-23-27" name="__codelineno-23-27" href="#__codelineno-23-27"></a>
+<a id="__codelineno-23-28" name="__codelineno-23-28" href="#__codelineno-23-28"></a><span class="c1"># 查日志</span>
+<a id="__codelineno-23-29" name="__codelineno-23-29" href="#__codelineno-23-29"></a>ausearch<span class="w"> </span>-k<span class="w"> </span>identity<span class="w"> </span>--start<span class="w"> </span>today
+<a id="__codelineno-23-30" name="__codelineno-23-30" href="#__codelineno-23-30"></a>aureport<span class="w"> </span>-au<span class="w"> </span>-i<span class="w">               </span><span class="c1"># 认证报告</span>
+<a id="__codelineno-23-31" name="__codelineno-23-31" href="#__codelineno-23-31"></a>aureport<span class="w"> </span>-e<span class="w"> </span>-i<span class="w">                </span><span class="c1"># 事件统计</span>
+</code></pre></div>
+<h3 id="82-systemd-journald">8.2 systemd-journald<a class="headerlink" href="#82-systemd-journald" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># /etc/systemd/journald.conf</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="o">[</span>Journal<span class="o">]</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="nv">Storage</span><span class="o">=</span>persistent<span class="w">              </span><span class="c1"># 持久化到磁盘</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="nv">Compress</span><span class="o">=</span>yes
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="nv">SystemMaxUse</span><span class="o">=</span>2G
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="nv">RuntimeMaxUse</span><span class="o">=</span>200M
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="nv">ForwardToSyslog</span><span class="o">=</span>yes
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="nv">MaxLevelStore</span><span class="o">=</span>info
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>
+<a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="c1"># 查日志</span>
+<a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>journalctl<span class="w"> </span>-u<span class="w"> </span>sshd<span class="w"> </span>-f
+<a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>journalctl<span class="w"> </span>--since<span class="w"> </span><span class="s2">&quot;1 hour ago&quot;</span><span class="w"> </span>-p<span class="w"> </span>err
+<a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>journalctl<span class="w"> </span>--boot<span class="o">=</span>-1
+</code></pre></div>
+<h3 id="83">8.3 集中日志（必备）<a class="headerlink" href="#83" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>本地审计 → 集中化:
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>  - Filebeat / Fluentd / Vector 采集
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>  - rsyslog → Loki / ELK
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>  - Wazuh Agent 上报 SIEM
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>保留周期:
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a>  - 等保要求 ≥ 6 个月
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>  - PCI-DSS ≥ 1 年
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a>  - 金融行业 ≥ 3 年
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a>
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a>不可篡改:
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a>  - 离线归档（S3 Object Lock）
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>  - 集中 + 仅追加
+</code></pre></div>
+<h2 id="_7">九、进程与运行时检测<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="91">9.1 异常进程发现<a class="headerlink" href="#91" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># 找异常进程</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>ps<span class="w"> </span>auxf
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>ps<span class="w"> </span>-eo<span class="w"> </span>user,pid,ppid,cmd<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;^USER&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>awk<span class="w"> </span><span class="s1">&#39;{print $1}&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort<span class="w"> </span>-u<span class="w">   </span><span class="c1"># 用户列表</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="c1"># 进程网络连接</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>lsof<span class="w"> </span>-i<span class="w"> </span>-P<span class="w"> </span>-n
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>ss<span class="w"> </span>-tulnp
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a><span class="c1"># 隐藏进程（rootkit）</span>
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>ls<span class="w"> </span>/proc<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;^[0-9]+$&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l<span class="w">    </span><span class="c1"># 不一致 = 可疑</span>
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a><span class="c1"># 检查 /proc/&lt;pid&gt;/exe 是否删除</span>
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a>ls<span class="w"> </span>-l<span class="w"> </span>/proc/*/exe<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>deleted
+</code></pre></div>
+<h3 id="92-rkhunter-chkrootkit">9.2 rkhunter / chkrootkit<a class="headerlink" href="#92-rkhunter-chkrootkit" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>apt<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>rkhunter<span class="w"> </span>chkrootkit
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>rkhunter<span class="w"> </span>--update
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>rkhunter<span class="w"> </span>--check<span class="w"> </span>--skip-keypress
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>chkrootkit
+</code></pre></div>
+<h3 id="93-falco">9.3 Falco（运行时威胁检测）<a class="headerlink" href="#93-falco" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># falco_rules.yaml 示例</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">rule</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Run as root in container</span>
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a><span class="w">  </span><span class="nt">desc</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Container running as root</span>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="w">  </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">container.id != host and proc.uid = 0 and not user_known_root_containers</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="w">  </span><span class="nt">output</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Root</span><span class="nv"> </span><span class="s">container</span><span class="nv"> </span><span class="s">detected</span><span class="nv"> </span><span class="s">(user=%user.name</span><span class="nv"> </span><span class="s">container_id=%container.id)&quot;</span>
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a><span class="w">  </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WARNING</span>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">rule</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Shell spawned in container</span>
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a><span class="w">  </span><span class="nt">desc</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Suspicious shell in container</span>
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="w">  </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">spawned_process and container and shell_procs</span>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="w">  </span><span class="nt">output</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Shell</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">container</span><span class="nv"> </span><span class="s">(user=%user.name</span><span class="nv"> </span><span class="s">shell=%proc.name)&quot;</span>
+<a id="__codelineno-28-12" name="__codelineno-28-12" href="#__codelineno-28-12"></a><span class="w">  </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CRITICAL</span>
+<a id="__codelineno-28-13" name="__codelineno-28-13" href="#__codelineno-28-13"></a>
+<a id="__codelineno-28-14" name="__codelineno-28-14" href="#__codelineno-28-14"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">rule</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Sensitive file accessed</span>
+<a id="__codelineno-28-15" name="__codelineno-28-15" href="#__codelineno-28-15"></a><span class="w">  </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">open_read and fd.name in (/etc/shadow, /etc/sudoers)</span>
+<a id="__codelineno-28-16" name="__codelineno-28-16" href="#__codelineno-28-16"></a><span class="w">  </span><span class="nt">output</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Sensitive</span><span class="nv"> </span><span class="s">file</span><span class="nv"> </span><span class="s">%fd.name</span><span class="nv"> </span><span class="s">accessed</span><span class="nv"> </span><span class="s">by</span><span class="nv"> </span><span class="s">%user.name&quot;</span>
+<a id="__codelineno-28-17" name="__codelineno-28-17" href="#__codelineno-28-17"></a><span class="w">  </span><span class="nt">priority</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WARNING</span>
+</code></pre></div>
+<h3 id="94-ebpf">9.4 eBPF 现代检测<a class="headerlink" href="#94-ebpf" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>Tetragon (Cilium)        基于 eBPF 全栈观测 + 阻断
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>Tracee (Aqua)            基于 eBPF 行为分析
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a>KubeArmor                K8s 运行时安全
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a>Pixie                    eBPF 观测
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a>bpftrace                 调试 + 动态追踪
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a>优势:
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a>  - 内核级可见性
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a>  - 性能开销低
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>  - 不需修改应用
+</code></pre></div>
+<h2 id="_8">十、补丁与漏洞管理<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="101">10.1 漏洞扫描<a class="headerlink" href="#101" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1"># 主机漏洞扫描</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>✅<span class="w"> </span>OpenVAS<span class="w"> </span>/<span class="w"> </span>GVM<span class="w">       </span>开源
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>✅<span class="w"> </span>Nessus<span class="w">              </span>商业，行业标杆
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a>✅<span class="w"> </span>Lynis<span class="w">               </span>轻量
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>✅<span class="w"> </span>Vuls<span class="w">                </span>Go<span class="w"> </span>写的轻量<span class="w"> </span>CVE<span class="w"> </span>扫描
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a>
+<a id="__codelineno-30-7" name="__codelineno-30-7" href="#__codelineno-30-7"></a><span class="c1"># CIS 合规扫描</span>
+<a id="__codelineno-30-8" name="__codelineno-30-8" href="#__codelineno-30-8"></a>✅<span class="w"> </span>OpenSCAP
+<a id="__codelineno-30-9" name="__codelineno-30-9" href="#__codelineno-30-9"></a>✅<span class="w"> </span>CIS-CAT
+<a id="__codelineno-30-10" name="__codelineno-30-10" href="#__codelineno-30-10"></a>✅<span class="w"> </span>Lynis
+<a id="__codelineno-30-11" name="__codelineno-30-11" href="#__codelineno-30-11"></a>
+<a id="__codelineno-30-12" name="__codelineno-30-12" href="#__codelineno-30-12"></a><span class="c1"># 国内</span>
+<a id="__codelineno-30-13" name="__codelineno-30-13" href="#__codelineno-30-13"></a>✅<span class="w"> </span>绿盟<span class="w"> </span>/<span class="w"> </span>启明<span class="w"> </span>/<span class="w"> </span>安恒<span class="w"> </span>漏扫
+<a id="__codelineno-30-14" name="__codelineno-30-14" href="#__codelineno-30-14"></a>✅<span class="w"> </span>长亭<span class="w"> </span>安全方舟
+<a id="__codelineno-30-15" name="__codelineno-30-15" href="#__codelineno-30-15"></a>✅<span class="w"> </span>阿里云态势感知
+</code></pre></div>
+<h3 id="102-patch">10.2 patch 流程<a class="headerlink" href="#102-patch" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a>1. 漏洞情报
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>   - CVE 订阅: NVD, MITRE
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a>   - 厂商通告: Ubuntu/Red Hat USN
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a>   - 国内: CNNVD / CNVD
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a>2. 评级
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a>   - CVSS &gt;= 9.0: 24h 内
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a>   - 7.0-8.9: 7 天
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a>   - 4.0-6.9: 30 天
+<a id="__codelineno-31-10" name="__codelineno-31-10" href="#__codelineno-31-10"></a>   - &lt; 4.0: 季度
+<a id="__codelineno-31-11" name="__codelineno-31-11" href="#__codelineno-31-11"></a>
+<a id="__codelineno-31-12" name="__codelineno-31-12" href="#__codelineno-31-12"></a>3. 测试 → 灰度 → 全量
+<a id="__codelineno-31-13" name="__codelineno-31-13" href="#__codelineno-31-13"></a>4. 验证 + 留痕
+</code></pre></div>
+<h3 id="103">10.3 自动更新策略<a class="headerlink" href="#103" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="c1"># Ubuntu</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>/etc/apt/apt.conf.d/50unattended-upgrades<span class="w"> </span><span class="s">&lt;&lt;EOF</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="s">Unattended-Upgrade::Allowed-Origins {</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="s">  &quot;\${distro_id}:\${distro_codename}-security&quot;;</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="s">  &quot;\${distro_id}ESMApps:\${distro_codename}-apps-security&quot;;</span>
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="s">  &quot;\${distro_id}ESM:\${distro_codename}-infra-security&quot;;</span>
+<a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="s">};</span>
+<a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="s">Unattended-Upgrade::Automatic-Reboot &quot;true&quot;;</span>
+<a id="__codelineno-32-9" name="__codelineno-32-9" href="#__codelineno-32-9"></a><span class="s">Unattended-Upgrade::Automatic-Reboot-Time &quot;03:30&quot;;</span>
+<a id="__codelineno-32-10" name="__codelineno-32-10" href="#__codelineno-32-10"></a><span class="s">EOF</span>
+<a id="__codelineno-32-11" name="__codelineno-32-11" href="#__codelineno-32-11"></a>
+<a id="__codelineno-32-12" name="__codelineno-32-12" href="#__codelineno-32-12"></a><span class="c1"># RHEL</span>
+<a id="__codelineno-32-13" name="__codelineno-32-13" href="#__codelineno-32-13"></a>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>dnf-automatic
+<a id="__codelineno-32-14" name="__codelineno-32-14" href="#__codelineno-32-14"></a>sed<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;s/apply_updates = no/apply_updates = yes/&#39;</span><span class="w"> </span>/etc/dnf/automatic.conf
+<a id="__codelineno-32-15" name="__codelineno-32-15" href="#__codelineno-32-15"></a>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>--now<span class="w"> </span>dnf-automatic.timer
+</code></pre></div>
+<h2 id="ir">十一、应急响应（IR）速查<a class="headerlink" href="#ir" title="Permanent link">&para;</a></h2>
+<h3 id="111">11.1 入侵迹象排查<a class="headerlink" href="#111" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="c1"># 登录/会话</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a>last<span class="w"> </span>-a<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a>lastb<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w">                    </span><span class="c1"># 失败登录</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>w
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a>who<span class="w"> </span>-a
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>cat<span class="w"> </span>/var/log/auth.log<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span>fail
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a>
+<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="c1"># 用户/账户</span>
+<a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a>awk<span class="w"> </span>-F:<span class="w"> </span><span class="s1">&#39;$3 == 0 {print}&#39;</span><span class="w"> </span>/etc/passwd<span class="w">           </span><span class="c1"># 多个 UID=0</span>
+<a id="__codelineno-33-10" name="__codelineno-33-10" href="#__codelineno-33-10"></a>awk<span class="w"> </span>-F:<span class="w"> </span><span class="s1">&#39;$2 != &quot;x&quot; {print}&#39;</span><span class="w"> </span>/etc/passwd<span class="w">          </span><span class="c1"># 空密码</span>
+<a id="__codelineno-33-11" name="__codelineno-33-11" href="#__codelineno-33-11"></a>grep<span class="w"> </span>-v<span class="w"> </span><span class="s1">&#39;^[#$/]&#39;</span><span class="w"> </span>/etc/sudoers<span class="w"> </span>/etc/sudoers.d/*
+<a id="__codelineno-33-12" name="__codelineno-33-12" href="#__codelineno-33-12"></a>
+<a id="__codelineno-33-13" name="__codelineno-33-13" href="#__codelineno-33-13"></a><span class="c1"># 计划任务</span>
+<a id="__codelineno-33-14" name="__codelineno-33-14" href="#__codelineno-33-14"></a>crontab<span class="w"> </span>-l
+<a id="__codelineno-33-15" name="__codelineno-33-15" href="#__codelineno-33-15"></a>ls<span class="w"> </span>-la<span class="w"> </span>/etc/cron.*<span class="w"> </span>/var/spool/cron/
+<a id="__codelineno-33-16" name="__codelineno-33-16" href="#__codelineno-33-16"></a>cat<span class="w"> </span>/etc/crontab
+<a id="__codelineno-33-17" name="__codelineno-33-17" href="#__codelineno-33-17"></a>systemctl<span class="w"> </span>list-timers<span class="w"> </span>--all
+<a id="__codelineno-33-18" name="__codelineno-33-18" href="#__codelineno-33-18"></a>
+<a id="__codelineno-33-19" name="__codelineno-33-19" href="#__codelineno-33-19"></a><span class="c1"># 网络连接</span>
+<a id="__codelineno-33-20" name="__codelineno-33-20" href="#__codelineno-33-20"></a>netstat<span class="w"> </span>-antp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>ESTAB
+<a id="__codelineno-33-21" name="__codelineno-33-21" href="#__codelineno-33-21"></a>ss<span class="w"> </span>-tnp
+<a id="__codelineno-33-22" name="__codelineno-33-22" href="#__codelineno-33-22"></a>lsof<span class="w"> </span>-i<span class="w"> </span>:22
+<a id="__codelineno-33-23" name="__codelineno-33-23" href="#__codelineno-33-23"></a>
+<a id="__codelineno-33-24" name="__codelineno-33-24" href="#__codelineno-33-24"></a><span class="c1"># 进程</span>
+<a id="__codelineno-33-25" name="__codelineno-33-25" href="#__codelineno-33-25"></a>ps<span class="w"> </span>auxf<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span><span class="s2">&quot;^\[\|^USER&quot;</span>
+<a id="__codelineno-33-26" name="__codelineno-33-26" href="#__codelineno-33-26"></a>ls<span class="w"> </span>-la<span class="w"> </span>/proc/*/exe<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>deleted
+<a id="__codelineno-33-27" name="__codelineno-33-27" href="#__codelineno-33-27"></a>
+<a id="__codelineno-33-28" name="__codelineno-33-28" href="#__codelineno-33-28"></a><span class="c1"># 文件</span>
+<a id="__codelineno-33-29" name="__codelineno-33-29" href="#__codelineno-33-29"></a>find<span class="w"> </span>/<span class="w"> </span>-ctime<span class="w"> </span>-7<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-not<span class="w"> </span>-path<span class="w"> </span><span class="s2">&quot;/proc/*&quot;</span><span class="w"> </span>-not<span class="w"> </span>-path<span class="w"> </span><span class="s2">&quot;/sys/*&quot;</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w">   </span><span class="c1"># 7 天内变化</span>
+<a id="__codelineno-33-30" name="__codelineno-33-30" href="#__codelineno-33-30"></a>find<span class="w"> </span>/<span class="w"> </span>-mtime<span class="w"> </span>-1<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.sh&quot;</span><span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+<a id="__codelineno-33-31" name="__codelineno-33-31" href="#__codelineno-33-31"></a>find<span class="w"> </span>/<span class="w"> </span>-size<span class="w"> </span>+50M<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+<a id="__codelineno-33-32" name="__codelineno-33-32" href="#__codelineno-33-32"></a>
+<a id="__codelineno-33-33" name="__codelineno-33-33" href="#__codelineno-33-33"></a><span class="c1"># 启动项</span>
+<a id="__codelineno-33-34" name="__codelineno-33-34" href="#__codelineno-33-34"></a>ls<span class="w"> </span>/etc/init.d/<span class="w"> </span>/etc/rc*.d/
+<a id="__codelineno-33-35" name="__codelineno-33-35" href="#__codelineno-33-35"></a>systemctl<span class="w"> </span>list-unit-files<span class="w"> </span>--state<span class="o">=</span>enabled
+<a id="__codelineno-33-36" name="__codelineno-33-36" href="#__codelineno-33-36"></a>ls<span class="w"> </span>-la<span class="w"> </span>/etc/systemd/system/*.service
+<a id="__codelineno-33-37" name="__codelineno-33-37" href="#__codelineno-33-37"></a>
+<a id="__codelineno-33-38" name="__codelineno-33-38" href="#__codelineno-33-38"></a><span class="c1"># 历史命令</span>
+<a id="__codelineno-33-39" name="__codelineno-33-39" href="#__codelineno-33-39"></a>cat<span class="w"> </span>~/.bash_history
+<a id="__codelineno-33-40" name="__codelineno-33-40" href="#__codelineno-33-40"></a>cat<span class="w"> </span>/root/.bash_history
+<a id="__codelineno-33-41" name="__codelineno-33-41" href="#__codelineno-33-41"></a>last<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
+<a id="__codelineno-33-42" name="__codelineno-33-42" href="#__codelineno-33-42"></a>
+<a id="__codelineno-33-43" name="__codelineno-33-43" href="#__codelineno-33-43"></a><span class="c1"># 隐藏文件 / 大文件</span>
+<a id="__codelineno-33-44" name="__codelineno-33-44" href="#__codelineno-33-44"></a>find<span class="w"> </span>/<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;.*&quot;</span><span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-mtime<span class="w"> </span>-7<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+<a id="__codelineno-33-45" name="__codelineno-33-45" href="#__codelineno-33-45"></a>ls<span class="w"> </span>-laR<span class="w"> </span>/tmp<span class="w"> </span>/var/tmp<span class="w"> </span>/dev/shm<span class="w"> </span>/home/*/.*<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+</code></pre></div>
+<h3 id="112-ir">11.2 IR 处置步骤<a class="headerlink" href="#112-ir" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a>1. 隔离（断网或加策略）
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>   iptables -I INPUT -j DROP
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>   或停业务保留现场
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a>2. 取证（不要重启！）
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>   - 镜像磁盘（dd / dc3dd）
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a>   - 内存 dump（LiME / AVML）
+<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>   - 网络流量包（tcpdump）
+<a id="__codelineno-34-9" name="__codelineno-34-9" href="#__codelineno-34-9"></a>   - 关键日志归档
+<a id="__codelineno-34-10" name="__codelineno-34-10" href="#__codelineno-34-10"></a>
+<a id="__codelineno-34-11" name="__codelineno-34-11" href="#__codelineno-34-11"></a>3. 初步分析
+<a id="__codelineno-34-12" name="__codelineno-34-12" href="#__codelineno-34-12"></a>   - 入侵时间窗口
+<a id="__codelineno-34-13" name="__codelineno-34-13" href="#__codelineno-34-13"></a>   - 入侵路径（CVE / 弱密码 / 钓鱼）
+<a id="__codelineno-34-14" name="__codelineno-34-14" href="#__codelineno-34-14"></a>   - 横向移动范围
+<a id="__codelineno-34-15" name="__codelineno-34-15" href="#__codelineno-34-15"></a>   - 数据外泄评估
+<a id="__codelineno-34-16" name="__codelineno-34-16" href="#__codelineno-34-16"></a>
+<a id="__codelineno-34-17" name="__codelineno-34-17" href="#__codelineno-34-17"></a>4. 清除（按 IR 流程）
+<a id="__codelineno-34-18" name="__codelineno-34-18" href="#__codelineno-34-18"></a>   - 修补漏洞
+<a id="__codelineno-34-19" name="__codelineno-34-19" href="#__codelineno-34-19"></a>   - 重置密码 / 密钥
+<a id="__codelineno-34-20" name="__codelineno-34-20" href="#__codelineno-34-20"></a>   - 清除 webshell / 后门
+<a id="__codelineno-34-21" name="__codelineno-34-21" href="#__codelineno-34-21"></a>   - 重做系统（推荐，比清更可靠）
+<a id="__codelineno-34-22" name="__codelineno-34-22" href="#__codelineno-34-22"></a>
+<a id="__codelineno-34-23" name="__codelineno-34-23" href="#__codelineno-34-23"></a>5. 恢复 + 加强
+<a id="__codelineno-34-24" name="__codelineno-34-24" href="#__codelineno-34-24"></a>   - 业务恢复
+<a id="__codelineno-34-25" name="__codelineno-34-25" href="#__codelineno-34-25"></a>   - 加强监控
+<a id="__codelineno-34-26" name="__codelineno-34-26" href="#__codelineno-34-26"></a>   - 补 IDS 规则
+<a id="__codelineno-34-27" name="__codelineno-34-27" href="#__codelineno-34-27"></a>
+<a id="__codelineno-34-28" name="__codelineno-34-28" href="#__codelineno-34-28"></a>6. 复盘
+<a id="__codelineno-34-29" name="__codelineno-34-29" href="#__codelineno-34-29"></a>   - 时间线
+<a id="__codelineno-34-30" name="__codelineno-34-30" href="#__codelineno-34-30"></a>   - 改进项
+<a id="__codelineno-34-31" name="__codelineno-34-31" href="#__codelineno-34-31"></a>   - 经验沉淀
+</code></pre></div>
+<h3 id="113">11.3 取证工具<a class="headerlink" href="#113" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>镜像:     dd, dc3dd, FTK Imager
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>内存:     LiME (Linux), AVML (Linux), Volatility (分析)
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>分析:     Sleuthkit, Autopsy, plaso/log2timeline
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a>网络:     Wireshark, tshark, NetworkMiner
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>全套:     SIFT Workstation, CAINE, REMnux
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>国产:     美亚柏科、奇安信、绿盟
+</code></pre></div>
+<h2 id="_9">十二、合规与等保<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="121-20">12.1 等保 2.0 三级要求要点<a class="headerlink" href="#121-20" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>1. 身份鉴别       双因素 / 复杂密码 / 锁定策略
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>2. 访问控制       最小权限 / 强制访问控制
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>3. 安全审计       日志保留 ≥ 6 个月 / 不可篡改
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a>4. 入侵防范       入侵检测 / 漏洞扫描
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>5. 恶意代码防范   防病毒
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>6. 数据完整性     传输 / 存储加密
+<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>7. 数据保密性     重要数据加密
+<a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a>8. 数据备份恢复   异地备份
+<a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a>9. 剩余信息保护   存储介质擦除
+<a id="__codelineno-36-10" name="__codelineno-36-10" href="#__codelineno-36-10"></a>10. 个人信息保护   合规收集 / 使用
+</code></pre></div>
+<h3 id="122">12.2 工具映射<a class="headerlink" href="#122" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>身份: PAM / Keycloak / LDAP / MFA
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>访问: SELinux / AppArmor / sudo
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>审计: auditd / Wazuh / ELK / SIEM
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a>入侵: Falco / Suricata / OSSEC / Wazuh
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a>反病毒: ClamAV (Linux) / 国产
+<a id="__codelineno-37-6" name="__codelineno-37-6" href="#__codelineno-37-6"></a>加密: LUKS / TLS / Vault
+<a id="__codelineno-37-7" name="__codelineno-37-7" href="#__codelineno-37-7"></a>备份: BorgBackup / Restic / Duplicity
+</code></pre></div>
+<h2 id="_10">十三、典型坑<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>root 远程 ssh</strong></td>
+<td style="text-align: left;">必禁</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>密码登录</strong></td>
+<td style="text-align: left;">强制密钥</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>默认密码不改</strong></td>
+<td style="text-align: left;">install 后立即</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>未启 SELinux/AppArmor</strong></td>
+<td style="text-align: left;">enforcing</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>sudo 全开</strong></td>
+<td style="text-align: left;">命令白名单</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>未禁高危 SUID</strong></td>
+<td style="text-align: left;">月度审计</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>裸 firewalld 默认 allow</strong></td>
+<td style="text-align: left;">drop</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>未启 auditd</strong></td>
+<td style="text-align: left;">等保红线</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>日志只本地</strong></td>
+<td style="text-align: left;">集中 + 离线</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>补丁拖延</strong></td>
+<td style="text-align: left;">自动更新</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>共用密钥</strong></td>
+<td style="text-align: left;">一人一钥</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>凭证写脚本</strong></td>
+<td style="text-align: left;">Vault</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>/tmp 可执行</strong></td>
+<td style="text-align: left;">noexec</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>dmesg / kallsyms 暴露</strong></td>
+<td style="text-align: left;">限制</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>/proc 全开</strong></td>
+<td style="text-align: left;">hidepid=2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>历史命令不入审计</strong></td>
+<td style="text-align: left;">sudo I/O log</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>裸跑 SSH 22</strong></td>
+<td style="text-align: left;">改端口 + fail2ban + MFA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>未隔离管理网</strong></td>
+<td style="text-align: left;">管理面独立 VLAN</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checklist">十四、加固 Checklist（生产可对照）<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a>账户:
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>☐ root 不可远程
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>☐ 密码策略（14+ / 复杂度 / 90 天）
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>☐ MFA 启用
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a>☐ SSH 仅密钥
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a>☐ SSH AllowUsers 白名单
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>☐ sudo 最小化 + 日志
+<a id="__codelineno-38-8" name="__codelineno-38-8" href="#__codelineno-38-8"></a>☐ 默认密码全清
+<a id="__codelineno-38-9" name="__codelineno-38-9" href="#__codelineno-38-9"></a>
+<a id="__codelineno-38-10" name="__codelineno-38-10" href="#__codelineno-38-10"></a>系统:
+<a id="__codelineno-38-11" name="__codelineno-38-11" href="#__codelineno-38-11"></a>☐ SELinux/AppArmor enforcing
+<a id="__codelineno-38-12" name="__codelineno-38-12" href="#__codelineno-38-12"></a>☐ sysctl 安全基线
+<a id="__codelineno-38-13" name="__codelineno-38-13" href="#__codelineno-38-13"></a>☐ 内核自动更新
+<a id="__codelineno-38-14" name="__codelineno-38-14" href="#__codelineno-38-14"></a>☐ 移除无用服务
+<a id="__codelineno-38-15" name="__codelineno-38-15" href="#__codelineno-38-15"></a>☐ noexec/nosuid 挂载
+<a id="__codelineno-38-16" name="__codelineno-38-16" href="#__codelineno-38-16"></a>☐ /tmp 限制大小
+<a id="__codelineno-38-17" name="__codelineno-38-17" href="#__codelineno-38-17"></a>
+<a id="__codelineno-38-18" name="__codelineno-38-18" href="#__codelineno-38-18"></a>网络:
+<a id="__codelineno-38-19" name="__codelineno-38-19" href="#__codelineno-38-19"></a>☐ nftables/firewalld 默认 drop
+<a id="__codelineno-38-20" name="__codelineno-38-20" href="#__codelineno-38-20"></a>☐ 仅必要端口
+<a id="__codelineno-38-21" name="__codelineno-38-21" href="#__codelineno-38-21"></a>☐ 监听 ip 限制
+<a id="__codelineno-38-22" name="__codelineno-38-22" href="#__codelineno-38-22"></a>☐ fail2ban
+<a id="__codelineno-38-23" name="__codelineno-38-23" href="#__codelineno-38-23"></a>☐ 管理网/业务网隔离
+<a id="__codelineno-38-24" name="__codelineno-38-24" href="#__codelineno-38-24"></a>
+<a id="__codelineno-38-25" name="__codelineno-38-25" href="#__codelineno-38-25"></a>文件:
+<a id="__codelineno-38-26" name="__codelineno-38-26" href="#__codelineno-38-26"></a>☐ 关键文件权限正确
+<a id="__codelineno-38-27" name="__codelineno-38-27" href="#__codelineno-38-27"></a>☐ SUID/SGID 审计
+<a id="__codelineno-38-28" name="__codelineno-38-28" href="#__codelineno-38-28"></a>☐ FIM (AIDE)
+<a id="__codelineno-38-29" name="__codelineno-38-29" href="#__codelineno-38-29"></a>☐ LUKS 全盘加密
+<a id="__codelineno-38-30" name="__codelineno-38-30" href="#__codelineno-38-30"></a>
+<a id="__codelineno-38-31" name="__codelineno-38-31" href="#__codelineno-38-31"></a>日志:
+<a id="__codelineno-38-32" name="__codelineno-38-32" href="#__codelineno-38-32"></a>☐ auditd 启用
+<a id="__codelineno-38-33" name="__codelineno-38-33" href="#__codelineno-38-33"></a>☐ journald 持久化
+<a id="__codelineno-38-34" name="__codelineno-38-34" href="#__codelineno-38-34"></a>☐ 集中日志（≥ 6 月）
+<a id="__codelineno-38-35" name="__codelineno-38-35" href="#__codelineno-38-35"></a>☐ 日志不可篡改
+<a id="__codelineno-38-36" name="__codelineno-38-36" href="#__codelineno-38-36"></a>
+<a id="__codelineno-38-37" name="__codelineno-38-37" href="#__codelineno-38-37"></a>检测:
+<a id="__codelineno-38-38" name="__codelineno-38-38" href="#__codelineno-38-38"></a>☐ Wazuh/OSSEC 部署
+<a id="__codelineno-38-39" name="__codelineno-38-39" href="#__codelineno-38-39"></a>☐ Falco 容器侧
+<a id="__codelineno-38-40" name="__codelineno-38-40" href="#__codelineno-38-40"></a>☐ 周度漏扫
+<a id="__codelineno-38-41" name="__codelineno-38-41" href="#__codelineno-38-41"></a>☐ 月度 CIS 扫描
+<a id="__codelineno-38-42" name="__codelineno-38-42" href="#__codelineno-38-42"></a>
+<a id="__codelineno-38-43" name="__codelineno-38-43" href="#__codelineno-38-43"></a>应急:
+<a id="__codelineno-38-44" name="__codelineno-38-44" href="#__codelineno-38-44"></a>☐ IR 流程文档
+<a id="__codelineno-38-45" name="__codelineno-38-45" href="#__codelineno-38-45"></a>☐ 取证工具就位
+<a id="__codelineno-38-46" name="__codelineno-38-46" href="#__codelineno-38-46"></a>☐ 备份 + 异地
+<a id="__codelineno-38-47" name="__codelineno-38-47" href="#__codelineno-38-47"></a>☐ 演练（季度）
+</code></pre></div>
+<h2 id="2025">十五、技术栈推荐（2025）<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h2>
+<h3 id="151">15.1 小团队<a class="headerlink" href="#151" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>基线:     OpenSCAP + ansible-lockdown
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>HIDS:    Wazuh
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>FIM:     AIDE
+<a id="__codelineno-39-4" name="__codelineno-39-4" href="#__codelineno-39-4"></a>日志:    journald → Loki
+<a id="__codelineno-39-5" name="__codelineno-39-5" href="#__codelineno-39-5"></a>漏扫:    Lynis + Vuls
+<a id="__codelineno-39-6" name="__codelineno-39-6" href="#__codelineno-39-6"></a>防火墙:  nftables
+<a id="__codelineno-39-7" name="__codelineno-39-7" href="#__codelineno-39-7"></a>MFA:     Google Authenticator
+</code></pre></div>
+<h3 id="152">15.2 中大企业<a class="headerlink" href="#152" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>SIEM:     Wazuh / Splunk / 长亭 雷池
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>HIDS:     Wazuh Agent / Tetragon / Falco
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>漏扫:    Nessus + 自动化补丁
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a>合规:    OpenSCAP + CIS-CAT + 等保
+<a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>EDR:     SentinelOne / 奇安信
+<a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>密钥:    Vault
+<a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a>身份:    Keycloak + MFA + SSO
+<a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a>应急:    SIFT + 内部 IR 团队
+</code></pre></div>
+<h2 id="_11">十六、学习路径<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>入门（2 周）:
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a>  1. 装一台 RHEL/Ubuntu，跑 Lynis
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>  2. CIS 基础加固
+<a id="__codelineno-41-4" name="__codelineno-41-4" href="#__codelineno-41-4"></a>  3. SSH 密钥 + sshd 加固
+<a id="__codelineno-41-5" name="__codelineno-41-5" href="#__codelineno-41-5"></a>  4. 防火墙基础
+<a id="__codelineno-41-6" name="__codelineno-41-6" href="#__codelineno-41-6"></a>
+<a id="__codelineno-41-7" name="__codelineno-41-7" href="#__codelineno-41-7"></a>中级（1 个月）:
+<a id="__codelineno-41-8" name="__codelineno-41-8" href="#__codelineno-41-8"></a>  5. SELinux/AppArmor 实战
+<a id="__codelineno-41-9" name="__codelineno-41-9" href="#__codelineno-41-9"></a>  6. auditd 规则编写
+<a id="__codelineno-41-10" name="__codelineno-41-10" href="#__codelineno-41-10"></a>  7. Wazuh 部署 + 接入
+<a id="__codelineno-41-11" name="__codelineno-41-11" href="#__codelineno-41-11"></a>  8. AIDE / FIM
+<a id="__codelineno-41-12" name="__codelineno-41-12" href="#__codelineno-41-12"></a>  9. 自动补丁
+<a id="__codelineno-41-13" name="__codelineno-41-13" href="#__codelineno-41-13"></a>
+<a id="__codelineno-41-14" name="__codelineno-41-14" href="#__codelineno-41-14"></a>高级（3 个月）:
+<a id="__codelineno-41-15" name="__codelineno-41-15" href="#__codelineno-41-15"></a>  10. Falco / eBPF 运行时
+<a id="__codelineno-41-16" name="__codelineno-41-16" href="#__codelineno-41-16"></a>  11. Capability 应用硬化
+<a id="__codelineno-41-17" name="__codelineno-41-17" href="#__codelineno-41-17"></a>  12. systemd 服务硬化
+<a id="__codelineno-41-18" name="__codelineno-41-18" href="#__codelineno-41-18"></a>  13. IR + 取证流程
+<a id="__codelineno-41-19" name="__codelineno-41-19" href="#__codelineno-41-19"></a>  14. 等保合规
+<a id="__codelineno-41-20" name="__codelineno-41-20" href="#__codelineno-41-20"></a>  15. 大规模自动化加固
+</code></pre></div>
+<h2 id="_12">十七、参考资料<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a>标准:
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>  - CIS Benchmarks
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a>  - NIST SP 800-53
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>  - DISA STIG
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a>  - 等保 2.0 / GB/T 22239
+<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a>  - PCI-DSS
+<a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a>
+<a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a>书:
+<a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a>  - 《Linux Hardening》(O&#39;Reilly)
+<a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a>  - 《Practical Linux Forensics》
+<a id="__codelineno-42-11" name="__codelineno-42-11" href="#__codelineno-42-11"></a>  - 《The Linux Audit System》
+<a id="__codelineno-42-12" name="__codelineno-42-12" href="#__codelineno-42-12"></a>
+<a id="__codelineno-42-13" name="__codelineno-42-13" href="#__codelineno-42-13"></a>工具:
+<a id="__codelineno-42-14" name="__codelineno-42-14" href="#__codelineno-42-14"></a>  - OpenSCAP: https://www.open-scap.org/
+<a id="__codelineno-42-15" name="__codelineno-42-15" href="#__codelineno-42-15"></a>  - Wazuh: https://wazuh.com/
+<a id="__codelineno-42-16" name="__codelineno-42-16" href="#__codelineno-42-16"></a>  - Lynis: https://cisofy.com/lynis/
+<a id="__codelineno-42-17" name="__codelineno-42-17" href="#__codelineno-42-17"></a>  - Falco: https://falco.org/
+<a id="__codelineno-42-18" name="__codelineno-42-18" href="#__codelineno-42-18"></a>  - Tetragon: https://tetragon.io/
+<a id="__codelineno-42-19" name="__codelineno-42-19" href="#__codelineno-42-19"></a>
+<a id="__codelineno-42-20" name="__codelineno-42-20" href="#__codelineno-42-20"></a>社区:
+<a id="__codelineno-42-21" name="__codelineno-42-21" href="#__codelineno-42-21"></a>  - r/linuxhardening
+<a id="__codelineno-42-22" name="__codelineno-42-22" href="#__codelineno-42-22"></a>  - awesome-linux-security GitHub
+<a id="__codelineno-42-23" name="__codelineno-42-23" href="#__codelineno-42-23"></a>  - 国内: 看雪 / FreeBuf / 安全客
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：Linux 安全 = <strong>基线加固 + 最小权限 + 集中日志 + HIDS 检测 + 快速补丁 + 应急响应</strong>。<strong>CIS Benchmarks</strong> 是事实标准，<strong>OpenSCAP + Ansible 自动化加固 + Wazuh SIEM</strong> 是国内可落地的黄金组合。最容易翻车的不是技术，而是：<strong>root 远程没禁、密码登录没关、日志不集中、补丁拖延</strong>——这四条做不到，所有上层安全都是空中楼阁。</p>
+</blockquote>
 
 
 

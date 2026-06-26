@@ -1550,10 +1550,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cve-cvss" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CVE / CVSS
+        一、漏洞管理生命周期
       
     </span>
   </a>
@@ -1561,10 +1561,465 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        漏洞扫描
+        二、漏洞评级体系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、漏洞评级体系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-cvss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 CVSS（通用漏洞评分）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-epss-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 EPSS（漏洞利用预测）⭐ 2025 新主流
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-kev" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 KEV（已知被利用漏洞）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 综合优先级模型（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、漏洞发现来源
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、漏洞发现来源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 自动扫描
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 渗透测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-bug-bounty-src" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Bug Bounty / SRC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 情报订阅
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、漏洞工单平台
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、漏洞工单平台">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-defectdojo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 DefectDojo（开源 ⭐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 商业平台
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-jira" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Jira / 飞书工单流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、修复策略
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、修复策略">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 三种处置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-sla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 修复 SLA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-log4shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 紧急修复（Log4Shell 级）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 虚拟补丁
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0day" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、零日（0day）应对
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、零日（0day）应对">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 检测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 处置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、典型漏洞类型与防御
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、典型漏洞类型与防御">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-web-owasp-top-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Web 漏洞 (OWASP Top 10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-cve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 中间件常见 CVE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-cve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 主机 CVE 关键应对
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、度量与改进
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、度量与改进">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 关键指标 (KPI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 定期报告
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、合规与漏洞管理
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、最佳实践 Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、推荐技术栈（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、推荐技术栈（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 小团队
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 中大企业
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 国产/信创
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、参考资料
       
     </span>
   </a>
@@ -1816,10 +2271,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#cve-cvss" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CVE / CVSS
+        一、漏洞管理生命周期
       
     </span>
   </a>
@@ -1827,10 +2282,465 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        漏洞扫描
+        二、漏洞评级体系
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、漏洞评级体系">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-cvss" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 CVSS（通用漏洞评分）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-epss-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 EPSS（漏洞利用预测）⭐ 2025 新主流
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-kev" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 KEV（已知被利用漏洞）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 综合优先级模型（推荐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、漏洞发现来源
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、漏洞发现来源">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 自动扫描
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 渗透测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-bug-bounty-src" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Bug Bounty / SRC
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 情报订阅
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、漏洞工单平台
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、漏洞工单平台">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-defectdojo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 DefectDojo（开源 ⭐）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 商业平台
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-jira" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Jira / 飞书工单流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、修复策略
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、修复策略">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 三种处置
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-sla" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 修复 SLA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-log4shell" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 紧急修复（Log4Shell 级）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 虚拟补丁
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#0day" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、零日（0day）应对
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、零日（0day）应对">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.1 检测
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6.2 处置
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、典型漏洞类型与防御
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、典型漏洞类型与防御">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-web-owasp-top-10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Web 漏洞 (OWASP Top 10)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-cve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 中间件常见 CVE
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-cve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 主机 CVE 关键应对
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、度量与改进
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、度量与改进">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-kpi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 关键指标 (KPI)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 定期报告
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、合规与漏洞管理
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、典型坑
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、最佳实践 Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十二、推荐技术栈（2025）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十二、推荐技术栈（2025）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 小团队
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 中大企业
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#123" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.3 国产/信创
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十三、学习路径
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十四、参考资料
       
     </span>
   </a>
@@ -1906,45 +2816,683 @@
 
 
 <h1 id="_1">漏洞管理<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<h2 id="cve-cvss">CVE / CVSS<a class="headerlink" href="#cve-cvss" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>漏洞管理 = <strong>发现 + 评估 + 优先级排序 + 修复 + 验证 + 度量</strong>。<strong>漏洞永远修不完，关键是修对的</strong>。<strong>漏洞密度（vulnerability density）和修复时间（MTTR）</strong> 比漏洞总数更重要。</p>
+</blockquote>
+<h2 id="_2">一、漏洞管理生命周期<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1. Discover          扫描 / 渗透 / 情报订阅 / Bug Bounty
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>2. Triage            评级 / 验证（去误报）
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>3. Prioritize        风险评估（CVSS + EPSS + 资产价值 + 威胁情报）
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>4. Remediate         修复 / 缓解 / 接受
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>5. Verify            验证修复
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>6. Track             度量 / 报表 / 改进
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>→ 闭环 + 度量 = 真正的漏洞管理
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>→ 不是&quot;找漏洞&quot;，是&quot;快速降低风险&quot;
+</code></pre></div>
+<h2 id="_3">二、漏洞评级体系<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="21-cvss">2.1 CVSS（通用漏洞评分）<a class="headerlink" href="#21-cvss" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>CVSS v3.1 / v4.0 (2024)
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>四个维度:
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  Base       本质属性（不变）
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    - Attack Vector (网络/邻接/本地/物理)
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    - Attack Complexity
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    - Privileges Required
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    - User Interaction
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    - Scope (变化/不变)
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    - C/I/A 影响
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  Temporal   时间属性
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    - Exploit Code Maturity
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    - Remediation Level
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    - Report Confidence
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  Environmental 环境属性
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>    - 资产价值
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>    - 安全需求
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>评分:
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  0.0       None
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  0.1-3.9   Low
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>  4.0-6.9   Medium
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>  7.0-8.9   High
+<a id="__codelineno-1-26" name="__codelineno-1-26" href="#__codelineno-1-26"></a>  9.0-10.0  Critical
+</code></pre></div>
+<h3 id="22-epss-2025">2.2 EPSS（漏洞利用预测）⭐ 2025 新主流<a class="headerlink" href="#22-epss-2025" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Exploit Prediction Scoring System (FIRST)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  - 基于机器学习
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>  - 预测&quot;未来 30 天被实际利用&quot;的概率（0-1）
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>  - 数据源: 漏洞披露、利用代码、攻击观测、社交媒体
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>为什么需要 EPSS:
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  CVSS 9.8 ≠ 一定被利用
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  CVSS 5.0 但 EPSS 0.95 → 比 9.8 但 EPSS 0.001 更危险
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>组合优先级:
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>  EPSS 高 + CVSS 高 + 资产关键 = 立即修
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>  EPSS 高 + CVSS 中             = 优先修
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>  EPSS 低 + CVSS 高             = 排队
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>  EPSS 低 + CVSS 低             = 延后
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>查询: https://epss.cyentia.com/
+</code></pre></div>
+<h3 id="23-kev">2.3 KEV（已知被利用漏洞）<a class="headerlink" href="#23-kev" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>CISA Known Exploited Vulnerabilities Catalog
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>  - 已确认在野利用的漏洞
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>  - 政府强制修复时限（通常 14 天）
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  - 比 CVSS 更&quot;硬&quot;的指标
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>→ 出现在 KEV = 立即修
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>→ 这是漏洞管理的&quot;红线&quot;
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>订阅: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+</code></pre></div>
+<h3 id="24">2.4 综合优先级模型（推荐）<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>P0 (立即修, &lt; 24h):
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>  - 在 KEV 中
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>  - EPSS ≥ 0.5 + CVSS ≥ 7
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  - 已被武器化（Metasploit / PoC 公开）
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>  - 关键资产 + 0day
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>P1 (7 天内):
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>  - CVSS ≥ 9
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>  - EPSS ≥ 0.1
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a>  - 互联网暴露 + CVSS ≥ 7
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>P2 (30 天):
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>  - CVSS 7-8.9
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>  - 内网仅暴露
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>P3 (季度):
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>  - CVSS &lt; 7
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>  - 非关键资产
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>P4 (按需):
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>  - 信息泄漏
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a>  - 配置建议
+</code></pre></div>
+<h2 id="_4">三、漏洞发现来源<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="31">3.1 自动扫描<a class="headerlink" href="#31" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>主机层:
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  - Nessus / Qualys / OpenVAS (端口、服务、CVE)
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  - Lynis (Linux 加固)
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  - Vuls (Go, 轻量 CVE)
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>容器/K8s:
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>  - Trivy / Grype / Clair
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>  - kube-bench / Kubescape / Polaris
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>Web:
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>  - Burp Suite / OWASP ZAP
+<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>  - Acunetix / AppScan
+<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a>  - 国内: 长亭 X-Ray / Goby / AWVS / 360 / 启明
+<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>
+<a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>SAST:
+<a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a>  - SonarQube / Semgrep / CodeQL
+<a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a>  - Snyk Code / Checkmarx / Fortify
+<a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+<a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a>DAST:
+<a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a>  - OWASP ZAP / Burp / Acunetix
+<a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>
+<a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a>IaC:
+<a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a>  - Checkov / tfsec / KICS
+<a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a>
+<a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a>依赖:
+<a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a>  - Snyk / OSV-Scanner / Dependabot / Renovate
+<a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a>  - Trivy fs
+<a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a>
+<a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a>云配置:
+<a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a>  - Prowler / ScoutSuite / CloudSploit
+<a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a>  - Wiz / Lacework / Aqua / Sysdig (商业)
+<a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a>
+<a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a>国产:
+<a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a>  - 长亭洞鉴 / 牧云
+<a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a>  - 奇安信 NGSOC
+<a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a>  - 绿盟 RSAS
+<a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a>  - 启明 天镜
+</code></pre></div>
+<h3 id="32">3.2 渗透测试<a class="headerlink" href="#32" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>内部渗透 (Red Team):
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  - 季度 / 年度
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>  - 全公司视角
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  - 真实攻击模拟
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>外部渗透:
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  - 第三方 / 合规要求
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>  - 等保 / PCI / SOC2
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>漏洞挖掘:
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>  - 业务上线前
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>  - 重大变更后
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>工具:
+<a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>  - Cobalt Strike / Sliver / Mythic
+<a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>  - Metasploit
+<a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>  - BloodHound (AD)
+<a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>  - Empire / Covenant
+</code></pre></div>
+<h3 id="33-bug-bounty-src">3.3 Bug Bounty / SRC<a class="headerlink" href="#33-bug-bounty-src" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>内部 SRC（应急响应中心）:
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>  - 阿里 ASRC / 腾讯 TSRC / 字节 BSRC / 美团 MTSRC
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  - 自建 / 平台代运营
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>外部平台:
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>  - HackerOne (全球)
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>  - Bugcrowd
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>  - Synack
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>  - 国内: 补天 / 漏洞盒子 / 360 SRC平台 / 火线
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>奖金区间:
+<a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>  P0: 1万-50万+
+<a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>  P1: 5千-5万
+<a id="__codelineno-7-14" name="__codelineno-7-14" href="#__codelineno-7-14"></a>  P2: 1千-1万
+<a id="__codelineno-7-15" name="__codelineno-7-15" href="#__codelineno-7-15"></a>  P3: 几百-几千
+<a id="__codelineno-7-16" name="__codelineno-7-16" href="#__codelineno-7-16"></a>
+<a id="__codelineno-7-17" name="__codelineno-7-17" href="#__codelineno-7-17"></a>收益:
+<a id="__codelineno-7-18" name="__codelineno-7-18" href="#__codelineno-7-18"></a>  ✅ 持续众测
+<a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>  ✅ 多元化视角
+<a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>  ✅ 性价比高
+</code></pre></div>
+<h3 id="34">3.4 情报订阅<a class="headerlink" href="#34" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>公共:
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  - NVD (https://nvd.nist.gov/)
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  - MITRE CVE
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  - GitHub Security Advisory
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>  - OSV (Open Source Vulnerabilities)
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>  - Vendor PSIRTs (RedHat / Ubuntu / Microsoft)
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>中文:
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>  - CNNVD (国家漏洞库)
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>  - CNVD (国家信息安全漏洞共享平台)
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>  - CN-CERT
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>  - 阿里云漏洞库 / 腾讯安全 / 奇安信
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>威胁情报商业:
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>  - Recorded Future
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>  - Mandiant
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>  - Crowdstrike Falcon Intelligence
+<a id="__codelineno-8-18" name="__codelineno-8-18" href="#__codelineno-8-18"></a>  - 国内: 微步 / 奇安信 / 安天 / 360 / 安恒
+<a id="__codelineno-8-19" name="__codelineno-8-19" href="#__codelineno-8-19"></a>
+<a id="__codelineno-8-20" name="__codelineno-8-20" href="#__codelineno-8-20"></a>订阅工具:
+<a id="__codelineno-8-21" name="__codelineno-8-21" href="#__codelineno-8-21"></a>  - email + RSS
+<a id="__codelineno-8-22" name="__codelineno-8-22" href="#__codelineno-8-22"></a>  - 自研 LLM 摘要器（详见 12_AIOps 02_LLM告警）
+</code></pre></div>
+<h2 id="_5">四、漏洞工单平台<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="41-defectdojo">4.1 DefectDojo（开源 ⭐）<a class="headerlink" href="#41-defectdojo" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># 部署</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/DefectDojo/django-DefectDojo
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="nb">cd</span><span class="w"> </span>django-DefectDojo
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>./dc-up.sh
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># 特点:</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>✅<span class="w"> </span>集成<span class="w"> </span><span class="m">50</span>+<span class="w"> </span>工具（Trivy/Snyk/Nessus/ZAP/...）
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>✅<span class="w"> </span>自动去重
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>✅<span class="w"> </span>Jira<span class="w"> </span>集成
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>✅<span class="w"> </span>SLA<span class="w"> </span>跟踪
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>✅<span class="w"> </span>报表
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>✅<span class="w"> </span>Bug<span class="w"> </span>Bounty<span class="w"> </span>流程
+</code></pre></div>
+<h3 id="42">4.2 商业平台<a class="headerlink" href="#42" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>- Snyk (开发者友好)
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>- Wiz (CNAPP)
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>- Qualys VMDR (老牌)
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>- Tenable.io (Nessus 云版)
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>- 国内: 长亭/奇安信/绿盟自研平台
+</code></pre></div>
+<h3 id="43-jira">4.3 Jira / 飞书工单流程<a class="headerlink" href="#43-jira" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>漏洞流程:
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  Reported → Triaged → Assigned → In Progress → Fixed → Verified → Closed
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>工单字段:
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>  - CVE / CVSS / EPSS / KEV
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>  - 影响资产清单
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>  - 修复 owner
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>  - SLA 截止时间
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>  - 优先级 (P0-P4)
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>  - 状态
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>  - 关联 commit / PR
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>  - 验证报告
+</code></pre></div>
+<h2 id="_6">五、修复策略<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="51">5.1 三种处置<a class="headerlink" href="#51" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>1. Remediate（修复）
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>   - 升级补丁
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>   - 重构代码
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>   - 关闭服务
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>2. Mitigate（缓解）
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>   - WAF 规则
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>   - 防火墙限制
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>   - 配置改造
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>   - 临时下线
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>3. Accept（接受）
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>   - 业务无法影响
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>   - 风险已接受签字
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>   - 补偿性控制到位
+</code></pre></div>
+<h3 id="52-sla">5.2 修复 SLA<a class="headerlink" href="#52-sla" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">等级</th>
-<th style="text-align: center;">CVSS 分数</th>
-<th style="text-align: left;">响应要求</th>
+<th style="text-align: left;">严重度</th>
+<th style="text-align: left;">互联网暴露</th>
+<th style="text-align: left;">内网</th>
+<th style="text-align: left;">离线</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">严重</td>
-<td style="text-align: center;">9.0-10.0</td>
-<td style="text-align: left;">24h 内修复</td>
+<td style="text-align: left;">KEV / 0day</td>
+<td style="text-align: left;">24h</td>
+<td style="text-align: left;">48h</td>
+<td style="text-align: left;">7 天</td>
 </tr>
 <tr>
-<td style="text-align: center;">高</td>
-<td style="text-align: center;">7.0-8.9</td>
-<td style="text-align: left;">7天</td>
+<td style="text-align: left;">Critical (CVSS 9+)</td>
+<td style="text-align: left;">24h</td>
+<td style="text-align: left;">7 天</td>
+<td style="text-align: left;">30 天</td>
 </tr>
 <tr>
-<td style="text-align: center;">中</td>
-<td style="text-align: center;">4.0-6.9</td>
-<td style="text-align: left;">30天</td>
+<td style="text-align: left;">High (7-8.9)</td>
+<td style="text-align: left;">7 天</td>
+<td style="text-align: left;">30 天</td>
+<td style="text-align: left;">90 天</td>
 </tr>
 <tr>
-<td style="text-align: center;">低</td>
-<td style="text-align: center;">0.1-3.9</td>
-<td style="text-align: left;">下次发布</td>
+<td style="text-align: left;">Medium (4-6.9)</td>
+<td style="text-align: left;">30 天</td>
+<td style="text-align: left;">90 天</td>
+<td style="text-align: left;">季度</td>
+</tr>
+<tr>
+<td style="text-align: left;">Low (&lt; 4)</td>
+<td style="text-align: left;">季度</td>
+<td style="text-align: left;">半年</td>
+<td style="text-align: left;">按需</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_2">漏洞扫描<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Nesus：商业漏洞扫描</li>
-<li>OpenVAS：开源替代</li>
-<li>Trivy：容器镜像扫描</li>
-<li>Grype：SBOM 扫描</li>
-</ul>
+<h3 id="53-log4shell">5.3 紧急修复（Log4Shell 级）<a class="headerlink" href="#53-log4shell" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>T+0:    情报订阅触发
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>T+1h:   确认范围
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>T+2h:   止血（WAF 规则 / 防火墙）
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>T+6h:   评估修复方案
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>T+24h:  灰度部署修复
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>T+72h:  全量恢复
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>T+1w:   复盘 + 加固
+</code></pre></div>
+<h3 id="54">5.4 虚拟补丁<a class="headerlink" href="#54" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>官方补丁未发布前的临时防护:
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>  - WAF 规则（拦截特定 payload）
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>  - IPS 规则（Suricata/Snort）
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>  - 防火墙规则（封 IP）
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>  - 应用层配置（关接口）
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>  - Falco rule（运行时阻断）
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>工具:
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>  - ModSecurity OWASP CRS
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>  - Cloudflare WAF custom
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a>  - 雷池 SafeLine
+<a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a>  - 长亭洞鉴自动规则
+</code></pre></div>
+<h2 id="0day">六、零日（0day）应对<a class="headerlink" href="#0day" title="Permanent link">&para;</a></h2>
+<h3 id="61">6.1 检测<a class="headerlink" href="#61" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>✅ 异常行为基线
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>✅ EDR 文件/进程异常
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>✅ NDR 流量异常
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>✅ Honeypot 触发
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>✅ Bug Bounty / SRC 上报
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>✅ 威胁情报订阅
+</code></pre></div>
+<h3 id="62">6.2 处置<a class="headerlink" href="#62" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>1. 立即隔离
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>2. 取证（不要重启）
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>3. 限流 / 关接口
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>4. 临时缓解（WAF/IPS 虚拟补丁）
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>5. 等官方补丁 / 自研修复
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a>6. 验证 + 全网部署
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a>7. 公开 IOC 给社区
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a>8. 复盘 + 加固
+</code></pre></div>
+<h2 id="_7">七、典型漏洞类型与防御<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="71-web-owasp-top-10">7.1 Web 漏洞 (OWASP Top 10)<a class="headerlink" href="#71-web-owasp-top-10" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">示例</th>
+<th style="text-align: left;">防御</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>SQL 注入</strong></td>
+<td style="text-align: left;"><code>1' OR '1'='1</code></td>
+<td style="text-align: left;">参数化查询 / ORM</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>XSS</strong></td>
+<td style="text-align: left;"><code>&lt;script&gt;alert(1)&lt;/script&gt;</code></td>
+<td style="text-align: left;">输出编码 + CSP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CSRF</strong></td>
+<td style="text-align: left;">跨站请求</td>
+<td style="text-align: left;">Token + SameSite</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SSRF</strong></td>
+<td style="text-align: left;">内网探测</td>
+<td style="text-align: left;">URL 白名单 / 出口 ACL</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>XXE</strong></td>
+<td style="text-align: left;">XML 实体注入</td>
+<td style="text-align: left;">禁外部实体</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RCE</strong></td>
+<td style="text-align: left;">命令注入</td>
+<td style="text-align: left;">不拼命令 / 白名单</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>反序列化</strong></td>
+<td style="text-align: left;">Java/PHP/Python</td>
+<td style="text-align: left;">不反序列化不可信</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>路径穿越</strong></td>
+<td style="text-align: left;"><code>../../etc/passwd</code></td>
+<td style="text-align: left;">白名单路径</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>文件上传</strong></td>
+<td style="text-align: left;">webshell</td>
+<td style="text-align: left;">类型/内容/沙箱</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>认证缺陷</strong></td>
+<td style="text-align: left;">弱密码 / 越权</td>
+<td style="text-align: left;">MFA + RBAC</td>
+</tr>
+</tbody>
+</table>
+<h3 id="72-cve">7.2 中间件常见 CVE<a class="headerlink" href="#72-cve" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>Apache       2.4.x         多个 mod_proxy 高危
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>Nginx        ngx_http_*    路径穿越 / 内存读取
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>Tomcat       AJP / Ghostcat (CVE-2020-1938)
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>WebLogic     XMLDecoder / T3 协议
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>JBoss         JMX / EAP
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>Redis        未授权 RCE / 主从同步
+<a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a>MongoDB     未授权
+<a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a>Elasticsearch  未授权 / Groovy 沙箱逃逸
+<a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a>Kafka         JMX 暴露
+<a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a>Memcached    无认证
+<a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a>RabbitMQ     默认凭证
+</code></pre></div>
+<h3 id="73-cve">7.3 主机 CVE 关键应对<a class="headerlink" href="#73-cve" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Linux 内核    Dirty Pipe / Pwnkit / nf_tables UAF
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>SSH         CVE-2024-6387 (regreSSHion)
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>OpenSSL      Heartbleed / 3.0 高危
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>glibc         多个 buffer overflow
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>sudo          Baron Samedit (CVE-2021-3156)
+<a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a>polkit        Pwnkit (CVE-2021-4034)
+</code></pre></div>
+<h2 id="_8">八、度量与改进<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="81-kpi">8.1 关键指标 (KPI)<a class="headerlink" href="#81-kpi" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>覆盖率:
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>  - 资产 / 应用覆盖率
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>  - 扫描频次达成率
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>  - SBOM 覆盖率
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>漏洞趋势:
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a>  - 新增 vs 修复
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>  - 累计漏洞数
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a>  - 漏洞密度（漏洞数 / KLOC 或 资产数）
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a>时效性:
+<a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a>  - MTTD (Mean Time to Detect)
+<a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a>  - MTTR (Mean Time to Remediate)
+<a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a>  - 各级别 SLA 达成率
+<a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a>  - 超期未修数
+<a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a>
+<a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a>质量:
+<a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a>  - 重复漏洞率
+<a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a>  - 误报率
+<a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a>  - 验证不通过率
+<a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a>  - Bug Bounty 漏报率
+</code></pre></div>
+<h3 id="82">8.2 定期报告<a class="headerlink" href="#82" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>月报:
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>  - 新增 / 修复 / 累计
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>  - 各业务线对比
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>  - Top 10 漏洞类型
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>  - SLA 达成
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>  - 重大事件
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>季度复盘:
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>  - 趋势 + 改进
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>  - 流程 / 工具升级
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>  - 培训需求
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>年度审计:
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a>  - 合规对接
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a>  - 第三方评估
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>  - 战略调整
+</code></pre></div>
+<h2 id="_9">九、合规与漏洞管理<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>等保 2.0:
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>  - 三级要求: 漏扫月度 + 修复闭环
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>  - 重保期间高频
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>PCI-DSS:
+<a id="__codelineno-21-6" name="__codelineno-21-6" href="#__codelineno-21-6"></a>  - 季度漏扫（ASV 认证扫描）
+<a id="__codelineno-21-7" name="__codelineno-21-7" href="#__codelineno-21-7"></a>  - 重大变更后再扫
+<a id="__codelineno-21-8" name="__codelineno-21-8" href="#__codelineno-21-8"></a>
+<a id="__codelineno-21-9" name="__codelineno-21-9" href="#__codelineno-21-9"></a>SOC 2:
+<a id="__codelineno-21-10" name="__codelineno-21-10" href="#__codelineno-21-10"></a>  - 漏洞管理流程文档
+<a id="__codelineno-21-11" name="__codelineno-21-11" href="#__codelineno-21-11"></a>  - 修复 SLA 证据
+<a id="__codelineno-21-12" name="__codelineno-21-12" href="#__codelineno-21-12"></a>
+<a id="__codelineno-21-13" name="__codelineno-21-13" href="#__codelineno-21-13"></a>GDPR / 个保法:
+<a id="__codelineno-21-14" name="__codelineno-21-14" href="#__codelineno-21-14"></a>  - 影响个人数据的漏洞 72h 内披露
+<a id="__codelineno-21-15" name="__codelineno-21-15" href="#__codelineno-21-15"></a>
+<a id="__codelineno-21-16" name="__codelineno-21-16" href="#__codelineno-21-16"></a>ISO 27001:
+<a id="__codelineno-21-17" name="__codelineno-21-17" href="#__codelineno-21-17"></a>  - 漏洞管理流程
+<a id="__codelineno-21-18" name="__codelineno-21-18" href="#__codelineno-21-18"></a>  - 风险评估
+</code></pre></div>
+<h2 id="_10">十、典型坑<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">坑</th>
+<th style="text-align: left;">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>只扫不修</strong></td>
+<td style="text-align: left;">闭环 + SLA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CVSS 唯一</strong></td>
+<td style="text-align: left;">+ EPSS + KEV</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>修复无优先级</strong></td>
+<td style="text-align: left;">综合模型</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>误报淹没</strong></td>
+<td style="text-align: left;">去重 + 三方验证</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>资产清单不全</strong></td>
+<td style="text-align: left;">CMDB 必备</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>不订阅情报</strong></td>
+<td style="text-align: left;">NVD/CNNVD/PSIRT</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>季度才扫一次</strong></td>
+<td style="text-align: left;">持续监控</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>修复无验证</strong></td>
+<td style="text-align: left;">二次扫描</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>跨团队甩锅</strong></td>
+<td style="text-align: left;">Owner 明确 + Jira</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>0day 来了懵</strong></td>
+<td style="text-align: left;">应急剧本 + 演练</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>修复影响业务</strong></td>
+<td style="text-align: left;">灰度 + 回滚</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>不分析根因</strong></td>
+<td style="text-align: left;">类似漏洞重现</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>不培训开发</strong></td>
+<td style="text-align: left;">SDL + SAST 教育</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Bug Bounty 无人接</strong></td>
+<td style="text-align: left;">7x24 + SLA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>报表给老板</strong>“漏洞少了”</td>
+<td style="text-align: left;">衡量 MTTR / 风险下降</td>
+</tr>
+</tbody>
+</table>
+<h2 id="checklist">十一、最佳实践 Checklist<a class="headerlink" href="#checklist" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>基础:
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>☐ 资产 CMDB 完整
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>☐ SBOM 全企业
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>☐ 漏洞工单平台（DefectDojo）
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>☐ 情报订阅自动化
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>扫描:
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>☐ 主机周期扫
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>☐ Web 应用扫
+<a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>☐ 容器/镜像扫
+<a id="__codelineno-22-11" name="__codelineno-22-11" href="#__codelineno-22-11"></a>☐ K8s/IaC 扫
+<a id="__codelineno-22-12" name="__codelineno-22-12" href="#__codelineno-22-12"></a>☐ SAST CI 集成
+<a id="__codelineno-22-13" name="__codelineno-22-13" href="#__codelineno-22-13"></a>☐ DAST 测试环境
+<a id="__codelineno-22-14" name="__codelineno-22-14" href="#__codelineno-22-14"></a>☐ 依赖持续监控
+<a id="__codelineno-22-15" name="__codelineno-22-15" href="#__codelineno-22-15"></a>
+<a id="__codelineno-22-16" name="__codelineno-22-16" href="#__codelineno-22-16"></a>优先级:
+<a id="__codelineno-22-17" name="__codelineno-22-17" href="#__codelineno-22-17"></a>☐ CVSS + EPSS + KEV 综合
+<a id="__codelineno-22-18" name="__codelineno-22-18" href="#__codelineno-22-18"></a>☐ 资产价值加权
+<a id="__codelineno-22-19" name="__codelineno-22-19" href="#__codelineno-22-19"></a>☐ 业务影响评估
+<a id="__codelineno-22-20" name="__codelineno-22-20" href="#__codelineno-22-20"></a>☐ 暴露面分级
+<a id="__codelineno-22-21" name="__codelineno-22-21" href="#__codelineno-22-21"></a>
+<a id="__codelineno-22-22" name="__codelineno-22-22" href="#__codelineno-22-22"></a>修复:
+<a id="__codelineno-22-23" name="__codelineno-22-23" href="#__codelineno-22-23"></a>☐ SLA 明确 + 看板
+<a id="__codelineno-22-24" name="__codelineno-22-24" href="#__codelineno-22-24"></a>☐ Owner 制
+<a id="__codelineno-22-25" name="__codelineno-22-25" href="#__codelineno-22-25"></a>☐ Jira / 飞书工单
+<a id="__codelineno-22-26" name="__codelineno-22-26" href="#__codelineno-22-26"></a>☐ 修复后验证
+<a id="__codelineno-22-27" name="__codelineno-22-27" href="#__codelineno-22-27"></a>☐ 紧急虚拟补丁（WAF/IPS）
+<a id="__codelineno-22-28" name="__codelineno-22-28" href="#__codelineno-22-28"></a>
+<a id="__codelineno-22-29" name="__codelineno-22-29" href="#__codelineno-22-29"></a>应急:
+<a id="__codelineno-22-30" name="__codelineno-22-30" href="#__codelineno-22-30"></a>☐ 0day 剧本
+<a id="__codelineno-22-31" name="__codelineno-22-31" href="#__codelineno-22-31"></a>☐ 季度演练
+<a id="__codelineno-22-32" name="__codelineno-22-32" href="#__codelineno-22-32"></a>☐ Bug Bounty / SRC
+<a id="__codelineno-22-33" name="__codelineno-22-33" href="#__codelineno-22-33"></a>☐ 媒体公关预案
+<a id="__codelineno-22-34" name="__codelineno-22-34" href="#__codelineno-22-34"></a>
+<a id="__codelineno-22-35" name="__codelineno-22-35" href="#__codelineno-22-35"></a>度量:
+<a id="__codelineno-22-36" name="__codelineno-22-36" href="#__codelineno-22-36"></a>☐ MTTD / MTTR
+<a id="__codelineno-22-37" name="__codelineno-22-37" href="#__codelineno-22-37"></a>☐ 漏洞密度
+<a id="__codelineno-22-38" name="__codelineno-22-38" href="#__codelineno-22-38"></a>☐ SLA 达成
+<a id="__codelineno-22-39" name="__codelineno-22-39" href="#__codelineno-22-39"></a>☐ 月报 / 季报
+<a id="__codelineno-22-40" name="__codelineno-22-40" href="#__codelineno-22-40"></a>☐ 复盘 + 改进
+</code></pre></div>
+<h2 id="2025">十二、推荐技术栈（2025）<a class="headerlink" href="#2025" title="Permanent link">&para;</a></h2>
+<h3 id="121">12.1 小团队<a class="headerlink" href="#121" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>扫描:    Trivy + OpenVAS + OWASP ZAP + OSV-Scanner
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>工单:    DefectDojo
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>情报:    NVD RSS + GitHub Advisory
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>应急:    WAF (雷池) + 人工
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>报表:    DefectDojo dashboard
+</code></pre></div>
+<h3 id="122">12.2 中大企业<a class="headerlink" href="#122" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>扫描:    Nessus + Trivy + Snyk + 自研 Web 扫
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>SAST/DAST/IAST: SonarQube + Burp + Checkmarx
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>工单:    DefectDojo / 自研 + Jira
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>情报:    商业 TI (Recorded Future / 微步) + 自动 LLM 摘要
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>渗透:    内部红队 + 第三方
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>Bug Bounty: HackerOne / 补天
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>SOC:    7x24 + SOAR
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>CNAPP:   Wiz / Aqua / 长亭 (容器/云原生)
+</code></pre></div>
+<h3 id="123">12.3 国产/信创<a class="headerlink" href="#123" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>+ 长亭洞鉴 / 牧云
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>+ 奇安信 NGSOC / 启明天镜
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>+ 绿盟 RSAS / 安全狗
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a>+ 等保扫描器（合规专用）
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>+ CNNVD/CNVD 订阅
+</code></pre></div>
+<h2 id="_11">十三、学习路径<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>入门（2 周）:
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>  1. CVSS / CVE 体系
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>  2. Trivy / Nessus 实战
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a>  3. OWASP Top 10
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a>  4. DefectDojo 部署
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a>中级（1 个月）:
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>  5. EPSS / KEV 整合
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a>  6. SAST / DAST 集成 CI
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a>  7. Bug Bounty 接入
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a>  8. 漏洞应急流程
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a>
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a>高级（3 个月）:
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a>  9. 红队 / 渗透实战
+<a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a>  10. 0day 响应剧本
+<a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a>  11. 自动化漏洞修复
+<a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a>  12. 大规模漏洞治理
+<a id="__codelineno-26-18" name="__codelineno-26-18" href="#__codelineno-26-18"></a>
+<a id="__codelineno-26-19" name="__codelineno-26-19" href="#__codelineno-26-19"></a>专家:
+<a id="__codelineno-26-20" name="__codelineno-26-20" href="#__codelineno-26-20"></a>  13. 自研漏洞挖掘
+<a id="__codelineno-26-21" name="__codelineno-26-21" href="#__codelineno-26-21"></a>  14. SRC 运营
+<a id="__codelineno-26-22" name="__codelineno-26-22" href="#__codelineno-26-22"></a>  15. 漏洞情报体系
+<a id="__codelineno-26-23" name="__codelineno-26-23" href="#__codelineno-26-23"></a>  16. SDL 全流程
+</code></pre></div>
+<h2 id="_12">十四、参考资料<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>标准:
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>  - CVE / NVD / CVSS / EPSS
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>  - MITRE ATT&amp;CK
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>  - OWASP Top 10
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a>  - 等保 2.0 / PCI-DSS
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>书:
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a>  - 《The Web Application Hacker&#39;s Handbook》
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>  - 《The Hacker Playbook》
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a>  - 《Practical Threat Intelligence》
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a>  - 《白帽子讲 Web 安全》(吴翰清)
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a>
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a>工具:
+<a id="__codelineno-27-14" name="__codelineno-27-14" href="#__codelineno-27-14"></a>  - DefectDojo: https://defectdojo.com/
+<a id="__codelineno-27-15" name="__codelineno-27-15" href="#__codelineno-27-15"></a>  - OSV: https://osv.dev/
+<a id="__codelineno-27-16" name="__codelineno-27-16" href="#__codelineno-27-16"></a>  - KEV: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+<a id="__codelineno-27-17" name="__codelineno-27-17" href="#__codelineno-27-17"></a>  - EPSS: https://www.first.org/epss/
+<a id="__codelineno-27-18" name="__codelineno-27-18" href="#__codelineno-27-18"></a>
+<a id="__codelineno-27-19" name="__codelineno-27-19" href="#__codelineno-27-19"></a>社区:
+<a id="__codelineno-27-20" name="__codelineno-27-20" href="#__codelineno-27-20"></a>  - r/netsec / r/AskNetsec
+<a id="__codelineno-27-21" name="__codelineno-27-21" href="#__codelineno-27-21"></a>  - SANS / OWASP
+<a id="__codelineno-27-22" name="__codelineno-27-22" href="#__codelineno-27-22"></a>  - 国内: 看雪 / FreeBuf / 安全客 / 先知 / 长亭社区
+</code></pre></div>
+<blockquote>
+<p>📖 <strong>核心判断</strong>：漏洞管理的精髓不是"找到所有漏洞"，而是<strong>"用 20% 精力修掉 80% 风险"</strong>。<strong>CVSS + EPSS + KEV 三位一体优先级</strong> 是 2025 的核心方法论。<strong>SBOM 是基础设施</strong>（看不见 = 管不了），<strong>DefectDojo 是闭环平台</strong>（不闭环 = 白扫），<strong>虚拟补丁是急救方案</strong>（0day 必备）。<strong>修复 MTTR 是真北指标</strong>——所有努力都要服务于"快速降风险"。</p>
+</blockquote>
 
 
 
