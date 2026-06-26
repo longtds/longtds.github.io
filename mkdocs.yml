@@ -146,12 +146,14 @@ nav:
     - 11_生态工具: 07_Kubernetes/11_生态工具/README.md
     - 99_发展与展望: 07_Kubernetes/99_发展与展望.md
 
-  - 08_认证与SSO:
-    - 概述: 08_认证与SSO/index.md
-    - 01_认证协议: 08_认证与SSO/01_认证协议/README.md
-    - 02_Keycloak: 08_认证与SSO/02_Keycloak/README.md
-    - 03_企业认证体系: 08_认证与SSO/03_企业认证体系/README.md
-    - 99_发展与展望: 08_认证与SSO/99_发展与展望.md
+  - 08_DevOps:
+    - 概述: 08_DevOps/index.md
+    - 01_基础设施即代码: 08_DevOps/01_基础设施即代码/README.md
+    - 02_CICD: 08_DevOps/02_CICD/README.md
+    - 03_代码管理: 08_DevOps/03_代码管理/README.md
+    - 04_容器化CI: 08_DevOps/04_容器化CI/README.md
+    - 05_部署策略: 08_DevOps/05_部署策略/README.md
+    - 99_发展与展望: 08_DevOps/99_发展与展望.md
 
   - 09_中间件:
     - 概述: 09_中间件/index.md
@@ -199,14 +201,12 @@ nav:
     - 06_运维知识库: 12_AIOps/06_运维知识库/README.md
     - 99_发展与展望: 12_AIOps/99_发展与展望.md
 
-  - 13_DevOps:
-    - 概述: 13_DevOps/index.md
-    - 01_基础设施即代码: 13_DevOps/01_基础设施即代码/README.md
-    - 02_CICD: 13_DevOps/02_CICD/README.md
-    - 03_代码管理: 13_DevOps/03_代码管理/README.md
-    - 04_容器化CI: 13_DevOps/04_容器化CI/README.md
-    - 05_部署策略: 13_DevOps/05_部署策略/README.md
-    - 99_发展与展望: 13_DevOps/99_发展与展望.md
+  - 13_认证与SSO:
+    - 概述: 13_认证与SSO/index.md
+    - 01_认证协议: 13_认证与SSO/01_认证协议/README.md
+    - 02_Keycloak: 13_认证与SSO/02_Keycloak/README.md
+    - 03_企业认证体系: 13_认证与SSO/03_企业认证体系/README.md
+    - 99_发展与展望: 13_认证与SSO/99_发展与展望.md
 
   - 14_安全:
     - 概述: 14_安全/index.md
