@@ -16,7 +16,7 @@
         <link rel="prev" href="../05_%E7%A7%81%E6%9C%89%E4%BA%91/99_%E5%8F%91%E5%B1%95%E4%B8%8E%E5%B1%95%E6%9C%9B/">
       
       
-        <link rel="next" href="01_%E5%AE%B9%E5%99%A8%E5%8E%9F%E7%90%86/">
+        <link rel="next" href="01_%E5%9F%BA%E7%A1%80/">
       
       
         
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#06_docker" class="md-skip">
+        <a href="#06-docker" class="md-skip">
           跳转至
         </a>
       
@@ -380,10 +380,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -436,18 +432,6 @@
       
         
           
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
         
       
         
@@ -524,10 +508,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -580,6 +560,8 @@
       
         
           
+        
+      
         
       
         
@@ -714,14 +696,14 @@
   
   
     <li class="md-nav__item">
-      <a href="01_%E5%AE%B9%E5%99%A8%E5%8E%9F%E7%90%86/" class="md-nav__link">
+      <a href="01_%E5%9F%BA%E7%A1%80/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    01_容器原理
+    01_基础
   
 
     
@@ -742,14 +724,14 @@
   
   
     <li class="md-nav__item">
-      <a href="02_Docker%E5%AE%9E%E8%B7%B5/" class="md-nav__link">
+      <a href="02_%E8%BF%9B%E9%98%B6/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    02_Docker实践
+    02_进阶
   
 
     
@@ -770,14 +752,14 @@
   
   
     <li class="md-nav__item">
-      <a href="03_%E8%BF%90%E8%A1%8C%E6%97%B6/" class="md-nav__link">
+      <a href="03_%E9%AB%98%E7%BA%A7/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    03_运行时
+    03_高级
   
 
     
@@ -798,14 +780,14 @@
   
   
     <li class="md-nav__item">
-      <a href="04_%E5%AE%B9%E5%99%A8%E5%8C%96%E8%BF%81%E7%A7%BB/" class="md-nav__link">
+      <a href="04_%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    04_容器化迁移
+    04_最佳实践
   
 
     
@@ -865,20 +847,6 @@
       
         
           
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
         
       
         
@@ -1596,7 +1564,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        一、容器发展简史
+        章节结构
       
     </span>
   </a>
@@ -1607,18 +1575,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        二、容器核心原理
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#docker" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        三、Docker 架构
+        学习路径
       
     </span>
   </a>
@@ -1629,7 +1586,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        四、镜像分层
+        核心判断
       
     </span>
   </a>
@@ -1640,18 +1597,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        五、本章组织
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        六、学习路径
+        相关章节
       
     </span>
   </a>
@@ -1726,148 +1672,104 @@
   
 
 
-<h1 id="06_docker">06_Docker · 概述<a class="headerlink" href="#06_docker" title="Permanent link">&para;</a></h1>
+<h1 id="06-docker">06. Docker<a class="headerlink" href="#06-docker" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p>Docker 把容器技术从工程师玩具变成了 IT 主流。即使现在 K8s 用 containerd/CRI-O，Docker 依然是开发者的容器入门。</p>
+<p>Docker / OCI 容器是云原生的底座。本章按 <strong>基础 → 进阶 → 高级 → 最佳实践 → 发展与展望</strong> 五层递进，聚焦 namespace+cgroup+overlay2 原理、dockerd+containerd+runc 三层架构、Buildx 多架构、Harbor 仓库治理、cosign 签名+SBOM、Kata/gVisor/Wasm 替代运行时、GPU/MIG 容器、国产化 iSulad 八条主线。</p>
 </blockquote>
-<h2 id="_1">一、容器发展简史<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">章节结构<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">阶段</th>
-<th style="text-align: center;">时期</th>
-<th style="text-align: left;">关键技术</th>
+<th style="text-align: left;">章节</th>
+<th style="text-align: left;">适合人群</th>
+<th style="text-align: left;">核心内容</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">chroot</td>
-<td style="text-align: center;">1979</td>
-<td style="text-align: left;">文件系统隔离雏形</td>
+<td style="text-align: left;"><a href="01_%E5%9F%BA%E7%A1%80/">01_基础</a></td>
+<td style="text-align: left;">入职 1 年内</td>
+<td style="text-align: left;">namespace/cgroup/overlay2 / dockerd+containerd+runc / OCI 三规范 / Dockerfile 多阶段 / docker CLI / 网络+存储 / Compose 单机 / 安全基线 / 国产化镜像 + 20 题</td>
 </tr>
 <tr>
-<td style="text-align: left;">FreeBSD jails</td>
-<td style="text-align: center;">2000</td>
-<td style="text-align: left;">进程隔离</td>
+<td style="text-align: left;"><a href="02_%E8%BF%9B%E9%98%B6/">02_进阶</a></td>
+<td style="text-align: left;">独立运维容器化平台</td>
+<td style="text-align: left;">BuildKit+Buildx 多架构 / 远程缓存 / 镜像优化(dive/distroless) / Harbor+Replication+Proxy Cache / cosign+SBOM+Provenance / macvlan+iptables / daemon.json 调优 / Compose 生产 / cAdvisor+Prometheus / rootless+seccomp</td>
 </tr>
 <tr>
-<td style="text-align: left;">Solaris Zones</td>
-<td style="text-align: center;">2004</td>
-<td style="text-align: left;">资源限制</td>
+<td style="text-align: left;"><a href="03_%E9%AB%98%E7%BA%A7/">03_高级</a></td>
+<td style="text-align: left;">平台架构师</td>
+<td style="text-align: left;">containerd/CRI-O 直驱 / crun+youki+kata+gVisor+Firecracker / Confidential Containers / Buildah+Kaniko+nerdctl / Wasm 容器(WasmEdge) / GPU+MIG+国产 GPU / cgroup v2+eBPF(Tetragon/DeepFlow) / iSulad / 多架构嵌入式 / 容器逃逸加固</td>
 </tr>
 <tr>
-<td style="text-align: left;">LXC</td>
-<td style="text-align: center;">2008</td>
-<td style="text-align: left;">Linux 容器内核能力（namespace + cgroup）</td>
+<td style="text-align: left;"><a href="04_%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">04_最佳实践</a></td>
+<td style="text-align: left;">团队负责人</td>
+<td style="text-align: left;">运行时选型 / 镜像规范+分级 / Harbor 治理 / CI/CD 流水线(lint+scan+sign+SBOM+Provenance) / 监控告警 SOP / CIS+等保自查 / 资源容量 / K8s 接管节奏 / 国产化路径 / 故障排查 SOP</td>
 </tr>
 <tr>
-<td style="text-align: left;">Docker</td>
-<td style="text-align: center;">2013</td>
-<td style="text-align: left;">镜像 + 工具链革命</td>
-</tr>
-<tr>
-<td style="text-align: left;">OCI 标准化</td>
-<td style="text-align: center;">2015</td>
-<td style="text-align: left;">runc + image spec</td>
-</tr>
-<tr>
-<td style="text-align: left;">containerd</td>
-<td style="text-align: center;">2016</td>
-<td style="text-align: left;">解耦运行时</td>
-</tr>
-<tr>
-<td style="text-align: left;">K8s dockershim 移除</td>
-<td style="text-align: center;">2022</td>
-<td style="text-align: left;">K8s 改用 containerd</td>
+<td style="text-align: left;"><a href="99_%E5%8F%91%E5%B1%95%E4%B8%8E%E5%B1%95%E6%9C%9B/">99_发展与展望</a></td>
+<td style="text-align: left;">所有人</td>
+<td style="text-align: left;">Docker 收缩 / containerd 标准化 / Kata-cc / Wasm / GPU 国产化 / SLSA+Sigstore / OCI Artifacts / 边缘/嵌入式 / iSulad / 18 项 5 年信心矩阵</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_2">二、容器核心原理<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p>容器 = <strong>进程 + namespace（隔离）+ cgroup（资源限制）+ 镜像（文件系统）</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─────────────────────────────────────────┐
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│            容器进程                      │
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├─────────────────────────────────────────┤
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│  Linux Namespace (隔离视图)              │
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│  ├── pid   ── 进程号                    │
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│  ├── net   ── 网卡/路由                 │
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│  ├── mount ── 文件系统                  │
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>│  ├── uts   ── 主机名                    │
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>│  ├── ipc   ── 进程间通信                │
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│  └── user  ── 用户/UID                  │
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>├─────────────────────────────────────────┤
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│  cgroup v2 (资源限制)                   │
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│  ├── cpu/cpuset                         │
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>│  ├── memory                             │
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│  ├── blkio                              │
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│  └── pid                                │
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>├─────────────────────────────────────────┤
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>│  OverlayFS (分层文件系统)                │
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>└─────────────────────────────────────────┘
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>              ↓ 共享
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>       Linux Kernel
+<h2 id="_2">学习路径<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>入门（1-2 月）
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  └─ 01_基础: 装 docker + 镜像加速器 + Compose 单机 + 多阶段 distroless + Harbor + Trivy + 20 题
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>进阶（3-12 月）
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  └─ 02_进阶: Buildx 多架构 + 远程缓存 + 镜像 &lt; 50MB + Harbor Replication+Proxy Cache + cosign+SBOM + macvlan + cAdvisor 监控 + rootless
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>高级（1-2 年）
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  └─ 03_高级: containerd 直驱 + Kata + gVisor + CoCo + Buildah/Kaniko + Wasm + GPU/MIG + 国产 iSulad + eBPF(Tetragon) + 容器逃逸加固
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>工程化（2-3 年）
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  └─ 04_最佳实践: 镜像规范+分级 + CI/CD 全链(lint+scan+sign+SBOM+Provenance) + Harbor 治理 + 监控告警 + CIS+等保 + GitOps + 国产化路径
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>展望（持续）
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  └─ 99_发展与展望: containerd 标准 + Kata-cc + Wasm + GPU 国产 + Sigstore + 边缘 + iSulad 八条主线
 </code></pre></div>
-<h2 id="docker">三、Docker 架构<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>docker (CLI)
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>   ↓ REST
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>dockerd (守护进程)
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>   ↓ gRPC
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>containerd
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>   ↓ shim
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>runc (OCI runtime)
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>   ↓
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>containerd-shim → 容器进程
+<h2 id="_3">核心判断<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>心法:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  1. 容器 = namespace+cgroup+rootfs，不是&quot;轻量 VM&quot;，是受限进程
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  2. dockerd/containerd/runc 三层都要懂
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  3. OCI 三规范 (Image/Runtime/Distribution) 才是核心，不是 Docker
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  4. 生产 K8s 一律 containerd（dockershim 已退场）
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  5. 镜像 &lt; 50 MB 是基本功 (distroless + 多阶段)
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  6. Harbor + cosign + Trivy + SBOM 是供应链四件套
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  7. 多架构 amd64 + arm64 一次推
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  8. rootless / userns / seccomp / AppArmor 安全四件套
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  9. Kata / gVisor / Wasm / CoCo 是 OCI 内的多元未来
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  10. 国产化 = openEuler + iSulad + 鲲鹏 ARM + Harbor 国密
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>红线:
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  ❌ :latest 上生产
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  ❌ root 跑容器
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  ❌ --privileged 滥用
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  ❌ 挂 /var/run/docker.sock 到容器
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  ❌ 没 HEALTHCHECK + 没 livenessProbe
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  ❌ 日志写容器内
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  ❌ /var/lib/docker 不分区不 GC
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  ❌ K8s 1.24+ 还用 dockershim
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  ❌ CI 用 admin 账号 push
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  ❌ Trivy 扫不阻断
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>  ❌ 不签名 / 不验签
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>  ❌ 没 SBOM 供应链审计无据
 </code></pre></div>
-<h2 id="_3">四、镜像分层<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>镜像 = 多层只读 + 一层可写
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>┌──────────────────────────┐
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>│  容器层 (可写)            │  ← 容器运行时改动
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>├──────────────────────────┤
-<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>│  应用层 (RUN/COPY/ADD)    │  ← Dockerfile 指令
-<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>├──────────────────────────┤
-<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>│  运行时层 (apt/pip)       │
-<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>├──────────────────────────┤
-<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>│  基础镜像 (ubuntu/alpine) │
-<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>└──────────────────────────┘
-</code></pre></div>
-<p>每层只读、可缓存、可复用，这是 Docker 镜像比 VM 镜像高效的核心。</p>
-<h2 id="_4">五、本章组织<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">子章节</th>
-<th style="text-align: left;">内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>01_容器原理</strong></td>
-<td style="text-align: left;">namespace、cgroup、OverlayFS、镜像</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>02_Docker实践</strong></td>
-<td style="text-align: left;">Dockerfile 最佳实践、多阶段构建</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>03_运行时</strong></td>
-<td style="text-align: left;">Docker/containerd/CRI-O/Podman 对比</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>04_容器化迁移</strong></td>
-<td style="text-align: left;">应用容器化的步骤和坑</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_5">六、学习路径<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>核心原理</strong> → 手写一个 mini-docker（namespace + chroot）</li>
-<li><strong>Dockerfile 精通</strong> → 多阶段、缓存优化、安全基线</li>
-<li><strong>运行时切换</strong> → 至少熟悉 Docker + containerd</li>
-<li><strong>生产经验</strong> → 镜像安全、构建提速、私有仓库</li>
-</ol>
-<blockquote>
-<p>📖 Docker 已经"成熟"，K8s 时代它的角色变成开发者工具，而非生产环境运行时。</p>
-</blockquote>
+<h2 id="_4">相关章节<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li>配合 <a href="../02_Linux/">02_Linux</a> 看 namespace / cgroup v2 / eBPF 内核基础</li>
+<li>配合 <a href="../03_%E7%BD%91%E7%BB%9C/">03_网络</a> 看 bridge / macvlan / iptables / OVN</li>
+<li>配合 <a href="../04_%E8%99%9A%E6%8B%9F%E5%8C%96/">04_虚拟化</a> 看 KubeVirt / Kata-microVM / Firecracker</li>
+<li>配合 <a href="../05_%E7%A7%81%E6%9C%89%E4%BA%91/">05_私有云</a> 看 OpenStack 与 K8s 共生</li>
+<li>配合 <a href="../07_Kubernetes/">07_Kubernetes</a> 看 CRI / RuntimeClass / GPU Operator / Pod Security</li>
+<li>配合 <a href="../08_DevOps/">08_DevOps</a> 看 GitOps / Buildkit-in-K8s / Kaniko / ArgoCD</li>
+<li>配合 <a href="../09_%E4%B8%AD%E9%97%B4%E4%BB%B6/">09_中间件</a> 看容器化 DB / 消息队列</li>
+<li>配合 <a href="../11_AI%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/">11_AI基础设施</a> 看 GPU 容器 / vLLM / 训练镜像</li>
+<li>配合 <a href="../12_AIOps/">12_AIOps</a> 看容器异常检测 / eBPF 可观测</li>
+<li>配合 <a href="../14_%E5%AE%89%E5%85%A8/">14_安全</a> 看 CIS + NIST 800-190 + 机密计算 + 等保</li>
+<li>配合 <a href="../16_%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/">16_故障排查</a> 看容器 OOM / 网络 / Pull / OOM-killer 排障</li>
+</ul>
 
 
 
@@ -1920,13 +1822,13 @@
         
         
           
-          <a href="01_%E5%AE%B9%E5%99%A8%E5%8E%9F%E7%90%86/" class="md-footer__link md-footer__link--next" aria-label="下一页: 01_容器原理">
+          <a href="01_%E5%9F%BA%E7%A1%80/" class="md-footer__link md-footer__link--next" aria-label="下一页: 01_基础">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                01_容器原理
+                01_基础
               </div>
             </div>
             <div class="md-footer__button md-icon">

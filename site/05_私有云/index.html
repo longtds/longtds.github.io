@@ -16,7 +16,7 @@
         <link rel="prev" href="../04_%E8%99%9A%E6%8B%9F%E5%8C%96/99_%E5%8F%91%E5%B1%95%E4%B8%8E%E5%B1%95%E6%9C%9B/">
       
       
-        <link rel="next" href="01_%E4%BA%91%E5%B9%B3%E5%8F%B0%E9%80%89%E5%9E%8B/">
+        <link rel="next" href="01_%E5%9F%BA%E7%A1%80/">
       
       
         
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#05_" class="md-skip">
+        <a href="#05" class="md-skip">
           跳转至
         </a>
       
@@ -380,10 +380,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -436,18 +432,6 @@
       
         
           
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
         
       
         
@@ -524,10 +508,6 @@
       
         
       
-        
-      
-        
-      
     
     
     
@@ -582,6 +562,8 @@
       
         
           
+        
+      
         
       
         
@@ -650,14 +632,14 @@
   
   
     <li class="md-nav__item">
-      <a href="01_%E4%BA%91%E5%B9%B3%E5%8F%B0%E9%80%89%E5%9E%8B/" class="md-nav__link">
+      <a href="01_%E5%9F%BA%E7%A1%80/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    01_云平台选型
+    01_基础
   
 
     
@@ -678,14 +660,14 @@
   
   
     <li class="md-nav__item">
-      <a href="02_OpenStack/" class="md-nav__link">
+      <a href="02_%E8%BF%9B%E9%98%B6/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    02_OpenStack
+    02_进阶
   
 
     
@@ -706,14 +688,42 @@
   
   
     <li class="md-nav__item">
-      <a href="03_%E8%87%AA%E5%8A%A8%E5%8C%96%E7%AE%A1%E7%90%86/" class="md-nav__link">
+      <a href="03_%E9%AB%98%E7%BA%A7/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    03_自动化管理
+    03_高级
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04_%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04_最佳实践
   
 
     
@@ -837,20 +847,6 @@
       
         
           
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
         
       
         
@@ -1568,7 +1564,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        一、私有云发展简史
+        章节结构
       
     </span>
   </a>
@@ -1579,7 +1575,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        二、私有云三层架构
+        学习路径
       
     </span>
   </a>
@@ -1590,7 +1586,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        三、典型方案对比
+        核心判断
       
     </span>
   </a>
@@ -1601,18 +1597,7 @@
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        四、本章组织
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        五、学习路径
+        相关章节
       
     </span>
   </a>
@@ -1687,128 +1672,106 @@
   
 
 
-<h1 id="05_">05_私有云 · 概述<a class="headerlink" href="#05_" title="Permanent link">&para;</a></h1>
+<h1 id="05">05. 私有云<a class="headerlink" href="#05" title="Permanent link">&para;</a></h1>
 <blockquote>
-<p>私有云让企业获得云的弹性、自助和 API，同时把数据握在自己手里。</p>
+<p>私有云是企业 IT 基础设施 + 信创 + 主权云的核心载体。本章按 <strong>基础 → 进阶 → 高级 → 最佳实践 → 发展与展望</strong> 五层递进，聚焦 OpenStack 全家桶、Kolla-Ansible 部署、HA 架构、OVN + Ceph、Cluster API + KubeVirt 共生、国产化全栈、机密计算与 LLM-OPS 八条主线。</p>
 </blockquote>
-<h2 id="_1">一、私有云发展简史<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h2 id="_1">章节结构<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">阶段</th>
-<th style="text-align: center;">时期</th>
-<th style="text-align: left;">代表</th>
+<th style="text-align: left;">章节</th>
+<th style="text-align: left;">适合人群</th>
+<th style="text-align: left;">核心内容</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">虚拟化整合</td>
-<td style="text-align: center;">2008-2012</td>
-<td style="text-align: left;">VMware vSphere 主导</td>
+<td style="text-align: left;"><a href="01_%E5%9F%BA%E7%A1%80/">01_基础</a></td>
+<td style="text-align: left;">入职 1 年内</td>
+<td style="text-align: left;">公私混合云 / IaaS-PaaS-SaaS / 主流平台选型 / OpenStack 5 大组件(Keystone/Glance/Nova/Neutron/Cinder) / DevStack &amp; PackStack 上手 / 国产化全景 + 20 题</td>
 </tr>
 <tr>
-<td style="text-align: left;">开源云崛起</td>
-<td style="text-align: center;">2012-2018</td>
-<td style="text-align: left;">OpenStack 黄金期</td>
+<td style="text-align: left;"><a href="02_%E8%BF%9B%E9%98%B6/">02_进阶</a></td>
+<td style="text-align: left;">独立部署 50-500 节点</td>
+<td style="text-align: left;">Kolla-Ansible 多节点 / MariaDB Galera + RabbitMQ Quorum + HAProxy HA / OVN 深度 / Cinder+Ceph 多 backend / Octavia LBaaS / Magnum / Ironic / Heat+Terraform / Skyline+Prometheus</td>
 </tr>
 <tr>
-<td style="text-align: left;">云原生融合</td>
-<td style="text-align: center;">2018-至今</td>
-<td style="text-align: left;">OpenStack + K8s 双栈</td>
+<td style="text-align: left;"><a href="03_%E9%AB%98%E7%BA%A7/">03_高级</a></td>
+<td style="text-align: left;">平台架构师</td>
+<td style="text-align: left;">Cells V2 / Region/AZ / OVS-DPDK+SR-IOV NFV / GPU+Cyborg / Ceph 调优 / Cluster API / OpenStack+K8s 共生 / SEV-SNP/TDX/海光 CSV 机密计算 / GitOps / LLM-OPS / 国产化深度</td>
 </tr>
 <tr>
-<td style="text-align: left;">软硬一体</td>
-<td style="text-align: center;">2020-至今</td>
-<td style="text-align: left;">一体机、智算云</td>
+<td style="text-align: left;"><a href="04_%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">04_最佳实践</a></td>
+<td style="text-align: left;">团队负责人</td>
+<td style="text-align: left;">平台选型决策 / 容量画像 / 多租户配额 / HA+DR+双活 / 3-2-1 备份 / Prometheus 告警 / SLURP 升级 / 等保+国密 / FinOps / 自服务门户 / 国产化路径</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="99_%E5%8F%91%E5%B1%95%E4%B8%8E%E5%B1%95%E6%9C%9B/">99_发展与展望</a></td>
+<td style="text-align: left;">所有人</td>
+<td style="text-align: left;">OpenStack 价值回归 / 信创主权云 / K8s 共生 / AI 算力 / 边缘云 / 机密计算 / LLM-OPS / 15 项 5 年信心矩阵</td>
 </tr>
 </tbody>
 </table>
-<h2 id="_2">二、私有云三层架构<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌──────────────────────────────────────┐
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│  应用层  │ 业务系统 / 中间件 / 数据库 │
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├──────────────────────────────────────┤
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│  服务层  │ IaaS API / 控制台 / 调度   │
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│         │ OpenStack / K8s / Ceph    │
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├──────────────────────────────────────┤
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│  基础层  │ 服务器 / 网络 / 存储       │
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>└──────────────────────────────────────┘
+<h2 id="_2">学习路径<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>入门（1-3 月）
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  └─ 01_基础: 装 DevStack/Kolla 单节点 + CLI 一气呵成创建 VM+卷+网络 + 20 题
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>进阶（3-12 月）
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  └─ 02_进阶: 3 控制+5 计算+3 存储 Kolla 多节点 + Galera/RabbitMQ HA + OVN + Cinder+Ceph + Octavia + Magnum + Heat/Terraform
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>高级（1-2 年）
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  └─ 03_高级: Cells V2 + DPDK/SR-IOV + GPU 直通+MIG + Cluster API + 机密 VM + GitOps + 国产化
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>工程化（2-3 年）
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  └─ 04_最佳实践: 容量画像 + 配额模板 + DR 演练 + SLURP 升级 + 等保 3 级 + 国产化路径 + 自服务门户
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>展望（持续）
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  └─ 99_发展与展望: OpenStack 回归 + 信创 + K8s 共生 + AI 算力 + 边缘 + 机密计算 + LLM-OPS 八条主线
 </code></pre></div>
-<h2 id="_3">三、典型方案对比<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">方案</th>
-<th style="text-align: left;">厂商/社区</th>
-<th style="text-align: left;">特点</th>
-<th style="text-align: left;">适用规模</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">OpenStack</td>
-<td style="text-align: left;">社区/Red Hat</td>
-<td style="text-align: left;">功能全、复杂、组件多</td>
-<td style="text-align: left;">大型企业</td>
-</tr>
-<tr>
-<td style="text-align: left;">KubeVirt + K8s</td>
-<td style="text-align: left;">社区/Red Hat</td>
-<td style="text-align: left;">K8s 原生管 VM</td>
-<td style="text-align: left;">云原生为主</td>
-</tr>
-<tr>
-<td style="text-align: left;">vSphere</td>
-<td style="text-align: left;">VMware</td>
-<td style="text-align: left;">商业、稳定、贵</td>
-<td style="text-align: left;">传统企业</td>
-</tr>
-<tr>
-<td style="text-align: left;">ZStack</td>
-<td style="text-align: left;">国产</td>
-<td style="text-align: left;">轻量、易部署</td>
-<td style="text-align: left;">中小企业</td>
-</tr>
-<tr>
-<td style="text-align: left;">OpenShift</td>
-<td style="text-align: left;">Red Hat</td>
-<td style="text-align: left;">商业 K8s + 虚拟化</td>
-<td style="text-align: left;">大企业</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_4">四、本章组织<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">子章节</th>
-<th style="text-align: left;">内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><strong>01_OpenStack</strong></td>
-<td style="text-align: left;">核心组件 Keystone/Nova/Neutron/Cinder/Glance</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>02_云平台选型</strong></td>
-<td style="text-align: left;">商业 vs 开源、规模评估、TCO</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>03_自动化管理</strong></td>
-<td style="text-align: left;">Ansible/Heat/Terraform 编排</td>
-</tr>
-</tbody>
-</table>
-<h2 id="_5">五、学习路径<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>理解 IaaS 模型</strong> → 计算/网络/存储三大资源</li>
-<li><strong>掌握 OpenStack 一项</strong> → 推荐从 Nova/Neutron 入手</li>
-<li><strong>学会编排</strong> → Heat / Terraform 自动化</li>
-<li><strong>跟进趋势</strong> → KubeVirt 替代方案</li>
-</ol>
-<blockquote>
-<p>📖 私有云比公有云难做，因为没有"无限资源"做缓冲。</p>
-</blockquote>
+<h2 id="_3">核心判断<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>心法:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  1. 私有云 ≠ 一堆 VM，而是计算+网络+存储+身份+编排+计费+合规一体
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  2. 生产 OpenStack 永远 Kolla-Ansible + OVN + Ceph + Galera + RabbitMQ + HAProxy
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  3. SLURP LTS（Antelope/Caracal/Epoxy）跳跃升级才稳
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  4. Cluster API 取代 Magnum，是 K8s on OpenStack 新主流
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  5. OpenStack 与 K8s 不是对抗，是共生
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  6. 中大型私有云必须信创预案
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  7. 机密计算（SEV-SNP/TDX/海光 CSV）2026 已不是 PoC
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  8. Cells V2 让单 Region 撑 10w VM
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  9. LLM-OPS 私有云 2027 成标配
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  10. 边缘云成主流第三形态
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>红线:
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  ❌ 单 inventory 跑 controller+compute
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  ❌ 没规划 5 网（mgmt/tunnel/ext/storage/bmc）
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  ❌ Galera 心跳网与业务网混
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  ❌ 控制节点 &lt; 3
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  ❌ 一律 file 后端 Glance
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  ❌ Ceph 副本 &lt; 3 / 故障域 &lt; rack
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  ❌ Cinder 单 backend 包打天下
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  ❌ 大版本跳跃升级（不走 SLURP）
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  ❌ Magnum 老 K8s 跑生产
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  ❌ 备份不验证 / 不异地
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>  ❌ 没接 SSO + MFA
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>  ❌ 信创不提前压测
+</code></pre></div>
+<h2 id="_4">相关章节<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul>
+<li>配合 <a href="../01_%E6%9C%8D%E5%8A%A1%E5%99%A8/">01_服务器</a> 看 CPU/PCIe/IOMMU/Redfish 硬件</li>
+<li>配合 <a href="../02_Linux/">02_Linux</a> 看内核虚拟化栈</li>
+<li>配合 <a href="../03_%E7%BD%91%E7%BB%9C/">03_网络</a> 看 OVS / OVN / VXLAN / SR-IOV / DPU</li>
+<li>配合 <a href="../04_%E8%99%9A%E6%8B%9F%E5%8C%96/">04_虚拟化</a> 看 KVM/libvirt/HCI/KubeVirt</li>
+<li>配合 <a href="../06_Docker/">06_Docker</a> 看容器运行时</li>
+<li>配合 <a href="../07_Kubernetes/">07_Kubernetes</a> 看 Cluster API / KubeVirt / Karmada</li>
+<li>配合 <a href="../08_DevOps/">08_DevOps</a> 看 GitOps / Terraform / ArgoCD</li>
+<li>配合 <a href="../09_%E4%B8%AD%E9%97%B4%E4%BB%B6/">09_中间件</a> 看 Ceph / RabbitMQ / MariaDB</li>
+<li>配合 <a href="../11_AI%E5%9F%BA%E7%A1%80%E8%AE%BE%E6%96%BD/">11_AI基础设施</a> 看 GPU 切片 / vLLM / RoCE</li>
+<li>配合 <a href="../12_AIOps/">12_AIOps</a> 看 LLM-OPS / 智能运维</li>
+<li>配合 <a href="../13_%E8%AE%A4%E8%AF%81%E4%B8%8ESSO/">13_认证与SSO</a> 看 Keystone+Keycloak SSO</li>
+<li>配合 <a href="../14_%E5%AE%89%E5%85%A8/">14_安全</a> 看机密计算 / 等保 / 国密 / 数据安全法</li>
+<li>配合 <a href="../16_%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5/">16_故障排查</a> 看 OpenStack VM/卷/网络 排障实战</li>
+</ul>
 
 
 
@@ -1861,13 +1824,13 @@
         
         
           
-          <a href="01_%E4%BA%91%E5%B9%B3%E5%8F%B0%E9%80%89%E5%9E%8B/" class="md-footer__link md-footer__link--next" aria-label="下一页: 01_云平台选型">
+          <a href="01_%E5%9F%BA%E7%A1%80/" class="md-footer__link md-footer__link--next" aria-label="下一页: 01_基础">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 下一页
               </span>
               <div class="md-ellipsis">
-                01_云平台选型
+                01_基础
               </div>
             </div>
             <div class="md-footer__button md-icon">

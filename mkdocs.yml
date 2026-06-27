@@ -125,17 +125,10 @@ nav:
 
   - 07_Kubernetes:
     - 概述: 07_Kubernetes/index.md
-    - 01_基础概念: 07_Kubernetes/01_基础概念/README.md
-    - 02_集群部署: 07_Kubernetes/02_集群部署/README.md
-    - 03_网络: 07_Kubernetes/03_网络/README.md
-    - 04_存储: 07_Kubernetes/04_存储/README.md
-    - 05_调度与资源管理: 07_Kubernetes/05_调度与资源管理/README.md
-    - 06_安全: 07_Kubernetes/06_安全/README.md
-    - 07_可观测性: 07_Kubernetes/07_可观测性/README.md
-    - 08_集群运维: 07_Kubernetes/08_集群运维/README.md
-    - 09_CICD: 07_Kubernetes/09_CICD/README.md
-    - 10_Operator开发: 07_Kubernetes/10_Operator开发/README.md
-    - 11_生态工具: 07_Kubernetes/11_生态工具/README.md
+    - 01_基础: 07_Kubernetes/01_基础/README.md
+    - 02_进阶: 07_Kubernetes/02_进阶/README.md
+    - 03_高级: 07_Kubernetes/03_高级/README.md
+    - 04_最佳实践: 07_Kubernetes/04_最佳实践/README.md
     - 99_发展与展望: 07_Kubernetes/99_发展与展望.md
 
   - 08_DevOps:
