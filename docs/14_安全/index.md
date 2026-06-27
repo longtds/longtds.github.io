@@ -1,92 +1,72 @@
-# 14_安全 · 概述
+# 14. 安全
 
-> 安全是运维的必修课。从主机到容器，从网络到应用，每个环节都是攻击面。
+> 安全 = 体系工程，覆盖主机/网络/容器/数据/身份/应用/AI/合规。本章按 **基础 → 进阶 → 高级 → 最佳实践 → 发展与展望** 五层递进，聚焦主机加固 + DevSecOps + K8s 安全基线 + Service Mesh mTLS + Vault 全栈 + 雷池/ModSec WAF + Falco/Tetragon 运行时 + SPIRE + SOC + 红蓝 + 国密 + 等保 3 + 关基 + AI 安全 + Confidential Computing + PQC 16 大主线。
 
-## 一、企业安全发展简史
+## 章节结构
 
-| 阶段 | 时期 | 范式 |
-|:---|:---:|:---|
-| 边界安全 | 1990s-2010s | 防火墙 + 杀毒 |
-| 主机安全 | 2010-2015 | HIDS、补丁管理 |
-| 云原生安全 | 2015-2020 | 容器、K8s、镜像扫描 |
-| 零信任 | 2020-至今 | 持续验证、身份为核心 |
-| AI 安全 | 2023-至今 | 模型安全、提示词攻击 |
-
-## 二、安全防护矩阵
-
-```
-┌────────── 主机/OS ──────────┐
-│  内核加固 SELinux/AppArmor  │
-│  审计 auditd/eBPF           │
-│  补丁管理                    │
-└────────────────────────────┘
-        ↓
-┌────────── 容器 ────────────┐
-│  镜像扫描（Trivy/Grype）    │
-│  运行时安全（Falco/Tetragon）│
-│  策略（OPA/Kyverno）        │
-└────────────────────────────┘
-        ↓
-┌────────── K8s 集群 ─────────┐
-│  RBAC、Pod Security         │
-│  NetworkPolicy              │
-│  Secret 加密                │
-│  Admission Controller       │
-└────────────────────────────┘
-        ↓
-┌────────── 网络 ────────────┐
-│  防火墙、WAF、DDoS          │
-│  零信任接入                  │
-│  mTLS                       │
-└────────────────────────────┘
-        ↓
-┌────────── 数据 ────────────┐
-│  加密（KMS）                 │
-│  备份与恢复                  │
-│  分级分类、脱敏              │
-└────────────────────────────┘
-```
-
-## 三、安全三要素 CIA
-
-| 要素 | 含义 | 防护手段 |
+| 章节 | 适合人群 | 核心内容 |
 |:---|:---|:---|
-| **机密性** | 数据不泄露 | 加密、访问控制 |
-| **完整性** | 数据不篡改 | Hash、签名、审计 |
-| **可用性** | 系统不宕机 | 备份、容灾、DDoS 防护 |
+| [01_基础](01_基础/README.md) | 入门 | CIA + STRIDE + OWASP Top 10 + 主机加固(SSH/sysctl/SELinux/auditd) + 网络ACL + 密码学 + 证书+PKI + Web 安全 + Trivy 镜像 + 日志审计 + 等保2级 + 20 题 |
+| [02_进阶](02_进阶/README.md) | 维护安全平台 | DevSecOps 全链 + Falco/Tetragon + K8s PSS+NetPol+Kyverno + Mesh mTLS + Vault 全栈 + 雷池/ModSec WAF + 蜜罐 + API 安全 + 数据加密+脱敏+DLP + 等保3 + 国密 + SIEM |
+| [03_高级](03_高级/README.md) | 安全架构师 | SOC+SOAR+TIP+CTEM+ASM + 威胁建模 + 红蓝紫 + Threat Hunting + 供应链 SLSA L3 + Confidential Computing + 零信任 + DSPM/DLP/隐私计算 + AI 安全(LLM Top10) + 多云 CNAPP + 关基 + PICERL IR + 团队 |
+| [04_最佳实践](04_最佳实践/README.md) | 平台负责人/CISO | 12 金标 + CIS + DevSecOps 工具链 + K8s 基线 + 零信任落地 + 数据保护 + 等保3+国密+信创 + 24x7 SOC + 红蓝 + IR + 团队组织 + KPI + 法规合规 |
+| [99_发展与展望](99_发展与展望.md) | 所有人 | LLM 安全 + AI 反 AI + SLSA L3 强制 + Confidential 普及 + 零信任/SASE + 国密+关基 + Sovereign + PQC + DSPM/CNAPP + AI SOC + 20 项 5 年信心矩阵 |
 
-## 四、本章覆盖
+## 学习路径
 
-| 子章节 | 内容 |
-|:---|:---|
-| **01_Linux安全** | 加固、SELinux、auditd、CIS |
-| **02_容器安全** | 镜像/运行时/配置 |
-| **03_K8s安全** | RBAC、Pod Security、NetworkPolicy |
-| **04_网络安全** | 防火墙、WAF、IDS、DDoS |
-| **05_密钥管理** | Vault、KMS、Sealed Secrets |
-| **06_供应链安全** | SBOM、Sigstore、依赖扫描 |
-| **07_网络安全基础** | TLS、PKI、零信任 |
-| **08_加密与认证** | 对称/非对称、HMAC、JWT |
-| **09_漏洞管理** | CVE 跟踪、扫描、修复 |
-| **10_安全运营** | SOC、SIEM、应急响应 |
+```
+入门（1-3 月）
+  └─ 01_基础: 加固 + OWASP + Trivy + TLS + 等保2 + 20 题
 
-## 五、安全合规框架
+进阶（3-12 月）
+  └─ 02_进阶: DevSecOps + Falco + Kyverno + Mesh + Vault + WAF + SIEM + 等保3
 
-| 框架 | 适用 |
-|:---|:---|
-| **等保 2.0** | 中国合规必备（一级 - 四级）|
-| **ISO 27001** | 国际通用 |
-| **SOC 2** | SaaS 出海 |
-| **GDPR** | 欧盟数据保护 |
-| **PCI DSS** | 支付卡行业 |
-| **HIPAA** | 医疗 |
-| **NIST CSF** | 美国政府推荐框架 |
+高级（1-2 年）
+  └─ 03_高级: SOC平台 + 红蓝 + SLSA + Confidential + AI 安全 + CNAPP + 关基
 
-## 六、学习路径
+工程化（2-3 年）
+  └─ 04_最佳实践: 12 金标 + 24x7 SOC + 红蓝演练 + 等保3+国密+信创 + IR + KPI
 
-1. **基础**：Linux 加固 + 网络安全基础
-2. **进阶**：容器/K8s 安全
-3. **专项**：密钥管理 + 漏洞管理
-4. **体系化**：SOC + SIEM + 等保合规
+展望（持续）
+  └─ 99_发展与展望: LLM + Agent + Confidential + PQC + Sovereign + AI SOC
+```
 
-> 📖 安全没有"做完了"，只有"持续做"。漏洞每天新增，攻击者每天进化。
+## 核心判断
+
+```
+心法:
+  1. 安全是体系, 不是产品堆砌
+  2. CIS Benchmarks + 等保 是基线
+  3. DevSecOps 左移: SAST/SCA/IaC/Container/SBOM/签名全链
+  4. K8s 必走 PSS + NetPol + Kyverno + Falco
+  5. Service Mesh Strict mTLS + SPIFFE (服务间默认加密)
+  6. Vault 动态凭证 取代 静态密码
+  7. 全员 MFA + Passkey + WebAuthn (身份是入口)
+  8. 24x7 SOC + SIEM 6mo + 季度红蓝
+  9. 国密 + 等保 3 + 关基 + 信创 (中国央企)
+  10. AI 安全 (Prompt Injection + Guardrails + Agent) 是新风口
+  11. Confidential Computing (TDX/SEV/CSV) 是 LLM 时代刚需
+  12. PICERL IR + Velociraptor 取证 + Postmortem 闭环
+
+红线:
+  ❌ 边界防火墙 + 静态密码 (古典)
+  ❌ K8s 默认 Pod (root + privileged + 无 NetPol)
+  ❌ 镜像 latest + 无签名 + 无扫描
+  ❌ Secret 入代码 (gitleaks 必跑)
+  ❌ DB 静态密码 + 多人共享
+  ❌ SSH 静态 key 长期不轮换
+  ❌ 无 SIEM / 无审计 / 无 6mo 留存
+  ❌ 无红蓝演练 (不知道防御缺口)
+  ❌ 等保 / 国密 / 信创 不学 (央企淘汰)
+  ❌ AI 安全 不学 (LLM 时代盲区)
+```
+
+## 相关章节
+
+- 配合 [07_Kubernetes](../07_Kubernetes/index.md) 看 RBAC + PSS + NetPol + Kyverno + Falco
+- 配合 [08_DevOps](../08_DevOps/index.md) 看 DevSecOps 工具链 + cosign + SLSA
+- 配合 [11_AI基础设施](../11_AI基础设施/index.md) 看 LLM Guardrails + Confidential Inference
+- 配合 [12_AIOps](../12_AIOps/index.md) 看 SIEM + UEBA + AI SOC Copilot
+- 配合 [13_认证与SSO](../13_认证与SSO/index.md) 看 IdP + MFA + SPIRE + Vault
+- 配合 [15_渗透测试](../15_渗透测试/index.md) 看 红蓝 + ATT&CK + Sliver
+- 配合 [16_故障排查](../16_故障排查/index.md) 看 IR + 取证 + Postmortem
