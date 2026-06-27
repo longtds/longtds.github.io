@@ -1,108 +1,72 @@
-# 15_渗透测试 · 概述
+# 15. 渗透测试
 
-> 渗透测试是"以攻代守"的安全实践——用攻击者视角发现并修复漏洞。
+> 渗透测试 = 授权红队的攻防工程。本章按 **基础 → 进阶 → 高级 → 最佳实践 → 发展与展望** 五层递进，聚焦 PTES + Kali 工具栈 + Web/AD/Cloud/K8s + Sliver/CS C2 + AI 红队 + HW 行动 + Bug Bounty + CTEM 14 大主线。
 
-## 一、渗透测试发展简史
+> ⚠️ **法律红线**: 渗透测试 **必须授权**。本章一切技术仅限授权范围 / CTF / 自有实验室。未授权渗透 = 网安法/刑法。
 
-| 阶段 | 时期 | 标志 |
-|:---|:---:|:---|
-| 黑客文化 | 1980s | Phrack、社区文化 |
-| 商业化 | 2000s | Nessus、Metasploit |
-| Web 时代 | 2010s | OWASP Top 10、Burp Suite |
-| 红蓝对抗 | 2015-至今 | 红队/蓝队/紫队体系 |
-| 自动化攻击 | 2020-至今 | BAS、攻击面管理（ASM）|
+## 章节结构
 
-## 二、渗透测试方法论
-
-| 框架 | 阶段 |
-|:---|:---|
-| **PTES** | 前期交互 → 信息收集 → 威胁建模 → 漏洞分析 → 利用 → 后渗透 → 报告 |
-| **OWASP WSTG** | Web 应用专项 |
-| **OWASP MSTG** | 移动应用专项 |
-| **MITRE ATT&CK** | 攻击者战术 + 技术 + 流程 (TTP) |
-| **杀伤链** | 侦察 → 武器化 → 投递 → 利用 → 安装 → C2 → 行动 |
-
-## 三、渗透测试 = 受控攻击
-
-```
-            授权范围
-              ↓
-信息收集 ──→ 漏洞分析 ──→ 漏洞利用 ──→ 后渗透
-   ↓             ↓             ↓             ↓
-被动信息       扫描+识别     RCE/Web/弱口令   横移+提权
-主动探测       验证+排序     权限提升         数据获取
-              ↓
-           证据收集
-              ↓
-           报告 + 修复建议
-```
-
-## 四、Kali Linux：渗透测试的瑞士军刀
-
-| 工具大类 | 代表工具 |
-|:---|:---|
-| 信息收集 | nmap、whatweb、theHarvester |
-| 漏洞扫描 | Nessus、OpenVAS、Nuclei |
-| Web 攻击 | Burp Suite、sqlmap、XSStrike |
-| 密码攻击 | hydra、john、hashcat |
-| 利用框架 | Metasploit、Cobalt Strike |
-| 后渗透 | mimikatz、BloodHound、Empire |
-| 无线 | aircrack-ng、wifite |
-| 取证 | Volatility、Autopsy |
-| 逆向 | Ghidra、radare2、IDA |
-
-## 五、本章覆盖
-
-| 子章节 | 内容 |
-|:---|:---|
-| **00_Kali概述** | 系统使用、工具地图 |
-| **01_信息收集** | 子域名/端口/指纹/OSINT |
-| **02_漏洞扫描** | Nessus/OpenVAS/Nuclei |
-| **03_网络攻击** | ARP/中间人/DNS 欺骗 |
-| **04_Web攻击** | SQLi/XSS/CSRF/SSRF/反序列化 |
-| **05_认证攻击** | 弱口令/字典攻击/Pass-the-Hash |
-| **06_后渗透** | 提权/横移/持久化/C2 |
-| **07_社会工程学** | 钓鱼/水坑/物理渗透 |
-| **08_防御加固** | 蓝队视角的加固 |
-| **09_CTF实战** | 解题思路与靶场 |
-| **10_方法论** | PTES/ATT&CK/报告规范 |
-
-## 六、合法边界
-
-⚠️ **必读**：
-
-```
-渗透测试 = 合法授权 + 明确范围 + 不破坏数据
-   ↓
-否则就是违法 → 《刑法》285/286 条
-```
-
-| 必须 ✅ | 禁止 ❌ |
-|:---|:---|
-| 书面授权 | 未授权测试他人系统 |
-| 明确目标范围 | 越权访问数据 |
-| 不影响生产 | 破坏数据完整性 |
-| 不泄露敏感数据 | 在公网发布漏洞细节 |
-| 完整审计日志 | 用于个人牟利 |
-
-## 七、学习路径
-
-| 阶段 | 目标 | 资源 |
+| 章节 | 适合人群 | 核心内容 |
 |:---|:---|:---|
-| 入门 | 理解 OWASP Top 10 | DVWA、SQLi-Labs 靶场 |
-| 进阶 | 完成中等难度 CTF | HackTheBox、TryHackMe |
-| 实战 | 真实渗透项目 | OSCP 认证 |
-| 高阶 | 红队对抗 | 漏洞挖掘、0day 研究 |
+| [01_基础](01_基础/README.md) | 入门 | 法律边界 + PTES + Kali 工具 + nmap/amass + Burp 入门 + Metasploit + Web 漏洞(SQLi/XSS/SSRF) + 密码破解 + 报告 + CTF + 20 题 |
+| [02_进阶](02_进阶/README.md) | 中型授权渗透 | Web 进阶(认证/IDOR/反序列化/SSTI/XXE) + API + AD(BloodHound/Kerberoasting/Relay/PtH) + 内网横向(ligolo) + 提权(Linux/Win) + 免杀 + Sliver/CS + WAF Bypass + BBOT 自动化 |
+| [03_高级](03_高级/README.md) | 红队/0day 研究 | APT 全链 + 红队基建 + EDR 对抗(syscall/BYOVD) + AD 深度(ADCS) + Cloud(AWS/Azure/GCP/阿里) + K8s 攻击 + DevOps 链 + 供应链 + AI/LLM 红队 + 0day 漏挖 + IoT/OT + 社工 |
+| [04_最佳实践](04_最佳实践/README.md) | 红队负责人/渗透服务 | 12 金标 + 授权 SOW + ROE + 方法论 + 工具链 + Recon 资产 + 漏洞分级 + 报告标准 + SRC/Bug Bounty + 红蓝紫(Caldera) + HW 重保 + KPI + 团队 |
+| [99_发展与展望](99_发展与展望.md) | 所有人 | AI 红队 + Agent 攻击 + LLM 辅助 + Cloud/K8s 主战 + 供应链 + AI vs EDR + HW + Bug Bounty + CTEM + OT/IoT/5G + PQC + 20 项 5 年信心矩阵 |
 
-## 八、常见证书
+## 学习路径
 
-| 证书 | 难度 | 价值 |
-|:---|:---|:---|
-| CEH | 入门 | 入门理论 |
-| **OSCP** | 中 | 实战金标准 |
-| OSEP | 高 | 进阶利用 |
-| CRTO | 中 | 红队对抗 |
-| CISSP | 高 | 管理向 |
-| CISP-PTE / NISP | — | 国内合规 |
+```
+入门（1-3 月）
+  └─ 01_基础: 法律 + PTES + Kali + Burp + Metasploit + DVWA + 20 题
 
-> 📖 学渗透不是为了攻击，是为了更好地防御。能想到攻击者怎么打，才能真正保护好系统。
+进阶（3-12 月）
+  └─ 02_进阶: Web 深度 + AD + 内网 + 提权 + Sliver + BBOT + Bug Bounty
+
+高级（1-2 年）
+  └─ 03_高级: APT 全链 + EDR 对抗 + Cloud + K8s + 供应链 + AI 红队 + 0day
+
+工程化（2-3 年）
+  └─ 04_最佳实践: 授权 + ROE + 工具链 + 报告 + 红蓝紫 + HW 重保 + 团队
+
+展望（持续）
+  └─ 99_发展与展望: AI 红队 + Agent + Cloud/K8s + CTEM + 国密 + Sovereign
+```
+
+## 核心判断
+
+```
+心法:
+  1. 法律先行: 授权 + 范围 + ROE 三件套
+  2. PTES 七阶段, 系统化方法论
+  3. ATT&CK 是攻防共同语言
+  4. AI 红队(Garak/PyRIT) 是未来 5 年最大机遇
+  5. Cloud + K8s 占红队 60%+, 必修
+  6. AD 深度(BloodHound + Certipy + Impacket) 永远的核心
+  7. 红队基建(Sliver/CS + Redirector + CDN) 是分水岭
+  8. EDR 对抗(syscall + BYOVD + Sleep masking)
+  9. 供应链(XZ/SolarWinds 模式) 是新方向
+  10. HW + 关基 + 国密 + 信创 是央企硬需求
+  11. CTEM + Continuous 替代年度渗透
+  12. 报告写作 + Postmortem 决定专业度
+
+红线:
+  ❌ 未授权渗透 (违法)
+  ❌ 超范围 (合同外)
+  ❌ 破坏生产 (无升级)
+  ❌ 客户数据外泄 (法律)
+  ❌ 0day 不上报 (黑产)
+  ❌ 持久化无清理 (违 ROE)
+  ❌ 只用工具不懂原理
+  ❌ 不学 AI + Cloud (5 年淘汰)
+  ❌ 国密 + HW + 关基 不熟 (央企无用)
+  ❌ 报告糊弄 (没价值)
+```
+
+## 相关章节
+
+- 配合 [07_Kubernetes](../07_Kubernetes/index.md) 看 K8s 攻击 + RBAC + Pod 逃逸
+- 配合 [11_AI基础设施](../11_AI基础设施/index.md) 看 LLM Guardrails + Confidential
+- 配合 [13_认证与SSO](../13_认证与SSO/index.md) 看 钓鱼 + Token 窃取 + AD
+- 配合 [14_安全](../14_安全/index.md) 看 SOC + EDR + SIEM + 等保 + 国密
+- 配合 [16_故障排查](../16_故障排查/index.md) 看 IR + 取证 + Postmortem

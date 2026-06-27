@@ -310,7 +310,7 @@ SIEM:          Wazuh / 360 / 天眼 (告警 SOC)
 Audit:         K8s audit log + GitLab audit + Vault audit → SIEM
 ```
 
-详见 [14_安全/08_供应链安全](../../14_安全/08_供应链安全/README.md)（建后续）。
+详见 [14_安全/03_高级](../../14_安全/03_高级/README.md) 供应链 SLSA L3 章节。
 
 ## 七、FinOps 落地
 
