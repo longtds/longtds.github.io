@@ -173,9 +173,10 @@ nav:
 
   - 13_认证与SSO:
     - 概述: 13_认证与SSO/index.md
-    - 01_认证协议: 13_认证与SSO/01_认证协议/README.md
-    - 02_Keycloak: 13_认证与SSO/02_Keycloak/README.md
-    - 03_企业认证体系: 13_认证与SSO/03_企业认证体系/README.md
+    - 01_基础: 13_认证与SSO/01_基础/README.md
+    - 02_进阶: 13_认证与SSO/02_进阶/README.md
+    - 03_高级: 13_认证与SSO/03_高级/README.md
+    - 04_最佳实践: 13_认证与SSO/04_最佳实践/README.md
     - 99_发展与展望: 13_认证与SSO/99_发展与展望.md
 
   - 14_安全:
