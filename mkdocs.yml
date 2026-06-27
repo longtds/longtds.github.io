@@ -133,11 +133,10 @@ nav:
 
   - 08_DevOps:
     - 概述: 08_DevOps/index.md
-    - 01_代码管理: 08_DevOps/01_代码管理/README.md
-    - 02_CICD: 08_DevOps/02_CICD/README.md
-    - 03_基础设施即代码: 08_DevOps/03_基础设施即代码/README.md
-    - 04_容器化CI: 08_DevOps/04_容器化CI/README.md
-    - 05_部署策略: 08_DevOps/05_部署策略/README.md
+    - 01_基础: 08_DevOps/01_基础/README.md
+    - 02_进阶: 08_DevOps/02_进阶/README.md
+    - 03_高级: 08_DevOps/03_高级/README.md
+    - 04_最佳实践: 08_DevOps/04_最佳实践/README.md
     - 99_发展与展望: 08_DevOps/99_发展与展望.md
 
   - 09_中间件:
