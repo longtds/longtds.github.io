@@ -117,10 +117,10 @@ nav:
 
   - 06_Docker:
     - 概述: 06_Docker/index.md
-    - 01_容器原理: 06_Docker/01_容器原理/README.md
-    - 02_Docker实践: 06_Docker/02_Docker实践/README.md
-    - 03_运行时: 06_Docker/03_运行时/README.md
-    - 04_容器化迁移: 06_Docker/04_容器化迁移/README.md
+    - 01_基础: 06_Docker/01_基础/README.md
+    - 02_进阶: 06_Docker/02_进阶/README.md
+    - 03_高级: 06_Docker/03_高级/README.md
+    - 04_最佳实践: 06_Docker/04_最佳实践/README.md
     - 99_发展与展望: 06_Docker/99_发展与展望.md
 
   - 07_Kubernetes:
