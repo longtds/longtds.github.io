@@ -165,12 +165,10 @@ nav:
 
   - 12_AIOps:
     - 概述: 12_AIOps/index.md
-    - 01_异常检测: 12_AIOps/01_异常检测/README.md
-    - 02_告警管理: 12_AIOps/02_告警管理/README.md
-    - 03_LLM告警: 12_AIOps/03_LLM告警/README.md
-    - 04_自动化修复: 12_AIOps/04_自动化修复/README.md
-    - 05_成本优化: 12_AIOps/05_成本优化/README.md
-    - 06_运维知识库: 12_AIOps/06_运维知识库/README.md
+    - 01_基础: 12_AIOps/01_基础/README.md
+    - 02_进阶: 12_AIOps/02_进阶/README.md
+    - 03_高级: 12_AIOps/03_高级/README.md
+    - 04_最佳实践: 12_AIOps/04_最佳实践/README.md
     - 99_发展与展望: 12_AIOps/99_发展与展望.md
 
   - 13_认证与SSO:

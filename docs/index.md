@@ -119,7 +119,7 @@
 - 🛠️ [Shell 脚本收藏](02_Linux/04_最佳实践/README.md) — 常用运维脚本
 - 📊 [告警规则库](07_Kubernetes/02_进阶/README.md) — Prometheus 规则
 - 🔐 [安全运营 SOC](14_安全/10_安全运营/README.md) — SIEM/SOAR/IR
-- 🤖 [LLM 推理框架](11_AI基础设施/02_推理框架/README.md) — vLLM/SGLang
+- 🤖 [LLM 推理框架](11_AI基础设施/02_进阶/README.md) — vLLM/SGLang
 
 ---
 
