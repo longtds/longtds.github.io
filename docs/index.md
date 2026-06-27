@@ -115,9 +115,9 @@
 ## 🚀 快速导航
 
 - 🔍 [故障排查模板](16_故障排查/故障日志模板.md) — 修完故障直接填
-- ⚡ [kubectl 常用命令](07_Kubernetes/11_生态工具/README.md) — 日常高频速查
+- ⚡ [kubectl 常用命令](07_Kubernetes/01_基础/README.md) — 日常高频速查
 - 🛠️ [Shell 脚本收藏](02_Linux/04_最佳实践/README.md) — 常用运维脚本
-- 📊 [告警规则库](07_Kubernetes/07_可观测性/README.md) — Prometheus 规则
+- 📊 [告警规则库](07_Kubernetes/02_进阶/README.md) — Prometheus 规则
 - 🔐 [安全运营 SOC](14_安全/10_安全运营/README.md) — SIEM/SOAR/IR
 - 🤖 [LLM 推理框架](11_AI基础设施/02_推理框架/README.md) — vLLM/SGLang
 
