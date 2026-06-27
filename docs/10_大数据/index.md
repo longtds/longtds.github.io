@@ -1,88 +1,72 @@
-# 10_大数据 · 概述
+# 10. 大数据
 
-> 大数据 = 海量 + 多样 + 实时。从 Hadoop 到湖仓一体，从批处理到流批一体，技术不断进化。
+> 大数据 = 数据中台。本章按 **基础 → 进阶 → 高级 → 最佳实践 → 发展与展望** 五层递进，聚焦 Hadoop/Spark/Flink + Iceberg/Paimon 湖仓 + Doris/StarRocks/ClickHouse 实时数仓 + Trino 即席 + Airflow/DolphinScheduler 调度 + SeaTunnel/Flink CDC 集成 + dbt/Soda/DataHub DataOps + Feast 特征 + Data Mesh/Contracts 治理 + AI Native(Text-to-SQL/RAG) + 国密合规 11 大主线。
 
-## 一、大数据发展简史
+## 章节结构
 
-| 时期 | 阶段 | 代表 |
-|:---|:---:|:---|
-| 2004-2006 | 论文奠基 | Google GFS/MapReduce/BigTable |
-| 2006-2012 | Hadoop 时代 | HDFS/MR/Hive/HBase |
-| 2012-2018 | 内存计算 | Spark 取代 MR、Flink 流处理 |
-| 2018-2022 | 数据湖兴起 | Iceberg/Hudi/Delta |
-| 2022-至今 | 湖仓一体 | Snowflake/Databricks 引领 |
-
-## 二、大数据 = 三个 V
-
-| 维度 | 挑战 | 解决 |
+| 章节 | 适合人群 | 核心内容 |
 |:---|:---|:---|
-| **Volume**（量） | PB 级 | 分布式存储 |
-| **Velocity**（速） | 实时流 | Flink/Spark Streaming |
-| **Variety**（杂） | 结构/半结构/非结构 | 数据湖 + Schema-on-read |
+| [01_基础](01_基础/README.md) | 入职 1 年内 | Lambda/Kappa/Lakehouse 架构 / HDFS 基础 / Hive / Spark PySpark / Flink SQL / Airflow / DolphinScheduler / DataX / SeaTunnel / 数据分层 + 维度建模 + 20 题 |
+| [02_进阶](02_进阶/README.md) | 独立维护中型数据平台 | Spark Operator + Volcano + Celeborn / Flink K8s Operator + Application Mode + Savepoint / Paimon+Iceberg 湖仓 / Doris/StarRocks 实时数仓 / Flink CDC / Trino 即席 / DolphinScheduler 多租户 / DataHub 血缘 / Soda+Great Expectations 质量 / 监控告警 |
+| [03_高级](03_高级/README.md) | 数据架构师 / 平台负责人 | Lakehouse 一体化 / Data Mesh / 流批一体深度(Paimon+Flink) / 内核调优(AQE+Incremental) / Trino+StarRocks 联邦 / Feast 特征 / DataHub+契约+质量 / AI Native(Text-to-SQL/RAG) / 多云+安全+国密+国产化 |
+| [04_最佳实践](04_最佳实践/README.md) | 团队负责人 | 架构决策树 / 5 层分层规范 / 工程化基线(CI+RBAC+秘密) / 调度规范 / 数据治理体系 / SLA 量化 / 数据安全合规 / FinOps / 平台化(Backstage 数据 IDP+Golden Path) / Incident SOP / 3 种生产架构 |
+| [99_发展与展望](99_发展与展望.md) | 所有人 | Lakehouse 替代 / Iceberg/Paimon 主导 / Doris 爆发 / Data Mesh 落地 / DataOps 普及 / AI Native 数据栈 / Data Contracts / 多云数据 / 国密合规 / 国产开源 70% + 20 项 5 年信心矩阵 |
 
-## 三、整体技术栈
-
-```
-┌─────────── 应用层 ───────────┐
-│  BI / 报表 / AI 训练 / 可视化  │
-├─────────── 服务层 ───────────┤
-│  Trino/Presto/Doris/ClickHouse│
-│  (查询引擎)                  │
-├─────────── 计算层 ───────────┤
-│  Spark / Flink / Hive        │
-├─────────── 存储层 ───────────┤
-│  Iceberg/Hudi/Delta (表格式)  │
-│  HDFS / S3 / OSS  (对象存储)  │
-├─────────── 治理层 ───────────┤
-│  Atlas / DataHub / Marquez   │
-└─────────────────────────────┘
-```
-
-## 四、批处理 vs 流处理
-
-| 维度 | 批 | 流 |
-|:---|:---|:---|
-| 延迟 | 小时 | 秒级 |
-| 数据量 | 全量历史 | 增量 |
-| 引擎 | Hive/Spark | Flink/Spark Streaming |
-| 用途 | 报表、ETL、训练 | 监控、实时风控、推荐 |
-| 复杂度 | 简单 | 高（窗口、状态、Exactly Once） |
-
-**趋势**：流批一体（同一份 SQL 跑两种模式）。
-
-## 五、数据湖 vs 数据仓库 vs 湖仓一体
-
-| 概念 | 存储 | 计算 | Schema | 代表 |
-|:---|:---|:---|:---|:---|
-| 数据仓库 | 专用 | 紧耦合 | Write 时 | Teradata、Redshift |
-| 数据湖 | 对象存储 | 解耦 | Read 时 | HDFS + Hive |
-| 湖仓一体 | 对象存储 | 解耦 + ACID | 表格式管理 | Databricks、Iceberg |
+## 学习路径
 
 ```
-2000s: 数据仓库（贵、僵化）
-2015s: 数据湖（灵活但治理难）
-2020s: 湖仓一体（兼具二者优点）
+入门（1-3 月）
+  └─ 01_基础: Spark/Flink/调度/采集 + 数据分层 + 20 题
+
+进阶（3-12 月）
+  └─ 02_进阶: K8s Operator + Paimon/Iceberg + Doris + Flink CDC + DataHub + Soda
+
+高级（1-2 年）
+  └─ 03_高级: Lakehouse + Data Mesh + 流批一体 + 内核调优 + 联邦 + Feast + AI Native + 国密
+
+工程化（2-3 年）
+  └─ 04_最佳实践: 决策树 + 工程基线 + 治理 + SLA + FinOps + Backstage IDP + 国产化 + 应急
+
+展望（持续）
+  └─ 99_发展与展望: Lakehouse + Paimon + Doris + Data Mesh + DataOps + AI Native + 国密 + 国产开源
 ```
 
-## 六、本章覆盖
+## 核心判断
 
-| 子章节 | 内容 |
-|:---|:---|
-| **00_技术演进** | 整体趋势、生态变迁 |
-| **01_Hadoop** | HDFS + YARN + MR |
-| **02_Hive** | SQL on Hadoop |
-| **03_HBase** | KV 列族数据库 |
-| **04_Spark** | 内存计算、SparkSQL、Spark on K8s |
-| **05_Presto** | MPP 查询引擎 |
-| **06_ClickHouse** | OLAP 列存 |
-| **07_PostgreSQL** | 关系型 + 数据集成 |
-| **08_数据湖与存储** | Iceberg/Hudi/Delta + S3 + Paimon |
+```
+心法:
+  1. 别再 Hadoop — Lakehouse (对象存储 + Iceberg/Paimon) 取代
+  2. 别再 Lambda — 流批一体 (Paimon + Flink) 一套代码
+  3. 实时数仓 — Doris/StarRocks 国产主导
+  4. 多源 ETL — Flink CDC + SeaTunnel 是国产 Apache 黄金组合
+  5. 治理 — DataHub + 契约 + Soda + Ranger 一栈
+  6. Feast — 特征工程标配 (AI 必修)
+  7. AI Native — Text-to-SQL 业务实用 (2026-2027)
+  8. Data Mesh — 大企业组织变革
+  9. DataOps — dbt 普及 + DORA 度量
+  10. 国密 + 等保 + 信创 — 央企硬要求 (Paimon/Doris/DolphinScheduler 必修)
 
-## 七、学习路径
+红线:
+  ❌ 还在堆 HDFS / Cloudera (老死)
+  ❌ Lambda 双套维护
+  ❌ 数据无契约 / 无血缘 / 无质量
+  ❌ 单调度无重试无幂等
+  ❌ Spark 无 AQE / 无动态分配
+  ❌ Flink 无 Checkpoint / 无 Operator
+  ❌ Doris 无 Routine Load / 无 Catalog
+  ❌ 数据脱敏不做 / 审计 < 180d
+  ❌ 跨地无灾备演练
+  ❌ 不接 DataHub / Backstage 平台
+```
 
-1. **基础**：理解 HDFS + MR 编程模型
-2. **进阶**：精通 Spark + Hive
-3. **实时**：Flink + Kafka
-4. **现代**：Iceberg + Trino + 湖仓架构
+## 相关章节
 
-> 📖 大数据正在被 AI 包裹——数据是 AI 的燃料，存储和处理框架必须为 AI 优化。
+- 配合 [07_Kubernetes](../07_Kubernetes/index.md) 看 Spark/Flink Operator + Volcano + Karmada
+- 配合 [08_DevOps](../08_DevOps/index.md) 看 GitOps + dbt CI/CD + DataOps
+- 配合 [09_中间件](../09_中间件/index.md) 看 Kafka/Pulsar + Doris/ClickHouse + pgvector + TDengine
+- 配合 [11_AI基础设施](../11_AI基础设施/index.md) 看 Feast + Milvus + LangChain SQL Agent
+- 配合 [12_AIOps](../12_AIOps/index.md) 看 数据质量异常检测 + Soda + Prometheus
+- 配合 [13_认证与SSO](../13_认证与SSO/index.md) 看 DataHub OIDC + Ranger LDAP
+- 配合 [14_安全](../14_安全/index.md) 看 Ranger + Polaris + 字段加密 + 国密
+- 配合 [15_渗透测试](../15_渗透测试/index.md) 看 Hive/Spark/Hadoop 渗透 + JDBC 注入
+- 配合 [16_故障排查](../16_故障排查/index.md) 看 Spark OOM / Flink 反压 / Doris BE 高 Compaction
