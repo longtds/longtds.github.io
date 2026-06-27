@@ -10,6 +10,7 @@
 | [02_进阶](02_进阶/README.md) | 自动化负责人 | API(REST/GraphQL/gRPC + Bruno/Pact) + UI(Playwright/Cypress + POM) + 移动(Appium/Maestro) + 性能(k6/JMeter/locust) + DB(Testcontainers) + CI 集成 + Allure + Flaky 治理 + 国产化 |
 | [03_高级](03_高级/README.md) | 测试架构师 | 大规模 CI(Bazel) + 平台化(MeterSphere) + 左移+右移 + 全链路压测(影子) + Chaos + DevSecOps(SAST/SCA/DAST/IAST/Fuzz) + 移动专项 + AI 加持 + LLM 模型测试 + Property/Mutation |
 | [04_最佳实践](04_最佳实践/README.md) | QA Director | 12 金标 + Test Strategy + 金字塔 70/20/10 + Hermetic + CI 多级门禁 + Flaky < 1% + 性能基线 + DevSecOps 强制 + 缺陷 SLA + Postmortem + 团队组织 + KPI + 国产合规 |
+| [05_硬件测试](05_硬件测试/README.md) | 服务器交付/测试工程师 | 组件检查(CPU/MEM/磁盘/RAID/NIC/GPU/BMC) + 固件升级(BIOS/BMC/RAID/NIC/NVMe/GPU + OneCli/RACADM/SUM) + 压测(stress-ng/MemTest86/fio/iperf3/gpu-burn/DCGM) + 72h 烤机 + PXE 自动化(iPXE/Foreman/MAAS) + 国产化(鲲鹏/海光/昇腾) |
 | [99_发展与展望](99_发展与展望.md) | 所有人 | LLM 用例生成 + AI 自愈 + AI Agent 探索 + LLM 模型测试单工种 + Continuous + Production Testing + Shift-Left 极致 + 信创+鸿蒙+小程序 + Sovereign + PQC + 24 项 5 年信心矩阵 |
 
 ## 学习路径
