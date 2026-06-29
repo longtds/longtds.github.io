@@ -1,2 +1,3 @@
-/* 隐藏整个页脚 (上一页/下一页 + Made with MkDocs + 版权) */
-.md-footer { display: none !important; }
+/* 保留「上一页/下一页」翻页栏 (.md-footer__inner), 隐藏底部 meta 区
+   (Made with MkDocs / Copyright / 社交图标) */
+.md-footer-meta { display: none !important; }
