@@ -1,8 +1,10 @@
-site_name: 技术手册
-site_description: 服务器 · Linux · 网络 · 虚拟化 · 容器 · K8s · DevOps · 中间件 · 大数据 · AI · AIOps · 认证 · 安全 · 渗透测试
-site_author: tech-handbook
-repo_url: https://gitlab.company.com/tech-handbook
-edit_uri: edit/main/docs/
+site_name: longtds 的技术手册
+site_description: 服务器 · Linux · 网络 · 虚拟化 · 容器 · K8s · DevOps · 中间件 · 大数据 · AI · AIOps · 认证 · 安全 · 渗透测试 · 软件测试 · 硬件测试
+site_author: longtds
+site_url: https://longtds.github.io
+repo_url: https://github.com/longtds/longtds.github.io
+repo_name: longtds/longtds.github.io
+edit_uri: edit/master/docs/
 
 theme:
   name: material
