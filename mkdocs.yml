@@ -13,7 +13,6 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.top
-    - navigation.footer
     - navigation.prune
     - toc.follow
     - search.suggest
@@ -60,11 +59,12 @@ plugins:
 extra:
   version:
     provider: mike
-  social:
-    - icon: fontawesome/brands/gitlab
-      link: https://gitlab.company.com/tech-handbook
+  generator: false
 
-copyright: Copyright &copy; 2026 Tech Handbook
+copyright: ""
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - 🏠 首页: index.md

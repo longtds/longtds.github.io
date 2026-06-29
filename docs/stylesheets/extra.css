@@ -1,0 +1,2 @@
+/* 隐藏整个页脚 (上一页/下一页 + Made with MkDocs + 版权) */
+.md-footer { display: none !important; }
