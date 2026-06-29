@@ -16,49 +16,49 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: Git Trunk-Based + GitLab CI 一条 Pipeline (lint/test/build/scan/push/deploy) + Helm + ArgoCD + Vault + Terraform + Ansible + 20 题
+ └─ 01_基础: Git Trunk-Based + GitLab CI 一条 Pipeline (lint/test/build/scan/push/deploy) + Helm + ArgoCD + Vault + Terraform + Ansible + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: ArgoCD ApplicationSet + Image Updater + Argo Rollouts + Tekton + Kaniko/BuildKit + Vault+ESO + OPA/Kyverno + cosign+SBOM + DevLake DORA
+ └─ 02_进阶: ArgoCD ApplicationSet + Image Updater + Argo Rollouts + Tekton + Kaniko/BuildKit + Vault+ESO + OPA/Kyverno + cosign+SBOM + DevLake DORA
 
 高级（1-2 年）
-  └─ 03_高级: Backstage IDP + Crossplane Composition + Tekton Chains SLSA L3 + Hermetic Build + ArgoCD sharding + Pyrra SLO + Chaos Mesh + AI 加持 + 多云联邦
+ └─ 03_高级: Backstage IDP + Crossplane Composition + Tekton Chains SLSA L3 + Hermetic Build + ArgoCD sharding + Pyrra SLO + Chaos Mesh + AI 加持 + 多云联邦
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 团队拓扑 + DORA 基线 + 流水线 Gates + 镜像/部署/秘密/策略规范 + 多集群拓扑 + SRE 运营 + DevSecOps 全链 + FinOps + IDP + Incident SOP
+ └─ 04_最佳实践: 团队拓扑 + DORA 基线 + 流水线 Gates + 镜像/部署/秘密/策略规范 + 多集群拓扑 + SRE 运营 + DevSecOps 全链 + FinOps + IDP + Incident SOP
 
 展望（持续）
-  └─ 99_发展与展望: Platform Engineering + GitOps + SLSA L3 + AI Native + DevSecOps + 多云联邦 + VSM + SRE/FinOps + 国产开源 十大主线
+ └─ 99_发展与展望: Platform Engineering + GitOps + SLSA L3 + AI Native + DevSecOps + 多云联邦 + VSM + SRE/FinOps + 国产开源 十大主线
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. DevOps 是文化，不是工具堆
-  2. CI/CD 三层卡控（Pre-commit / PR / Build / Deploy）必须有标准 Gates
-  3. GitOps 是单一事实源 — 一切走 Git，禁手 kubectl apply
-  4. 不可变镜像 + cosign 签名 + SBOM + SLSA Provenance 四件套必备
-  5. Vault + ESO 是秘密治理唯一正解（禁硬编码、禁 base64）
-  6. SLO + 错误预算 + 混沌演练 — SRE 三件套
-  7. Platform Engineering = Platform as a Product（DevOps 团队转型方向）
-  8. AI 工具（Copilot / 通义灵码 / AIOps）必须入栈
-  9. 国产化栈 (KubeSphere DevOps / 极狐 / Harbor / DeepFlow / 通义灵码) 必修
-  10. DORA → VSM（端到端价值流）是下一代度量
+ 1. DevOps 是文化，不是工具堆
+ 2. CI/CD 三层卡控（Pre-commit / PR / Build / Deploy）必须有标准 Gates
+ 3. GitOps 是单一事实源 — 一切走 Git，禁手 kubectl apply
+ 4. 不可变镜像 + cosign 签名 + SBOM + SLSA Provenance 四件套必备
+ 5. Vault + ESO 是秘密治理唯一正解（禁硬编码、禁 base64）
+ 6. SLO + 错误预算 + 混沌演练 — SRE 三件套
+ 7. Platform Engineering = Platform as a Product（DevOps 团队转型方向）
+ 8. AI 工具（Copilot / 通义灵码 / AIOps）必须入栈
+ 9. 国产化栈 (KubeSphere DevOps / 极狐 / Harbor / DeepFlow / 通义灵码) 必修
+ 10. DORA → VSM（端到端价值流）是下一代度量
 
 红线:
-  ❌ 密码硬编码 / base64 当加密
-  ❌ 手 kubectl apply 上生产
-  ❌ :latest tag 上生产
-  ❌ 没回滚机制
-  ❌ CI 跑 root + DinD
-  ❌ 没策略卡控 (resources/probe/sig)
-  ❌ 没 SBOM / 签名
-  ❌ 单 master ArgoCD + 单 Vault
-  ❌ 没 SLO / 错误预算 / Postmortem
-  ❌ 直推 prod 不灰度
-  ❌ 没成本归属 label
-  ❌ 没接 DORA / VSM 度量
+ 密码硬编码 / base64 当加密
+ 手 kubectl apply 上生产
+ :latest tag 上生产
+ 没回滚机制
+ CI 跑 root + DinD
+ 没策略卡控 (resources/probe/sig)
+ 没 SBOM / 签名
+ 单 master ArgoCD + 单 Vault
+ 没 SLO / 错误预算 / Postmortem
+ 直推 prod 不灰度
+ 没成本归属 label
+ 没接 DORA / VSM 度量
 ```
 
 ## 相关章节

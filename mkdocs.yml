@@ -68,7 +68,7 @@ extra_css:
   - stylesheets/extra.css
 
 nav:
-  - 🏠 首页: index.md
+  - 首页: index.md
 
   - 01_服务器:
     - 概述: 01_服务器/index.md

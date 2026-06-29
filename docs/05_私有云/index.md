@@ -16,49 +16,49 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: 装 DevStack/Kolla 单节点 + CLI 一气呵成创建 VM+卷+网络 + 20 题
+ └─ 01_基础: 装 DevStack/Kolla 单节点 + CLI 一气呵成创建 VM+卷+网络 + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: 3 控制+5 计算+3 存储 Kolla 多节点 + Galera/RabbitMQ HA + OVN + Cinder+Ceph + Octavia + Magnum + Heat/Terraform
+ └─ 02_进阶: 3 控制+5 计算+3 存储 Kolla 多节点 + Galera/RabbitMQ HA + OVN + Cinder+Ceph + Octavia + Magnum + Heat/Terraform
 
 高级（1-2 年）
-  └─ 03_高级: Cells V2 + DPDK/SR-IOV + GPU 直通+MIG + Cluster API + 机密 VM + GitOps + 国产化
+ └─ 03_高级: Cells V2 + DPDK/SR-IOV + GPU 直通+MIG + Cluster API + 机密 VM + GitOps + 国产化
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 容量画像 + 配额模板 + DR 演练 + SLURP 升级 + 等保 3 级 + 国产化路径 + 自服务门户
+ └─ 04_最佳实践: 容量画像 + 配额模板 + DR 演练 + SLURP 升级 + 等保 3 级 + 国产化路径 + 自服务门户
 
 展望（持续）
-  └─ 99_发展与展望: OpenStack 回归 + 信创 + K8s 共生 + AI 算力 + 边缘 + 机密计算 + LLM-OPS 八条主线
+ └─ 99_发展与展望: OpenStack 回归 + 信创 + K8s 共生 + AI 算力 + 边缘 + 机密计算 + LLM-OPS 八条主线
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. 私有云 ≠ 一堆 VM，而是计算+网络+存储+身份+编排+计费+合规一体
-  2. 生产 OpenStack 永远 Kolla-Ansible + OVN + Ceph + Galera + RabbitMQ + HAProxy
-  3. SLURP LTS（Antelope/Caracal/Epoxy）跳跃升级才稳
-  4. Cluster API 取代 Magnum，是 K8s on OpenStack 新主流
-  5. OpenStack 与 K8s 不是对抗，是共生
-  6. 中大型私有云必须信创预案
-  7. 机密计算（SEV-SNP/TDX/海光 CSV）2026 已不是 PoC
-  8. Cells V2 让单 Region 撑 10w VM
-  9. LLM-OPS 私有云 2027 成标配
-  10. 边缘云成主流第三形态
+ 1. 私有云 ≠ 一堆 VM，而是计算+网络+存储+身份+编排+计费+合规一体
+ 2. 生产 OpenStack 永远 Kolla-Ansible + OVN + Ceph + Galera + RabbitMQ + HAProxy
+ 3. SLURP LTS（Antelope/Caracal/Epoxy）跳跃升级才稳
+ 4. Cluster API 取代 Magnum，是 K8s on OpenStack 新主流
+ 5. OpenStack 与 K8s 不是对抗，是共生
+ 6. 中大型私有云必须信创预案
+ 7. 机密计算（SEV-SNP/TDX/海光 CSV）2026 已不是 PoC
+ 8. Cells V2 让单 Region 撑 10w VM
+ 9. LLM-OPS 私有云 2027 成标配
+ 10. 边缘云成主流第三形态
 
 红线:
-  ❌ 单 inventory 跑 controller+compute
-  ❌ 没规划 5 网（mgmt/tunnel/ext/storage/bmc）
-  ❌ Galera 心跳网与业务网混
-  ❌ 控制节点 < 3
-  ❌ 一律 file 后端 Glance
-  ❌ Ceph 副本 < 3 / 故障域 < rack
-  ❌ Cinder 单 backend 包打天下
-  ❌ 大版本跳跃升级（不走 SLURP）
-  ❌ Magnum 老 K8s 跑生产
-  ❌ 备份不验证 / 不异地
-  ❌ 没接 SSO + MFA
-  ❌ 信创不提前压测
+ 单 inventory 跑 controller+compute
+ 没规划 5 网（mgmt/tunnel/ext/storage/bmc）
+ Galera 心跳网与业务网混
+ 控制节点 < 3
+ 一律 file 后端 Glance
+ Ceph 副本 < 3 / 故障域 < rack
+ Cinder 单 backend 包打天下
+ 大版本跳跃升级（不走 SLURP）
+ Magnum 老 K8s 跑生产
+ 备份不验证 / 不异地
+ 没接 SSO + MFA
+ 信创不提前压测
 ```
 
 ## 相关章节

@@ -16,49 +16,49 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: Prom + Grafana + Loki + Tempo + OTel + Prophet + 20 题
+ └─ 01_基础: Prom + Grafana + Loki + Tempo + OTel + Prophet + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: VM + CH + eBPF + 动态阈值 + 告警关联 + LLM 摘要 + Sloth SLO + RUM
+ └─ 02_进阶: VM + CH + eBPF + 动态阈值 + 告警关联 + LLM 摘要 + Sloth SLO + RUM
 
 高级（1-2 年）
-  └─ 03_高级: 平台架构 + 深度学习异常检测 + LLM RCA + LangGraph + MCP + Chaos + 多云 + 国产
+ └─ 03_高级: 平台架构 + 深度学习异常检测 + LLM RCA + LangGraph + MCP + Chaos + 多云 + 国产
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 基线 + 告警 + 异常落地 + RCA SOP + ChatOps 4 阶段 + 自愈守门 + 演练 + 团队 + Postmortem + KPI
+ └─ 04_最佳实践: 基线 + 告警 + 异常落地 + RCA SOP + ChatOps 4 阶段 + 自愈守门 + 演练 + 团队 + Postmortem + KPI
 
 展望（持续）
-  └─ 99_发展与展望: OTel + eBPF + Foundation Model + Agent + Sovereign 可观测
+ └─ 99_发展与展望: OTel + eBPF + Foundation Model + Agent + Sovereign 可观测
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. Prom + Grafana 是基础, 但要早转 VictoriaMetrics
-  2. Loki (小) / ClickHouse (大) 选一种, 不要 ELK 重栈
-  3. OpenTelemetry 是统一未来 (SDK + Collector)
-  4. eBPF (Coroot/Pixie/DeepFlow) 是 K8s 可观测默认 (2026+)
-  5. Prophet 起步 + Darts/USAD 升级 (异常检测)
-  6. SLO 驱动告警 (Sloth) 代替静态阈值, 砍噪音
-  7. LLM 告警摘要 + RAG RCA 是当下最易落地的 AIOps
-  8. LangGraph + MCP 是 ChatOps Agent 主流栈
-  9. Chaos Mesh 季度演练是必修 (国产 CNCF)
-  10. 国产: 夜莺 + DeepFlow + Qwen + Ascend (央企必)
-  11. on-call 工程化 (轮值 + 升级 + 静默 + KPI)
-  12. Postmortem Blameless + Action Item + 知识库
+ 1. Prom + Grafana 是基础, 但要早转 VictoriaMetrics
+ 2. Loki (小) / ClickHouse (大) 选一种, 不要 ELK 重栈
+ 3. OpenTelemetry 是统一未来 (SDK + Collector)
+ 4. eBPF (Coroot/Pixie/DeepFlow) 是 K8s 可观测默认 (2026+)
+ 5. Prophet 起步 + Darts/USAD 升级 (异常检测)
+ 6. SLO 驱动告警 (Sloth) 代替静态阈值, 砍噪音
+ 7. LLM 告警摘要 + RAG RCA 是当下最易落地的 AIOps
+ 8. LangGraph + MCP 是 ChatOps Agent 主流栈
+ 9. Chaos Mesh 季度演练是必修 (国产 CNCF)
+ 10. 国产: 夜莺 + DeepFlow + Qwen + Ascend (央企必)
+ 11. on-call 工程化 (轮值 + 升级 + 静默 + KPI)
+ 12. Postmortem Blameless + Action Item + 知识库
 
 红线:
-  ❌ 还在用静态阈值告警 (噪音 + 漏报)
-  ❌ Prometheus 单机 (扩展性 + 长期存储)
-  ❌ 无 trace_id 关联 logs/metrics
-  ❌ 无 SLO 量化业务
-  ❌ on-call 无升级 / 无静默 / 无 KPI
-  ❌ 无 Postmortem / 无 Action Item 跟踪
-  ❌ AIOps 不接 LLM (落后了)
-  ❌ 国产 (夜莺 / DeepFlow / Qwen) 不学 (政企会淘汰)
-  ❌ 自愈无 RBAC / 无审计 (合规风险)
-  ❌ 无 Chaos 演练 (灾备不靠谱)
+ 还在用静态阈值告警 (噪音 + 漏报)
+ Prometheus 单机 (扩展性 + 长期存储)
+ 无 trace_id 关联 logs/metrics
+ 无 SLO 量化业务
+ on-call 无升级 / 无静默 / 无 KPI
+ 无 Postmortem / 无 Action Item 跟踪
+ AIOps 不接 LLM (落后了)
+ 国产 (夜莺 / DeepFlow / Qwen) 不学 (政企会淘汰)
+ 自愈无 RBAC / 无审计 (合规风险)
+ 无 Chaos 演练 (灾备不靠谱)
 ```
 
 ## 相关章节

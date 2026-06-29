@@ -268,7 +268,7 @@
   <span class="md-ellipsis">
     
   
-    🏠 首页
+    首页
   
 
     
@@ -1708,7 +1708,7 @@
       <a href=".." class="md-path__link">
         
   <span class="md-ellipsis">
-    🏠 首页
+    首页
   </span>
 
       </a>
@@ -1791,46 +1791,46 @@
 </table>
 <h2 id="_2">学习路径<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>入门（1-3 月）
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  └─ 01_基础: 装 DevStack/Kolla 单节点 + CLI 一气呵成创建 VM+卷+网络 + 20 题
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a> └─ 01_基础: 装 DevStack/Kolla 单节点 + CLI 一气呵成创建 VM+卷+网络 + 20 题
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>进阶（3-12 月）
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  └─ 02_进阶: 3 控制+5 计算+3 存储 Kolla 多节点 + Galera/RabbitMQ HA + OVN + Cinder+Ceph + Octavia + Magnum + Heat/Terraform
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a> └─ 02_进阶: 3 控制+5 计算+3 存储 Kolla 多节点 + Galera/RabbitMQ HA + OVN + Cinder+Ceph + Octavia + Magnum + Heat/Terraform
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>高级（1-2 年）
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  └─ 03_高级: Cells V2 + DPDK/SR-IOV + GPU 直通+MIG + Cluster API + 机密 VM + GitOps + 国产化
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a> └─ 03_高级: Cells V2 + DPDK/SR-IOV + GPU 直通+MIG + Cluster API + 机密 VM + GitOps + 国产化
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>工程化（2-3 年）
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  └─ 04_最佳实践: 容量画像 + 配额模板 + DR 演练 + SLURP 升级 + 等保 3 级 + 国产化路径 + 自服务门户
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a> └─ 04_最佳实践: 容量画像 + 配额模板 + DR 演练 + SLURP 升级 + 等保 3 级 + 国产化路径 + 自服务门户
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>展望（持续）
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  └─ 99_发展与展望: OpenStack 回归 + 信创 + K8s 共生 + AI 算力 + 边缘 + 机密计算 + LLM-OPS 八条主线
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a> └─ 99_发展与展望: OpenStack 回归 + 信创 + K8s 共生 + AI 算力 + 边缘 + 机密计算 + LLM-OPS 八条主线
 </code></pre></div>
 <h2 id="_3">核心判断<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>心法:
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  1. 私有云 ≠ 一堆 VM，而是计算+网络+存储+身份+编排+计费+合规一体
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  2. 生产 OpenStack 永远 Kolla-Ansible + OVN + Ceph + Galera + RabbitMQ + HAProxy
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  3. SLURP LTS（Antelope/Caracal/Epoxy）跳跃升级才稳
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  4. Cluster API 取代 Magnum，是 K8s on OpenStack 新主流
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  5. OpenStack 与 K8s 不是对抗，是共生
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  6. 中大型私有云必须信创预案
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  7. 机密计算（SEV-SNP/TDX/海光 CSV）2026 已不是 PoC
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  8. Cells V2 让单 Region 撑 10w VM
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  9. LLM-OPS 私有云 2027 成标配
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  10. 边缘云成主流第三形态
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a> 1. 私有云 ≠ 一堆 VM，而是计算+网络+存储+身份+编排+计费+合规一体
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a> 2. 生产 OpenStack 永远 Kolla-Ansible + OVN + Ceph + Galera + RabbitMQ + HAProxy
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a> 3. SLURP LTS（Antelope/Caracal/Epoxy）跳跃升级才稳
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a> 4. Cluster API 取代 Magnum，是 K8s on OpenStack 新主流
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a> 5. OpenStack 与 K8s 不是对抗，是共生
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a> 6. 中大型私有云必须信创预案
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a> 7. 机密计算（SEV-SNP/TDX/海光 CSV）2026 已不是 PoC
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a> 8. Cells V2 让单 Region 撑 10w VM
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a> 9. LLM-OPS 私有云 2027 成标配
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a> 10. 边缘云成主流第三形态
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
 <a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>红线:
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  ❌ 单 inventory 跑 controller+compute
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  ❌ 没规划 5 网（mgmt/tunnel/ext/storage/bmc）
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  ❌ Galera 心跳网与业务网混
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  ❌ 控制节点 &lt; 3
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  ❌ 一律 file 后端 Glance
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  ❌ Ceph 副本 &lt; 3 / 故障域 &lt; rack
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  ❌ Cinder 单 backend 包打天下
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  ❌ 大版本跳跃升级（不走 SLURP）
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  ❌ Magnum 老 K8s 跑生产
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  ❌ 备份不验证 / 不异地
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>  ❌ 没接 SSO + MFA
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>  ❌ 信创不提前压测
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a> 单 inventory 跑 controller+compute
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a> 没规划 5 网（mgmt/tunnel/ext/storage/bmc）
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a> Galera 心跳网与业务网混
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a> 控制节点 &lt; 3
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a> 一律 file 后端 Glance
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a> Ceph 副本 &lt; 3 / 故障域 &lt; rack
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a> Cinder 单 backend 包打天下
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a> 大版本跳跃升级（不走 SLURP）
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a> Magnum 老 K8s 跑生产
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a> 备份不验证 / 不异地
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a> 没接 SSO + MFA
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a> 信创不提前压测
 </code></pre></div>
 <h2 id="_4">相关章节<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>

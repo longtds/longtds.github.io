@@ -16,49 +16,49 @@
 
 ```
 入门（1-2 月）
-  └─ 01_基础: 装 docker + 镜像加速器 + Compose 单机 + 多阶段 distroless + Harbor + Trivy + 20 题
+ └─ 01_基础: 装 docker + 镜像加速器 + Compose 单机 + 多阶段 distroless + Harbor + Trivy + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: Buildx 多架构 + 远程缓存 + 镜像 < 50MB + Harbor Replication+Proxy Cache + cosign+SBOM + macvlan + cAdvisor 监控 + rootless
+ └─ 02_进阶: Buildx 多架构 + 远程缓存 + 镜像 < 50MB + Harbor Replication+Proxy Cache + cosign+SBOM + macvlan + cAdvisor 监控 + rootless
 
 高级（1-2 年）
-  └─ 03_高级: containerd 直驱 + Kata + gVisor + CoCo + Buildah/Kaniko + Wasm + GPU/MIG + 国产 iSulad + eBPF(Tetragon) + 容器逃逸加固
+ └─ 03_高级: containerd 直驱 + Kata + gVisor + CoCo + Buildah/Kaniko + Wasm + GPU/MIG + 国产 iSulad + eBPF(Tetragon) + 容器逃逸加固
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 镜像规范+分级 + CI/CD 全链(lint+scan+sign+SBOM+Provenance) + Harbor 治理 + 监控告警 + CIS+等保 + GitOps + 国产化路径
+ └─ 04_最佳实践: 镜像规范+分级 + CI/CD 全链(lint+scan+sign+SBOM+Provenance) + Harbor 治理 + 监控告警 + CIS+等保 + GitOps + 国产化路径
 
 展望（持续）
-  └─ 99_发展与展望: containerd 标准 + Kata-cc + Wasm + GPU 国产 + Sigstore + 边缘 + iSulad 八条主线
+ └─ 99_发展与展望: containerd 标准 + Kata-cc + Wasm + GPU 国产 + Sigstore + 边缘 + iSulad 八条主线
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. 容器 = namespace+cgroup+rootfs，不是"轻量 VM"，是受限进程
-  2. dockerd/containerd/runc 三层都要懂
-  3. OCI 三规范 (Image/Runtime/Distribution) 才是核心，不是 Docker
-  4. 生产 K8s 一律 containerd（dockershim 已退场）
-  5. 镜像 < 50 MB 是基本功 (distroless + 多阶段)
-  6. Harbor + cosign + Trivy + SBOM 是供应链四件套
-  7. 多架构 amd64 + arm64 一次推
-  8. rootless / userns / seccomp / AppArmor 安全四件套
-  9. Kata / gVisor / Wasm / CoCo 是 OCI 内的多元未来
-  10. 国产化 = openEuler + iSulad + 鲲鹏 ARM + Harbor 国密
+ 1. 容器 = namespace+cgroup+rootfs，不是"轻量 VM"，是受限进程
+ 2. dockerd/containerd/runc 三层都要懂
+ 3. OCI 三规范 (Image/Runtime/Distribution) 才是核心，不是 Docker
+ 4. 生产 K8s 一律 containerd（dockershim 已退场）
+ 5. 镜像 < 50 MB 是基本功 (distroless + 多阶段)
+ 6. Harbor + cosign + Trivy + SBOM 是供应链四件套
+ 7. 多架构 amd64 + arm64 一次推
+ 8. rootless / userns / seccomp / AppArmor 安全四件套
+ 9. Kata / gVisor / Wasm / CoCo 是 OCI 内的多元未来
+ 10. 国产化 = openEuler + iSulad + 鲲鹏 ARM + Harbor 国密
 
 红线:
-  ❌ :latest 上生产
-  ❌ root 跑容器
-  ❌ --privileged 滥用
-  ❌ 挂 /var/run/docker.sock 到容器
-  ❌ 没 HEALTHCHECK + 没 livenessProbe
-  ❌ 日志写容器内
-  ❌ /var/lib/docker 不分区不 GC
-  ❌ K8s 1.24+ 还用 dockershim
-  ❌ CI 用 admin 账号 push
-  ❌ Trivy 扫不阻断
-  ❌ 不签名 / 不验签
-  ❌ 没 SBOM 供应链审计无据
+ :latest 上生产
+ root 跑容器
+ --privileged 滥用
+ 挂 /var/run/docker.sock 到容器
+ 没 HEALTHCHECK + 没 livenessProbe
+ 日志写容器内
+ /var/lib/docker 不分区不 GC
+ K8s 1.24+ 还用 dockershim
+ CI 用 admin 账号 push
+ Trivy 扫不阻断
+ 不签名 / 不验签
+ 没 SBOM 供应链审计无据
 ```
 
 ## 相关章节

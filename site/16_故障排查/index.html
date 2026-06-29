@@ -268,7 +268,7 @@
   <span class="md-ellipsis">
     
   
-    🏠 首页
+    首页
   
 
     
@@ -1736,7 +1736,7 @@
       <a href=".." class="md-path__link">
         
   <span class="md-ellipsis">
-    🏠 首页
+    首页
   </span>
 
       </a>
@@ -1819,46 +1819,46 @@
 </table>
 <h2 id="_2">学习路径<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>入门（1-3 月）
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  └─ 01_基础: USE/RED + Linux 5 大 + 日志 + 网络 + HTTP/SQL + Postmortem + 20 题
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a> └─ 01_基础: USE/RED + Linux 5 大 + 日志 + 网络 + HTTP/SQL + Postmortem + 20 题
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>进阶（3-12 月）
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  └─ 02_进阶: K8s 全栈 + Mesh + DB 深度 + JVM/Go/Python + perf/eBPF + Trace + 慢查询 + 灰度
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a> └─ 02_进阶: K8s 全栈 + Mesh + DB 深度 + JVM/Go/Python + perf/eBPF + Trace + 慢查询 + 灰度
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>高级（1-2 年）
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  └─ 03_高级: Chaos + SLO + Continuous Profile + AIOps + LLM SRE + GPU/LLM + 多集群
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a> └─ 03_高级: Chaos + SLO + Continuous Profile + AIOps + LLM SRE + GPU/LLM + 多集群
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>工程化（2-3 年）
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  └─ 04_最佳实践: 12 金标 + On-call + 告警治理 + GameDay + IR + DR + 团队 + KPI
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a> └─ 04_最佳实践: 12 金标 + On-call + 告警治理 + GameDay + IR + DR + 团队 + KPI
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>展望（持续）
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  └─ 99_发展与展望: LLM Agent + MCP + eBPF + AIOps 自愈 + Karmada + AI 工作负载
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a> └─ 99_发展与展望: LLM Agent + MCP + eBPF + AIOps 自愈 + Karmada + AI 工作负载
 </code></pre></div>
 <h2 id="_3">核心判断<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>心法:
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  1. 方法论先行 (USE/RED/Golden Signals/MTTR)
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  2. 可观测五大件 (Metrics + Logs + Traces + Profile + eBPF)
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  3. Runbook 每告警必有 (一键跳转)
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  4. On-call 制度化 (PagerDuty + 主备 + 轮值)
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  5. 告警治理 (Burn Rate 替代静态阈值, 误报 &lt; 10%)
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  6. SLO + Error Budget 强制冻结发布
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  7. Postmortem Blameless + Action 闭环 &gt; 80%
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  8. Chaos GameDay 季度 + DR 异地多活
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  9. eBPF (Pixie/Coroot/Cilium) 零代码革命, 必修
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  10. LLM SRE Agent 是未来 5 年最大机遇
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  11. AI/GPU/LLM 工作负载是新蓝海 (DCGM + vLLM)
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>  12. 信创 + Sovereign 是央企硬需求
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a> 1. 方法论先行 (USE/RED/Golden Signals/MTTR)
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a> 2. 可观测五大件 (Metrics + Logs + Traces + Profile + eBPF)
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a> 3. Runbook 每告警必有 (一键跳转)
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a> 4. On-call 制度化 (PagerDuty + 主备 + 轮值)
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a> 5. 告警治理 (Burn Rate 替代静态阈值, 误报 &lt; 10%)
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a> 6. SLO + Error Budget 强制冻结发布
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a> 7. Postmortem Blameless + Action 闭环 &gt; 80%
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a> 8. Chaos GameDay 季度 + DR 异地多活
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a> 9. eBPF (Pixie/Coroot/Cilium) 零代码革命, 必修
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a> 10. LLM SRE Agent 是未来 5 年最大机遇
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a> 11. AI/GPU/LLM 工作负载是新蓝海 (DCGM + vLLM)
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a> 12. 信创 + Sovereign 是央企硬需求
 <a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>
 <a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>红线:
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  ❌ 没有 Runbook 的告警 (= 噪音)
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  ❌ 没有 SLO (= 无目标)
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  ❌ Postmortem 互相指责 (= 文化崩)
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  ❌ 没有 Chaos 演练 (= 不知韧性)
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  ❌ DR 没切换演练 (= DR = 0)
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  ❌ DB Schema 不兼容 (= 无法回滚)
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  ❌ On-call 一人多次背锅 (= 团队问题)
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  ❌ 不学 AI + eBPF (5 年淘汰)
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>  ❌ 信创 + 等保 不学 (央企无用)
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>  ❌ 救火型 SRE (无演练 + 无 Postmortem)
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a> 没有 Runbook 的告警 (= 噪音)
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a> 没有 SLO (= 无目标)
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a> Postmortem 互相指责 (= 文化崩)
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a> 没有 Chaos 演练 (= 不知韧性)
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a> DR 没切换演练 (= DR = 0)
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a> DB Schema 不兼容 (= 无法回滚)
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a> On-call 一人多次背锅 (= 团队问题)
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a> 不学 AI + eBPF (5 年淘汰)
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a> 信创 + 等保 不学 (央企无用)
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a> 救火型 SRE (无演练 + 无 Postmortem)
 </code></pre></div>
 <h2 id="_4">相关章节<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>

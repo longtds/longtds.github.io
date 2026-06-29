@@ -16,47 +16,47 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: Spark/Flink/调度/采集 + 数据分层 + 20 题
+ └─ 01_基础: Spark/Flink/调度/采集 + 数据分层 + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: K8s Operator + Paimon/Iceberg + Doris + Flink CDC + DataHub + Soda
+ └─ 02_进阶: K8s Operator + Paimon/Iceberg + Doris + Flink CDC + DataHub + Soda
 
 高级（1-2 年）
-  └─ 03_高级: Lakehouse + Data Mesh + 流批一体 + 内核调优 + 联邦 + Feast + AI Native + 国密
+ └─ 03_高级: Lakehouse + Data Mesh + 流批一体 + 内核调优 + 联邦 + Feast + AI Native + 国密
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 决策树 + 工程基线 + 治理 + SLA + FinOps + Backstage IDP + 国产化 + 应急
+ └─ 04_最佳实践: 决策树 + 工程基线 + 治理 + SLA + FinOps + Backstage IDP + 国产化 + 应急
 
 展望（持续）
-  └─ 99_发展与展望: Lakehouse + Paimon + Doris + Data Mesh + DataOps + AI Native + 国密 + 国产开源
+ └─ 99_发展与展望: Lakehouse + Paimon + Doris + Data Mesh + DataOps + AI Native + 国密 + 国产开源
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. 别再 Hadoop — Lakehouse (对象存储 + Iceberg/Paimon) 取代
-  2. 别再 Lambda — 流批一体 (Paimon + Flink) 一套代码
-  3. 实时数仓 — Doris/StarRocks 国产主导
-  4. 多源 ETL — Flink CDC + SeaTunnel 是国产 Apache 黄金组合
-  5. 治理 — DataHub + 契约 + Soda + Ranger 一栈
-  6. Feast — 特征工程标配 (AI 必修)
-  7. AI Native — Text-to-SQL 业务实用 (2026-2027)
-  8. Data Mesh — 大企业组织变革
-  9. DataOps — dbt 普及 + DORA 度量
-  10. 国密 + 等保 + 信创 — 央企硬要求 (Paimon/Doris/DolphinScheduler 必修)
+ 1. 别再 Hadoop — Lakehouse (对象存储 + Iceberg/Paimon) 取代
+ 2. 别再 Lambda — 流批一体 (Paimon + Flink) 一套代码
+ 3. 实时数仓 — Doris/StarRocks 国产主导
+ 4. 多源 ETL — Flink CDC + SeaTunnel 是国产 Apache 黄金组合
+ 5. 治理 — DataHub + 契约 + Soda + Ranger 一栈
+ 6. Feast — 特征工程标配 (AI 必修)
+ 7. AI Native — Text-to-SQL 业务实用 (2026-2027)
+ 8. Data Mesh — 大企业组织变革
+ 9. DataOps — dbt 普及 + DORA 度量
+ 10. 国密 + 等保 + 信创 — 央企硬要求 (Paimon/Doris/DolphinScheduler 必修)
 
 红线:
-  ❌ 还在堆 HDFS / Cloudera (老死)
-  ❌ Lambda 双套维护
-  ❌ 数据无契约 / 无血缘 / 无质量
-  ❌ 单调度无重试无幂等
-  ❌ Spark 无 AQE / 无动态分配
-  ❌ Flink 无 Checkpoint / 无 Operator
-  ❌ Doris 无 Routine Load / 无 Catalog
-  ❌ 数据脱敏不做 / 审计 < 180d
-  ❌ 跨地无灾备演练
-  ❌ 不接 DataHub / Backstage 平台
+ 还在堆 HDFS / Cloudera (老死)
+ Lambda 双套维护
+ 数据无契约 / 无血缘 / 无质量
+ 单调度无重试无幂等
+ Spark 无 AQE / 无动态分配
+ Flink 无 Checkpoint / 无 Operator
+ Doris 无 Routine Load / 无 Catalog
+ 数据脱敏不做 / 审计 < 180d
+ 跨地无灾备演练
+ 不接 DataHub / Backstage 平台
 ```
 
 ## 相关章节

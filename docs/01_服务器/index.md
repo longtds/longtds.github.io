@@ -18,13 +18,13 @@
 ### 2.1 从南北桥到 PCIe 直连
 
 ```
-传统架构（2005-）          现代架构（2015+）
-                          
-CPU ─ 北桥 ─ 内存          CPU ─── 内存（DDR5）
-  │                       │
-  └── 南桥 ─ PCIe/SATA     ├── PCIe 5.0 ──── GPU/NVMe
-                          │
-                          └── CXL ────────── 内存池
+传统架构（2005-） 现代架构（2015+）
+
+CPU ─ 北桥 ─ 内存 CPU ─── 内存（DDR5）
+ │ │
+ └── 南桥 ─ PCIe/SATA ├── PCIe 5.0 ──── GPU/NVMe
+ │
+ └── CXL ────────── 内存池
 ```
 
 ### 2.2 NUMA 架构
@@ -32,8 +32,8 @@ CPU ─ 北桥 ─ 内存          CPU ─── 内存（DDR5）
 多路 CPU 服务器中，每颗 CPU 有本地内存，跨 CPU 访问内存有性能损失。运维要关注 NUMA 亲和性绑定。
 
 ```bash
-numactl --hardware           # 查看 NUMA 拓扑
-numactl --cpunodebind=0 --membind=0 ./app   # 绑定到 Node 0
+numactl --hardware # 查看 NUMA 拓扑
+numactl --cpunodebind=0 --membind=0 ./app # 绑定到 Node 0
 ```
 
 ### 2.3 Chiplet（小芯片）
@@ -59,4 +59,4 @@ numactl --cpunodebind=0 --membind=0 ./app   # 绑定到 Node 0
 | **运维管理** | BMC / 固件管理 / 故障定位 / 选型 |
 | **趋势展望** | 99_发展与展望 |
 
-> 📖 建议阅读顺序：本概述 → 核心部件 → 异构算力 → 运维管理 → 发展展望
+> 建议阅读顺序：本概述 → 核心部件 → 异构算力 → 运维管理 → 发展展望

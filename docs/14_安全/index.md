@@ -16,49 +16,49 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: 加固 + OWASP + Trivy + TLS + 等保2 + 20 题
+ └─ 01_基础: 加固 + OWASP + Trivy + TLS + 等保2 + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: DevSecOps + Falco + Kyverno + Mesh + Vault + WAF + SIEM + 等保3
+ └─ 02_进阶: DevSecOps + Falco + Kyverno + Mesh + Vault + WAF + SIEM + 等保3
 
 高级（1-2 年）
-  └─ 03_高级: SOC平台 + 红蓝 + SLSA + Confidential + AI 安全 + CNAPP + 关基
+ └─ 03_高级: SOC平台 + 红蓝 + SLSA + Confidential + AI 安全 + CNAPP + 关基
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 12 金标 + 24x7 SOC + 红蓝演练 + 等保3+国密+信创 + IR + KPI
+ └─ 04_最佳实践: 12 金标 + 24x7 SOC + 红蓝演练 + 等保3+国密+信创 + IR + KPI
 
 展望（持续）
-  └─ 99_发展与展望: LLM + Agent + Confidential + PQC + Sovereign + AI SOC
+ └─ 99_发展与展望: LLM + Agent + Confidential + PQC + Sovereign + AI SOC
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. 安全是体系, 不是产品堆砌
-  2. CIS Benchmarks + 等保 是基线
-  3. DevSecOps 左移: SAST/SCA/IaC/Container/SBOM/签名全链
-  4. K8s 必走 PSS + NetPol + Kyverno + Falco
-  5. Service Mesh Strict mTLS + SPIFFE (服务间默认加密)
-  6. Vault 动态凭证 取代 静态密码
-  7. 全员 MFA + Passkey + WebAuthn (身份是入口)
-  8. 24x7 SOC + SIEM 6mo + 季度红蓝
-  9. 国密 + 等保 3 + 关基 + 信创 (中国央企)
-  10. AI 安全 (Prompt Injection + Guardrails + Agent) 是新风口
-  11. Confidential Computing (TDX/SEV/CSV) 是 LLM 时代刚需
-  12. PICERL IR + Velociraptor 取证 + Postmortem 闭环
+ 1. 安全是体系, 不是产品堆砌
+ 2. CIS Benchmarks + 等保 是基线
+ 3. DevSecOps 左移: SAST/SCA/IaC/Container/SBOM/签名全链
+ 4. K8s 必走 PSS + NetPol + Kyverno + Falco
+ 5. Service Mesh Strict mTLS + SPIFFE (服务间默认加密)
+ 6. Vault 动态凭证 取代 静态密码
+ 7. 全员 MFA + Passkey + WebAuthn (身份是入口)
+ 8. 24x7 SOC + SIEM 6mo + 季度红蓝
+ 9. 国密 + 等保 3 + 关基 + 信创 (中国央企)
+ 10. AI 安全 (Prompt Injection + Guardrails + Agent) 是新风口
+ 11. Confidential Computing (TDX/SEV/CSV) 是 LLM 时代刚需
+ 12. PICERL IR + Velociraptor 取证 + Postmortem 闭环
 
 红线:
-  ❌ 边界防火墙 + 静态密码 (古典)
-  ❌ K8s 默认 Pod (root + privileged + 无 NetPol)
-  ❌ 镜像 latest + 无签名 + 无扫描
-  ❌ Secret 入代码 (gitleaks 必跑)
-  ❌ DB 静态密码 + 多人共享
-  ❌ SSH 静态 key 长期不轮换
-  ❌ 无 SIEM / 无审计 / 无 6mo 留存
-  ❌ 无红蓝演练 (不知道防御缺口)
-  ❌ 等保 / 国密 / 信创 不学 (央企淘汰)
-  ❌ AI 安全 不学 (LLM 时代盲区)
+ 边界防火墙 + 静态密码 (古典)
+ K8s 默认 Pod (root + privileged + 无 NetPol)
+ 镜像 latest + 无签名 + 无扫描
+ Secret 入代码 (gitleaks 必跑)
+ DB 静态密码 + 多人共享
+ SSH 静态 key 长期不轮换
+ 无 SIEM / 无审计 / 无 6mo 留存
+ 无红蓝演练 (不知道防御缺口)
+ 等保 / 国密 / 信创 不学 (央企淘汰)
+ AI 安全 不学 (LLM 时代盲区)
 ```
 
 ## 相关章节

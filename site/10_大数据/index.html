@@ -268,7 +268,7 @@
   <span class="md-ellipsis">
     
   
-    🏠 首页
+    首页
   
 
     
@@ -1708,7 +1708,7 @@
       <a href=".." class="md-path__link">
         
   <span class="md-ellipsis">
-    🏠 首页
+    首页
   </span>
 
       </a>
@@ -1791,44 +1791,44 @@
 </table>
 <h2 id="_2">学习路径<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>入门（1-3 月）
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  └─ 01_基础: Spark/Flink/调度/采集 + 数据分层 + 20 题
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a> └─ 01_基础: Spark/Flink/调度/采集 + 数据分层 + 20 题
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>进阶（3-12 月）
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  └─ 02_进阶: K8s Operator + Paimon/Iceberg + Doris + Flink CDC + DataHub + Soda
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a> └─ 02_进阶: K8s Operator + Paimon/Iceberg + Doris + Flink CDC + DataHub + Soda
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>高级（1-2 年）
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  └─ 03_高级: Lakehouse + Data Mesh + 流批一体 + 内核调优 + 联邦 + Feast + AI Native + 国密
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a> └─ 03_高级: Lakehouse + Data Mesh + 流批一体 + 内核调优 + 联邦 + Feast + AI Native + 国密
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>工程化（2-3 年）
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  └─ 04_最佳实践: 决策树 + 工程基线 + 治理 + SLA + FinOps + Backstage IDP + 国产化 + 应急
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a> └─ 04_最佳实践: 决策树 + 工程基线 + 治理 + SLA + FinOps + Backstage IDP + 国产化 + 应急
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>展望（持续）
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  └─ 99_发展与展望: Lakehouse + Paimon + Doris + Data Mesh + DataOps + AI Native + 国密 + 国产开源
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a> └─ 99_发展与展望: Lakehouse + Paimon + Doris + Data Mesh + DataOps + AI Native + 国密 + 国产开源
 </code></pre></div>
 <h2 id="_3">核心判断<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>心法:
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  1. 别再 Hadoop — Lakehouse (对象存储 + Iceberg/Paimon) 取代
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  2. 别再 Lambda — 流批一体 (Paimon + Flink) 一套代码
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  3. 实时数仓 — Doris/StarRocks 国产主导
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  4. 多源 ETL — Flink CDC + SeaTunnel 是国产 Apache 黄金组合
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  5. 治理 — DataHub + 契约 + Soda + Ranger 一栈
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  6. Feast — 特征工程标配 (AI 必修)
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  7. AI Native — Text-to-SQL 业务实用 (2026-2027)
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  8. Data Mesh — 大企业组织变革
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  9. DataOps — dbt 普及 + DORA 度量
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  10. 国密 + 等保 + 信创 — 央企硬要求 (Paimon/Doris/DolphinScheduler 必修)
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a> 1. 别再 Hadoop — Lakehouse (对象存储 + Iceberg/Paimon) 取代
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a> 2. 别再 Lambda — 流批一体 (Paimon + Flink) 一套代码
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a> 3. 实时数仓 — Doris/StarRocks 国产主导
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a> 4. 多源 ETL — Flink CDC + SeaTunnel 是国产 Apache 黄金组合
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a> 5. 治理 — DataHub + 契约 + Soda + Ranger 一栈
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a> 6. Feast — 特征工程标配 (AI 必修)
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a> 7. AI Native — Text-to-SQL 业务实用 (2026-2027)
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a> 8. Data Mesh — 大企业组织变革
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a> 9. DataOps — dbt 普及 + DORA 度量
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a> 10. 国密 + 等保 + 信创 — 央企硬要求 (Paimon/Doris/DolphinScheduler 必修)
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
 <a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>红线:
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  ❌ 还在堆 HDFS / Cloudera (老死)
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  ❌ Lambda 双套维护
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  ❌ 数据无契约 / 无血缘 / 无质量
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  ❌ 单调度无重试无幂等
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  ❌ Spark 无 AQE / 无动态分配
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  ❌ Flink 无 Checkpoint / 无 Operator
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  ❌ Doris 无 Routine Load / 无 Catalog
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  ❌ 数据脱敏不做 / 审计 &lt; 180d
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  ❌ 跨地无灾备演练
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  ❌ 不接 DataHub / Backstage 平台
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a> 还在堆 HDFS / Cloudera (老死)
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a> Lambda 双套维护
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a> 数据无契约 / 无血缘 / 无质量
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a> 单调度无重试无幂等
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a> Spark 无 AQE / 无动态分配
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a> Flink 无 Checkpoint / 无 Operator
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a> Doris 无 Routine Load / 无 Catalog
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a> 数据脱敏不做 / 审计 &lt; 180d
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a> 跨地无灾备演练
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a> 不接 DataHub / Backstage 平台
 </code></pre></div>
 <h2 id="_4">相关章节<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>

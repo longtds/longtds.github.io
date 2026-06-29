@@ -16,48 +16,48 @@
 
 ```
 入门 (1-3 月)
-  └─ 01_基础: 装 KVM + virt-install + bridge + qcow2 + cloud-init + 20 题
+ └─ 01_基础: 装 KVM + virt-install + bridge + qcow2 + cloud-init + 20 题
 
 进阶 (3-12 月)
-  └─ 02_进阶: Proxmox+Ceph 3 节点 + NUMA/HugePage + PBS 备份 + Windows + OVS+VLAN
+ └─ 02_进阶: Proxmox+Ceph 3 节点 + NUMA/HugePage + PBS 备份 + Windows + OVS+VLAN
 
 高级 (1-2 年)
-  └─ 03_高级: PCI 直通 GPU / MIG 切片 / RT+DPDK / KubeVirt+Kata / 国产 Hypervisor
+ └─ 03_高级: PCI 直通 GPU / MIG 切片 / RT+DPDK / KubeVirt+Kata / 国产 Hypervisor
 
 工程化 (2-3 年)
-  └─ 04_最佳实践: 容量画像 + DR 演练 + 变更纪律 + 等保 3 级 + 国产化路径
+ └─ 04_最佳实践: 容量画像 + DR 演练 + 变更纪律 + 等保 3 级 + 国产化路径
 
 展望 (持续)
-  └─ 99_发展与展望: KubeVirt + GPU 切片 + 机密计算 + DPU + 信创六条线
+ └─ 99_发展与展望: KubeVirt + GPU 切片 + 机密计算 + DPU + 信创六条线
 ```
 
 ## 核心判断
 
 ```
 学习心法:
-  1. 生产永远 KVM + libvirt + virtio + qcow2 + bridge
-  2. iproute2 (ip/ss) 完全替代 ifconfig/netstat/route
-  3. 集群从 3 节点起步：Proxmox VE 是中小首选
-  4. NUMA + HugePage + CPU pinning 是大 VM 性能基本盘
-  5. 备份不演练 = 没备份
-  6. 快照是回滚，不是备份
-  7. 容量水位 75%/85%/90% 三色线
-  8. K8s 大集群必上 KubeVirt 看 VM
-  9. AI 集群必上 MIG / 国产 vGPU
-  10. 国产化提前 2-3 月联调
+ 1. 生产永远 KVM + libvirt + virtio + qcow2 + bridge
+ 2. iproute2 (ip/ss) 完全替代 ifconfig/netstat/route
+ 3. 集群从 3 节点起步：Proxmox VE 是中小首选
+ 4. NUMA + HugePage + CPU pinning 是大 VM 性能基本盘
+ 5. 备份不演练 = 没备份
+ 6. 快照是回滚，不是备份
+ 7. 容量水位 75%/85%/90% 三色线
+ 8. K8s 大集群必上 KubeVirt 看 VM
+ 9. AI 集群必上 MIG / 国产 vGPU
+ 10. 国产化提前 2-3 月联调
 
 红线:
-  ❌ CPU 不开 VT / BIOS 没改
-  ❌ cache=writeback 上生产
-  ❌ DB VM 超分 1:8
-  ❌ 大 VM 跨 NUMA
-  ❌ 没装 qemu-guest-agent
-  ❌ 嵌套虚拟化跑生产
-  ❌ 快照当备份用
-  ❌ HA 集群 < 3 节点 / 心跳网混业务
-  ❌ 共享存储无 fence
-  ❌ 备份不验证 / 不异地
-  ❌ VMware vCSA 不备份
+ CPU 不开 VT / BIOS 没改
+ cache=writeback 上生产
+ DB VM 超分 1:8
+ 大 VM 跨 NUMA
+ 没装 qemu-guest-agent
+ 嵌套虚拟化跑生产
+ 快照当备份用
+ HA 集群 < 3 节点 / 心跳网混业务
+ 共享存储无 fence
+ 备份不验证 / 不异地
+ VMware vCSA 不备份
 ```
 
 ## 相关章节

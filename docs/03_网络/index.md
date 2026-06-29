@@ -16,43 +16,43 @@
 
 ```
 入门 (1-3 月)
-  └─ 01_基础: 抓包 + 子网算 + 静态 IP + iptables 基础 + 入门必练 20 题
+ └─ 01_基础: 抓包 + 子网算 + 静态 IP + iptables 基础 + 入门必练 20 题
 
 进阶 (3-12 月)
-  └─ 02_进阶: 搭出 LVS+Keepalived+Nginx + nftables ruleset + TLS 1.3 + BBR
+ └─ 02_进阶: 搭出 LVS+Keepalived+Nginx + nftables ruleset + TLS 1.3 + BBR
 
 高级 (1-2 年)
-  └─ 03_高级: Cilium 装满 + Hubble + eBPF + RoCE 调优 + Istio 灰度
+ └─ 03_高级: Cilium 装满 + Hubble + eBPF + RoCE 调优 + Istio 灰度
 
 工程化 (2-3 年)
-  └─ 04_最佳实践: 监控大盘 + 变更纪律 + DR 演练 + 国产化储备
+ └─ 04_最佳实践: 监控大盘 + 变更纪律 + DR 演练 + 国产化储备
 
 展望 (持续)
-  └─ 99_发展与展望: 紧跟 eBPF + DPU + AI 网络 + 国产化
+ └─ 99_发展与展望: 紧跟 eBPF + DPU + AI 网络 + 国产化
 ```
 
 ## 核心判断
 
 ```
 学习心法:
-  1. 80% 问题用基础工具解决（ip/ss/tcpdump/curl/dig）
-  2. ss + tcpdump 比 netstat + 千张图片有用
-  3. iproute2 (ip/ss) 完全替代 ifconfig/netstat/route
-  4. iptables 写完就该考虑 nftables 改造
-  5. K8s 大集群必上 Cilium，不要恋战 kube-proxy
-  6. AI 集群网络重在 RoCE/IB + NCCL 调优
-  7. 一切配置入 Git → 一切变更 IaC 化
-  8. 国产化设备提前 2 个月联调
+ 1. 80% 问题用基础工具解决（ip/ss/tcpdump/curl/dig）
+ 2. ss + tcpdump 比 netstat + 千张图片有用
+ 3. iproute2 (ip/ss) 完全替代 ifconfig/netstat/route
+ 4. iptables 写完就该考虑 nftables 改造
+ 5. K8s 大集群必上 Cilium，不要恋战 kube-proxy
+ 6. AI 集群网络重在 RoCE/IB + NCCL 调优
+ 7. 一切配置入 Git → 一切变更 IaC 化
+ 8. 国产化设备提前 2 个月联调
 
 红线:
-  ❌ 改完 IP 没留 console 直接踢自己 SSH
-  ❌ iptables 默认 ACCEPT
-  ❌ Bond 模式 0 没和交换机对齐
-  ❌ TLS 证书过期没告警
-  ❌ DNS 单点 / 业务高峰切 DNS
-  ❌ WAF 未灰度全量拦截
-  ❌ VPN 单点 / 单机 LB
-  ❌ 大促前升级 / 无回滚预案
+ 改完 IP 没留 console 直接踢自己 SSH
+ iptables 默认 ACCEPT
+ Bond 模式 0 没和交换机对齐
+ TLS 证书过期没告警
+ DNS 单点 / 业务高峰切 DNS
+ WAF 未灰度全量拦截
+ VPN 单点 / 单机 LB
+ 大促前升级 / 无回滚预案
 ```
 
 ## 相关章节

@@ -16,49 +16,49 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: MySQL/PG/Redis/Kafka/Nacos/ES/CK/Nginx 单机跑通 + 必会命令 + 20 题
+ └─ 01_基础: MySQL/PG/Redis/Kafka/Nacos/ES/CK/Nginx 单机跑通 + 必会命令 + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: MGR/Patroni/Cluster/Strimzi/Replicated/Keepalived 集群 + KubeBlocks 容器化
+ └─ 02_进阶: MGR/Patroni/Cluster/Strimzi/Replicated/Keepalived 集群 + KubeBlocks 容器化
 
 高级（1-2 年）
-  └─ 03_高级: TiDB/OceanBase + 内核 + 千万 TPS Kafka + Pulsar + 向量 + 时序 + 数据湖 + 跨地多活
+ └─ 03_高级: TiDB/OceanBase + 内核 + 千万 TPS Kafka + Pulsar + 向量 + 时序 + 数据湖 + 跨地多活
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 选型 + 容量 + HA + 调优 + 备份 + 监控 + 合规 + 多租户 + DBaaS + 国产化
+ └─ 04_最佳实践: 选型 + 容量 + HA + 调优 + 备份 + 监控 + 合规 + 多租户 + DBaaS + 国产化
 
 展望（持续）
-  └─ 99_发展与展望: NewSQL + 容器化 + AI Native + Serverless + 数据湖 + 国密 + 国产开源
+ └─ 99_发展与展望: NewSQL + 容器化 + AI Native + Serverless + 数据湖 + 国密 + 国产开源
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. 中间件无银弹 — 选型决策树驱动 (业务量+一致性+模型)
-  2. 强一致 → MySQL/PG/TiDB/OceanBase; 最终一致 → Cassandra/Mongo/Kafka
-  3. AI 时代向量是必修 (pgvector 业务库 / Milvus 大规模 双栈)
-  4. IoT 时代时序是必修 (TDengine / IoTDB / VictoriaMetrics)
-  5. 容器化趋势 — KubeBlocks 一站式 30+ DB
-  6. 存算分离是未来 (Pulsar / RocketMQ 5.0 / 数据湖 / Serverless DB)
-  7. Iceberg / Paimon 是数据湖统一格式
-  8. 国密 + 等保 + 信创 是央企硬要求 (TiDB/OceanBase/GaussDB/达梦 必修)
-  9. 备份与演练 — 三层备份 + 季度恢复 + RTO/RPO 量化
-  10. 监控告警 — exporter 全覆盖 + 关键告警 + on-call 升级
+ 1. 中间件无银弹 — 选型决策树驱动 (业务量+一致性+模型)
+ 2. 强一致 → MySQL/PG/TiDB/OceanBase; 最终一致 → Cassandra/Mongo/Kafka
+ 3. AI 时代向量是必修 (pgvector 业务库 / Milvus 大规模 双栈)
+ 4. IoT 时代时序是必修 (TDengine / IoTDB / VictoriaMetrics)
+ 5. 容器化趋势 — KubeBlocks 一站式 30+ DB
+ 6. 存算分离是未来 (Pulsar / RocketMQ 5.0 / 数据湖 / Serverless DB)
+ 7. Iceberg / Paimon 是数据湖统一格式
+ 8. 国密 + 等保 + 信创 是央企硬要求 (TiDB/OceanBase/GaussDB/达梦 必修)
+ 9. 备份与演练 — 三层备份 + 季度恢复 + RTO/RPO 量化
+ 10. 监控告警 — exporter 全覆盖 + 关键告警 + on-call 升级
 
 红线:
-  ❌ Oracle 新建系统 (国央企)
-  ❌ 单机生产数据库
-  ❌ 无备份 / 不演练
-  ❌ 跨库 JOIN / 强耦合
-  ❌ 大事务跨分片
-  ❌ Kafka unclean=true
-  ❌ Redis 单点 + 无持久化
-  ❌ Nginx 单点
-  ❌ Nacos 共享 DB 单点
-  ❌ 日志 / 审计 < 180 天
-  ❌ 不接 SIEM / 监控
-  ❌ 跨地无切换演练
+ Oracle 新建系统 (国央企)
+ 单机生产数据库
+ 无备份 / 不演练
+ 跨库 JOIN / 强耦合
+ 大事务跨分片
+ Kafka unclean=true
+ Redis 单点 + 无持久化
+ Nginx 单点
+ Nacos 共享 DB 单点
+ 日志 / 审计 < 180 天
+ 不接 SIEM / 监控
+ 跨地无切换演练
 ```
 
 ## 相关章节

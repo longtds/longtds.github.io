@@ -12,55 +12,55 @@
 | [04_最佳实践](04_最佳实践/README.md) | QA Director | 12 金标 + Test Strategy + 金字塔 70/20/10 + Hermetic + CI 多级门禁 + Flaky < 1% + 性能基线 + DevSecOps 强制 + 缺陷 SLA + Postmortem + 团队组织 + KPI + 国产合规 |
 | [99_发展与展望](99_发展与展望.md) | 所有人 | LLM 用例生成 + AI 自愈 + AI Agent 探索 + LLM 模型测试单工种 + Continuous + Production Testing + Shift-Left 极致 + 信创+鸿蒙+小程序 + Sovereign + PQC + 24 项 5 年信心矩阵 |
 
-> 🔧 硬件测试已独立为 [18. 硬件测试](../18_硬件测试/index.md) 章节，包含组件检查、固件升级、压力测试、PXE 自动化等服务器交付全流程。
+> 硬件测试已独立为 [18. 硬件测试](../18_硬件测试/index.md) 章节，包含组件检查、固件升级、压力测试、PXE 自动化等服务器交付全流程。
 
 ## 学习路径
 
 ```
 入门（1-3 月）
-  └─ 01_基础: xUnit + Mock + 覆盖率 + TDD/BDD + 用例设计 + 20 题
+ └─ 01_基础: xUnit + Mock + 覆盖率 + TDD/BDD + 用例设计 + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: API + Playwright + k6 + Pact + Testcontainers + CI + Allure
+ └─ 02_进阶: API + Playwright + k6 + Pact + Testcontainers + CI + Allure
 
 高级（1-2 年）
-  └─ 03_高级: Bazel + 平台化 + 全链路 + Chaos + DevSecOps + AI 加持 + LLM 测试
+ └─ 03_高级: Bazel + 平台化 + 全链路 + Chaos + DevSecOps + AI 加持 + LLM 测试
 
 工程化（2-3 年）
-  └─ 04_最佳实践: Strategy + 多级门禁 + Flaky < 1% + KPI + 团队 + 合规
+ └─ 04_最佳实践: Strategy + 多级门禁 + Flaky < 1% + KPI + 团队 + 合规
 
 展望（持续）
-  └─ 99_发展与展望: LLM Agent + AI 自愈 + Production Testing + Sovereign
+ └─ 99_发展与展望: LLM Agent + AI 自愈 + Production Testing + Sovereign
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. 测试是设计活动, 不是事后检查
-  2. 金字塔分层 (单元 70% + 集成 20% + E2E 10%)
-  3. Hermetic 测试 (独立 + 可重跑)
-  4. CI 多级门禁 (PR + Merge + Pre-prod + Prod)
-  5. Flaky < 1% 红线
-  6. DevSecOps 五件套必修
-  7. 左移+右移闭环
-  8. AI 加持是分水岭 (Copilot + Codium)
-  9. LLM 模型测试 单独工种
-  10. 国产合规 (等保 / 关基 / HW / 密评)
-  11. Continuous + Production Testing 替代阶段化
-  12. 不学 AI + Cloud 5 年内淘汰
+ 1. 测试是设计活动, 不是事后检查
+ 2. 金字塔分层 (单元 70% + 集成 20% + E2E 10%)
+ 3. Hermetic 测试 (独立 + 可重跑)
+ 4. CI 多级门禁 (PR + Merge + Pre-prod + Prod)
+ 5. Flaky < 1% 红线
+ 6. DevSecOps 五件套必修
+ 7. 左移+右移闭环
+ 8. AI 加持是分水岭 (Copilot + Codium)
+ 9. LLM 模型测试 单独工种
+ 10. 国产合规 (等保 / 关基 / HW / 密评)
+ 11. Continuous + Production Testing 替代阶段化
+ 12. 不学 AI + Cloud 5 年内淘汰
 
 红线:
-  ❌ 测试金字塔倒置 (E2E 多, 单元少)
-  ❌ Flaky 不修, 只重试
-  ❌ 覆盖率作为唯一 KPI (无 Mutation)
-  ❌ 测试依赖生产 DB
-  ❌ 真实第三方 API (Stripe / Twilio) → 用 Sandbox/Mock
-  ❌ 缺乏 Test Strategy
-  ❌ 安全测试不入 CI 强制
-  ❌ 性能测试只在大促前
-  ❌ Postmortem 不闭环 Action
-  ❌ 不学 LLM 模型测试 (大企用人窗口期)
+ 测试金字塔倒置 (E2E 多, 单元少)
+ Flaky 不修, 只重试
+ 覆盖率作为唯一 KPI (无 Mutation)
+ 测试依赖生产 DB
+ 真实第三方 API (Stripe / Twilio) → 用 Sandbox/Mock
+ 缺乏 Test Strategy
+ 安全测试不入 CI 强制
+ 性能测试只在大促前
+ Postmortem 不闭环 Action
+ 不学 LLM 模型测试 (大企用人窗口期)
 ```
 
 ## 相关章节

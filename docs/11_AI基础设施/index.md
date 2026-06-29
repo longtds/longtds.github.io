@@ -16,50 +16,50 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: PyTorch + HF + vLLM/Ollama + K8s GPU + pgvector RAG + 20 题
+ └─ 01_基础: PyTorch + HF + vLLM/Ollama + K8s GPU + pgvector RAG + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: vLLM 生产 + AWQ/FP8 + KServe + DDP/FSDP + Volcano + IB + RAG + 昇腾
+ └─ 02_进阶: vLLM 生产 + AWQ/FP8 + KServe + DDP/FSDP + Volcano + IB + RAG + 昇腾
 
 高级（1-2 年）
-  └─ 03_高级: Megatron 3D + Post-training + Speculative/DisAgg + 长上下文 + MoE + 多模态 + LangGraph + LiteLLM + DLRover + 蒸馏 + 国密
+ └─ 03_高级: Megatron 3D + Post-training + Speculative/DisAgg + 长上下文 + MoE + 多模态 + LangGraph + LiteLLM + DLRover + 蒸馏 + 国密
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 规模决策 + 平台分层 + MLOps + SLO + FinOps GPU + 国产化 + 备案 + 应急
+ └─ 04_最佳实践: 规模决策 + 平台分层 + MLOps + SLO + FinOps GPU + 国产化 + 备案 + 应急
 
 展望（持续）
-  └─ 99_发展与展望: B100+Ascend + FP4 + DisAgg + MoE + GRPO + MCP+Agent + Omni + 1M Context + 国产开源 + Sovereign AI
+ └─ 99_发展与展望: B100+Ascend + FP4 + DisAgg + MoE + GRPO + MCP+Agent + Omni + 1M Context + 国产开源 + Sovereign AI
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. PyTorch + Hugging Face 是入门基底
-  2. vLLM 是当下推理王者; SGLang/TRT-LLM/llm-d 各有所长
-  3. AWQ/GPTQ/FP8 量化是工程必修 (省卡 + 增吞吐)
-  4. KServe + GitOps 是 K8s 推理标准路径
-  5. Megatron + Volcano 是预训练栈
-  6. LLaMA-Factory + DPO/GRPO 是微调高效栈
-  7. LangGraph + MCP 是 Agent 下一波
-  8. LiteLLM/Higress AI 是统一网关 + 治理
-  9. 国产昇腾 + MindIE/LMDeploy + MindFormers 是央企必修
-  10. 模型备案 + 内容审核 + 国密 是中国硬要求
-  11. DisAgg Prefill-Decode + MoE + Speculative 是大规模必修
-  12. RAG (Milvus/pgvector + bge + Reranker) + Long Context 双轨
+ 1. PyTorch + Hugging Face 是入门基底
+ 2. vLLM 是当下推理王者; SGLang/TRT-LLM/llm-d 各有所长
+ 3. AWQ/GPTQ/FP8 量化是工程必修 (省卡 + 增吞吐)
+ 4. KServe + GitOps 是 K8s 推理标准路径
+ 5. Megatron + Volcano 是预训练栈
+ 6. LLaMA-Factory + DPO/GRPO 是微调高效栈
+ 7. LangGraph + MCP 是 Agent 下一波
+ 8. LiteLLM/Higress AI 是统一网关 + 治理
+ 9. 国产昇腾 + MindIE/LMDeploy + MindFormers 是央企必修
+ 10. 模型备案 + 内容审核 + 国密 是中国硬要求
+ 11. DisAgg Prefill-Decode + MoE + Speculative 是大规模必修
+ 12. RAG (Milvus/pgvector + bge + Reranker) + Long Context 双轨
 
 红线:
-  ❌ 还在裸 PyTorch 推理 (无 vLLM)
-  ❌ FP16 满显存却不量化
-  ❌ 训练无 Checkpoint 频次 / 无 Resume
-  ❌ Volcano / 调度 / 多租户 缺失
-  ❌ IB / RoCE 网络未调 NCCL
-  ❌ 模型无版本 / 无模型卡 / 无备案
-  ❌ 推理无 SLO + 无监控告警
-  ❌ 数据无 PII 脱敏 / 无合规检查
-  ❌ 国产 Ascend / MindIE 不学 (政企会被淘汰)
-  ❌ 不接 LLM 网关 (无计费 + 无路由)
-  ❌ Agent 不学 LangGraph + MCP
+ 还在裸 PyTorch 推理 (无 vLLM)
+ FP16 满显存却不量化
+ 训练无 Checkpoint 频次 / 无 Resume
+ Volcano / 调度 / 多租户 缺失
+ IB / RoCE 网络未调 NCCL
+ 模型无版本 / 无模型卡 / 无备案
+ 推理无 SLO + 无监控告警
+ 数据无 PII 脱敏 / 无合规检查
+ 国产 Ascend / MindIE 不学 (政企会被淘汰)
+ 不接 LLM 网关 (无计费 + 无路由)
+ Agent 不学 LangGraph + MCP
 ```
 
 ## 相关章节

@@ -2,7 +2,7 @@
 
 > 渗透测试 = 授权红队的攻防工程。本章按 **基础 → 进阶 → 高级 → 最佳实践 → 发展与展望** 五层递进，聚焦 PTES + Kali 工具栈 + Web/AD/Cloud/K8s + Sliver/CS C2 + AI 红队 + HW 行动 + Bug Bounty + CTEM 14 大主线。
 
-> ⚠️ **法律红线**: 渗透测试 **必须授权**。本章一切技术仅限授权范围 / CTF / 自有实验室。未授权渗透 = 网安法/刑法。
+> **法律红线**: 渗透测试 **必须授权**。本章一切技术仅限授权范围 / CTF / 自有实验室。未授权渗透 = 网安法/刑法。
 
 ## 章节结构
 
@@ -18,49 +18,49 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: 法律 + PTES + Kali + Burp + Metasploit + DVWA + 20 题
+ └─ 01_基础: 法律 + PTES + Kali + Burp + Metasploit + DVWA + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: Web 深度 + AD + 内网 + 提权 + Sliver + BBOT + Bug Bounty
+ └─ 02_进阶: Web 深度 + AD + 内网 + 提权 + Sliver + BBOT + Bug Bounty
 
 高级（1-2 年）
-  └─ 03_高级: APT 全链 + EDR 对抗 + Cloud + K8s + 供应链 + AI 红队 + 0day
+ └─ 03_高级: APT 全链 + EDR 对抗 + Cloud + K8s + 供应链 + AI 红队 + 0day
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 授权 + ROE + 工具链 + 报告 + 红蓝紫 + HW 重保 + 团队
+ └─ 04_最佳实践: 授权 + ROE + 工具链 + 报告 + 红蓝紫 + HW 重保 + 团队
 
 展望（持续）
-  └─ 99_发展与展望: AI 红队 + Agent + Cloud/K8s + CTEM + 国密 + Sovereign
+ └─ 99_发展与展望: AI 红队 + Agent + Cloud/K8s + CTEM + 国密 + Sovereign
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. 法律先行: 授权 + 范围 + ROE 三件套
-  2. PTES 七阶段, 系统化方法论
-  3. ATT&CK 是攻防共同语言
-  4. AI 红队(Garak/PyRIT) 是未来 5 年最大机遇
-  5. Cloud + K8s 占红队 60%+, 必修
-  6. AD 深度(BloodHound + Certipy + Impacket) 永远的核心
-  7. 红队基建(Sliver/CS + Redirector + CDN) 是分水岭
-  8. EDR 对抗(syscall + BYOVD + Sleep masking)
-  9. 供应链(XZ/SolarWinds 模式) 是新方向
-  10. HW + 关基 + 国密 + 信创 是央企硬需求
-  11. CTEM + Continuous 替代年度渗透
-  12. 报告写作 + Postmortem 决定专业度
+ 1. 法律先行: 授权 + 范围 + ROE 三件套
+ 2. PTES 七阶段, 系统化方法论
+ 3. ATT&CK 是攻防共同语言
+ 4. AI 红队(Garak/PyRIT) 是未来 5 年最大机遇
+ 5. Cloud + K8s 占红队 60%+, 必修
+ 6. AD 深度(BloodHound + Certipy + Impacket) 永远的核心
+ 7. 红队基建(Sliver/CS + Redirector + CDN) 是分水岭
+ 8. EDR 对抗(syscall + BYOVD + Sleep masking)
+ 9. 供应链(XZ/SolarWinds 模式) 是新方向
+ 10. HW + 关基 + 国密 + 信创 是央企硬需求
+ 11. CTEM + Continuous 替代年度渗透
+ 12. 报告写作 + Postmortem 决定专业度
 
 红线:
-  ❌ 未授权渗透 (违法)
-  ❌ 超范围 (合同外)
-  ❌ 破坏生产 (无升级)
-  ❌ 客户数据外泄 (法律)
-  ❌ 0day 不上报 (黑产)
-  ❌ 持久化无清理 (违 ROE)
-  ❌ 只用工具不懂原理
-  ❌ 不学 AI + Cloud (5 年淘汰)
-  ❌ 国密 + HW + 关基 不熟 (央企无用)
-  ❌ 报告糊弄 (没价值)
+ 未授权渗透 (违法)
+ 超范围 (合同外)
+ 破坏生产 (无升级)
+ 客户数据外泄 (法律)
+ 0day 不上报 (黑产)
+ 持久化无清理 (违 ROE)
+ 只用工具不懂原理
+ 不学 AI + Cloud (5 年淘汰)
+ 国密 + HW + 关基 不熟 (央企无用)
+ 报告糊弄 (没价值)
 ```
 
 ## 相关章节

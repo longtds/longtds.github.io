@@ -268,7 +268,7 @@
   <span class="md-ellipsis">
     
   
-    🏠 首页
+    首页
   
 
     
@@ -1971,7 +1971,7 @@
       <a href=".." class="md-path__link">
         
   <span class="md-ellipsis">
-    🏠 首页
+    首页
   </span>
 
       </a>
@@ -2066,18 +2066,18 @@
 </table>
 <h2 id="_2">二、服务器体系架构演进<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <h3 id="21-pcie">2.1 从南北桥到 PCIe 直连<a class="headerlink" href="#21-pcie" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>传统架构（2005-）          现代架构（2015+）
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>传统架构（2005-） 现代架构（2015+）
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>CPU ─ 北桥 ─ 内存          CPU ─── 内存（DDR5）
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  │                       │
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  └── 南桥 ─ PCIe/SATA     ├── PCIe 5.0 ──── GPU/NVMe
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>                          │
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>                          └── CXL ────────── 内存池
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>CPU ─ 北桥 ─ 内存 CPU ─── 内存（DDR5）
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a> │ │
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a> └── 南桥 ─ PCIe/SATA ├── PCIe 5.0 ──── GPU/NVMe
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a> │
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a> └── CXL ────────── 内存池
 </code></pre></div>
 <h3 id="22-numa">2.2 NUMA 架构<a class="headerlink" href="#22-numa" title="Permanent link">&para;</a></h3>
 <p>多路 CPU 服务器中，每颗 CPU 有本地内存，跨 CPU 访问内存有性能损失。运维要关注 NUMA 亲和性绑定。</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>numactl<span class="w"> </span>--hardware<span class="w">           </span><span class="c1"># 查看 NUMA 拓扑</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>numactl<span class="w"> </span>--cpunodebind<span class="o">=</span><span class="m">0</span><span class="w"> </span>--membind<span class="o">=</span><span class="m">0</span><span class="w"> </span>./app<span class="w">   </span><span class="c1"># 绑定到 Node 0</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>numactl<span class="w"> </span>--hardware<span class="w"> </span><span class="c1"># 查看 NUMA 拓扑</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>numactl<span class="w"> </span>--cpunodebind<span class="o">=</span><span class="m">0</span><span class="w"> </span>--membind<span class="o">=</span><span class="m">0</span><span class="w"> </span>./app<span class="w"> </span><span class="c1"># 绑定到 Node 0</span>
 </code></pre></div>
 <h3 id="23-chiplet">2.3 Chiplet（小芯片）<a class="headerlink" href="#23-chiplet" title="Permanent link">&para;</a></h3>
 <p>将一颗大芯片拆成多个 Chiplet 用 EMIB/CoWoS 互联，良率↑成本↓。AMD EPYC、Intel Xeon 都已采用。</p>
@@ -2152,7 +2152,7 @@
 </tbody>
 </table>
 <blockquote>
-<p>📖 建议阅读顺序：本概述 → 核心部件 → 异构算力 → 运维管理 → 发展展望</p>
+<p>建议阅读顺序：本概述 → 核心部件 → 异构算力 → 运维管理 → 发展展望</p>
 </blockquote>
 
 
@@ -2189,7 +2189,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="上一页: 🏠 首页">
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="上一页: 首页">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2199,7 +2199,7 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                🏠 首页
+                首页
               </div>
             </div>
           </a>

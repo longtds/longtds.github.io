@@ -268,7 +268,7 @@
   <span class="md-ellipsis">
     
   
-    🏠 首页
+    首页
   
 
     
@@ -1708,7 +1708,7 @@
       <a href=".." class="md-path__link">
         
   <span class="md-ellipsis">
-    🏠 首页
+    首页
   </span>
 
       </a>
@@ -1791,46 +1791,46 @@
 </table>
 <h2 id="_2">学习路径<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>入门（1-2 月）
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  └─ 01_基础: 装 docker + 镜像加速器 + Compose 单机 + 多阶段 distroless + Harbor + Trivy + 20 题
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a> └─ 01_基础: 装 docker + 镜像加速器 + Compose 单机 + 多阶段 distroless + Harbor + Trivy + 20 题
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>进阶（3-12 月）
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  └─ 02_进阶: Buildx 多架构 + 远程缓存 + 镜像 &lt; 50MB + Harbor Replication+Proxy Cache + cosign+SBOM + macvlan + cAdvisor 监控 + rootless
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a> └─ 02_进阶: Buildx 多架构 + 远程缓存 + 镜像 &lt; 50MB + Harbor Replication+Proxy Cache + cosign+SBOM + macvlan + cAdvisor 监控 + rootless
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>高级（1-2 年）
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  └─ 03_高级: containerd 直驱 + Kata + gVisor + CoCo + Buildah/Kaniko + Wasm + GPU/MIG + 国产 iSulad + eBPF(Tetragon) + 容器逃逸加固
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a> └─ 03_高级: containerd 直驱 + Kata + gVisor + CoCo + Buildah/Kaniko + Wasm + GPU/MIG + 国产 iSulad + eBPF(Tetragon) + 容器逃逸加固
 <a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>工程化（2-3 年）
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  └─ 04_最佳实践: 镜像规范+分级 + CI/CD 全链(lint+scan+sign+SBOM+Provenance) + Harbor 治理 + 监控告警 + CIS+等保 + GitOps + 国产化路径
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a> └─ 04_最佳实践: 镜像规范+分级 + CI/CD 全链(lint+scan+sign+SBOM+Provenance) + Harbor 治理 + 监控告警 + CIS+等保 + GitOps + 国产化路径
 <a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
 <a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>展望（持续）
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>  └─ 99_发展与展望: containerd 标准 + Kata-cc + Wasm + GPU 国产 + Sigstore + 边缘 + iSulad 八条主线
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a> └─ 99_发展与展望: containerd 标准 + Kata-cc + Wasm + GPU 国产 + Sigstore + 边缘 + iSulad 八条主线
 </code></pre></div>
 <h2 id="_3">核心判断<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>心法:
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  1. 容器 = namespace+cgroup+rootfs，不是&quot;轻量 VM&quot;，是受限进程
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  2. dockerd/containerd/runc 三层都要懂
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  3. OCI 三规范 (Image/Runtime/Distribution) 才是核心，不是 Docker
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  4. 生产 K8s 一律 containerd（dockershim 已退场）
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  5. 镜像 &lt; 50 MB 是基本功 (distroless + 多阶段)
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  6. Harbor + cosign + Trivy + SBOM 是供应链四件套
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  7. 多架构 amd64 + arm64 一次推
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  8. rootless / userns / seccomp / AppArmor 安全四件套
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  9. Kata / gVisor / Wasm / CoCo 是 OCI 内的多元未来
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  10. 国产化 = openEuler + iSulad + 鲲鹏 ARM + Harbor 国密
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a> 1. 容器 = namespace+cgroup+rootfs，不是&quot;轻量 VM&quot;，是受限进程
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a> 2. dockerd/containerd/runc 三层都要懂
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a> 3. OCI 三规范 (Image/Runtime/Distribution) 才是核心，不是 Docker
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a> 4. 生产 K8s 一律 containerd（dockershim 已退场）
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a> 5. 镜像 &lt; 50 MB 是基本功 (distroless + 多阶段)
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a> 6. Harbor + cosign + Trivy + SBOM 是供应链四件套
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a> 7. 多架构 amd64 + arm64 一次推
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a> 8. rootless / userns / seccomp / AppArmor 安全四件套
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a> 9. Kata / gVisor / Wasm / CoCo 是 OCI 内的多元未来
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a> 10. 国产化 = openEuler + iSulad + 鲲鹏 ARM + Harbor 国密
 <a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
 <a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>红线:
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  ❌ :latest 上生产
-<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>  ❌ root 跑容器
-<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  ❌ --privileged 滥用
-<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  ❌ 挂 /var/run/docker.sock 到容器
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>  ❌ 没 HEALTHCHECK + 没 livenessProbe
-<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>  ❌ 日志写容器内
-<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a>  ❌ /var/lib/docker 不分区不 GC
-<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>  ❌ K8s 1.24+ 还用 dockershim
-<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a>  ❌ CI 用 admin 账号 push
-<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a>  ❌ Trivy 扫不阻断
-<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a>  ❌ 不签名 / 不验签
-<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a>  ❌ 没 SBOM 供应链审计无据
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a> :latest 上生产
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a> root 跑容器
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a> --privileged 滥用
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a> 挂 /var/run/docker.sock 到容器
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a> 没 HEALTHCHECK + 没 livenessProbe
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a> 日志写容器内
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a> /var/lib/docker 不分区不 GC
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a> K8s 1.24+ 还用 dockershim
+<a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a> CI 用 admin 账号 push
+<a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a> Trivy 扫不阻断
+<a id="__codelineno-1-24" name="__codelineno-1-24" href="#__codelineno-1-24"></a> 不签名 / 不验签
+<a id="__codelineno-1-25" name="__codelineno-1-25" href="#__codelineno-1-25"></a> 没 SBOM 供应链审计无据
 </code></pre></div>
 <h2 id="_4">相关章节<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>

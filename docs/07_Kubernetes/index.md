@@ -16,50 +16,50 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: kubeadm 3 节点 + kubectl + Deployment/Service/Ingress + ConfigMap/Secret + StatefulSet/PVC + RBAC + Helm + HPA + 20 题
+ └─ 01_基础: kubeadm 3 节点 + kubectl + Deployment/Service/Ingress + ConfigMap/Secret + StatefulSet/PVC + RBAC + Helm + HPA + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: kubeadm HA + Cilium+NP + Rook-Ceph + cert-manager + kube-prometheus-stack + Loki + ArgoCD + Velero + PSS restricted
+ └─ 02_进阶: kubeadm HA + Cilium+NP + Rook-Ceph + cert-manager + kube-prometheus-stack + Loki + ArgoCD + Velero + PSS restricted
 
 高级（1-2 年）
-  └─ 03_高级: kubebuilder Operator + Volcano+HAMi 调度 + Karmada 多集群 + Istio Ambient + KubeVirt + GPU+MIG + CoCo + Argo Rollouts + DeepFlow eBPF + 大规模调优
+ └─ 03_高级: kubebuilder Operator + Volcano+HAMi 调度 + Karmada 多集群 + Istio Ambient + KubeVirt + GPU+MIG + CoCo + Argo Rollouts + DeepFlow eBPF + 大规模调优
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 多集群拓扑 + 节点池 + VPA/KRR 画像 + 多租户 + Kyverno 强制 + 监控 SLO + 灾备演练 + 升级 SOP + FinOps + 国产化路径
+ └─ 04_最佳实践: 多集群拓扑 + 节点池 + VPA/KRR 画像 + 多租户 + Kyverno 强制 + 监控 SLO + 灾备演练 + 升级 SOP + FinOps + 国产化路径
 
 展望（持续）
-  └─ 99_发展与展望: DRA + Operator + Karmada + Ambient + AI 调度 + 边缘 + KubeVirt + CoCo + eBPF + Wasm + 国产 + 平台工程 十二条主线
+ └─ 99_发展与展望: DRA + Operator + Karmada + Ambient + AI 调度 + 边缘 + KubeVirt + CoCo + eBPF + Wasm + 国产 + 平台工程 十二条主线
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. K8s 是声明式 + 控制器 + Reconcile，理解这三个比记 kubectl 命令重要
-  2. Pod 是最小调度单元，Service 是稳定 VIP，Operator/CRD 是应用模型
-  3. 生产必 kubeadm HA + Cilium + Rook + ArgoCD + kube-prometheus
-  4. 多集群是默认选项（dev/staging/prod 至少 3 集群）
-  5. PSS restricted + NetworkPolicy 默认 deny + RBAC 最小权限 三件套
-  6. requests/limits + Probe 三件套 + topology spread 不可缺
-  7. Velero + etcd snapshot + 季度演练 是底线
-  8. AI 训练 → Volcano/HAMi/vLLM 是必备分水岭
-  9. 边缘 → KubeEdge/OpenYurt + k3s 国产首选
-  10. 国产化 → KubeSphere + Karmada + HAMi + DeepFlow + Higress 全栈
+ 1. K8s 是声明式 + 控制器 + Reconcile，理解这三个比记 kubectl 命令重要
+ 2. Pod 是最小调度单元，Service 是稳定 VIP，Operator/CRD 是应用模型
+ 3. 生产必 kubeadm HA + Cilium + Rook + ArgoCD + kube-prometheus
+ 4. 多集群是默认选项（dev/staging/prod 至少 3 集群）
+ 5. PSS restricted + NetworkPolicy 默认 deny + RBAC 最小权限 三件套
+ 6. requests/limits + Probe 三件套 + topology spread 不可缺
+ 7. Velero + etcd snapshot + 季度演练 是底线
+ 8. AI 训练 → Volcano/HAMi/vLLM 是必备分水岭
+ 9. 边缘 → KubeEdge/OpenYurt + k3s 国产首选
+ 10. 国产化 → KubeSphere + Karmada + HAMi + DeepFlow + Higress 全栈
 
 红线:
-  ❌ 单 master 上生产
-  ❌ etcd 共享盘 / 跑虚拟机
-  ❌ 没 requests/limits → BestEffort
-  ❌ 没 NetworkPolicy → 全网互通
-  ❌ root 跑容器 + privileged
-  ❌ :latest 上生产
-  ❌ kubectl exec 改文件 (要全 IaC)
-  ❌ Secret base64 当加密
-  ❌ Audit log 没接 SIEM
-  ❌ etcd 备份没演练
-  ❌ minor 跨多版本升级
-  ❌ 单集群上 3000+ 节点（拆 Karmada 联邦）
-  ❌ 没 PDB → 滚动直接挂业务
+ 单 master 上生产
+ etcd 共享盘 / 跑虚拟机
+ 没 requests/limits → BestEffort
+ 没 NetworkPolicy → 全网互通
+ root 跑容器 + privileged
+ :latest 上生产
+ kubectl exec 改文件 (要全 IaC)
+ Secret base64 当加密
+ Audit log 没接 SIEM
+ etcd 备份没演练
+ minor 跨多版本升级
+ 单集群上 3000+ 节点（拆 Karmada 联邦）
+ 没 PDB → 滚动直接挂业务
 ```
 
 ## 相关章节

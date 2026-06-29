@@ -16,49 +16,49 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: USE/RED + Linux 5 大 + 日志 + 网络 + HTTP/SQL + Postmortem + 20 题
+ └─ 01_基础: USE/RED + Linux 5 大 + 日志 + 网络 + HTTP/SQL + Postmortem + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: K8s 全栈 + Mesh + DB 深度 + JVM/Go/Python + perf/eBPF + Trace + 慢查询 + 灰度
+ └─ 02_进阶: K8s 全栈 + Mesh + DB 深度 + JVM/Go/Python + perf/eBPF + Trace + 慢查询 + 灰度
 
 高级（1-2 年）
-  └─ 03_高级: Chaos + SLO + Continuous Profile + AIOps + LLM SRE + GPU/LLM + 多集群
+ └─ 03_高级: Chaos + SLO + Continuous Profile + AIOps + LLM SRE + GPU/LLM + 多集群
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 12 金标 + On-call + 告警治理 + GameDay + IR + DR + 团队 + KPI
+ └─ 04_最佳实践: 12 金标 + On-call + 告警治理 + GameDay + IR + DR + 团队 + KPI
 
 展望（持续）
-  └─ 99_发展与展望: LLM Agent + MCP + eBPF + AIOps 自愈 + Karmada + AI 工作负载
+ └─ 99_发展与展望: LLM Agent + MCP + eBPF + AIOps 自愈 + Karmada + AI 工作负载
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. 方法论先行 (USE/RED/Golden Signals/MTTR)
-  2. 可观测五大件 (Metrics + Logs + Traces + Profile + eBPF)
-  3. Runbook 每告警必有 (一键跳转)
-  4. On-call 制度化 (PagerDuty + 主备 + 轮值)
-  5. 告警治理 (Burn Rate 替代静态阈值, 误报 < 10%)
-  6. SLO + Error Budget 强制冻结发布
-  7. Postmortem Blameless + Action 闭环 > 80%
-  8. Chaos GameDay 季度 + DR 异地多活
-  9. eBPF (Pixie/Coroot/Cilium) 零代码革命, 必修
-  10. LLM SRE Agent 是未来 5 年最大机遇
-  11. AI/GPU/LLM 工作负载是新蓝海 (DCGM + vLLM)
-  12. 信创 + Sovereign 是央企硬需求
+ 1. 方法论先行 (USE/RED/Golden Signals/MTTR)
+ 2. 可观测五大件 (Metrics + Logs + Traces + Profile + eBPF)
+ 3. Runbook 每告警必有 (一键跳转)
+ 4. On-call 制度化 (PagerDuty + 主备 + 轮值)
+ 5. 告警治理 (Burn Rate 替代静态阈值, 误报 < 10%)
+ 6. SLO + Error Budget 强制冻结发布
+ 7. Postmortem Blameless + Action 闭环 > 80%
+ 8. Chaos GameDay 季度 + DR 异地多活
+ 9. eBPF (Pixie/Coroot/Cilium) 零代码革命, 必修
+ 10. LLM SRE Agent 是未来 5 年最大机遇
+ 11. AI/GPU/LLM 工作负载是新蓝海 (DCGM + vLLM)
+ 12. 信创 + Sovereign 是央企硬需求
 
 红线:
-  ❌ 没有 Runbook 的告警 (= 噪音)
-  ❌ 没有 SLO (= 无目标)
-  ❌ Postmortem 互相指责 (= 文化崩)
-  ❌ 没有 Chaos 演练 (= 不知韧性)
-  ❌ DR 没切换演练 (= DR = 0)
-  ❌ DB Schema 不兼容 (= 无法回滚)
-  ❌ On-call 一人多次背锅 (= 团队问题)
-  ❌ 不学 AI + eBPF (5 年淘汰)
-  ❌ 信创 + 等保 不学 (央企无用)
-  ❌ 救火型 SRE (无演练 + 无 Postmortem)
+ 没有 Runbook 的告警 (= 噪音)
+ 没有 SLO (= 无目标)
+ Postmortem 互相指责 (= 文化崩)
+ 没有 Chaos 演练 (= 不知韧性)
+ DR 没切换演练 (= DR = 0)
+ DB Schema 不兼容 (= 无法回滚)
+ On-call 一人多次背锅 (= 团队问题)
+ 不学 AI + eBPF (5 年淘汰)
+ 信创 + 等保 不学 (央企无用)
+ 救火型 SRE (无演练 + 无 Postmortem)
 ```
 
 ## 相关章节

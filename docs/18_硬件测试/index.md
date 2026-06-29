@@ -16,49 +16,49 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: 5 件套 + SMART + IPMI + 基础压测
+ └─ 01_基础: 5 件套 + SMART + IPMI + 基础压测
 
 进阶（3-12 月）
-  └─ 02_进阶: RAID + Mellanox + NVMe + DCGM + 厂商 BMC + Linpack + RAS
+ └─ 02_进阶: RAID + Mellanox + NVMe + DCGM + 厂商 BMC + Linpack + RAS
 
 高级（1-2 年）
-  └─ 03_高级: 固件全栈 + 72h 烤机 + PXE 流水线 + AI 服务器 + 信创
+ └─ 03_高级: 固件全栈 + 72h 烤机 + PXE 流水线 + AI 服务器 + 信创
 
 工程化（2-3 年）
-  └─ 04_最佳实践: SOP + 基线 + CMDB + RMA + 备件 + 合规
+ └─ 04_最佳实践: SOP + 基线 + CMDB + RMA + 备件 + 合规
 
 展望（持续）
-  └─ 99_发展与展望: GB300/Rubin + 液冷 + 信创 + CXL + DPU + AIOps
+ └─ 99_发展与展望: GB300/Rubin + 液冷 + 信创 + CXL + DPU + AIOps
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. 硬件测试 = 早发现问题, 别等生产挂
-  2. 72h 烤机是验收红线
-  3. 固件基线管理 + 灰度发布
-  4. RAS 三件套持续监控 (rasdaemon + mcelog + edac)
-  5. PXE 自动化是规模化前提
-  6. CMDB 全量入库 (NetBox)
-  7. 备件 5-10% 是 SLA 基础
-  8. 数据擦除 + EOL 合规
-  9. 国产化是央企必修
-  10. AI 服务器测试是未来 5 年最大机遇
-  11. 液冷是分水岭 (AI 100%)
-  12. 不学 AI + 信创 + AIOps 的硬件工程师 5 年内边缘化
+ 1. 硬件测试 = 早发现问题, 别等生产挂
+ 2. 72h 烤机是验收红线
+ 3. 固件基线管理 + 灰度发布
+ 4. RAS 三件套持续监控 (rasdaemon + mcelog + edac)
+ 5. PXE 自动化是规模化前提
+ 6. CMDB 全量入库 (NetBox)
+ 7. 备件 5-10% 是 SLA 基础
+ 8. 数据擦除 + EOL 合规
+ 9. 国产化是央企必修
+ 10. AI 服务器测试是未来 5 年最大机遇
+ 11. 液冷是分水岭 (AI 100%)
+ 12. 不学 AI + 信创 + AIOps 的硬件工程师 5 年内边缘化
 
 红线:
-  ❌ 跳过 72h 烤机直接上架
-  ❌ 升级期间双 PSU 同时拔
-  ❌ 默认密码不改 (admin/admin)
-  ❌ GPU VBIOS 不备份就刷
-  ❌ NVMe FW commit 不备份数据
-  ❌ Sanitize 不验证就退役
-  ❌ ECC UE 不立刻处置
-  ❌ DCGM diag 不跑就上线 AI 服务器
-  ❌ 无 CMDB / 无监控 / 无告警的"裸跑"
-  ❌ 信创认证不验证就采购
+ 跳过 72h 烤机直接上架
+ 升级期间双 PSU 同时拔
+ 默认密码不改 (admin/admin)
+ GPU VBIOS 不备份就刷
+ NVMe FW commit 不备份数据
+ Sanitize 不验证就退役
+ ECC UE 不立刻处置
+ DCGM diag 不跑就上线 AI 服务器
+ 无 CMDB / 无监控 / 无告警的"裸跑"
+ 信创认证不验证就采购
 ```
 
 ## 相关章节

@@ -16,49 +16,49 @@
 
 ```
 入门（1-3 月）
-  └─ 01_基础: 协议 + Keycloak + LDAP + WebAuthn + 20 题
+ └─ 01_基础: 协议 + Keycloak + LDAP + WebAuthn + 20 题
 
 进阶（3-12 月）
-  └─ 02_进阶: HA + 多 Realm + 联邦 + SCIM + K8s OIDC + 应用矩阵 + Vault + Teleport
+ └─ 02_进阶: HA + 多 Realm + 联邦 + SCIM + K8s OIDC + 应用矩阵 + Vault + Teleport
 
 高级（1-2 年）
-  └─ 03_高级: 零信任 + SPIFFE + mTLS + Token Exchange + UEBA + ABAC + ReBAC + IGA + PAM + 国密
+ └─ 03_高级: 零信任 + SPIFFE + mTLS + Token Exchange + UEBA + ABAC + ReBAC + IGA + PAM + 国密
 
 工程化（2-3 年）
-  └─ 04_最佳实践: 12 金标 + 单一 IdP + 应用纪律 + 4 阶段零信任 + IGA + KPI + 等保
+ └─ 04_最佳实践: 12 金标 + 单一 IdP + 应用纪律 + 4 阶段零信任 + IGA + KPI + 等保
 
 展望（持续）
-  └─ 99_发展与展望: Passkey + Agent 身份 + DID + 国密 + Sovereign
+ └─ 99_发展与展望: Passkey + Agent 身份 + DID + 国密 + Sovereign
 ```
 
 ## 核心判断
 
 ```
 心法:
-  1. 单一 IdP, 别多套
-  2. HR 是 SoT, SCIM 自动开撤
-  3. 应用全 OIDC, 禁本地账号
-  4. MFA 全员 (WebAuthn 优先)
-  5. K8s 必走 OIDC + Workload Identity
-  6. Vault 动态凭证 取代 静态 DB 密码
-  7. SSH CA + Teleport 取代 静态 SSH key
-  8. SPIFFE + Service Mesh mTLS 服务间默认加密
-  9. 国产: 阿里 IDaaS + 齐治 + Tongsuo (信创必)
-  10. 等保三级 + 国密 + 备案 (合规硬)
-  11. Token Exchange + Agent 身份 (AI 时代)
-  12. 季度权限审查 + Postmortem
+ 1. 单一 IdP, 别多套
+ 2. HR 是 SoT, SCIM 自动开撤
+ 3. 应用全 OIDC, 禁本地账号
+ 4. MFA 全员 (WebAuthn 优先)
+ 5. K8s 必走 OIDC + Workload Identity
+ 6. Vault 动态凭证 取代 静态 DB 密码
+ 7. SSH CA + Teleport 取代 静态 SSH key
+ 8. SPIFFE + Service Mesh mTLS 服务间默认加密
+ 9. 国产: 阿里 IDaaS + 齐治 + Tongsuo (信创必)
+ 10. 等保三级 + 国密 + 备案 (合规硬)
+ 11. Token Exchange + Agent 身份 (AI 时代)
+ 12. 季度权限审查 + Postmortem
 
 红线:
-  ❌ 多套 IdP / 用户重复
-  ❌ 应用有本地账号 (admin/admin)
-  ❌ 静态 access key / DB 密码
-  ❌ K8s ServiceAccount Token 共享
-  ❌ 无 MFA 高敏
-  ❌ 静态 SSH key 长期不轮换
-  ❌ 服务间明文 (无 mTLS)
-  ❌ 离职 > 24h 仍有权限
-  ❌ 无审计 / 无 SIEM (合规风险)
-  ❌ 国产 IDaaS 不学 (央企淘汰)
+ 多套 IdP / 用户重复
+ 应用有本地账号 (admin/admin)
+ 静态 access key / DB 密码
+ K8s ServiceAccount Token 共享
+ 无 MFA 高敏
+ 静态 SSH key 长期不轮换
+ 服务间明文 (无 mTLS)
+ 离职 > 24h 仍有权限
+ 无审计 / 无 SIEM (合规风险)
+ 国产 IDaaS 不学 (央企淘汰)
 ```
 
 ## 相关章节
