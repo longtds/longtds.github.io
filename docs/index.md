@@ -128,6 +128,7 @@
 
 ## 快速导航
 
+- [最新技术新闻](news/index.md) — 云原生 / AI 基础设施 / AIOps 每日汇聚
 - [故障排查模板](16_故障排查/故障日志模板.md) — 修完故障直接填
 - [kubectl 常用命令](07_Kubernetes/01_基础/README.md) — 日常高频速查
 - [Shell 脚本收藏](02_Linux/04_最佳实践/README.md) — 常用运维脚本
