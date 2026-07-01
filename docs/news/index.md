@@ -4,9 +4,9 @@
 
 ## 统计
 
-- 文章总数：16
-- 领域分布：AI 基础设施 12 · 云原生 1 · 技术动态 3
-- 更新时间：2026-07-01 09:15:09 CST
+- 文章总数：28
+- 领域分布：AI 基础设施 18 · 云原生 4 · 技术动态 5 · 数据中心 / 硬件 1
+- 更新时间：2026-07-01 09:17:08 CST
 
 ## 最新文章
 
@@ -27,7 +27,19 @@
 | 2026-07-01 | 云原生 | [Building bilingual NER for cargo logistics with Amazon Bedrock](2026-07-01/building-bilingual-ner-for-cargo-logistics-with-amazon-bedrock-a128e4e4.md) | AWS ML Blog |
 | 2026-07-01 | AI 基础设施 | [Fine-tune Amazon Nova models for accurate email data extraction](2026-07-01/fine-tune-amazon-nova-models-for-accurate-email-data-extraction-3e55dc0e.md) | AWS ML Blog |
 | 2026-07-01 | AI 基础设施 | [AWS launches a desktop for agents](2026-07-01/aws-launches-a-desktop-for-agents-d2ac899a.md) | The New Stack |
+| 2026-07-01 | AI 基础设施 | [Bringing speed and strong cost performance to the market with Gemini Omni Flash and Nano Banana 2 Lite](2026-07-01/bringing-speed-and-strong-cost-performance-to-the-market-with-gemini-o-091f88f5.md) | Google Cloud Blog |
+| 2026-07-01 | 云原生 | [What Google Cloud announced in AI this month](2026-07-01/what-google-cloud-announced-in-ai-this-month-ead8b3b1.md) | Google Cloud Blog |
+| 2026-07-01 | AI 基础设施 | [Anomaly detection using dynamic thresholds and two-year-long alerts in Cloud Monitoring](2026-07-01/anomaly-detection-using-dynamic-thresholds-and-two-year-long-alerts-in-9c4b779d.md) | Google Cloud Blog |
+| 2026-07-01 | AI 基础设施 | [Build agents even faster with Gemini Enterprise Agent Platform’s fully-managed, remote MCP server](2026-07-01/build-agents-even-faster-with-gemini-enterprise-agent-platforms-fully-d3bb8d6e.md) | Google Cloud Blog |
+| 2026-07-01 | AI 基础设施 | [How Schrödinger sped up molecular discovery by 4x with Alphaevolve](2026-07-01/how-schrdinger-sped-up-molecular-discovery-by-4x-with-alphaevolve-a2cd8e0e.md) | Google Cloud Blog |
 | 2026-07-01 | AI 基础设施 | [Optimizing a Neural Reconstruction Pipeline Using NVIDIA Nsight Developer Tools](2026-07-01/optimizing-a-neural-reconstruction-pipeline-using-nvidia-nsight-develo-b44e26b2.md) | NVIDIA Technical Blog |
+| 2026-07-01 | 云原生 | [Modernizing financial services with deployment freedom and transformational AI with AlloyDB Omni](2026-07-01/modernizing-financial-services-with-deployment-freedom-and-transformat-fc44f958.md) | Google Cloud Blog |
+| 2026-06-30 | AI 基础设施 | [“The harness is where the hard work is”: Harness bets on agents that enterprises can trust in production](2026-06-30/the-harness-is-where-the-hard-work-is-harness-bets-on-agents-that-ente-fecc2d28.md) | The New Stack |
+| 2026-06-30 | 技术动态 | [Aikido acquires Root to backport open source fixes without forcing upgrades](2026-06-30/aikido-acquires-root-to-backport-open-source-fixes-without-forcing-upg-dce0f3d5.md) | The New Stack |
+| 2026-06-30 | 云原生 | [Operating Kubernetes at scale: a few stories from running Amazon EKS](2026-06-30/operating-kubernetes-at-scale-a-few-stories-from-running-amazon-eks-e002643c.md) | The New Stack |
+| 2026-06-30 | 数据中心 / 硬件 | [Kepler, re-architected: Improved power accuracy and a community call to action!](2026-06-30/kepler-re-architected-improved-power-accuracy-and-a-community-call-to-2fe3db85.md) | CNCF Blog |
+| 2026-06-30 | AI 基础设施 | [Dragonfly v2.5.0 is released](2026-06-30/dragonfly-v2-5-0-is-released-1e6d41ce.md) | CNCF Blog |
+| 2026-06-30 | 技术动态 | [How should your infrastructure connect to Red Hat Lightspeed?](2026-06-30/how-should-your-infrastructure-connect-to-red-hat-lightspeed-a469fb74.md) | Red Hat Blog |
 
 ## 自动更新说明
 
