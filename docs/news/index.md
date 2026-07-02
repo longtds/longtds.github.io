@@ -7,7 +7,7 @@
 - 文章总数：60
 - 领域分布：AI 基础设施 31 · AIOps / 可观测性 3 · 云原生 11 · 技术动态 14 · 数据中心 / 硬件 1
 - 要闻数：19（每领域上限 5）
-- 更新时间：2026-07-02 08:39:25 CST
+- 更新时间：2026-07-02 08:42:27 CST
 
 ## 最新要闻
 
@@ -81,11 +81,3 @@
 | 2026-06-30 | 云原生 | [大规模运营 Kubernetes：运行 Amazon EKS 的一些故事](2026-06-30/operating-kubernetes-at-scale-a-few-stories-from-running-amazon-eks-e002643c.md) | The New Stack |
 | 2026-06-30 | AI 基础设施 | [蜻蜓 v2.5.0 发布](2026-06-30/dragonfly-v2-5-0-is-released-1e6d41ce.md) | CNCF Blog |
 | 2026-06-30 | 技术动态 | [您的基础设施应如何连接到红帽 Lightspeed？](2026-06-30/how-should-your-infrastructure-connect-to-red-hat-lightspeed-a469fb74.md) | Red Hat Blog |
-
-## 自动更新说明
-
-- 生成脚本：`scripts/generate_daily_news.py`
-- 文章路径：`docs/news/YYYY-MM-DD/<article-slug>.md`
-- 索引规则：扫描 `docs/news/**/*.md` 的 `news-meta` 元数据，按 `date` 倒序重建本页，每个领域仅保留最新 5 篇作为要闻。
-- 内容规则：抓取原文页面 → 抽取正文 → 转 Markdown → 非中文自动翻译为中文 → 写入详情页。
-- 发布流程：脚本生成内容 → `mkdocs build --strict` → commit → `git push origin main:master` → GitHub Pages 自动部署。
