@@ -4,14 +4,28 @@
 
 ## 统计
 
-- 文章总数：28
-- 领域分布：AI 基础设施 18 · 云原生 4 · 技术动态 5 · 数据中心 / 硬件 1
-- 更新时间：2026-07-01 10:27:32 CST
+- 文章总数：42
+- 领域分布：AI 基础设施 26 · 云原生 6 · 技术动态 9 · 数据中心 / 硬件 1
+- 更新时间：2026-07-02 08:22:16 CST
 
 ## 最新文章
 
 | 日期 | 领域 | 标题 | 来源 |
 |:---|:---|:---|:---|
+| 2026-07-02 | 技术动态 | [Announcing zone-aware routing in Amazon ECS Service Connect \|亚马逊网络服务](2026-07-02/announcing-zone-aware-routing-in-amazon-ecs-service-connect-48991d67.md) | AWS Containers Blog |
+| 2026-07-02 | 技术动态 | [OpenClaw 的新应用程序不会在你的手机上运行人工智能。这就是重点。](2026-07-02/openclaws-new-app-doesnt-run-ai-on-your-phone-thats-the-whole-point-813a6b72.md) | The New Stack |
+| 2026-07-02 | 技术动态 | [Cloudflare 希望构建 AI 网络的经济层](2026-07-02/cloudflare-wants-to-build-the-economic-layer-of-the-ai-web-4a8b0acf.md) | The New Stack |
+| 2026-07-02 | AI 基础设施 | [SORadar 通过 AlloyDB 和 Gemini Enterprise 实现快速威胁检测 \|谷歌云博客](2026-07-02/socradar-powers-rapid-threat-detection-with-alloydb-and-gemini-enterpr-693325d5.md) | Google Cloud Blog |
+| 2026-07-02 | AI 基础设施 | [在 AWS GovCloud（美国）的 Amazon Bedrock 上运行 NVIDIA Nemotron 和 OpenAI GPT OSS 模型 \|亚马逊网络服务](2026-07-02/run-nvidia-nemotron-and-openai-gpt-oss-models-on-amazon-bedrock-in-aws-ddedc50b.md) | AWS ML Blog |
+| 2026-07-02 | 云原生 | [构建用于代理发现、路由和访问控制的无服务器 A2A 网关 \|亚马逊网络服务](2026-07-02/building-a-serverless-a2a-gateway-for-agent-discovery-routing-and-acce-be003400.md) | AWS ML Blog |
+| 2026-07-02 | AI 基础设施 | [AgentCore 内存中使用元数据进行结构化内存过滤 \|亚马逊网络服务](2026-07-02/structured-memory-filtering-with-metadata-in-agentcore-memory-736d729f.md) | AWS ML Blog |
+| 2026-07-02 | AI 基础设施 | [HippoRAG：使用 Amazon Bedrock、Amazon Neptune 和个性化 PageRank 受神经生物学启发的 RAG \|亚马逊网络服务](2026-07-02/hipporag-neurobiologically-inspired-rag-using-amazon-bedrock-amazon-ne-542e7284.md) | AWS ML Blog |
+| 2026-07-02 | AI 基础设施 | [利用 AlloyDB AI 功能提升性能并降低成本 \|谷歌云博客](2026-07-02/alloydb-ai-functions-now-with-revolutionary-performance-boosts-and-cos-567d4900.md) | Google Cloud Blog |
+| 2026-07-02 | AI 基础设施 | [Inscribe 如何使用 Amazon Bedrock 在几秒钟内阻止文档欺诈 \|亚马逊网络服务](2026-07-02/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud-in-seconds-c9a51bc7.md) | AWS ML Blog |
+| 2026-07-02 | AI 基础设施 | [使用开源 Model Profiler 简化 Amazon Bedrock 中的模型选择 \|亚马逊网络服务](2026-07-02/simplify-model-selection-in-amazon-bedrock-with-the-open-source-model-3aa3c1dd.md) | AWS ML Blog |
+| 2026-07-02 | 技术动态 | [在 Amazon SageMaker AI 上使用 BoltzGen 加速蛋白质设计 \|亚马逊网络服务](2026-07-02/accelerate-protein-design-with-boltzgen-on-amazon-sagemaker-ai-3a0b663c.md) | AWS ML Blog |
+| 2026-07-02 | 云原生 | [宣布推出 Amazon EKS Rollback，以安全可靠地管理集群升级 \|亚马逊网络服务](2026-07-02/announcing-amazon-eks-rollback-for-safe-and-reliable-management-of-clu-055c34d5.md) | AWS Containers Blog |
+| 2026-07-02 | AI 基础设施 | [“你只计算一次”：Clockwork 希望如何结束人工智能训练重启](2026-07-02/you-only-compute-once-how-clockwork-wants-to-put-an-end-to-ai-training-844694d0.md) | The New Stack |
 | 2026-07-01 | AI 基础设施 | [《Fable》卷土重来：联邦政府取消对 Anthropic人工智能模型的出口管制](2026-07-01/fable-is-coming-back-federal-government-lifts-export-controls-on-anthr-deecc646.md) | The New Stack |
 | 2026-07-01 | 技术动态 | [Anthropic 的 Claude Sonnet 5 系统卡比其基准测试更能说明人工智能的未来](2026-07-01/anthropics-claude-sonnet-5-system-card-says-more-about-the-future-of-a-9efbda40.md) | The New Stack |
 | 2026-07-01 | 技术动态 | [基础设施锁定导致人工智能公司损失数亿美元](2026-07-01/the-infrastructure-lock-in-costing-ai-companies-hundreds-of-millions-64afd287.md) | The New Stack |
