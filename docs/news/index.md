@@ -1,14 +1,15 @@
 # 技术新闻
 
-> 每日自动汇聚 **云原生 / AI 基础设施 / AIOps / 可观测性 / 数据中心硬件** 等方向的技术动态。列表按发布时间从新到旧排序，点击标题进入对应内容页。详情页会抽取原文正文并格式化展示；非中文原文自动翻译为中文。
+> 每日自动汇聚 **云原生 / AI 基础设施 / AIOps / 可观测性 / 数据中心硬件** 等方向的技术动态。列表按发布时间从新到旧排序，每个领域最多保留最新 5 篇作为要闻。详情页会抽取原文正文并格式化展示；非中文原文自动翻译为中文。
 
 ## 统计
 
 - 文章总数：42
 - 领域分布：AI 基础设施 26 · 云原生 6 · 技术动态 9 · 数据中心 / 硬件 1
-- 更新时间：2026-07-02 08:22:16 CST
+- 要闻数：16（每领域上限 5）
+- 更新时间：2026-07-02 08:24:35 CST
 
-## 最新文章
+## 最新要闻
 
 | 日期 | 领域 | 标题 | 来源 |
 |:---|:---|:---|:---|
@@ -21,13 +22,25 @@
 | 2026-07-02 | AI 基础设施 | [AgentCore 内存中使用元数据进行结构化内存过滤 \|亚马逊网络服务](2026-07-02/structured-memory-filtering-with-metadata-in-agentcore-memory-736d729f.md) | AWS ML Blog |
 | 2026-07-02 | AI 基础设施 | [HippoRAG：使用 Amazon Bedrock、Amazon Neptune 和个性化 PageRank 受神经生物学启发的 RAG \|亚马逊网络服务](2026-07-02/hipporag-neurobiologically-inspired-rag-using-amazon-bedrock-amazon-ne-542e7284.md) | AWS ML Blog |
 | 2026-07-02 | AI 基础设施 | [利用 AlloyDB AI 功能提升性能并降低成本 \|谷歌云博客](2026-07-02/alloydb-ai-functions-now-with-revolutionary-performance-boosts-and-cos-567d4900.md) | Google Cloud Blog |
-| 2026-07-02 | AI 基础设施 | [Inscribe 如何使用 Amazon Bedrock 在几秒钟内阻止文档欺诈 \|亚马逊网络服务](2026-07-02/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud-in-seconds-c9a51bc7.md) | AWS ML Blog |
-| 2026-07-02 | AI 基础设施 | [使用开源 Model Profiler 简化 Amazon Bedrock 中的模型选择 \|亚马逊网络服务](2026-07-02/simplify-model-selection-in-amazon-bedrock-with-the-open-source-model-3aa3c1dd.md) | AWS ML Blog |
 | 2026-07-02 | 技术动态 | [在 Amazon SageMaker AI 上使用 BoltzGen 加速蛋白质设计 \|亚马逊网络服务](2026-07-02/accelerate-protein-design-with-boltzgen-on-amazon-sagemaker-ai-3a0b663c.md) | AWS ML Blog |
 | 2026-07-02 | 云原生 | [宣布推出 Amazon EKS Rollback，以安全可靠地管理集群升级 \|亚马逊网络服务](2026-07-02/announcing-amazon-eks-rollback-for-safe-and-reliable-management-of-clu-055c34d5.md) | AWS Containers Blog |
+| 2026-07-01 | 技术动态 | [Anthropic 的 Claude Sonnet 5 系统卡比其基准测试更能说明人工智能的未来](2026-07-01/anthropics-claude-sonnet-5-system-card-says-more-about-the-future-of-a-9efbda40.md) | The New Stack |
+| 2026-07-01 | 云原生 | [使用 Amazon Bedrock 构建用于货运物流的双语 NER \|亚马逊网络服务](2026-07-01/building-bilingual-ner-for-cargo-logistics-with-amazon-bedrock-a128e4e4.md) | AWS ML Blog |
+| 2026-07-01 | 云原生 | [Google Cloud 本月在 AI 领域宣布了哪些内容以及它如何为您提供帮助 \|谷歌云博客](2026-07-01/what-google-cloud-announced-in-ai-this-month-and-how-it-helps-you-ead8b3b1.md) | Google Cloud Blog |
+| 2026-07-01 | 云原生 | [AlloyDB Omni：金融领域安全、混合的数据库现代化谷歌云博客](2026-07-01/alloydb-omni-secure-hybrid-database-modernization-for-finance-fc44f958.md) | Google Cloud Blog |
+| 2026-06-30 | 数据中心 / 硬件 | [重新设计的开普勒：提高功率精度并呼吁社区采取行动！](2026-06-30/kepler-re-architected-improved-power-accuracy-and-a-community-call-to-2fe3db85.md) | CNCF Blog |
+
+
+## 更多归档
+
+> 每个领域仅保留最新 5 篇作为要闻，历史条目仍保留详情页并列在下方。
+
+| 日期 | 领域 | 标题 | 来源 |
+|:---|:---|:---|:---|
+| 2026-07-02 | AI 基础设施 | [Inscribe 如何使用 Amazon Bedrock 在几秒钟内阻止文档欺诈 \|亚马逊网络服务](2026-07-02/how-inscribe-uses-amazon-bedrock-to-stop-document-fraud-in-seconds-c9a51bc7.md) | AWS ML Blog |
+| 2026-07-02 | AI 基础设施 | [使用开源 Model Profiler 简化 Amazon Bedrock 中的模型选择 \|亚马逊网络服务](2026-07-02/simplify-model-selection-in-amazon-bedrock-with-the-open-source-model-3aa3c1dd.md) | AWS ML Blog |
 | 2026-07-02 | AI 基础设施 | [“你只计算一次”：Clockwork 希望如何结束人工智能训练重启](2026-07-02/you-only-compute-once-how-clockwork-wants-to-put-an-end-to-ai-training-844694d0.md) | The New Stack |
 | 2026-07-01 | AI 基础设施 | [《Fable》卷土重来：联邦政府取消对 Anthropic人工智能模型的出口管制](2026-07-01/fable-is-coming-back-federal-government-lifts-export-controls-on-anthr-deecc646.md) | The New Stack |
-| 2026-07-01 | 技术动态 | [Anthropic 的 Claude Sonnet 5 系统卡比其基准测试更能说明人工智能的未来](2026-07-01/anthropics-claude-sonnet-5-system-card-says-more-about-the-future-of-a-9efbda40.md) | The New Stack |
 | 2026-07-01 | 技术动态 | [基础设施锁定导致人工智能公司损失数亿美元](2026-07-01/the-infrastructure-lock-in-costing-ai-companies-hundreds-of-millions-64afd287.md) | The New Stack |
 | 2026-07-01 | AI 基础设施 | [在 AWS 上推出 Claude Sonnet 5：Anthropic 最强大的 Sonnet 模型 \|亚马逊网络服务](2026-07-01/introducing-claude-sonnet-5-on-aws-anthropics-most-capable-sonnet-mode-f8d1a558.md) | AWS ML Blog |
 | 2026-07-01 | AI 基础设施 | [Anthropic Sonnet 5：它缩小了与 Opus 4.8 的差距，并且在 8 月之前都很便宜](2026-07-01/anthropic-sonnet-5-it-closes-the-gap-with-opus-4-8-and-is-cheap-until-fe99c741.md) | The New Stack |
@@ -38,20 +51,16 @@
 | 2026-07-01 | AI 基础设施 | [使用托管权利简化多账户对 Amazon Bedrock 模型的访问 \|亚马逊网络服务](2026-07-01/simplify-multi-account-access-to-amazon-bedrock-models-with-managed-en-e006d63d.md) | AWS ML Blog |
 | 2026-07-01 | AI 基础设施 | [使用 Amazon Bedrock 和 LLM 网关实施弹性模式 \|亚马逊网络服务](2026-07-01/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway-cfe5ed34.md) | AWS ML Blog |
 | 2026-07-01 | AI 基础设施 | [Outpost VFX 如何使用 AWS 加速视觉效果 AI 模型训练 \|亚马逊网络服务](2026-07-01/how-outpost-vfx-uses-aws-to-accelerate-ai-model-training-for-visual-ef-a6a4c0fa.md) | AWS ML Blog |
-| 2026-07-01 | 云原生 | [使用 Amazon Bedrock 构建用于货运物流的双语 NER \|亚马逊网络服务](2026-07-01/building-bilingual-ner-for-cargo-logistics-with-amazon-bedrock-a128e4e4.md) | AWS ML Blog |
 | 2026-07-01 | AI 基础设施 | [微调 Amazon Nova 模型以准确提取电子邮件数据 \|亚马逊网络服务](2026-07-01/fine-tune-amazon-nova-models-for-accurate-email-data-extraction-3e55dc0e.md) | AWS ML Blog |
 | 2026-07-01 | AI 基础设施 | [AWS 推出面向代理的桌面](2026-07-01/aws-launches-a-desktop-for-agents-d2ac899a.md) | The New Stack |
 | 2026-07-01 | AI 基础设施 | [Nano Banana 2 Lite 和 Gemini Omni Flash 上市 \|谷歌云博客](2026-07-01/nano-banana-2-lite-and-gemini-omni-flash-available-091f88f5.md) | Google Cloud Blog |
-| 2026-07-01 | 云原生 | [Google Cloud 本月在 AI 领域宣布了哪些内容以及它如何为您提供帮助 \|谷歌云博客](2026-07-01/what-google-cloud-announced-in-ai-this-month-and-how-it-helps-you-ead8b3b1.md) | Google Cloud Blog |
 | 2026-07-01 | AI 基础设施 | [Cloud Monitoring 为 PromQL 添加长回溯警报策略 \|谷歌云博客](2026-07-01/cloud-monitoring-adds-long-lookback-alert-policies-for-promql-9c4b779d.md) | Google Cloud Blog |
 | 2026-07-01 | AI 基础设施 | [薛定谔如何利用 Alphaevolve 将分子发现速度加快 4 倍 \|谷歌云博客](2026-07-01/how-schrdinger-sped-up-molecular-discovery-by-4x-with-alphaevolve-a2cd8e0e.md) | Google Cloud Blog |
 | 2026-07-01 | AI 基础设施 | [使用 NVIDIA Nsight 开发者工具优化神经重建流程 \| NVIDIA 技术博客](2026-07-01/optimizing-a-neural-reconstruction-pipeline-using-nvidia-nsight-develo-b44e26b2.md) | NVIDIA Technical Blog |
 | 2026-07-01 | AI 基础设施 | [Gemini企业代理平台远程MCP服务器\|谷歌云博客](2026-07-01/gemini-enterprise-agent-platform-remote-mcp-server-d3bb8d6e.md) | Google Cloud Blog |
-| 2026-07-01 | 云原生 | [AlloyDB Omni：金融领域安全、混合的数据库现代化谷歌云博客](2026-07-01/alloydb-omni-secure-hybrid-database-modernization-for-finance-fc44f958.md) | Google Cloud Blog |
 | 2026-06-30 | AI 基础设施 | [“线束就是辛苦所在”：线束押宝企业生产上可以信赖的代理商](2026-06-30/the-harness-is-where-the-hard-work-is-harness-bets-on-agents-that-ente-fecc2d28.md) | The New Stack |
 | 2026-06-30 | 技术动态 | [Aikido 获取 Root 以向后移植开源修复程序，而无需强制升级](2026-06-30/aikido-acquires-root-to-backport-open-source-fixes-without-forcing-upg-dce0f3d5.md) | The New Stack |
 | 2026-06-30 | 云原生 | [大规模运营 Kubernetes：运行 Amazon EKS 的一些故事](2026-06-30/operating-kubernetes-at-scale-a-few-stories-from-running-amazon-eks-e002643c.md) | The New Stack |
-| 2026-06-30 | 数据中心 / 硬件 | [重新设计的开普勒：提高功率精度并呼吁社区采取行动！](2026-06-30/kepler-re-architected-improved-power-accuracy-and-a-community-call-to-2fe3db85.md) | CNCF Blog |
 | 2026-06-30 | AI 基础设施 | [蜻蜓 v2.5.0 发布](2026-06-30/dragonfly-v2-5-0-is-released-1e6d41ce.md) | CNCF Blog |
 | 2026-06-30 | 技术动态 | [您的基础设施应如何连接到红帽 Lightspeed？](2026-06-30/how-should-your-infrastructure-connect-to-red-hat-lightspeed-a469fb74.md) | Red Hat Blog |
 
@@ -59,6 +68,6 @@
 
 - 生成脚本：`scripts/generate_daily_news.py`
 - 文章路径：`docs/news/YYYY-MM-DD/<article-slug>.md`
-- 索引规则：扫描 `docs/news/**/*.md` 的 `news-meta` 元数据，按 `date` 倒序重建本页。
+- 索引规则：扫描 `docs/news/**/*.md` 的 `news-meta` 元数据，按 `date` 倒序重建本页，每个领域仅保留最新 5 篇作为要闻。
 - 内容规则：抓取原文页面 → 抽取正文 → 转 Markdown → 非中文自动翻译为中文 → 写入详情页。
 - 发布流程：脚本生成内容 → `mkdocs build --strict` → commit → `git push origin main:master` → GitHub Pages 自动部署。
