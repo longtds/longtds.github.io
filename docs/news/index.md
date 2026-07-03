@@ -4,30 +4,31 @@
 
 ## 统计
 
-- 文章总数：60
-- 领域分布：AI 基础设施 31 · AIOps / 可观测性 3 · 云原生 11 · 技术动态 14 · 数据中心 / 硬件 1
-- 要闻数：19（每领域上限 5）
-- 更新时间：2026-07-02 08:42:27 CST
+- 文章总数：72
+- 领域分布：AI 基础设施 36 · AIOps / 可观测性 3 · 云原生 13 · 开源与安全 1 · 技术动态 18 · 数据中心 / 硬件 1
+- 要闻数：20（每领域上限 5）
+- 更新时间：2026-07-03 08:04:25 CST
 
 ## 最新要闻
 
 | 日期 | 领域 | 标题 | 来源 |
 |:---|:---|:---|:---|
-| 2026-07-02 | AI 基础设施 | [用Agent评测思路管理AI Coding —— 31万行代码AI重构的实践](2026-07-02/agentai-coding-31ai-2c2d2887.md) | 美团技术团队 |
-| 2026-07-02 | AI 基础设施 | [美团 LongCat 开源 General 365：树立推理评测新标尺](2026-07-02/longcat-general-365-c69cf679.md) | 美团技术团队 |
-| 2026-07-02 | AI 基础设施 | [从高拟真到真可用，LongCat-Video-Avatar 1.5 正式开源](2026-07-02/longcat-video-avatar-1-5-4763d605.md) | 美团技术团队 |
-| 2026-07-02 | AI 基础设施 | [ACL 2026美团论文精选：从能力评测到推理优化，构建生成新范式](2026-07-02/acl-2026-2ce16861.md) | 美团技术团队 |
+| 2026-07-03 | AI 基础设施 | [美团 LongCat-2.0 正式发布：在国产算力集群上完成全流程训练与推理的万亿参数模型](2026-07-03/longcat-2-0-5c7effdc.md) | 美团技术团队 |
+| 2026-07-03 | 技术动态 | [软件工程传奇人物肯特 · 贝克：程序员若想在 AI 时代生存，还得学习人际交往能力](2026-07-03/ai-6bc0f82c.md) | IT之家 |
+| 2026-07-03 | AI 基础设施 | [得克萨斯州特斯拉致命车祸肇事司机被控过失杀人，警方发现其曾嫌 FSD“太保守”](2026-07-03/fsd-87803e07.md) | IT之家 |
+| 2026-07-03 | 技术动态 | [苹果 iOS 27 系统将推 Trust Insights 框架，帮助用户抵御电诈](2026-07-03/ios-27-trust-insights-1a162842.md) | IT之家 |
+| 2026-07-03 | 技术动态 | [植根于硬件的人工智能安全不会让您慢下来 \| NVIDIA 技术博客](2026-07-03/hardware-rooted-ai-security-that-wont-slow-you-down-b838efdd.md) | NVIDIA Technical Blog |
+| 2026-07-03 | 云原生 | [暴露人工智能盲点的 130 万美元盗窃案](2026-07-03/the-1-3-million-theft-that-exposed-ais-blind-spot-03d8d120.md) | The New Stack |
+| 2026-07-03 | AI 基础设施 | [微软刚刚承认其最大的人工智能错误，并花费 25 亿美元修复它](2026-07-03/microsoft-just-admitted-its-biggest-ai-mistake-and-spent-2-5-billion-f-d13859ba.md) | The New Stack |
+| 2026-07-03 | AI 基础设施 | [“人工智能的贡献令人士气低落”：Godot 禁止编码代理以挽救其指导模型](2026-07-03/ai-contributions-are-demoralizing-godot-bans-coding-agents-to-save-its-33c06a0f.md) | The New Stack |
+| 2026-07-03 | 开源与安全 | [Amazon Bedrock 如何捕获 AI 生成的网络钓鱼 \|亚马逊网络服务](2026-07-03/how-amazon-bedrock-catches-ai-generated-phishing-4508934d.md) | AWS ML Blog |
+| 2026-07-03 | AI 基础设施 | [Amazon SageMaker AI 中多轮强化学习的最佳实践 \|亚马逊网络服务](2026-07-03/best-practices-for-multi-turn-reinforcement-learning-in-amazon-sagemak-115b16f3.md) | AWS ML Blog |
+| 2026-07-03 | 云原生 | [使用 AWS DevOps Agent 诊断 Kubernetes 控制平面性能问题 \|亚马逊网络服务](2026-07-03/diagnose-kubernetes-control-plane-performance-issues-with-aws-devops-a-d891c68e.md) | AWS Containers Blog |
+| 2026-07-02 | 技术动态 | [王雪红：HTC 已成功转型为 AI、XR 内容平台，将于今年第三季度推出新 AI 应用内容](2026-07-02/htc-aixr-ai-60c0171a.md) | IT之家 |
 | 2026-07-02 | 技术动态 | [美团海报生成 AIGC 技术创新与实践](2026-07-02/aigc-478400fd.md) | 美团技术团队 |
-| 2026-07-02 | AI 基础设施 | [LongCat 开源 VitaBench 2.0：长期动态智能体基准新标杆](2026-07-02/longcat-vitabench-2-0-f1dd95c5.md) | 美团技术团队 |
-| 2026-07-02 | 技术动态 | [苹果“Hide My Email”被曝安全漏洞：测试中 100% 可溯源真实邮箱](2026-07-02/hide-my-email-100-7b4535f7.md) | IT之家 |
-| 2026-07-02 | 技术动态 | [Announcing zone-aware routing in Amazon ECS Service Connect \|亚马逊网络服务](2026-07-02/announcing-zone-aware-routing-in-amazon-ecs-service-connect-48991d67.md) | AWS Containers Blog |
-| 2026-07-02 | 技术动态 | [OpenClaw 的新应用程序不会在你的手机上运行人工智能。这就是重点。](2026-07-02/openclaws-new-app-doesnt-run-ai-on-your-phone-thats-the-whole-point-813a6b72.md) | The New Stack |
-| 2026-07-02 | 技术动态 | [Cloudflare 希望构建 AI 网络的经济层](2026-07-02/cloudflare-wants-to-build-the-economic-layer-of-the-ai-web-4a8b0acf.md) | The New Stack |
 | 2026-07-02 | 云原生 | [构建用于代理发现、路由和访问控制的无服务器 A2A 网关 \|亚马逊网络服务](2026-07-02/building-a-serverless-a2a-gateway-for-agent-discovery-routing-and-acce-be003400.md) | AWS ML Blog |
 | 2026-07-02 | 云原生 | [宣布推出 Amazon EKS Rollback，以安全可靠地管理集群升级 \|亚马逊网络服务](2026-07-02/announcing-amazon-eks-rollback-for-safe-and-reliable-management-of-clu-055c34d5.md) | AWS Containers Blog |
 | 2026-07-02 | 云原生 | [Google Cloud 最新新闻和公告 \|谷歌云博客](2026-07-02/whats-new-with-google-cloud-9eee711e.md) | Google Cloud Blog |
-| 2026-07-02 | 云原生 | [宣布推出适用于 Google Cloud 的 Claude 应用网关 \|谷歌云博客](2026-07-02/get-started-with-the-claude-apps-gateway-for-google-cloud-6c42be0e.md) | Google Cloud Blog |
-| 2026-07-01 | 云原生 | [超越静态提示：使用 Google 的 ADK 构建可扩展的多态多代理系统 \|谷歌云博客](2026-07-01/beyond-static-prompts-building-scale-proof-polymorphic-multi-agent-sys-a71d260a.md) | Google Cloud Blog |
 | 2026-07-01 | AIOps / 可观测性 | [Reddit 上爆出大猛料，Claude 为何封号中国用户又快又准？](2026-07-01/reddit-claude-1f8170ee.md) | 雷峰网 / AI科技评论 |
 | 2026-06-30 | 数据中心 / 硬件 | [重新设计的开普勒：提高功率精度并呼吁社区采取行动！](2026-06-30/kepler-re-architected-improved-power-accuracy-and-a-community-call-to-2fe3db85.md) | CNCF Blog |
 | 2026-06-29 | AIOps / 可观测性 | [OTel 和网格衍生指标：2026 年参考](2026-06-29/otel-and-mesh-derived-metrics-a-2026-reference-16bd9de5.md) | CNCF Blog |
@@ -40,6 +41,15 @@
 
 | 日期 | 领域 | 标题 | 来源 |
 |:---|:---|:---|:---|
+| 2026-07-02 | AI 基础设施 | [用Agent评测思路管理AI Coding —— 31万行代码AI重构的实践](2026-07-02/agentai-coding-31ai-2c2d2887.md) | 美团技术团队 |
+| 2026-07-02 | AI 基础设施 | [美团 LongCat 开源 General 365：树立推理评测新标尺](2026-07-02/longcat-general-365-c69cf679.md) | 美团技术团队 |
+| 2026-07-02 | AI 基础设施 | [从高拟真到真可用，LongCat-Video-Avatar 1.5 正式开源](2026-07-02/longcat-video-avatar-1-5-4763d605.md) | 美团技术团队 |
+| 2026-07-02 | AI 基础设施 | [ACL 2026美团论文精选：从能力评测到推理优化，构建生成新范式](2026-07-02/acl-2026-2ce16861.md) | 美团技术团队 |
+| 2026-07-02 | AI 基础设施 | [LongCat 开源 VitaBench 2.0：长期动态智能体基准新标杆](2026-07-02/longcat-vitabench-2-0-f1dd95c5.md) | 美团技术团队 |
+| 2026-07-02 | 技术动态 | [苹果“Hide My Email”被曝安全漏洞：测试中 100% 可溯源真实邮箱](2026-07-02/hide-my-email-100-7b4535f7.md) | IT之家 |
+| 2026-07-02 | 技术动态 | [Announcing zone-aware routing in Amazon ECS Service Connect \|亚马逊网络服务](2026-07-02/announcing-zone-aware-routing-in-amazon-ecs-service-connect-48991d67.md) | AWS Containers Blog |
+| 2026-07-02 | 技术动态 | [OpenClaw 的新应用程序不会在你的手机上运行人工智能。这就是重点。](2026-07-02/openclaws-new-app-doesnt-run-ai-on-your-phone-thats-the-whole-point-813a6b72.md) | The New Stack |
+| 2026-07-02 | 技术动态 | [Cloudflare 希望构建 AI 网络的经济层](2026-07-02/cloudflare-wants-to-build-the-economic-layer-of-the-ai-web-4a8b0acf.md) | The New Stack |
 | 2026-07-02 | AI 基础设施 | [SORadar 通过 AlloyDB 和 Gemini Enterprise 实现快速威胁检测 \|谷歌云博客](2026-07-02/socradar-powers-rapid-threat-detection-with-alloydb-and-gemini-enterpr-693325d5.md) | Google Cloud Blog |
 | 2026-07-02 | AI 基础设施 | [在 AWS GovCloud（美国）的 Amazon Bedrock 上运行 NVIDIA Nemotron 和 OpenAI GPT OSS 模型 \|亚马逊网络服务](2026-07-02/run-nvidia-nemotron-and-openai-gpt-oss-models-on-amazon-bedrock-in-aws-ddedc50b.md) | AWS ML Blog |
 | 2026-07-02 | AI 基础设施 | [AgentCore 内存中使用元数据进行结构化内存过滤 \|亚马逊网络服务](2026-07-02/structured-memory-filtering-with-metadata-in-agentcore-memory-736d729f.md) | AWS ML Blog |
@@ -49,8 +59,10 @@
 | 2026-07-02 | AI 基础设施 | [使用开源 Model Profiler 简化 Amazon Bedrock 中的模型选择 \|亚马逊网络服务](2026-07-02/simplify-model-selection-in-amazon-bedrock-with-the-open-source-model-3aa3c1dd.md) | AWS ML Blog |
 | 2026-07-02 | 技术动态 | [在 Amazon SageMaker AI 上使用 BoltzGen 加速蛋白质设计 \|亚马逊网络服务](2026-07-02/accelerate-protein-design-with-boltzgen-on-amazon-sagemaker-ai-3a0b663c.md) | AWS ML Blog |
 | 2026-07-02 | AI 基础设施 | [“你只计算一次”：Clockwork 希望如何结束人工智能训练重启](2026-07-02/you-only-compute-once-how-clockwork-wants-to-put-an-end-to-ai-training-844694d0.md) | The New Stack |
+| 2026-07-02 | 云原生 | [宣布推出适用于 Google Cloud 的 Claude 应用网关 \|谷歌云博客](2026-07-02/get-started-with-the-claude-apps-gateway-for-google-cloud-6c42be0e.md) | Google Cloud Blog |
 | 2026-07-01 | 技术动态 | [水月雨羽翼 Edge2 头戴式耳机首销：自适应深感降噪、40mm 动圈，499 元](2026-07-01/edge2-40mm-499-044a3b4e.md) | IT之家 |
 | 2026-07-01 | 技术动态 | [OpenAI 推出 GeneBench-Pro 基准测试，用于评估 AI 模型生物学计算能力](2026-07-01/openai-genebench-pro-ai-708b5ba8.md) | IT之家 |
+| 2026-07-01 | 云原生 | [超越静态提示：使用 Google 的 ADK 构建可扩展的多态多代理系统 \|谷歌云博客](2026-07-01/beyond-static-prompts-building-scale-proof-polymorphic-multi-agent-sys-a71d260a.md) | Google Cloud Blog |
 | 2026-07-01 | 技术动态 | [谷歌称欧盟《数字市场法案》要求公开匿名搜索数据会引发安全风险](2026-07-01/article-dc129104.md) | IT之家 |
 | 2026-07-01 | 云原生 | [了解 Kubernetes 中的动态资源分配](2026-07-01/understanding-dynamic-resource-allocation-in-kubernetes-ae341de2.md) | CNCF Blog |
 | 2026-07-01 | 云原生 | [走访 ICRA 30+中国企业，我们发现具身智能产业三大趋势 \| ICRA 2026](2026-07-01/icra-30-icra-2026-5a5cba48.md) | 雷峰网 / AI科技评论 |
