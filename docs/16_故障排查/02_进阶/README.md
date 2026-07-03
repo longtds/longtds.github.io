@@ -223,24 +223,31 @@ df -h /var/lib/containerd
 
 ## 四、中间件深度
 
-### 4.1 MySQL
+### 4.1 MySQL（深度排查: 锁 / IO / 执行计划 / 调优）
+
+> 基础连接 / 慢日志开启 / PROCESSLIST 见 [16_故障排查/01_基础 → 5.2 MySQL](../01_基础/README.md)。
+> 本节基于基础层已开启的 slow log，进行根因分析与调优。
 
 ```sql
--- 性能
-SHOW GLOBAL STATUS LIKE '%Innodb%' ;
-SHOW GLOBAL VARIABLES LIKE '%buffer%';
-
--- 慢查询
+-- 慢查询深度分析 (基础层已开启 slow log)
 mysqldumpslow -s t /var/log/mysql/slow.log
 pt-query-digest /var/log/mysql/slow.log
-EXPLAIN ANALYZE SELECT ...    -- 8.0+
 
--- 锁分析
-SHOW ENGINE INNODB STATUS\G   -- LATEST DETECTED DEADLOCK
+-- 执行计划深度
+EXPLAIN ANALYZE SELECT ...     -- 8.0+ 实际执行 + 行数 + 耗时
+EXPLAIN FORMAT=TREE SELECT ...
+
+-- 锁 / 死锁深度 (基础层 PROCESSLIST 已发现等待)
+SHOW ENGINE INNODB STATUS\G    -- LATEST DETECTED DEADLOCK
 SELECT * FROM performance_schema.data_locks;
 SELECT * FROM performance_schema.metadata_locks;
+SHOW OPEN TABLES WHERE In_use > 0;
 
--- 复制
+-- IO / Buffer 调优
+SHOW GLOBAL STATUS LIKE '%Innodb%';
+SHOW GLOBAL VARIABLES LIKE '%buffer%';
+
+-- 复制延迟
 SHOW SLAVE STATUS\G            -- Seconds_Behind_Master
                                 -- Last_IO_Error / Last_SQL_Error
 SHOW MASTER STATUS;
@@ -249,10 +256,10 @@ SHOW MASTER STATUS;
 SELECT table_schema, SUM(data_length+index_length)/1024/1024 size_MB
 FROM information_schema.tables GROUP BY 1;
 
--- 工具
+-- 工具 (深度)
 pt-online-schema-change         -- 在线 DDL
 pt-archiver                     -- 归档删
-mysqltuner.pl
+mysqltuner.pl                   -- 调优建议
 ```
 
 ### 4.2 PostgreSQL
@@ -314,21 +321,27 @@ kafka-dump (offline 分析)
 kafka-eagle / KnowStreaming (国产)
 ```
 
-### 4.4 Redis
+### 4.4 Redis（深度排查: 持久化 / 集群 / 大 Key / 热 Key）
+
+> 基础连接 / 内存 / Key 检查见 [16_故障排查/01_基础 → 5.3 Redis](../01_基础/README.md)。
+> 本节基于基础层已确认异常，进行持久化、集群与 Key 级深度定位。
 
 ```bash
-redis-cli ping
-redis-cli info / info clients / info memory / info stats
-
-# 大 key
+# 大 Key 深度 (基础层已发现慢, 此处定位)
 redis-cli --bigkeys
 redis-cli --memkeys
 
-# 热 key (LFU 模式)
+# 热 Key (LFU 模式)
 redis-cli --hotkeys
 
-# 慢查询
+# 慢查询深度
 redis-cli slowlog get 50
+
+# 持久化 (AOF / RDB)
+redis-cli config get save
+redis-cli bgsave
+redis-cli bgrewriteaof
+redis-cli info persistence
 
 # 集群
 redis-cli cluster info
@@ -339,15 +352,10 @@ redis-cli --cluster check host:port
 redis-cli -p 26379 sentinel masters
 redis-cli -p 26379 sentinel slaves mymaster
 
-# 延迟
+# 延迟深度
 redis-cli --latency
 redis-cli --latency-history -i 1
 redis-cli --intrinsic-latency 30  # 系统底噪
-
-# AOF / RDB
-redis-cli config get save
-redis-cli bgsave
-redis-cli bgrewriteaof
 ```
 
 ### 4.5 Elasticsearch
@@ -662,11 +670,11 @@ K8s:
 ☐ cgroup v2
 
 DB:
-☐ MySQL: slowlog + EXPLAIN + lock + replication
+☐ MySQL: 慢查询分析 + EXPLAIN ANALYZE + 锁 + IO/Buffer + 复制
 ☐ PG: pg_stat_activity + pg_stat_statements + locks
 ☐ Mongo: currentOp + explain + replica
 ☐ Kafka: ISR + lag + offset
-☐ Redis: bigkey + hotkey + slowlog + cluster
+☐ Redis: bigkey + hotkey + 持久化 + 集群 + 延迟深度
 ☐ ES: cluster health + allocation + hot_threads
 
 应用:

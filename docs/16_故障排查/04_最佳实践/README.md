@@ -187,34 +187,45 @@ Burn Rate alerts ⭐:
   - 跨部门 (Product + SRE) 共识
 ```
 
-## 七、Postmortem 文化
+## 七、Postmortem SOP 与频次标准
 
-```
-原则:
-  Blameless ⭐ (无指责 = 真相)
-  系统问题 > 个人
-  
-P0/P1 必开 Postmortem (24-48h 内)
+> Postmortem 的文化内核（Blameless 原则、跨团队共享、训练 Junior、年度 Top 复盘）
+> 见 [16_故障排查/03_高级 → 四、Postmortem 文化](../03_高级/README.md)。
+> 本节仅定义**触发标准、SOP 时限、模板与跟踪 KPI**，不重复文化论述。
 
-模板 (第一章已有)
+触发标准:
+  ☐ P0 (用户面 down / 数据泄露)       → 强制 Postmortem
+  ☐ P1 (重要功能不可用 / SLO 违反)     → 强制 Postmortem
+  ☐ P2 (单功能降级, 持续 > 30min)      → 建议 Postmortem
+  ☐ 重复故障 (同根因季度内 ≥ 2 次)     → 强制升级复盘
 
-跟踪:
-  Action Items P0/P1 30d 内闭环
-  闭环率 > 80% 季度 KPI
-  重复故障 = 红线
-  Lessons Learned 知识库
+SOP 时限:
+  T+0     事故恢复 → 创建 Postmortem 文档
+  T+24h   初稿完成 (时间线 + 影响 + 初步根因)
+  T+48h   复盘会议 (IC 主持 + 业务 + SRE + 相关方)
+  T+7d    Action Items 录入 Jira (P0/P1 + Owner + Deadline)
+  T+30d   P0/P1 Action 闭环
+  T+90d   季度复盘 (闭环率统计 + 重复故障核查)
+
+模板 (标准 7 段, 详见 01_基础 第八章 Postmortem 模板):
+  1. 摘要 (1 段)
+  2. 影响 (用户 / 业务 / 时长 / 严重级)
+  3. 时间线 (分钟级)
+  4. 根因 (5 Whys + 修复)
+  5. 检测 + 响应 + 修复 评估 (MTTD/MTTA/MTTR)
+  6. Action Items (P0/P1/P2 + Owner + Deadline)
+  7. Lessons Learned
+
+跟踪 KPI:
+  ☐ P0/P1 Postmortem 完成率 100% (48h 内)
+  ☐ Action 闭环率 > 80% (季度)
+  ☐ 重复故障 = 0 (季度, 红线)
+  ☐ Lessons Learned 知识库入库率 100%
 
 工具:
-  Notion / Confluence / Obsidian
-  FireHydrant ⭐ / Jeli / Rootly
-  PagerDuty Postmortem
-  Pulse Effect
-
-文化建设:
-  CTO / VP Eng. 出席
-  季度 / 年度 Top Postmortem 复盘
-  新人培训
-```
+  Notion / Confluence / Obsidian (文档)
+  FireHydrant ⭐ / Jeli / Rootly (IR + Postmortem 一体)
+  PagerDuty Postmortem / Pulse Effect
 
 ## 八、Chaos GameDay
 

@@ -107,18 +107,48 @@ spec:
 内存开销: +50-150 MB / Pod
 ```
 
-### 2.2 部署
+### 2.2 大规模部署与安全加固
+
+> 基础安装（dnf install / kata-deploy operator / RuntimeClass）详见 [kata-deploy](https://github.com/kata-containers/kata-deploy) 官方文档。
 
 ```bash
-# Kata 3.x
-dnf install -y kata-containers
-# 或 K8s operator: github.com/kata-containers/kata-deploy
+# 大规模: 节点池分级
+kubectl label node node-pool-kata katacontainers.io/kata-runtime=true \
+  node-role.kubernetes.io/kata-pool=          # 专用节点池
 
-# K8s 节点打 label
-kubectl label node node1 katacontainers.io/kata-runtime=true
+# RuntimeClass 按隔离级别分级
+# kata (普通 microVM) / kata-cc (机密计算) / kata-clh (Cloud Hypervisor)
+kubectl apply -f runtimeclass-kata.yaml
+kubectl apply -f runtimeclass-kata-cc.yaml    # SEV-SNP/TDX
 
-# 应用 RuntimeClass
-kubectl apply -f https://raw.githubusercontent.com/kata-containers/kata-deploy/stable/runtimeclasses/kata-runtimeClasses.yaml
+# 安全加固: 限制 kata 节点只调度带 RuntimeClass 的 Pod
+# Kyverno 策略: 非 kata Pod 拒绝调度到 kata-pool
+apiVersion: kyverno.io/v1
+kind: ClusterPolicy
+spec:
+  rules:
+    - name: require-kata-on-kata-nodes
+      match: { resources: { kinds: [Pod] } }
+      preconditions:
+        all:
+          - key: "{{ request.object.spec.nodeName }}"
+            operator: AnyIn
+            value: ["kata-pool-nodes"]
+      validate:
+        pattern:
+          spec:
+            runtimeClassName: "kata*"
+
+# 性能调优
+# /etc/kata-containers/configuration.toml
+[hypervisor.qemu]
+default_memory = 2048           # 每 Pod 基础内存
+enable_vhost_net = true         # 网络加速
+hotplug_vfio = "no"             # 禁热插拔（安全）
+default_maxvcpus = 16
+
+# Confidential Containers (CoCo) 集成
+# 加密镜像 + KBS attestation → 见 第四节 CoCo
 ```
 
 ### 2.3 适用

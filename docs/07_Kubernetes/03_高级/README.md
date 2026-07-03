@@ -179,15 +179,28 @@ clusterctl generate cluster prod-cluster --kubernetes-version v1.30.0 --control-
 
 ## 四、Service Mesh
 
-### 4.1 选型
+### 4.1 大规模选型决策
 
-| Mesh | 数据面 | 控制面 | 性能 | 复杂度 |
-|:---|:---|:---|:---:|:---:|
-| **Istio** ⭐ | Envoy sidecar / Ambient | istiod | 中 | 高 |
-| **Linkerd** | linkerd-proxy (Rust) | linkerd | 高 | 低 |
-| **Cilium Service Mesh** | eBPF + Envoy | Cilium | 极高 | 中 |
-| **Kuma** | Envoy | kuma-cp | 中 | 中 |
-| **Higress** ⭐ | Envoy | Istio | 中 | 中 |
+> 基础 Ingress / Gateway API 概念详见 [02_进阶](../02_进阶/README.md#ingress-gateway)。
+
+大规模（> 500 Pod / 多集群）Service Mesh 选型决策矩阵:
+
+| 决策维度 | Istio Ambient ⭐ | Cilium SM | Linkerd | Higress |
+|:---|:---|:---|:---|:---|
+| **数据面** | ztunnel + waypoint (无 sidecar) | eBPF + Envoy (无 sidecar) | linkerd-proxy (Rust sidecar) | Envoy sidecar |
+| **规模上限** | 10w+ Pod | 10w+ Pod (eBPF) | 2w Pod | 5w Pod |
+| **CPU/内存开销** | 省 60-90% vs sidecar | 最低 (eBPF 内核态) | 低 (Rust) | 中 |
+| **多集群** | 原生支持 (Multi-primary) | 需 Cluster Mesh | 有限 | 有限 |
+| **L7 能力** | 强 (waypoint Envoy) | 中 (Envoy on-demand) | 中 | 强 |
+| **mTLS** | ztunnel 自动 | 自动 | 自动 | 自动 |
+| **国产化** | 社区 | 社区 | 社区 | 阿里主导 ⭐ |
+| **迁移成本** | 高 (Istio 生态) | 中 (替换 CNI) | 低 | 中 |
+
+选型判断:
+  - **大规模 + 已有 Istio** → Istio Ambient（去 sidecar，省资源）
+  - **极致性能 + Cilium CNI** → Cilium Service Mesh（eBPF 无代理）
+  - **中小规模 + 易运维** → Linkerd（Rust 轻量，配置简单）
+  - **国产化 / API 网关一体** → Higress（阿里，Istio + Envoy + Nginx）
 
 ### 4.2 Istio Ambient（无 sidecar，新主流）
 

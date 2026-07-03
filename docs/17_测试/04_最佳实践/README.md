@@ -158,42 +158,42 @@ E2E (5%):
   ❌ 多个无关断言
 ```
 
-## 五、测试数据管理
+## 五、测试数据管理规范
 
-```
-策略:
-  ☐ 静态 fixture (核心场景 / Yaml-JSON)
-  ☐ 动态生成 (factory_boy + Faker)
-  ☐ Hermetic per test (Testcontainers)
-  ☐ 脱敏 (生产 → 测试)
-  ☐ 不入 Git: 敏感数据用 Vault / .env.local
+> 数据生成工具与策略实现（Faker / factory_boy / Testcontainers / VCR）见
+> [17_测试/02_进阶 → 八、测试数据管理](../02_进阶/README.md)。
+> 本节仅定义**数据规范、脱敏标准与红线**，不重复工具用法。
 
-工具:
-  Faker ⭐ (多语言, 假数据)
-  factory_boy / Factory Bot
-  fishery (TS)
-  mimesis (Python, 高性能)
-  Hypothesis (Property-Based)
-  Snowfakery (Salesforce)
-  Tonic.ai (商业脱敏)
+数据分层规范:
+  ☐ 静态 fixture: 核心场景 (YAML / JSON), 入 Git
+  ☐ 动态生成: factory_boy + Faker (非核心场景)
+  ☐ Hermetic: 每测试独立 (Testcontainers / DB per worker)
+  ☐ 敏感数据: 禁入 Git, 用 Vault / .env.local
 
-DB 数据:
-  - 迁移 (Liquibase / Flyway / Alembic)
-  - 种子 (SQL / fixture)
-  - 隔离 (Transaction Rollback / DB per worker)
+脱敏标准 (生产 → 测试):
+  ☐ PII (姓名 / 手机 / 身份证): 替换为 Faker 假数据
+  ☐ 金融 (卡号 / 金额): 截断 + 随机化
+  ☐ 密码 / Token: 重置为测试专用
+  ☐ 业务关键字段: 保留格式, 替换内容
+  ☐ 不可逆: 脱敏后无法还原 (禁可逆映射入测试)
+  ☐ Staging 数据 = 生产脱敏快照 (T+1)
 
-外部依赖 Mock:
-  WireMock (Java)
-  MockServer
-  msw (前端 Service Worker)
-  nock (Node)
-  vcrpy (Python, 录制回放)
-  
+隔离规范:
+  ☐ 每环境独立 DB (禁跨环境读写)
+  ☐ 并行测试: DB per worker / Transaction Rollback
+  ☐ 测试间禁共享 DB 行 (顺序无关)
+
+外部依赖规范:
+  ☐ 真实第三方 (Stripe / Twilio) → Mock / Sandbox
+  ☐ HTTP → WireMock / MockServer / msw / nock
+  ☐ 录制回放 → vcrpy (Python)
+
 红线:
   ❌ 测试依赖生产数据 (易变 + 敏感)
   ❌ 测试间共享 DB 行 (顺序敏感)
   ❌ 真实第三方 (Stripe / Twilio) → 用 Mock / Sandbox
-```
+  ❌ Staging 无脱敏
+  ❌ 敏感数据入 Git
 
 ## 六、环境治理
 
@@ -227,43 +227,61 @@ DB 数据:
   ❌ 共享密码 / Secret
 ```
 
-## 七、CI/CD 多级门禁
+## 七、CI/CD 多级门禁标准
 
-```
-PR Gate (~3-5 min):
-  ☐ Lint + Format
-  ☐ 单元测试 + 覆盖率 > 80%
-  ☐ 静态分析 (SonarQube / Semgrep)
-  ☐ Secret 扫描 (gitleaks)
-  ☐ SCA (Trivy / Snyk, Block Critical)
+> CI 流水线实现（GitHub Actions YAML、job 编排、artifact 上传）见
+> [17_测试/02_进阶 → 九、CI/CD 集成](../02_进阶/README.md)。
+> 本节仅定义**门禁层级、质量阈值与阻断规则**，不重复流水线配置。
 
-Merge Gate (~10-15 min):
-  ☐ 集成测试 (Testcontainers)
-  ☐ 契约测试 (Pact)
-  ☐ 构建镜像
-  ☐ SAST 深度扫
-  ☐ 镜像 SCA (Trivy image)
+质量门禁阈值（标准）:
+  覆盖率:        核心 > 80% / 业务 > 60% (低于 = 阻断)
+  Flaky 率:      < 1% (超 = 隔离 + Ticket)
+  Critical CVE:  = 0 (SCA / SAST / Container, 阻断)
+  High CVE:      < 5 (允许漂白 + 复审)
+  Secret 检测:   = 0 (阻断)
+  License 黑名单: = 0 (阻断)
+  性能退化:      P99 > 20% / QPS < 10% (阻断 Pre-prod)
 
-Pre-prod (~30-60 min):
-  ☐ Deploy Staging
-  ☐ Smoke E2E (Playwright)
-  ☐ 完整 E2E (按需 / nightly)
-  ☐ 性能基线 (k6, 对比上版)
-  ☐ DAST (ZAP / Nuclei)
-  ☐ Chaos 轻量 (Pod Kill 1 个)
+门禁层级 + 时限:
+  PR Gate (~3-5 min):
+    ☐ Lint + Format
+    ☐ 单元测试 + 覆盖率 > 80%
+    ☐ 静态分析 (SonarQube / Semgrep)
+    ☐ Secret 扫描 (gitleaks)
+    ☐ SCA (Trivy / Snyk, Block Critical)
 
-Prod Deploy:
-  ☐ Canary 5% / 30 min 观察
-  ☐ Smoke Prod
-  ☐ Synthetic 24/7
-  ☐ 错误率 < 0.1% → 全量
-  ☐ 否则自动 Rollback
+  Merge Gate (~10-15 min):
+    ☐ 集成测试 (Testcontainers)
+    ☐ 契约测试 (Pact)
+    ☐ 构建镜像
+    ☐ SAST 深度扫
+    ☐ 镜像 SCA (Trivy image)
+
+  Pre-prod (~30-60 min):
+    ☐ Deploy Staging
+    ☐ Smoke E2E (Playwright)
+    ☐ 完整 E2E (按需 / nightly)
+    ☐ 性能基线 (k6, 对比上版)
+    ☐ DAST (ZAP / Nuclei)
+    ☐ Chaos 轻量 (Pod Kill 1 个)
+
+  Prod Deploy:
+    ☐ Canary 5% / 30 min 观察
+    ☐ Smoke Prod
+    ☐ Synthetic 24/7
+    ☐ 错误率 < 0.1% → 全量
+    ☐ 否则自动 Rollback
+
+阻断规则:
+  ☐ PR Gate 任一 Critical = 阻断 Merge
+  ☐ Merge Gate 契约失败 = 阻断 Pre-prod
+  ☐ Pre-prod 性能退化 = 阻断 Prod
+  ☐ Prod Canary 错误率 > 0.1% = 自动 Rollback
 
 工具:
   GitHub Actions ⭐ / GitLab CI / Jenkins
   Argo Rollouts (灰度)
   Datadog CI Visibility
-```
 
 ## 八、Flaky 治理
 

@@ -238,51 +238,23 @@ VM:     guest agent (CPU/Mem 真实使用) + node_exporter
 日志:    Loki / Filebeat → ES
 ```
 
-### 5.2 关键告警
+### 5.2 告警分级标准
 
-```yaml
-# VM 关机
-- alert: VMDown
-  expr: libvirt_domain_state_code != 1
-  for: 5m
-  labels: { severity: critical }
+> 具体 PromQL 规则详见 [02_进阶](../02_进阶/README.md#92)。
 
-# Host CPU 高
-- alert: HostCPUHigh
-  expr: 1 - avg by(instance)(irate(node_cpu_seconds_total{mode='idle'}[5m])) > 0.85
-  for: 15m
+| 级别 | 告警项 | 响应时效 | 通知方式 |
+|:---|:---|:---|:---|
+| **P0 Critical** | VM 关机 / 集群节点掉线 / Host swap 使用 | 立即（≤5min） | 电话 + 短信 + IM |
+| **P1 Warning** | Host CPU > 85% / Host Mem > 90% / 存储池 > 80% | 15min 内 | 短信 + IM |
+| **P2 Notice** | 备份失败 / 接口错包 / VM 高 CPU | 1h 内 | IM 工单 |
+| **P3 Info** | 容量趋势预警 / 超分比偏高 | 日报 | 日报/周报 |
 
-# Host 内存高
-- alert: HostMemHigh
-  expr: node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes < 0.1
-  for: 10m
-
-# Host swap 在用
-- alert: HostSwapUsing
-  expr: rate(node_vmstat_pswpout[5m]) > 0
-  for: 5m
-
-# 存储池满
-- alert: PoolNearFull
-  expr: ceph_pool_percent_used > 80
-  for: 10m
-
-# 备份失败
-- alert: BackupFailed
-  expr: pbs_backup_status{state!="ok"} > 0
-  for: 1m
-
-# 接口错包
-- alert: NICError
-  expr: rate(node_network_receive_errs_total[5m]) > 1
-  for: 10m
-
-# 集群节点掉线
-- alert: NodeLost
-  expr: up{job='node'} == 0
-  for: 2m
-  labels: { severity: critical }
-```
+决策标准:
+  ☐ P0 必须有 runbook + 自动化恢复（如 VM evacuate）
+  ☐ P1 需人工介入 + 工单跟踪
+  ☐ P2/P3 纳入容量治理月报
+  ☐ 告警合并: 同一对象 5min 内同级别告警合并为一条
+  ☐ 静默窗口: 计划维护期间静默 P1/P2，保留 P0
 
 ### 5.3 监控大盘必备
 

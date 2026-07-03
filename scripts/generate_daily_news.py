@@ -39,6 +39,7 @@ NEWS_DIR = DOCS / "news"
 INDEX_FILE = NEWS_DIR / "index.md"
 
 SOURCES = [
+    # 海外原厂 / 社区
     ("Kubernetes Blog", "https://kubernetes.io/feed.xml"),
     ("CNCF Blog", "https://www.cncf.io/feed/"),
     ("CNCF News", "https://www.cncf.io/news/feed/"),
@@ -48,6 +49,15 @@ SOURCES = [
     ("AWS ML Blog", "https://aws.amazon.com/blogs/machine-learning/feed/"),
     ("Google Cloud Blog", "https://cloudblog.withgoogle.com/rss/"),
     ("Red Hat Blog", "https://www.redhat.com/en/rss/blog"),
+    # 国内主流技术社区 / 云厂商 / AI 媒体
+    ("OSCHINA 新闻", "https://www.oschina.net/news/rss"),
+    ("SegmentFault 思否", "https://segmentfault.com/feeds"),
+    ("IT之家", "https://www.ithome.com/rss/"),
+    ("美团技术团队", "https://tech.meituan.com/feed/"),
+    ("PingCAP TiDB 博客", "https://cn.pingcap.com/feed/"),
+    ("云原生实验室", "https://icloudnative.io/index.xml"),
+    ("量子位", "https://www.qbitai.com/feed"),
+    ("雷峰网 / AI科技评论", "https://www.leiphone.com/feed"),
 ]
 
 KEYWORDS = [
@@ -62,15 +72,37 @@ KEYWORDS = [
     "anomaly", "apm", "tracing", "metrics", "logs",
     # Infra / hardware
     "datacenter", "data center", "dpu", "cxl", "rdma", "infiniband", "liquid cooling", "confidential computing",
-    # Chinese
-    "云原生", "容器", "可观测", "智能运维", "大模型", "推理", "算力", "数据中心", "液冷", "信创",
+    # Chinese - 云原生 / 中间件 / 数据库
+    "云原生", "容器", "微服务", "服务网格", "边缘计算", "分布式", "国产数据库", "分布式数据库",
+    "openeuler", "openkylin", "麒麟", "统信", "龙芯", "鲲鹏", "昇腾", "海光", "飞腾", "信创",
+    # Chinese - AI / 大模型
+    "大模型", "推理", "算力", "多模态", "智能体", "智能助手", "生成式", "开源模型", "端侧",
+    "文心", "通义", "混元", "盘古", "星火", "豆包", "kimi", "deepseek", "qwen", "glm", "moonshot",
+    # Chinese - AIOps / 数据中心
+    "可观测", "智能运维", "根因", "告警", "监控", "链路追踪", "日志分析",
+    "数据中心", "液冷", "算力网络", "东数西算", "超算", "国产gpu", "国产芯片",
+    # Chinese - 安全 / 合规
+    "开源安全", "供应链安全", "开源许可证", "零信任", "数据安全",
 ]
 
 DOMAIN_RULES = [
-    ("云原生", ["kubernetes", "k8s", "cncf", "cloud native", "container", "docker", "helm", "istio", "linkerd", "envoy", "argo", "gitops", "platform engineering", "cilium", "serverless", "云原生", "容器"]),
-    ("AI 基础设施", ["llm", "genai", "inference", "vllm", "sglang", "kserve", "llm-d", "ray", "kueue", "kaito", "gpu", "nvidia", "cuda", "tensorrt", "model", "agent", "mcp", "rag", "mlops", "llmops", "大模型", "推理", "算力"]),
-    ("AIOps / 可观测性", ["aiops", "observability", "opentelemetry", "otel", "prometheus", "grafana", "sre", "incident", "anomaly", "apm", "tracing", "metrics", "logs", "可观测", "智能运维"]),
-    ("数据中心 / 硬件", ["datacenter", "data center", "dpu", "cxl", "rdma", "infiniband", "liquid cooling", "confidential computing", "数据中心", "液冷", "信创"]),
+    ("云原生", ["kubernetes", "k8s", "cncf", "cloud native", "container", "docker", "helm", "istio", "linkerd", "envoy", "argo", "gitops", "platform engineering", "cilium", "serverless", "云原生", "容器", "微服务", "服务网格", "服务网", "分布式", "分布式数据库", "边缘计算"]),
+    ("AI 基础设施", ["llm", "genai", "inference", "vllm", "sglang", "kserve", "llm-d", "ray", "kueue", "kaito", "gpu", "nvidia", "cuda", "tensorrt", "model", "agent", "mcp", "rag", "mlops", "llmops", "大模型", "推理", "算力", "多模态", "智能体", "生成式", "开源模型", "文心", "通义", "混元", "盘古", "星火", "豆包", "kimi", "deepseek", "qwen", "glm", "moonshot"]),
+    ("AIOps / 可观测性", ["aiops", "observability", "opentelemetry", "otel", "prometheus", "grafana", "sre", "incident", "anomaly", "apm", "tracing", "metrics", "logs", "可观测", "智能运维", "根因", "告警", "监控", "链路追踪", "日志分析"]),
+    ("数据中心 / 硬件", ["datacenter", "data center", "dpu", "cxl", "rdma", "infiniband", "liquid cooling", "confidential computing", "数据中心", "液冷", "算力网络", "东数西算", "超算", "信创", "国产gpu", "国产芯片", "鲲鹏", "昇腾", "海光", "飞腾", "龙芯"]),
+    ("开源与安全", ["open source", "opensource", "开源社区", "开源项目", "开源许可证", "开源安全", "供应链安全", "零信任", "数据安全"]),
+]
+
+# 命中即丢弃：消费/娱乐/汽车/游戏/影视/政策等与云原生-AI-AIOps 关联很弱的领域。
+# 只在标题+摘要中做子串命中，用于抑制 IT之家/量子位/雷峰网/OSCHINA 等泛技术媒体的噪声。
+BLOCKLIST = [
+    "iphone", "ipad", "macbook", "airpods", "apple watch", "vision pro",
+    "华为pura", "华为 pura", "mate 60", "mate 70", "小米 su", "小米 yu", "小米汽车",
+    "问界", "赛力斯", "理想汽车", "蔚来", "小鹏", "比亚迪", "特斯拉 model",
+    "游戏", "手游", "电竞", "steam ", "steam平台", "epic 商店",
+    "电影", "电视剧", "综艺", "动画节", "百花奖", "跨年晚会",
+    "彩票", "娱乐圈", "明星", "偶像", "选秀",
+    "考研", "高考", "志愿", "考试", "招聘", "涨价", "补差价", "购物",
 ]
 
 CONTENT_SELECTORS = [
@@ -177,6 +209,8 @@ def classify(title: str, summary: str) -> str:
 
 def relevant(article: Article) -> bool:
     text = f"{article.title} {article.summary}".lower()
+    if any(b.lower() in text for b in BLOCKLIST):
+        return False
     return any(k.lower() in text for k in KEYWORDS)
 
 
@@ -211,15 +245,56 @@ def decode_bytes(raw: bytes, content_type: str = "") -> str:
     return raw.decode("utf-8", "ignore")
 
 
+def _sniff_xml(raw: bytes) -> bytes:
+    """有些站点(如 infoq.cn)返回 text/html 但正文里嵌了 <?xml..?> RSS。
+    找到最早的 <?xml 或 <rss / <feed 起点，截掉前置 HTML 外壳。"""
+    for token in (b"<?xml", b"<rss", b"<feed"):
+        idx = raw.find(token)
+        if idx > 0:
+            return raw[idx:]
+    return raw
+
+
+def _regex_extract_items(text: str, source: str) -> list[Article]:
+    """当严格 XML 解析失败时（常见于国内 RSS 里未转义的 & 等），用正则兜底抽取。"""
+    def _decode_cdata(s: str) -> str:
+        s = re.sub(r"^\s*<!\[CDATA\[|\]\]>\s*$", "", s.strip())
+        return strip_html(s).strip()
+
+    def _grab(item: str, tag: str) -> str:
+        m = re.search(rf"<{tag}[^>]*>([\s\S]*?)</{tag}>", item, flags=re.I)
+        return _decode_cdata(m.group(1)) if m else ""
+
+    articles: list[Article] = []
+    for item in re.findall(r"<(?:item|entry)\b[^>]*>[\s\S]*?</(?:item|entry)>", text, flags=re.I):
+        title = _grab(item, "title")
+        link = _grab(item, "link")
+        if not link:
+            m = re.search(r"<link[^>]*href=[\"']([^\"']+)[\"']", item, flags=re.I)
+            if m:
+                link = m.group(1)
+        pub = _grab(item, "pubDate") or _grab(item, "published") or _grab(item, "updated") or _grab(item, "date")
+        summary = _grab(item, "description") or _grab(item, "summary") or _grab(item, "content")
+        if title and link:
+            articles.append(Article(title, link, source, parse_date(pub), summary[:1200], classify(title, summary)))
+    return articles
+
+
 def parse_feed(source: str, url: str) -> list[Article]:
     try:
         raw, _ = fetch(url, accept="application/rss+xml, application/atom+xml, application/xml, text/xml, */*")
     except Exception as e:
         print(f"[warn] fetch failed: {source}: {e}", file=sys.stderr)
         return []
+    raw = _sniff_xml(raw)
     try:
         root = ET.fromstring(raw)
     except Exception as e:
+        text = decode_bytes(raw)
+        fallback = _regex_extract_items(text, source)
+        if fallback:
+            print(f"[warn] xml parse failed, regex fallback used: {source}: {e}", file=sys.stderr)
+            return fallback
         print(f"[warn] parse failed: {source}: {e}", file=sys.stderr)
         return []
 
@@ -931,7 +1006,7 @@ def existing_articles_needing_refresh(force: bool = False) -> list[Article]:
     return articles
 
 
-def rebuild_index() -> int:
+def rebuild_index(per_domain_top: int = 5) -> int:
     NEWS_DIR.mkdir(parents=True, exist_ok=True)
     metas: list[dict[str, str]] = []
     for p in NEWS_DIR.rglob("*.md"):
@@ -942,46 +1017,67 @@ def rebuild_index() -> int:
             metas.append(m)
     metas.sort(key=lambda x: x.get("date", ""), reverse=True)
 
-    rows = []
+    # 每个领域最多保留 per_domain_top 篇最新，避免要闻列表被同一分类刷屏。
+    domain_counter: dict[str, int] = {}
+    top_metas: list[dict[str, str]] = []
+    dropped_metas: list[dict[str, str]] = []
     for m in metas:
-        p = Path(m["path"])
-        rel = p.relative_to(NEWS_DIR).as_posix()
-        day = (m.get("date", "")[:10] or p.parent.name)
-        rows.append(
-            f"| {day} | {md_escape(m.get('domain','技术动态'))} | [{md_escape(m['title'])}]({rel}) | {md_escape(m.get('source',''))} |"
-        )
+        d = m.get("domain", "技术动态")
+        if domain_counter.get(d, 0) < per_domain_top:
+            top_metas.append(m)
+            domain_counter[d] = domain_counter.get(d, 0) + 1
+        else:
+            dropped_metas.append(m)
 
-    body = "\n".join(rows) if rows else "| - | - | 暂无文章 | - |"
+    def render_rows(items: list[dict[str, str]]) -> str:
+        rows = []
+        for m in items:
+            p = Path(m["path"])
+            rel = p.relative_to(NEWS_DIR).as_posix()
+            day = (m.get("date", "")[:10] or p.parent.name)
+            rows.append(
+                f"| {day} | {md_escape(m.get('domain','技术动态'))} | [{md_escape(m['title'])}]({rel}) | {md_escape(m.get('source',''))} |"
+            )
+        return "\n".join(rows) if rows else "| - | - | 暂无文章 | - |"
+
+    top_body = render_rows(top_metas)
+    archive_body = render_rows(dropped_metas)
     count_by_domain: dict[str, int] = {}
     for m in metas:
         d = m.get("domain", "技术动态")
         count_by_domain[d] = count_by_domain.get(d, 0) + 1
     domain_line = " · ".join(f"{k} {v}" for k, v in sorted(count_by_domain.items())) or "暂无"
 
+    archive_section = ""
+    if dropped_metas:
+        archive_section = f"""
+
+## 更多归档
+
+> 每个领域仅保留最新 {per_domain_top} 篇作为要闻，历史条目仍保留详情页并列在下方。
+
+| 日期 | 领域 | 标题 | 来源 |
+|:---|:---|:---|:---|
+{archive_body}
+"""
+
     content = f"""# 技术新闻
 
-> 每日自动汇聚 **云原生 / AI 基础设施 / AIOps / 可观测性 / 数据中心硬件** 等方向的技术动态。列表按发布时间从新到旧排序，点击标题进入对应内容页。详情页会抽取原文正文并格式化展示；非中文原文自动翻译为中文。
+> 每日自动汇聚 **云原生 / AI 基础设施 / AIOps / 可观测性 / 数据中心硬件** 等方向的技术动态。列表按发布时间从新到旧排序，每个领域最多保留最新 {per_domain_top} 篇作为要闻。详情页会抽取原文正文并格式化展示；非中文原文自动翻译为中文。
 
 ## 统计
 
 - 文章总数：{len(metas)}
 - 领域分布：{domain_line}
+- 要闻数：{len(top_metas)}（每领域上限 {per_domain_top}）
 - 更新时间：{now_cn().strftime('%Y-%m-%d %H:%M:%S %Z')}
 
-## 最新文章
+## 最新要闻
 
 | 日期 | 领域 | 标题 | 来源 |
 |:---|:---|:---|:---|
-{body}
-
-## 自动更新说明
-
-- 生成脚本：`scripts/generate_daily_news.py`
-- 文章路径：`docs/news/YYYY-MM-DD/<article-slug>.md`
-- 索引规则：扫描 `docs/news/**/*.md` 的 `news-meta` 元数据，按 `date` 倒序重建本页。
-- 内容规则：抓取原文页面 → 抽取正文 → 转 Markdown → 非中文自动翻译为中文 → 写入详情页。
-- 发布流程：脚本生成内容 → `mkdocs build --strict` → commit → `git push origin main:master` → GitHub Pages 自动部署。
-"""
+{top_body}
+{archive_section}"""
     old = INDEX_FILE.read_text(encoding="utf-8") if INDEX_FILE.exists() else ""
     INDEX_FILE.write_text(content, encoding="utf-8")
     return 1 if content != old else 0
@@ -999,6 +1095,7 @@ def git_dirty(paths: list[str]) -> bool:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--max-items", type=int, default=12, help="max new articles per run")
+    ap.add_argument("--per-domain", type=int, default=5, help="max headline entries kept per domain on index page")
     ap.add_argument("--days", type=int, default=14, help="prefer articles published within N days")
     ap.add_argument("--refresh-existing", action="store_true", help="rewrite existing summary-only pages as full translated pages")
     ap.add_argument("--force-refresh", action="store_true", help="refresh all existing news pages even if already full-translated")
@@ -1024,7 +1121,20 @@ def main() -> int:
 
     cutoff = now_cn() - dt.timedelta(days=args.days)
     recent = [a for a in unique if a.published >= cutoff]
-    selected = (recent or unique)[: args.max_items]
+    pool = recent or unique
+
+    # 单次运行的分类配额：每个领域最多新增 args.per_domain 篇，避免同一批次刷屏。
+    # 累计上限由 rebuild_index(per_domain_top=…) 在索引层控制。
+    domain_quota = max(1, args.per_domain)
+    selected: list[Article] = []
+    domain_added: dict[str, int] = {}
+    for a in pool:
+        if len(selected) >= args.max_items:
+            break
+        if domain_added.get(a.domain, 0) >= domain_quota:
+            continue
+        selected.append(a)
+        domain_added[a.domain] = domain_added.get(a.domain, 0) + 1
 
     refreshed: list[Path] = []
     if args.refresh_existing or args.force_refresh:
@@ -1037,7 +1147,7 @@ def main() -> int:
         print(f"[new] {a.title} <- {a.url}")
         written.append(write_article(a, overwrite=True))
 
-    index_changed = rebuild_index()
+    index_changed = rebuild_index(per_domain_top=args.per_domain)
 
     if args.build:
         print("[build] mkdocs build --strict")

@@ -456,19 +456,27 @@ runtime:
   内核隔离强（每 Pod 独立内核）
 ```
 
-### 8.3 KubeVirt（在 K8s 跑 VM）
+### 8.3 KubeVirt 深化（大规模 / LiveMigration / 性能）
+
+> 基础概念、安装与 VM 创建详见 [02_进阶](../02_进阶/README.md#43-kubevirt-k8s-vm)。
 
 ```
-特点:
-  - VM 即 K8s CRD (VirtualMachine)
-  - 与容器同一调度器
-  - 共享 K8s CNI/CSI
-  - 在线迁移 LiveMigration CR
+大规模场景:
+  - VM 数 > 1000 时需调优: virt-controller 副本数 / virt-handler 心跳
+  - Node 级 limit: libvirt 并发迁移数 + QEMU 内存预留
+  - CDI (Containerized Data Importer) 批量导入磁盘镜像
   
-应用:
-  - 老系统迁 K8s 不重写
-  - 混部 VM/容器
-  - 多租户隔离
+LiveMigration:
+  - LiveMigration CR 控制迁移
+  - 前提: 共享存储 (Ceph RBD / NFS) + 目标节点资源够
+  - post-copy 模式降低停顿（但有风险）
+  - GPU 直通 VM 无法迁移 → 需 drain 驱逐策略
+
+性能:
+  - CPU pinning + NUMA 对齐 (kubevirt.io/cpu-pinning)
+  - hugepages 绑定
+  - KVM 嵌套虚拟化关闭（性能）
+  - 网络走 multus + SR-IOV / DPDK 直通
 
 主推方:
   Red Hat OpenShift Virt

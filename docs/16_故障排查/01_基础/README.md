@@ -205,47 +205,60 @@ cat /proc/<pid>/environ | tr '\0' '\n'
   - 401/403 → 鉴权配置
 ```
 
-### 5.2 MySQL
+### 5.2 MySQL（基础检查: 连接 / 慢日志 / 进程）
+
+> 锁 / IO / 执行计划 / 调优等深度排查见 [16_故障排查/02_进阶 → 4.1 MySQL](../02_进阶/README.md)。
 
 ```sql
--- 慢查询
+-- 连接检查
+SHOW PROCESSLIST;             -- 当前连接 + 状态
+SHOW FULL PROCESSLIST;        -- 完整 SQL 文本
+SHOW STATUS LIKE 'Threads_%'; -- 活跃 / 缓存连接数
+
+-- 慢日志 (速查级: 开启 + 看日志)
 SET GLOBAL slow_query_log = 'ON';
 SET GLOBAL long_query_time = 1;
-SHOW PROCESSLIST;             -- 当前
-SHOW FULL PROCESSLIST;
-EXPLAIN SELECT ...;            -- 执行计划
-SHOW ENGINE INNODB STATUS;     -- 锁 + 事务
+SHOW VARIABLES LIKE 'slow_query%';
 
--- 锁
-SELECT * FROM performance_schema.data_locks;
-SHOW OPEN TABLES WHERE In_use > 0;
-KILL <id>;                     -- 杀连接
-
--- 工具
-pt-query-digest slow.log       -- Percona
-mysqltuner.pl                   -- 调优建议
+-- 杀慢连接
+KILL <id>;
 ```
 
-### 5.3 Redis
+常见:
+- Connections 满 → SHOW STATUS LIKE 'Threads_%' + 调 max_connections
+- 慢查询多 → 开 slow log, 进阶层用 pt-query-digest 分析
+- 锁等待 → 进阶层 SHOW ENGINE INNODB STATUS 深度排查
+
+### 5.3 Redis（基础检查: 连接 / 内存 / Key）
+
+> 持久化 / 集群 / 大 Key / 热 Key 等深度排查见 [16_故障排查/02_进阶 → 4.4 Redis](../02_进阶/README.md)。
 
 ```bash
+# 连接
 redis-cli ping
-redis-cli info                # 全信息
 redis-cli info clients
-redis-cli info memory
 redis-cli info stats
+
+# 内存
+redis-cli info memory
+redis-cli config get maxmemory
+redis-cli config get maxmemory-policy
+
+# Key 基础检查 (速查级)
+redis-cli dbsize
+redis-cli type <key>
+redis-cli ttl <key>
+redis-cli object encoding <key>
+
+# 慢查询
 redis-cli slowlog get 10
-redis-cli --bigkeys           # 大 key
-redis-cli --hotkeys           # 热 key (LFU)
-redis-cli --latency           # 延迟
-redis-cli monitor              # 实时命令 (慎用生产)
 ```
 
-常见：
-- maxmemory 满 → OOM / 驱逐
-- 大 key (>1MB) → 命令阻塞
-- 热 key → 单分片瓶颈
-- bgsave 慢 → 内存大 / fork 慢
+常见:
+- 连接满 → info clients + 调 maxclients
+- maxmemory 满 → OOM / 驱逐 (看 maxmemory-policy)
+- 慢命令 → slowlog, 进阶层 --bigkeys / --hotkeys 深度排查
+- bgsave 慢 → 内存大 / fork 慢, 进阶层持久化排查
 
 ## 六、网络故障 5 大场景
 
@@ -372,8 +385,8 @@ Linux:
 
 应用:
 ☐ HTTP 状态码语义
-☐ MySQL slowlog + EXPLAIN
-☐ Redis bigkey/hotkey/slowlog
+☐ MySQL 连接 / 慢日志 / PROCESSLIST
+☐ Redis 连接 / 内存 / Key 基础检查
 
 Postmortem:
 ☐ 5 步流程

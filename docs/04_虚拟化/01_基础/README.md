@@ -296,19 +296,11 @@ qemu-img convert -O qcow2 -c src.qcow2 dst.qcow2
 
 ## 六、主流虚拟化平台
 
-### 6.1 选型矩阵
+### 6.1 平台概览
 
-| 平台 | 类型 | 商业/开源 | 适用 |
-|:---|:---|:---|:---|
-| **KVM + libvirt** | Type 1 | 开源 ⭐ | Linux 标配 |
-| **QEMU** | Type 2/1 | 开源 | 仿真器 + KVM 底层 |
-| **VMware vSphere/ESXi** | Type 1 | 商业 | 企业老牌 |
-| **Hyper-V** | Type 1 | MS 自带 | Windows 系 |
-| **Proxmox VE** | Type 1 | 开源 ⭐ | 中小企业首选 |
-| **Xen** | Type 1 | 开源 | 历史悠久，AWS 旧版 |
-| **VirtualBox** | Type 2 | 开源 | 桌面/学习 |
-| **华为 FusionCompute** | Type 1 | 商业 | 国产信创 ⭐ |
-| **深信服 aSV / 中科曙光 / 浪潮 InCloud** | Type 1 | 商业 | 国产替代 |
+虚拟化平台分 Type 1（裸金属）和 Type 2（寄居型），主流均基于 KVM 内核模块 + QEMU 用户态 + libvirt 管理栈。商业方案有 VMware vSphere、Hyper-V、华为 FusionCompute；开源方案有 KVM+libvirt、Proxmox VE、oVirt；容器原生方案有 KubeVirt。
+
+> **一句话推荐**：学习用 KVM+libvirt+virt-manager；生产用 KVM+libvirt+Proxmox VE/oVirt；容器化迁移用 KubeVirt。详细选型矩阵与对比详见 [02_进阶](../02_进阶/README.md#_4)。
 
 ### 6.2 KVM 全栈
 

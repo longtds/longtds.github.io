@@ -223,54 +223,38 @@ Tier 4  跨地域双活              RTO 1m   RPO 0
 ☐ 年度: IDC 整体切换 / DR 红蓝对抗
 ```
 
-## 五、备份策略
+## 五、备份策略 SOP
 
-### 5.1 三层备份
+> 各组件备份方案（DB/配置/卷/镜像/控制平面）详见 [02_进阶](../02_进阶/README.md#_4)。本节聚焦备份 SOP、验证频次与 Checklist。
 
-```
-1. 卷快照     Cinder snapshot（短期回滚）
-2. 卷备份     Cinder backup → 独立 Ceph backups pool
-3. 异地备份    backup pool → S3 / 磁带 / 异地 IDC
-```
+### 5.1 备份分级 SOP
 
-### 5.2 各组件
+| 级别 | 对象 | 方式 | 频次 | 保留 | RTO |
+|:---|:---|:---|:---|:---|:---|
+| **T0** | MariaDB | mariabackup + binlog | 每日全量 + 15min 增量 | 30 天 | 2h |
+| **T1** | Cinder 卷 | Cinder backup → Ceph backups pool | 按策略（每日/每周） | 90 天 | 4h |
+| **T2** | 异地备份 | backup pool → S3 / 磁带 | 每周同步 | 1 年 | 24h |
+| **T3** | 配置/IaC | /etc/kolla + Terraform → Git | 每次变更 | 永久 | 30min |
 
-```
-MariaDB:   mariabackup + binlog 15 分钟 → S3
-RabbitMQ:  cluster 自身 + 配置入 Git
-Keystone:  DB 备份足够
-Glance:    Ceph 副本 + 重要镜像导出 (S3)
-Nova:      VM 整体走 Cinder backup
-Cinder:    backup pool 独立 + 异地
-配置:      /etc/kolla + custom config → Git
-监控:      Prom + Thanos / VictoriaMetrics 长期
-```
+### 5.2 备份工具选型决策
 
-### 5.3 工具
+| 场景 | 推荐工具 | 备注 |
+|:---|:---|:---|
+| OpenStack 原生 | Cinder backup + Freezer | 集成度高 |
+| K8s 工作负载 | Velero / Kasten K10 | CNCF 生态 |
+| 跨 hypervisor | Veeam | 商业，功能全 |
+| 国产信创 | Vinchin ⭐ / 爱数 AnyBackup | 等保合规 |
+| 容灾级 | 英方 i2 | RPO 接近 0 |
 
-```
-开源:
-  Cinder backup
-  freezer (OpenStack)
-  Bareos / Bacula
-  Velero (K8s 工作负载)
-  Kasten K10 (K8s 备份, CNCF)
-
-商业:
-  Vinchin (国产) ⭐
-  爱数 AnyBackup
-  Veeam (跨 hypervisor)
-  鼎甲 DBackup
-  英方 i2 (容灾)
-```
-
-### 5.4 验证
+### 5.3 恢复验证 Checklist
 
 ```
-☐ 每月: 1-3 个 VM 完整恢复
-☐ 每月: 1 个卷恢复
-☐ 每季: DB 恢复演练
-☐ 每年: 整集群恢复演练
+☐ 每月: 1-3 个 VM 完整恢复验证
+☐ 每月: 1 个卷恢复验证
+☐ 每季: DB 恢复演练（mariabackup → 新实例 → 数据校验）
+☐ 每年: 整集群恢复演练（控制面 + 存储 + 网络）
+☐ 每次备份策略变更后: 抽样恢复测试
+☐ 恢复报告归档（时间/对象/结果/问题）
 ```
 
 ## 六、监控告警
@@ -741,29 +725,30 @@ FinOps:
   + 年度 DR + 红蓝对抗
 ```
 
-### 14.3 运营商 NFV
+### 14.3 运营商 NFV（选型决策）
 
-```
-- StarlingX 边缘 + 核心 Kolla
-- Cells V2 跨地市
-- DPDK + SR-IOV
-- Tacker NFVO + ONAP
-- 5G UPF / vBNG / vCPE
-- 国产 (华为 / 中兴)
-- 跨域调度 + AIOps
-```
+> 架构详情（StarlingX/DPDK/SR-IOV/Tacker）详见 [03_高级](../03_高级/README.md#112-nfv)。
 
-### 14.4 AI 训练云
+| 决策项 | 选项 | 判断标准 |
+|:---|:---|:---|
+| 边缘平台 | StarlingX / OpenStack 轻量 | 资源 < 50 节点选 StarlingX |
+| 数据面 | OVS-DPDK / SR-IOV / 双栈 | 吞吐 > 100Gbps 必须 SR-IOV |
+| 编排 | Tacker / ONAP / 手动 | VNF 数 > 20 用 Tacker |
+| 多地市 | Cells V2 / 多 Region | 地市 > 5 用 Cells V2 |
+| 国产化 | 华为/中兴网络硬件 | 运营商招标要求 |
 
-```
-200 H100 + 100 910B + 30 摩尔/沐曦
-  + OpenStack + KubeVirt + Cluster API
-  + GPU MIG / vGPU / 国产切片
-  + RoCE + Spine-Leaf 800G
-  + Ceph 训练数据 lake
-  + LLM-OPS 接入 (自然语言运维)
-  + 多租户机密计算
-```
+### 14.4 AI 训练云（选型决策）
+
+> 架构详情（GPU 直通/MIG/Cyborg/训练数据 lake）详见 [03_高级](../03_高级/README.md#113-ai)。
+
+| 决策项 | 选项 | 判断标准 |
+|:---|:---|:---|
+| GPU 切分 | PCI 直通 / MIG / vGPU | 多租户 → MIG；独占 → 直通 |
+| 网络 | RoCE / IB / 400G以太 | 延迟 < 2μs 选 IB；成本优先选 RoCE |
+| 编排 | Cluster API + KubeVirt / 纯 OpenStack | K8s 生态深 → CAPI；纯 VM → Nova |
+| 存储 | Ceph / 并行文件系统 (Lustre/GPFS) | 大文件训练数据 → 并行 FS |
+| 国产 GPU | 昇腾 910B / 摩尔 S4000 / 沐曦 | 信创要求 + 驱动成熟度 |
+| 机密计算 | SEV-SNP / TDX / 海光 CSV | 跨机构联合训练必须 |
 
 ## 十五、学习路径
 

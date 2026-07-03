@@ -47,39 +47,18 @@ SRE Lead / 平台 PO 文化驱动
 
 ## 二、流水线工程化标准
 
-### 2.1 流水线分层
+### 2.1 流水线分层（决策概要）
 
-```
-Pre-commit (本地):
-  - lint (Prettier / Black / gofmt)
-  - 单测 (changed only)
-  - gitleaks / detect-secrets
-  - 不超 30s
+> 流水线三层概念（CI / Continuous Delivery / Continuous Deployment）见 [01_基础 §3.1](../01_基础/README.md)。本层只给**四阶段标准与决策点**，不复述操作步骤。
 
-Pull Request (CI):
-  - lint full
-  - 单元 (并行)
-  - 静态扫描 (SonarQube + SAST)
-  - SCA 依赖扫描
-  - IaC 扫描 (Checkov / tfsec)
-  - Build (with cache)
-  - Image Scan (Trivy + Grype)
-  - PR diff + test report
-  - 5-10 min 内出结果
+| 阶段 | 触发 | 核心标准 | 性能基线 |
+|:---|:---|:---|:---:|
+| **Pre-commit** | 本地 hook | lint + changed 单测 + gitleaks | < 30s |
+| **Pull Request** | PR 创建/更新 | 全量 lint+单测+SAST+SCA+IaC+Build+Image Scan | < 10 min |
+| **Merge → main** | 合并 main | 集成测试+push+cosign+SBOM+SLSA+Deploy Dev+Smoke | — |
+| **Tag → Release** | 打 tag | Staging(auto+E2E)→Prod(Canary+Rollouts)+自动回滚 | — |
 
-Merge → main (CI):
-  - 上面全跑
-  - 集成测试 (TestContainers)
-  - Build push + cosign + SBOM + SLSA
-  - Deploy Dev (auto)
-  - Smoke Test
-
-Tag → Release (CD):
-  - Deploy Staging (auto + E2E)
-  - Deploy Prod (Canary via Argo Rollouts)
-  - 监控 + 错误预算
-  - 自动回滚 (AnalysisTemplate 失败)
-```
+> 各阶段强卡阈值见 **2.2 标准 Gates 表**；慢链路排查见 **2.3 流水线性能基线**。
 
 ### 2.2 标准 Gates 表
 

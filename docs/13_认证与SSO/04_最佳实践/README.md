@@ -378,45 +378,56 @@ PKI:        CFCA / 自建国密 CA
 信创:        鲲鹏 + openEuler + 麒麟
 ```
 
-## 十六、典型生产架构
+## 十六、典型生产架构（选型决策）
 
-### 16.1 互联网 1000 人工程组织
+> 完整架构组件清单（IdP / 联邦 / K8s / 工作负载 / SSH / DB / MFA / 零信任 / PAM / 审计）详见 [03_高级 §十六](../03_高级/README.md)。本层只给**选型决策矩阵与信创 Checklist**。
+
+### 16.1 选型决策矩阵
+
+| 维度 | 互联网中型 | 互联网大型 | 央企信创 | 党政关基 |
+|:---|:---|:---|:---|:---|
+| **IdP** | Keycloak ⭐ | Okta / Keycloak+自研 | 阿里 IDaaS ⭐ | 国产 IDaaS |
+| **HR/SCIM** | 北森 → SCIM | Workday → SCIM | 自建+SCIM | 定制 |
+| **联邦** | 飞书+GitHub | 飞书+GitHub | 企微/钉钉 | 内网隔离 |
+| **K8s** | --oidc+kubelogin | --oidc+Dex | --oidc | --oidc+隔离区 |
+| **工作负载** | SPIRE+Istio mTLS | SPIRE+Istio mTLS | Projected Token | Projected Token |
+| **SSH/PAM** | Teleport ⭐ | Teleport+JIT | 齐治+国密 | 齐治+国密 |
+| **DB 凭证** | Vault Dynamic | Vault Dynamic | 自研代理+国密 | 自研代理+国密 |
+| **MFA** | WebAuthn+TOTP | WebAuthn+硬件Key | WebAuthn+国密USB | 国密USB Key |
+| **零信任** | oauth2-proxy | Cloudflare Access | 奇安信 ZTNA | 奇安信+隔离 |
+| **密码学** | Ed25519+Argon2 | Ed25519+Argon2 | Tongsuo SM2/3/4 | Tongsuo SM2/3/4 |
+| **合规** | 个保法 | 个保法+SOX | 等保三级+国密 | 等保+国测+关基 |
+| **信创硬件** | — | — | 鲲鹏+openEuler | 鲲鹏+麒麟 |
+
+### 16.2 央企信创选型 Checklist
 
 ```
-IdP:        Keycloak 3 副本 + PG HA
-HR:         北森 → SCIM → Keycloak
-联邦:        飞书 + GitHub
-应用:        GitLab / Argo / Grafana / Harbor / Vault / Jenkins / Nexus 全 OIDC (35+ 应用)
-K8s:        --oidc + kubelogin (生产 / 测试 / DR 3 集群)
-工作负载:    SPIRE + Istio Strict mTLS
-SSH:        Teleport (Keystroke + Video)
-DB:         Vault Dynamic (200+ DB)
-MFA:        WebAuthn 90% + TOTP 10%
-零信任:     oauth2-proxy + Cloudflare Access
-PAM:        Teleport + JIT
-ABAC:       OPA (K8s + API Gateway)
-审计:        Wazuh + Elastic 6mo
-Incident:   RTO < 15min (P0)
-```
+IdP 选型:
+☐ 阿里 IDaaS 或 华为 OneAccess (商业, 省改造)
+☐ Keycloak + 国密改造 (自研, 省授权费)
+☐ 备用 IdP (Keycloak 热备)
 
-### 16.2 央企信创
+国密:
+☐ Tongsuo (SM2/SM3/SM4) TLS
+☐ CFCA 国密证书 / 自建国密 CA
+☐ JWT signed SM2
+☐ 国密 USB Key MFA (GM/T)
 
-```
-IdP:        阿里 IDaaS ⭐ + Keycloak (备)
-HR:         自建 + SCIM
-联邦:        企业微信 / 钉钉
-应用:        Argo / 自研 OA / Grafana 全 OIDC
-K8s:        --oidc
-SSH:        齐治堡垒机 + 国密
-DB:         自研代理 + 国密 SM2/SM4
-MFA:        WebAuthn + 国密 USB Key + TOTP
-零信任:     奇安信 ZTNA
-PAM:        齐治 + 行云
-密码学:     Tongsuo (SM2/SM3/SM4)
-PKI:        CFCA 国密证书
-审计:        SIEM (国产) 6mo
-合规:        等保三级 ⭐ + 国密 + 备案
-信创:        鲲鹏 + openEuler + 飞腾备选
+PAM / 零信任:
+☐ 齐治 / 行云 / 安畅 堡垒机
+☐ 奇安信 / 360 ZTNA
+☐ 会话录制 + JIT 审批
+
+合规:
+☐ 等保三级 IAM 全项 (a/b/c/d)
+☐ 国密 + 备案
+☐ 个保法 + 数据安全法
+☐ 审计 SIEM (国产) 6mo
+
+信创硬件:
+☐ 鲲鹏 / 飞腾 ARM64
+☐ openEuler / 麒麟 OS
+☐ 海光 CSV (Confidential)
 ```
 
 ## 十七、推荐栈（最佳实践）

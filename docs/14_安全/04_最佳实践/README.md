@@ -143,27 +143,31 @@ deploy:
   ☐ 镜像必签 (cosign verify)
 ```
 
-## 四、K8s 安全基线
+## 四、K8s 安全基线（合规矩阵 + 审计频次）
 
-```
-☐ Pod Security: Restricted
-☐ NetworkPolicy 默认拒
-☐ Cilium / Calico + 加密
-☐ Service Mesh Strict mTLS
-☐ Kyverno admission policy
-  - 禁 :latest
-  - 必签名验证 (cosign)
-  - 必 resources
-  - 必非 root
-  - 必 readOnlyRootFilesystem
-☐ kube-bench 季度
-☐ Audit policy: RequestResponse (关键资源)
-☐ etcd 加密 (KMS plugin)
-☐ Secret: external-secrets + Vault
-☐ Falco / Tetragon 运行时
-☐ ImagePullPolicy: Always
-☐ Image 内网源 (Harbor mirror)
-```
+> 实现细节（PSS / NetworkPolicy / Kyverno / cosign / kube-bench 的 YAML 与命令）
+> 见 [14_安全/02_进阶 → 三、K8s 安全基线](../02_进阶/README.md)。
+> 本节仅定义**控制项标准、审计频次与责任归属**，不重复操作步骤。
+
+| 控制项 | 标准 | 审计频次 | 责任方 |
+|:---|:---|:---|:---|
+| Pod Security | Restricted (enforce + audit) | 上线前 + 月度抽查 | 平台 SRE |
+| NetworkPolicy | 默认拒绝 + 显式放行 | 上线前 + 月度 | 平台 SRE |
+| CNI 加密 | Cilium / Calico IPsec/WireGuard | 季度验证 | 网络 SRE |
+| Service Mesh mTLS | Istio Strict 模式 | 季度 + 变更后 | 平台 SRE |
+| Admission 策略 | Kyverno 强制 (禁 latest / 必签名 / 必 resources / 必非 root / 必 readOnlyRootFilesystem) | 每次 PR 门禁 | DevSecOps |
+| 镜像签名验证 | cosign verify (admission 拦截) | 每次部署 | DevSecOps |
+| kube-bench (CIS) | 0 Critical | 季度 + 升级后 | 平台 SRE |
+| Audit Policy | RequestResponse (关键资源) | 持续 | 平台 SRE |
+| etcd 加密 | KMS plugin | 上线前 + 年度 | 平台 SRE |
+| Secret 管理 | external-secrets + Vault (禁入镜像 / Git) | 持续 + 月度扫描 | DevSecOps |
+| 运行时检测 | Falco / Tetragon (eBPF) | 24x7 | SOC |
+| 镜像来源 | ImagePullPolicy: Always + 内网 Harbor | 持续 | DevSecOps |
+
+门禁红线:
+  ☐ 生产 Pod 不满足 Restricted = 拒绝部署
+  ☐ 镜像未签名 = 拒绝部署
+  ☐ kube-bench Critical > 0 = 阻塞升级
 
 ## 五、零信任落地
 
