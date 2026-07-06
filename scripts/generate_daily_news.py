@@ -49,15 +49,11 @@ SOURCES = [
     ("AWS ML Blog", "https://aws.amazon.com/blogs/machine-learning/feed/"),
     ("Google Cloud Blog", "https://cloudblog.withgoogle.com/rss/"),
     ("Red Hat Blog", "https://www.redhat.com/en/rss/blog"),
-    # 国内主流技术社区 / 云厂商 / AI 媒体
-    ("OSCHINA 新闻", "https://www.oschina.net/news/rss"),
+    # 国内技术博客 / 社区（纯技术，不含资讯媒体）
     ("SegmentFault 思否", "https://segmentfault.com/feeds"),
-    ("IT之家", "https://www.ithome.com/rss/"),
     ("美团技术团队", "https://tech.meituan.com/feed/"),
     ("PingCAP TiDB 博客", "https://cn.pingcap.com/feed/"),
     ("云原生实验室", "https://icloudnative.io/index.xml"),
-    ("量子位", "https://www.qbitai.com/feed"),
-    ("雷峰网 / AI科技评论", "https://www.leiphone.com/feed"),
 ]
 
 KEYWORDS = [
@@ -103,6 +99,15 @@ BLOCKLIST = [
     "电影", "电视剧", "综艺", "动画节", "百花奖", "跨年晚会",
     "彩票", "娱乐圈", "明星", "偶像", "选秀",
     "考研", "高考", "志愿", "考试", "招聘", "涨价", "补差价", "购物",
+    # 资讯 / 行业动态（非技术深度）
+    "融资", "上市", "招股", "投资", "收购", "并购", "入股", "合作", "签约",
+    "发布会", "大会", "峰会", "论坛", "展会", "亮相", "开赛", "快报", "产销",
+    "财报", "营收", "估值", "独角兽", "市值", "股价", "涨停", "跌停",
+    "开通", "即日起", "开始推送",
+    "爆火", "刷屏", "火爆", "热销", "预售", "开售", "首秀",
+    "官宣", "曝光", "泄露", "爆料", "猛料",
+    "高管", "离职", "辞职", "任命", "履新", "人事",
+    "报告:", "报告：", "白皮书", "蓝皮书",
 ]
 
 CONTENT_SELECTORS = [
@@ -212,6 +217,26 @@ def relevant(article: Article) -> bool:
     if any(b.lower() in text for b in BLOCKLIST):
         return False
     return any(k.lower() in text for k in KEYWORDS)
+
+
+# 技术深度关键词：标题含这些词的文章优先选取
+TECH_DEPTH_KEYWORDS = [
+    # 中文技术深度信号
+    "实践", "架构", "原理", "源码", "深度", "实战", "调优", "解析", "指南",
+    "教程", "最佳实践", "实现", "性能", "优化", "部署", "配置", "排查",
+    "底层", "内核", "剖析", "拆解", "全解", "详解", "入门", "进阶",
+    "对比", "选型", "方案", "设计", "治理", "工程化", "落地",
+    # 英文技术深度信号
+    "deep dive", "tutorial", "guide", "how to", "implement", "architecture",
+    "best practice", "optimize", "performance", "deploy", "troubleshoot",
+    "understand", "explor", "internals", "behind the scenes", "engineering",
+    "build", "scale", "production", "migrat", "upgrad", "benchmark",
+]
+
+def tech_score(article: Article) -> int:
+    """技术深度评分：标题/摘要中含技术深度关键词越多，分数越高。"""
+    text = f"{article.title} {article.summary}".lower()
+    return sum(1 for kw in TECH_DEPTH_KEYWORDS if kw in text)
 
 
 def fetch(url: str, timeout: int = 25, accept: str = "*/*") -> tuple[bytes, str]:
@@ -1121,7 +1146,9 @@ def main() -> int:
 
     cutoff = now_cn() - dt.timedelta(days=args.days)
     recent = [a for a in unique if a.published >= cutoff]
-    pool = recent or unique
+    # stable sort: 先按时间倒序，再按技术深度倒序（同分时保持时间倒序）
+    pool = sorted(recent or unique, key=lambda a: a.published, reverse=True)
+    pool = sorted(pool, key=lambda a: tech_score(a), reverse=True)
 
     # 单次运行的分类配额：每个领域最多新增 args.per_domain 篇，避免同一批次刷屏。
     # 累计上限由 rebuild_index(per_domain_top=…) 在索引层控制。
