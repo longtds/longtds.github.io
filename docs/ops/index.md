@@ -5,3 +5,4 @@
 | 序号 | 实践 | 场景 |
 |:---:|:---|:---|
 | 01 | [服务器 Linux 操作系统安装](01-服务器Linux安装.md) | 光盘/U盘制作 → RAID → BIOS → 安装 |
+| 02 | [PXE 批量自动安装操作系统](02-PXE批量自动安装.md) | DHCP/TFTP/HTTP + Kickstart/Autoinstall |
