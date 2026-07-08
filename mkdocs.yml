@@ -218,3 +218,4 @@ nav:
     - 概述: ops/index.md
     - 服务器Linux安装: ops/01-服务器Linux安装.md
     - PXE批量自动安装: ops/02-PXE批量自动安装.md
+    - PXE内存启动测试镜像: ops/03-PXE内存启动测试镜像.md
