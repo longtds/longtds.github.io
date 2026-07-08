@@ -220,3 +220,4 @@ nav:
     - PXE批量自动安装: ops/02-PXE批量自动安装.md
     - PXE内存启动测试镜像: ops/03-PXE内存启动测试镜像.md
     - 定制Linux测试镜像: ops/04-定制Linux测试镜像.md
+    - Linux服务器启动全过程: ops/05-Linux服务器启动全过程.md

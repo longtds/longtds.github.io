@@ -8,3 +8,4 @@
 | 02 | [PXE 批量自动安装操作系统](02-PXE批量自动安装.md) | DHCP/TFTP/HTTP + Kickstart/Autoinstall |
 | 03 | [PXE 内存启动测试镜像](03-PXE内存启动测试镜像.md) | 不装系统，网络引导到内存做硬件测试 |
 | 04 | [定制 Linux 测试镜像](04-定制Linux测试镜像.md) | 内置测试工具+物理驱动，打包 ISO/PXE |
+| 05 | [Linux 服务器启动全过程](05-Linux服务器启动全过程.md) | 从按开机到 systemd 就绪，逐阶段拆解 |
