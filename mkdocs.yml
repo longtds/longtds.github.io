@@ -221,3 +221,4 @@ nav:
     - PXE内存启动测试镜像: ops/03-PXE内存启动测试镜像.md
     - 定制Linux测试镜像: ops/04-定制Linux测试镜像.md
     - Linux服务器启动全过程: ops/05-Linux服务器启动全过程.md
+    - Linux基础服务: ops/06-Linux基础服务.md
