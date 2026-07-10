@@ -223,3 +223,4 @@ nav:
     - Linux服务器启动全过程: ops/05-Linux服务器启动全过程.md
     - Linux基础服务: ops/06-Linux基础服务.md
     - Web服务器: ops/07-Web服务器.md
+    - 数据库部署与架构: ops/08-数据库部署与架构.md
