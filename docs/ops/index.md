@@ -10,3 +10,4 @@
 | 04 | [定制 Linux 测试镜像](04-定制Linux测试镜像.md) | 内置测试工具+物理驱动，打包 ISO/PXE |
 | 05 | [Linux 服务器启动全过程](05-Linux服务器启动全过程.md) | 从按开机到 systemd 就绪，逐阶段拆解 |
 | 06 | [Linux 基础服务配置](06-Linux基础服务.md) | SSH/日志/网络/NFS/Samba/防火墙/SELinux |
+| 07 | [Web 服务器安装与配置](07-Web服务器.md) | Nginx/Apache/Caddy/HAProxy 安装配置全攻略 |
