@@ -14,3 +14,4 @@
 | 08 | [数据库部署配置与架构原理](08-数据库部署与架构.md) | MySQL/PostgreSQL/Redis 部署+架构+复制+备份 |
 | 09 | [消息队列部署与配置](09-消息队列部署与配置.md) | Kafka/RabbitMQ/RocketMQ/Redis Streams/NATS |
 | 10 | [存储系统部署与配置](10-存储系统部署与配置.md) | LVM/iSCSI/Ceph/MinIO/GlusterFS/NFS |
+| 11 | [全文检索系统](11-全文检索系统.md) | Elasticsearch/OpenSearch/Meilisearch/Typesense |
