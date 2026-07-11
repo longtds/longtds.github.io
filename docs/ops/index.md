@@ -16,3 +16,4 @@
 | 10 | [存储系统部署与配置](10-存储系统部署与配置.md) | LVM/iSCSI/Ceph/MinIO/GlusterFS/NFS |
 | 11 | [全文检索系统](11-全文检索系统.md) | Elasticsearch/OpenSearch/Meilisearch/Typesense |
 | 12 | [列式数据库](12-列式数据库.md) | ClickHouse/Doris/StarRocks/Druid |
+| 13 | [监控系统部署与配置](13-监控系统部署与配置.md) | Prometheus/VM/Zabbix/Nightingale/Grafana |
