@@ -17,3 +17,4 @@
 | 11 | [全文检索系统](11-全文检索系统.md) | Elasticsearch/OpenSearch/Meilisearch/Typesense |
 | 12 | [列式数据库](12-列式数据库.md) | ClickHouse/Doris/StarRocks/Druid |
 | 13 | [监控系统部署与配置](13-监控系统部署与配置.md) | Prometheus/VM/Zabbix/Nightingale/Grafana |
+| 14 | [日志系统部署与配置](14-日志系统部署与配置.md) | ELK/Loki/Graylog/Vector/ClickHouse |
