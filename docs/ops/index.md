@@ -12,3 +12,4 @@
 | 06 | [Linux 基础服务配置](06-Linux基础服务.md) | SSH/日志/网络/NFS/Samba/防火墙/SELinux |
 | 07 | [Web 服务器安装与配置](07-Web服务器.md) | Nginx/Apache/Caddy/HAProxy 安装配置全攻略 |
 | 08 | [数据库部署配置与架构原理](08-数据库部署与架构.md) | MySQL/PostgreSQL/Redis 部署+架构+复制+备份 |
+| 09 | [消息队列部署与配置](09-消息队列部署与配置.md) | Kafka/RabbitMQ/RocketMQ/Redis Streams/NATS |
