@@ -22,3 +22,4 @@
 | 16 | [虚拟化技术部署与运维](16-虚拟化技术部署与运维.md) | KVM/VMware ESXi/vCenter |
 | 17 | [OpenStack部署与运维](17-OpenStack部署与运维.md) | Nova/Neutron/Cinder/Glance/Heat/Ceph |
 | 18 | [Docker容器部署与运维](18-Docker容器部署与运维.md) | Docker/Compose/Harbor/Swarm |
+| 19 | [Kubernetes部署与运维](19-Kubernetes部署与运维.md) | K8s/调度/网络/存储/监控/Helm |
