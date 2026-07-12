@@ -20,3 +20,4 @@
 | 14 | [日志系统部署与配置](14-日志系统部署与配置.md) | ELK/Loki/Graylog/Vector/ClickHouse |
 | 15 | [Java应用部署与运维](15-Java应用部署与运维.md) | 单体/微服务/Spring Cloud/JVM/K8s |
 | 16 | [虚拟化技术部署与运维](16-虚拟化技术部署与运维.md) | KVM/VMware ESXi/vCenter |
+| 17 | [OpenStack部署与运维](17-OpenStack部署与运维.md) | Nova/Neutron/Cinder/Glance/Heat/Ceph |

@@ -232,3 +232,4 @@ nav:
     - 日志系统部署与配置: ops/14-日志系统部署与配置.md
     - Java应用部署与运维: ops/15-Java应用部署与运维.md
     - 虚拟化技术部署与运维: ops/16-虚拟化技术部署与运维.md
+    - OpenStack部署与运维: ops/17-OpenStack部署与运维.md
