@@ -236,3 +236,4 @@ nav:
     - Docker容器部署与运维: ops/18-Docker容器部署与运维.md
     - Kubernetes部署与运维: ops/19-Kubernetes部署与运维.md
     - Linux网络安全与防火墙: ops/20-Linux网络安全与防火墙.md
+    - 网络设备介绍与操作: ops/21-网络设备介绍与操作.md
