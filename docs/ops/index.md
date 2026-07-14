@@ -26,3 +26,4 @@
 | 20 | [Linux网络安全与防火墙](20-Linux网络安全与防火墙.md) | iptables/firewalld/nftables/安全加固 |
 | 21 | [网络设备介绍与操作](21-网络设备介绍与操作.md) | 交换机/路由器/防火墙/负载均衡/无线 |
 | 22 | [KVM显卡直通NVIDIA](22-KVM显卡直通NVIDIA.md) | GPU直通/VFIO/IOMMU/性能优化 |
+| 23 | [K8s生态选型](23-K8s生态选型.md) | CNI/CSI/Ingress/Mesh/GitOps全栈选型 |
