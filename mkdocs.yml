@@ -239,3 +239,4 @@ nav:
     - 网络设备介绍与操作: ops/21-网络设备介绍与操作.md
     - KVM显卡直通NVIDIA: ops/22-KVM显卡直通NVIDIA.md
     - K8s生态选型: ops/23-K8s生态选型.md
+    - K8s企业基础设施平台: ops/24-K8s企业基础设施平台.md
