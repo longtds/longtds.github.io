@@ -240,3 +240,4 @@ nav:
     - KVM显卡直通NVIDIA: ops/22-KVM显卡直通NVIDIA.md
     - K8s生态选型: ops/23-K8s生态选型.md
     - K8s企业基础设施平台: ops/24-K8s企业基础设施平台.md
+    - 大模型推理服务运行: ops/25-大模型推理服务运行.md

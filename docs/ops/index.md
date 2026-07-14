@@ -28,3 +28,4 @@
 | 22 | [KVM显卡直通NVIDIA](22-KVM显卡直通NVIDIA.md) | GPU直通/VFIO/IOMMU/性能优化 |
 | 23 | [K8s生态选型](23-K8s生态选型.md) | CNI/CSI/Ingress/Mesh/GitOps全栈选型 |
 | 24 | [K8s企业基础设施平台](24-K8s企业基础设施平台.md) | KubeVirt/Multus SDN/Rook-Ceph统一存储 |
+| 25 | [大模型推理服务运行](25-大模型推理服务运行.md) | vLLM/量化/K8s GPU部署/监控/成本优化 |
