@@ -242,3 +242,4 @@ nav:
     - K8s企业基础设施平台: ops/24-K8s企业基础设施平台.md
     - 大模型推理服务运行: ops/25-大模型推理服务运行.md
     - MySQL DBA运维实战: ops/26-MySQL-DBA运维实战.md
+    - PostgreSQL DBA运维实战: ops/27-PostgreSQL-DBA运维实战.md
