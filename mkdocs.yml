@@ -67,6 +67,9 @@ copyright: ""
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/nav-filter.js
+
 nav:
   - 首页: index.md
 
