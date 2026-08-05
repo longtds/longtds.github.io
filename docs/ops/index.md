@@ -32,3 +32,4 @@
 | 26 | [MySQL DBA运维实战](26-MySQL-DBA运维实战.md) | 部署/主从/MGR/备份/SQL优化/监控/故障处理 |
 | 27 | [PostgreSQL DBA运维实战](27-PostgreSQL-DBA运维实战.md) | 部署/流复制/Patroni/pgBackRest/VACUUM/pgBouncer |
 | 28 | [物理设备详解](28-物理设备详解.md) | 服务器/存储/网络/机柜/BMC/GPU/硬件监控/采购 |
+| 29 | [K8s日常运维实战](29-K8s日常运维实战.md) | 集群管理/Pod排障/资源治理/升级/备份/故障处理 |
