@@ -248,3 +248,4 @@ nav:
     - PostgreSQL DBA运维实战: ops/27-PostgreSQL-DBA运维实战.md
     - 物理设备详解: ops/28-物理设备详解.md
     - K8s日常运维实战: ops/29-K8s日常运维实战.md
+    - MinIO运维实战: ops/30-MinIO运维实战.md
