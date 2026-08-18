@@ -67,9 +67,6 @@ copyright: ""
 extra_css:
   - stylesheets/extra.css
 
-extra_javascript:
-  - javascripts/nav-filter.js
-
 nav:
   - 首页: index.md
 
@@ -80,6 +77,10 @@ nav:
     - 03_高级: 01_服务器/03_高级/README.md
     - 04_最佳实践: 01_服务器/04_最佳实践/README.md
     - 99_发展与展望: 01_服务器/99_发展与展望.md
+    - 实践:
+      - 服务器Linux安装: 01_服务器/01-服务器Linux安装.md
+      - PXE批量自动安装: 01_服务器/02-PXE批量自动安装.md
+      - 物理设备详解: 01_服务器/28-物理设备详解.md
 
   - 02_Linux:
     - 概述: 02_Linux/index.md
@@ -88,6 +89,9 @@ nav:
     - 03_高级: 02_Linux/03_高级/README.md
     - 04_最佳实践: 02_Linux/04_最佳实践/README.md
     - 99_发展与展望: 02_Linux/99_发展与展望.md
+    - 实践:
+      - Linux服务器启动全过程: 02_Linux/05-Linux服务器启动全过程.md
+      - Linux基础服务: 02_Linux/06-Linux基础服务.md
 
   - 03_网络:
     - 概述: 03_网络/index.md
@@ -96,6 +100,9 @@ nav:
     - 03_高级: 03_网络/03_高级/README.md
     - 04_最佳实践: 03_网络/04_最佳实践/README.md
     - 99_发展与展望: 03_网络/99_发展与展望.md
+    - 实践:
+      - Linux网络安全与防火墙: 03_网络/20-Linux网络安全与防火墙.md
+      - 网络设备介绍与操作: 03_网络/21-网络设备介绍与操作.md
 
   - 04_虚拟化:
     - 概述: 04_虚拟化/index.md
@@ -104,6 +111,9 @@ nav:
     - 03_高级: 04_虚拟化/03_高级/README.md
     - 04_最佳实践: 04_虚拟化/04_最佳实践/README.md
     - 99_发展与展望: 04_虚拟化/99_发展与展望.md
+    - 实践:
+      - 虚拟化技术部署与运维: 04_虚拟化/16-虚拟化技术部署与运维.md
+      - KVM显卡直通NVIDIA: 04_虚拟化/22-KVM显卡直通NVIDIA.md
 
   - 05_私有云:
     - 概述: 05_私有云/index.md
@@ -112,6 +122,8 @@ nav:
     - 03_高级: 05_私有云/03_高级/README.md
     - 04_最佳实践: 05_私有云/04_最佳实践/README.md
     - 99_发展与展望: 05_私有云/99_发展与展望.md
+    - 实践:
+      - OpenStack部署与运维: 05_私有云/17-OpenStack部署与运维.md
 
   - 06_Docker:
     - 概述: 06_Docker/index.md
@@ -120,6 +132,8 @@ nav:
     - 03_高级: 06_Docker/03_高级/README.md
     - 04_最佳实践: 06_Docker/04_最佳实践/README.md
     - 99_发展与展望: 06_Docker/99_发展与展望.md
+    - 实践:
+      - Docker容器部署与运维: 06_Docker/18-Docker容器部署与运维.md
 
   - 07_Kubernetes:
     - 概述: 07_Kubernetes/index.md
@@ -128,6 +142,11 @@ nav:
     - 03_高级: 07_Kubernetes/03_高级/README.md
     - 04_最佳实践: 07_Kubernetes/04_最佳实践/README.md
     - 99_发展与展望: 07_Kubernetes/99_发展与展望.md
+    - 实践:
+      - Kubernetes部署与运维: 07_Kubernetes/19-Kubernetes部署与运维.md
+      - K8s生态选型: 07_Kubernetes/23-K8s生态选型.md
+      - K8s企业基础设施平台: 07_Kubernetes/24-K8s企业基础设施平台.md
+      - K8s日常运维实战: 07_Kubernetes/29-K8s日常运维实战.md
 
   - 08_DevOps:
     - 概述: 08_DevOps/index.md
@@ -136,6 +155,8 @@ nav:
     - 03_高级: 08_DevOps/03_高级/README.md
     - 04_最佳实践: 08_DevOps/04_最佳实践/README.md
     - 99_发展与展望: 08_DevOps/99_发展与展望.md
+    - 实践:
+      - Java应用部署与运维: 08_DevOps/15-Java应用部署与运维.md
 
   - 09_中间件:
     - 概述: 09_中间件/index.md
@@ -144,6 +165,16 @@ nav:
     - 03_高级: 09_中间件/03_高级/README.md
     - 04_最佳实践: 09_中间件/04_最佳实践/README.md
     - 99_发展与展望: 09_中间件/99_发展与展望.md
+    - 实践:
+      - Web服务器: 09_中间件/07-Web服务器.md
+      - 数据库部署与架构: 09_中间件/08-数据库部署与架构.md
+      - 消息队列部署与配置: 09_中间件/09-消息队列部署与配置.md
+      - 存储系统部署与配置: 09_中间件/10-存储系统部署与配置.md
+      - 全文检索系统: 09_中间件/11-全文检索系统.md
+      - MySQL DBA运维实战: 09_中间件/26-MySQL-DBA运维实战.md
+      - PostgreSQL DBA运维实战: 09_中间件/27-PostgreSQL-DBA运维实战.md
+      - MinIO运维实战: 09_中间件/30-MinIO运维实战.md
+      - Elasticsearch快照与恢复: 09_中间件/31-Elasticsearch快照与恢复.md
 
   - 10_大数据:
     - 概述: 10_大数据/index.md
@@ -152,6 +183,8 @@ nav:
     - 03_高级: 10_大数据/03_高级/README.md
     - 04_最佳实践: 10_大数据/04_最佳实践/README.md
     - 99_发展与展望: 10_大数据/99_发展与展望.md
+    - 实践:
+      - 列式数据库: 10_大数据/12-列式数据库.md
 
   - 11_AI基础设施:
     - 概述: 11_AI基础设施/index.md
@@ -160,6 +193,8 @@ nav:
     - 03_高级: 11_AI基础设施/03_高级/README.md
     - 04_最佳实践: 11_AI基础设施/04_最佳实践/README.md
     - 99_发展与展望: 11_AI基础设施/99_发展与展望.md
+    - 实践:
+      - 大模型推理服务运行: 11_AI基础设施/25-大模型推理服务运行.md
 
   - 12_AIOps:
     - 概述: 12_AIOps/index.md
@@ -168,6 +203,9 @@ nav:
     - 03_高级: 12_AIOps/03_高级/README.md
     - 04_最佳实践: 12_AIOps/04_最佳实践/README.md
     - 99_发展与展望: 12_AIOps/99_发展与展望.md
+    - 实践:
+      - 监控系统部署与配置: 12_AIOps/13-监控系统部署与配置.md
+      - 日志系统部署与配置: 12_AIOps/14-日志系统部署与配置.md
 
   - 13_认证与SSO:
     - 概述: 13_认证与SSO/index.md
@@ -209,6 +247,7 @@ nav:
     - 03_高级: 17_测试/03_高级/README.md
     - 04_最佳实践: 17_测试/04_最佳实践/README.md
     - 99_发展与展望: 17_测试/99_发展与展望.md
+
   - 18_硬件测试:
     - 概述: 18_硬件测试/index.md
     - 01_基础: 18_硬件测试/01_基础/README.md
@@ -216,37 +255,6 @@ nav:
     - 03_高级: 18_硬件测试/03_高级/README.md
     - 04_最佳实践: 18_硬件测试/04_最佳实践/README.md
     - 99_发展与展望: 18_硬件测试/99_发展与展望.md
-
-  - 运维实践:
-    - 概述: ops/index.md
-    - 服务器Linux安装: ops/01-服务器Linux安装.md
-    - PXE批量自动安装: ops/02-PXE批量自动安装.md
-    - PXE内存启动测试镜像: ops/03-PXE内存启动测试镜像.md
-    - 定制Linux测试镜像: ops/04-定制Linux测试镜像.md
-    - Linux服务器启动全过程: ops/05-Linux服务器启动全过程.md
-    - Linux基础服务: ops/06-Linux基础服务.md
-    - Web服务器: ops/07-Web服务器.md
-    - 数据库部署与架构: ops/08-数据库部署与架构.md
-    - 消息队列部署与配置: ops/09-消息队列部署与配置.md
-    - 存储系统部署与配置: ops/10-存储系统部署与配置.md
-    - 全文检索系统: ops/11-全文检索系统.md
-    - 列式数据库: ops/12-列式数据库.md
-    - 监控系统部署与配置: ops/13-监控系统部署与配置.md
-    - 日志系统部署与配置: ops/14-日志系统部署与配置.md
-    - Java应用部署与运维: ops/15-Java应用部署与运维.md
-    - 虚拟化技术部署与运维: ops/16-虚拟化技术部署与运维.md
-    - OpenStack部署与运维: ops/17-OpenStack部署与运维.md
-    - Docker容器部署与运维: ops/18-Docker容器部署与运维.md
-    - Kubernetes部署与运维: ops/19-Kubernetes部署与运维.md
-    - Linux网络安全与防火墙: ops/20-Linux网络安全与防火墙.md
-    - 网络设备介绍与操作: ops/21-网络设备介绍与操作.md
-    - KVM显卡直通NVIDIA: ops/22-KVM显卡直通NVIDIA.md
-    - K8s生态选型: ops/23-K8s生态选型.md
-    - K8s企业基础设施平台: ops/24-K8s企业基础设施平台.md
-    - 大模型推理服务运行: ops/25-大模型推理服务运行.md
-    - MySQL DBA运维实战: ops/26-MySQL-DBA运维实战.md
-    - PostgreSQL DBA运维实战: ops/27-PostgreSQL-DBA运维实战.md
-    - 物理设备详解: ops/28-物理设备详解.md
-    - K8s日常运维实战: ops/29-K8s日常运维实战.md
-    - MinIO运维实战: ops/30-MinIO运维实战.md
-    - Elasticsearch快照与恢复: ops/31-Elasticsearch快照与恢复.md
+    - 实践:
+      - PXE内存启动测试镜像: 18_硬件测试/03-PXE内存启动测试镜像.md
+      - 定制Linux测试镜像: 18_硬件测试/04-定制Linux测试镜像.md

@@ -70,3 +70,11 @@
 - 配合 [14_安全](../14_安全/index.md) 看 Ranger + Polaris + 字段加密 + 国密
 - 配合 [15_渗透测试](../15_渗透测试/index.md) 看 Hive/Spark/Hadoop 渗透 + JDBC 注入
 - 配合 [16_故障排查](../16_故障排查/index.md) 看 Spark OOM / Flink 反压 / Doris BE 高 Compaction
+
+## 实践文章
+
+> 一线运维实战, 可直接照做。
+
+| 文章 | 主题 |
+|:---|:---|
+| [列式数据库](12-列式数据库.md) | ClickHouse/Doris/StarRocks/Druid |

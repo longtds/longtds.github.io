@@ -73,3 +73,11 @@
 - 配合 [14_安全](../14_安全/index.md) 看 DevSecOps 全链 + SLSA + Falco + Tetragon
 - 配合 [15_渗透测试](../15_渗透测试/index.md) 看 CI 内 DAST + SCA + 红蓝攻防
 - 配合 [16_故障排查](../16_故障排查/index.md) 看 Incident SOP + Postmortem 模板
+
+## 实践文章
+
+> 一线运维实战, 可直接照做。
+
+| 文章 | 主题 |
+|:---|:---|
+| [Java应用部署与运维](15-Java应用部署与运维.md) | 单体/微服务/Spring Cloud/JVM/K8s |

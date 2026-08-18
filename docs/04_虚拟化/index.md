@@ -70,3 +70,12 @@
 - 配合 [11_AI基础设施](../11_AI基础设施/index.md) 看 GPU 切片 / MIG / GPU Operator
 - 配合 [14_安全](../14_安全/index.md) 看机密计算 / 等保合规
 - 配合 [16_故障排查](../16_故障排查/index.md) 看 VM 卡顿 / 迁移失败实战
+
+## 实践文章
+
+> 一线运维实战, 可直接照做。
+
+| 文章 | 主题 |
+|:---|:---|
+| [虚拟化技术部署与运维](16-虚拟化技术部署与运维.md) | KVM/VMware ESXi/vCenter |
+| [KVM显卡直通NVIDIA](22-KVM显卡直通NVIDIA.md) | GPU直通/VFIO/IOMMU/性能优化 |

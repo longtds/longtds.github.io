@@ -74,3 +74,11 @@
 - 配合 [12_AIOps](../12_AIOps/index.md) 看容器异常检测 / eBPF 可观测
 - 配合 [14_安全](../14_安全/index.md) 看 CIS + NIST 800-190 + 机密计算 + 等保
 - 配合 [16_故障排查](../16_故障排查/index.md) 看容器 OOM / 网络 / Pull / OOM-killer 排障
+
+## 实践文章
+
+> 一线运维实战, 可直接照做。
+
+| 文章 | 主题 |
+|:---|:---|
+| [Docker容器部署与运维](18-Docker容器部署与运维.md) | Docker/Compose/Harbor/Swarm |

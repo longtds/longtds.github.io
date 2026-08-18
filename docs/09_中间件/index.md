@@ -72,3 +72,19 @@
 - 配合 [14_安全](../14_安全/index.md) 看 数据脱敏 + 国密 + 加密机
 - 配合 [15_渗透测试](../15_渗透测试/index.md) 看 SQL 注入 + Redis 未授权 + DB 漏扫
 - 配合 [16_故障排查](../16_故障排查/index.md) 看 DB 慢查询 / 锁等待 / 复制断裂 / 大 key
+
+## 实践文章
+
+> 一线运维实战, 可直接照做。
+
+| 文章 | 主题 |
+|:---|:---|
+| [Web服务器](07-Web服务器.md) | Nginx/Apache/Caddy/HAProxy 安装配置 |
+| [数据库部署与架构](08-数据库部署与架构.md) | MySQL/PostgreSQL/Redis 部署+复制+备份 |
+| [消息队列部署与配置](09-消息队列部署与配置.md) | Kafka/RabbitMQ/RocketMQ/Redis Streams/NATS |
+| [存储系统部署与配置](10-存储系统部署与配置.md) | LVM/iSCSI/Ceph/MinIO/GlusterFS/NFS |
+| [全文检索系统](11-全文检索系统.md) | Elasticsearch/OpenSearch/Meilisearch/Typesense |
+| [MySQL DBA运维实战](26-MySQL-DBA运维实战.md) | 部署/主从/MGR/备份/SQL优化/监控/故障处理 |
+| [PostgreSQL DBA运维实战](27-PostgreSQL-DBA运维实战.md) | 部署/流复制/Patroni/pgBackRest/VACUUM/pgBouncer |
+| [MinIO运维实战](30-MinIO运维实战.md) | 纠删码/驱动器节点故障恢复/数据备份/Heal |
+| [Elasticsearch快照与恢复](31-Elasticsearch快照与恢复.md) | 仓库搭建/SLM快照/恢复操作/灾难恢复/误删恢复 |

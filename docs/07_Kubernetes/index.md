@@ -77,3 +77,14 @@
 - 配合 [13_认证与SSO](../13_认证与SSO/index.md) 看 OIDC + Keycloak + K8s SSO
 - 配合 [14_安全](../14_安全/index.md) 看 Pod Security / Kyverno / Falco / Tetragon / CoCo
 - 配合 [16_故障排查](../16_故障排查/index.md) 看 K8s 应急 SOP / Postmortem
+
+## 实践文章
+
+> 一线运维实战, 可直接照做。
+
+| 文章 | 主题 |
+|:---|:---|
+| [Kubernetes部署与运维](19-Kubernetes部署与运维.md) | K8s/调度/网络/存储/监控/Helm |
+| [K8s生态选型](23-K8s生态选型.md) | CNI/CSI/Ingress/Mesh/GitOps全栈选型 |
+| [K8s企业基础设施平台](24-K8s企业基础设施平台.md) | KubeVirt/Multus SDN/Rook-Ceph统一存储 |
+| [K8s日常运维实战](29-K8s日常运维实战.md) | 集群管理/Pod排障/资源治理/升级/备份/故障处理 |

@@ -76,3 +76,11 @@
 - 配合 [13_认证与SSO](../13_认证与SSO/index.md) 看 Keystone+Keycloak SSO
 - 配合 [14_安全](../14_安全/index.md) 看机密计算 / 等保 / 国密 / 数据安全法
 - 配合 [16_故障排查](../16_故障排查/index.md) 看 OpenStack VM/卷/网络 排障实战
+
+## 实践文章
+
+> 一线运维实战, 可直接照做。
+
+| 文章 | 主题 |
+|:---|:---|
+| [OpenStack部署与运维](17-OpenStack部署与运维.md) | Nova/Neutron/Cinder/Glance/Heat/Ceph |
