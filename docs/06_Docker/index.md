@@ -82,3 +82,4 @@
 | 文章 | 主题 |
 |:---|:---|
 | [Docker容器部署与运维](18-Docker容器部署与运维.md) | Docker/Compose/Harbor/Swarm |
+| [Docker镜像构建优化（多阶段构建）](32-Docker镜像构建优化-多阶段构建.md) | 多阶段构建/缓存优化/镜像瘦身/CI集成 |

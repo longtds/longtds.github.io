@@ -134,6 +134,7 @@ nav:
     - 99_发展与展望: 06_Docker/99_发展与展望.md
     - 实践:
       - Docker容器部署与运维: 06_Docker/18-Docker容器部署与运维.md
+      - Docker镜像构建优化（多阶段构建）: 06_Docker/32-Docker镜像构建优化-多阶段构建.md
 
   - 07_Kubernetes:
     - 概述: 07_Kubernetes/index.md
