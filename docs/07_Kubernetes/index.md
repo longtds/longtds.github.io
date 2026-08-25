@@ -88,3 +88,4 @@
 | [K8s生态选型](23-K8s生态选型.md) | CNI/CSI/Ingress/Mesh/GitOps全栈选型 |
 | [K8s企业基础设施平台](24-K8s企业基础设施平台.md) | KubeVirt/Multus SDN/Rook-Ceph统一存储 |
 | [K8s日常运维实战](29-K8s日常运维实战.md) | 集群管理/Pod排障/资源治理/升级/备份/故障处理 |
+| [K8s多集群管理（Karmada/Clusternet）](33-K8s多集群管理-Karmada-Clusternet.md) | 多集群联邦调度/应用分发/服务治理/灾备 |

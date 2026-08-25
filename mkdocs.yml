@@ -148,6 +148,7 @@ nav:
       - K8s生态选型: 07_Kubernetes/23-K8s生态选型.md
       - K8s企业基础设施平台: 07_Kubernetes/24-K8s企业基础设施平台.md
       - K8s日常运维实战: 07_Kubernetes/29-K8s日常运维实战.md
+      - K8s多集群管理（Karmada/Clusternet）: 07_Kubernetes/33-K8s多集群管理-Karmada-Clusternet.md
 
   - 08_DevOps:
     - 概述: 08_DevOps/index.md
