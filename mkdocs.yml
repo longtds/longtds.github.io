@@ -150,6 +150,7 @@ nav:
       - K8s日常运维实战: 07_Kubernetes/29-K8s日常运维实战.md
       - K8s多集群管理（Karmada/Clusternet）: 07_Kubernetes/33-K8s多集群管理-Karmada-Clusternet.md
       - K8s网络问题排查（CNI/Service/Ingress/NetworkPolicy/iptables）: 07_Kubernetes/34-K8s网络问题排查-CNI-Service-Ingress-NetworkPolicy-iptables.md
+      - K8s服务网格实战场景: 07_Kubernetes/35-K8s服务网格实战场景.md
 
   - 08_DevOps:
     - 概述: 08_DevOps/index.md

@@ -90,3 +90,4 @@
 | [K8s日常运维实战](29-K8s日常运维实战.md) | 集群管理/Pod排障/资源治理/升级/备份/故障处理 |
 | [K8s多集群管理（Karmada/Clusternet）](33-K8s多集群管理-Karmada-Clusternet.md) | 多集群联邦调度/应用分发/服务治理/灾备 |
 | [K8s网络问题排查](34-K8s网络问题排查-CNI-Service-Ingress-NetworkPolicy-iptables.md) | CNI/Service/Ingress/NetworkPolicy/iptables五层排障 |
+| [K8s服务网格实战场景](35-K8s服务网格实战场景.md) | Istio金丝雀/镜像/mTLS/熔断/限流/混沌/多集群 |
