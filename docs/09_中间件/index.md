@@ -89,3 +89,4 @@
 | [MinIO运维实战](30-MinIO运维实战.md) | 纠删码/驱动器节点故障恢复/数据备份/Heal |
 | [Elasticsearch快照与恢复](31-Elasticsearch快照与恢复.md) | 仓库搭建/SLM快照/恢复操作/灾难恢复/误删恢复 |
 | [MinIO集群Kopf Operator开发实战](36-MinIO集群KopfOperator开发实战.md) | Python+Kopf开发MinIO集群Operator/CRD/Reconcile/扩缩容/备份 |
+| [微服务架构最佳实践](37-微服务架构最佳实践.md) | 服务拆分/API设计/一致性/治理/观测/部署/安全/组织 |
