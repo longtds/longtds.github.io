@@ -88,3 +88,4 @@
 | [PostgreSQL DBA运维实战](27-PostgreSQL-DBA运维实战.md) | 部署/流复制/Patroni/pgBackRest/VACUUM/pgBouncer |
 | [MinIO运维实战](30-MinIO运维实战.md) | 纠删码/驱动器节点故障恢复/数据备份/Heal |
 | [Elasticsearch快照与恢复](31-Elasticsearch快照与恢复.md) | 仓库搭建/SLM快照/恢复操作/灾难恢复/误删恢复 |
+| [MinIO集群Kopf Operator开发实战](36-MinIO集群KopfOperator开发实战.md) | Python+Kopf开发MinIO集群Operator/CRD/Reconcile/扩缩容/备份 |

@@ -179,6 +179,7 @@ nav:
       - PostgreSQL DBA运维实战: 09_中间件/27-PostgreSQL-DBA运维实战.md
       - MinIO运维实战: 09_中间件/30-MinIO运维实战.md
       - Elasticsearch快照与恢复: 09_中间件/31-Elasticsearch快照与恢复.md
+      - MinIO集群Kopf Operator开发实战: 09_中间件/36-MinIO集群KopfOperator开发实战.md
 
   - 10_大数据:
     - 概述: 10_大数据/index.md
