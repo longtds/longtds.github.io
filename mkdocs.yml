@@ -161,6 +161,7 @@ nav:
     - 99_发展与展望: 08_DevOps/99_发展与展望.md
     - 实践:
       - Java应用部署与运维: 08_DevOps/15-Java应用部署与运维.md
+      - FinOps云成本优化实战: 08_DevOps/39-FinOps云成本优化实战-自建IDC-公有云-混合云.md
 
   - 09_中间件:
     - 概述: 09_中间件/index.md
