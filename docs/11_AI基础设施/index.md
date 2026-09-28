@@ -82,3 +82,4 @@
 |:---|:---|
 | [大模型推理服务运行](25-大模型推理服务运行.md) | vLLM/量化/K8s GPU部署/监控/成本优化 |
 | [OpenCode实战指南](41-OpenCode实战指南.md) | 开源AI编码Agent/CLI参数/配置全表/权限安全/Agent编排/CI集成 |
+| [Codex实战指南](42-Codex实战指南.md) | OpenAI编码Agent/OS级沙箱/.rules命令规则/审批策略/exec自动化/AGENTS.md |

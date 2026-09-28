@@ -207,6 +207,7 @@ nav:
     - 实践:
       - 大模型推理服务运行: 11_AI基础设施/25-大模型推理服务运行.md
       - OpenCode实战指南: 11_AI基础设施/41-OpenCode实战指南.md
+      - Codex实战指南: 11_AI基础设施/42-Codex实战指南.md
 
   - 12_AIOps:
     - 概述: 12_AIOps/index.md
